@@ -1,10 +1,9 @@
 # Links
 
-Below are the most important links related to SkunkHTML:
+* GitHub
+[https://github.com/startedourmission](https://github.com/startedourmission)
 
-* SkunkHTML repository on GitHub
-[https://github.com/MaxGripe/skunk-html](https://github.com/MaxGripe/skunk-html)
-* Discussions
-[https://github.com/MaxGripe/skunk-html/discussions](https://github.com/MaxGripe/skunk-html/discussions)
-* Issues
-[https://github.com/MaxGripe/skunk-html/issues](https://github.com/MaxGripe/skunk-html/issues)
+- X
+https://x.com/nat_pagle_?s=21
+
+
