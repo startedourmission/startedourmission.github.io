@@ -105,7 +105,7 @@
             $"""
         {frontPageContentHtml}
         <section class="publications">
-            <h1>blog entries</h1>
+            <h1>Posts</h1>
             <ul>
             {listOfAllBlogArticlesContentHtml}
             </ul>

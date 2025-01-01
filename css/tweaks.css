@@ -2,8 +2,8 @@
 
     border-style: outset;
     border-color: var(--color-link);
-    border-width: 1px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    border-width: 0px;
+    /*box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);*/
 }
 
 
