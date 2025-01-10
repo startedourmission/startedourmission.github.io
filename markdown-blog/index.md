@@ -5,6 +5,7 @@ My academic journey began at Inha Technical College, followed by research work a
 ### Programming Documents for Beginner
 
 **Languages**
+
 [C](2025-1-8-1) | [C++](2025-1-8-2) | [Python](2025-1-8-3) | [JAVA](2025-1-8-4) |
 
 ### Data Analysis  / Machine Learning / Deep Learning Documents
