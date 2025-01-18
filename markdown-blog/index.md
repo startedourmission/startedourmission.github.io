@@ -10,7 +10,7 @@ My academic journey began at Inha Technical College, followed by research work a
 
 **Languages**
 
-[C](2025181@C.md) | [C++](2025182.md) | [Python](2025-1-8-3) | [JAVA](2025-1-8-4) |
+[C](2025181@C.md) | [C++](2025182) | [Python](2025-1-8-3) | [JAVA](2025-1-8-4) |
 
 ### ML for Beginner Documents
 
