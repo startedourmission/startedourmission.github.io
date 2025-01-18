@@ -10,15 +10,13 @@ My academic journey began at Inha Technical College, followed by research work a
 
 **Languages**
 
-[C](2025181@C) | [C++](2025182) | [Python](2025-1-8-3) | [JAVA](2025-1-8-4) |
+[C](250108_C.md) | [C++](250108_cpp.md) | [Python](250108_Py.md) | [JAVA](250108_J.md) |
 
 ### ML for Beginner Documents
 
 **Kaggle**
-- [Titanic](2025-1-6-1)
+- [Titanic](250106_DS.md)
 
 ### Computer Science
 
 - [정보처리기능사](https://startedourmission.github.io/정보처리기능사.html)
-
-
