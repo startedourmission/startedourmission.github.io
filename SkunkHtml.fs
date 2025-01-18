@@ -55,7 +55,7 @@
     let createPage (header: string) (footer: string) (markdownFilePath: string) =
         let title = extractTitleFromMarkdownFile(markdownFilePath)
         let fileName = Url.toUrlFriendly title
-        let outputHtmlFilePath = Path.Combine(Config.outputDir, fileName + ".html")
+        let outputHtmlFilePath = Path.Combine(Config.outputDir, markdownFilePath + ".html")
         let markdownContent = File.ReadAllText(markdownFilePath)
 
         let htmlContent =
