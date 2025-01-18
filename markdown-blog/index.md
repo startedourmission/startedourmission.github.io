@@ -19,6 +19,6 @@ My academic journey began at Inha Technical College, followed by research work a
 
 ### Computer Science
 
-- [정보처리기능사]
+- [정보처리기능사](1)
 
 
