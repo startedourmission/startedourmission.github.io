@@ -15,10 +15,10 @@ My academic journey began at Inha Technical College, followed by research work a
 ### ML for Beginner Documents
 
 **Kaggle**
-- [Titanic](2025-1-6-1.html)
+- [Titanic](2025-1-6-1)
 
 ### Computer Science
 
-- [정보처리기능사](2025-1-6-2)
+- [정보처리기능사]
 
 
