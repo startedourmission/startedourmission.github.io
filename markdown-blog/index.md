@@ -6,17 +6,6 @@ My academic journey began at Inha Technical College, followed by research work a
 ### News!
 
 [Refining Crowd Pose Annotation Dataset for Accurate Multiple-Person Pose Estimations in Crowd Situations](https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12014926) is Accepted in Journal of The Korea Society of Computer and Information !
-### Programming for Beginner Documents
 
-**Languages**
+### [AI for Beginner Documents](https://startedourmission.github.io/HoML-Machine-Learning.html)
 
-[C](250108_C.md) | [C++](250108_cpp.md) | [Python](250108_Py.md) | [JAVA](250108_J.md) |
-
-### ML for Beginner Documents
-
-**Kaggle**
-- [Titanic](250106_DS.md)
-
-### Computer Science
-
-- [정보처리기능사](https://startedourmission.github.io/정보처리기능사.html)
