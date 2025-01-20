@@ -24,7 +24,7 @@
         appendChild   = 'appendChild',
         test          = 'test',
         // style and color templates
-        textShadow    = ';text-shadow:',
+        //textShadow    = ';text-shadow:',
         opacity       = 'opacity:.',
         _0px_0px      = ' 0px 0px ',
         _3px_0px_5    = '3px 0px 5',
