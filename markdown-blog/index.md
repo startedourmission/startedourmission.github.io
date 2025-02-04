@@ -7,8 +7,12 @@ My academic journey began at Inha Technical College, followed by research work a
 
 [Refining Crowd Pose Annotation Dataset for Accurate Multiple-Person Pose Estimations in Crowd Situations](https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12014926) is Accepted in Journal of The Korea Society of Computer and Information !
 
-## Documents
-### [ML for Beginner](https://startedourmission.github.io/homl-machine-learning.html)
+---
+# Documents
 
-### [DL for Beginner](https://startedourmission.github.io/homl-deep-learning.html)
+### Artificial Intelligence
+ - [Machine Learning for Beginner](https://startedourmission.github.io/homl-machine-learning.html)
+ - [Deep Learning for Beginner](https://startedourmission.github.io/homl-deep-learning.html)
 
+### Programming Language
+- [JAVA](https://startedourmission.github.io/java.html)
