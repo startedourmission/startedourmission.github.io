@@ -14,5 +14,4 @@ My academic journey began at Inha Technical College, followed by research work a
  - [Machine Learning for Beginner](https://startedourmission.github.io/homl-machine-learning.html)
  - [Deep Learning for Beginner](https://startedourmission.github.io/homl-deep-learning.html)
 
-### Programming Language
-- [Java](https://startedourmission.github.io/java.html)
+## Computer Science
