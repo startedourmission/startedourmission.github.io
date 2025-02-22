@@ -13,7 +13,6 @@ My academic journey began at Inha Technical College, followed by research work a
 ### Artificial Intelligence
  - [Machine Learning for Beginner](https://startedourmission.github.io/homl-machine-learning.html)
  - [Deep Learning for Beginner](https://startedourmission.github.io/homl-deep-learning.html)
-
 - [scikit-learn](https://startedourmission.github.io/scikitlearn.html)
 - [Matplotlib](https://startedourmission.github.io/matplotlib.html)
 - [Pandas](https://startedourmission.github.io/pandas.html)
