@@ -15,10 +15,7 @@ I'm Chajinwoo, a computer science researcher and artificial intelligence develop
 - [Numpy](https://startedourmission.github.io/numpy.html)
 
 ### Languages
-
-
 - [JAVA](https://startedourmission.github.io/java.html)
 
 ### Project Diary
-
 - [HuPo-Ant](https://startedourmission.github.io/hupoant.html)
