@@ -7,8 +7,8 @@ I'm Chajinwoo, a computer science researcher and artificial intelligence develop
 # Documents
 
 ### Artificial Intelligence
-- [Machine Learning for Beginner](https://startedourmission.github.io/machine-learning-textbook.html)
-- [Deep Learning for Beginner](https://startedourmission.github.io/deep-learning-textbook.html)
+- [Machine Learning Textbook](https://startedourmission.github.io/machine-learning-textbook.html)
+- [Deep Learning Textbook](https://startedourmission.github.io/deep-learning-textbook.html)
 - [scikit-learn](https://startedourmission.github.io/scikitlearn.html)
 - [Matplotlib](https://startedourmission.github.io/matplotlib.html)
 - [Pandas](https://startedourmission.github.io/pandas.html)
