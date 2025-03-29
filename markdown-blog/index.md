@@ -7,6 +7,7 @@ I'm Chajinwoo, a computer science researcher and artificial intelligence develop
 # Documents
 
 ### Artificial Intelligence
+
 - [Machine Learning Textbook](https://startedourmission.github.io/machine-learning-textbook.html)
 - [Deep Learning Textbook](https://startedourmission.github.io/deep-learning-textbook.html)
 - [scikit-learn](https://startedourmission.github.io/scikitlearn.html)
@@ -15,7 +16,9 @@ I'm Chajinwoo, a computer science researcher and artificial intelligence develop
 - [Numpy](https://startedourmission.github.io/numpy.html)
 
 ### Languages
+
 - [JAVA](https://startedourmission.github.io/java.html)
 
 ### Project Diary
+
 - [HuPo-Ant](https://startedourmission.github.io/hupoant.html)
