@@ -1,7 +1,6 @@
 
-컴퓨터 공부하고 글 쓰는 차진우입니다. 
-
 I'm Chajinwoo, a computer science researcher and artificial intelligence developer from South Korea. As an academy instructor, I focus on computer vision and deep learning research.
+
 
 ---
 # Documents
