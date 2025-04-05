@@ -1,5 +1,8 @@
-# Well-Known Ports
-
+---
+date: 2025-04-05
+tags: []
+aliases:
+---
 ## 포트 번호 범위
 - Well-Known Ports: 0 ~ 1023 (시스템 포트)
 - Registered Ports: 1024 ~ 49151 (사용자 포트)

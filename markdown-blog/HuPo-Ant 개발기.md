@@ -1,5 +1,8 @@
-# HuPo-Ant
-
+---
+date: 2025-04-05
+tags: []
+aliases:
+---
 
 [Paper](https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12014926) | [Github](https://github.com/InhaKMS/HuPo-AnT)
 

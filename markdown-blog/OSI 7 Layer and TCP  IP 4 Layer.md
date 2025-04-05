@@ -1,8 +1,8 @@
 ---
+date: 2025-04-05
+tags: []
 aliases:
-  - 250204 OSI 7 Layer and TCP / IP 4 Layer
 ---
-# OSI 7 Layer and TCP / IP 4 Layer
 
 네트워크 통신의 계층 구조가 중요한 이유는, 통신이라는 방대한 작업이 어떤 절차를 거쳐 수행되는지 나누어서 보기 좋다는 것입니다. 
 

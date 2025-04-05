@@ -1,4 +1,9 @@
-# Colaboratory에서 Kaggle 설정하기
+---
+date: 2025-04-05
+tags:
+  - 머신러닝
+aliases:
+---
 
 ## Google Colab 설정하기
 

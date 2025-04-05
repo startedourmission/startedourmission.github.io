@@ -1,4 +1,9 @@
-# scikit-learn
+---
+date: 2025-04-05
+tags:
+  - 머신러닝
+aliases:
+---
 
 ## 데이터셋 (datasets)
 ```python

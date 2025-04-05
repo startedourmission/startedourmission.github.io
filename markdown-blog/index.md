@@ -7,5 +7,5 @@ I'm Chajinwoo, a computer science researcher and artificial intelligence develop
 
 ### Artificial Intelligence
 
-- [[250103 Machine Learning Textbook|Machine Learning Textbook]]
-- [[250120 Deep Learning Textbook|Deep Learning Textbook]]
+- [[Machine Learning Textbook|Machine Learning Textbook]]
+- [[Deep Learning Textbook|Deep Learning Textbook]]

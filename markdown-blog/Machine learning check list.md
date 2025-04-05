@@ -1,4 +1,9 @@
-# Machine learning check list
+---
+date: 2025-04-05
+tags:
+  - 머신러닝
+aliases:
+---
 
 ### 1. 프로젝트 개요
 

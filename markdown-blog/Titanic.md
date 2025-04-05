@@ -1,4 +1,9 @@
-# Titanic
+---
+date: 2025-04-05
+tags:
+  - 머신러닝
+aliases:
+---
 
 **Kaggle  :** [Titanic - Machine Learning from Disaster](https://www.kaggle.com/c/titanic)
 

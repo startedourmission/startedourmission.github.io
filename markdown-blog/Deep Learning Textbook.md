@@ -1,4 +1,9 @@
-# Deep Learning Textbook
+---
+date: 2025-04-05
+tags:
+  - 딥러닝
+aliases:
+---
 
 본 문서는 Aurélien Géron, Hands-On Machine Learning, O'REILLY 를 바탕으로 작성되었습니다.
 ## 1. CNN 첫걸음 : Digit Recognizer
