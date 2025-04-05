@@ -1,8 +1,10 @@
 
-- email
+**Email**
+
 chajinwoo.chajinwoo@gmail.com
 
-* GitHub
+**GitHub**
+
 [https://github.com/startedourmission](https://github.com/startedourmission)
 
 
