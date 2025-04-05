@@ -23,7 +23,9 @@ let main argv =
 
     let blogArticleFiles =
         allMarkdownFiles
-        |> Array.filter (fun file -> Path.GetFileName(file) <> Config.frontPageMarkdownFileName)
+        |> Array.filter (fun file -> 
+            // 특수 파일 목록에 없는 파일만 블로그 글로 처리
+            not (Config.specialFiles |> List.contains (Path.GetFileName(file))))
 
     let listOfAllBlogArticles =
         blogArticleFiles

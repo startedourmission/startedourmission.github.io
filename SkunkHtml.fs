@@ -58,8 +58,11 @@
         let outputHtmlFilePath = Path.Combine(Config.outputDir, fileName + ".html")
         let markdownContent = File.ReadAllText(markdownFilePath)
         
-        // Obsidian 링크 변환 적용
-        let processedMarkdownContent = Obsidian.convertWikiLinks markdownContent
+        // 마크다운 전처리: YAML 프론트매터 제거 후 Obsidian 링크 변환
+        let processedMarkdownContent = 
+            markdownContent
+            |> Obsidian.removeYamlFrontMatter
+            |> Obsidian.convertWikiLinks
 
         let htmlContent =
             match isArticle markdownFilePath with
@@ -94,9 +97,12 @@
         let frontPageContentHtml =
             if File.Exists(frontPageMarkdownFilePath) then
                 printfn $"Processing {Path.GetFileName frontPageMarkdownFilePath} ->"
-                // 인덱스 페이지에도 Obsidian 링크 변환 적용
+                // 인덱스 페이지도 YAML 프론트매터 제거 및 Obsidian 링크 변환 적용
                 let markdownContent = File.ReadAllText(frontPageMarkdownFilePath)
-                let processedMarkdownContent = Obsidian.convertWikiLinks markdownContent
+                let processedMarkdownContent = 
+                    markdownContent
+                    |> Obsidian.removeYamlFrontMatter
+                    |> Obsidian.convertWikiLinks
                 Markdown.ToHtml(processedMarkdownContent)
             else
                 printfn $"Warning! File {Config.frontPageMarkdownFileName} does not exist! The main page will only contain blog entries, without a welcome message"

@@ -25,6 +25,9 @@ module Config =
     let outputScriptsDir = Path.Combine(outputDir, "scripts")
 
     let frontPageMarkdownFileName = "index.md"
+    
+    // 블로그 글로 처리하지 않을 특수 파일들
+    let specialFiles = [frontPageMarkdownFileName; "links.md"]
 
 module Disk =
     open System.IO
@@ -94,3 +97,8 @@ module Obsidian =
                 
                 $"[{linkText}]({urlFriendlyTarget}.html)"
         )
+        
+    // Obsidian 프로퍼티 영역 제거 (---로 둘러싸인 YAML 프론트매터)
+    let removeYamlFrontMatter (markdownContent: string) =
+        let frontMatterPattern = @"^\s*---\s*\n[\s\S]*?\n\s*---\s*\n"
+        Regex.Replace(markdownContent, frontMatterPattern, "")
