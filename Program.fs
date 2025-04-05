@@ -18,11 +18,12 @@ let main argv =
     let header = Disk.readFile (Path.Combine(Config.htmlDir, "header.html"))
     let footer = Disk.readFile (Path.Combine(Config.htmlDir, "footer.html"))
 
+    // frontPage를 제외한 모든 마크다운 파일을 블로그 글로 처리
     let allMarkdownFiles = Directory.GetFiles(Config.markdownDir, "*.md")
 
     let blogArticleFiles =
         allMarkdownFiles
-        |> Array.filter isArticle
+        |> Array.filter (fun file -> Path.GetFileName(file) <> Config.frontPageMarkdownFileName)
 
     let listOfAllBlogArticles =
         blogArticleFiles
@@ -40,11 +41,9 @@ let main argv =
         blogArticleFiles
         |> Array.iter (createPage header footer)
 
+    // 인덱스 페이지를 제외한 모든 마크다운을 처리하므로, 이제 그외 페이지 처리는 필요없음
     let createOtherPages () =
-        allMarkdownFiles
-        |> Array.filter (fun file -> not (isArticle file))
-        |> Array.filter (fun file -> Path.GetFileName(file) <> Config.frontPageMarkdownFileName)
-        |> Array.iter (createPage header footer)
+        () // 모든 마크다운 파일이 블로그 글로 처리되므로 필요없음
 
     createIndexPage header footer listOfAllBlogArticles
     createOtherPages ()

@@ -39,8 +39,9 @@
 
         headTemplate.Replace("{{title.html content}}", titleTemplate + titleSuffix)
 
+    // 모든 마크다운 파일을 블로그 글로 처리
     let isArticle (file: string) =
-        System.Char.IsDigit(Path.GetFileName(file).[0])
+        true  // 모든 .md 파일이 블로그 글로 처리됨
 
     let highlightingScript =
         Path.Combine(Config.htmlDir, "script_syntax_highlighting.html")
