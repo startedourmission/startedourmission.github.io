@@ -26,7 +26,7 @@ module Config =
 
     let frontPageMarkdownFileName = "index.md"
     
-    // 블로그 글로 처리하지 않을 특수 파일들
+    // 인덱스 페이지에 표시하지 않을 특수 파일들
     let specialFiles = [frontPageMarkdownFileName; "links.md"]
 
 module Disk =

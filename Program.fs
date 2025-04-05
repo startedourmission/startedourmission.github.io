@@ -21,14 +21,20 @@ let main argv =
     // frontPage를 제외한 모든 마크다운 파일을 블로그 글로 처리
     let allMarkdownFiles = Directory.GetFiles(Config.markdownDir, "*.md")
 
-    let blogArticleFiles =
+    // 인덱스 페이지의 글 목록에 표시될 파일들
+    let indexListFiles =
         allMarkdownFiles
         |> Array.filter (fun file -> 
-            // 특수 파일 목록에 없는 파일만 블로그 글로 처리
+            // 특수 파일 목록에 없는 파일만 목록에 표시
             not (Config.specialFiles |> List.contains (Path.GetFileName(file))))
+            
+    // 모든 블로그 글로 처리할 파일들 (인덱스 페이지 제외)
+    let blogArticleFiles =
+        allMarkdownFiles
+        |> Array.filter (fun file -> Path.GetFileName(file) <> Config.frontPageMarkdownFileName)
 
     let listOfAllBlogArticles =
-        blogArticleFiles
+        indexListFiles  // 특수 파일이 제외된 목록 사용
         |> Array.map (fun file ->
             // 파일명이 제목이자 표시명이 됨
             let filename = Path.GetFileNameWithoutExtension(file)
