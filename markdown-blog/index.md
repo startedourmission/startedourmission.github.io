@@ -1,11 +1,8 @@
 
-I'm Chajinwoo, a computer science researcher and artificial intelligence developer from South Korea. As an academy instructor, I focus on computer vision and deep learning research.
+**차진우**
+*컴퓨터 정보학을 전공하고 딥러닝과 영상처리를 연구했습니다. 학원에서 프로그래밍과 인공지능을 가르치는 일을 하고 이따금씩 작은 어플리케이션을 만드는 강사 겸 개발자입니다.
+
+
 
 
 ---
-# Documents
-
-### Artificial Intelligence
-
-- [[Machine Learning Textbook|Machine Learning Textbook]]
-- [[Deep Learning Textbook|Deep Learning Textbook]]
