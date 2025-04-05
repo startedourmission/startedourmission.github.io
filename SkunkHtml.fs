@@ -54,7 +54,9 @@
 
     let createPage (header: string) (footer: string) (markdownFilePath: string) =
         let title = extractTitleFromMarkdownFile(markdownFilePath)
-        let fileName = Url.toUrlFriendly title
+        // 제목에서도 앞부분 숫자 제거 후 URL 친화적으로 변환
+        let cleanTitle = Obsidian.removeLeadingNumbers title
+        let fileName = Url.toUrlFriendly cleanTitle
         let outputHtmlFilePath = Path.Combine(Config.outputDir, fileName + ".html")
         let markdownContent = File.ReadAllText(markdownFilePath)
         

@@ -29,7 +29,9 @@ let main argv =
         |> Array.map (fun file ->
             let date = Path.GetFileNameWithoutExtension(file)
             let title = extractTitleFromMarkdownFile(file)
-            let urlFriendlyTitle = Url.toUrlFriendly title
+            // 제목에서 앞부분 숫자 제거 후 URL 친화적으로 변환
+            let cleanTitle = Obsidian.removeLeadingNumbers title
+            let urlFriendlyTitle = Url.toUrlFriendly cleanTitle
             (date, title, $"{urlFriendlyTitle}.html"))
         |> Array.sortByDescending (fun (date, _, _) -> date)
         |> Array.toList
