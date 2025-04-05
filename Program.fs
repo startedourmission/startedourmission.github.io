@@ -28,12 +28,11 @@ let main argv =
     let listOfAllBlogArticles =
         blogArticleFiles
         |> Array.map (fun file ->
-            let date = Path.GetFileNameWithoutExtension(file)
-            let title = extractTitleFromMarkdownFile(file)
-            // 제목에서 앞부분 숫자 제거 후 URL 친화적으로 변환
-            let cleanTitle = Obsidian.removeLeadingNumbers title
-            let urlFriendlyTitle = Url.toUrlFriendly cleanTitle
-            (date, title, $"{urlFriendlyTitle}.html"))
+            // 파일명이 제목이자 표시명이 됨
+            let filename = Path.GetFileNameWithoutExtension(file)
+            // 파일명을 URL 친화적으로 변환
+            let urlFriendlyTitle = Url.toUrlFriendly filename
+            (filename, filename, $"{urlFriendlyTitle}.html"))
         |> Array.sortByDescending (fun (date, _, _) -> date)
         |> Array.toList
 

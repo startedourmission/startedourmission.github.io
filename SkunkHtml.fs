@@ -47,17 +47,14 @@
         Path.Combine(Config.htmlDir, "script_syntax_highlighting.html")
         |> Disk.readFile
 
+    // 파일명에서 제목 추출 (확장자 제외)
     let extractTitleFromMarkdownFile (markdownFilePath: string) =
-        File.ReadAllLines(markdownFilePath)
-        |> Array.tryFind _.StartsWith("# ")
-        |> Option.defaultValue "# No Title"
-        |> _.TrimStart('#').Trim()
+        Path.GetFileNameWithoutExtension(markdownFilePath)
 
     let createPage (header: string) (footer: string) (markdownFilePath: string) =
         let title = extractTitleFromMarkdownFile(markdownFilePath)
-        // 제목에서도 앞부분 숫자 제거 후 URL 친화적으로 변환
-        let cleanTitle = Obsidian.removeLeadingNumbers title
-        let fileName = Url.toUrlFriendly cleanTitle
+        // 파일명을 URL 친화적으로 변환
+        let fileName = Url.toUrlFriendly title
         let outputHtmlFilePath = Path.Combine(Config.outputDir, fileName + ".html")
         let markdownContent = File.ReadAllText(markdownFilePath)
         
@@ -69,9 +66,9 @@
             | false -> Markdown.ToHtml(processedMarkdownContent)
             | true ->
                 let date = Path.GetFileNameWithoutExtension(markdownFilePath)
-
-                let publicationDate =
-                    $"""<p class="publication-date">Published on <time datetime="{date}">{date}</time></p>"""
+                
+                // 파일명을 제목으로 사용하므로 별도의 표시는 필요없음
+                let publicationDate = ""
 
                 let giscusScript =
                     Path.Combine(Config.htmlDir, "script_giscus.html")

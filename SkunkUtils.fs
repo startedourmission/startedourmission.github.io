@@ -66,11 +66,6 @@ module Url =
 module Obsidian =
     open System.Text.RegularExpressions
 
-    // 파일명에서 앞부분 숫자 제거 (예: "250101 제목" -> "제목")
-    let removeLeadingNumbers (input: string) =
-        let pattern = @"^[\d\s-_]+"
-        Regex.Replace(input, pattern, "").Trim()
-
     // Obsidian 링크를 HTML 링크로 변환하는 함수
     let convertWikiLinks (markdownContent: string) =
         let wikiLinkPattern = @"\[\[(.*?)\]\]"
@@ -88,16 +83,14 @@ module Obsidian =
                 let target = parts.[0].Trim()
                 let displayText = parts.[1].Trim()
                 
-                // 파일명에서 앞부분 숫자 제거 후 URL 친화적으로 변환
-                let cleanTarget = removeLeadingNumbers target
-                let urlFriendlyTarget = Url.toUrlFriendly cleanTarget
+                // 파일명을 URL 친화적으로 변환
+                let urlFriendlyTarget = Url.toUrlFriendly target
                 
                 $"[{displayText}]({urlFriendlyTarget}.html)"
             else
                 // 파이프가 없으면 링크 텍스트가 대상이자 표시 텍스트
-                // 파일명에서 앞부분 숫자 제거 후 URL 친화적으로 변환
-                let cleanLinkText = removeLeadingNumbers linkText
-                let urlFriendlyTarget = Url.toUrlFriendly cleanLinkText
+                // 파일명을 URL 친화적으로 변환
+                let urlFriendlyTarget = Url.toUrlFriendly linkText
                 
                 $"[{linkText}]({urlFriendlyTarget}.html)"
         )
