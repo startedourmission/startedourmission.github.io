@@ -1,4 +1,4 @@
-# Environment setting for Machine Learning
+# Colaboratory에서 Kaggle 설정하기
 
 ## Google Colab 설정하기
 

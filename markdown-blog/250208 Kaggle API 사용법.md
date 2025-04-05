@@ -1,11 +1,13 @@
-# Kaggle API
-Kaggle 라이브러리는 Kaggle 플랫폼과 상호작용하기 위한 Python 패키지로, 데이터셋 다운로드, 대회 정보 조회, 제출 파일 업로드 등을 자동화할 수 있습니다. 아래는 Kaggle 라이브러리의 주요 구조와 사용법입니다.
+# Kaggle API 사용법
+
+Kaggle은 문제 풀이와 대회 코드 제출을 위한 자체 노트북 환경을 제공합니다. 하지만 로컬 환경이나 Colaboratory 등 다양한 환경에서 캐글의 기능을 사용할 수 있는 API를 제공합니다.
 
 ---
 
 ## 1. 설치 및 설정
 ### 설치
-Kaggle 라이브러리는 pip를 통해 설치할 수 있습니다:
+Kaggle 라이브러리는 pip를 통해 설치할 수 있습니다.
+
 ```bash
 pip install kaggle
 ```
