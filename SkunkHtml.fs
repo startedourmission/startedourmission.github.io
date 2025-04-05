@@ -98,7 +98,7 @@
 
         let listOfAllBlogArticlesContentHtml =
             listOfAllBlogArticles
-            |> List.map (fun (date, title, link) -> $"""<li>{date}: <a href="{link}">{title}</a></li>""")
+            |> List.map (fun (date, _, link) -> $"""<li><a href="{link}">{date}</a></li>""")
             |> String.concat "\n"
 
         let content =
