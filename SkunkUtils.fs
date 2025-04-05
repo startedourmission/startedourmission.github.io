@@ -62,3 +62,30 @@ module Url =
         input.ToLowerInvariant()
         |> fun text -> Regex.Replace(text, @"[^\w\s]", "") // Remove all non-alphanumeric characters
         |> fun text -> Regex.Replace(text, @"\s+", "-") // Replace spaces with hyphens
+
+module Obsidian =
+    open System.Text.RegularExpressions
+
+    // Obsidian 링크를 HTML 링크로 변환하는 함수
+    let convertWikiLinks (markdownContent: string) =
+        let wikiLinkPattern = @"\[\[(.*?)\]\]"
+        
+        // 정규식으로 Obsidian 스타일 링크 찾기
+        let regex = Regex(wikiLinkPattern)
+        
+        // 각 매치를 HTML 링크로 변환
+        regex.Replace(markdownContent, fun m ->
+            let linkText = m.Groups.[1].Value
+            
+            // 링크 텍스트에 파이프(|)가 있으면 표시 텍스트와 대상을 분리
+            if linkText.Contains("|") then
+                let parts = linkText.Split('|')
+                let target = parts.[0].Trim()
+                let displayText = parts.[1].Trim()
+                let urlFriendlyTarget = Url.toUrlFriendly target
+                $"[{displayText}]({urlFriendlyTarget}.html)"
+            else
+                // 파이프가 없으면 링크 텍스트가 대상이자 표시 텍스트
+                let urlFriendlyTarget = Url.toUrlFriendly linkText
+                $"[{linkText}]({urlFriendlyTarget}.html)"
+        )

@@ -1,3 +1,7 @@
+---
+aliases:
+  - Machine Learning Textbook
+---
 # Machine Learning Textbook
 
 본 문서는 Aurélien Géron, Hands-On Machine Learning, O'REILLY 를 바탕으로 작성되었습니다.

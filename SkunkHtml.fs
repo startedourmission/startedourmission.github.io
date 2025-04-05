@@ -57,10 +57,13 @@
         let fileName = Url.toUrlFriendly title
         let outputHtmlFilePath = Path.Combine(Config.outputDir, fileName + ".html")
         let markdownContent = File.ReadAllText(markdownFilePath)
+        
+        // Obsidian 링크 변환 적용
+        let processedMarkdownContent = Obsidian.convertWikiLinks markdownContent
 
         let htmlContent =
             match isArticle markdownFilePath with
-            | false -> Markdown.ToHtml(markdownContent)
+            | false -> Markdown.ToHtml(processedMarkdownContent)
             | true ->
                 let date = Path.GetFileNameWithoutExtension(markdownFilePath)
 
@@ -72,7 +75,7 @@
                     |> Disk.readFile
 
                 let mainHtmlContent = Markdown.ToHtml(
-                    markdownContent
+                    processedMarkdownContent
                     + "\n\n"
                     + publicationDate
                     + "\n\n"
@@ -91,7 +94,10 @@
         let frontPageContentHtml =
             if File.Exists(frontPageMarkdownFilePath) then
                 printfn $"Processing {Path.GetFileName frontPageMarkdownFilePath} ->"
-                Markdown.ToHtml(File.ReadAllText(frontPageMarkdownFilePath))
+                // 인덱스 페이지에도 Obsidian 링크 변환 적용
+                let markdownContent = File.ReadAllText(frontPageMarkdownFilePath)
+                let processedMarkdownContent = Obsidian.convertWikiLinks markdownContent
+                Markdown.ToHtml(processedMarkdownContent)
             else
                 printfn $"Warning! File {Config.frontPageMarkdownFileName} does not exist! The main page will only contain blog entries, without a welcome message"
                 ""

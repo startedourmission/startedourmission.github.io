@@ -7,6 +7,7 @@ I'm Chajinwoo, a computer science researcher and artificial intelligence develop
 
 ### Artificial Intelligence
 
+- [[250103 Machine Learning Textbook|Machine Learning Textbook]]
 - [Machine Learning Textbook](https://startedourmission.github.io/machine-learning-textbook.html)
 - [Deep Learning Textbook](https://startedourmission.github.io/deep-learning-textbook.html)
 - [scikit-learn](https://startedourmission.github.io/scikitlearn.html)
