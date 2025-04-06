@@ -7,7 +7,7 @@ aliases:
 
 ## Google Colab 설정하기
 
-Colab은 구글의 GPU/TPU 자원을 사용할 수 있는 클라우드 서비스와 Jupyter Notebook 형식의 대화형 인터페이스를 제공하는 개발 환경입니다. 
+Colab은 구글의 GPU/TPU 자원을 사용할 수 있는 클라우드 서비스와 Jupyter Notebook 형식의 대화형 인터페이스를 제공하는 개발 환경이다. 
 
 ### Colab의 장점
 * GPU/TPU 무료 사용 가능
@@ -22,7 +22,7 @@ Colab은 구글의 GPU/TPU 자원을 사용할 수 있는 클라우드 서비스
 
 ## Kaggle 설정하기
 
-Kaggle은 데이터 사이언스 경진대회 플랫폼이자 풍부한 데이터셋과 코드를 공유하는 커뮤니티입니다.
+Kaggle은 데이터 사이언스 경진대회 플랫폼이자 풍부한 데이터셋과 코드를 공유하는 커뮤니티이다.
 
 ### Kaggle 시작하기
 4. [Kaggle](https://www.kaggle.com/) 계정 생성
@@ -33,7 +33,7 @@ Kaggle은 데이터 사이언스 경진대회 플랫폼이자 풍부한 데이�
 
 ### Kaggle API
 
->  Colab에서 리눅스 쉘 명령어를 사용하기 위해서는 ! 를 사용합니다.
+>  Colab에서 리눅스 쉘 명령어를 사용하기 위해서는 ! 를 사용한다.
 
 ```python
 # Google Colab에서 Kaggle API 설정하기
@@ -55,7 +55,7 @@ Kaggle은 데이터 사이언스 경진대회 플랫폼이자 풍부한 데이�
 
 ## Git/Github 설정하기
 
-Git은 버전 관리 시스템이며, Github는 Git을 사용하는 프로젝트 호스팅 플랫폼입니다.
+Git은 버전 관리 시스템이며, Github는 Git을 사용하는 프로젝트 호스팅 플랫폼이다.
 
 ### Git 설치 및 설정
 7. [Git 공식 사이트](https://git-scm.com/)에서 설치 파일 다운로드
@@ -76,7 +76,3 @@ git add .  # 변경사항 스테이징
 git commit -m "커밋 메시지"  # 변경사항 커밋
 git push origin main  # 원격 저장소에 푸시
 ```
-
-
-이렇게 기본적인 개발 환경을 설정하면 머신러닝 학습을 시작할 준비가 완료됩니다. 다음 장에서는 본격적으로 머신러닝의 기초 개념부터 시작하겠습니다.
-

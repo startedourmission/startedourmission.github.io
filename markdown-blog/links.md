@@ -1,7 +1,7 @@
 
 **Email**
 
-chajinwoo.chajinwoo@gmail.com
+[chajinwoo.chajinwoo@gmail.com](mailto:chajinwoo.chajinwoo@gmail.com)
 
 **GitHub**
 
