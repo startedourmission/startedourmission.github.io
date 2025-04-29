@@ -4,7 +4,6 @@ tags:
   - 머신러닝
 aliases:
 ---
-
 ## Google Colab 설정하기
 
 Colab은 구글의 GPU/TPU 자원을 사용할 수 있는 클라우드 서비스와 Jupyter Notebook 형식의 대화형 인터페이스를 제공하는 개발 환경이다. 

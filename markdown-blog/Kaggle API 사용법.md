@@ -11,14 +11,14 @@ Kaggle은 문제 풀이와 대회 코드 제출을 위한 자체 노트북 환�
 
 ## 1. 설치 및 설정
 ### 설치
-Kaggle 라이브러리는 pip를 통해 설치할 수 있습니다.
+Kaggle 라이브러리는 pip를 통해 설치할 수 있다.
 
 ```bash
 pip install kaggle
 ```
 
 ### API 토큰 설정
-1. Kaggle 계정에서 API 토큰(`kaggle.json`)을 생성합니다.
+1. Kaggle 계정에서 API 토큰(`kaggle.json`)을 생성한다.
 2. 해당 파일을 다음 경로에 저장합니다:
    - Windows: `C:\Users\<username>\.kaggle\kaggle.json`
    - Mac/Linux: `~/.kaggle/kaggle.json`
