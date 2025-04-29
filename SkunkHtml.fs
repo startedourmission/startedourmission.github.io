@@ -70,17 +70,16 @@
             | true ->
                 let date = Path.GetFileNameWithoutExtension(markdownFilePath)
                 
-                // 파일명을 제목으로 사용하므로 별도의 표시는 필요없음
-                let publicationDate = ""
+                // 파일명을 게시글 상단에 표시
+                let titleDisplay = $"<h1 class=\"post-title\">{date}</h1>"
 
                 let giscusScript =
                     Path.Combine(Config.htmlDir, "script_giscus.html")
                     |> Disk.readFile
 
-                let mainHtmlContent = Markdown.ToHtml(
+                let mainHtmlContent = titleDisplay + Markdown.ToHtml(
                     processedMarkdownContent
                     + "\n\n"
-                    + publicationDate
                     + "\n\n"
                 )
                 mainHtmlContent  + giscusScript
