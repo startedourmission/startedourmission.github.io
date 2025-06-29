@@ -90,7 +90,7 @@
         printfn $"Processing {Path.GetFileName markdownFilePath} ->"
         Disk.writeFile outputHtmlFilePath finalHtmlContent
 
-    let createIndexPage (header: string) (footer: string) (listOfAllBlogArticles: (string * string * string) list) =
+    let createIndexPage (header: string) (footer: string) (listOfAllBlogArticles: (string * string * string) list) (paperArticles: (string * string * string) list) =
         let frontPageMarkdownFilePath = Path.Combine(Config.markdownDir, Config.frontPageMarkdownFileName)
 
         let frontPageContentHtml =
@@ -112,15 +112,28 @@
             |> List.map (fun (date, _, link) -> $"""<li><a href="{link}">{date}</a></li>""")
             |> String.concat "\n"
 
+        let paperArticlesContentHtml =
+            paperArticles
+            |> List.map (fun (date, _, link) -> $"""<li><a href="{link}">{date}</a></li>""")
+            |> String.concat "\n"
+
         let content =
             $"""
         {frontPageContentHtml}
-        <section class="publications">
-            <h1>Posts</h1>
-            <ul>
-            {listOfAllBlogArticlesContentHtml}
-            </ul>
-        </section>
+        <div class="publications-container">
+            <section class="publications papers">
+                <h1>Papers</h1>
+                <ul>
+                {paperArticlesContentHtml}
+                </ul>
+            </section>
+            <section class="publications posts">
+                <h1>Posts</h1>
+                <ul>
+                {listOfAllBlogArticlesContentHtml}
+                </ul>
+            </section>
+        </div>
         """
 
         let frontPageHtmlContent = generateFinalHtml (head "") header footer content highlightingScript

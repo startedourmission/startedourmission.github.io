@@ -98,6 +98,29 @@ module Obsidian =
                 $"[{linkText}]({urlFriendlyTarget}.html)"
         )
         
+    // YAML 프론트매터에서 태그 추출
+    let extractTags (markdownContent: string) =
+        let frontMatterPattern = @"^\s*---\s*\n([\s\S]*?)\n\s*---\s*\n"
+        let frontMatterMatch = Regex.Match(markdownContent, frontMatterPattern)
+        
+        if frontMatterMatch.Success then
+            let yamlContent = frontMatterMatch.Groups.[1].Value
+            let tagPattern = @"tags:\s*\n((?:\s*-\s*[^\n]+\n?)*)"
+            let tagMatch = Regex.Match(yamlContent, tagPattern)
+            
+            if tagMatch.Success then
+                let tagLines = tagMatch.Groups.[1].Value
+                let individualTagPattern = @"-\s*([^\n]+)"
+                let tags = Regex.Matches(tagLines, individualTagPattern)
+                           |> Seq.cast<Match>
+                           |> Seq.map (fun m -> m.Groups.[1].Value.Trim())
+                           |> Seq.toList
+                tags
+            else
+                []
+        else
+            []
+    
     // Obsidian 프로퍼티 영역 제거 (---로 둘러싸인 YAML 프론트매터)
     let removeYamlFrontMatter (markdownContent: string) =
         let frontMatterPattern = @"^\s*---\s*\n[\s\S]*?\n\s*---\s*\n"

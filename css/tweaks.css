@@ -81,3 +81,48 @@ table td[align="right"],
 table th[align="right"] {
     text-align: right !important;
 }
+
+/* Publications container styling */
+.publications-container {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.publications {
+    flex: 1;
+    margin-bottom: 2rem;
+}
+
+.publications h1 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.publications ul {
+    list-style: none;
+    padding: 0;
+}
+
+.publications li {
+    margin-bottom: 0.5rem;
+}
+
+.publications a {
+    display: block;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--color-bg-secondary);
+    text-decoration: none;
+}
+
+.publications a:hover {
+    background-color: var(--color-accent);
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .publications-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}

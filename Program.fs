@@ -44,6 +44,20 @@ let main argv =
         |> Array.sortByDescending (fun (date, _, _) -> date)
         |> Array.toList
 
+    let paperArticles =
+        indexListFiles
+        |> Array.choose (fun file ->
+            let content = File.ReadAllText(file)
+            let tags = Obsidian.extractTags content
+            if tags |> List.contains "논문" then
+                let filename = Path.GetFileNameWithoutExtension(file)
+                let urlFriendlyTitle = Url.toUrlFriendly filename
+                Some (filename, filename, $"{urlFriendlyTitle}.html")
+            else
+                None)
+        |> Array.sortByDescending (fun (date, _, _) -> date)
+        |> Array.toList
+
     let createBlogArticlePages () =
         blogArticleFiles
         |> Array.iter (createPage header footer)
@@ -52,7 +66,7 @@ let main argv =
     let createOtherPages () =
         () // 모든 마크다운 파일이 블로그 글로 처리되므로 필요없음
 
-    createIndexPage header footer listOfAllBlogArticles
+    createIndexPage header footer listOfAllBlogArticles paperArticles
     createOtherPages ()
     createBlogArticlePages ()
 
