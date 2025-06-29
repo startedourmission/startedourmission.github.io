@@ -92,7 +92,9 @@ section {
 
 section img,
 article img {
-    max-width: 100%;
+    max-width: 600px;
+    width: 100%;
+    height: auto;
 }
 
 section pre {
@@ -370,7 +372,9 @@ figure {
 }
 
 figure img {
-    max-width: 100%;
+    max-width: 600px;
+    width: 100%;
+    height: auto;
 }
 
 figure figcaption {

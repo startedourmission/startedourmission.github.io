@@ -25,7 +25,9 @@ Attention(Q,K,V)=softmax(QKTdk)VAttention(Q,K,V)=softmax(dk​​QKT​)V
 
 스케일링 인자 dkdk​​는 내적이 너무 커지는 것을 방지하여 소프트맥스 함수가 극도로 작은 기울기를 갖는 영역으로 밀려나는 것을 막아 학습을 방해하지 않도록 합니다.
 
-![Scaled Dot-Product Attention](https://paper-assets.alphaxiv.org/figures/1706.03762v7/ModalNet-19.png "Scaled Dot-Product Attention")_그림 2: 쿼리, 키, 값에서 행렬 곱셈, 스케일링, 마스킹(선택 사항), 소프트맥스, 최종 행렬 곱셈을 거쳐 흐름을 보여주는 스케일드 닷-프로덕트 어텐션 메커니즘._
+![Scaled Dot-Product Attention](https://paper-assets.alphaxiv.org/figures/1706.03762v7/ModalNet-19.png "Scaled Dot-Product Attention")
+
+_그림 2: 쿼리, 키, 값에서 행렬 곱셈, 스케일링, 마스킹(선택 사항), 소프트맥스, 최종 행렬 곱셈을 거쳐 흐름을 보여주는 스케일드 닷-프로덕트 어텐션 메커니즘._
 
 이 기본적인 어텐션 함수를 기반으로 트랜스포머는 여러 어텐션 함수를 병렬로 수행하는 멀티 헤드 어텐션을 도입합니다. dmodeldmodel​ 차원의 키, 값, 쿼리를 사용하는 단일 어텐션 함수 대신, 멀티 헤드 어텐션은 이러한 입력을 hh번 다른 학습된 선형 투영(linear projections)을 통해 더 낮은 차원의 공간으로 투영합니다. 그런 다음 각 투영된 버전에 어텐션 함수를 병렬로 적용하고, 결과는 연결(concatenated)되어 다시 투영됩니다.
 $$
