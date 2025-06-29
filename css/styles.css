@@ -92,8 +92,8 @@ section {
 
 section img,
 article img {
-    max-width: 600px;
-    width: 100%;
+    max-width: 300px;
+    width: 70%;
     height: auto;
 }
 
@@ -372,8 +372,8 @@ figure {
 }
 
 figure img {
-    max-width: 600px;
-    width: 100%;
+    max-width: 300px;
+    width: 70%;
     height: auto;
 }
 

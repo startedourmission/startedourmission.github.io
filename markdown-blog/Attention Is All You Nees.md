@@ -5,6 +5,11 @@ tags:
   - 딥러닝
 aliases:
 ---
+*   **발표연도:** 2017 (arXiv20230802 ver)
+*   **저널:** 31st Conference on Neural Information Processing Systems (NIPS 2017)
+*   **저자:** Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Illia Polosukhin, Łukasz Kaiser
+*   **기관 및 대학:** Google Brain, Google Research, University of Toronto
+
 ## 배경 및 동기
 
 "Attention Is All You Need"에서 소개된 트랜스포머 아키텍처는 시퀀스-투-시퀀스 모델링의 근본적인 한계를 해결하기 위해 등장했습니다. 이 연구 이전에 이 분야는 순환 신경망(RNN)과 LSTM 및 GRU와 같은 변형 모델들이 지배적이었는데, 이들은 토큰별로 시퀀스를 순차적으로 처리했습니다. 이러한 모델들은 기계 번역과 같은 작업에서 강력한 성능을 달성했지만, 확장성과 훈련 효율성을 제한하는 내재적인 계산 병목 현상으로 어려움을 겪었습니다.
