@@ -3,6 +3,7 @@ date: 2025-06-30
 tags:
   - 논문
   - 딥러닝
+  - Seq2Seq
 aliases:
 ---
 *   **발표연도:** 2017 (arXiv20230802 ver)
