@@ -93,9 +93,6 @@ table th[align="right"] {
     flex: 1;
 }
 
-.publications h1 {
-    margin-bottom: 1.5rem;
-}
 
 /* Mobile responsive */
 @media (max-width: 768px) {
