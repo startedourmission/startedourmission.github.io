@@ -26,9 +26,118 @@ class DerivedClass : access_specifier BaseClass {
 
 여기서 `access_specifier`는 `public`, `protected`, `private` 중 하나가 될 수 있으며, 이는 기본 클래스의 멤버들이 파생 클래스에서 어떻게 접근될지 결정합니다.
 
-*   **`public` 상속:** 기본 클래스의 `public` 멤버는 `public`으로, `protected` 멤버는 `protected`로 파생 클래스에 상속됩니다. `private` 멤버는 직접 접근할 수 없습니다.
-*   **`protected` 상속:** 기본 클래스의 `public` 및 `protected` 멤버는 `protected`로 파생 클래스에 상속됩니다. `private` 멤버는 직접 접근할 수 없습니다.
-*   **`private` 상속:** 기본 클래스의 `public` 및 `protected` 멤버는 `private`로 파생 클래스에 상속됩니다. `private` 멤버는 직접 접근할 수 없습니다.
+## 상속 접근 지정자 (Access Specifiers)
+
+기본 클래스의 멤버(public, protected, private)가 파생 클래스에서 어떤 접근 권한을 가지게 될지 결정합니다.
+
+### 1. `public` 상속
+
+*   기본 클래스의 `public` 멤버는 파생 클래스에서 `public`으로 상속됩니다.
+*   기본 클래스의 `protected` 멤버는 파생 클래스에서 `protected`로 상속됩니다.
+*   기본 클래스의 `private` 멤버는 파생 클래스에서 직접 접근할 수 없습니다.
+*   가장 일반적인 상속 방식으로, 기본 클래스의 인터페이스를 그대로 유지하면서 기능을 확장할 때 사용됩니다.
+
+```cpp
+#include <iostream>
+
+class BasePublic {
+public:
+    int public_var;
+protected:
+    int protected_var;
+private:
+    int private_var;
+};
+
+class DerivedPublic : public BasePublic {
+public:
+    void access_members() {
+        public_var = 1;    // public 접근 가능
+        protected_var = 2; // protected 접근 가능
+        // private_var = 3; // private 접근 불가 (컴파일 오류)
+        std::cout << "DerivedPublic: public_var = " << public_var << ", protected_var = " << protected_var << std::endl;
+    }
+};
+
+int main() {
+    DerivedPublic dp;
+    dp.public_var = 10; // 외부에서 public_var 접근 가능
+    // dp.protected_var = 20; // 외부에서 protected_var 접근 불가
+    // dp.private_var = 30; // 외부에서 private_var 접근 불가
+    dp.access_members();
+    return 0;
+}
+```
+
+### 2. `protected` 상속
+
+*   기본 클래스의 `public` 및 `protected` 멤버는 파생 클래스에서 `protected`로 상속됩니다.
+*   기본 클래스의 `private` 멤버는 파생 클래스에서 직접 접근할 수 없습니다.
+*   파생 클래스 내부에서는 접근 가능하지만, 파생 클래스의 객체를 통해서는 외부에서 접근할 수 없게 됩니다.
+
+```cpp
+#include <iostream>
+
+class BaseProtected {
+public:
+    int public_var;
+protected:
+    int protected_var;
+private:
+    int private_var;
+};
+
+class DerivedProtected : protected BaseProtected {
+public:
+    void access_members() {
+        public_var = 1;    // protected로 상속되어 접근 가능
+        protected_var = 2; // protected 접근 가능
+        std::cout << "DerivedProtected: public_var = " << public_var << ", protected_var = " << protected_var << std::endl;
+    }
+};
+
+int main() {
+    DerivedProtected dp;
+    // dp.public_var = 10; // 외부에서 public_var 접근 불가 (protected로 상속됨)
+    dp.access_members();
+    return 0;
+}
+```
+
+### 3. `private` 상속
+
+*   기본 클래스의 `public` 및 `protected` 멤버는 파생 클래스에서 `private`로 상속됩니다.
+*   기본 클래스의 `private` 멤버는 파생 클래스에서 직접 접근할 수 없습니다.
+*   파생 클래스 내부에서만 기본 클래스의 멤버에 접근할 수 있으며, 파생 클래스의 객체를 통해서는 외부에서 전혀 접근할 수 없게 됩니다. 구현 상속(Implementation Inheritance)에 주로 사용됩니다.
+
+```cpp
+#include <iostream>
+
+class BasePrivate {
+public:
+    int public_var;
+protected:
+    int protected_var;
+private:
+    int private_var;
+};
+
+class DerivedPrivate : private BasePrivate {
+public:
+    void access_members() {
+        public_var = 1;    // private로 상속되어 접근 가능
+        protected_var = 2; // private 접근 가능
+        std::cout << "DerivedPrivate: public_var = " << public_var << ", protected_var = " << protected_var << std::endl;
+    }
+};
+
+int main() {
+    DerivedPrivate dp;
+    // dp.public_var = 10; // 외부에서 public_var 접근 불가 (private로 상속됨)
+    dp.access_members();
+    return 0;
+}
+```
 
 **상속의 장점:**
 
@@ -50,3 +159,35 @@ class DerivedClass : access_specifier BaseClass {
 **다중 상속 (Multiple Inheritance):**
 
 C++은 여러 개의 기본 클래스로부터 상속받는 다중 상속을 지원합니다. 하지만 다중 상속은 "다이아몬드 문제(Diamond Problem)"와 같은 복잡성을 야기할 수 있으며, 이는 가상 상속(virtual inheritance)을 통해 해결될 수 있습니다.
+
+---
+# C++ 가이드북 목차
+
+# 개요
+
+C++는 C 언어에서 확장된 프로그래밍 언어로, 객체 지향 프로그래밍(OOP) 패러다임을 지원하는 것이 가장 큰 특징입니다. Bjarne Stroustrup이 1979년 C 언어에 객체 지향 개념을 추가하여 "C with Classes"라는 이름으로 개발을 시작했으며, 1983년에 C++로 이름이 변경되었습니다. C++는 절차 지향, 객체 지향, 제네릭 프로그래밍 등 다양한 프로그래밍 스타일을 지원하는 다중 패러다임 언어입니다.
+
+C++는 운영 체제, 게임 개발, 임베디드 시스템, 고성능 애플리케이션 등 다양한 분야에서 널리 사용됩니다. C++는 시스템 자원과 메모리에 대한 높은 수준의 제어를 제공하며, 빠른 실행 속도를 자랑합니다.
+
+# 본문
+
+## [[C++ - C 언어와의 차이점]]
+
+## 객체 지향 프로그래밍 (OOP)
+### [[C++ - 클래스와 객체]]
+### [[C++ - 상속]]
+### [[C++ - 다형성]]
+### [[C++ - 캡슐화]]
+### [[C++ - 추상화]]
+
+## 메모리 관리
+### [[C++ - 동적 메모리 할당]]
+### [[C++ - 스마트 포인터]]
+
+## [[C++ - 템플릿]]
+
+## [[C++ - 예외 처리]]
+
+## [[C++ - 표준 라이브러리 (STL)]]
+
+## [[C++ - 현대 C++]]

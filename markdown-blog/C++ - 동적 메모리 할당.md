@@ -76,6 +76,73 @@ int main() {
 
 ```
 
+## `new`와 `delete`의 동작 방식
+
+`new`와 `delete` 연산자는 단순히 메모리를 할당하고 해제하는 `malloc`/`free`와 달리, 객체의 생성자와 소멸자를 호출하는 추가적인 역할을 수행합니다.
+
+*   **`new` 연산자**: 메모리를 할당한 후, 해당 메모리 공간에 객체의 **생성자(Constructor)**를 호출하여 객체를 초기화합니다. 만약 메모리 할당에 실패하면 `std::bad_alloc` 예외를 발생시킵니다.
+*   **`delete` 연산자**: 객체의 **소멸자(Destructor)**를 호출한 후, 해당 객체가 사용하던 메모리를 해제합니다.
+
+```cpp
+#include <iostream>
+
+class MyObject {
+public:
+    MyObject() { std::cout << "MyObject 생성자 호출" << std::endl; }
+    ~MyObject() { std::cout << "MyObject 소멸자 호출" << std::endl; }
+};
+
+int main() {
+    std::cout << "객체 생성 전" << std::endl;
+    MyObject* obj = new MyObject(); // new 호출 시 생성자 호출
+    std::cout << "객체 생성 후" << std::endl;
+    delete obj; // delete 호출 시 소멸자 호출
+    std::cout << "객체 소멸 후" << std::endl;
+
+    // 배열의 경우
+    std::cout << "\n배열 객체 생성 전" << std::endl;
+    MyObject* arr = new MyObject[3]; // 각 요소에 대해 생성자 호출
+    std::cout << "배열 객체 생성 후" << std::endl;
+    delete[] arr; // 각 요소에 대해 소멸자 호출
+    std::cout << "배열 객체 소멸 후" << std::endl;
+
+    return 0;
+}
+```
+
+## `new` 연산자의 예외 처리 (`std::nothrow`)
+
+기본적으로 `new` 연산자는 메모리 할당에 실패하면 `std::bad_alloc` 예외를 발생시킵니다. 하지만 `std::nothrow`를 사용하면 예외 대신 `nullptr`를 반환하도록 할 수 있습니다. 이는 예외 처리를 사용하지 않는 환경이나, 메모리 할당 실패를 `nullptr` 검사를 통해 처리하고자 할 때 유용합니다.
+
+```cpp
+#include <iostream>
+#include <new> // std::nothrow를 위해 필요
+
+int main() {
+    int* ptr = new (std::nothrow) int; // 예외 대신 nullptr 반환
+
+    if (ptr == nullptr) {
+        std::cout << "메모리 할당 실패! (std::nothrow 사용)" << std::endl;
+    } else {
+        *ptr = 100;
+        std::cout << "할당된 값: " << *ptr << std::endl;
+        delete ptr;
+    }
+
+    // 매우 큰 배열 할당 시도 (실패 가능성 높음)
+    long long* large_array = new (std::nothrow) long long[100000000000LL]; // 의도적으로 큰 값
+
+    if (large_array == nullptr) {
+        std::cout << "매우 큰 배열 메모리 할당 실패!" << std::endl;
+    } else {
+        std::cout << "매우 큰 배열 메모리 할당 성공!" << std::endl;
+        delete[] large_array;
+    }
+
+    return 0;
+}
+```
+
 ### 3. `new`와 `delete` 사용 시 주의사항
 
 *   **메모리 누수(Memory Leak):** `new`로 할당한 메모리는 반드시 `delete` 또는 `delete[]`로 해제해야 합니다. 해제하지 않으면 프로그램이 종료될 때까지 해당 메모리가 운영체제로 반환되지 않아 메모리 누수가 발생합니다. 장시간 실행되는 프로그램에서는 심각한 문제가 될 수 있습니다.
@@ -116,3 +183,34 @@ int main() {
 }
 
 ```
+---
+# C++ 가이드북 목차
+
+# 개요
+
+C++는 C 언어에서 확장된 프로그래밍 언어로, 객체 지향 프로그래밍(OOP) 패러다임을 지원하는 것이 가장 큰 특징입니다. Bjarne Stroustrup이 1979년 C 언어에 객체 지향 개념을 추가하여 "C with Classes"라는 이름으로 개발을 시작했으며, 1983년에 C++로 이름이 변경되었습니다. C++는 절차 지향, 객체 지향, 제네릭 프로그래밍 등 다양한 프로그래밍 스타일을 지원하는 다중 패러다임 언어입니다.
+
+C++는 운영 체제, 게임 개발, 임베디드 시스템, 고성능 애플리케이션 등 다양한 분야에서 널리 사용됩니다. C++는 시스템 자원과 메모리에 대한 높은 수준의 제어를 제공하며, 빠른 실행 속도를 자랑합니다.
+
+# 본문
+
+## [[C++ - C 언어와의 차이점]]
+
+## 객체 지향 프로그래밍 (OOP)
+### [[C++ - 클래스와 객체]]
+### [[C++ - 상속]]
+### [[C++ - 다형성]]
+### [[C++ - 캡슐화]]
+### [[C++ - 추상화]]
+
+## 메모리 관리
+### [[C++ - 동적 메모리 할당]]
+### [[C++ - 스마트 포인터]]
+
+## [[C++ - 템플릿]]
+
+## [[C++ - 예외 처리]]
+
+## [[C++ - 표준 라이브러리 (STL)]]
+
+## [[C++ - 현대 C++]]

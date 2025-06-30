@@ -60,3 +60,135 @@ int main() {
 
 **사용 목적:**
 공용체는 주로 메모리를 절약해야 할 때, 또는 여러 데이터 타입 중 **하나만** 사용될 것이 확실할 때 유용하게 사용됩니다. 예를 들어, 특정 상황에 따라 정수, 실수, 문자열 중 하나의 데이터만 저장해야 하는 경우에 활용될 수 있습니다. 또한, 서로 다른 데이터 타입으로 동일한 메모리 영역을 해석해야 할 때도 사용됩니다.
+
+## 공용체의 활용 사례
+
+공용체는 특히 다음과 같은 상황에서 유용하게 사용될 수 있습니다.
+
+### 1. 다양한 타입의 데이터를 저장하는 단일 변수
+
+어떤 변수가 여러 타입의 값을 가질 수 있지만, 특정 시점에는 오직 하나의 타입만 유효한 경우에 공용체를 사용하여 메모리를 절약할 수 있습니다. 예를 들어, 메시지 시스템에서 메시지 내용이 정수, 실수, 문자열 중 하나일 수 있을 때 유용합니다.
+
+```c
+#include <stdio.h>
+#include <string.h>
+
+enum MessageType {
+    INT_MSG,
+    FLOAT_MSG,
+    STRING_MSG
+};
+
+struct Message {
+    enum MessageType type;
+    union {
+        int i_val;
+        float f_val;
+        char s_val[50];
+    } data;
+};
+
+void printMessage(struct Message msg) {
+    switch (msg.type) {
+        case INT_MSG:
+            printf("Integer Message: %d\n", msg.data.i_val);
+            break;
+        case FLOAT_MSG:
+            printf("Float Message: %.2f\n", msg.data.f_val);
+            break;
+        case STRING_MSG:
+            printf("String Message: %s\n", msg.data.s_val);
+            break;
+    }
+}
+
+int main() {
+    struct Message msg1;
+    msg1.type = INT_MSG;
+    msg1.data.i_val = 123;
+    printMessage(msg1);
+
+    struct Message msg2;
+    msg2.type = FLOAT_MSG;
+    msg2.data.f_val = 45.67f;
+    printMessage(msg2);
+
+    struct Message msg3;
+    msg3.type = STRING_MSG;
+    strcpy(msg3.data.s_val, "Hello Union!");
+    printMessage(msg3);
+
+    return 0;
+}
+```
+
+### 2. 비트 필드 (Bit Fields)와 함께 사용
+
+공용체는 비트 필드와 함께 사용하여 메모리 레이아웃을 정밀하게 제어하고, 동일한 메모리 영역을 다른 방식으로 해석할 때 유용합니다. 예를 들어, 네트워크 패킷 헤더를 파싱할 때 각 필드가 특정 비트 단위로 정의되어 있을 경우 공용체를 활용할 수 있습니다.
+
+```c
+#include <stdio.h>
+
+// 1바이트 데이터를 다른 방식으로 해석
+union ByteData {
+    unsigned char byte;
+    struct {
+        unsigned char bit0 : 1;
+        unsigned char bit1 : 1;
+        unsigned char bit2 : 1;
+        unsigned char bit3 : 1;
+        unsigned char bit4 : 1;
+        unsigned char bit5 : 1;
+        unsigned char bit6 : 1;
+        unsigned char bit7 : 1;
+    } bits;
+};
+
+int main() {
+    union ByteData data;
+    data.byte = 0b10101010; // 170 (십진수)
+
+    printf("Byte value: %d\n", data.byte);
+    printf("Bit 0: %d\n", data.bits.bit0);
+    printf("Bit 1: %d\n", data.bits.bit1);
+    printf("Bit 2: %d\n", data.bits.bit2);
+    printf("Bit 3: %d\n", data.bits.bit3);
+    printf("Bit 4: %d\n", data.bits.bit4);
+    printf("Bit 5: %d\n", data.bits.bit5);
+    printf("Bit 6: %d\n", data.bits.bit6);
+    printf("Bit 7: %d\n", data.bits.bit7);
+
+    data.bits.bit0 = 1; // 0b10101011 (171)
+    printf("\nNew byte value after changing bit0: %d\n", data.byte);
+
+    return 0;
+}
+```
+
+---
+ 기본 문법
+ - [[C - 개요]]
+ - [[C - 자료형]]
+ - [[C - 변수]]
+ - [[C - 조건문]]
+ - [[C - 반복문]]
+ - [[C - 함수]]
+
+심화 문법
+ - [[C - 구조체]]
+ - [[C - 공용체]]
+ - [[C - 열거형]]
+ - [[C - 전처리기]]
+
+ 포인터
+ - [[C - 포인터의 기본]]
+ - [[C - 배열과 포인터]]
+ - [[C - 함수 포인터]]
+ - [[C - 구조체 포인터]]
+
+ 기타
+ - [[C - 컴파일과 링크]]
+ - [[C - IDE]]
+ - [[C - 헤더 파일]]
+ - [[C - 현대 C 언어와 C23 표준]]
+ - [[C - 실무에서 사용하는 C 언어의 변형]]

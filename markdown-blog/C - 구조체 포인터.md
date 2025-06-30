@@ -111,3 +111,121 @@ int main() {
     return 0;
 }
 ```
+
+## 동적 할당된 구조체 배열
+
+`malloc`을 사용하여 구조체 배열을 동적으로 할당할 수 있습니다. 이는 런타임에 필요한 만큼의 구조체 객체를 생성할 때 유용합니다.
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+struct Person {
+    char name[50];
+    int age;
+};
+
+int main() {
+    struct Person *people;
+    int num_people = 3;
+
+    // Person 구조체 3개를 저장할 메모리 동적 할당
+    people = (struct Person *)malloc(num_people * sizeof(struct Person));
+
+    if (people == NULL) {
+        printf("메모리 할당 실패!\n");
+        return 1;
+    }
+
+    // 배열처럼 접근하여 값 할당
+    strcpy(people[0].name, "Alice");
+    people[0].age = 30;
+
+    strcpy(people[1].name, "Bob");
+    people[1].age = 25;
+
+    strcpy(people[2].name, "Charlie");
+    people[2].age = 35;
+
+    // 값 출력
+    for (int i = 0; i < num_people; i++) {
+        printf("Name: %s, Age: %d\n", people[i].name, people[i].age);
+    }
+
+    // 동적 할당된 메모리 해제
+    free(people);
+    people = NULL;
+
+    return 0;
+}
+```
+
+## 포인터를 이용한 연결 리스트 (Linked List) 개념
+
+연결 리스트는 노드(Node)들이 포인터를 통해 연결되어 있는 자료구조입니다. 각 노드는 데이터와 다음 노드를 가리키는 포인터(self-referential structure)를 포함합니다. 구조체 포인터는 이러한 연결 리스트를 구현하는 데 필수적입니다.
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+// 노드 구조체 정의
+struct Node {
+    int data;
+    struct Node *next; // 다음 노드를 가리키는 포인터
+};
+
+int main() {
+    // 첫 번째 노드 생성
+    struct Node *head = (struct Node *)malloc(sizeof(struct Node));
+    head->data = 10;
+    head->next = NULL; // 아직 다음 노드가 없음
+
+    // 두 번째 노드 생성 및 연결
+    struct Node *second = (struct Node *)malloc(sizeof(struct Node));
+    second->data = 20;
+    second->next = NULL;
+    head->next = second; // 첫 번째 노드가 두 번째 노드를 가리키도록 연결
+
+    // 리스트 순회 및 출력
+    struct Node *current = head;
+    while (current != NULL) {
+        printf("Node data: %d\n", current->data);
+        current = current->next; // 다음 노드로 이동
+    }
+
+    // 메모리 해제 (실제 연결 리스트에서는 모든 노드를 순회하며 해제해야 함)
+    free(head);
+    free(second);
+
+    return 0;
+}
+```
+
+---
+ 기본 문법
+ - [[C - 개요]]
+ - [[C - 자료형]]
+ - [[C - 변수]]
+ - [[C - 조건문]]
+ - [[C - 반복문]]
+ - [[C - 함수]]
+
+심화 문법
+ - [[C - 구조체]]
+ - [[C - 공용체]]
+ - [[C - 열거형]]
+ - [[C - 전처리기]]
+
+ 포인터
+ - [[C - 포인터의 기본]]
+ - [[C - 배열과 포인터]]
+ - [[C - 함수 포인터]]
+ - [[C - 구조체 포인터]]
+
+ 기타
+ - [[C - 컴파일과 링크]]
+ - [[C - IDE]]
+ - [[C - 헤더 파일]]
+ - [[C - 현대 C 언어와 C23 표준]]
+ - [[C - 실무에서 사용하는 C 언어의 변형]]
