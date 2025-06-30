@@ -8,6 +8,6 @@
 
 **GitHub:** [startedourmission](https://github.com/startedourmission)
 
-**X (Twitter):** [@nat_pagle_](https://x.com/nat_pagle_?s=21)
+**X (Twitter):** [@started_our_mis](https://x.com/started_our_mis?s=21)
 
 **LinkedIn:** [진우 차](https://www.linkedin.com/in/진우-차-a663a7368/)
