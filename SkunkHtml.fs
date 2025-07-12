@@ -2,6 +2,7 @@
     open SkunkUtils
     open System.IO
     open FSharp.Formatting.Markdown
+    open System.Text.RegularExpressions
 
     let generateFinalHtml (head: string) (header: string) (footer: string) (content: string) (script: string) =
         $"""
@@ -63,6 +64,7 @@
             markdownContent
             |> Obsidian.removeYamlFrontMatter
             |> Obsidian.convertWikiLinks
+            |> (fun md -> Regex.Replace(md, "(?m)^#+\s", "\n<!-- -->\n$0"))
 
         let htmlContent =
             match isArticle markdownFilePath with
@@ -101,6 +103,7 @@
                     markdownContent
                     |> Obsidian.removeYamlFrontMatter
                     |> Obsidian.convertWikiLinks
+                    |> (fun md -> Regex.Replace(md, "(?m)^#+\s", "\n<!-- -->\n$0"))
                 Markdown.ToHtml(processedMarkdownContent, useParagraphsInLists = false)
             else
                 printfn $"Warning! File {Config.frontPageMarkdownFileName} does not exist! The main page will only contain blog entries, without a welcome message"
