@@ -14,5 +14,5 @@ This blog serves as a technical repository for Jinwoo Cha, who specialized in co
 # Guidebook
 
 - [[C 가이드북]]
-- [[C++ 가이드북]]
+- [[Cpp 가이드북|C++ 가이드북]]
 - [[파이썬 가이드북]]
