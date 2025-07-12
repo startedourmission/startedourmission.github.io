@@ -1,9 +1,8 @@
 
 **차진우**
 
-본 블로그는 컴퓨터 정보학을 전공하고 딥러닝 및 영상처리 분야를 연구해온 기술 기록 공간입니다. IT 기술 서적 기획/편집 및 프로그래밍 언어 강의를 통해 얻은 지식과 경험을 공유하며, 학습 내용을 체계적으로 정리하고 있습니다. 본 블로그의 콘텐츠에 대한 건설적인 의견과 피드백은 언제든지 환영합니다.
-
-This blog serves as a technical repository for Jinwoo Cha, who specialized in computer science with a focus on deep learning and image processing. It is dedicated to sharing knowledge and experiences gained from authoring IT technical books and lecturing on programming languages, systematically organizing learned concepts. Constructive comments and feedback on the content are always welcome.
+컴퓨터 정보학을 전공하고 딥러닝 영상처리를 연구했습니다. 지금은 IT 기술 서적 기획·편집 일을 합니다. 지식과 경험을 공유하기 위해 글을 쓰고 책을 만듭니다. 
+주인장은 기술 동향과 인공지능에 관심이 많은 IT애호가입니다. 전문가가 아니며, 개발자가 아니기 때문에 틀린 내용이 있을 수 있습니다. 콘텐츠에 대한 의견과 피드백을 환영합니다.
 
 ---
 
