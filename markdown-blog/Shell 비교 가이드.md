@@ -4,7 +4,7 @@ tags:
 aliases:
 ---
 ## Bash (Bourne Again Shell)
-가장 널리 사용되는 쉘로, GNU 프로젝트의 일환으로 개발되었다.
+가장 널리 사용되는 쉘
 
 ### 주요 특징
 - POSIX 호환성 제공
@@ -36,7 +36,7 @@ Bash를 기반으로 개선된 기능을 제공하는 현대적인 쉘이다.
 - ~/.oh-my-zsh: Oh My Zsh 설정 디렉토리
 
 ## Fish (Friendly Interactive Shell)
-사용자 친화성에 중점을 둔 현대적인 쉘이다.
+사용자 친화성에 중점을 둔 현대적인 쉘
 
 ### 주요 특징
 - 문법 강조 기능
