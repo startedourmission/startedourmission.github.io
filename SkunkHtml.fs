@@ -68,7 +68,7 @@
 
         let htmlContent =
             match isArticle markdownFilePath with
-            | false -> Markdown.ToHtml(processedMarkdownContent, useParagraphsInLists = false)
+            | false -> Markdown.ToHtml(processedMarkdownContent)
             | true ->
                 let date = Path.GetFileNameWithoutExtension(markdownFilePath)
                 
@@ -79,10 +79,7 @@
                     Path.Combine(Config.htmlDir, "script_giscus.html")
                     |> Disk.readFile
 
-                let mainHtmlContent = titleDisplay + Markdown.ToHtml(
-                    processedMarkdownContent,
-                    useParagraphsInLists = false
-                )
+                let mainHtmlContent = titleDisplay + Markdown.ToHtml(processedMarkdownContent)
                 mainHtmlContent  + giscusScript
 
         let finalHtmlContent =
@@ -104,7 +101,7 @@
                     |> Obsidian.removeYamlFrontMatter
                     |> Obsidian.convertWikiLinks
                     |> (fun md -> Regex.Replace(md, "(?m)^#+\s", "\n<!-- -->\n$0"))
-                Markdown.ToHtml(processedMarkdownContent, useParagraphsInLists = false)
+                Markdown.ToHtml(processedMarkdownContent)
             else
                 printfn $"Warning! File {Config.frontPageMarkdownFileName} does not exist! The main page will only contain blog entries, without a welcome message"
                 ""
