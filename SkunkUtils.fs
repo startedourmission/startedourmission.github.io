@@ -1,5 +1,12 @@
 ﻿module SkunkUtils
 
+type Post = {
+    Title: string
+    Url: string
+    ImageUrl: string option
+    Category: string
+}
+
 module Config =
     open System.IO
 

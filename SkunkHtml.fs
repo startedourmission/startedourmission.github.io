@@ -4,13 +4,6 @@
     open FSharp.Formatting.Markdown
     open System.Text.RegularExpressions
 
-    type Post = {
-        Title: string
-        Url: string
-        ImageUrl: string option
-        Category: string
-    }
-
     let generateFinalHtml (head: string) (header: string) (footer: string) (content: string) (script: string) =
         $"""
         <!DOCTYPE html>

@@ -2,13 +2,6 @@
 open SkunkUtils
 open SkunkHtml
 
-type Post = {
-    Title: string
-    Url: string
-    ImageUrl: string option
-    Category: string
-}
-
 [<EntryPoint>]
 let main argv =
     argv |> ignore
