@@ -100,8 +100,9 @@ let main argv =
     let regularPosts = allPosts |> List.filter (fun post -> post.Category = "Posts")
 
     // 디버깅 정보 출력
+    let navFoldersStr = String.concat ", " navFolders
     printfn $"Total posts: {allPosts.Length}"
-    printfn $"Nav folders: {String.concat ", " navFolders}"
+    printfn $"Nav folders: {navFoldersStr}"
     printfn $"Grid sections: {gridSections.Length}"
     printfn $"Regular posts: {regularPosts.Length}"
 
