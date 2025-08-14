@@ -603,8 +603,10 @@ blockquote footer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
-    margin: 2rem 0;
-    padding: 0 1rem;
+    margin: 2rem auto;
+    padding: 0;
+    width: 100%;
+    justify-items: stretch;
 }
 
 .post-card {
@@ -668,7 +670,6 @@ blockquote footer {
 
 .grid-title {
     margin-bottom: 2rem;
-    border-bottom: 2px solid var(--color-secondary);
     padding-bottom: 0.5rem;
     text-align: center;
     font-size: 2rem;
@@ -737,7 +738,7 @@ blockquote footer {
     font-size: 1.1rem;
     text-decoration: none;
     color: var(--color-link);
-    font-weight: normal;
+    font-weight: bold;
 }
 
 .posts-list a:hover {
