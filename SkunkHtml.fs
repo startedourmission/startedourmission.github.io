@@ -151,13 +151,10 @@
                 $"""<li><a href="{urlFriendlyName}.html">{folderName}</a></li>""")
             |> String.concat "\n        "
 
-        let newsLink = """<li><a href="https://attempter.vercel.app/">News</a></li>"""
-        let linksLink = """<li><a href="links.html">Links</a></li>"""
         let updatedHeader = 
-            header.Replace(linksLink, 
-                          $"""{dynamicNavHtml}
-        {newsLink}
-        {linksLink}""")
+            header.Replace("    </ul>", 
+                          $"""        {dynamicNavHtml}
+    </ul>""")
 
         // Posts 섹션 (일반 게시물들)
         let postsHtml =
@@ -203,17 +200,14 @@
                 $"""<li><a href="{urlFriendlyName}.html">{folderName}</a></li>""")
             |> String.concat "\n        "
 
-        let newsLink = """<li><a href="https://attempter.vercel.app/">News</a></li>"""
-        let linksLink = """<li><a href="links.html">Links</a></li>"""
         let updatedHeader = 
             // 이미 동적 내비게이션이 있는지 확인 (첫 번째 폴더 링크로 확인)
             if navFolders.Length > 0 && header.Contains($"<li><a href=\"{Url.toUrlFriendly navFolders.[0]}.html\">") then
                 header // 이미 업데이트된 헤더
             else
-                header.Replace(linksLink, 
-                              $"""{dynamicNavHtml}
-        {newsLink}
-        {linksLink}""")
+                header.Replace("    </ul>", 
+                              $"""        {dynamicNavHtml}
+    </ul>""")
 
         let content =
             $"""
