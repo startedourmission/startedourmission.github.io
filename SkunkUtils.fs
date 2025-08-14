@@ -40,7 +40,7 @@ module Config =
     let gridSectionOrder = ["Portfolio"; "BookReview"; "Papers"]
     
     // 내비게이션 섹션 순서 설정
-    let navSectionOrder = ["LLM"; "Programming"]
+    let navSectionOrder = ["LLM"]
 
 module Disk =
     open System.IO
