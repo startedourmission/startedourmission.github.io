@@ -33,7 +33,31 @@ let main argv =
         allMarkdownFiles
         |> Array.filter (fun file -> Path.GetFileName(file) <> Config.frontPageMarkdownFileName)
 
-    // 모든 게시물 정보 수집 및 분류
+    // 모든 폴더들 찾기
+    let allFolders = Directory.GetDirectories(Config.markdownDir)
+    
+    // grid_ 폴더들 찾기
+    let gridFolders =
+        allFolders
+        |> Array.filter (fun dir -> 
+            let folderName = Path.GetFileName(dir)
+            folderName.StartsWith("grid_"))
+        |> Array.map (fun dir ->
+            let folderName = Path.GetFileName(dir)
+            let gridTitle = folderName.Substring(5) // "grid_" 제거
+            (dir, gridTitle))
+
+    // 내비게이션용 폴더들 (grid_가 아니고 특수 폴더가 아닌 것들)
+    let navFolders =
+        allFolders
+        |> Array.filter (fun dir -> 
+            let folderName = Path.GetFileName(dir)
+            not (folderName.StartsWith("grid_")) && 
+            folderName <> "images" && 
+            folderName <> "assets")
+        |> Array.map (fun dir -> Path.GetFileName(dir))
+
+    // 모든 게시물 정보 수집 및 폴더별 분류
     let allPosts =
         indexListFiles  // 특수 파일이 제외된 목록 사용
         |> Array.map (fun file ->
@@ -42,10 +66,12 @@ let main argv =
             let urlFriendlyTitle = Url.toUrlFriendly filename
             let imageUrl = Obsidian.extractImageUrl content
             
-            // Papers 폴더에 있는지 확인하여 카테고리 결정
+            // 파일이 어떤 grid 폴더에 속하는지 확인
             let category = 
-                if file.Contains("Papers") then "Papers"
-                else "Posts"
+                gridFolders
+                |> Array.tryFind (fun (folderPath, _) -> file.StartsWith(folderPath))
+                |> Option.map (fun (_, title) -> title)
+                |> Option.defaultValue "Posts"
             
             {
                 Title = filename
@@ -56,21 +82,35 @@ let main argv =
         |> Array.sortByDescending (fun post -> post.Title)
         |> Array.toList
 
-    // 게시물 리스트 분리
-    let paperPosts = allPosts |> List.filter (fun post -> post.Category = "Papers")
+    // 폴더별로 게시물 그룹화
+    let gridSections =
+        gridFolders
+        |> Array.map (fun (_, title) ->
+            let posts = allPosts |> List.filter (fun post -> post.Category = title)
+            (title, posts))
+        |> Array.toList
+
     let regularPosts = allPosts |> List.filter (fun post -> post.Category = "Posts")
 
     let createBlogArticlePages () =
         blogArticleFiles
         |> Array.iter (createPage header footer)
 
+    let createCategoryPages () =
+        navFolders
+        |> Array.iter (fun folderName ->
+            let categoryPosts = allPosts |> List.filter (fun post -> post.Category = folderName)
+            let categoryPagePath = Path.Combine(Config.outputDir, $"{Url.toUrlFriendly folderName}.html")
+            SkunkHtml.createCategoryPage header footer folderName categoryPosts categoryPagePath navFolders)
+
     // 인덱스 페이지를 제외한 모든 마크다운을 처리하므로, 이제 그외 페이지 처리는 필요없음
     let createOtherPages () =
         () // 모든 마크다운 파일이 블로그 글로 처리되므로 필요없음
 
-    createIndexPage header footer regularPosts paperPosts
+    createIndexPage header footer gridSections navFolders
     createOtherPages ()
     createBlogArticlePages ()
+    createCategoryPages ()
 
 
     Disk.copyFolderToOutput Config.fontsDir Config.outputFontsDir

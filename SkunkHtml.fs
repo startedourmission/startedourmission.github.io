@@ -88,7 +88,7 @@
         printfn $"Processing {Path.GetFileName markdownFilePath} ->"
         Disk.writeFile outputHtmlFilePath finalHtmlContent
 
-    let createIndexPage (header: string) (footer: string) (regularPosts: Post list) (paperPosts: Post list) =
+    let createIndexPage (header: string) (footer: string) (gridSections: (string * Post list) list) (navFolders: string array) =
         let frontPageMarkdownFilePath = Path.Combine(Config.markdownDir, Config.frontPageMarkdownFileName)
 
         let frontPageContentHtml =
@@ -106,44 +106,97 @@
                 printfn $"Warning! File {Config.frontPageMarkdownFileName} does not exist! The main page will only contain blog entries, without a welcome message"
                 ""
 
-        let regularPostsContentHtml =
-            regularPosts
-            |> List.map (fun post -> $"""<li><a href="{post.Url}">{post.Title}</a></li>""")
+        let gridSectionsHtml =
+            gridSections
+            |> List.map (fun (title, posts) ->
+                let gridContentHtml =
+                    posts
+                    |> List.map (fun post ->
+                        match post.ImageUrl with
+                        | Some imageUrl ->
+                            $"""
+                            <div class="post-card">
+                                <a href="{post.Url}">
+                                    <img src="{imageUrl}" alt="{post.Title}" class="post-image" />
+                                    <h3 class="post-title">{post.Title}</h3>
+                                </a>
+                            </div>
+                            """
+                        | None ->
+                            $"""
+                            <div class="post-card">
+                                <a href="{post.Url}">
+                                    <div class="post-image-placeholder"></div>
+                                    <h3 class="post-title">{post.Title}</h3>
+                                </a>
+                            </div>
+                            """)
+                    |> String.concat "\n"
+                
+                $"""
+                <section class="grid-section">
+                    <h1 class="grid-title">{title}</h1>
+                    <div class="papers-grid">
+                    {gridContentHtml}
+                    </div>
+                </section>
+                """)
             |> String.concat "\n"
 
-        let paperPostsContentHtml =
-            paperPosts
-            |> List.map (fun post ->
-                match post.ImageUrl with
-                | Some imageUrl ->
-                    $"""
-                    <div class="post-card">
-                        <a href="{post.Url}">
-                            <img src="{imageUrl}" alt="{post.Title}" class="post-image" />
-                            <h3 class="post-title">{post.Title}</h3>
-                        </a>
-                    </div>
-                    """
-                | None ->
-                    $"""
-                    <div class="post-card">
-                        <a href="{post.Url}">
-                            <div class="post-image-placeholder"></div>
-                            <h3 class="post-title">{post.Title}</h3>
-                        </a>
-                    </div>
-                    """)
-            |> String.concat "\n"
+        // 동적 내비게이션 생성
+        let dynamicNavHtml =
+            navFolders
+            |> Array.map (fun folderName ->
+                let urlFriendlyName = Url.toUrlFriendly folderName
+                $"""<li><a href="{urlFriendlyName}.html">{folderName}</a></li>""")
+            |> String.concat "\n        "
+
+        let updatedHeader = 
+            header.Replace("        <li><a href=\"links.html\">Links</a></li>", 
+                          $"""        {dynamicNavHtml}
+        <li><a href="https://attempter.vercel.app/">News</a></li>
+        <li><a href="links.html">Links</a></li>""")
 
         let content =
             $"""
         {frontPageContentHtml}
-        <div class="papers-grid">
-        {paperPostsContentHtml}
-        </div>
+        {gridSectionsHtml}
         """
 
-        let frontPageHtmlContent = generateFinalHtml (head "") header footer content highlightingScript
+        let frontPageHtmlContent = generateFinalHtml (head "") updatedHeader footer content highlightingScript
         let indexHtmlFilePath = Path.Combine(Config.outputDir, "index.html")
 
         Disk.writeFile indexHtmlFilePath frontPageHtmlContent
+
+    let createCategoryPage (header: string) (footer: string) (categoryName: string) (posts: Post list) (outputPath: string) (navFolders: string array) =
+        let postsHtml =
+            posts
+            |> List.map (fun post -> $"""<li><a href="{post.Url}">{post.Title}</a></li>""")
+            |> String.concat "\n            "
+
+        // 동적 내비게이션 생성
+        let dynamicNavHtml =
+            navFolders
+            |> Array.map (fun folderName ->
+                let urlFriendlyName = Url.toUrlFriendly folderName
+                $"""<li><a href="{urlFriendlyName}.html">{folderName}</a></li>""")
+            |> String.concat "\n        "
+
+        let updatedHeader = 
+            header.Replace("        <li><a href=\"links.html\">Links</a></li>", 
+                          $"""        {dynamicNavHtml}
+        <li><a href="https://attempter.vercel.app/">News</a></li>
+        <li><a href="links.html">Links</a></li>""")
+
+        let content =
+            $"""
+        <h1>{categoryName}</h1>
+        <ul class="category-posts">
+            {postsHtml}
+        </ul>
+        """
+
+        let categoryPageHtml = generateFinalHtml (head $" - {categoryName}") updatedHeader footer content highlightingScript
+        
+        printfn $"Processing category page: {categoryName} ->"
+        Disk.writeFile outputPath categoryPageHtml

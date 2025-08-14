@@ -660,21 +660,46 @@ blockquote footer {
     color: var(--color-text);
 }
 
-/* Publications Container */
-.publications-container {
-    max-width: 100%;
-}
-
-.publications {
+/* Grid Sections */
+.grid-section {
     margin: 3rem 0;
-    flex-direction: column;
-    align-items: flex-start;
+    width: 100%;
 }
 
-.publications h1 {
-    margin-bottom: 1rem;
+.grid-title {
+    margin-bottom: 2rem;
     border-bottom: 2px solid var(--color-secondary);
     padding-bottom: 0.5rem;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--color-text);
+}
+
+/* Category Pages */
+.category-posts {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0;
+}
+
+.category-posts li {
+    padding: 0.8rem 0;
+    border-bottom: 1px solid var(--color-bg-secondary);
+}
+
+.category-posts li:last-child {
+    border-bottom: none;
+}
+
+.category-posts a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: var(--color-link);
+    font-weight: normal;
+}
+
+.category-posts a:hover {
+    text-decoration: underline;
 }
 
 /* Mobile Responsiveness */
