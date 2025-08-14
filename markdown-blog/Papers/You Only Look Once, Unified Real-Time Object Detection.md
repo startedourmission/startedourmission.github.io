@@ -5,7 +5,8 @@ tags:
   - 딥러닝
   - 영상처리
   - 객체탐지
-aliases:
+aliases: 
+image: https://paper-assets.alphaxiv.org/figures/1506.02640v5/img-0.jpeg
 ---
 - **발표연도:** 2016
 - **저널:** IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2016

@@ -4,7 +4,8 @@ tags:
   - 논문
   - 딥러닝
   - Seq2Seq
-aliases:
+aliases: 
+image: https://paper-assets.alphaxiv.org/figures/1706.03762v7/ModalNet-21.png
 ---
 *   **발표연도:** 2017 (arXiv20230802 ver)
 *   **저널:** 31st Conference on Neural Information Processing Systems (NIPS 2017)
