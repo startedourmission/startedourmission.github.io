@@ -67,12 +67,18 @@ let main argv =
             let urlFriendlyTitle = Url.toUrlFriendly filename
             let imageUrl = Obsidian.extractImageUrl content
             
-            // 파일이 어떤 grid 폴더에 속하는지 확인
+            // 파일이 어떤 폴더에 속하는지 확인
             let category = 
-                gridFolders
-                |> Array.tryFind (fun (folderPath, _) -> file.StartsWith(folderPath))
-                |> Option.map (fun (_, title) -> title)
-                |> Option.defaultValue "Posts"
+                // 먼저 grid 폴더 확인
+                match gridFolders |> Array.tryFind (fun (folderPath, _) -> file.StartsWith(folderPath)) with
+                | Some (_, title) -> title
+                | None ->
+                    // grid 폴더가 아니면 nav 폴더 확인
+                    match navFolders |> Array.tryFind (fun folderName -> 
+                        let folderPath = Path.Combine(Config.markdownDir, folderName)
+                        file.StartsWith(folderPath)) with
+                    | Some folderName -> folderName
+                    | None -> "Posts" // 어떤 폴더에도 속하지 않으면 Posts
             
             {
                 Title = filename
@@ -93,6 +99,12 @@ let main argv =
 
     let regularPosts = allPosts |> List.filter (fun post -> post.Category = "Posts")
 
+    // 디버깅 정보 출력
+    printfn $"Total posts: {allPosts.Length}"
+    printfn $"Nav folders: {String.concat ", " navFolders}"
+    printfn $"Grid sections: {gridSections.Length}"
+    printfn $"Regular posts: {regularPosts.Length}"
+
     let createBlogArticlePages () =
         blogArticleFiles
         |> Array.iter (createPage header footer)
@@ -101,6 +113,8 @@ let main argv =
         navFolders
         |> Array.iter (fun folderName ->
             let categoryPosts = allPosts |> List.filter (fun post -> post.Category = folderName)
+            printfn $"Category: {folderName}, Posts count: {categoryPosts.Length}"
+            categoryPosts |> List.iter (fun post -> printfn $"  - {post.Title}")
             let categoryPagePath = Path.Combine(Config.outputDir, $"{Url.toUrlFriendly folderName}.html")
             SkunkHtml.createCategoryPage header footer folderName categoryPosts categoryPagePath navFolders)
 

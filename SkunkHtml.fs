@@ -152,15 +152,10 @@
             |> String.concat "\n        "
 
         let updatedHeader = 
-            header.Replace("    <ul>
+            header.Replace("<li><a href=\"links.html\">Links</a></li>", 
+                          $"""{dynamicNavHtml}
         <li><a href=\"https://attempter.vercel.app/\">News</a></li>
-        <li><a href=\"links.html\">Links</a></li>
-    </ul>", 
-                          $"""    <ul>
-        {dynamicNavHtml}
-        <li><a href=\"https://attempter.vercel.app/\">News</a></li>
-        <li><a href=\"links.html\">Links</a></li>
-    </ul>""")
+        <li><a href=\"links.html\">Links</a></li>""")
 
         // Posts 섹션 (일반 게시물들)
         let postsHtml =
@@ -207,15 +202,10 @@
             |> String.concat "\n        "
 
         let updatedHeader = 
-            header.Replace("    <ul>
+            header.Replace("<li><a href=\"links.html\">Links</a></li>", 
+                          $"""{dynamicNavHtml}
         <li><a href=\"https://attempter.vercel.app/\">News</a></li>
-        <li><a href=\"links.html\">Links</a></li>
-    </ul>", 
-                          $"""    <ul>
-        {dynamicNavHtml}
-        <li><a href=\"https://attempter.vercel.app/\">News</a></li>
-        <li><a href=\"links.html\">Links</a></li>
-    </ul>""")
+        <li><a href=\"links.html\">Links</a></li>""")
 
         let content =
             $"""
