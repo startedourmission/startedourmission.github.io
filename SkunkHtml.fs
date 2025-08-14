@@ -152,10 +152,15 @@
             |> String.concat "\n        "
 
         let updatedHeader = 
-            header.Replace("        <li><a href=\"links.html\">Links</a></li>", 
-                          $"""        {dynamicNavHtml}
-        <li><a href="https://attempter.vercel.app/">News</a></li>
-        <li><a href="links.html">Links</a></li>""")
+            header.Replace("    <ul>
+        <li><a href=\"https://attempter.vercel.app/\">News</a></li>
+        <li><a href=\"links.html\">Links</a></li>
+    </ul>", 
+                          $"""    <ul>
+        {dynamicNavHtml}
+        <li><a href=\"https://attempter.vercel.app/\">News</a></li>
+        <li><a href=\"links.html\">Links</a></li>
+    </ul>""")
 
         let content =
             $"""
@@ -183,10 +188,15 @@
             |> String.concat "\n        "
 
         let updatedHeader = 
-            header.Replace("        <li><a href=\"links.html\">Links</a></li>", 
-                          $"""        {dynamicNavHtml}
-        <li><a href="https://attempter.vercel.app/">News</a></li>
-        <li><a href="links.html">Links</a></li>""")
+            header.Replace("    <ul>
+        <li><a href=\"https://attempter.vercel.app/\">News</a></li>
+        <li><a href=\"links.html\">Links</a></li>
+    </ul>", 
+                          $"""    <ul>
+        {dynamicNavHtml}
+        <li><a href=\"https://attempter.vercel.app/\">News</a></li>
+        <li><a href=\"links.html\">Links</a></li>
+    </ul>""")
 
         let content =
             $"""
