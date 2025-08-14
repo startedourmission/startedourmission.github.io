@@ -86,7 +86,7 @@ let main argv =
                 ImageUrl = imageUrl
                 Category = category
             })
-        |> Array.sortByDescending (fun post -> post.Title)
+        |> Array.sortBy (fun post -> post.Title)
         |> Array.toList
 
     // 폴더별로 게시물 그룹화
