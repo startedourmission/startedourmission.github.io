@@ -35,6 +35,12 @@ module Config =
     
     // 인덱스 페이지에 표시하지 않을 특수 파일들
     let specialFiles = [frontPageMarkdownFileName; "links.md"]
+    
+    // 그리드 섹션 순서 설정
+    let gridSectionOrder = ["Portfolio"; "BookReview"; "Papers"]
+    
+    // 내비게이션 섹션 순서 설정
+    let navSectionOrder = ["LLM"; "Programming"]
 
 module Disk =
     open System.IO

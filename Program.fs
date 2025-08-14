@@ -47,8 +47,8 @@ let main argv =
             let gridTitle = folderName.Substring(5) // "grid_" 제거
             (dir, gridTitle))
 
-    // 내비게이션용 폴더들 (grid_가 아니고 특수 폴더가 아닌 것들)
-    let navFolders =
+    // 내비게이션용 폴더들 (grid_가 아니고 특수 폴더가 아닌 것들, Config 순서대로 정렬)
+    let navFoldersUnordered =
         allFolders
         |> Array.filter (fun dir -> 
             let folderName = Path.GetFileName(dir)
@@ -57,6 +57,21 @@ let main argv =
             folderName <> "images" && 
             folderName <> "assets")
         |> Array.map (fun dir -> Path.GetFileName(dir))
+    
+    let navFolders =
+        // Config 순서대로 정렬
+        let orderedNav = 
+            Config.navSectionOrder
+            |> List.filter (fun name -> Array.contains name navFoldersUnordered)
+        
+        // Config에 없는 폴더들은 맨 뒤에 알파벳 순으로 추가
+        let remainingNav = 
+            navFoldersUnordered
+            |> Array.filter (fun name -> not (List.contains name Config.navSectionOrder))
+            |> Array.sort
+            |> Array.toList
+        
+        (orderedNav @ remainingNav) |> List.toArray
 
     // 모든 게시물 정보 수집 및 폴더별 분류
     let allPosts =
@@ -89,13 +104,29 @@ let main argv =
         |> Array.sortBy (fun post -> post.Title)
         |> Array.toList
 
-    // 폴더별로 게시물 그룹화
+    // 폴더별로 게시물 그룹화 (Config 순서대로 정렬)
     let gridSections =
-        gridFolders
-        |> Array.map (fun (_, title) ->
-            let posts = allPosts |> List.filter (fun post -> post.Category = title)
-            (title, posts))
-        |> Array.toList
+        let sectionMap = 
+            gridFolders
+            |> Array.map (fun (_, title) ->
+                let posts = allPosts |> List.filter (fun post -> post.Category = title)
+                (title, posts))
+            |> Map.ofArray
+        
+        // Config 순서대로 섹션 생성
+        let orderedSections = 
+            Config.gridSectionOrder
+            |> List.choose (fun title -> 
+                Map.tryFind title sectionMap)
+        
+        // Config에 없는 섹션들은 맨 뒤에 알파벳 순으로 추가
+        let remainingSections = 
+            sectionMap
+            |> Map.toList
+            |> List.filter (fun (title, _) -> not (List.contains title Config.gridSectionOrder))
+            |> List.sortBy fst
+        
+        orderedSections @ remainingSections
 
     let regularPosts = allPosts |> List.filter (fun post -> post.Category = "Posts")
 
