@@ -4,6 +4,13 @@
     open FSharp.Formatting.Markdown
     open System.Text.RegularExpressions
 
+    type Post = {
+        Title: string
+        Url: string
+        ImageUrl: string option
+        Category: string
+    }
+
     let generateFinalHtml (head: string) (header: string) (footer: string) (content: string) (script: string) =
         $"""
         <!DOCTYPE html>
@@ -88,7 +95,7 @@
         printfn $"Processing {Path.GetFileName markdownFilePath} ->"
         Disk.writeFile outputHtmlFilePath finalHtmlContent
 
-    let createIndexPage (header: string) (footer: string) (listOfAllBlogArticles: (string * string * string) list) (paperArticles: (string * string * string) list) =
+    let createIndexPage (header: string) (footer: string) (regularPosts: Post list) (paperPosts: Post list) =
         let frontPageMarkdownFilePath = Path.Combine(Config.markdownDir, Config.frontPageMarkdownFileName)
 
         let frontPageContentHtml =
@@ -106,14 +113,33 @@
                 printfn $"Warning! File {Config.frontPageMarkdownFileName} does not exist! The main page will only contain blog entries, without a welcome message"
                 ""
 
-        let listOfAllBlogArticlesContentHtml =
-            listOfAllBlogArticles
-            |> List.map (fun (date, _, link) -> $"""<li><a href="{link}">{date}</a></li>""")
+        let regularPostsContentHtml =
+            regularPosts
+            |> List.map (fun post -> $"""<li><a href="{post.Url}">{post.Title}</a></li>""")
             |> String.concat "\n"
 
-        let paperArticlesContentHtml =
-            paperArticles
-            |> List.map (fun (date, _, link) -> $"""<li><a href="{link}">{date}</a></li>""")
+        let paperPostsContentHtml =
+            paperPosts
+            |> List.map (fun post ->
+                match post.ImageUrl with
+                | Some imageUrl ->
+                    $"""
+                    <div class="post-card">
+                        <a href="{post.Url}">
+                            <img src="{imageUrl}" alt="{post.Title}" class="post-image" />
+                            <h3 class="post-title">{post.Title}</h3>
+                        </a>
+                    </div>
+                    """
+                | None ->
+                    $"""
+                    <div class="post-card">
+                        <a href="{post.Url}">
+                            <div class="post-image-placeholder"></div>
+                            <h3 class="post-title">{post.Title}</h3>
+                        </a>
+                    </div>
+                    """)
             |> String.concat "\n"
 
         let content =
@@ -122,14 +148,14 @@
         <div class="publications-container">
             <section class="publications papers">
                 <h1>Papers</h1>
-                <ul>
-                {paperArticlesContentHtml}
-                </ul>
+                <div class="post-grid">
+                {paperPostsContentHtml}
+                </div>
             </section>
             <section class="publications posts">
                 <h1>Posts</h1>
                 <ul>
-                {listOfAllBlogArticlesContentHtml}
+                {regularPostsContentHtml}
                 </ul>
             </section>
         </div>

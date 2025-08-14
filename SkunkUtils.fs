@@ -121,6 +121,23 @@ module Obsidian =
         else
             []
     
+    // YAML 프론트매터에서 이미지 URL 추출
+    let extractImageUrl (markdownContent: string) =
+        let frontMatterPattern = @"^\s*---\s*\n([\s\S]*?)\n\s*---\s*\n"
+        let frontMatterMatch = Regex.Match(markdownContent, frontMatterPattern)
+        
+        if frontMatterMatch.Success then
+            let yamlContent = frontMatterMatch.Groups.[1].Value
+            let imagePattern = @"image:\s*(.+)"
+            let imageMatch = Regex.Match(yamlContent, imagePattern)
+            
+            if imageMatch.Success then
+                Some (imageMatch.Groups.[1].Value.Trim())
+            else
+                None
+        else
+            None
+    
     // Obsidian 프로퍼티 영역 제거 (---로 둘러싸인 YAML 프론트매터)
     let removeYamlFrontMatter (markdownContent: string) =
         let frontMatterPattern = @"^\s*---\s*\n[\s\S]*?\n\s*---\s*\n"

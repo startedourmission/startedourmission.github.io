@@ -2,6 +2,13 @@
 open SkunkUtils
 open SkunkHtml
 
+type Post = {
+    Title: string
+    Url: string
+    ImageUrl: string option
+    Category: string
+}
+
 [<EntryPoint>]
 let main argv =
     argv |> ignore
@@ -18,8 +25,8 @@ let main argv =
     let header = Disk.readFile (Path.Combine(Config.htmlDir, "header.html"))
     let footer = Disk.readFile (Path.Combine(Config.htmlDir, "footer.html"))
 
-    // frontPage를 제외한 모든 마크다운 파일을 블로그 글로 처리
-    let allMarkdownFiles = Directory.GetFiles(Config.markdownDir, "*.md")
+    // frontPage를 제외한 모든 마크다운 파일을 블로그 글로 처리 (하위 폴더 포함)
+    let allMarkdownFiles = Directory.GetFiles(Config.markdownDir, "*.md", SearchOption.AllDirectories)
 
     // 인덱스 페이지의 글 목록에 표시될 파일들
     let indexListFiles =
@@ -33,30 +40,32 @@ let main argv =
         allMarkdownFiles
         |> Array.filter (fun file -> Path.GetFileName(file) <> Config.frontPageMarkdownFileName)
 
-    let listOfAllBlogArticles =
+    // 모든 게시물 정보 수집 및 분류
+    let allPosts =
         indexListFiles  // 특수 파일이 제외된 목록 사용
         |> Array.map (fun file ->
-            // 파일명이 제목이자 표시명이 됨
+            let content = File.ReadAllText(file)
             let filename = Path.GetFileNameWithoutExtension(file)
-            // 파일명을 URL 친화적으로 변환
             let urlFriendlyTitle = Url.toUrlFriendly filename
-            (filename, filename, $"{urlFriendlyTitle}.html"))
-        |> Array.sortByDescending (fun (date, _, _) -> date)
+            let imageUrl = Obsidian.extractImageUrl content
+            
+            // Papers 폴더에 있는지 확인하여 카테고리 결정
+            let category = 
+                if file.Contains("Papers") then "Papers"
+                else "Posts"
+            
+            {
+                Title = filename
+                Url = $"{urlFriendlyTitle}.html"
+                ImageUrl = imageUrl
+                Category = category
+            })
+        |> Array.sortByDescending (fun post -> post.Title)
         |> Array.toList
 
-    let paperArticles =
-        indexListFiles
-        |> Array.choose (fun file ->
-            let content = File.ReadAllText(file)
-            let tags = Obsidian.extractTags content
-            if tags |> List.contains "논문" then
-                let filename = Path.GetFileNameWithoutExtension(file)
-                let urlFriendlyTitle = Url.toUrlFriendly filename
-                Some (filename, filename, $"{urlFriendlyTitle}.html")
-            else
-                None)
-        |> Array.sortByDescending (fun (date, _, _) -> date)
-        |> Array.toList
+    // 게시물 리스트 분리
+    let paperPosts = allPosts |> List.filter (fun post -> post.Category = "Papers")
+    let regularPosts = allPosts |> List.filter (fun post -> post.Category = "Posts")
 
     let createBlogArticlePages () =
         blogArticleFiles
@@ -66,7 +75,7 @@ let main argv =
     let createOtherPages () =
         () // 모든 마크다운 파일이 블로그 글로 처리되므로 필요없음
 
-    createIndexPage header footer listOfAllBlogArticles paperArticles
+    createIndexPage header footer regularPosts paperPosts
     createOtherPages ()
     createBlogArticlePages ()
 
