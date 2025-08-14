@@ -138,19 +138,8 @@
         let content =
             $"""
         {frontPageContentHtml}
-        <div class="publications-container">
-            <section class="publications papers">
-                <h1>Papers</h1>
-                <div class="post-grid">
-                {paperPostsContentHtml}
-                </div>
-            </section>
-            <section class="publications posts">
-                <h1>Posts</h1>
-                <ul>
-                {regularPostsContentHtml}
-                </ul>
-            </section>
+        <div class="papers-grid">
+        {paperPostsContentHtml}
         </div>
         """
 

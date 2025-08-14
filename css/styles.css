@@ -598,12 +598,13 @@ blockquote footer {
     border-radius: 10px;
 }
 
-/* Post Grid for Papers */
-.post-grid {
+/* Papers Grid - 4 columns fixed */
+.papers-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
     margin: 2rem 0;
+    padding: 0 1rem;
 }
 
 .post-card {
@@ -678,14 +679,17 @@ blockquote footer {
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
-    .post-grid {
-        grid-template-columns: 1fr;
+    .papers-grid {
+        grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
         margin: 1rem 0;
+        padding: 0 0.5rem;
     }
-    
-    .post-card {
-        margin: 0 auto;
-        max-width: 100%;
+}
+
+@media (max-width: 480px) {
+    .papers-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
     }
 }
