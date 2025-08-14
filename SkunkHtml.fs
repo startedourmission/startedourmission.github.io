@@ -88,7 +88,7 @@
         printfn $"Processing {Path.GetFileName markdownFilePath} ->"
         Disk.writeFile outputHtmlFilePath finalHtmlContent
 
-    let createIndexPage (header: string) (footer: string) (gridSections: (string * Post list) list) (navFolders: string array) =
+    let createIndexPage (header: string) (footer: string) (gridSections: (string * Post list) list) (navFolders: string array) (regularPosts: Post list) =
         let frontPageMarkdownFilePath = Path.Combine(Config.markdownDir, Config.frontPageMarkdownFileName)
 
         let frontPageContentHtml =
@@ -162,10 +162,29 @@
         <li><a href=\"links.html\">Links</a></li>
     </ul>""")
 
+        // Posts 섹션 (일반 게시물들)
+        let postsHtml =
+            if regularPosts.IsEmpty then ""
+            else
+                let postsListHtml =
+                    regularPosts
+                    |> List.map (fun post -> $"""<li><a href="{post.Url}">{post.Title}</a></li>""")
+                    |> String.concat "\n            "
+                
+                $"""
+                <section class="posts-section">
+                    <h1 class="posts-title">Posts</h1>
+                    <ul class="posts-list">
+            {postsListHtml}
+                    </ul>
+                </section>
+                """
+
         let content =
             $"""
         {frontPageContentHtml}
         {gridSectionsHtml}
+        {postsHtml}
         """
 
         let frontPageHtmlContent = generateFinalHtml (head "") updatedHeader footer content highlightingScript

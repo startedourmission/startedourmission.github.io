@@ -108,7 +108,7 @@ let main argv =
     let createOtherPages () =
         () // 모든 마크다운 파일이 블로그 글로 처리되므로 필요없음
 
-    createIndexPage header footer gridSections navFolders
+    createIndexPage header footer gridSections navFolders regularPosts
     createOtherPages ()
     createBlogArticlePages ()
     createCategoryPages ()

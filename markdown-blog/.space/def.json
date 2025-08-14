@@ -1,1 +1,1 @@
-{"_joins":[],"_contexts":[],"_links":[],"_sort":{"field":"name","asc":false,"group":false,"recursive":false},"_template":"","_templateName":"","defaultSticker":"","readMode":false,"label":{"sticker":"lucide//tree-deciduous"}}
+{"_joins":[],"_contexts":[],"_links":[],"_sort":{"field":"name","asc":false,"group":true,"recursive":false},"_template":"","_templateName":"","defaultSticker":"","readMode":false,"label":{"sticker":"lucide//tree-deciduous"}}
