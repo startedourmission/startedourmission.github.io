@@ -672,7 +672,7 @@ blockquote footer {
 .grid-title {
     margin-bottom: 2rem;
     padding-bottom: 0.5rem;
-    text-align: center;
+    text-align: left;
     font-size: 2rem;
     color: var(--color-text);
 }
