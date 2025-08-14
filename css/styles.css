@@ -666,6 +666,7 @@ blockquote footer {
 .grid-section {
     margin: 3rem 0;
     width: 100%;
+    display: block;
 }
 
 .grid-title {
