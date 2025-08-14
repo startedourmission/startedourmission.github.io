@@ -117,7 +117,8 @@ let main argv =
         let orderedSections = 
             Config.gridSectionOrder
             |> List.choose (fun title -> 
-                Map.tryFind title sectionMap)
+                Map.tryFind title sectionMap
+                |> Option.map (fun posts -> (title, posts)))
         
         // Config에 없는 섹션들은 맨 뒤에 알파벳 순으로 추가
         let remainingSections = 
