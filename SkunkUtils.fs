@@ -37,7 +37,7 @@ module Config =
     let specialFiles = [frontPageMarkdownFileName; "links.md"]
     
     // 그리드 섹션 순서 설정
-    let gridSectionOrder = ["Portfolio"; "BookReview"; "Papers"]
+    let gridSectionOrder = ["BookReview"; "Papers"; "Portfolio"]
     
     // 내비게이션 섹션 순서 설정
     let navSectionOrder = ["LLM"]

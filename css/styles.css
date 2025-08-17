@@ -598,11 +598,11 @@ blockquote footer {
     border-radius: 10px;
 }
 
-/* Papers Grid - 4 columns fixed */
+/* Papers Grid - 5 columns fixed */
 .papers-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.5rem;
     margin: 2rem auto;
     padding: 0;
     width: 100%;
@@ -747,7 +747,7 @@ blockquote footer {
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
     .papers-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 1rem;
         margin: 1rem 0;
         padding: 0 0.5rem;
