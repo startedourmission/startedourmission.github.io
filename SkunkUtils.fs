@@ -153,6 +153,11 @@ module Obsidian =
         else
             None
     
+    // Obsidian 프로퍼티 영역 제거 (---로 둘러싸인 YAML 프론트매터)
+    let removeYamlFrontMatter (markdownContent: string) =
+        let frontMatterPattern = @"^\s*---\s*\n[\s\S]*?\n\s*---\s*\n"
+        Regex.Replace(markdownContent, frontMatterPattern, "")
+
     // YAML 프론트매터에서 날짜 추출
     let extractDate (markdownContent: string) (fileName: string) =
         // 먼저 YAML 프론트매터에서 날짜를 찾아보기
@@ -200,7 +205,7 @@ module Obsidian =
         let mutable foundSummary = false
         
         for line in lines do
-            let trimmedLine = line.Trim()
+            let trimmedLine = (line: string).Trim()
             if not foundSummary then
                 if trimmedLine.StartsWith("#") then
                     foundFirstHeading <- true
@@ -217,8 +222,3 @@ module Obsidian =
             Some summary
         else
             None
-
-    // Obsidian 프로퍼티 영역 제거 (---로 둘러싸인 YAML 프론트매터)
-    let removeYamlFrontMatter (markdownContent: string) =
-        let frontMatterPattern = @"^\s*---\s*\n[\s\S]*?\n\s*---\s*\n"
-        Regex.Replace(markdownContent, frontMatterPattern, "")
