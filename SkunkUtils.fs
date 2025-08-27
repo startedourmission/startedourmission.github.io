@@ -367,28 +367,34 @@ module CanvasParser =
             
             // nodes 배열 파싱
             let nodes = 
-                if root.TryGetProperty("nodes", &_) then
+                let mutable prop = Unchecked.defaultof<System.Text.Json.JsonElement>
+                if root.TryGetProperty("nodes", &prop) then
                     let nodesArray = root.GetProperty("nodes")
                     nodesArray.EnumerateArray()
                     |> Seq.map (fun nodeElement ->
                         let getId () = 
-                            if nodeElement.TryGetProperty("id", &_) then
+                            let mutable idProp = Unchecked.defaultof<System.Text.Json.JsonElement>
+                            if nodeElement.TryGetProperty("id", &idProp) then
                                 nodeElement.GetProperty("id").GetString()
                             else ""
                         let getType () = 
-                            if nodeElement.TryGetProperty("type", &_) then
+                            let mutable typeProp = Unchecked.defaultof<System.Text.Json.JsonElement>
+                            if nodeElement.TryGetProperty("type", &typeProp) then
                                 nodeElement.GetProperty("type").GetString()
                             else "text"
                         let getText () = 
-                            if nodeElement.TryGetProperty("text", &_) then
+                            let mutable textProp = Unchecked.defaultof<System.Text.Json.JsonElement>
+                            if nodeElement.TryGetProperty("text", &textProp) then
                                 Some (nodeElement.GetProperty("text").GetString())
                             else None
                         let getFile () = 
-                            if nodeElement.TryGetProperty("file", &_) then
+                            let mutable fileProp = Unchecked.defaultof<System.Text.Json.JsonElement>
+                            if nodeElement.TryGetProperty("file", &fileProp) then
                                 Some (nodeElement.GetProperty("file").GetString())
                             else None
                         let getInt prop defaultValue =
-                            if nodeElement.TryGetProperty(prop, &_) then
+                            let mutable intProp = Unchecked.defaultof<System.Text.Json.JsonElement>
+                            if nodeElement.TryGetProperty(prop, &intProp) then
                                 nodeElement.GetProperty(prop).GetInt32()
                             else defaultValue
                         
@@ -407,24 +413,29 @@ module CanvasParser =
             
             // edges 배열 파싱
             let edges = 
-                if root.TryGetProperty("edges", &_) then
+                let mutable edgesProp = Unchecked.defaultof<System.Text.Json.JsonElement>
+                if root.TryGetProperty("edges", &edgesProp) then
                     let edgesArray = root.GetProperty("edges")
                     edgesArray.EnumerateArray()
                     |> Seq.map (fun edgeElement ->
                         let getId () = 
-                            if edgeElement.TryGetProperty("id", &_) then
+                            let mutable idProp = Unchecked.defaultof<System.Text.Json.JsonElement>
+                            if edgeElement.TryGetProperty("id", &idProp) then
                                 edgeElement.GetProperty("id").GetString()
                             else ""
                         let getFromNode () = 
-                            if edgeElement.TryGetProperty("fromNode", &_) then
+                            let mutable fromProp = Unchecked.defaultof<System.Text.Json.JsonElement>
+                            if edgeElement.TryGetProperty("fromNode", &fromProp) then
                                 edgeElement.GetProperty("fromNode").GetString()
                             else ""
                         let getToNode () = 
-                            if edgeElement.TryGetProperty("toNode", &_) then
+                            let mutable toProp = Unchecked.defaultof<System.Text.Json.JsonElement>
+                            if edgeElement.TryGetProperty("toNode", &toProp) then
                                 edgeElement.GetProperty("toNode").GetString()
                             else ""
                         let getSide prop =
-                            if edgeElement.TryGetProperty(prop, &_) then
+                            let mutable sideProp = Unchecked.defaultof<System.Text.Json.JsonElement>
+                            if edgeElement.TryGetProperty(prop, &sideProp) then
                                 Some (edgeElement.GetProperty(prop).GetString())
                             else None
                         
