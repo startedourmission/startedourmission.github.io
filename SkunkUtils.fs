@@ -9,6 +9,32 @@ type Post = {
     Summary: string option
 }
 
+type CanvasNode = {
+    Id: string
+    Type: string
+    Text: string option
+    File: string option
+    X: int
+    Y: int
+    Width: int
+    Height: int
+}
+
+type CanvasEdge = {
+    Id: string
+    FromNode: string
+    ToNode: string
+    FromSide: string option
+    ToSide: string option
+}
+
+type Canvas = {
+    Title: string
+    Url: string
+    Nodes: CanvasNode list
+    Edges: CanvasEdge list
+}
+
 module Config =
     open System.IO
 
@@ -222,3 +248,117 @@ module Obsidian =
             Some summary
         else
             None
+
+module CanvasParser =
+    open System.Text.RegularExpressions
+    open System.IO
+    
+    // JSON에서 문자열 값 추출 (간단한 파서)
+    let extractStringValue (json: string) (key: string) =
+        let pattern = $@"""{key}""\s*:\s*""([^""]*)"""
+        let match_ = Regex.Match(json, pattern)
+        if match_.Success then Some match_.Groups.[1].Value else None
+    
+    // JSON에서 정수 값 추출
+    let extractIntValue (json: string) (key: string) =
+        let pattern = $@"""{key}""\s*:\s*(-?\d+)"
+        let match_ = Regex.Match(json, pattern)
+        if match_.Success then 
+            match System.Int32.TryParse(match_.Groups.[1].Value) with
+            | true, value -> Some value
+            | false, _ -> None
+        else None
+    
+    // 노드 파싱
+    let parseNode (nodeJson: string) =
+        let id = extractStringValue nodeJson "id" |> Option.defaultValue ""
+        let nodeType = extractStringValue nodeJson "type" |> Option.defaultValue "text"
+        let text = extractStringValue nodeJson "text"
+        let file = extractStringValue nodeJson "file"
+        let x = extractIntValue nodeJson "x" |> Option.defaultValue 0
+        let y = extractIntValue nodeJson "y" |> Option.defaultValue 0
+        let width = extractIntValue nodeJson "width" |> Option.defaultValue 250
+        let height = extractIntValue nodeJson "height" |> Option.defaultValue 60
+        
+        {
+            Id = id
+            Type = nodeType
+            Text = text
+            File = file
+            X = x
+            Y = y
+            Width = width
+            Height = height
+        }
+    
+    // 엣지 파싱
+    let parseEdge (edgeJson: string) =
+        let id = extractStringValue edgeJson "id" |> Option.defaultValue ""
+        let fromNode = extractStringValue edgeJson "fromNode" |> Option.defaultValue ""
+        let toNode = extractStringValue edgeJson "toNode" |> Option.defaultValue ""
+        let fromSide = extractStringValue edgeJson "fromSide"
+        let toSide = extractStringValue edgeJson "toSide"
+        
+        {
+            Id = id
+            FromNode = fromNode
+            ToNode = toNode
+            FromSide = fromSide
+            ToSide = toSide
+        }
+    
+    // JSON 배열 분할 (간단한 파서)
+    let splitJsonArray (jsonArray: string) =
+        let mutable level = 0
+        let mutable start = 0
+        let mutable results = []
+        let chars = jsonArray.ToCharArray()
+        
+        for i = 0 to chars.Length - 1 do
+            match chars.[i] with
+            | '{' -> level <- level + 1
+            | '}' -> 
+                level <- level - 1
+                if level = 0 then
+                    let item = jsonArray.Substring(start, i - start + 1)
+                    results <- item :: results
+                    start <- i + 1
+            | ',' when level = 0 -> start <- i + 1
+            | _ -> ()
+        
+        List.rev results
+    
+    // Canvas 파일 파싱
+    let parseCanvas (filePath: string) =
+        let fileName = Path.GetFileNameWithoutExtension(filePath)
+        let urlFriendlyName = Url.toUrlFriendly fileName
+        let content = File.ReadAllText(filePath)
+        
+        // nodes 배열 추출
+        let nodesPattern = @"""nodes""\s*:\s*\[([^\]]*(?:\[[^\]]*\][^\]]*)*)?\]"
+        let nodesMatch = Regex.Match(content, nodesPattern, RegexOptions.Singleline)
+        let nodes = 
+            if nodesMatch.Success then
+                let nodesJson = nodesMatch.Groups.[1].Value
+                splitJsonArray nodesJson
+                |> List.map parseNode
+            else
+                []
+        
+        // edges 배열 추출
+        let edgesPattern = @"""edges""\s*:\s*\[([^\]]*(?:\[[^\]]*\][^\]]*)*)?\]"
+        let edgesMatch = Regex.Match(content, edgesPattern, RegexOptions.Singleline)
+        let edges = 
+            if edgesMatch.Success then
+                let edgesJson = edgesMatch.Groups.[1].Value
+                splitJsonArray edgesJson
+                |> List.map parseEdge
+            else
+                []
+        
+        {
+            Title = fileName
+            Url = urlFriendlyName + ".html"
+            Nodes = nodes
+            Edges = edges
+        }

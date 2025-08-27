@@ -20,6 +20,9 @@ let main argv =
 
     // frontPage를 제외한 모든 마크다운 파일을 블로그 글로 처리 (하위 폴더 포함)
     let allMarkdownFiles = Directory.GetFiles(Config.markdownDir, "*.md", SearchOption.AllDirectories)
+    
+    // 모든 Canvas 파일 찾기
+    let allCanvasFiles = Directory.GetFiles(Config.markdownDir, "*.canvas", SearchOption.AllDirectories)
 
     // 인덱스 페이지의 글 목록에 표시될 파일들
     let indexListFiles =
@@ -134,6 +137,12 @@ let main argv =
         orderedSections @ remainingSections
 
     let regularPosts = allPosts |> List.filter (fun post -> post.Category = "Posts")
+    
+    // Canvas 파일들을 파싱하여 Canvas 객체 리스트 생성
+    let allCanvases =
+        allCanvasFiles
+        |> Array.map CanvasParser.parseCanvas
+        |> Array.toList
 
     // 디버깅 정보 출력
     let navFoldersStr = String.concat ", " navFolders
@@ -141,6 +150,7 @@ let main argv =
     printfn $"Nav folders: {navFoldersStr}"
     printfn $"Grid sections: {gridSections.Length}"
     printfn $"Regular posts: {regularPosts.Length}"
+    printfn $"Canvas files: {allCanvases.Length}"
 
     let createBlogArticlePages () =
         blogArticleFiles
@@ -154,15 +164,23 @@ let main argv =
             categoryPosts |> List.iter (fun post -> printfn $"  - {post.Title}")
             let categoryPagePath = Path.Combine(Config.outputDir, $"{Url.toUrlFriendly folderName}.html")
             SkunkHtml.createCategoryPage header footer folderName categoryPosts categoryPagePath navFolders)
+    
+    let createCanvasPages () =
+        allCanvases
+        |> List.iter (fun canvas ->
+            printfn $"Canvas: {canvas.Title}, Nodes: {canvas.Nodes.Length}, Edges: {canvas.Edges.Length}"
+            let canvasPagePath = Path.Combine(Config.outputDir, canvas.Url)
+            SkunkHtml.createCanvasPage header footer canvas canvasPagePath navFolders)
 
     // 인덱스 페이지를 제외한 모든 마크다운을 처리하므로, 이제 그외 페이지 처리는 필요없음
     let createOtherPages () =
         () // 모든 마크다운 파일이 블로그 글로 처리되므로 필요없음
 
-    createIndexPage header footer gridSections navFolders regularPosts
+    createIndexPage header footer gridSections navFolders regularPosts allCanvases
     createOtherPages ()
     createBlogArticlePages ()
     createCategoryPages ()
+    createCanvasPages ()
 
 
     Disk.copyFolderToOutput Config.fontsDir Config.outputFontsDir

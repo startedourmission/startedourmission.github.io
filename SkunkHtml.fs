@@ -88,7 +88,7 @@
         printfn $"Processing {Path.GetFileName markdownFilePath} ->"
         Disk.writeFile outputHtmlFilePath finalHtmlContent
 
-    let createIndexPage (header: string) (footer: string) (gridSections: (string * Post list) list) (navFolders: string array) (regularPosts: Post list) =
+    let createIndexPage (header: string) (footer: string) (gridSections: (string * Post list) list) (navFolders: string array) (regularPosts: Post list) (canvases: Canvas list) =
         let frontPageMarkdownFilePath = Path.Combine(Config.markdownDir, Config.frontPageMarkdownFileName)
 
         let frontPageContentHtml =
@@ -192,10 +192,41 @@
                 </section>
                 """
 
+        // Canvas 섹션 (인터랙티브 마인드맵들)
+        let canvasHtml =
+            if canvases.IsEmpty then ""
+            else
+                let canvasListHtml =
+                    canvases
+                    |> List.map (fun canvas ->
+                        $"""
+                        <div class="canvas-card">
+                            <a href="{canvas.Url}" class="canvas-card-link">
+                                <div class="canvas-icon">🧠</div>
+                                <h3 class="canvas-card-title">{canvas.Title}</h3>
+                                <p class="canvas-card-info">
+                                    <span class="canvas-stat">{canvas.Nodes.Length} nodes</span>
+                                    <span class="canvas-stat">{canvas.Edges.Length} connections</span>
+                                </p>
+                                <p class="canvas-card-description">Interactive mindmap visualization</p>
+                            </a>
+                        </div>""")
+                    |> String.concat "\n            "
+                
+                $"""
+                <section class="canvas-section">
+                    <h1 class="canvas-section-title">Interactive Canvas</h1>
+                    <div class="canvas-grid">
+            {canvasListHtml}
+                    </div>
+                </section>
+                """
+
         let content =
             $"""
         {frontPageContentHtml}
         {gridSectionsHtml}
+        {canvasHtml}
         {postsHtml}
         """
 
@@ -257,3 +288,72 @@
         
         printfn $"Processing category page: {categoryName} ->"
         Disk.writeFile outputPath categoryPageHtml
+
+    let createCanvasPage (header: string) (footer: string) (canvas: Canvas) (outputPath: string) (navFolders: string array) =
+        // Canvas 데이터를 JSON으로 직렬화
+        let nodesJson =
+            canvas.Nodes
+            |> List.map (fun node ->
+                let textField = match node.Text with
+                                | Some text -> $""", "text": "{text.Replace("\"", "\\\"")}" """
+                                | None -> ""
+                let fileField = match node.File with
+                                | Some file -> $""", "file": "{file}" """
+                                | None -> ""
+                $"""{{"id": "{node.Id}", "type": "{node.Type}"{textField}{fileField}, "x": {node.X}, "y": {node.Y}, "width": {node.Width}, "height": {node.Height}}}""")
+            |> String.concat ", "
+
+        let edgesJson =
+            canvas.Edges
+            |> List.map (fun edge ->
+                let fromSideField = match edge.FromSide with
+                                   | Some side -> $""", "fromSide": "{side}" """
+                                   | None -> ""
+                let toSideField = match edge.ToSide with
+                                 | Some side -> $""", "toSide": "{side}" """
+                                 | None -> ""
+                $"""{{"id": "{edge.Id}", "fromNode": "{edge.FromNode}", "toNode": "{edge.ToNode}"{fromSideField}{toSideField}}}""")
+            |> String.concat ", "
+
+        let canvasJson = $"""{{ "nodes": [{nodesJson}], "edges": [{edgesJson}] }}"""
+
+        // 동적 내비게이션 생성
+        let dynamicNavHtml =
+            navFolders
+            |> Array.map (fun folderName ->
+                let urlFriendlyName = Url.toUrlFriendly folderName
+                $"""<li><a href="{urlFriendlyName}.html">{folderName}</a></li>""")
+            |> String.concat "\n        "
+
+        let updatedHeader = 
+            header.Replace("    </ul>", 
+                          $"""        {dynamicNavHtml}
+    </ul>""")
+
+        let content =
+            $"""
+        <h1 class="canvas-title">{canvas.Title}</h1>
+        <div id="canvas-container">
+            <div id="canvas-visualization"></div>
+            <div id="canvas-controls">
+                <button id="reset-zoom" class="canvas-btn">Reset Zoom</button>
+                <button id="center-view" class="canvas-btn">Center View</button>
+            </div>
+        </div>
+        <div id="node-details" class="node-details-panel" style="display: none;">
+            <h3 id="node-title">Node Details</h3>
+            <p id="node-content"></p>
+            <button id="close-details" class="canvas-btn">Close</button>
+        </div>
+        
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+        <script>
+            window.canvasData = {canvasJson};
+        </script>
+        <script src="scripts/canvas-visualization.js"></script>
+        """
+
+        let canvasPageHtml = generateFinalHtml (head $" - {canvas.Title}") updatedHeader footer content ""
+        
+        printfn $"Processing canvas page: {canvas.Title} ->"
+        Disk.writeFile outputPath canvasPageHtml

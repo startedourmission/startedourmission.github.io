@@ -749,6 +749,214 @@ blockquote footer {
     line-height: 1.4;
 }
 
+/* Canvas Section Styles */
+.canvas-section {
+    margin: 4rem 0;
+    width: 100%;
+}
+
+.canvas-section-title {
+    margin-bottom: 2rem;
+    border-bottom: 2px solid var(--color-secondary);
+    padding-bottom: 0.5rem;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--color-text);
+}
+
+.canvas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem auto;
+    max-width: 1200px;
+}
+
+.canvas-card {
+    border: 1px solid var(--color-bg-secondary);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    background: var(--color-bg);
+    box-shadow: var(--box-shadow) var(--color-shadow);
+}
+
+.canvas-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.canvas-card-link {
+    display: block;
+    padding: 2rem;
+    text-decoration: none;
+    color: inherit;
+    font-weight: normal;
+}
+
+.canvas-card-link:hover {
+    filter: none;
+}
+
+.canvas-icon {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.canvas-card-title {
+    margin: 0 0 1rem 0;
+    font-size: 1.3rem;
+    color: var(--color-link);
+    text-align: center;
+}
+
+.canvas-card-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.canvas-stat {
+    background: var(--color-accent);
+    padding: 0.3rem 0.6rem;
+    border-radius: var(--border-radius);
+    color: var(--color-text-secondary);
+    font-weight: bold;
+}
+
+.canvas-card-description {
+    color: var(--color-text-secondary);
+    font-size: 0.9rem;
+    text-align: center;
+    margin: 0;
+}
+
+/* Canvas Visualization Styles */
+.canvas-title {
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--color-text);
+}
+
+#canvas-container {
+    position: relative;
+    width: 100%;
+    min-height: 600px;
+    border: 1px solid var(--color-bg-secondary);
+    border-radius: var(--border-radius);
+    background: var(--color-bg);
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+#canvas-visualization {
+    width: 100%;
+    height: 100%;
+    min-height: 600px;
+}
+
+#canvas-controls {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 10px;
+    z-index: 1000;
+}
+
+.canvas-btn {
+    background: var(--color-link);
+    color: var(--color-bg);
+    border: none;
+    padding: 8px 16px;
+    border-radius: var(--border-radius);
+    font-size: 0.9rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.canvas-btn:hover {
+    filter: brightness(var(--hover-brightness));
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.canvas-btn:active {
+    filter: brightness(var(--active-brightness));
+    transform: translateY(0);
+}
+
+.node-details-panel {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--color-bg);
+    border: 2px solid var(--color-bg-secondary);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    max-width: 500px;
+    max-height: 80vh;
+    overflow-y: auto;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    z-index: 2000;
+}
+
+.node-details-panel::backdrop {
+    background: rgba(0,0,0,0.5);
+}
+
+.node-details-panel h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: var(--color-link);
+    border-bottom: 2px solid var(--color-bg-secondary);
+    padding-bottom: 0.5rem;
+}
+
+.node-details-panel p {
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.node-details-panel .canvas-btn {
+    margin-top: 1rem;
+}
+
+/* Canvas SVG 스타일 */
+#canvas-visualization svg {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+/* 노드 애니메이션 */
+.node-group {
+    transition: all 0.3s ease;
+}
+
+.node-group:hover .node-bg {
+    filter: brightness(1.05) drop-shadow(4px 4px 8px rgba(0,0,0,0.2));
+}
+
+.node-group:hover {
+    transform: scale(1.02);
+}
+
+/* 링크 스타일 */
+.link {
+    transition: all 0.3s ease;
+}
+
+.link:hover {
+    stroke: var(--color-link) !important;
+    stroke-width: 3 !important;
+    stroke-opacity: 0.8 !important;
+}
+
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
     .papers-grid {
@@ -767,11 +975,86 @@ blockquote footer {
     .post-date {
         align-self: flex-start;
     }
+    
+    /* Canvas 섹션 모바일 스타일 */
+    .canvas-section-title {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .canvas-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin: 1rem 0;
+    }
+    
+    .canvas-card-link {
+        padding: 1.5rem;
+    }
+    
+    .canvas-icon {
+        font-size: 2.5rem;
+    }
+    
+    .canvas-card-title {
+        font-size: 1.2rem;
+    }
+    
+    .canvas-card-info {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: center;
+    }
+    
+    /* Canvas 시각화 모바일 스타일 */
+    .canvas-title {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+    #canvas-container {
+        min-height: 400px;
+    }
+    
+    #canvas-visualization {
+        min-height: 400px;
+    }
+    
+    #canvas-controls {
+        flex-direction: column;
+        gap: 5px;
+        top: 5px;
+        right: 5px;
+    }
+    
+    .canvas-btn {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+    
+    .node-details-panel {
+        max-width: 90vw;
+        padding: 1.5rem;
+        top: 20%;
+        transform: translate(-50%, 0);
+    }
 }
 
 @media (max-width: 480px) {
     .papers-grid {
         grid-template-columns: 1fr;
         gap: 1rem;
+    }
+    
+    .canvas-title {
+        font-size: 1.5rem;
+    }
+    
+    #canvas-container {
+        min-height: 300px;
+    }
+    
+    #canvas-visualization {
+        min-height: 300px;
     }
 }
