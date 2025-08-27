@@ -260,12 +260,13 @@ module CanvasParser =
         if match_.Success then 
             let value = match_.Groups.[1].Value
             // JSON 이스케이프 문자 복원
-            let unescapedValue = value
-                .Replace("\\\"", "\"")
-                .Replace("\\\\", "\\")
-                .Replace("\\n", "\n")
-                .Replace("\\r", "\r")
-                .Replace("\\t", "\t")
+            let unescapedValue = 
+                value
+                    .Replace("\\\"", "\"")
+                    .Replace("\\\\", "\\")
+                    .Replace("\\n", "\n")
+                    .Replace("\\r", "\r")
+                    .Replace("\\t", "\t")
             Some unescapedValue
         else None
     
