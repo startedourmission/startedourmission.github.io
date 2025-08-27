@@ -354,37 +354,102 @@ module CanvasParser =
         
         List.rev results
     
-    // Canvas 파일 파싱
+    // Canvas 파일 파싱 (개선된 JSON 파서)
     let parseCanvas (filePath: string) =
         let fileName = Path.GetFileNameWithoutExtension(filePath)
         let urlFriendlyName = Url.toUrlFriendly fileName
         let content = File.ReadAllText(filePath)
         
-        // nodes 배열 추출
-        let nodesPattern = @"""nodes""\s*:\s*\[([^\]]*(?:\[[^\]]*\][^\]]*)*)?\]"
-        let nodesMatch = Regex.Match(content, nodesPattern, RegexOptions.Singleline)
-        let nodes = 
-            if nodesMatch.Success then
-                let nodesJson = nodesMatch.Groups.[1].Value
-                splitJsonArray nodesJson
-                |> List.map parseNode
-            else
-                []
-        
-        // edges 배열 추출
-        let edgesPattern = @"""edges""\s*:\s*\[([^\]]*(?:\[[^\]]*\][^\]]*)*)?\]"
-        let edgesMatch = Regex.Match(content, edgesPattern, RegexOptions.Singleline)
-        let edges = 
-            if edgesMatch.Success then
-                let edgesJson = edgesMatch.Groups.[1].Value
-                splitJsonArray edgesJson
-                |> List.map parseEdge
-            else
-                []
-        
-        {
-            Title = fileName
-            Url = urlFriendlyName + ".html"
-            Nodes = nodes
-            Edges = edges
-        }
+        try
+            // System.Text.Json을 사용한 파싱
+            let jsonDocument = System.Text.Json.JsonDocument.Parse(content)
+            let root = jsonDocument.RootElement
+            
+            // nodes 배열 파싱
+            let nodes = 
+                if root.TryGetProperty("nodes", &_) then
+                    let nodesArray = root.GetProperty("nodes")
+                    nodesArray.EnumerateArray()
+                    |> Seq.map (fun nodeElement ->
+                        let getId () = 
+                            if nodeElement.TryGetProperty("id", &_) then
+                                nodeElement.GetProperty("id").GetString()
+                            else ""
+                        let getType () = 
+                            if nodeElement.TryGetProperty("type", &_) then
+                                nodeElement.GetProperty("type").GetString()
+                            else "text"
+                        let getText () = 
+                            if nodeElement.TryGetProperty("text", &_) then
+                                Some (nodeElement.GetProperty("text").GetString())
+                            else None
+                        let getFile () = 
+                            if nodeElement.TryGetProperty("file", &_) then
+                                Some (nodeElement.GetProperty("file").GetString())
+                            else None
+                        let getInt prop defaultValue =
+                            if nodeElement.TryGetProperty(prop, &_) then
+                                nodeElement.GetProperty(prop).GetInt32()
+                            else defaultValue
+                        
+                        {
+                            Id = getId()
+                            Type = getType()
+                            Text = getText()
+                            File = getFile()
+                            X = getInt "x" 0
+                            Y = getInt "y" 0
+                            Width = getInt "width" 250
+                            Height = getInt "height" 60
+                        })
+                    |> Seq.toList
+                else []
+            
+            // edges 배열 파싱
+            let edges = 
+                if root.TryGetProperty("edges", &_) then
+                    let edgesArray = root.GetProperty("edges")
+                    edgesArray.EnumerateArray()
+                    |> Seq.map (fun edgeElement ->
+                        let getId () = 
+                            if edgeElement.TryGetProperty("id", &_) then
+                                edgeElement.GetProperty("id").GetString()
+                            else ""
+                        let getFromNode () = 
+                            if edgeElement.TryGetProperty("fromNode", &_) then
+                                edgeElement.GetProperty("fromNode").GetString()
+                            else ""
+                        let getToNode () = 
+                            if edgeElement.TryGetProperty("toNode", &_) then
+                                edgeElement.GetProperty("toNode").GetString()
+                            else ""
+                        let getSide prop =
+                            if edgeElement.TryGetProperty(prop, &_) then
+                                Some (edgeElement.GetProperty(prop).GetString())
+                            else None
+                        
+                        {
+                            Id = getId()
+                            FromNode = getFromNode()
+                            ToNode = getToNode()
+                            FromSide = getSide "fromSide"
+                            ToSide = getSide "toSide"
+                        })
+                    |> Seq.toList
+                else []
+            
+            {
+                Title = fileName
+                Url = urlFriendlyName + ".html"
+                Nodes = nodes
+                Edges = edges
+            }
+        with
+        | ex ->
+            printfn $"Error parsing canvas file {fileName}: {ex.Message}"
+            {
+                Title = fileName
+                Url = urlFriendlyName + ".html"
+                Nodes = []
+                Edges = []
+            }
