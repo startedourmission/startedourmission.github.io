@@ -81,6 +81,8 @@ let main argv =
             let filename = Path.GetFileNameWithoutExtension(file)
             let urlFriendlyTitle = Url.toUrlFriendly filename
             let imageUrl = Obsidian.extractImageUrl content
+            let dateValue = Obsidian.extractDate content filename
+            let summary = Obsidian.extractSummary content
             
             // 파일이 어떤 폴더에 속하는지 확인
             let category = 
@@ -100,6 +102,8 @@ let main argv =
                 Url = $"{urlFriendlyTitle}.html"
                 ImageUrl = imageUrl
                 Category = category
+                Date = dateValue
+                Summary = summary
             })
         |> Array.sortBy (fun post -> post.Title)
         |> Array.toList

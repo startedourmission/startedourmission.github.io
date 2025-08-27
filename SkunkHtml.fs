@@ -162,7 +162,25 @@
             else
                 let postsListHtml =
                     regularPosts
-                    |> List.map (fun post -> $"""<li><a href="{post.Url}">{post.Title}</a></li>""")
+                    |> List.map (fun post -> 
+                        let dateHtml = 
+                            match post.Date with
+                            | Some date -> $"""<span class="post-date">{date.ToString("yyyy-MM-dd")}</span>"""
+                            | None -> ""
+                        
+                        let summaryHtml = 
+                            match post.Summary with
+                            | Some summary -> $"""<p class="post-summary">{summary}</p>"""
+                            | None -> ""
+                        
+                        $"""
+                        <li class="post-item">
+                            <div class="post-header">
+                                <a href="{post.Url}" class="post-title-link">{post.Title}</a>
+                                {dateHtml}
+                            </div>
+                            {summaryHtml}
+                        </li>""")
                     |> String.concat "\n            "
                 
                 $"""
@@ -189,7 +207,25 @@
     let createCategoryPage (header: string) (footer: string) (categoryName: string) (posts: Post list) (outputPath: string) (navFolders: string array) =
         let postsHtml =
             posts
-            |> List.map (fun post -> $"""<li><a href="{post.Url}">{post.Title}</a></li>""")
+            |> List.map (fun post -> 
+                let dateHtml = 
+                    match post.Date with
+                    | Some date -> $"""<span class="post-date">{date.ToString("yyyy-MM-dd")}</span>"""
+                    | None -> ""
+                
+                let summaryHtml = 
+                    match post.Summary with
+                    | Some summary -> $"""<p class="post-summary">{summary}</p>"""
+                    | None -> ""
+                
+                $"""
+                <li class="post-item">
+                    <div class="post-header">
+                        <a href="{post.Url}" class="post-title-link">{post.Title}</a>
+                        {dateHtml}
+                    </div>
+                    {summaryHtml}
+                </li>""")
             |> String.concat "\n            "
 
         // 동적 내비게이션 생성
