@@ -392,10 +392,10 @@ module CanvasParser =
                             if nodeElement.TryGetProperty("file", &fileProp) then
                                 Some (nodeElement.GetProperty("file").GetString())
                             else None
-                        let getInt prop defaultValue =
+                        let getInt (prop: string) defaultValue =
                             let mutable intProp = Unchecked.defaultof<System.Text.Json.JsonElement>
                             if nodeElement.TryGetProperty(prop, &intProp) then
-                                nodeElement.GetProperty(prop).GetInt32()
+                                nodeElement.GetProperty(prop: string).GetInt32()
                             else defaultValue
                         
                         {
@@ -433,10 +433,10 @@ module CanvasParser =
                             if edgeElement.TryGetProperty("toNode", &toProp) then
                                 edgeElement.GetProperty("toNode").GetString()
                             else ""
-                        let getSide prop =
+                        let getSide (prop: string) =
                             let mutable sideProp = Unchecked.defaultof<System.Text.Json.JsonElement>
                             if edgeElement.TryGetProperty(prop, &sideProp) then
-                                Some (edgeElement.GetProperty(prop).GetString())
+                                Some (edgeElement.GetProperty(prop: string).GetString())
                             else None
                         
                         {
