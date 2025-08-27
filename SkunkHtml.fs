@@ -88,7 +88,7 @@
         printfn $"Processing {Path.GetFileName markdownFilePath} ->"
         Disk.writeFile outputHtmlFilePath finalHtmlContent
 
-    let createIndexPage (header: string) (footer: string) (gridSections: (string * Post list) list) (navFolders: string array) (regularPosts: Post list) (canvases: Canvas list) =
+    let createIndexPage (header: string) (footer: string) (gridSections: (string * Post list) list) (navFolders: string array) (regularPosts: Post list) =
         let frontPageMarkdownFilePath = Path.Combine(Config.markdownDir, Config.frontPageMarkdownFileName)
 
         let frontPageContentHtml =
@@ -192,41 +192,10 @@
                 </section>
                 """
 
-        // Canvas 섹션 (인터랙티브 마인드맵들)
-        let canvasHtml =
-            if canvases.IsEmpty then ""
-            else
-                let canvasListHtml =
-                    canvases
-                    |> List.map (fun canvas ->
-                        $"""
-                        <div class="canvas-card">
-                            <a href="{canvas.Url}" class="canvas-card-link">
-                                <div class="canvas-icon">🧠</div>
-                                <h3 class="canvas-card-title">{canvas.Title}</h3>
-                                <p class="canvas-card-info">
-                                    <span class="canvas-stat">{canvas.Nodes.Length} nodes</span>
-                                    <span class="canvas-stat">{canvas.Edges.Length} connections</span>
-                                </p>
-                                <p class="canvas-card-description">Interactive mindmap visualization</p>
-                            </a>
-                        </div>""")
-                    |> String.concat "\n            "
-                
-                $"""
-                <section class="canvas-section">
-                    <h1 class="canvas-section-title">Interactive Canvas</h1>
-                    <div class="canvas-grid">
-            {canvasListHtml}
-                    </div>
-                </section>
-                """
-
         let content =
             $"""
         {frontPageContentHtml}
         {gridSectionsHtml}
-        {canvasHtml}
         {postsHtml}
         """
 

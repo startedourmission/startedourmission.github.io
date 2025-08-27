@@ -749,90 +749,6 @@ blockquote footer {
     line-height: 1.4;
 }
 
-/* Canvas Section Styles */
-.canvas-section {
-    margin: 4rem 0;
-    width: 100%;
-}
-
-.canvas-section-title {
-    margin-bottom: 2rem;
-    border-bottom: 2px solid var(--color-secondary);
-    padding-bottom: 0.5rem;
-    text-align: center;
-    font-size: 2rem;
-    color: var(--color-text);
-}
-
-.canvas-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin: 2rem auto;
-    max-width: 1200px;
-}
-
-.canvas-card {
-    border: 1px solid var(--color-bg-secondary);
-    border-radius: var(--border-radius);
-    overflow: hidden;
-    transition: all 0.3s ease;
-    background: var(--color-bg);
-    box-shadow: var(--box-shadow) var(--color-shadow);
-}
-
-.canvas-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-}
-
-.canvas-card-link {
-    display: block;
-    padding: 2rem;
-    text-decoration: none;
-    color: inherit;
-    font-weight: normal;
-}
-
-.canvas-card-link:hover {
-    filter: none;
-}
-
-.canvas-icon {
-    font-size: 3rem;
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
-.canvas-card-title {
-    margin: 0 0 1rem 0;
-    font-size: 1.3rem;
-    color: var(--color-link);
-    text-align: center;
-}
-
-.canvas-card-info {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 1rem;
-    font-size: 0.9rem;
-}
-
-.canvas-stat {
-    background: var(--color-accent);
-    padding: 0.3rem 0.6rem;
-    border-radius: var(--border-radius);
-    color: var(--color-text-secondary);
-    font-weight: bold;
-}
-
-.canvas-card-description {
-    color: var(--color-text-secondary);
-    font-size: 0.9rem;
-    text-align: center;
-    margin: 0;
-}
-
 /* Canvas Visualization Styles */
 .canvas-title {
     margin-bottom: 2rem;
@@ -928,33 +844,21 @@ blockquote footer {
     margin-top: 1rem;
 }
 
-/* Canvas SVG 스타일 */
+/* Canvas SVG 스타일 (블로그 스타일) */
 #canvas-visualization svg {
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    background: var(--color-bg);
 }
 
-/* 노드 애니메이션 */
-.node-group {
-    transition: all 0.3s ease;
-}
-
+/* 노드 스타일 (깔끔한 블로그 스타일) */
 .node-group:hover .node-bg {
-    filter: brightness(1.05) drop-shadow(4px 4px 8px rgba(0,0,0,0.2));
+    stroke: var(--color-link) !important;
+    stroke-width: 2 !important;
 }
 
-.node-group:hover {
-    transform: scale(1.02);
-}
-
-/* 링크 스타일 */
-.link {
-    transition: all 0.3s ease;
-}
-
+/* 링크 스타일 (심플) */
 .link:hover {
     stroke: var(--color-link) !important;
-    stroke-width: 3 !important;
-    stroke-opacity: 0.8 !important;
+    stroke-width: 2 !important;
 }
 
 /* Mobile Responsiveness */
@@ -974,36 +878,6 @@ blockquote footer {
     
     .post-date {
         align-self: flex-start;
-    }
-    
-    /* Canvas 섹션 모바일 스타일 */
-    .canvas-section-title {
-        font-size: 1.5rem;
-        margin-bottom: 1rem;
-    }
-    
-    .canvas-grid {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-        margin: 1rem 0;
-    }
-    
-    .canvas-card-link {
-        padding: 1.5rem;
-    }
-    
-    .canvas-icon {
-        font-size: 2.5rem;
-    }
-    
-    .canvas-card-title {
-        font-size: 1.2rem;
-    }
-    
-    .canvas-card-info {
-        flex-direction: column;
-        gap: 0.5rem;
-        align-items: center;
     }
     
     /* Canvas 시각화 모바일 스타일 */

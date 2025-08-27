@@ -1,5 +1,5 @@
-// Canvas Visualization using D3.js
-// 인터랙티브 마인드맵 시각화
+// Canvas Static Visualization
+// 블로그 스타일 정적 마인드맵
 
 class CanvasVisualization {
     constructor() {
@@ -8,7 +8,6 @@ class CanvasVisualization {
         this.height = 0;
         this.svg = null;
         this.g = null;
-        this.simulation = null;
         this.nodes = [];
         this.links = [];
         this.zoom = null;
@@ -20,7 +19,6 @@ class CanvasVisualization {
         this.setupDimensions();
         this.setupSVG();
         this.setupData();
-        this.setupSimulation();
         this.setupControls();
         this.render();
         
@@ -70,85 +68,79 @@ class CanvasVisualization {
             return;
         }
         
-        // 노드 데이터 준비
+        // 노드 데이터 준비 (원본 위치 사용)
         this.nodes = window.canvasData.nodes.map(node => ({
             id: node.id,
             type: node.type,
             text: node.text || '',
             file: node.file || null,
-            originalX: node.x,
-            originalY: node.y,
-            width: node.width,
-            height: node.height,
-            // D3 simulation을 위한 속성들
             x: node.x,
             y: node.y,
-            fx: null, // 고정 위치 (드래그 시 사용)
-            fy: null
+            width: node.width,
+            height: node.height
         }));
         
         // 링크 데이터 준비
         this.links = window.canvasData.edges.map(edge => ({
             id: edge.id,
-            source: edge.fromNode,
-            target: edge.toNode,
+            sourceId: edge.fromNode,
+            targetId: edge.toNode,
             fromSide: edge.fromSide || null,
             toSide: edge.toSide || null
         }));
     }
     
-    setupSimulation() {
-        this.simulation = d3.forceSimulation(this.nodes)
-            .force('link', d3.forceLink(this.links)
-                .id(d => d.id)
-                .distance(120)
-                .strength(0.5))
-            .force('charge', d3.forceManyBody()
-                .strength(-300)
-                .distanceMax(400))
-            .force('center', d3.forceCenter(this.width / 2, this.height / 2))
-            .force('collision', d3.forceCollide()
-                .radius(d => Math.max(d.width, d.height) / 2 + 10))
-            .alphaTarget(0.1)
-            .on('tick', () => this.ticked());
-    }
-    
     render() {
-        // 링크 렌더링
+        // Canvas 크기 계산 (모든 노드가 들어가도록)
+        const bounds = this.calculateBounds();
+        const scale = this.calculateInitialScale(bounds);
+        
+        // 줌 초기 설정
+        const transform = d3.zoomIdentity
+            .translate(this.width / 2, this.height / 2)
+            .scale(scale)
+            .translate(-bounds.centerX, -bounds.centerY);
+            
+        this.svg.call(this.zoom.transform, transform);
+        
+        // 링크 렌더링 (노드 연결선)
         const links = this.g.selectAll('.link')
             .data(this.links)
             .join('line')
             .attr('class', 'link')
-            .style('stroke', '#999')
-            .style('stroke-width', 2)
-            .style('stroke-opacity', 0.6);
+            .attr('x1', d => this.getNodeById(d.sourceId).x)
+            .attr('y1', d => this.getNodeById(d.sourceId).y)
+            .attr('x2', d => this.getNodeById(d.targetId).x)
+            .attr('y2', d => this.getNodeById(d.targetId).y)
+            .style('stroke', '#ccc')
+            .style('stroke-width', 1)
+            .style('stroke-opacity', 0.7);
             
         // 노드 그룹 생성
         const nodeGroups = this.g.selectAll('.node-group')
             .data(this.nodes)
             .join('g')
             .attr('class', 'node-group')
-            .style('cursor', 'pointer')
-            .call(this.setupDrag());
+            .attr('transform', d => `translate(${d.x}, ${d.y})`)
+            .style('cursor', 'pointer');
             
-        // 노드 배경 (카드 스타일)
+        // 노드 배경 (블로그 스타일 카드)
         nodeGroups.append('rect')
             .attr('class', 'node-bg')
             .attr('width', d => d.width)
             .attr('height', d => d.height)
             .attr('x', d => -d.width / 2)
             .attr('y', d => -d.height / 2)
-            .attr('rx', 8)
-            .style('fill', d => this.getNodeColor(d.type))
+            .attr('rx', 5)
+            .style('fill', '#fff')
             .style('stroke', '#ddd')
-            .style('stroke-width', 2)
-            .style('filter', 'drop-shadow(2px 2px 4px rgba(0,0,0,0.1))')
+            .style('stroke-width', 1)
             .on('click', (event, d) => {
                 event.stopPropagation();
                 this.showNodeDetails(d);
             });
             
-        // 노드 텍스트
+        // 노드 텍스트 (블로그 스타일)
         nodeGroups.append('foreignObject')
             .attr('width', d => d.width - 16)
             .attr('height', d => d.height - 16)
@@ -161,52 +153,51 @@ class CanvasVisualization {
             .style('align-items', 'center')
             .style('justify-content', 'center')
             .style('text-align', 'center')
-            .style('font-size', '12px')
+            .style('font-size', '11px')
             .style('line-height', '1.3')
             .style('color', '#333')
+            .style('font-family', 'var(--font-family)')
             .style('overflow', 'hidden')
-            .style('word-wrap', 'break-word')
+            .style('padding', '4px')
             .html(d => this.formatNodeText(d.text));
     }
     
-    setupDrag() {
-        return d3.drag()
-            .on('start', (event, d) => {
-                if (!event.active) this.simulation.alphaTarget(0.3).restart();
-                d.fx = d.x;
-                d.fy = d.y;
-            })
-            .on('drag', (event, d) => {
-                d.fx = event.x;
-                d.fy = event.y;
-            })
-            .on('end', (event, d) => {
-                if (!event.active) this.simulation.alphaTarget(0.1);
-                // 드래그 종료 후에도 위치 고정 유지 (더블클릭으로 해제 가능)
-            });
+    getNodeById(id) {
+        return this.nodes.find(node => node.id === id);
     }
     
-    ticked() {
-        // 링크 위치 업데이트
-        this.g.selectAll('.link')
-            .attr('x1', d => d.source.x)
-            .attr('y1', d => d.source.y)
-            .attr('x2', d => d.target.x)
-            .attr('y2', d => d.target.y);
-            
-        // 노드 위치 업데이트
-        this.g.selectAll('.node-group')
-            .attr('transform', d => `translate(${d.x}, ${d.y})`);
+    calculateBounds() {
+        if (this.nodes.length === 0) return { centerX: 0, centerY: 0, width: 800, height: 600 };
+        
+        const bounds = this.nodes.reduce((acc, node) => {
+            const x = node.x;
+            const y = node.y;
+            return {
+                minX: Math.min(acc.minX, x - node.width / 2),
+                maxX: Math.max(acc.maxX, x + node.width / 2),
+                minY: Math.min(acc.minY, y - node.height / 2),
+                maxY: Math.max(acc.maxY, y + node.height / 2)
+            };
+        }, {
+            minX: Infinity,
+            maxX: -Infinity,
+            minY: Infinity,
+            maxY: -Infinity
+        });
+        
+        const centerX = (bounds.minX + bounds.maxX) / 2;
+        const centerY = (bounds.minY + bounds.maxY) / 2;
+        const width = bounds.maxX - bounds.minX;
+        const height = bounds.maxY - bounds.minY;
+        
+        return { centerX, centerY, width, height };
     }
     
-    getNodeColor(type) {
-        const colors = {
-            'text': '#f0f8ff',
-            'file': '#f0fff0',
-            'link': '#fff8dc',
-            'group': '#fdf5e6'
-        };
-        return colors[type] || '#ffffff';
+    calculateInitialScale(bounds) {
+        const padding = 50;
+        const scaleX = (this.width - padding * 2) / Math.max(bounds.width, 1);
+        const scaleY = (this.height - padding * 2) / Math.max(bounds.height, 1);
+        return Math.min(scaleX, scaleY, 1); // 최대 1배율
     }
     
     formatNodeText(text) {
@@ -273,38 +264,13 @@ class CanvasVisualization {
     centerView() {
         if (this.nodes.length === 0) return;
         
-        // 모든 노드의 경계 계산
-        const bounds = this.nodes.reduce((acc, node) => {
-            const x = node.x;
-            const y = node.y;
-            return {
-                minX: Math.min(acc.minX, x - node.width / 2),
-                maxX: Math.max(acc.maxX, x + node.width / 2),
-                minY: Math.min(acc.minY, y - node.height / 2),
-                maxY: Math.max(acc.maxY, y + node.height / 2)
-            };
-        }, {
-            minX: Infinity,
-            maxX: -Infinity,
-            minY: Infinity,
-            maxY: -Infinity
-        });
-        
-        const centerX = (bounds.minX + bounds.maxX) / 2;
-        const centerY = (bounds.minY + bounds.maxY) / 2;
-        const width = bounds.maxX - bounds.minX;
-        const height = bounds.maxY - bounds.minY;
-        
-        const scale = Math.min(
-            (this.width * 0.8) / width,
-            (this.height * 0.8) / height,
-            1
-        );
+        const bounds = this.calculateBounds();
+        const scale = this.calculateInitialScale(bounds);
         
         const transform = d3.zoomIdentity
             .translate(this.width / 2, this.height / 2)
             .scale(scale)
-            .translate(-centerX, -centerY);
+            .translate(-bounds.centerX, -bounds.centerY);
             
         this.svg.transition()
             .duration(750)
@@ -317,11 +283,6 @@ class CanvasVisualization {
         this.svg
             .attr('width', this.width)
             .attr('height', this.height);
-            
-        this.simulation
-            .force('center', d3.forceCenter(this.width / 2, this.height / 2))
-            .alpha(0.3)
-            .restart();
     }
 }
 
