@@ -25,7 +25,7 @@
 		{"id":"7d4902b66dce8236","type":"text","text":"Deep AutoEncoder (2012)","x":340,"y":615,"width":250,"height":60},
 		{"id":"a7754066d7c7baf3","type":"text","text":"LSTM (2015)","x":340,"y":735,"width":250,"height":60},
 		{"id":"5640de4746c313b3","type":"text","text":"WaveNet (2016)","x":340,"y":845,"width":250,"height":60},
-		{"id":"46c86c105e7a49f7","type":"text","text":"AlexNet (2012)","x":-220,"y":615,"width":250,"height":60},
+		{"id":"46c86c105e7a49f7","type":"text","text":"[[ImageNet Classification with Deep Convolutional Neural Networks|AlexNet]] (2012)","x":-220,"y":615,"width":250,"height":60},
 		{"id":"5881e9855edbb48d","type":"text","text":"VGGNet (2014)","x":-220,"y":675,"width":250,"height":60},
 		{"id":"ebd385585636878a","type":"text","text":"GAN (2014)","x":-220,"y":735,"width":250,"height":60},
 		{"id":"315a748566af98c0","type":"text","text":"ResNet (2015)","x":-220,"y":795,"width":250,"height":60},
