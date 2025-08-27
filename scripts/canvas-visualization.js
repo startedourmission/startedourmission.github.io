@@ -203,12 +203,50 @@ class CanvasVisualization {
     formatNodeText(text) {
         if (!text) return '';
         
-        // 긴 텍스트는 줄임표 처리
-        if (text.length > 100) {
-            return text.substring(0, 97) + '...';
+        // Obsidian wikilink를 HTML 링크로 변환
+        let processedText = this.convertWikiLinks(text);
+        
+        // 긴 텍스트는 줄임표 처리 (링크 변환 후)
+        if (processedText.length > 120) {
+            processedText = processedText.substring(0, 117) + '...';
         }
         
-        // HTML 이스케이프
+        return processedText;
+    }
+    
+    convertWikiLinks(text) {
+        // Obsidian wikilink 패턴: [[target|display]] 또는 [[target]]
+        const wikiLinkPattern = /\[\[([^\]]+)\]\]/g;
+        
+        return text.replace(wikiLinkPattern, (match, linkContent) => {
+            let target, displayText;
+            
+            // 파이프(|)로 분리된 경우
+            if (linkContent.includes('|')) {
+                const parts = linkContent.split('|');
+                target = parts[0].trim();
+                displayText = parts[1].trim();
+            } else {
+                // 파이프가 없으면 target이 display text
+                target = linkContent.trim();
+                displayText = target;
+            }
+            
+            // URL 친화적으로 변환
+            const urlFriendlyTarget = this.toUrlFriendly(target);
+            
+            // HTML 링크 생성 (새 탭에서 열기)
+            return `<a href="${urlFriendlyTarget}.html" target="_blank" style="color: var(--color-link); text-decoration: underline;">${this.escapeHtml(displayText)}</a>`;
+        });
+    }
+    
+    toUrlFriendly(input) {
+        return input.toLowerCase()
+            .replace(/[^\w\s]/g, '') // 영숫자가 아닌 문자 제거
+            .replace(/\s+/g, '-');   // 공백을 하이픈으로
+    }
+    
+    escapeHtml(text) {
         return text
             .replace(/&/g, '&amp;')
             .replace(/</g, '&lt;')
@@ -226,7 +264,8 @@ class CanvasVisualization {
         
         let details = `<strong>ID:</strong> ${node.id}<br>`;
         if (node.text) {
-            details += `<strong>Content:</strong><br>${node.text.replace(/\n/g, '<br>')}<br>`;
+            const processedText = this.convertWikiLinks(node.text).replace(/\n/g, '<br>');
+            details += `<strong>Content:</strong><br>${processedText}<br>`;
         }
         if (node.file) {
             details += `<strong>File:</strong> ${node.file}<br>`;
