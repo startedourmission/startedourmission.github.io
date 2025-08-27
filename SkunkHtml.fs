@@ -294,24 +294,28 @@
         let nodesJson =
             canvas.Nodes
             |> List.map (fun node ->
-                let textField = match node.Text with
-                                | Some text -> $""", "text": "{text.Replace("\"", "\\\"")}" """
-                                | None -> ""
-                let fileField = match node.File with
-                                | Some file -> $""", "file": "{file}" """
-                                | None -> ""
+                let textField = 
+                    match node.Text with
+                    | Some text -> $""", "text": "{text.Replace("\"", "\\\"")}" """
+                    | None -> ""
+                let fileField = 
+                    match node.File with
+                    | Some file -> $""", "file": "{file}" """
+                    | None -> ""
                 $"""{{"id": "{node.Id}", "type": "{node.Type}"{textField}{fileField}, "x": {node.X}, "y": {node.Y}, "width": {node.Width}, "height": {node.Height}}}""")
             |> String.concat ", "
 
         let edgesJson =
             canvas.Edges
             |> List.map (fun edge ->
-                let fromSideField = match edge.FromSide with
-                                   | Some side -> $""", "fromSide": "{side}" """
-                                   | None -> ""
-                let toSideField = match edge.ToSide with
-                                 | Some side -> $""", "toSide": "{side}" """
-                                 | None -> ""
+                let fromSideField = 
+                    match edge.FromSide with
+                    | Some side -> $""", "fromSide": "{side}" """
+                    | None -> ""
+                let toSideField = 
+                    match edge.ToSide with
+                    | Some side -> $""", "toSide": "{side}" """
+                    | None -> ""
                 $"""{{"id": "{edge.Id}", "fromNode": "{edge.FromNode}", "toNode": "{edge.ToNode}"{fromSideField}{toSideField}}}""")
             |> String.concat ", "
 
