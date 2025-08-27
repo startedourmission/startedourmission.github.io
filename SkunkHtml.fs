@@ -265,7 +265,9 @@
             |> List.map (fun node ->
                 let textField = 
                     match node.Text with
-                    | Some text -> $""", "text": "{text.Replace("\"", "\\\"")}" """
+                    | Some text -> 
+                        let escapedText = text.Replace("\\", "\\\\").Replace("\"", "\\\"").Replace("\n", "\\n").Replace("\r", "\\r").Replace("\t", "\\t")
+                        $""", "text": "{escapedText}" """
                     | None -> ""
                 let fileField = 
                     match node.File with

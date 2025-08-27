@@ -253,11 +253,21 @@ module CanvasParser =
     open System.Text.RegularExpressions
     open System.IO
     
-    // JSON에서 문자열 값 추출 (간단한 파서)
+    // JSON에서 문자열 값 추출 (개선된 파서)
     let extractStringValue (json: string) (key: string) =
-        let pattern = $@"""{key}""\s*:\s*""([^""]*)"""
+        let pattern = $@"""{key}""\s*:\s*""((?:[^""\\]|\\.)*)"""
         let match_ = Regex.Match(json, pattern)
-        if match_.Success then Some match_.Groups.[1].Value else None
+        if match_.Success then 
+            let value = match_.Groups.[1].Value
+            // JSON 이스케이프 문자 복원
+            let unescapedValue = value
+                .Replace("\\\"", "\"")
+                .Replace("\\\\", "\\")
+                .Replace("\\n", "\n")
+                .Replace("\\r", "\r")
+                .Replace("\\t", "\t")
+            Some unescapedValue
+        else None
     
     // JSON에서 정수 값 추출
     let extractIntValue (json: string) (key: string) =
@@ -307,24 +317,39 @@ module CanvasParser =
             ToSide = toSide
         }
     
-    // JSON 배열 분할 (간단한 파서)
+    // JSON 배열 분할 (개선된 파서)
     let splitJsonArray (jsonArray: string) =
         let mutable level = 0
         let mutable start = 0
         let mutable results = []
+        let mutable inString = false
+        let mutable escaped = false
         let chars = jsonArray.ToCharArray()
         
         for i = 0 to chars.Length - 1 do
-            match chars.[i] with
-            | '{' -> level <- level + 1
-            | '}' -> 
-                level <- level - 1
-                if level = 0 then
-                    let item = jsonArray.Substring(start, i - start + 1)
-                    results <- item :: results
+            let char = chars.[i]
+            
+            if inString then
+                if escaped then
+                    escaped <- false
+                elif char = '\\' then
+                    escaped <- true
+                elif char = '"' then
+                    inString <- false
+            else
+                match char with
+                | '"' -> inString <- true
+                | '{' -> level <- level + 1
+                | '}' -> 
+                    level <- level - 1
+                    if level = 0 then
+                        let item = jsonArray.Substring(start, i - start + 1).Trim()
+                        if item.Length > 0 then
+                            results <- item :: results
+                        start <- i + 1
+                | ',' when level = 0 -> 
                     start <- i + 1
-            | ',' when level = 0 -> start <- i + 1
-            | _ -> ()
+                | _ -> ()
         
         List.rev results
     
