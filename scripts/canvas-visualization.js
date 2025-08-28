@@ -203,15 +203,32 @@ class CanvasVisualization {
     formatNodeText(text) {
         if (!text) return '';
         
-        // Obsidian wikilink를 HTML 링크로 변환
-        let processedText = this.convertWikiLinks(text);
+        // 노드에서는 wikilink를 단순 텍스트로 변환 (표시용)
+        let processedText = this.convertWikiLinksToText(text);
         
-        // 긴 텍스트는 줄임표 처리 (링크 변환 후)
-        if (processedText.length > 120) {
-            processedText = processedText.substring(0, 117) + '...';
+        // 긴 텍스트는 줄임표 처리
+        if (processedText.length > 100) {
+            processedText = processedText.substring(0, 97) + '...';
         }
         
-        return processedText;
+        // HTML 이스케이프
+        return this.escapeHtml(processedText);
+    }
+    
+    convertWikiLinksToText(text) {
+        // Obsidian wikilink를 단순 텍스트로 변환 (노드 표시용)
+        const wikiLinkPattern = /\[\[([^\]]+)\]\]/g;
+        
+        return text.replace(wikiLinkPattern, (match, linkContent) => {
+            // 파이프(|)로 분리된 경우 display text만 사용
+            if (linkContent.includes('|')) {
+                const parts = linkContent.split('|');
+                return parts[1].trim();
+            } else {
+                // 파이프가 없으면 전체 내용 사용
+                return linkContent.trim();
+            }
+        });
     }
     
     convertWikiLinks(text) {
