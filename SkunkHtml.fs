@@ -317,7 +317,7 @@
         </div>
         <div id="node-details" class="node-details-panel" style="display: none;">
             <h3 id="node-title">Node Details</h3>
-            <p id="node-content"></p>
+            <div id="node-content" class="node-content"></div>
             <button id="close-details" class="canvas-btn">Close</button>
         </div>
         

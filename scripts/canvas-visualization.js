@@ -306,8 +306,10 @@ class CanvasVisualization {
         content.innerHTML = details;
         panel.style.display = 'block';
         
-        // 동적으로 생성된 링크에 이벤트 위임 적용
-        this.setupDynamicLinkHandlers();
+        // DOM 업데이트 완료 대기 후 이벤트 핸들러 설정
+        setTimeout(() => {
+            this.setupDynamicLinkHandlers();
+        }, 10);
     }
     
     hideNodeDetails() {
@@ -317,6 +319,13 @@ class CanvasVisualization {
     setupDynamicLinkHandlers() {
         // 노드 디테일 패널 내의 wikilink span에 대한 이벤트 위임
         const panel = document.getElementById('node-details');
+        const content = document.getElementById('node-content');
+        
+        console.log('Setting up dynamic link handlers...');
+        
+        // wikilink 요소들 확인
+        const wikilinks = content.querySelectorAll('.wikilink');
+        console.log(`Found ${wikilinks.length} wikilink elements:`, wikilinks);
         
         // 기존 이벤트 리스너 제거 (중복 방지)
         const existingHandler = panel._linkHandler;
@@ -326,21 +335,47 @@ class CanvasVisualization {
         
         // 새 이벤트 리스너 추가
         const linkHandler = (event) => {
+            console.log('Panel clicked:', event.target);
+            
             // wikilink 클래스를 가진 span 클릭 처리
             if (event.target.classList && event.target.classList.contains('wikilink')) {
+                console.log('Wikilink clicked!', event.target);
                 event.preventDefault();
                 event.stopPropagation();
                 
                 const targetUrl = event.target.getAttribute('data-target');
+                console.log('Target URL:', targetUrl);
+                
                 if (targetUrl) {
                     // 새 탭에서 링크 열기
+                    console.log('Opening URL in new tab:', targetUrl);
                     window.open(targetUrl, '_blank');
+                } else {
+                    console.log('No target URL found');
                 }
             }
         };
         
         panel.addEventListener('click', linkHandler);
         panel._linkHandler = linkHandler; // 참조 저장 (나중에 제거용)
+        
+        // 직접 이벤트도 추가 (백업)
+        wikilinks.forEach((link, index) => {
+            console.log(`Adding direct click handler to wikilink ${index}:`, link);
+            link.addEventListener('click', (event) => {
+                console.log('Direct wikilink clicked:', event.target);
+                event.preventDefault();
+                event.stopPropagation();
+                
+                const targetUrl = event.target.getAttribute('data-target');
+                if (targetUrl) {
+                    console.log('Direct click - opening URL:', targetUrl);
+                    window.open(targetUrl, '_blank');
+                }
+            });
+        });
+        
+        console.log('Dynamic link handlers setup complete');
     }
     
     setupControls() {
