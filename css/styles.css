@@ -844,6 +844,18 @@ blockquote footer {
     margin-top: 1rem;
 }
 
+/* Wikilink 스타일 */
+.wikilink {
+    color: var(--color-link);
+    text-decoration: underline;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.wikilink:hover {
+    filter: brightness(var(--hover-brightness));
+}
+
 /* Canvas SVG 스타일 (블로그 스타일) */
 #canvas-visualization svg {
     background: var(--color-bg);

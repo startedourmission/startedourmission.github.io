@@ -232,10 +232,11 @@ class CanvasVisualization {
     }
     
     convertWikiLinks(text) {
-        // Obsidian wikilink 패턴: [[target|display]] 또는 [[target]]
+        // Obsidian wikilink를 클릭 가능한 span으로 변환
         const wikiLinkPattern = /\[\[([^\]]+)\]\]/g;
+        let linkIndex = 0;
         
-        return text.replace(wikiLinkPattern, (match, linkContent) => {
+        const processedText = text.replace(wikiLinkPattern, (match, linkContent) => {
             let target, displayText;
             
             // 파이프(|)로 분리된 경우
@@ -252,12 +253,12 @@ class CanvasVisualization {
             // URL 친화적으로 변환
             const urlFriendlyTarget = this.toUrlFriendly(target);
             
-            // CSS 변수에서 링크 색상 가져오기
-            const linkColor = this.getLinkColor();
-            
-            // HTML 링크 생성 (새 탭에서 열기)
-            return `<a href="${urlFriendlyTarget}.html" target="_blank" style="color: ${linkColor}; text-decoration: underline; cursor: pointer;">${this.escapeHtml(displayText)}</a>`;
+            // 클릭 가능한 span 생성 (data 속성으로 링크 정보 저장)
+            const uniqueId = `wikilink-${Date.now()}-${linkIndex++}`;
+            return `<span class="wikilink" id="${uniqueId}" data-target="${urlFriendlyTarget}.html" style="color: #0066cc; text-decoration: underline; cursor: pointer;">${this.escapeHtml(displayText)}</span>`;
         });
+        
+        return processedText;
     }
     
     toUrlFriendly(input) {
@@ -314,7 +315,7 @@ class CanvasVisualization {
     }
     
     setupDynamicLinkHandlers() {
-        // 노드 디테일 패널 내의 모든 링크에 대한 이벤트 위임
+        // 노드 디테일 패널 내의 wikilink span에 대한 이벤트 위임
         const panel = document.getElementById('node-details');
         
         // 기존 이벤트 리스너 제거 (중복 방지)
@@ -325,11 +326,16 @@ class CanvasVisualization {
         
         // 새 이벤트 리스너 추가
         const linkHandler = (event) => {
-            if (event.target.tagName === 'A' && event.target.href) {
+            // wikilink 클래스를 가진 span 클릭 처리
+            if (event.target.classList && event.target.classList.contains('wikilink')) {
                 event.preventDefault();
+                event.stopPropagation();
                 
-                // 새 탭에서 링크 열기
-                window.open(event.target.href, '_blank');
+                const targetUrl = event.target.getAttribute('data-target');
+                if (targetUrl) {
+                    // 새 탭에서 링크 열기
+                    window.open(targetUrl, '_blank');
+                }
             }
         };
         
