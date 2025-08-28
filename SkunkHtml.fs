@@ -39,6 +39,17 @@
             |> Disk.readFile
 
         headTemplate.Replace("{{title.html content}}", titleTemplate + titleSuffix)
+    
+    let headCanvas (titleSuffix: string) =
+        let headTemplate =
+            Path.Combine(Config.htmlDir, "head-canvas.html")
+            |> Disk.readFile
+
+        let titleTemplate =
+            Path.Combine(Config.htmlDir, "title.html")
+            |> Disk.readFile
+
+        headTemplate.Replace("{{title.html content}}", titleTemplate + titleSuffix)
 
     // 모든 마크다운 파일을 블로그 글로 처리
     let isArticle (file: string) =
@@ -328,7 +339,7 @@
         <script src="scripts/canvas-visualization.js"></script>
         """
 
-        let canvasPageHtml = generateFinalHtml (head $" - {canvas.Title}") updatedHeader footer content ""
+        let canvasPageHtml = generateFinalHtml (headCanvas $" - {canvas.Title}") updatedHeader footer content ""
         
         printfn $"Processing canvas page: {canvas.Title} ->"
         Disk.writeFile outputPath canvasPageHtml
