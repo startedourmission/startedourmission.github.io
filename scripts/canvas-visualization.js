@@ -252,15 +252,27 @@ class CanvasVisualization {
             // URL 친화적으로 변환
             const urlFriendlyTarget = this.toUrlFriendly(target);
             
+            // CSS 변수에서 링크 색상 가져오기
+            const linkColor = this.getLinkColor();
+            
             // HTML 링크 생성 (새 탭에서 열기)
-            return `<a href="${urlFriendlyTarget}.html" target="_blank" style="color: var(--color-link); text-decoration: underline;">${this.escapeHtml(displayText)}</a>`;
+            return `<a href="${urlFriendlyTarget}.html" target="_blank" style="color: ${linkColor}; text-decoration: underline; cursor: pointer;">${this.escapeHtml(displayText)}</a>`;
         });
     }
     
     toUrlFriendly(input) {
+        // F# SkunkUtils와 동일한 로직 적용
         return input.toLowerCase()
-            .replace(/[^\w\s]/g, '') // 영숫자가 아닌 문자 제거
-            .replace(/\s+/g, '-');   // 공백을 하이픈으로
+            .replace(/[^\w\s가-힣]/g, '') // 영숫자, 공백, 한글만 유지
+            .replace(/\s+/g, '-')        // 공백을 하이픈으로
+            .replace(/-+/g, '-')         // 연속된 하이픈 정리
+            .replace(/^-|-$/g, '');      // 앞뒤 하이픈 제거
+    }
+    
+    getLinkColor() {
+        // CSS 변수에서 링크 색상 가져오기
+        const rootStyles = getComputedStyle(document.documentElement);
+        return rootStyles.getPropertyValue('--color-link').trim() || '#0000ff';
     }
     
     escapeHtml(text) {
@@ -292,10 +304,37 @@ class CanvasVisualization {
         
         content.innerHTML = details;
         panel.style.display = 'block';
+        
+        // 동적으로 생성된 링크에 이벤트 위임 적용
+        this.setupDynamicLinkHandlers();
     }
     
     hideNodeDetails() {
         document.getElementById('node-details').style.display = 'none';
+    }
+    
+    setupDynamicLinkHandlers() {
+        // 노드 디테일 패널 내의 모든 링크에 대한 이벤트 위임
+        const panel = document.getElementById('node-details');
+        
+        // 기존 이벤트 리스너 제거 (중복 방지)
+        const existingHandler = panel._linkHandler;
+        if (existingHandler) {
+            panel.removeEventListener('click', existingHandler);
+        }
+        
+        // 새 이벤트 리스너 추가
+        const linkHandler = (event) => {
+            if (event.target.tagName === 'A' && event.target.href) {
+                event.preventDefault();
+                
+                // 새 탭에서 링크 열기
+                window.open(event.target.href, '_blank');
+            }
+        };
+        
+        panel.addEventListener('click', linkHandler);
+        panel._linkHandler = linkHandler; // 참조 저장 (나중에 제거용)
     }
     
     setupControls() {
