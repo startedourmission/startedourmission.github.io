@@ -715,12 +715,8 @@ blockquote footer {
 }
 
 .post-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: block;
     margin-bottom: 0.5rem;
-    flex-wrap: wrap;
-    gap: 0.5rem;
 }
 
 .post-title-link {
@@ -728,7 +724,8 @@ blockquote footer {
     text-decoration: none;
     color: var(--color-link);
     font-weight: bold;
-    flex-grow: 1;
+    display: block;
+    margin-bottom: 0.25rem;
 }
 
 .post-title-link:hover {
@@ -739,7 +736,8 @@ blockquote footer {
     font-size: 0.9rem;
     color: var(--color-text-secondary);
     font-weight: normal;
-    white-space: nowrap;
+    display: block;
+    margin-bottom: 0.5rem;
 }
 
 .post-summary {
@@ -883,15 +881,6 @@ blockquote footer {
         padding: 0 0.5rem;
     }
     
-    .post-header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.25rem;
-    }
-    
-    .post-date {
-        align-self: flex-start;
-    }
     
     /* Canvas 시각화 모바일 스타일 */
     .canvas-title {
