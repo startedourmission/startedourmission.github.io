@@ -1,6 +1,7 @@
 ---
 aliases:
   - "\bTHE WAY OF CODE"
+date: 2025-06-30
 ---
 이 글은 https://www.thewayofcode.com 를 번역한 글입니다.
 
