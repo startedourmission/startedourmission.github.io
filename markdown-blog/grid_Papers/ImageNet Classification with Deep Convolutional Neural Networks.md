@@ -5,7 +5,7 @@ aliases:
   - AlexNet
 image:
 ---
-2012년, 토론토 대학의 Alex Krizhevsky, Ilya Sutskever, Geoffrey Hinton이 발표한 이 논문은 딥러닝의 시대를 연 전환점으로 평가받습니다. 흔히 **AlexNet**이라 불리며, 컴퓨터 비전 분야의 혁신을 가져왔습니다.
+2012년, 토론토 대학의 Alex Krizhevsky, Ilya Sutskever, Geoffrey Hinton이 발표한 이 논문은 딥러닝의 시대를 연 전환점으로 평가받습니다. 흔히 **AlexNet**이라 불리며, 컴퓨터 비전 분야의 혁신을 가져왔습니다. 
 
 ---
 
