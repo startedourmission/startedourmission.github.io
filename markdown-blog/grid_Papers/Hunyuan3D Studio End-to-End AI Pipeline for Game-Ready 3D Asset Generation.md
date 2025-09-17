@@ -1,8 +1,9 @@
 ---
 date: 2025-09-17
 tags:
-image: Pasted image 20250917150549.png
+image: "[["
 aliases:
+  - images/Pasted image 20250917150549.png
 ---
 >B. Lei et al., "Hunyuan3D Studio: End-to-End AI Pipeline for Game-Ready 3D Asset Generation," arXiv preprint arXiv:2509.12815, 2025.
 
