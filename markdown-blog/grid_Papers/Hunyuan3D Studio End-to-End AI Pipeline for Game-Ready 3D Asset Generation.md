@@ -1,7 +1,7 @@
 ---
 date: 2025-09-17
 tags:
-image:
+image: Pasted image 20250917150549.png
 aliases:
 ---
 >B. Lei et al., "Hunyuan3D Studio: End-to-End AI Pipeline for Game-Ready 3D Asset Generation," arXiv preprint arXiv:2509.12815, 2025.
@@ -14,6 +14,8 @@ aliases:
 - https://3d.hunyuan.tencent.com/
 
 프롬프트로 생성할 수도 있고 기존 사진으로 만들 수도 있네요. 3D 모델링을 잘 몰라도 제법 고품질이라는 것을 알 수 있었습니다. 중국의 기술 발전이 새삼 무섭네요.
+
+![[Pasted image 20250917150549.png]]
 
 # 요약
 
