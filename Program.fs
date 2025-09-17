@@ -108,7 +108,7 @@ let main argv =
                 Date = dateValue
                 Summary = summary
             })
-        |> Array.sortBy (fun post -> post.Title)
+        |> Array.sortByDescending (fun post -> post.Date)
         |> Array.toList
 
     // 폴더별로 게시물 그룹화 (Config 순서대로 정렬)
