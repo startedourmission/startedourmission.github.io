@@ -2,8 +2,8 @@
 date: 2025-08-10
 tags:
 aliases:
-  - "EXAONE 4.0: Unified Large Language Models Integrating Non-reasoning and Reasoning Modes"
-image: "[[Pasted image 20250917150610.png]]"
+  - 엑사원 4.0
+image: images/Pasted image 20250917150610.png
 ---
 
 >LG AI Research, "EXAONE 4.0: Unified Large Language Models Integrating Non-reasoning and Reasoning Modes," arXiv preprint arXiv:2507.11407, 2025.
