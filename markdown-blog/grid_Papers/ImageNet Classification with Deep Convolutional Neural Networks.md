@@ -3,7 +3,7 @@ date: 2025-08-27
 tags:
 aliases:
   - AlexNet
-image: "[[alex_1.png]]"
+image: "![[alex_1.png]]"
 ---
 
 > A. Krizhevsky, I. Sutskever, and G. E. Hinton, "ImageNet Classification with Deep Convolutional Neural Networks," Advances in Neural Information Processing Systems, vol. 25, pp. 1097-1105, 2012.

@@ -2,7 +2,7 @@
 date: 2025-09-12
 tags:
 aliases:
-image: "[[Prefix-Tuning_1.png]]"
+image: "![[Prefix-Tuning_1.png]]"
 ---
 > X. L. Li and P. Liang, "Prefix-Tuning: Optimizing Continuous Prompts for Generation", arXiv preprint arXiv:2101.00190, 2021, DOI: 10.48550/arXiv.2101.00190.
 

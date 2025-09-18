@@ -2,7 +2,7 @@
 date: 2025-09-17
 tags:
 aliases:
-image: "[[DINO_1.png]]"
+image: "![[DINO_1.png]]"
 ---
 >O. Siméoni et al., "DINOv3," arXiv preprint arXiv:2508.10104, 2025.
 
