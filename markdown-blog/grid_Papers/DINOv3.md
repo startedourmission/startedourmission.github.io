@@ -1,5 +1,5 @@
 ---
-date: 2025-09-17
+date: 2025-09-15
 tags:
 aliases:
 image: "![[DINO_1.png]]"
