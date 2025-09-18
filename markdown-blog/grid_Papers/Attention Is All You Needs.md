@@ -43,7 +43,7 @@ $$
 \text{Attention}(Q, K, V) = \text{softmax}\left( \frac{QK^{T}}{\sqrt{d_k}} \right) V
 $$
 
-스케일링 인자 $dkdk$​​는 내적이 너무 커지는 것을 방지하여 소프트맥스 함수가 극도로 작은 기울기를 갖는 영역으로 밀려나는 것을 막아 학습을 방해하지 않도록 합니다.
+스케일링 인자 $d_k$​​는 내적이 너무 커지는 것을 방지하여 소프트맥스 함수가 극도로 작은 기울기를 갖는 영역으로 밀려나는 것을 막아 학습을 방해하지 않도록 합니다.
 
 ![Scaled Dot-Product Attention](https://paper-assets.alphaxiv.org/figures/1706.03762v7/ModalNet-19.png "Scaled Dot-Product Attention")
 
