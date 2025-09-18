@@ -374,7 +374,8 @@
         let latestBuildDate =
             posts
             |> List.choose (fun p -> p.Date)
-            |> List.tryMax
+            |> List.sortByDescending id
+            |> List.tryHead
             |> Option.map (fun dt -> dt.ToUniversalTime().ToString("R"))
             |> Option.defaultValue (System.DateTime.UtcNow.ToString("R"))
 
