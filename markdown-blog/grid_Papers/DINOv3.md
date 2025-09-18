@@ -77,9 +77,8 @@ image: "![[DINO_1.png]]"
 
 ### Gram 손실 계산
 
-```
-L_Gram = ||X_S · X_S^T - X_G · X_G^T||_F^2
-```
+
+$$L_Gram = ||X_S · X_S^T - X_G · X_G^T||_F^2$$
 
 - **X_S**: 학생 네트워크의 정규화된 패치 특징 (P × d)
 - **X_G**: Gram 교사의 정규화된 패치 특징 (P × d)
@@ -334,10 +333,12 @@ DINOv3의 가장 인상적인 특징 중 하나는 **백본을 동결한 상태*
 
 ### 1. 손실 함수 설계
 
-```
+$$
 L_Pre = L_DINO + L_iBOT + 0.1 * L_DKoleo
+$$
+$$
 L_Ref = w_D * L_DINO + L_iBOT + w_DK * L_DKoleo + w_Gram * L_Gram
-```
+$$
 
 - **L_DINO**: 이미지 레벨 판별적 자기지도 목적함수
 - **L_iBOT**: 패치 레벨 잠재 재구성 목적함수
