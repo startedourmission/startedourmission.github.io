@@ -10,7 +10,7 @@ image: images/Pasted image 20250917150610.png
 
 LG AI Research가 공개한 EXAONE 4.0은 언어모델 설계에서 새로운 접근을 시도했습니다. Non-reasoning 모드와 Reasoning 모드를 하나의 모델에 통합하여, 일상적인 대화에서는 빠른 응답을, 복잡한 문제에서는 깊은 사고를 제공하는 실용적인 언어모델을 구현했습니다.
 
-![[Pasted image 20250917150610.png]]
+![[exaone_1.png]]
 # 요약
 
 ## 1. 모델 아키텍처

@@ -18,7 +18,7 @@ UTM 4.7.1 버전부터 VHDX 파일을 사용할 수 없습니다. 마이크로�
 다음 UTM 공식 깃허브의 릴리스 페이지에 접속하세요. 스크롤을 내려 4.7.0 버전을 찾아 [Assets]을 누르면 해당 버전 UTM의 dmg 설치 파일을 내려받을 수 있습니다.
 - UTM 깃허브/릴리즈 : https://github.com/utmapp/UTM/releases 
 
-![[Pasted image 20250917130820.png]]
+![[UTM_1.png]]
 최신 버전에서 VHDX를 사용하는 방법이나 ISO 부팅 절차를 잘 아시는 분이 계시면 알려주세요~
 ## Windows Insider Preview Downloads
 
@@ -31,8 +31,8 @@ UTM 4.7.1 버전부터 VHDX 파일을 사용할 수 없습니다. 마이크로�
 마이크로소프트 로그인을 안하거나 윈도우 인사이더 프로그램에 join하지 않으면 아래 화면이 표시됩니다. 인사이더 프로그램은 다음 링크에서 join할 수 있습니다.
 - https://support.microsoft.com/en-us/windows/join-the-windows-insider-program-and-manage-insider-settings-ef20bb3d-40f4-20cc-ba3c-a72c844b563c
 
-![[Pasted image 20250917130837.png]]
-![[Pasted image 20250917130845.png]]
+![[UTM_2.png]]
+![[UTM_3.png]]
 
 ## 가상머신 만들기
 
@@ -45,7 +45,7 @@ UTM을 실행한 후, 새 가상머신(New Vitual Machine)을 생성합니다.
 3. 윈도우 10 이상 설치, VHDX 이미지 가져오기, 드라이버 및 SPICE 도구 설치를 모두 체크합니다.
 
 4. 찾아보기를 눌러 내려받은 윈도우 VHDX 파일을 선택합니다.
-![[Pasted image 20250917130859.png]]
+![[UTM_4.png]]
 
 메모리 용량은 윈도우 11이 원활하게 실행되도록 충분히 설정해야 합니다. 4GB 이상(권장 8GB)으로 설정합니다. 현재 컴퓨터의 램 용량의 절반 이하를 추천합니다. 최대 메모리를 초과하면 절대 안됩니다. 
 
@@ -67,8 +67,8 @@ UTM에 생성된 윈도우 가상 머신을 실행합니다. 부팅 시 오류�
 
 사용자 이름과 비밀번호를 입력하여 계정을 설정합니다. 비밀번호는 공란으로 넘어갈 수 있습니다. 그 외 다른 설정은 No나 Skip을 눌러 빠르게 넘어갑니다.
 
-![[Pasted image 20250917131115.png]]
-![[Pasted image 20250917131126.png]]
+![[UTM_5.png]]
+![[UTM_6.png]]
 
 ## **UTM Guest Tools 설치** 
 
