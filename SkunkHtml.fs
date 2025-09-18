@@ -361,10 +361,11 @@
                     | Some imageUrl ->
                         let absoluteImageUrl = $"{Config.blogBaseUrl}/{System.Uri.EscapeUriString(imageUrl)}"
                         let imageType = 
-                            Path.GetExtension(imageUrl).TrimStart('.').ToLower()
+                            let ext = Path.GetExtension(imageUrl)
+                            if ext.Length > 0 then ext.Substring(1).ToLower() else "png"
                         let escapedTitle = post.Title.Replace("&", "&amp;").Replace("<", "&lt;").Replace(">", "&gt;").Replace("\"", "&quot;").Replace("'", "&apos;")
                         let imgTag = $"<img src=\"{absoluteImageUrl}\" alt=\"{escapedTitle}\" /><br />"
-                        let mediaTag = $"<media:content url=\"{absoluteImageUrl}\" medium=\"image\" type=\"image/{imageType}\" />"
+                        let mediaTag = $"<media:content url=\"{absoluteImageUrl}\" medium=\"image\" />"
                         (imgTag, mediaTag)
                     | None -> ("", "")
                 
