@@ -343,3 +343,54 @@
         
         printfn $"Processing canvas page: {canvas.Title} ->"
         Disk.writeFile outputPath canvasPageHtml
+
+    let createRssFeed (posts: Post list) =
+        let items =
+            posts
+            |> List.map (fun post ->
+                let postUrl = $"{Config.blogBaseUrl}/{post.Url}"
+                let pubDate =
+                    match post.Date with
+                    // RFC 822 format
+                    | Some date -> date.ToUniversalTime().ToString("R")
+                    | None -> ""
+                let description =
+                    match post.Summary with
+                    | Some summary -> $"<![CDATA[{summary}]]>"
+                    | None -> ""
+
+                $"""
+<item>
+    <title><![CDATA[{post.Title}]]></title>
+    <link>{postUrl}</link>
+    <guid>{postUrl}</guid>
+    <pubDate>{pubDate}</pubDate>
+    <description>{description}</description>
+</item>
+"""
+            )
+            |> String.concat "\n"
+
+        let latestBuildDate =
+            posts
+            |> List.choose (fun p -> p.Date)
+            |> List.tryMax
+            |> Option.map (fun dt -> dt.ToUniversalTime().ToString("R"))
+            |> Option.defaultValue (System.DateTime.UtcNow.ToString("R"))
+
+        let rssXml =
+            $"""<?xml version="1.0" encoding="UTF-8" ?>
+    <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>{Config.blogTitle}</title>
+        <link>{Config.blogBaseUrl}</link>
+        <description>{Config.blogDescription}</description>
+        <language>ko-kr</language>
+        <lastBuildDate>{latestBuildDate}</lastBuildDate>
+        <atom:link href="{Config.blogBaseUrl}/rss.xml" rel="self" type="application/rss+xml" />
+        {items}
+    </channel>
+    </rss>
+"""
+        let rssFilePath = Path.Combine(Config.outputDir, "rss.xml")
+        Disk.writeFile rssFilePath rssXml

@@ -181,6 +181,7 @@ let main argv =
     createBlogArticlePages ()
     createCategoryPages ()
     createCanvasPages ()
+    SkunkHtml.createRssFeed allPosts
 
 
     Disk.copyFolderToOutput Config.fontsDir Config.outputFontsDir
