@@ -362,7 +362,8 @@
                         let absoluteImageUrl = $"{Config.blogBaseUrl}/{System.Uri.EscapeUriString(imageUrl)}"
                         let imageType = 
                             Path.GetExtension(imageUrl).TrimStart('.').ToLower()
-                        let imgTag = $"<img src=\"{absoluteImageUrl}\" alt=\"{post.Title}\" /><br />"
+                        let escapedTitle = post.Title.Replace("&", "&amp;").Replace("<", "&lt;").Replace(">", "&gt;").Replace("\"", "&quot;").Replace("'", "&apos;")
+                        let imgTag = $"<img src=\"{absoluteImageUrl}\" alt=\"{escapedTitle}\" /><br />"
                         let mediaTag = $"<media:content url=\"{absoluteImageUrl}\" medium=\"image\" type=\"image/{imageType}\" />"
                         (imgTag, mediaTag)
                     | None -> ("", "")
@@ -373,14 +374,14 @@
                     | Some summary -> $"<![CDATA[{imageHtml}{summary}]]>"
                     | None -> $"<![CDATA[{imageHtml}]]>"
 
+                let mediaContentXml = if mediaContent = "" then "" else $"    {mediaContent}"
                 $"""
 <item>
     <title><![CDATA[{post.Title}]]></title>
     <link>{postUrl}</link>
     <guid>{postUrl}</guid>
     <pubDate>{pubDate}</pubDate>
-    <description>{description}</description>
-    {mediaContent}
+    <description>{description}</description>{if mediaContentXml = "" then "" else $"\n{mediaContentXml}"}
 </item>
 """
             )
