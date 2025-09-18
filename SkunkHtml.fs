@@ -355,13 +355,17 @@
                     | Some date -> date.ToUniversalTime().ToString("R")
                     | None -> ""
 
-                // 이미지 HTML 생성
-                let imageHtml =
+                // 이미지 HTML 및 미디어 태그 생성
+                let imageHtml, mediaContent =
                     match post.ImageUrl with
                     | Some imageUrl ->
                         let absoluteImageUrl = $"{Config.blogBaseUrl}/{System.Uri.EscapeUriString(imageUrl)}"
-                        $"<img src=\"{absoluteImageUrl}\" alt=\"{post.Title}\" /><br />"
-                    | None -> ""
+                        let imageType = 
+                            Path.GetExtension(imageUrl).TrimStart('.').ToLower()
+                        let imgTag = $"<img src=\"{absoluteImageUrl}\" alt=\"{post.Title}\" /><br />"
+                        let mediaTag = $"<media:content url=\"{absoluteImageUrl}\" medium=\"image\" type=\"image/{imageType}\" />"
+                        (imgTag, mediaTag)
+                    | None -> ("", "")
                 
                 // 요약과 이미지를 포함하는 설명 생성
                 let description =
