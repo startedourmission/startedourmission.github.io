@@ -354,10 +354,20 @@
                     // RFC 822 format
                     | Some date -> date.ToUniversalTime().ToString("R")
                     | None -> ""
+
+                // 이미지 HTML 생성
+                let imageHtml =
+                    match post.ImageUrl with
+                    | Some imageUrl ->
+                        let absoluteImageUrl = $"{Config.blogBaseUrl}/{System.Uri.EscapeUriString(imageUrl)}"
+                        $("<img src=\"{absoluteImageUrl}\" alt=\"{post.Title}\" /><br />")
+                    | None -> ""
+                
+                // 요약과 이미지를 포함하는 설명 생성
                 let description =
                     match post.Summary with
-                    | Some summary -> $"<![CDATA[{summary}]]>"
-                    | None -> ""
+                    | Some summary -> $("<![CDATA[{imageHtml}{summary}]]>")
+                    | None -> $("<![CDATA[{imageHtml}]]>")
 
                 $"""
 <item>
