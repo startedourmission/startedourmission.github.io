@@ -4,9 +4,9 @@ tags:
 aliases:
 image: "![[Prefix-Tuning_1.png]]"
 ---
-> X. L. Li and P. Liang, "Prefix-Tuning: Optimizing Continuous Prompts for Generation", arXiv preprint arXiv:2101.00190, 2021, DOI: 10.48550/arXiv.2101.00190.
-
 대형 언어모델이 다양한 NLP 태스크에서 놀라운 성능을 보이고 있지만, 각 태스크마다 전체 모델을 파인튜닝해야 한다는 비효율적인 문제가 있었습니다. 스탠포드 대학의 연구진이 2021년 발표한 Prefix-Tuning은 이러한 문제에 대한 혁신적인 해결책을 제시합니다.
+
+> X. L. Li and P. Liang, "Prefix-Tuning: Optimizing Continuous Prompts for Generation", arXiv preprint arXiv:2101.00190, 2021, DOI: 10.48550/arXiv.2101.00190.
 
 기존 파인튜닝 방식은 GPT-2의 774M개, GPT-3의 175B개 파라미터를 모두 업데이트하고 각 태스크마다 전체 모델을 저장해야 했습니다. 만약 100개의 서로 다른 태스크가 있다면 100개의 모델 복사본이 필요한 셈이죠. Prefix-Tuning은 이런 비효율성을 해결하기 위해 모델 파라미터는 고정하고 작은 연속적인 프롬프트만 최적화하는 방법을 제안합니다.
 

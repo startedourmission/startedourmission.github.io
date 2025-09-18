@@ -5,10 +5,9 @@ aliases:
   - AlexNet
 image: "![[alex_1.png]]"
 ---
+2012년, 딥러닝 대부 제프리 힌턴과 두 명의 대학원생은 컴퓨터 비전 분야에 혁명을 일으킨 논문을 발표합니다. 이 논문은 ImageNet 대회에서 기존 방법들을 압도적으로 뛰어넘는 성능을 보여주며 대 딥러닝 시대를 열었습니다. 논문에서 제안한 모델은 **AlexNet**이라고 불립니다. 단순히 우수한 성능을 보인 것이 아니라 현대 딥러닝의 핵심 기법들을 체계적으로 도입하여 실용적인 딥러닝의 가능성을 입증했습니다.
 
 > A. Krizhevsky, I. Sutskever, and G. E. Hinton, "ImageNet Classification with Deep Convolutional Neural Networks," Advances in Neural Information Processing Systems, vol. 25, pp. 1097-1105, 2012.
-
-2012년, 딥러닝 대부 제프리 힌턴과 두 명의 대학원생은 컴퓨터 비전 분야에 혁명을 일으킨 논문을 발표합니다. 이 논문은 ImageNet 대회에서 기존 방법들을 압도적으로 뛰어넘는 성능을 보여주며 대 딥러닝 시대를 열었습니다. 논문에서 제안한 모델은 **AlexNet**이라고 불립니다. 단순히 우수한 성능을 보인 것이 아니라 현대 딥러닝의 핵심 기법들을 체계적으로 도입하여 실용적인 딥러닝의 가능성을 입증했습니다.
 
 ![[alex_1.png]]
 ## 요약

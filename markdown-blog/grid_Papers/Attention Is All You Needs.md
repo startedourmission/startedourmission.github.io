@@ -7,12 +7,12 @@ tags:
 aliases: 
 image: https://paper-assets.alphaxiv.org/figures/1706.03762v7/ModalNet-21.png
 ---
-*   **발표연도:** 2017 (arXiv20230802 ver)
+이 논문이 소개하는 트랜스포머 아키텍처는 시퀀스-투-시퀀스 모델링의 한계를 해결합니다. 원래 이 분야는 순환 신경망(RNN), LSTM, GRU 등이 유명합니다. 모두 토큰별로 시퀀스를 순차적으로 처리하는 구조입니다. 이런 RNN 기반 모델은 기계 번역에서 강력한 성능을 보여주었지만 확장성과 훈련 효율성을 제한하는 내재적인 계산 병목 현상으로 어려움을 겪었습니다.
+
+* **발표연도:** 2017 (arXiv20230802 ver)
 *   **저널:** 31st Conference on Neural Information Processing Systems (NIPS 2017)
 *   **저자:** Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Illia Polosukhin, Łukasz Kaiser
 *   **기관 및 대학:** Google Brain, Google Research, University of Toronto
-
-이 논문이 소개하는 트랜스포머 아키텍처는 시퀀스-투-시퀀스 모델링의 한계를 해결합니다. 원래 이 분야는 순환 신경망(RNN), LSTM, GRU 등이 유명합니다. 모두 토큰별로 시퀀스를 순차적으로 처리하는 구조입니다. 이런 RNN 기반 모델은 기계 번역에서 강력한 성능을 보여주었지만 확장성과 훈련 효율성을 제한하는 내재적인 계산 병목 현상으로 어려움을 겪었습니다.
 
 ![Transformer Architecture](https://paper-assets.alphaxiv.org/figures/1706.03762v7/ModalNet-21.png "Transformer Architecture")
 _그림 1: 인코더-디코더 구조와 멀티 헤드 어텐션 메커니즘 및 피드포워드 네트워크를 보여주는 트랜스포머 모델 아키텍처._

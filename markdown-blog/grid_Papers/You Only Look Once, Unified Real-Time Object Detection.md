@@ -9,13 +9,12 @@ aliases:
   - YOLO
 image: https://paper-assets.alphaxiv.org/figures/1506.02640v5/img-0.jpeg
 ---
+이미지 내에서 객체를 식별하고 위치를 파악하는 작업은 오랫동안 컴퓨터 비전의 핵심 과제였습니다. 2015년 이전에는 지배적인 접근 방식들이 복잡하고 다단계적인 파이프라인을 요구했으며, 이는 계산 비용이 많이 들고 실시간 애플리케이션에는 너무 느렸습니다. Joseph Redmon, Santosh Divvala, Ross Girshick, Ali Farhadi가 저술한 YOLO(You Only Look Once) 논문은 객체 탐지를 다단계 분류 작업이 아닌 단일 회귀 문제로 재구성함으로써 패러다임의 전환을 가져왔습니다.
+
 - **발표연도:** 2016
 - **저널:** IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2016
 - **저자:** Joseph Redmon, Santosh Divvala, Ross Girshick, Ali Farhadi
 - **기관 및 대학:** University of Washington, Allen Institute for AI, Facebook AI Research
-## YOLO 소개: 객체 탐지에 대한 통합 접근 방식
-
-객체 탐지—이미지 내에서 객체를 식별하고 위치를 파악하는 작업—는 오랫동안 컴퓨터 비전의 핵심 과제였습니다. 2015년 이전에는 지배적인 접근 방식들이 복잡하고 다단계적인 파이프라인을 요구했으며, 이는 계산 비용이 많이 들고 실시간 애플리케이션에는 너무 느렸습니다. Joseph Redmon, Santosh Divvala, Ross Girshick, Ali Farhadi가 저술한 YOLO(You Only Look Once) 논문은 객체 탐지를 다단계 분류 작업이 아닌 단일 회귀 문제로 재구성함으로써 패러다임의 전환을 가져왔습니다.
 
 ![YOLO 시스템 개요](https://paper-assets.alphaxiv.org/figures/1506.02640v5/img-0.jpeg "YOLO 시스템 개요")_그림 1: YOLO 탐지 시스템은 세 가지 간단한 단계로 이미지를 처리합니다: (1) 입력 이미지 크기 조정, (2) 단일 컨볼루션 네트워크 실행, (3) 비최대 억제 적용하여 최종 탐지 생성._
 

@@ -4,9 +4,9 @@ tags:
 image: "![[Hun_1.png]]"
 aliases:
 ---
->B. Lei et al., "Hunyuan3D Studio: End-to-End AI Pipeline for Game-Ready 3D Asset Generation," arXiv preprint arXiv:2509.12815, 2025.
-
 고품질 3D 에셋을 만드는 일은 정말 어렵고 시간이 많이 드는 작업입니다. 굳이 설명하지 않아도 모두 아는 사실이죠. 모델링, UV 매핑, 텍스처링, 리깅까지 - 하나의 캐릭터나 아이템을 완성하기 위해서는 여러 전문 소프트웨어를 오가며 복잡한 파이프라인을 거칩니다.
+
+>B. Lei et al., "Hunyuan3D Studio: End-to-End AI Pipeline for Game-Ready 3D Asset Generation," arXiv preprint arXiv:2509.12815, 2025.
 
 텐센트의 Hunyuan3D 팀이 발표한 **Hunyuan3D Studio**는 단일 이미지나 텍스트 설명만으로 게임에서 바로 사용할 수 있는 3D 에셋을 자동으로 생성하는 AI 파이프라인입니다. 
 
