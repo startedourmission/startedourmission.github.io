@@ -4,9 +4,9 @@ tags:
 aliases:
 image: "![[DINO_1.png]]"
 ---
->O. Siméoni et al., "DINOv3," arXiv preprint arXiv:2508.10104, 2025.
-
 컴퓨터 비전 분야에서 라벨링 없이 강력한 특징을 학습할 수 있다면 어떨까요. Meta AI가 발표한 **DINOv3**는 자기지도학습(Self-Supervised Learning) 모델입니다. 70억 개의 파라미터를 가진 이 거대한 모델은 어떤 라벨도 없이 순수하게 이미지만으로 학습했지만 객체 탐지부터 깊이 추정까지 거의 모든 컴퓨터 비전 태스크에서 최고 수준의 성능을 달성했습니다.
+
+>O. Siméoni et al., "DINOv3," arXiv preprint arXiv:2508.10104, 2025.
 
 ![[DINO_1.png]]
 
