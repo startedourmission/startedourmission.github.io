@@ -71,9 +71,9 @@ module Config =
     let navSectionOrder = ["LLM"]
 
     // RSS 피드 정보
-    let blogTitle = "My Awesome Blog"
-    let blogDescription = "A blog about technology and other things."
-    let blogBaseUrl = "https://your-domain.com" // 실제 배포된 블로그의 URL로 변경해야 합니다.
+    let blogTitle = "startedourmission"
+    let blogDescription = "Papers, Books, and Projects that started our mission."
+    let blogBaseUrl = "https://startedourmission.github.io" // 실제 배포된 블로그의 URL로 변경해야 합니다.
 
 module Disk =
     open System.IO
