@@ -116,8 +116,8 @@ module Obsidian =
     open System.Text.RegularExpressions
 
     // Obsidian 링크를 HTML 링크로 변환하는 함수
-    let convertWikiLinks (markdownContent: string) = 
-        let wikiLinkPattern = @"(!?)`\[\[`.*?`\]\]" // 이미지 링크(!)와 일반 링크를 모두 처리
+        let convertWikiLinks (markdownContent: string) =
+        let wikiLinkPattern = @"(!?)\[\[(.*?)\]\]" // 이미지 링크(!)와 일반 링크를 모두 처리
         
         let regex = Regex(wikiLinkPattern)
         
