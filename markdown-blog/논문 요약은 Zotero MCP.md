@@ -2,7 +2,7 @@
 date: 2025-09-12
 tags:
 aliases:
-image: "[[Zotero_1.png]]"
+image: "![[Zotero_1.png]]"
 ---
 오랜만에 정말 마음에 드는 MCP를 찾았습니다. 바로 Zotero MCP입니다. 덕분에 논문 저장부터 요약, 분류, 질의응답까지 워크플로가 아주 깔끔해졌습니다. 저는 클로드 데스크탑에서 사용했는데 GPT도 이제는 MCP를 지원한다고 들었습니다. 써보진 않았네요. 
 ![[Zotero_1.png]]
