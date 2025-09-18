@@ -3,13 +3,14 @@ date: 2025-08-27
 tags:
 aliases:
   - AlexNet
-image:
+image: "[[alex_1.png]]"
 ---
 
 > A. Krizhevsky, I. Sutskever, and G. E. Hinton, "ImageNet Classification with Deep Convolutional Neural Networks," Advances in Neural Information Processing Systems, vol. 25, pp. 1097-1105, 2012.
 
 2012년, 딥러닝 대부 제프리 힌턴과 두 명의 대학원생은 컴퓨터 비전 분야에 혁명을 일으킨 논문을 발표합니다. 이 논문은 ImageNet 대회에서 기존 방법들을 압도적으로 뛰어넘는 성능을 보여주며 대 딥러닝 시대를 열었습니다. 논문에서 제안한 모델은 **AlexNet**이라고 불립니다. 단순히 우수한 성능을 보인 것이 아니라 현대 딥러닝의 핵심 기법들을 체계적으로 도입하여 실용적인 딥러닝의 가능성을 입증했습니다.
 
+![[alex_1.png]]
 ## 요약
 
 AlexNet은 ImageNet LSVRC-2010 데이터셋의 130만 장의 고해상도 이미지를 1000개 클래스로 분류하는 과제에서 top-1 오류율 37.5%, top-5 오류율 17.0%를 달성했습니다. 이는 기존 최고 성능 대비 top-1에서 약 10%, top-5에서 약 11% 향상된 결과입니다.

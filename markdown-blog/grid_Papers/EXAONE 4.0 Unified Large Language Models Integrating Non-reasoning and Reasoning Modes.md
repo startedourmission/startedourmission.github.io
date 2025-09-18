@@ -3,7 +3,7 @@ date: 2025-08-10
 tags:
 aliases:
   - 엑사원 4.0
-image: images/Pasted image 20250917150610.png
+image: "[[exaone_1.png]]"
 ---
 
 >LG AI Research, "EXAONE 4.0: Unified Large Language Models Integrating Non-reasoning and Reasoning Modes," arXiv preprint arXiv:2507.11407, 2025.
