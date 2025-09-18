@@ -349,11 +349,7 @@
             posts
             |> List.map (fun post ->
                 let postUrl = $"{Config.blogBaseUrl}/{System.Uri.EscapeUriString(post.Url)}"
-                let pubDate =
-                    match post.Date with
-                    // RFC 822 format
-                    | Some date -> date.ToUniversalTime().ToString("R")
-                    | None -> ""
+                let pubDate = System.DateTime.UtcNow.ToString("R")
 
                 // 이미지 HTML 및 미디어 태그 생성
                 let imageHtml, mediaContent =
