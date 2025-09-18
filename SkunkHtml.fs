@@ -348,7 +348,7 @@
         let items =
             posts
             |> List.map (fun post ->
-                let postUrl = $"{Config.blogBaseUrl}/{post.Url}"
+                let postUrl = $"{Config.blogBaseUrl}/{System.Uri.EscapeUriString(post.Url)}"
                 let pubDate =
                     match post.Date with
                     // RFC 822 format
