@@ -360,14 +360,14 @@
                     match post.ImageUrl with
                     | Some imageUrl ->
                         let absoluteImageUrl = $"{Config.blogBaseUrl}/{System.Uri.EscapeUriString(imageUrl)}"
-                        $("<img src=\"{absoluteImageUrl}\" alt=\"{post.Title}\" /><br />")
+                        $"<img src=\"{absoluteImageUrl}\" alt=\"{post.Title}\" /><br />"
                     | None -> ""
                 
                 // 요약과 이미지를 포함하는 설명 생성
                 let description =
                     match post.Summary with
-                    | Some summary -> $("<![CDATA[{imageHtml}{summary}]]>")
-                    | None -> $("<![CDATA[{imageHtml}]]>")
+                    | Some summary -> $"<![CDATA[{imageHtml}{summary}]]>"
+                    | None -> $"<![CDATA[{imageHtml}]]>"
 
                 $"""
 <item>
