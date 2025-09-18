@@ -3,13 +3,15 @@ aliases:
   - "공유는 배려다 : 집단적 RL 경험 공유를 통한 효율적인 LM 후훈련"
 date: 2025-09-18
 tags:
-image:
+image: "![[SharingisCaring_1.png]]"
 ---
 강화학습을 통한 언어모델 후훈련이 점점 중요해지고 있습니다. DeepSeek-R1-Zero처럼 지도학습 없이도 복잡한 추론 능력을 향상시킬 수 있다는 것이 입증되었지만, 실제로는 엄청난 병렬처리와 비용이 필요합니다. 그러던 어느 날 수천 명이 맥북으로 언어 모델 훈련에 참여합니다. 거대한 GPU 클러스터가 아닌 각자 집에서 자신의 컴퓨터로 AI 모델을 훈련한겁니다. 이것이 바로 Gensyn AI 팀이 제안한 SAPO(Swarm sAmpling Policy Optimization)의 정체입니다. 
 
 >J. Amico, G. P. Andrade, J. Donaghy, B. Fielding, T. Forbus, H. Grieve, S. Kara, J. Kolehmainen, Y. Lou, C. Nies, E. P. F. Nuño, D. Ortega, S. Rastogi, A. Virts, and M. J. Wright, "Sharing is Caring: Efficient LM Post-Training with Collective RL Experience Sharing", arXiv preprint arXiv:2509.08721, 2024.
 
 전통적인 중앙집중식 시스템과 달리, SAPO는 각 노드가 자신만의 정책을 관리하면서 생성한 경험(rollout)을 다른 노드들과 공유하는 분산형 구조입니다. 마치 학생들이 서로 문제 풀이 과정을 공유하며 함께 학습하는 것과 같습니다.
+
+![[SharingisCaring_1.png]]
 
 # 요약
 
