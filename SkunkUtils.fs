@@ -116,32 +116,35 @@ module Obsidian =
     open System.Text.RegularExpressions
 
     // Obsidian 링크를 HTML 링크로 변환하는 함수
-    let convertWikiLinks (markdownContent: string) =
-        let wikiLinkPattern = @"\[\[(.*?)\]\]"
+    let convertWikiLinks (markdownContent: string) = 
+        let wikiLinkPattern = @"(!?)`\[\[`.*?`\]\]" // 이미지 링크(!)와 일반 링크를 모두 처리
         
-        // 정규식으로 Obsidian 스타일 링크 찾기
         let regex = Regex(wikiLinkPattern)
         
-        // 각 매치를 HTML 링크로 변환
         regex.Replace(markdownContent, fun m ->
-            let linkText = m.Groups.[1].Value
-            
-            // 링크 텍스트에 파이프(|)가 있으면 표시 텍스트와 대상을 분리
-            if linkText.Contains("|") then
-                let parts = linkText.Split('|')
-                let target = parts.[0].Trim()
-                let displayText = parts.[1].Trim()
-                
-                // 파일명을 URL 친화적으로 변환
-                let urlFriendlyTarget = Url.toUrlFriendly target
-                
-                $"[{displayText}]({urlFriendlyTarget}.html)"
+            let isImage = m.Groups.[1].Value = "!"
+            let linkContent = m.Groups.[2].Value
+
+            if isImage then
+                // 이미지 링크 처리 ![[image.png]]
+                let imageName = linkContent
+                // 모든 이미지는 'images' 폴더에 있다고 가정
+                let imageUrl = $"images/{imageName}"
+                // URL 인코딩 처리 (공백 등)
+                let encodedUrl = System.Uri.EscapeUriString(imageUrl)
+                $"<img src=\"{encodedUrl}\" alt=\"{imageName}\" class=\"embedded-image\">")
             else
-                // 파이프가 없으면 링크 텍스트가 대상이자 표시 텍스트
-                // 파일명을 URL 친화적으로 변환
-                let urlFriendlyTarget = Url.toUrlFriendly linkText
-                
-                $"[{linkText}]({urlFriendlyTarget}.html)"
+                // 페이지 링크 처리 [[Page Name]] or [[Page Name|Display Text]]
+                let linkText = linkContent
+                if linkText.Contains("|") then
+                    let parts = linkText.Split('|')
+                    let target = parts.[0].Trim()
+                    let displayText = parts.[1].Trim()
+                    let urlFriendlyTarget = Url.toUrlFriendly target
+                    $"[{displayText}]({urlFriendlyTarget}.html)"
+                else
+                    let urlFriendlyTarget = Url.toUrlFriendly linkText
+                    $"[{linkText}]({urlFriendlyTarget}.html)"
         )
         
     // YAML 프론트매터에서 태그 추출
@@ -168,7 +171,7 @@ module Obsidian =
             []
     
     // YAML 프론트매터에서 이미지 URL 추출
-    let extractImageUrl (markdownContent: string) =
+    let extractImageUrl (markdownContent: string) = 
         let frontMatterPattern = @"^\s*---\s*\n([\s\S]*?)\n\s*---\s*\n"
         let frontMatterMatch = Regex.Match(markdownContent, frontMatterPattern)
         
@@ -178,7 +181,19 @@ module Obsidian =
             let imageMatch = Regex.Match(yamlContent, imagePattern)
             
             if imageMatch.Success then
-                Some (imageMatch.Groups.[1].Value.Trim())
+                let imageValue = imageMatch.Groups.[1].Value.Trim()
+
+                // 옵시디언 이미지 링크 형식 ![[image.png]] 확인
+                let wikiImagePattern = @"!\[\[(.*?)\]\]"
+                let wikiMatch = Regex.Match(imageValue, wikiImagePattern)
+
+                if wikiMatch.Success then
+                    // 옵시디언 링크 형식이면, 경로를 'images/'로 구성
+                    let imageName = wikiMatch.Groups.[1].Value
+                    Some ($"images/{imageName}")
+                else
+                    // 일반 경로 형식이면, 그대로 사용
+                    Some imageValue
             else
                 None
         else
