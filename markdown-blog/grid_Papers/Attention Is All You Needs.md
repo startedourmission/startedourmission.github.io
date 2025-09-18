@@ -5,6 +5,7 @@ tags:
   - 딥러닝
   - Seq2Seq
 aliases:
+  - Transformer
 image: https://paper-assets.alphaxiv.org/figures/1706.03762v7/ModalNet-21.png
 ---
 이 논문이 소개하는 트랜스포머 아키텍처는 시퀀스-투-시퀀스 모델링의 한계를 해결합니다. 원래 이 분야는 순환 신경망(RNN), LSTM, GRU 등이 유명합니다. 모두 토큰별로 시퀀스를 순차적으로 처리하는 구조입니다. 이런 RNN 기반 모델은 기계 번역에서 강력한 성능을 보여주었지만 확장성과 훈련 효율성을 제한하는 내재적인 계산 병목 현상으로 어려움을 겪었습니다.
