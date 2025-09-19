@@ -101,4 +101,12 @@ table th[align="right"] {
         flex-direction: column;
         gap: 1rem;
     }
+
+    p img,
+    section img,
+    article img,
+    figure img {
+        max-width: 80%;
+        height: auto;
+    }
 }
