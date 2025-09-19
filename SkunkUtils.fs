@@ -131,7 +131,7 @@ module Obsidian =
                 // 모든 이미지는 'images' 폴더에 있다고 가정
                 let imageUrl = $"images/{imageName}"
                 // URL 인코딩 처리 (공백 등)
-                let encodedUrl = System.Uri.EscapeUriString(imageUrl)
+                let encodedUrl = "images/" + System.Uri.EscapeDataString(imageName)
                 $"<img src=\"{encodedUrl}\" alt=\"{imageName}\" class=\"embedded-image\" style=\"max-width: 600px; height: auto; display: block; margin: 1rem auto;\">"
             else
                 // 페이지 링크 처리 [[Page Name]] or [[Page Name|Display Text]]
