@@ -5,7 +5,7 @@ date: 2025-09-18
 tags:
 image: "![[SharingisCaring_1.png]]"
 ---
-강화학습을 통한 언어모델 후훈련이 점점 중요해지고 있습니다. DeepSeek-R1-Zero처럼 지도학습 없이도 복잡한 추론 능력을 향상시킬 수 있다는 것이 입증되었지만, 실제로는 엄청난 병렬처리와 비용이 필요합니다. 그러던 어느 날 수천 명이 맥북으로 언어 모델 훈련에 참여합니다. 거대한 GPU 클러스터가 아닌 각자 집에서 자신의 컴퓨터로 AI 모델을 훈련한겁니다. 이것이 바로 Gensyn AI 팀이 제안한 SAPO(Swarm sAmpling Policy Optimization)의 정체입니다. 
+강화학습을 통한 언어모델 후훈련이 점점 중요해지고 있습니다. LLM 훈련에 필요한 비용은 천문학적이며 엄청난 병렬 처리 기술이 필요합니다. DeepSeek-R1-Zero처럼 지도학습 없이도 복잡한 추론 능력을 향상시킬 수 있다는 것을 입증한 경우도 있습니다만 대부분의 상위 모델은 수많은 컴퓨터를 동시에 가동하고 모든 자원을 훈련에 투입합니다. 그러던 어느 날 수천 명이 맥북으로 언어 모델 훈련에 참여합니다. 거대한 GPU 클러스터가 아닌 각자 집에서 자신의 컴퓨터로 AI 모델을 훈련한겁니다. 이것이 바로 Gensyn AI 팀이 제안한 SAPO(Swarm sAmpling Policy Optimization)의 정체입니다. 
 
 >J. Amico, G. P. Andrade, J. Donaghy, B. Fielding, T. Forbus, H. Grieve, S. Kara, J. Kolehmainen, Y. Lou, C. Nies, E. P. F. Nuño, D. Ortega, S. Rastogi, A. Virts, and M. J. Wright, "Sharing is Caring: Efficient LM Post-Training with Collective RL Experience Sharing", arXiv preprint arXiv:2509.08721, 2024.
 
