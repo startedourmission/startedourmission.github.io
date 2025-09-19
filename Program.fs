@@ -1,4 +1,4 @@
-﻿open System.IO
+open System.IO
 open SkunkUtils
 open SkunkHtml
 
@@ -152,11 +152,11 @@ let main argv =
     printfn $"Regular posts: {regularPosts.Length}"
     printfn $"Canvas files: {allCanvases.Length}"
 
-    let createBlogArticlePages () =
+    let createBlogArticlePages () = 
         blogArticleFiles
         |> Array.iter (createPage header footer)
 
-    let createCategoryPages () =
+    let createCategoryPages () = 
         navFolders
         |> Array.iter (fun folderName ->
             let categoryPosts = allPosts |> List.filter (fun post -> post.Category = folderName)
@@ -165,7 +165,7 @@ let main argv =
             let categoryPagePath = Path.Combine(Config.outputDir, $"{Url.toUrlFriendly folderName}.html")
             SkunkHtml.createCategoryPage header footer folderName categoryPosts categoryPagePath navFolders)
     
-    let createCanvasPages () =
+    let createCanvasPages () = 
         allCanvases
         |> List.iter (fun canvas ->
             printfn $"Canvas: {canvas.Title}, Nodes: {canvas.Nodes.Length}, Edges: {canvas.Edges.Length}"
@@ -173,7 +173,7 @@ let main argv =
             SkunkHtml.createCanvasPage header footer canvas canvasPagePath navFolders)
 
     // 인덱스 페이지를 제외한 모든 마크다운을 처리하므로, 이제 그외 페이지 처리는 필요없음
-    let createOtherPages () =
+    let createOtherPages () = 
         () // 모든 마크다운 파일이 블로그 글로 처리되므로 필요없음
 
     createIndexPage header footer gridSections navFolders regularPosts
