@@ -160,7 +160,7 @@
         printfn $"Processing {Path.GetFileName markdownFilePath} ->"
         Disk.writeFile outputHtmlFilePath finalHtmlContent
 
-    let createIndexPage (header: string) (footer: string) (gridSections: (string * Post list) list) (navFolders: string array) (regularPosts: Post list) =
+    let createIndexPage (header: string) (footer: string) (gridSections: (string * Post list) list) (navFolders: string array) (regularPosts: Post list) (allPosts: Post list) =
         let frontPageMarkdownFilePath = Path.Combine(Config.markdownDir, Config.frontPageMarkdownFileName)
 
         let frontPageContentHtml =
@@ -177,6 +177,32 @@
             else
                 printfn $"Warning! File {Config.frontPageMarkdownFileName} does not exist! The main page will only contain blog entries, without a welcome message"
                 ""
+
+        // 태그 섹션 생성
+        let popularTags = 
+            allPosts
+            |> List.collect (fun post -> post.Tags)
+            |> List.countBy id
+            |> List.sortByDescending snd
+            |> List.take (min 10 (List.length (allPosts |> List.collect (fun post -> post.Tags) |> List.distinct)))
+            |> List.map fst
+        
+        let tagsHtml = 
+            if popularTags.IsEmpty then 
+                ""
+            else
+                let tagLinks = 
+                    popularTags
+                    |> List.map (fun tag -> 
+                        let tagUrl = Url.toUrlFriendly tag
+                        $"<a href=\"/tag/{tagUrl}.html\">{tag}</a>")
+                    |> String.concat " · "
+                $"""
+                <section class="tags-section">
+                    <h2>Tags</h2>
+                    <p>{tagLinks}</p>
+                </section>
+                """
 
         let gridSectionsHtml =
             gridSections
@@ -267,6 +293,7 @@
         let content =
             $"""
         {frontPageContentHtml}
+        {tagsHtml}
         {gridSectionsHtml}
         {postsHtml}
         """
