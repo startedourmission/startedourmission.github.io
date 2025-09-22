@@ -102,6 +102,18 @@
     // 파일명에서 제목 추출 (확장자 제외)
     let extractTitleFromMarkdownFile (markdownFilePath: string) =
         Path.GetFileNameWithoutExtension(markdownFilePath)
+    
+    let generateTagsHtml (tags: string list) =
+        if tags.IsEmpty then
+            ""
+        else
+            let tagLinks = 
+                tags
+                |> List.map (fun tag -> 
+                    let tagUrl = Url.toUrlFriendly tag
+                    $"<a href=\"/tag/{tagUrl}.html\" class=\"tag\">{tag}</a>")
+                |> String.concat " "
+            $"<div class=\"tags\">🏷️ {tagLinks}</div>"
 
     let createPage (header: string) (footer: string) (markdownFilePath: string) =
         let title = extractTitleFromMarkdownFile(markdownFilePath)
@@ -113,6 +125,7 @@
         // 메타데이터 추출
         let description = Obsidian.extractDescription markdownContent
         let imageUrl = Obsidian.extractImageUrl markdownContent
+        let tags = Obsidian.extractTags markdownContent
         let pageUrl = fileName + ".html"
         
         // 마크다운 전처리: YAML 프론트매터 제거 후 Obsidian 링크 변환
@@ -130,12 +143,15 @@
                 
                 // 파일명을 게시글 상단에 표시
                 let titleDisplay = $"<h1 class=\"post-title\">{date}</h1>"
+                
+                // 태그 표시
+                let tagsHtml = generateTagsHtml tags
 
                 let giscusScript =
                     Path.Combine(Config.htmlDir, "script_giscus.html")
                     |> Disk.readFile
 
-                let mainHtmlContent = titleDisplay + Markdown.ToHtml(processedMarkdownContent)
+                let mainHtmlContent = titleDisplay + tagsHtml + Markdown.ToHtml(processedMarkdownContent)
                 mainHtmlContent  + giscusScript
 
         let finalHtmlContent =
@@ -388,6 +404,47 @@
         
         printfn $"Processing canvas page: {canvas.Title} ->"
         Disk.writeFile outputPath canvasPageHtml
+    
+    let createTagPage (header: string) (footer: string) (tagName: string) (tagPosts: Post list) (outputPath: string) (navFolders: string array) =
+        let postListHtml =
+            tagPosts
+            |> List.map (fun post ->
+                let dateStr = 
+                    match post.Date with
+                    | Some date -> date.ToString("yyyy-MM-dd")
+                    | None -> ""
+                
+                let summaryStr = 
+                    match post.Summary with
+                    | Some summary -> $"<p class=\"post-summary\">{summary}</p>"
+                    | None -> ""
+                
+                $"""
+                <article class="post-preview">
+                    <h3><a href="{post.Url}">{post.Title}</a></h3>
+                    <div class="post-meta">
+                        <time datetime="{dateStr}">{dateStr}</time>
+                        {if post.Tags.Length > 0 then generateTagsHtml post.Tags else ""}
+                    </div>
+                    {summaryStr}
+                </article>
+                """)
+            |> String.concat "\n"
+        
+        let content = 
+            $"""
+            <h1>태그: {tagName}</h1>
+            <p>{tagPosts.Length}개의 게시물</p>
+            <div class="posts-list">
+                {postListHtml}
+            </div>
+            """
+        
+        let updatedHeader = generateNavigation header navFolders
+        let tagPageHtml = generateFinalHtml (head $" - 태그: {tagName}") updatedHeader footer content ""
+        
+        printfn $"Processing tag page: {tagName} -> {tagPosts.Length} posts"
+        Disk.writeFile outputPath tagPageHtml
 
     let createRssFeed (posts: Post list) =
         let items =

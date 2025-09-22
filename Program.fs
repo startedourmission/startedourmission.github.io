@@ -87,6 +87,7 @@ let main argv =
             let dateValue = Obsidian.extractDate content filename
             let summary = Obsidian.extractSummary content
             let description = Obsidian.extractDescription content
+            let tags = Obsidian.extractTags content
             
             // 파일이 어떤 폴더에 속하는지 확인
             let category = 
@@ -109,6 +110,7 @@ let main argv =
                 Date = dateValue
                 Summary = summary
                 Description = description
+                Tags = tags
             })
         |> Array.sortByDescending (fun post -> post.Date)
         |> Array.toList
@@ -173,6 +175,28 @@ let main argv =
             printfn $"Canvas: {canvas.Title}, Nodes: {canvas.Nodes.Length}, Edges: {canvas.Edges.Length}"
             let canvasPagePath = Path.Combine(Config.outputDir, canvas.Url)
             SkunkHtml.createCanvasPage header footer canvas canvasPagePath navFolders)
+    
+    let createTagPages () =
+        // 모든 태그 수집
+        let allTags = 
+            allPosts
+            |> List.collect (fun post -> post.Tags)
+            |> List.distinct
+            |> List.sort
+        
+        // 태그별 페이지 생성
+        allTags
+        |> List.iter (fun tag ->
+            let tagPosts = allPosts |> List.filter (fun post -> List.contains tag post.Tags)
+            let tagUrl = Url.toUrlFriendly tag
+            let tagPagePath = Path.Combine(Config.outputDir, "tag", $"{tagUrl}.html")
+            
+            // tag 디렉토리가 없으면 생성
+            let tagDir = Path.GetDirectoryName(tagPagePath)
+            if not (Directory.Exists(tagDir)) then
+                Directory.CreateDirectory(tagDir) |> ignore
+            
+            SkunkHtml.createTagPage header footer tag tagPosts tagPagePath navFolders)
 
     // 인덱스 페이지를 제외한 모든 마크다운을 처리하므로, 이제 그외 페이지 처리는 필요없음
     let createOtherPages () = 
@@ -183,6 +207,7 @@ let main argv =
     createBlogArticlePages ()
     createCategoryPages ()
     createCanvasPages ()
+    createTagPages ()
     SkunkHtml.createRssFeed allPosts
 
 

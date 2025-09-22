@@ -106,3 +106,54 @@ table th[align="right"] {
     }
 
     }
+
+/* 태그 스타일링 */
+.tags {
+    margin: 1rem 0;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--color-accent);
+}
+
+.tag {
+    display: inline-block;
+    background-color: var(--color-accent);
+    color: var(--color-bg);
+    padding: 0.2rem 0.5rem;
+    margin: 0.1rem 0.2rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+}
+
+.tag:hover {
+    background-color: var(--color-link);
+    color: var(--color-bg);
+}
+
+/* 태그 페이지 스타일링 */
+.posts-list {
+    margin-top: 2rem;
+}
+
+.post-preview {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--color-accent);
+}
+
+.post-preview h3 {
+    margin: 0 0 0.5rem 0;
+}
+
+.post-meta {
+    color: var(--color-text-light);
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.post-summary {
+    color: var(--color-text);
+    line-height: 1.5;
+}

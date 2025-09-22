@@ -8,6 +8,7 @@ type Post = {
     Date: System.DateTime option
     Summary: string option
     Description: string option
+    Tags: string list
 }
 
 type CanvasNode = {
