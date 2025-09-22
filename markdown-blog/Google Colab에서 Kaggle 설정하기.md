@@ -3,6 +3,7 @@ date: 2025-04-05
 tags:
   - 머신러닝
 aliases:
+description: "데이터 사이언스 프로젝트 환경 구성을 위해 Google Colab에서 Kaggle API와 Git/Github를 설정하는 방법을 안내합니다. 각 서비스의 계정 생성부터 Colab에서 Kaggle 데이터셋을 다운로드하기 위한 API 연동 과정까지 단계별로 설명합니다."
 ---
 ## Google Colab 설정하기
 

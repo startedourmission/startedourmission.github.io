@@ -2,6 +2,7 @@
 date: 2025-08-14
 tags: 
 aliases:
+description: "macOS에서 Gemini CLI 로그인 시 'Precondition check failed' 오류가 발생하는 문제 해결 과정을 공유합니다. 원인으로 GOOGLE_CLOUD_PROJECT 환경 변수 충돌을 지목하고, '고스트 변수' 현상에 대응하기 위한 unset 사용법 등 단계별 해결 방법을 안내합니다."
 ---
 # 문제 발생
 

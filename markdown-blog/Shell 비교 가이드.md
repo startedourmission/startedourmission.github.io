@@ -2,6 +2,7 @@
 date: 2025-04-29
 tags: 
 aliases:
+description: "다양한 커맨드 라인 셸(Shell)인 Bash, Zsh, Fish, Ksh, Sh의 특징과 장단점을 비교하는 가이드입니다. 각 셸의 주요 기능과 설정 파일, 스크립팅 문법 차이를 설명하고 사용 목적에 맞는 셸을 선택할 수 있도록 돕습니다."
 ---
 ## Bash (Bourne Again Shell)
 
