@@ -440,7 +440,16 @@
             </div>
             """
         
-        let updatedHeader = generateNavigation header navFolders
+        let dynamicNavHtml = 
+            navFolders
+            |> Array.map (fun folderName -> 
+                let urlFriendlyName = Url.toUrlFriendly folderName
+                $"<li><a href=\"{urlFriendlyName}.html\">{folderName}</a></li>")
+            |> String.concat "\n        "
+        let updatedHeader = 
+            header.Replace("    </ul>", 
+                          $"""        {dynamicNavHtml}
+    </ul>""")
         let tagPageHtml = generateFinalHtml (head $" - 태그: {tagName}") updatedHeader footer content ""
         
         printfn $"Processing tag page: {tagName} -> {tagPosts.Length} posts"
