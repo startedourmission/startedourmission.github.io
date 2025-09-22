@@ -182,7 +182,7 @@ module Obsidian =
         
         if frontMatterMatch.Success then
             let yamlContent = frontMatterMatch.Groups.[1].Value
-            let imagePattern = @"image:\s*([^\n\r]+)"
+            let imagePattern = @"(?:^|\n)image:\s*([^\n\r]+)"
             let imageMatch = Regex.Match(yamlContent, imagePattern)
             
             if imageMatch.Success then
