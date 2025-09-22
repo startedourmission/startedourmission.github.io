@@ -4,13 +4,12 @@ tags:
   - 머신러닝
 aliases:
 description: Kaggle API의 설치 및 사용법을 정리한 가이드입니다. API 토큰 설정 방법부터 CLI 또는 Python 코드를 사용하여 데이터셋과 대회 데이터를 다운로드하는 등 주요 기능을 예제와 함께 설명하여 Kaggle 환경 외부에서의 활용을 돕습니다.
-image: "![[]]"
+image: "![[1-Kaggle.png]]"
 ---
 
 Kaggle은 문제 풀이와 대회 코드 제출을 위한 자체 노트북 환경을 제공한다. 하지만 로컬 환경이나 Colaboratory 등 다양한 환경에서 캐글의 기능을 사용할 수 있는 API를 제공한다.
 
----
-
+![[1-Kaggle.png|340x216]]
 ## 1. 설치 및 설정
 ### 설치
 Kaggle 라이브러리는 pip를 통해 설치할 수 있다.

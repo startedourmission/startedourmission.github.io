@@ -4,8 +4,9 @@ tags:
   - 정보
 aliases:
 description: 다양한 커맨드 라인 셸(Shell)인 Bash, Zsh, Fish, Ksh, Sh의 특징과 장단점을 비교하는 가이드입니다. 각 셸의 주요 기능과 설정 파일, 스크립팅 문법 차이를 설명하고 사용 목적에 맞는 셸을 선택할 수 있도록 돕습니다.
-image: "![[]]"
+image: "![[1-Shell.png]]"
 ---
+
 ## Bash (Bourne Again Shell)
 
 가장 널리 사용되는 쉘입니다. POSIX 호환성을 제공하며 명령어 히스토리 지원, 작업 제어 기능, 별칭 지원, 기본적인 스크립팅 기능을 갖추고 있습니다. 대부분의 리눅스 배포판에서 기본 쉘로 채택하고 있으며, 비로그인 쉘용 설정은 ~/.bashrc, 로그인 쉘용 설정은 ~/.bash_profile, 명령어 히스토리는 ~/.bash_history 파일에 저장됩니다.

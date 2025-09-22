@@ -3,7 +3,7 @@ date: 2025-09-17
 tags:
   - 정보
 aliases:
-image: "![[]]"
+image: "![[utm.png]]"
 description: 애플 실리콘 macOS에서 무료 가상화 프로그램 UTM을 사용하여 윈도우 11을 설치하는 방법을 안내합니다. 특정 UTM 버전 사용, VHDX 파일 다운로드, 그리고 설치 과정 중 인터넷 연결 없이 진행하는 'oobe\bypassnro' 팁까지 상세한 과정을 공유합니다.
 ---
 애플 실리콘 macOS에서 UTM으로 윈도우 11을 실행했습니다. 이게 뭐라고 시행 착오를 여럿 겪었다가 드디어 성공했습니다. 보통 macOS에서 다른 운영체제를 실행하기 위해 패러렐즈를 사용하지만 연에 65,000원 이상 요금제를 구독하기 싫어서 UTM을 고집했습니다. 불필요한 지출이라 생각하다보니 여태 패러렐즈를 사용해본 적은 없지만 UTM이 UI도 깔끔하고 윈도우, 리눅스 등 다양한 운영체제를 지원하기에 굳이 바꾸려는 생각은 안들었습니다. 다만 예전에 설치했던 과정이 기억나지 않아 똑같은 시행착오를 반복해서 이번에는 깔끔하게 기록해두려 합니다. 
@@ -22,7 +22,7 @@ UTM 4.7.1 버전부터 VHDX 파일을 사용할 수 없습니다. 마이크로�
 
 - UTM 깃허브/릴리즈 : https://github.com/utmapp/UTM/releases 
 
-![[UTM_1.png]]
+![[UTM_1.png|578x723]]
 최신 버전에서 VHDX를 사용하는 방법이나 ISO 부팅 절차를 잘 아시는 분이 계시면 알려주세요~
 ## Windows Insider Preview Downloads
 
@@ -35,8 +35,8 @@ UTM 4.7.1 버전부터 VHDX 파일을 사용할 수 없습니다. 마이크로�
 마이크로소프트 로그인을 안하거나 윈도우 인사이더 프로그램에 join하지 않으면 아래 화면이 표시됩니다. 인사이더 프로그램은 다음 링크에서 join할 수 있습니다.
 - https://support.microsoft.com/en-us/windows/join-the-windows-insider-program-and-manage-insider-settings-ef20bb3d-40f4-20cc-ba3c-a72c844b563c
 
-![[UTM_2.png]]
-![[UTM_3.png]]
+![[UTM_2.png|653x384]]
+![[UTM_3.png|458x433]]
 
 ## 가상머신 만들기
 
@@ -49,7 +49,7 @@ UTM을 실행한 후, 새 가상머신(New Vitual Machine)을 생성합니다.
 3. 윈도우 10 이상 설치, VHDX 이미지 가져오기, 드라이버 및 SPICE 도구 설치를 모두 체크합니다.
 
 4. 찾아보기를 눌러 내려받은 윈도우 VHDX 파일을 선택합니다.
-![[UTM_4.png]]
+![[UTM_4.png|560x580]]
 
 메모리 용량은 윈도우 11이 원활하게 실행되도록 충분히 설정해야 합니다. 4GB 이상(권장 8GB)으로 설정합니다. 현재 컴퓨터의 램 용량의 절반 이하를 추천합니다. 최대 메모리를 초과하면 절대 안됩니다. 
 
@@ -71,14 +71,11 @@ UTM에 생성된 윈도우 가상 머신을 실행합니다. 부팅 시 오류�
 
 사용자 이름과 비밀번호를 입력하여 계정을 설정합니다. 비밀번호는 공란으로 넘어갈 수 있습니다. 그 외 다른 설정은 No나 Skip을 눌러 빠르게 넘어갑니다.
 
-![[UTM_5.png]]
-![[UTM_6.png]]
-
 ## **UTM Guest Tools 설치** 
 
 윈도우 가상머신이 잘 실행된다면 UTM Guest Tools를 설치합니다. 이 도구를 설치해야 인터넷을 포함한 디스플레이, 마우스 설정 등 편의 기능을 사용할 수 있습니다.   
 윈도우 바탕화면에서 \[This PC ➝ CD Drive UTM Guest Tools\]에 들어갑니다. utm-guest-tools 파일을 찾아 실행하세요.
-
+![[utm.png|547x231]]
 ## **Display Output is not active 해결**
 
 UTM Guest Tools를 설치하면 화면이 꺼지고 Display Output is not active라는 문구가 표시될 수 있습니다. UTM 설정에 들어가 \[디스플레이 \- 렌더링 백엔드\]를 ANGLE (OPENGL)로 변경하고 다시 부팅하세요.
