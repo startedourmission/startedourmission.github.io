@@ -115,21 +115,8 @@ table th[align="right"] {
 }
 
 .tag {
-    display: inline-block;
-    background-color: var(--color-accent);
-    color: var(--color-bg);
-    padding: 0.2rem 0.5rem;
-    margin: 0.1rem 0.2rem;
-    border-radius: 4px;
-    text-decoration: none;
-    font-size: 0.85rem;
-    font-weight: 500;
-    transition: background-color 0.2s ease;
-}
-
-.tag:hover {
-    background-color: var(--color-link);
-    color: var(--color-bg);
+    display: inline;
+    margin-right: 0.5rem;
 }
 
 /* 태그 페이지 스타일링 */
