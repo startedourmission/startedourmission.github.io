@@ -126,8 +126,12 @@ module Obsidian =
             let linkContent = m.Groups.[2].Value
 
             if isImage then
-                // 이미지 링크 처리 ![[image.png]]
-                let imageName = linkContent
+                // 이미지 링크 처리 ![[image.png]] or ![[image.png|505x324]]
+                let imageName = 
+                    if linkContent.Contains("|") then
+                        linkContent.Split('|').[0].Trim()
+                    else
+                        linkContent
                 // 모든 이미지는 'images' 폴더에 있다고 가정
                 let imageUrl = $"images/{imageName}"
                 // URL 인코딩 처리 (공백 등)
