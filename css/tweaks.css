@@ -144,3 +144,42 @@ table th[align="right"] {
     color: var(--color-text);
     line-height: 1.5;
 }
+
+/* Posts 섹션 이미지 스타일링 */
+.posts-with-images .post-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--color-accent);
+}
+
+.post-thumbnail {
+    width: 80px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 4px;
+    flex-shrink: 0;
+}
+
+.post-thumbnail-placeholder {
+    width: 80px;
+    height: 60px;
+    background-color: var(--color-accent);
+    border-radius: 4px;
+    flex-shrink: 0;
+}
+
+.post-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.post-content .post-header {
+    margin-bottom: 0.5rem;
+}
+
+.post-content .post-summary {
+    margin: 0;
+}

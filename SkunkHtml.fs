@@ -269,20 +269,28 @@
                             | Some summary -> $"""<p class="post-summary">{summary}</p>"""
                             | None -> ""
                         
+                        let imageHtml = 
+                            match post.ImageUrl with
+                            | Some imageUrl -> $"""<img src="{imageUrl}" alt="{post.Title}" class="post-thumbnail" />"""
+                            | None -> """<div class="post-thumbnail-placeholder"></div>"""
+                        
                         $"""
                         <li class="post-item">
-                            <div class="post-header">
-                                <a href="{post.Url}" class="post-title-link">{post.Title}</a>
-                                {dateHtml}
+                            {imageHtml}
+                            <div class="post-content">
+                                <div class="post-header">
+                                    <a href="{post.Url}" class="post-title-link">{post.Title}</a>
+                                    {dateHtml}
+                                </div>
+                                {summaryHtml}
                             </div>
-                            {summaryHtml}
                         </li>""")
                     |> String.concat "\n            "
                 
                 $"""
                 <section class="posts-section">
                     <h2 class="posts-title">Posts</h2>
-                    <ul class="posts-list">
+                    <ul class="posts-list posts-with-images">
             {postsListHtml}
                     </ul>
                 </section>
