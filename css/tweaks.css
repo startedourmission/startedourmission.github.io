@@ -156,8 +156,8 @@ table th[align="right"] {
 }
 
 .post-thumbnail {
-    width: 80px;
-    height: 60px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
     object-position: center;
     border-radius: 4px;
@@ -165,8 +165,8 @@ table th[align="right"] {
 }
 
 .post-thumbnail-empty {
-    width: 80px;
-    height: 60px;
+    width: 150px;
+    height: 150px;
     flex-shrink: 0;
     /* 완전히 투명한 공간으로 처리 */
 }
