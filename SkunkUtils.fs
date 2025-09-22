@@ -195,8 +195,11 @@ module Obsidian =
 
                 if wikiMatch.Success then
                     // 옵시디언 링크 형식이면, 경로를 'images/'로 구성
-                    let imageName = wikiMatch.Groups.[1].Value
-                    Some ($"images/{imageName}")
+                    let imageName = wikiMatch.Groups.[1].Value.Trim()
+                    if String.IsNullOrEmpty(imageName) then
+                        None  // ![[]] 빈 이미지는 None으로 처리
+                    else
+                        Some ($"images/{imageName}")
                 else
                     // 일반 경로 형식이면, 그대로 사용
                     Some imageValue

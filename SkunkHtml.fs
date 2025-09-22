@@ -272,7 +272,7 @@
                         let imageHtml = 
                             match post.ImageUrl with
                             | Some imageUrl -> $"""<img src="{imageUrl}" alt="{post.Title}" class="post-thumbnail" />"""
-                            | None -> """<div class="post-thumbnail-placeholder"></div>"""
+                            | None -> """<div class="post-thumbnail-empty"></div>"""
                         
                         $"""
                         <li class="post-item">

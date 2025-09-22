@@ -159,16 +159,16 @@ table th[align="right"] {
     width: 80px;
     height: 60px;
     object-fit: cover;
+    object-position: center;
     border-radius: 4px;
     flex-shrink: 0;
 }
 
-.post-thumbnail-placeholder {
+.post-thumbnail-empty {
     width: 80px;
     height: 60px;
-    background-color: var(--color-accent);
-    border-radius: 4px;
     flex-shrink: 0;
+    /* 완전히 투명한 공간으로 처리 */
 }
 
 .post-content {
