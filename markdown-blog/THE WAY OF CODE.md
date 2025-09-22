@@ -4,6 +4,8 @@ aliases:
 date: 2025-06-30
 description: 도덕경에서 영감을 받아 코더와 창작자를 위해 쓰여진 '코드의 길(The Way of Code)'을 번역한 글입니다. 단순성, 비움, 균형, 리더십 등 동양 철학의 지혜를 코드와 기술의 은유를 통해 풀어내며 개발자의 길을 성찰합니다.
 image: "![[]]"
+tags:
+  - 잡담
 ---
 이 글은 https://www.thewayofcode.com 를 번역한 글입니다.
 

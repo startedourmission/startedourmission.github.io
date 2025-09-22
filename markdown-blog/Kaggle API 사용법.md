@@ -1,7 +1,7 @@
 ---
 date: 2025-04-05
 tags:
-  - 데이터분석
+  - 머신러닝
 aliases:
 description: Kaggle API의 설치 및 사용법을 정리한 가이드입니다. API 토큰 설정 방법부터 CLI 또는 Python 코드를 사용하여 데이터셋과 대회 데이터를 다운로드하는 등 주요 기능을 예제와 함께 설명하여 Kaggle 환경 외부에서의 활용을 돕습니다.
 image: "![[]]"

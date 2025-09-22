@@ -1,6 +1,7 @@
 ---
 date: 2025-09-17
 tags:
+  - 생산성
 aliases:
 image: "![[]]"
 description: 애플 실리콘 macOS에서 무료 가상화 프로그램 UTM을 사용하여 윈도우 11을 설치하는 방법을 안내합니다. 특정 UTM 버전 사용, VHDX 파일 다운로드, 그리고 설치 과정 중 인터넷 연결 없이 진행하는 'oobe\bypassnro' 팁까지 상세한 과정을 공유합니다.

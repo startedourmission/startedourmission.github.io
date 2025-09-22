@@ -2,8 +2,7 @@
 date: 2025-09-01
 tags:
   - 논문
-  - 딥러닝
-  - Seq2Seq
+  - 베스트논문
 aliases:
   - Transformer
 image: "![[transformer_1.png]]"
@@ -14,7 +13,7 @@ description: "'Attention Is All You Need' 논문을 요약하며 RNN의 한계�
 >A. Vaswani, N. Shazeer, N. Parmar, J. Uszkoreit, L. Jones, A. N. Gomez, L. Kaiser, and I. Polosukhin, "Attention Is All You Need," presented at the 31st Conference on Neural Information Processing Systems (NIPS 2017), Long Beach, CA, USA, 2017.
 
 
-![[transformer_1.png]]
+![[transformer_1.png|550x643]]
 
 RNN은 순차적 특성 때문에 훈련 예제 내에서 병렬화가 불가능했습니다. 각 단계는 이전 단계의 은닉 상태를 입력으로 받기 때문입니다. 그러니까 RNN에 문장을 넣으면 앞에서부터 처리합니다. 앞 단계 계산이 끝나야 다음 단계 계산으로 넘어가는겁니다. 이것이 긴 시퀀스의 경우 상당한 계산 비효율성을 초래합니다. 또한 RNN은 소실 경사 문제와 정보가 네트워크를 통해 통과하는 긴 경로로 인해 장거리 의존성을 학습하는 데 어려움을 겪었습니다.
 
@@ -108,7 +107,8 @@ $$
 
 이 논문에는 모델의 동작에 대한 통찰력을 제공하는 어텐션 시각화가 포함되어 있습니다. 이 시각화는 서로 다른 어텐션 헤드가 문장 내에서 지역적인 구문 종속성에서부터 장거리 의미론적 연결에 이르기까지 서로 다른 유형의 관계에 어떻게 집중하는지를 보여줍니다.
 
-![Attention Visualization](https://paper-assets.alphaxiv.org/figures/1706.03762v7/x1.png "Attention Visualization")_그림 4: 모델이 특정 토큰을 처리할 때 입력 시퀀스의 다른 부분에 어떻게 집중하는지를 보여주는 어텐션 시각화 예시._
+![Attention Visualization](https://paper-assets.alphaxiv.org/figures/1706.03762v7/x1.png "Attention Visualization")
+_그림 4: 모델이 특정 토큰을 처리할 때 입력 시퀀스의 다른 부분에 어떻게 집중하는지를 보여주는 어텐션 시각화 예시._
 
 어텐션 패턴은 모델이 대명사 해소, 구문 분석, 의미역 라벨링과 같은 다양한 언어 작업을 이러한 작업에 대한 명시적인 감독 없이 암묵적으로 수행하는 방법을 학습한다는 것을 보여줍니다.
 

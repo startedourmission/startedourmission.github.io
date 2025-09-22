@@ -1,16 +1,18 @@
 ---
 date: 2025-08-10
 tags:
+  - 논문
+  - LLM
 aliases:
   - 엑사원 4.0
 image: "![[exaone_1.png]]"
-description: "LG AI Research의 EXAONE 4.0 논문을 요약합니다. 빠른 응답의 'Non-reasoning' 모드와 깊은 사고의 'Reasoning' 모드를 통합한 하이브리드 아키텍처가 특징입니다. 모델 구조, 훈련 데이터, 혁신적인 AGAPO 강화학습 알고리즘을 중심으로 설명합니다."
+description: LG AI Research의 EXAONE 4.0 논문을 요약합니다. 빠른 응답의 'Non-reasoning' 모드와 깊은 사고의 'Reasoning' 모드를 통합한 하이브리드 아키텍처가 특징입니다. 모델 구조, 훈련 데이터, 혁신적인 AGAPO 강화학습 알고리즘을 중심으로 설명합니다.
 ---
 LG AI Research가 공개한 EXAONE 4.0은 언어모델 설계에서 새로운 접근을 시도했습니다. Non-reasoning 모드와 Reasoning 모드를 하나의 모델에 통합하여, 일상적인 대화에서는 빠른 응답을, 복잡한 문제에서는 깊은 사고를 제공하는 실용적인 언어모델을 구현했습니다.
 
 > LG AI Research, "EXAONE 4.0: Unified Large Language Models Integrating Non-reasoning and Reasoning Modes," arXiv preprint arXiv:2507.11407, 2025.
 
-![[exaone_1.png]]
+![[exaone_1.png|794x374]]
 # 요약
 
 ## 1. 모델 아키텍처

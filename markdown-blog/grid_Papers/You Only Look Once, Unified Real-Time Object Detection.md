@@ -2,13 +2,12 @@
 date: 2025-09-02
 tags:
   - 논문
-  - 딥러닝
-  - 영상처리
   - 객체탐지
+  - 베스트논문
 aliases:
   - YOLO
 image: https://paper-assets.alphaxiv.org/figures/1506.02640v5/img-0.jpeg
-description: "실시간 객체 탐지의 시대를 연 YOLO(You Only Look Once) 논문을 요약합니다. 전체 이미지를 단일 신경망에 한 번만 통과시켜 객체의 경계 상자와 클래스를 동시에 예측하는 혁신적인 통합 아키텍처의 원리와 성능을 설명합니다."
+description: 실시간 객체 탐지의 시대를 연 YOLO(You Only Look Once) 논문을 요약합니다. 전체 이미지를 단일 신경망에 한 번만 통과시켜 객체의 경계 상자와 클래스를 동시에 예측하는 혁신적인 통합 아키텍처의 원리와 성능을 설명합니다.
 ---
 이미지 내에서 객체를 식별하고 위치를 파악하는 작업은 오랫동안 컴퓨터 비전의 핵심 과제였습니다. 2015년 이전에는 지배적인 접근 방식들이 복잡하고 다단계적인 파이프라인을 요구했으며, 이는 계산 비용이 많이 들고 실시간 애플리케이션에는 너무 느렸습니다. Joseph Redmon, Santosh Divvala, Ross Girshick, Ali Farhadi가 저술한 YOLO(You Only Look Once) 논문은 객체 탐지를 다단계 분류 작업이 아닌 단일 회귀 문제로 재구성함으로써 패러다임의 전환을 가져왔습니다.
 

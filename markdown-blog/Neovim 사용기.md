@@ -1,7 +1,7 @@
 ---
 date: 2025-04-18
 tags:
-  - 개발
+  - 잡담
 aliases:
 description: VSCode를 대체하기 위해 Neovim을 사용해 본 경험을 공유합니다. Lazyvim을 거쳐 직접 최소한의 설정을 구성한 과정과 `init.lua` 파일을 공개하고, 가벼움이라는 장점과 마우스 조작 등 단점을 비교하며 느낀 점을 솔직하게 담았습니다.
 image: "![[]]"
