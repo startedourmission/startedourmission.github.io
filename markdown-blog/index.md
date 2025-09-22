@@ -15,6 +15,3 @@
 - [X (Twitter)](https://x.com/started_our_mis?s=21)
 - [LinkedIn](https://www.linkedin.com/in/진우-차-a663a7368/)
 - [Toynbee News](https://attempter.vercel.app/)
-
-
----

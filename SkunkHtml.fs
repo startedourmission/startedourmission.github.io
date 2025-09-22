@@ -231,7 +231,7 @@
                 
                 $"""
                 <section class="grid-section">
-                    <h1 class="grid-title">{title}</h1>
+                    <h2 class="grid-title">{title}</h2>
                     <div class="papers-grid">
                     {gridContentHtml}
                     </div>
@@ -281,7 +281,7 @@
                 
                 $"""
                 <section class="posts-section">
-                    <h1 class="posts-title">Posts</h1>
+                    <h2 class="posts-title">Posts</h2>
                     <ul class="posts-list">
             {postsListHtml}
                     </ul>
