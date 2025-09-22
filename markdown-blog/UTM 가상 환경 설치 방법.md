@@ -9,7 +9,7 @@ description: 애플 실리콘 macOS에서 무료 가상화 프로그램 UTM을 �
 
 이 글은 hyeoni님의 티스토리 게시글을 참고해 작성했습니다.
 - https://dev-hyonie.tistory.com/44
-- 
+
 ## UTM 설치
 
  ~~UTM의 설치 과정이랄 것은 딱히 없습니다. 링크에 접속해서 다운로드 버튼만 누르면 끝이니까요. 
@@ -18,6 +18,7 @@ description: 애플 실리콘 macOS에서 무료 가상화 프로그램 UTM을 �
 UTM 4.7.1 버전부터 VHDX 파일을 사용할 수 없습니다. 마이크로소프트에서 공식 ISO 파일을 배포하기 시작했기 때문인데요. 어쩐지 ISO로는 부팅이 안됐습니다. 그래서 4.7.0 버전 UTM을 다운로드해서 원래 방식으로 사용하는 것이 좋겠습니다. 
 
 다음 UTM 공식 깃허브의 릴리스 페이지에 접속하세요. 스크롤을 내려 4.7.0 버전을 찾아 [Assets]을 누르면 해당 버전 UTM의 dmg 설치 파일을 내려받을 수 있습니다.
+
 - UTM 깃허브/릴리즈 : https://github.com/utmapp/UTM/releases 
 
 ![[UTM_1.png]]
