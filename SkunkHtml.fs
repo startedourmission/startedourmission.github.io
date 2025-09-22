@@ -179,20 +179,18 @@
                 ""
 
         // 태그 섹션 생성
-        let popularTags = 
+        let allTags = 
             allPosts
             |> List.collect (fun post -> post.Tags)
-            |> List.countBy id
-            |> List.sortByDescending snd
-            |> List.take (min 10 (List.length (allPosts |> List.collect (fun post -> post.Tags) |> List.distinct)))
-            |> List.map fst
+            |> List.distinct
+            |> List.sort
         
         let tagsHtml = 
-            if popularTags.IsEmpty then 
+            if allTags.IsEmpty then 
                 ""
             else
                 let tagLinks = 
-                    popularTags
+                    allTags
                     |> List.map (fun tag -> 
                         let tagUrl = Url.toUrlFriendly tag
                         $"<a href=\"/tag/{tagUrl}.html\">{tag}</a>")
