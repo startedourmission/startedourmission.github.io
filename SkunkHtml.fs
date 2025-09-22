@@ -40,6 +40,46 @@
 
         headTemplate.Replace("{{title.html content}}", titleTemplate + titleSuffix)
     
+    let headWithMetaTags (titleSuffix: string) (postTitle: string) (description: string option) (imageUrl: string option) (pageUrl: string) =
+        let baseHead = head titleSuffix
+        let postFullTitle = postTitle + titleSuffix
+        
+        let ogMetaTags = 
+            let titleTag = $"<meta property=\"og:title\" content=\"{postFullTitle}\" />"
+            let urlTag = $"<meta property=\"og:url\" content=\"{Config.blogBaseUrl}/{pageUrl}\" />"
+            let typeTag = "<meta property=\"og:type\" content=\"article\" />"
+            let siteNameTag = $"<meta property=\"og:site_name\" content=\"{Config.blogTitle}\" />"
+            
+            let descriptionTag = 
+                match description with
+                | Some desc -> $"<meta property=\"og:description\" content=\"{desc}\" />"
+                | None -> ""
+            
+            let imageTag = 
+                match imageUrl with
+                | Some img -> $"<meta property=\"og:image\" content=\"{Config.blogBaseUrl}/{img}\" />"
+                | None -> ""
+            
+            $"{titleTag}\n    {urlTag}\n    {typeTag}\n    {siteNameTag}\n    {descriptionTag}\n    {imageTag}"
+        
+        let twitterMetaTags = 
+            let cardTag = "<meta name=\"twitter:card\" content=\"summary_large_image\" />"
+            let titleTag = $"<meta name=\"twitter:title\" content=\"{postFullTitle}\" />"
+            
+            let descriptionTag = 
+                match description with
+                | Some desc -> $"<meta name=\"twitter:description\" content=\"{desc}\" />"
+                | None -> ""
+            
+            let imageTag = 
+                match imageUrl with
+                | Some img -> $"<meta name=\"twitter:image\" content=\"{Config.blogBaseUrl}/{img}\" />"
+                | None -> ""
+            
+            $"{cardTag}\n    {titleTag}\n    {descriptionTag}\n    {imageTag}"
+        
+        baseHead + $"\n    {ogMetaTags}\n    {twitterMetaTags}"
+    
     let headCanvas (titleSuffix: string) =
         let headTemplate =
             Path.Combine(Config.htmlDir, "head-canvas.html")
@@ -70,6 +110,11 @@
         let outputHtmlFilePath = Path.Combine(Config.outputDir, fileName + ".html")
         let markdownContent = File.ReadAllText(markdownFilePath)
         
+        // 메타데이터 추출
+        let description = Obsidian.extractDescription markdownContent
+        let imageUrl = Obsidian.extractImageUrl markdownContent
+        let pageUrl = fileName + ".html"
+        
         // 마크다운 전처리: YAML 프론트매터 제거 후 Obsidian 링크 변환
         let processedMarkdownContent = 
             markdownContent
@@ -94,7 +139,7 @@
                 mainHtmlContent  + giscusScript
 
         let finalHtmlContent =
-            generateFinalHtml (head (" - " + title)) header footer htmlContent highlightingScript
+            generateFinalHtml (headWithMetaTags (" - " + title) title description imageUrl pageUrl) header footer htmlContent highlightingScript
 
         printfn $"Processing {Path.GetFileName markdownFilePath} ->"
         Disk.writeFile outputHtmlFilePath finalHtmlContent
@@ -355,36 +400,31 @@
                     | Some date -> date.ToUniversalTime().ToString("R")
                     | None -> ""
 
-                // 이미지 HTML 및 미디어 태그 생성
-                let imageHtml, mediaContent =
+                // description은 YAML의 description 사용
+                let description =
+                    match post.Description with
+                    | Some desc -> $"<![CDATA[\n  {desc}\n]]>"
+                    | None -> "<![CDATA[]]>"
+
+                // enclosure 태그 생성 (이미지가 있는 경우)
+                let enclosureTag =
                     match post.ImageUrl with
                     | Some imageUrl ->
                         let absoluteImageUrl = $"{Config.blogBaseUrl}/{System.Uri.EscapeUriString(imageUrl)}"
                         let imageType = 
                             let ext = Path.GetExtension(imageUrl)
-                            if ext.Length > 0 then ext.Substring(1).ToLower() else "png"
-                        let escapedTitle = post.Title.Replace("&", "&amp;").Replace("<", "&lt;").Replace(">", "&gt;").Replace("\"", "&quot;").Replace("'", "&apos;")
-                        let imgTag = $"<img src=\"{absoluteImageUrl}\" alt=\"{escapedTitle}\" /><br />"
-                        let mediaTag = $"<media:content url=\"{absoluteImageUrl}\" medium=\"image\" />"
-                        (imgTag, mediaTag)
-                    | None -> ("", "")
-                
-                // 요약과 이미지를 포함하는 설명 생성
-                let description =
-                    match post.Summary with
-                    | Some summary -> $"<![CDATA[{imageHtml}{summary}]]>"
-                    | None -> $"<![CDATA[{imageHtml}]]>"
+                            if ext.Length > 0 then $"image/{ext.Substring(1).ToLower()}" else "image/png"
+                        $"\n<enclosure url=\"{absoluteImageUrl}\" type=\"{imageType}\"/>"
+                    | None -> ""
 
-                let mediaContentXml = if mediaContent = "" then "" else $"    {mediaContent}"
-                $"""
-<item>
-    <title><![CDATA[{post.Title}]]></title>
-    <link>{postUrl}</link>
-    <guid>{postUrl}</guid>
-    <pubDate>{pubDate}</pubDate>
-    <description>{description}</description>{if mediaContentXml = "" then "" else $"\n{mediaContentXml}"}
-</item>
-"""
+                $"""<item>
+<title><![CDATA[ {post.Title} ]]></title>
+<link>{postUrl}</link>
+<guid isPermaLink="true">{postUrl}</guid>
+<pubDate>{pubDate}</pubDate>
+
+<description>{description}</description>{enclosureTag}
+</item>"""
             )
             |> String.concat "\n"
 
@@ -398,17 +438,16 @@
 
         let rssXml =
             $"""<?xml version="1.0" encoding="UTF-8" ?>
-    <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
-    <channel>
-        <title>{Config.blogTitle}</title>
-        <link>{Config.blogBaseUrl}</link>
-        <description>{Config.blogDescription}</description>
-        <language>ko-kr</language>
-        <lastBuildDate>{latestBuildDate}</lastBuildDate>
-        <atom:link href="{Config.blogBaseUrl}/rss.xml" rel="self" type="application/rss+xml" />
-        {items}
-    </channel>
-    </rss>
-"""
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+    <title>{Config.blogTitle}</title>
+    <link>{Config.blogBaseUrl}</link>
+    <description>{Config.blogDescription}</description>
+    <language>ko-kr</language>
+    <lastBuildDate>{latestBuildDate}</lastBuildDate>
+    <atom:link href="{Config.blogBaseUrl}/rss.xml" rel="self" type="application/rss+xml" />
+    {items}
+</channel>
+</rss>"""
         let rssFilePath = Path.Combine(Config.outputDir, "rss.xml")
         Disk.writeFile rssFilePath rssXml

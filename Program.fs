@@ -86,6 +86,7 @@ let main argv =
             let imageUrl = Obsidian.extractImageUrl content
             let dateValue = Obsidian.extractDate content filename
             let summary = Obsidian.extractSummary content
+            let description = Obsidian.extractDescription content
             
             // 파일이 어떤 폴더에 속하는지 확인
             let category = 
@@ -107,6 +108,7 @@ let main argv =
                 Category = category
                 Date = dateValue
                 Summary = summary
+                Description = description
             })
         |> Array.sortByDescending (fun post -> post.Date)
         |> Array.toList

@@ -7,6 +7,7 @@ type Post = {
     Category: string
     Date: System.DateTime option
     Summary: string option
+    Description: string option
 }
 
 type CanvasNode = {
@@ -243,6 +244,29 @@ module Obsidian =
                 | _ -> None
             else
                 None
+    
+    // YAML 프론트매터에서 description 추출 (RSS 전용)
+    let extractDescription (markdownContent: string) =
+        let frontMatterPattern = @"^\s*---\s*\n([\s\S]*?)\n\s*---\s*\n"
+        let frontMatterMatch = Regex.Match(markdownContent, frontMatterPattern)
+        
+        if frontMatterMatch.Success then
+            let yamlContent = frontMatterMatch.Groups.[1].Value
+            let descriptionPattern = @"description:\s*""([^""]*)""|description:\s*([^\n]+)"
+            let descriptionMatch = Regex.Match(yamlContent, descriptionPattern)
+            
+            if descriptionMatch.Success then
+                // 따옴표로 둘러싸인 경우 (Group 1) 또는 일반 텍스트 (Group 2)
+                let description = 
+                    if descriptionMatch.Groups.[1].Success then
+                        descriptionMatch.Groups.[1].Value.Trim()
+                    else
+                        descriptionMatch.Groups.[2].Value.Trim()
+                Some description
+            else
+                None
+        else
+            None
     
     // 마크다운 내용에서 첫 번째 문단을 요약으로 추출
     let extractSummary (markdownContent: string) =
