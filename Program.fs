@@ -189,12 +189,7 @@ let main argv =
         |> List.iter (fun tag ->
             let tagPosts = allPosts |> List.filter (fun post -> List.contains tag post.Tags)
             let tagUrl = Url.toUrlFriendly tag
-            let tagPagePath = Path.Combine(Config.outputDir, "tag", $"{tagUrl}.html")
-            
-            // tag 디렉토리가 없으면 생성
-            let tagDir = Path.GetDirectoryName(tagPagePath)
-            if not (Directory.Exists(tagDir)) then
-                Directory.CreateDirectory(tagDir) |> ignore
+            let tagPagePath = Path.Combine(Config.outputDir, $"tag-{tagUrl}.html")
             
             SkunkHtml.createTagPage header footer tag tagPosts tagPagePath navFolders)
 

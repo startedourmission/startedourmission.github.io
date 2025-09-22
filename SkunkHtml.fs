@@ -111,7 +111,7 @@
                 tags
                 |> List.map (fun tag -> 
                     let tagUrl = Url.toUrlFriendly tag
-                    $"<a href=\"/tag/{tagUrl}.html\" class=\"tag\">{tag}</a>")
+                    $"<a href=\"/tag-{tagUrl}.html\" class=\"tag\">{tag}</a>")
                 |> String.concat " "
             $"<div class=\"tags\">🏷️ {tagLinks}</div>"
 
@@ -193,7 +193,7 @@
                     allTags
                     |> List.map (fun tag -> 
                         let tagUrl = Url.toUrlFriendly tag
-                        $"<a href=\"/tag/{tagUrl}.html\">{tag}</a>")
+                        $"<a href=\"/tag-{tagUrl}.html\">{tag}</a>")
                     |> String.concat " · "
                 $"""
                 <section class="tags-section">
