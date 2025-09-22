@@ -413,8 +413,9 @@
                         let absoluteImageUrl = $"{Config.blogBaseUrl}/{System.Uri.EscapeUriString(imageUrl)}"
                         let imageType = 
                             let ext = Path.GetExtension(imageUrl)
-                            if ext.Length > 0 then $"image/{ext.Substring(1).ToLower()}" else "image/png"
-                        $"\n<enclosure url=\"{absoluteImageUrl}\" type=\"{imageType}\"/>"
+                            if ext.Length > 1 then $"image/{ext.Substring(1).ToLower()}" else "image/png"
+                        // length는 0으로 설정 (실제 파일 크기를 알 수 없으므로)
+                        $"\n<enclosure url=\"{absoluteImageUrl}\" type=\"{imageType}\" length=\"0\"/>"
                     | None -> ""
 
                 $"""<item>
