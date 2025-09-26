@@ -1,13 +1,13 @@
 ---
-date: 2025-09-26
+date: 2025-09-24
 tags:
   - 논문
   - LLM
 aliases:
 image: "![[1-SoftTokens_HardTruths.png]]"
-description: 대형 언어 모델(LLM)의 추론 능력은 Chain-of-Thought(CoT) 기법을 통해 크게 향상되었지만, 기존의 discrete token 기반 접근법은 여러 추론 경로를 동시에 탐색하는 데 한계가 있습니다. 이 논문은 이러한 한계를 극복하기 위해 continuous token을 사용한 새로운 강화학습 기반 훈련 방법을 제안합니다.
+description: 대형 언어 모델(LLM)의 추론 능력은 Chain-of-Thought(CoT) 기법을 통해 크게 향상되었지만, 기존의 discrete token 기반 접근법은 여러 추론 경로를 동시에 탐색하는 데 한계가 있습니다. 이러한 한계를 극복하기 위해 continuous token을 사용한 새로운 강화학습 기반 훈련 방법을 제안합니다.
 ---
-언어 모델은 텍스트를 discrete token이라는 개별적이고 구분되는 단위로 처리합니다. 예를 들어 "안녕하세요"는 ["안녕", "하세", "요"]처럼 토큰화되고, 각 토큰은 vocabulary에서 고유한 하나의 위치를 차지하는 one-hot 벡터로 표현됩니다. 이런 방식은 명확하고 이해하기 쉽지만, 추론 과정에서 한 번에 하나의 경로만 따라갈 수 있다는 한계가 있습니다. 대형 언어 모델(LLM)의 추론 능력은 Chain-of-Thought(CoT) 기법을 통해 크게 향상되었지만, 바로 이런 discrete token 기반 접근법 때문에 여러 추론 경로를 동시에 탐색하는 데 제약이 따릅니다. 본 논문은 이러한 한계를 극복하기 위해 continuous token을 사용한 새로운 강화학습 기반 훈련 방법을 제안합니다.
+언어 모델은 텍스트를 숫자로 바꾸기 위해 토큰화 작업을 거칩니다. 보통은 discrete token이라는 단위로 처리합니다. 이 방식은 토큰을 명확하게 구분되는 하나의 단위로 처리합니다. 예를 들어 "안녕하세요"는 ["안녕", "하세", "요"]처럼 바뀝니다. 각 토큰은 vocabulary에서 고유한 하나의 위치를 차지하는 one-hot 벡터로 표현됩니다. 명확하고 이해하기 쉽지만, 추론 과정에서 한 번에 하나의 경로만 따라갈 수 있다는 한계가 있습니다. 대형 언어 모델(LLM)의 추론 능력은 Chain-of-Thought(CoT) 기법을 통해 크게 향상되었지만, 바로 이런 discrete token 기반 접근법 때문에 여러 추론 경로를 동시에 탐색하는 데 제약이 따릅니다. 본 논문은 이러한 한계를 극복하기 위해 continuous token을 사용한 새로운 강화학습 기반 훈련 방법을 제안합니다.
 
 > N. Butt, A. Kwiatkowski, I. Labiad, J. Kempe and Y. Ollivier, "Soft Tokens, Hard Truths", arXiv preprint arXiv:2509.19170, pp. 1-24, 2024.
 ## 요약
