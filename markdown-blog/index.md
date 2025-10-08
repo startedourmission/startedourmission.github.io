@@ -7,11 +7,13 @@
 ## Contect 
 
 - **Email :** chajinwoo.chajinwoo@gmail.com
+
+출판 관련 문의는 아래 메일로 보내주세요.
 - **Company Email :** jwcha@goldenrabbit.co.kr
 
 ## Links 
 
 - [Github](https://github.com/startedourmission)
+- [Threads](https://www.threads.com/@startedourmission)
 - [X (Twitter)](https://x.com/started_our_mis?s=21)
 - [LinkedIn](https://www.linkedin.com/in/진우-차-a663a7368/)
-- [Toynbee News](https://attempter.vercel.app/)
