@@ -6,7 +6,7 @@ tags:
 aliases:
   - "Less is More: Recursive Reasoning with Tiny Networks"
 image: "![[1-rtn1.png]]"
-description: 삼성에서 한 건 했습니다. LLM 추론 방식에 대한 근본적인 의문을 제시하고 Claude 3.7, GPT의 o3-mini, Gemini 2.5 Pro, Deepseek R1을 능가하는 추론 성능을 달성합니다. 심지어 0.01%에 불과한 파라미터로 말이죠. 삼성 SAIT AI 연구소가 제안한 TRM을 소개합니다.
+description: 삼성에서 한 건 했습니다. LLM 추론 방식에 대한 근본적인 의문을 제시하고 Claude 3.7, GPT의 o3-mini, Gemini 2.5 Pro, Deepseek R1을 능가하는 추론 성능을 달성합니다. 심지어 0.01%에 불과한 파라미터로 말이죠. 삼성 SAIL AI 연구소가 제안한 TRM을 소개합니다.
 ---
 
 LLM이 잘 못하는 문제가 몇 가지 있습니다. 바로 스도쿠나 미로 찾기 같은 복잡한 퍼즐 문제입니다. 이런 문제를 해결하기 위해 최근 등장한 Hierarchical Reasoning Model(HRM)은 27M 파라미터로 대형 모델보다 좋은 성능을 보였습니다. 그런데 이 모델마저도 고도의 생물학적 논거와 수학적 이론에 의존하는 복잡한 모델입니다. 더 단순하고 가벼운 모델을 만들 순 없을까요?
