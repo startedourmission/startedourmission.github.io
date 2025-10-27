@@ -2,7 +2,7 @@ nav a img {
     border-style: outset;
     border-color: var(--color-link);
     border-width: 0px;
-    max-width: 60% !important;
+    max-width: 30% !important;
     height: auto;
     /*box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);*/
 }
