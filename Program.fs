@@ -206,6 +206,13 @@ let main argv =
     SkunkHtml.createRssFeed allPosts
 
 
+    // Copy ads.txt to output
+    let adsTxtSource = Path.Combine(Config.sourceDir, "ads.txt")
+    let adsTxtDest = Path.Combine(Config.outputDir, "ads.txt")
+    if File.Exists(adsTxtSource) then
+        File.Copy(adsTxtSource, adsTxtDest, true)
+        printfn "Copied ads.txt to output"
+
     Disk.copyFolderToOutput Config.fontsDir Config.outputFontsDir
     Disk.copyFolderToOutput Config.cssDir Config.outputCssDir
     Disk.copyFolderToOutput Config.imagesDir Config.outputImagesDir
