@@ -194,8 +194,20 @@ let main argv =
             SkunkHtml.createTagPage header footer tag tagPosts tagPagePath navFolders)
 
     // 인덱스 페이지를 제외한 모든 마크다운을 처리하므로, 이제 그외 페이지 처리는 필요없음
-    let createOtherPages () = 
+    let createOtherPages () =
         () // 모든 마크다운 파일이 블로그 글로 처리되므로 필요없음
+
+    let createPostsAndGridPages () =
+        // Posts 페이지 생성
+        let postsPagePath = Path.Combine(Config.outputDir, "posts.html")
+        SkunkHtml.createPostsPage header footer regularPosts postsPagePath navFolders gridSections
+
+        // Grid 섹션 페이지들 생성
+        gridSections
+        |> List.iter (fun (title, posts) ->
+            let urlFriendlyTitle = Url.toUrlFriendly title
+            let gridPagePath = Path.Combine(Config.outputDir, $"{urlFriendlyTitle}.html")
+            SkunkHtml.createGridSectionPage header footer title posts gridPagePath navFolders gridSections)
 
     createIndexPage header footer gridSections navFolders regularPosts allPosts
     createOtherPages ()
@@ -203,6 +215,7 @@ let main argv =
     createCategoryPages ()
     createCanvasPages ()
     createTagPages ()
+    createPostsAndGridPages ()
     SkunkHtml.createRssFeed allPosts
 
 
