@@ -3,6 +3,7 @@ date: 2025-10-23
 tags:
   - 논문
   - LLM
+  - Headliner
 aliases:
 image: "![[1-dtra.png]]"
 description: 최근 이미지 생성 분야에서 Diffusion Transformer(DiT)는 픽셀 공간이 아닌 사전 학습된 오토인코더가 만든 잠재 공간(latent space)에서 확산 과정을 수행하는 것이 표준이 되었습니다. 하지만 대부분의 DiT는 여전히 원래의 VAE 인코더에 의존하고 있고, 이는 몇 가지 한계를 가지고 있습니다. 이 논문은 VAE를 사전 학습된 표현 인코더(DINO, SigLIP, MAE 등)와 학습된 디코더로 구성된 Representation Autoencoder(RAE)로 대체하는 새로운 접근을 제안합니다.

@@ -4,6 +4,7 @@ tags:
   - 논문
   - 영상처리
   - 베스트논문
+  - Headliner
 aliases:
 image: "![[1-Video models are zero-shot learners and reasoners.png]]"
 description: 자연어 처리가 변화한 이유가 대규모 언어 모델이라면 컴퓨터 비전이 변화한 이유는 비디오 모델입니다. 믿고 보는 Google DeepMind의 최신 비디오 모델 연구 논문입니다. Veo 3가 명시적으로 학습하지 않은 다양한 시각적 작업을 제로샷 방식으로 해결할 수 있다고 제안합니다.

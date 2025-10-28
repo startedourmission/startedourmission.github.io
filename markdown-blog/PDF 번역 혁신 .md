@@ -2,6 +2,7 @@
 date: 2025-09-29
 tags:
   - 정보
+  - Headliner
 aliases:
 image: "![[1-PDFMathTranslate.png]]"
 description: 여러분이 굉장히 놀랄만한 PDF 번역 도구입니다. PDF로 작업을 자주 하거나 저처럼 외국 자료를 볼 일이 많은 분께 강력 추천합니다. PDF의 복잡한 구조를 어떻게 처리하는지 내부 코드도 뜯어보고 싶네요. Zotero와 연동할 수 있어 더욱 편리합니다.

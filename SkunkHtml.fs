@@ -227,9 +227,58 @@
                           $"""        {dynamicNavHtml}
     </ul>""")
 
+        // Headliner 섹션 (Headliner 태그를 가진 글들)
+        let headlinerPosts =
+            allPosts
+            |> List.filter (fun post -> post.Tags |> List.exists (fun tag -> tag.ToLower() = "headliner"))
+
+        let headlinerHtml =
+            if headlinerPosts.IsEmpty then ""
+            else
+                let headlinerListHtml =
+                    headlinerPosts
+                    |> List.map (fun post ->
+                        let dateHtml =
+                            match post.Date with
+                            | Some date -> $"""<span class="post-date">{date.ToString("yyyy-MM-dd")}</span>"""
+                            | None -> ""
+
+                        let summaryHtml =
+                            match post.Summary with
+                            | Some summary -> $"""<p class="post-summary">{summary}</p>"""
+                            | None -> ""
+
+                        let imageHtml =
+                            match post.ImageUrl with
+                            | Some imageUrl -> $"""<img src="{imageUrl}" alt="{post.Title}" class="post-thumbnail" />"""
+                            | None -> """<div class="post-thumbnail-empty"></div>"""
+
+                        $"""
+                        <li class="post-item">
+                            {imageHtml}
+                            <div class="post-content">
+                                <div class="post-header">
+                                    <a href="{post.Url}" class="post-title-link">{post.Title}</a>
+                                    {dateHtml}
+                                </div>
+                                {summaryHtml}
+                            </div>
+                        </li>""")
+                    |> String.concat "\n            "
+
+                $"""
+                <section class="posts-section">
+                    <h2 class="posts-title">Headline</h2>
+                    <ul class="posts-list posts-with-images">
+            {headlinerListHtml}
+                    </ul>
+                </section>
+                """
+
         let content =
             $"""
         {frontPageContentHtml}
+        {headlinerHtml}
         {tagsHtml}
         """
 

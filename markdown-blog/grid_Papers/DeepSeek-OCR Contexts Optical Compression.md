@@ -4,6 +4,7 @@ tags:
   - 논문
   - LLM
   - 베스트논문
+  - Headliner
 aliases:
   - "DeepSeek-OCR: Contexts Optical Compression"
 image: "![[1-DeepSeek-OCR.png]]"
