@@ -160,14 +160,14 @@ let main argv =
         blogArticleFiles
         |> Array.iter (createPage header footer)
 
-    let createCategoryPages () = 
+    let createCategoryPages () =
         navFolders
         |> Array.iter (fun folderName ->
             let categoryPosts = allPosts |> List.filter (fun post -> post.Category = folderName)
             printfn $"Category: {folderName}, Posts count: {categoryPosts.Length}"
             categoryPosts |> List.iter (fun post -> printfn $"  - {post.Title}")
             let categoryPagePath = Path.Combine(Config.outputDir, $"{Url.toUrlFriendly folderName}.html")
-            SkunkHtml.createCategoryPage header footer folderName categoryPosts categoryPagePath navFolders)
+            SkunkHtml.createCategoryPage header footer folderName categoryPosts categoryPagePath navFolders gridSections)
     
     let createCanvasPages () = 
         allCanvases

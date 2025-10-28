@@ -238,57 +238,73 @@
 
         Disk.writeFile indexHtmlFilePath frontPageHtmlContent
 
-    let createCategoryPage (header: string) (footer: string) (categoryName: string) (posts: Post list) (outputPath: string) (navFolders: string array) =
+    let createCategoryPage (header: string) (footer: string) (categoryName: string) (posts: Post list) (outputPath: string) (navFolders: string array) (gridFolders: (string * Post list) list) =
         let postsHtml =
             posts
-            |> List.map (fun post -> 
-                let dateHtml = 
+            |> List.map (fun post ->
+                let dateHtml =
                     match post.Date with
                     | Some date -> $"""<span class="post-date">{date.ToString("yyyy-MM-dd")}</span>"""
                     | None -> ""
-                
-                let summaryHtml = 
+
+                let summaryHtml =
                     match post.Summary with
                     | Some summary -> $"""<p class="post-summary">{summary}</p>"""
                     | None -> ""
-                
+
+                let imageHtml =
+                    match post.ImageUrl with
+                    | Some imageUrl -> $"""<img src="{imageUrl}" alt="{post.Title}" class="post-thumbnail" />"""
+                    | None -> """<div class="post-thumbnail-empty"></div>"""
+
                 $"""
                 <li class="post-item">
-                    <div class="post-header">
-                        <a href="{post.Url}" class="post-title-link">{post.Title}</a>
-                        {dateHtml}
+                    {imageHtml}
+                    <div class="post-content">
+                        <div class="post-header">
+                            <a href="{post.Url}" class="post-title-link">{post.Title}</a>
+                            {dateHtml}
+                        </div>
+                        {summaryHtml}
                     </div>
-                    {summaryHtml}
                 </li>""")
             |> String.concat "\n            "
 
-        // 동적 내비게이션 생성
-        let dynamicNavHtml =
+        // 동적 내비게이션 생성 (Posts + 그리드 섹션들 + navFolders)
+        let gridNavHtml =
+            gridFolders
+            |> List.map (fun (title, _) ->
+                let urlFriendlyName = Url.toUrlFriendly title
+                $"""<li><a href="{urlFriendlyName}.html">{title}</a></li>""")
+            |> String.concat "\n        "
+
+        let navFoldersHtml =
             navFolders
             |> Array.map (fun folderName ->
                 let urlFriendlyName = Url.toUrlFriendly folderName
                 $"""<li><a href="{urlFriendlyName}.html">{folderName}</a></li>""")
             |> String.concat "\n        "
 
-        let updatedHeader = 
-            // 이미 동적 내비게이션이 있는지 확인 (첫 번째 폴더 링크로 확인)
-            if navFolders.Length > 0 && header.Contains($"<li><a href=\"{Url.toUrlFriendly navFolders.[0]}.html\">") then
-                header // 이미 업데이트된 헤더
-            else
-                header.Replace("    </ul>", 
-                              $"""        {dynamicNavHtml}
+        let dynamicNavHtml =
+            $"""<li><a href="posts.html">Posts</a></li>
+        {gridNavHtml}
+        {navFoldersHtml}"""
+
+        let updatedHeader =
+            header.Replace("    </ul>",
+                          $"""        {dynamicNavHtml}
     </ul>""")
 
         let content =
             $"""
         <h1>{categoryName}</h1>
-        <ul class="category-posts">
+        <ul class="posts-list posts-with-images">
             {postsHtml}
         </ul>
         """
 
         let categoryPageHtml = generateFinalHtml (head $" - {categoryName}") updatedHeader footer content highlightingScript
-        
+
         printfn $"Processing category page: {categoryName} ->"
         Disk.writeFile outputPath categoryPageHtml
 
