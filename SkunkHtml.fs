@@ -243,9 +243,9 @@
                             | Some date -> $"""<span class="post-date">{date.ToString("yyyy-MM-dd")}</span>"""
                             | None -> ""
 
-                        let summaryHtml =
-                            match post.Summary with
-                            | Some summary -> $"""<p class="post-summary">{summary}</p>"""
+                        let descriptionHtml =
+                            match post.Description with
+                            | Some description -> $"""<p class="post-summary">{description}</p>"""
                             | None -> ""
 
                         let imageHtml =
@@ -261,7 +261,7 @@
                                     <a href="{post.Url}" class="post-title-link">{post.Title}</a>
                                     {dateHtml}
                                 </div>
-                                {summaryHtml}
+                                {descriptionHtml}
                             </div>
                         </li>""")
                     |> String.concat "\n            "
@@ -296,9 +296,9 @@
                     | Some date -> $"""<span class="post-date">{date.ToString("yyyy-MM-dd")}</span>"""
                     | None -> ""
 
-                let summaryHtml =
-                    match post.Summary with
-                    | Some summary -> $"""<p class="post-summary">{summary}</p>"""
+                let descriptionHtml =
+                    match post.Description with
+                    | Some description -> $"""<p class="post-summary">{description}</p>"""
                     | None -> ""
 
                 let imageHtml =
@@ -314,7 +314,7 @@
                             <a href="{post.Url}" class="post-title-link">{post.Title}</a>
                             {dateHtml}
                         </div>
-                        {summaryHtml}
+                        {descriptionHtml}
                     </div>
                 </li>""")
             |> String.concat "\n            "
@@ -366,9 +366,9 @@
                     | Some date -> $"""<span class="post-date">{date.ToString("yyyy-MM-dd")}</span>"""
                     | None -> ""
 
-                let summaryHtml =
-                    match post.Summary with
-                    | Some summary -> $"""<p class="post-summary">{summary}</p>"""
+                let descriptionHtml =
+                    match post.Description with
+                    | Some description -> $"""<p class="post-summary">{description}</p>"""
                     | None -> ""
 
                 let imageHtml =
@@ -384,7 +384,7 @@
                             <a href="{post.Url}" class="post-title-link">{post.Title}</a>
                             {dateHtml}
                         </div>
-                        {summaryHtml}
+                        {descriptionHtml}
                     </div>
                 </li>""")
             |> String.concat "\n            "
