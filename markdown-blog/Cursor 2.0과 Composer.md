@@ -2,6 +2,7 @@
 date: 2025-10-30
 tags:
   - 정보
+  - Headliner
 aliases:
 image: "![[1-cursor2.png]]"
 description: 커서 2.0이 발표되었습니다. 기대만큼 엄청난 변화는 아니지만 생각지 못한 변화네요. 자체 모델 발표와 에이전트 중심의 인터페이스 개편이 핵심입니다.
