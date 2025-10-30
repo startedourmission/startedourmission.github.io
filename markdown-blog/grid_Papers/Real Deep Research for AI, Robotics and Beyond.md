@@ -12,10 +12,6 @@ description: |-
 
   그래도 ,, 제 스레드 팔로우 해주실거죠?
 ---
-
-
-> Zou, Xueyan; Ye, Jianglong; Zhang, Hao; Xiang, Xiaoyu; Ding, Mingyu; Yang, Zhaojing; Lee, Yong Jae; Tu, Zhuowen; Liu, Sifei; Wang, Xiaolong, "Real Deep Research for AI, Robotics and Beyond", arXiv preprint arXiv:2510.20809, DOI: 10.48550/arXiv.2510.20809, 2025.
-
 RDR은 embedding 기반의 자동화된 분석 파이프라인으로, 논문 수집, 콘텐츠 분석, embedding 기반 클러스터링, 추세 분석을 통해 연구 분야를 종합적으로 파악합니다. Foundation Models과 Robotics를 중심으로 적용되었으며, Computer Vision, NLP, Machine Learning 등 다양한 분야로 확장되었습니다.
 
 ![[1-rdr.png|654x310]]
