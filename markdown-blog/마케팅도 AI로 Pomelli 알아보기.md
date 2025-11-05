@@ -5,7 +5,7 @@ tags:
 aliases:
   - 마케팅도 AI로? Pomelli 알아보기
 image: "![[1-Pomelli.png]]"
-description:
+description: 소규모 창업자나 소상공인이라면 이런 고민을 해본 적 있을 겁니다. 소셜 미디어 콘텐츠를 만들고 싶지만 디자이너를 고용할 여유도 없고 직접 만들자니 시간이 부족하다는 고민. Google Labs와 Google DeepMind가 함께 만든 새로운 도구가 나왔습니다. 오늘은 Pomelli를 살펴보겠습니다.
 ---
 소규모 창업자나 소상공인이라면 이런 고민을 해본 적 있을 겁니다. 소셜 미디어 콘텐츠를 만들고 싶지만 디자이너를 고용할 여유도 없고 직접 만들자니 시간이 부족하다는 고민. Google Labs와 Google DeepMind가 함께 만든 새로운 도구가 나왔습니다. 오늘은 Pomelli를 살펴보겠습니다.
 
