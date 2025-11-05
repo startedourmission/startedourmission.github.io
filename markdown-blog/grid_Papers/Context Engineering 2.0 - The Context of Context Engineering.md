@@ -7,7 +7,7 @@ tags:
 aliases:
   - "Context Engineering 2.0: The Context of Context Engineering"
 image: "![[1-ContextEngineering2.0.png]]"
-description:
+description: LLM의 일상화로 컨텍스트 엔지니어링이라는 개념이 떠오르고 있습니다. 많은 사람들이 이것을 최신 에이전트 시대의 산물로 생각하곤 하는데, 실은 20년 이상의 역사를 가진 분야입니다. 이 논문의 핵심 통찰은 바로 여기에 있습니다.기계가 인간의 의도를 이해하려면, 결국 정보 엔트로피를 줄여야 한다는 것이죠.
 ---
 
 > Hua, Q., Ye, L., Fu, D., Xiao, Y., Cai, X., Wu, Y., Lin, J., Wang, J., & Liu, P. (2025). Context Engineering 2.0: The Context of Context Engineering. _arXiv preprint arXiv:2510.26493_.
