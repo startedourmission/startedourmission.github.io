@@ -2,8 +2,8 @@
 date: 2025-11-05
 tags:
   - 논문
-  - 딥러닝
   - Headliner
+  - LLM
 aliases:
   - "Kimi Linear: An Expressive, Efficient Attention Architecture"
 image: "![[1-KimiLinear.png]]"

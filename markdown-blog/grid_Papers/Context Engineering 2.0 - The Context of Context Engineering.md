@@ -1,6 +1,9 @@
 ---
-date: 2025-06-30
+date: 2025-11-05
 tags:
+  - 논문
+  - Headliner
+  - LLM
 aliases:
   - "Context Engineering 2.0: The Context of Context Engineering"
 image: "![[1-ContextEngineering2.0.png]]"
