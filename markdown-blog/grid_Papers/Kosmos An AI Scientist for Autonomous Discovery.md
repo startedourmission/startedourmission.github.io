@@ -3,6 +3,7 @@ date: 2025-11-10
 tags:
   - 논문
   - 딥러닝
+  - Headliner
 aliases:
   - "Kosmos: An AI Scientist for Autonomous Discovery"
 image: "![[1-Kosmos.png]]"
