@@ -3,7 +3,6 @@ date: 2025-10-27
 tags:
   - 논문
   - LLM
-  - Headliner
 aliases:
 image: "![[1-ADefinitionofAGI.png]]"
 description: |-
