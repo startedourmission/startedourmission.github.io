@@ -6,7 +6,7 @@ tags:
   - Headliner
 aliases:
 image: "![[1-Ddl.png]]"
-description: 심층 신경망의 학습 안정성을 책임지는 ResNet의 identity shortcut connection은 사실 너무 단순하다는 문제가 있습니다. 입력에 residual을 더하는 방식은 기울기 소실 문제는 해결했지만, 네트워크가 복잡한 상태 전이를 표현하는 데는 한계가 있었죠. 새로운 논문 Deep Delta Learning(DDL)은 이 shortcut 연결에 학습 가능한 기하학적 변환을 추가해서, 네트워크가 identity mapping, 직교 투영(orthogonal projection), 그리고 기하학적 반사(geometric reflection)를 동적으로 선택할 수 있도록 만듭니다. 핵심은 단 하나의 스칼라 게이트 $\beta(X)$로 이 모든 변환을 제어한다는 점입니다.
+description: 심층 신경망의 학습 안정성을 책임지는 ResNet의 identity shortcut connection은 사실 너무 단순하다는 문제가 있습니다. 입력에 residual을 더하는 방식은 기울기 소실 문제는 해결했지만, 네트워크가 복잡한 상태 전이를 표현하는 데는 한계가 있었죠. 새로운 논문 Deep Delta Learning(DDL)은 이 shortcut 연결에 학습 가능한 기하학적 변환을 추가합니다. 네트워크는 층마다 그냥 넘어갈지, 특정 방향의 정보를 지울지, 완전히 반사시킬지 스스로 결정합니다.
 ---
 심층 신경망의 학습 안정성을 책임지는 ResNet의 identity shortcut connection은 사실 너무 단순하다는 문제가 있습니다. 입력에 residual을 더하는 방식은 기울기 소실 문제는 해결했지만, 네트워크가 복잡한 상태 전이를 표현하는 데는 한계가 있었죠. 새로운 논문 Deep Delta Learning(DDL)은 이 shortcut 연결에 학습 가능한 기하학적 변환을 추가해서, 네트워크가 identity mapping, 직교 투영(orthogonal projection), 그리고 기하학적 반사(geometric reflection)를 동적으로 선택할 수 있도록 만듭니다. 핵심은 단 하나의 스칼라 게이트 $\beta(X)$로 이 모든 변환을 제어한다는 점입니다.
 
