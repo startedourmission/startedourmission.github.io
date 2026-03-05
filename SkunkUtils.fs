@@ -52,8 +52,8 @@ module Config =
     let fontsDir = Path.Combine(sourceDir, "fonts")
     let outputFontsDir = Path.Combine(outputDir, "fonts")
 
-    let imagesDir = Path.Combine(markdownDir, "images")
-    let outputImagesDir = Path.Combine(outputDir, "images")
+    let imagesDir = Path.Combine(markdownDir, "_assets")
+    let outputImagesDir = Path.Combine(outputDir, "_assets")
 
     let assetsDir = Path.Combine(sourceDir, "assets")
     let outputAssetsDir = Path.Combine(outputDir, "assets")
@@ -134,10 +134,10 @@ module Obsidian =
                         linkContent.Split('|').[0].Trim()
                     else
                         linkContent
-                // 모든 이미지는 'images' 폴더에 있다고 가정
-                let imageUrl = $"images/{imageName}"
+                // 모든 이미지는 '_assets' 폴더에 있다고 가정
+                let imageUrl = $"_assets/{imageName}"
                 // URL 인코딩 처리 (공백 등)
-                let encodedUrl = "images/" + System.Uri.EscapeDataString(imageName)
+                let encodedUrl = "_assets/" + System.Uri.EscapeDataString(imageName)
                 $"<img src=\"{encodedUrl}\" alt=\"{imageName}\" class=\"embedded-image\" style=\"max-width: 600px; height: auto; display: block; margin: 1rem auto;\">"
             else
                 // 페이지 링크 처리 [[Page Name]] or [[Page Name|Display Text]]
@@ -194,12 +194,12 @@ module Obsidian =
                 let wikiMatch = Regex.Match(imageValue, wikiImagePattern)
 
                 if wikiMatch.Success then
-                    // 옵시디언 링크 형식이면, 경로를 'images/'로 구성
+                    // 옵시디언 링크 형식이면, 경로를 '_assets/'로 구성
                     let imageName = wikiMatch.Groups.[1].Value.Trim()
                     if System.String.IsNullOrEmpty(imageName) then
                         None  // ![[]] 빈 이미지는 None으로 처리
                     else
-                        Some ($"images/{imageName}")
+                        Some ($"_assets/{imageName}")
                 else
                     // 일반 경로 형식이면, 그대로 사용
                     Some imageValue

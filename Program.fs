@@ -57,7 +57,7 @@ let main argv =
             let folderName = Path.GetFileName(dir)
             not (folderName.StartsWith("grid_")) && 
             not (folderName.StartsWith(".")) &&  // 숨김 폴더 제외
-            folderName <> "images" && 
+            folderName <> "_assets" &&
             folderName <> "assets")
         |> Array.map (fun dir -> Path.GetFileName(dir))
     
