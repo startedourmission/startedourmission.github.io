@@ -2,12 +2,15 @@
 date: 2026-03-05
 tags:
   - 논문
+  - Headliner
 aliases:
-image: "![[]]"
+image: "![[image.png]]"
 description: 텍스트, 이미지, 영상에서 Lottie 벡터 애니메이션을 생성하는 최초의 멀티모달 프레임워크입니다. Lottie JSON을 파라미터화된 토큰으로 변환하는 토크나이저가 핵심이고, Qwen2.5-VL 기반 4B 모델로 88~93%의 생성 성공률을 달성했습니다. CVPR 2026 accept.
 status:
 ---
 벡터 애니메이션 생성은 AI가 어려워하는 분야 중 하나입니다. 이미지 생성은 Stable Diffusion, DALL-E가 있고, 영상 생성은 Sora가 있습니다. 하지만 벡터 애니메이션은 없습니다. 래스터 이미지와 달리 수학적 좌표와 곡선으로 정의되는 벡터는 기존 확산 모델의 접근 방식으로는 풀기 어려웠습니다.
+
+![[image.png]]
 
 OmniLottie는 텍스트, 이미지, 영상에서 Lottie 포맷의 벡터 애니메이션을 직접 생성하는 최초의 엔드투엔드 멀티모달 프레임워크입니다. CVPR 2026에 accept 되었고, 모델과 코드 모두 공개되었습니다.
 
