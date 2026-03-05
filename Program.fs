@@ -218,6 +218,15 @@ let main argv =
     createPostsAndGridPages ()
     SkunkHtml.createRssFeed allPosts
 
+    // SEO + GEO 파일 생성
+    let allTags =
+        allPosts
+        |> List.collect (fun post -> post.Tags)
+        |> List.distinct
+        |> List.sort
+    SkunkHtml.createSitemap allPosts gridSections navFolders allTags
+    SkunkHtml.createRobotsTxt ()
+    SkunkHtml.createLlmsTxt allPosts
 
     // Copy ads.txt to output
     let adsTxtSource = Path.Combine(Config.sourceDir, "ads.txt")

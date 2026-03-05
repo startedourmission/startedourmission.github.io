@@ -7,7 +7,7 @@
     let generateFinalHtml (head: string) (header: string) (footer: string) (content: string) (script: string) =
         $"""
         <!DOCTYPE html>
-        <html lang="en">
+        <html lang="ko">
         <head>
             {head}
         </head>
@@ -40,45 +40,85 @@
 
         headTemplate.Replace("{{title.html content}}", titleTemplate + titleSuffix)
     
-    let headWithMetaTags (titleSuffix: string) (postTitle: string) (description: string option) (imageUrl: string option) (pageUrl: string) =
+    let headWithCanonical (titleSuffix: string) (pageUrl: string) =
+        let baseHead = head titleSuffix
+        let canonicalTag = $"<link rel=\"canonical\" href=\"{Config.blogBaseUrl}/{pageUrl}\" />"
+        baseHead + $"\n    {canonicalTag}"
+
+    let headWithMetaTags (titleSuffix: string) (postTitle: string) (description: string option) (imageUrl: string option) (pageUrl: string) (date: System.DateTime option) (tags: string list) =
         let baseHead = head titleSuffix
         let postFullTitle = postTitle + titleSuffix
-        
-        let ogMetaTags = 
+        let fullUrl = $"{Config.blogBaseUrl}/{pageUrl}"
+
+        // description이 있으면 기본 meta description 교체
+        let headWithDesc =
+            match description with
+            | Some desc ->
+                baseHead.Replace(
+                    "<meta name=\"description\" content=\"Papers, Books, and Projects that started our mission.\" />",
+                    $"<meta name=\"description\" content=\"{desc}\" />")
+            | None -> baseHead
+
+        let canonicalTag = $"<link rel=\"canonical\" href=\"{fullUrl}\" />"
+
+        let ogMetaTags =
             let titleTag = $"<meta property=\"og:title\" content=\"{postFullTitle}\" />"
-            let urlTag = $"<meta property=\"og:url\" content=\"{Config.blogBaseUrl}/{pageUrl}\" />"
+            let urlTag = $"<meta property=\"og:url\" content=\"{fullUrl}\" />"
             let typeTag = "<meta property=\"og:type\" content=\"article\" />"
             let siteNameTag = $"<meta property=\"og:site_name\" content=\"{Config.blogTitle}\" />"
-            
-            let descriptionTag = 
+
+            let descriptionTag =
                 match description with
                 | Some desc -> $"<meta property=\"og:description\" content=\"{desc}\" />"
                 | None -> ""
-            
-            let imageTag = 
+
+            let imageTag =
                 match imageUrl with
                 | Some img -> $"<meta property=\"og:image\" content=\"{Config.blogBaseUrl}/{img}\" />"
                 | None -> ""
-            
+
             $"{titleTag}\n    {urlTag}\n    {typeTag}\n    {siteNameTag}\n    {descriptionTag}\n    {imageTag}"
-        
-        let twitterMetaTags = 
+
+        let twitterMetaTags =
             let cardTag = "<meta name=\"twitter:card\" content=\"summary_large_image\" />"
             let titleTag = $"<meta name=\"twitter:title\" content=\"{postFullTitle}\" />"
-            
-            let descriptionTag = 
+
+            let descriptionTag =
                 match description with
                 | Some desc -> $"<meta name=\"twitter:description\" content=\"{desc}\" />"
                 | None -> ""
-            
-            let imageTag = 
+
+            let imageTag =
                 match imageUrl with
                 | Some img -> $"<meta name=\"twitter:image\" content=\"{Config.blogBaseUrl}/{img}\" />"
                 | None -> ""
-            
+
             $"{cardTag}\n    {titleTag}\n    {descriptionTag}\n    {imageTag}"
-        
-        baseHead + $"\n    {ogMetaTags}\n    {twitterMetaTags}"
+
+        // JSON-LD BlogPosting 구조화 데이터
+        let jsonLd =
+            let datePublished =
+                match date with
+                | Some d -> $""","datePublished":"{d.ToString("yyyy-MM-dd")}" """
+                | None -> ""
+            let keywordsField =
+                if tags.IsEmpty then ""
+                else
+                    let joined = tags |> List.map (fun t -> $"\"{t}\"") |> String.concat ","
+                    $""","keywords":[{joined}]"""
+            let descField =
+                match description with
+                | Some desc -> $""","description":"{desc}" """
+                | None -> ""
+            let imageField =
+                match imageUrl with
+                | Some img -> $""","image":"{Config.blogBaseUrl}/{img}" """
+                | None -> ""
+            $"""<script type="application/ld+json">
+    {{"@context":"https://schema.org","@type":"BlogPosting","headline":"{postTitle}","url":"{fullUrl}","author":{{"@type":"Person","name":"Cha Jinwoo"}}{datePublished}{descField}{imageField}{keywordsField}}}
+    </script>"""
+
+        headWithDesc + $"\n    {canonicalTag}\n    {ogMetaTags}\n    {twitterMetaTags}\n    {jsonLd}"
     
     let headCanvas (titleSuffix: string) =
         let headTemplate =
@@ -126,8 +166,9 @@
         let description = Obsidian.extractDescription markdownContent
         let imageUrl = Obsidian.extractImageUrl markdownContent
         let tags = Obsidian.extractTags markdownContent
+        let date = Obsidian.extractDate markdownContent title
         let pageUrl = fileName + ".html"
-        
+
         // 마크다운 전처리: YAML 프론트매터 제거 후 Obsidian 링크 변환
         let processedMarkdownContent = 
             markdownContent
@@ -155,7 +196,7 @@
                 mainHtmlContent  + giscusScript
 
         let finalHtmlContent =
-            generateFinalHtml (headWithMetaTags (" - " + title) title description imageUrl pageUrl) header footer htmlContent highlightingScript
+            generateFinalHtml (headWithMetaTags (" - " + title) title description imageUrl pageUrl date tags) header footer htmlContent highlightingScript
 
         printfn $"Processing {Path.GetFileName markdownFilePath} ->"
         Disk.writeFile outputHtmlFilePath finalHtmlContent
@@ -282,7 +323,11 @@
         {tagsHtml}
         """
 
-        let frontPageHtmlContent = generateFinalHtml (head "") updatedHeader footer content highlightingScript
+        let indexJsonLd = $"""<script type="application/ld+json">
+    {{"@context":"https://schema.org","@type":"WebSite","name":"{Config.blogTitle}","url":"{Config.blogBaseUrl}","description":"{Config.blogDescription}","author":{{"@type":"Person","name":"Cha Jinwoo"}}}}
+    </script>"""
+        let indexHead = headWithCanonical "" "index.html" + $"\n    {indexJsonLd}"
+        let frontPageHtmlContent = generateFinalHtml indexHead updatedHeader footer content highlightingScript
         let indexHtmlFilePath = Path.Combine(Config.outputDir, "index.html")
 
         Disk.writeFile indexHtmlFilePath frontPageHtmlContent
@@ -352,7 +397,8 @@
         </ul>
         """
 
-        let categoryPageHtml = generateFinalHtml (head $" - {categoryName}") updatedHeader footer content highlightingScript
+        let categoryPageUrl = $"{Url.toUrlFriendly categoryName}.html"
+        let categoryPageHtml = generateFinalHtml (headWithCanonical $" - {categoryName}" categoryPageUrl) updatedHeader footer content highlightingScript
 
         printfn $"Processing category page: {categoryName} ->"
         Disk.writeFile outputPath categoryPageHtml
@@ -422,7 +468,7 @@
         </ul>
         """
 
-        let postsPageHtml = generateFinalHtml (head " - Posts") updatedHeader footer content highlightingScript
+        let postsPageHtml = generateFinalHtml (headWithCanonical " - Posts" "posts.html") updatedHeader footer content highlightingScript
 
         printfn $"Processing Posts page ->"
         Disk.writeFile outputPath postsPageHtml
@@ -487,7 +533,8 @@
         </section>
         """
 
-        let gridPageHtml = generateFinalHtml (head $" - {sectionTitle}") updatedHeader footer content highlightingScript
+        let gridPageUrl = $"{Url.toUrlFriendly sectionTitle}.html"
+        let gridPageHtml = generateFinalHtml (headWithCanonical $" - {sectionTitle}" gridPageUrl) updatedHeader footer content highlightingScript
 
         printfn $"Processing {sectionTitle} page ->"
         Disk.writeFile outputPath gridPageHtml
@@ -612,7 +659,8 @@
             header.Replace("    </ul>", 
                           $"""        {dynamicNavHtml}
     </ul>""")
-        let tagPageHtml = generateFinalHtml (head $" - 태그: {tagName}") updatedHeader footer content ""
+        let tagPageUrl = $"tag-{Url.toUrlFriendly tagName}.html"
+        let tagPageHtml = generateFinalHtml (headWithCanonical $" - 태그: {tagName}" tagPageUrl) updatedHeader footer content ""
         
         printfn $"Processing tag page: {tagName} -> {tagPosts.Length} posts"
         Disk.writeFile outputPath tagPageHtml
@@ -680,3 +728,106 @@
 </rss>"""
         let rssFilePath = Path.Combine(Config.outputDir, "rss.xml")
         Disk.writeFile rssFilePath rssXml
+
+    let createSitemap (posts: Post list) (gridSections: (string * Post list) list) (navFolders: string array) (allTags: string list) =
+        let lastmod = System.DateTime.UtcNow.ToString("yyyy-MM-dd")
+
+        let indexEntry = $"""  <url>
+    <loc>{Config.blogBaseUrl}/index.html</loc>
+    <lastmod>{lastmod}</lastmod>
+    <priority>1.0</priority>
+  </url>"""
+
+        let postsPageEntry = $"""  <url>
+    <loc>{Config.blogBaseUrl}/posts.html</loc>
+    <lastmod>{lastmod}</lastmod>
+    <priority>0.8</priority>
+  </url>"""
+
+        let postEntries =
+            posts
+            |> List.map (fun post ->
+                let postLastmod =
+                    match post.Date with
+                    | Some d -> d.ToString("yyyy-MM-dd")
+                    | None -> lastmod
+                $"""  <url>
+    <loc>{Config.blogBaseUrl}/{System.Uri.EscapeUriString(post.Url)}</loc>
+    <lastmod>{postLastmod}</lastmod>
+    <priority>0.6</priority>
+  </url>""")
+            |> String.concat "\n"
+
+        let gridEntries =
+            gridSections
+            |> List.map (fun (title, _) ->
+                let url = Url.toUrlFriendly title
+                $"""  <url>
+    <loc>{Config.blogBaseUrl}/{url}.html</loc>
+    <lastmod>{lastmod}</lastmod>
+    <priority>0.7</priority>
+  </url>""")
+            |> String.concat "\n"
+
+        let navEntries =
+            navFolders
+            |> Array.map (fun folderName ->
+                let url = Url.toUrlFriendly folderName
+                $"""  <url>
+    <loc>{Config.blogBaseUrl}/{url}.html</loc>
+    <lastmod>{lastmod}</lastmod>
+    <priority>0.7</priority>
+  </url>""")
+            |> String.concat "\n"
+
+        let tagEntries =
+            allTags
+            |> List.map (fun tag ->
+                let url = Url.toUrlFriendly tag
+                $"""  <url>
+    <loc>{Config.blogBaseUrl}/tag-{url}.html</loc>
+    <lastmod>{lastmod}</lastmod>
+    <priority>0.4</priority>
+  </url>""")
+            |> String.concat "\n"
+
+        let sitemapXml = $"""<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{indexEntry}
+{postsPageEntry}
+{postEntries}
+{gridEntries}
+{navEntries}
+{tagEntries}
+</urlset>"""
+        let sitemapPath = Path.Combine(Config.outputDir, "sitemap.xml")
+        Disk.writeFile sitemapPath sitemapXml
+
+    let createRobotsTxt () =
+        let content = $"""User-agent: *
+Allow: /
+
+Sitemap: {Config.blogBaseUrl}/sitemap.xml"""
+        let robotsPath = Path.Combine(Config.outputDir, "robots.txt")
+        Disk.writeFile robotsPath content
+
+    let createLlmsTxt (posts: Post list) =
+        let postsList =
+            posts
+            |> List.map (fun post ->
+                let desc =
+                    match post.Description with
+                    | Some d -> $": {d}"
+                    | None -> ""
+                $"- [{post.Title}]({Config.blogBaseUrl}/{System.Uri.EscapeUriString(post.Url)}){desc}")
+            |> String.concat "\n"
+
+        let content = $"""# {Config.blogTitle}
+
+> {Config.blogDescription}
+
+## Posts
+
+{postsList}"""
+        let llmsPath = Path.Combine(Config.outputDir, "llms.txt")
+        Disk.writeFile llmsPath content
