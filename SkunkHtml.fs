@@ -164,16 +164,16 @@
         
         // 메타데이터 추출
         let description = Obsidian.extractDescription markdownContent
-        let imageUrl = Obsidian.extractImageUrl markdownContent
+        let imageUrl = Obsidian.extractImageUrl markdownFilePath markdownContent
         let tags = Obsidian.extractTags markdownContent
         let date = Obsidian.extractDate markdownContent title
         let pageUrl = fileName + ".html"
 
         // 마크다운 전처리: YAML 프론트매터 제거 후 Obsidian 링크 변환
-        let processedMarkdownContent = 
+        let processedMarkdownContent =
             markdownContent
             |> Obsidian.removeYamlFrontMatter
-            |> Obsidian.convertWikiLinks
+            |> Obsidian.convertWikiLinks markdownFilePath
             |> (fun md -> Regex.Replace(md, "(?m)^#+\s", "\n<!-- -->\n$0"))
 
         let htmlContent =
@@ -209,10 +209,10 @@
                 printfn $"Processing {Path.GetFileName frontPageMarkdownFilePath} ->"
                 // 인덱스 페이지도 YAML 프론트매터 제거 및 Obsidian 링크 변환 적용
                 let markdownContent = File.ReadAllText(frontPageMarkdownFilePath)
-                let processedMarkdownContent = 
+                let processedMarkdownContent =
                     markdownContent
                     |> Obsidian.removeYamlFrontMatter
-                    |> Obsidian.convertWikiLinks
+                    |> Obsidian.convertWikiLinks frontPageMarkdownFilePath
                     |> (fun md -> Regex.Replace(md, "(?m)^#+\s", "\n<!-- -->\n$0"))
                 Markdown.ToHtml(processedMarkdownContent)
             else
@@ -729,20 +729,14 @@
         let rssFilePath = Path.Combine(Config.outputDir, "rss.xml")
         Disk.writeFile rssFilePath rssXml
 
+    let private sitemapUrl (loc: string) (lastmod: string) (priority: string) =
+        $"  <url>\n    <loc>{loc}</loc>\n    <lastmod>{lastmod}</lastmod>\n    <priority>{priority}</priority>\n  </url>"
+
     let createSitemap (posts: Post list) (gridSections: (string * Post list) list) (navFolders: string array) (allTags: string list) =
         let lastmod = System.DateTime.UtcNow.ToString("yyyy-MM-dd")
 
-        let indexEntry = $"""  <url>
-    <loc>{Config.blogBaseUrl}/index.html</loc>
-    <lastmod>{lastmod}</lastmod>
-    <priority>1.0</priority>
-  </url>"""
-
-        let postsPageEntry = $"""  <url>
-    <loc>{Config.blogBaseUrl}/posts.html</loc>
-    <lastmod>{lastmod}</lastmod>
-    <priority>0.8</priority>
-  </url>"""
+        let indexEntry = sitemapUrl $"{Config.blogBaseUrl}/index.html" lastmod "1.0"
+        let postsPageEntry = sitemapUrl $"{Config.blogBaseUrl}/posts.html" lastmod "0.8"
 
         let postEntries =
             posts
@@ -751,63 +745,45 @@
                     match post.Date with
                     | Some d -> d.ToString("yyyy-MM-dd")
                     | None -> lastmod
-                $"""  <url>
-    <loc>{Config.blogBaseUrl}/{System.Uri.EscapeUriString(post.Url)}</loc>
-    <lastmod>{postLastmod}</lastmod>
-    <priority>0.6</priority>
-  </url>""")
+                sitemapUrl $"{Config.blogBaseUrl}/{System.Uri.EscapeUriString(post.Url)}" postLastmod "0.6")
             |> String.concat "\n"
 
         let gridEntries =
             gridSections
             |> List.map (fun (title, _) ->
                 let url = Url.toUrlFriendly title
-                $"""  <url>
-    <loc>{Config.blogBaseUrl}/{url}.html</loc>
-    <lastmod>{lastmod}</lastmod>
-    <priority>0.7</priority>
-  </url>""")
+                sitemapUrl $"{Config.blogBaseUrl}/{url}.html" lastmod "0.7")
             |> String.concat "\n"
 
         let navEntries =
             navFolders
             |> Array.map (fun folderName ->
                 let url = Url.toUrlFriendly folderName
-                $"""  <url>
-    <loc>{Config.blogBaseUrl}/{url}.html</loc>
-    <lastmod>{lastmod}</lastmod>
-    <priority>0.7</priority>
-  </url>""")
+                sitemapUrl $"{Config.blogBaseUrl}/{url}.html" lastmod "0.7")
             |> String.concat "\n"
 
         let tagEntries =
             allTags
             |> List.map (fun tag ->
                 let url = Url.toUrlFriendly tag
-                $"""  <url>
-    <loc>{Config.blogBaseUrl}/tag-{url}.html</loc>
-    <lastmod>{lastmod}</lastmod>
-    <priority>0.4</priority>
-  </url>""")
+                sitemapUrl $"{Config.blogBaseUrl}/tag-{url}.html" lastmod "0.4")
             |> String.concat "\n"
 
-        let sitemapXml = $"""<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-{indexEntry}
-{postsPageEntry}
-{postEntries}
-{gridEntries}
-{navEntries}
-{tagEntries}
-</urlset>"""
+        let sitemapXml =
+            "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
+            + "<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n"
+            + indexEntry + "\n"
+            + postsPageEntry + "\n"
+            + postEntries + "\n"
+            + gridEntries + "\n"
+            + navEntries + "\n"
+            + tagEntries + "\n"
+            + "</urlset>"
         let sitemapPath = Path.Combine(Config.outputDir, "sitemap.xml")
         Disk.writeFile sitemapPath sitemapXml
 
     let createRobotsTxt () =
-        let content = $"""User-agent: *
-Allow: /
-
-Sitemap: {Config.blogBaseUrl}/sitemap.xml"""
+        let content = "User-agent: *\nAllow: /\n\nSitemap: " + Config.blogBaseUrl + "/sitemap.xml"
         let robotsPath = Path.Combine(Config.outputDir, "robots.txt")
         Disk.writeFile robotsPath content
 
@@ -817,17 +793,15 @@ Sitemap: {Config.blogBaseUrl}/sitemap.xml"""
             |> List.map (fun post ->
                 let desc =
                     match post.Description with
-                    | Some d -> $": {d}"
+                    | Some d -> ": " + d
                     | None -> ""
-                $"- [{post.Title}]({Config.blogBaseUrl}/{System.Uri.EscapeUriString(post.Url)}){desc}")
+                $"- [{post.Title}]({Config.blogBaseUrl}/{System.Uri.EscapeUriString(post.Url)})" + desc)
             |> String.concat "\n"
 
-        let content = $"""# {Config.blogTitle}
-
-> {Config.blogDescription}
-
-## Posts
-
-{postsList}"""
+        let content =
+            "# " + Config.blogTitle + "\n\n"
+            + "> " + Config.blogDescription + "\n\n"
+            + "## Posts\n\n"
+            + postsList
         let llmsPath = Path.Combine(Config.outputDir, "llms.txt")
         Disk.writeFile llmsPath content

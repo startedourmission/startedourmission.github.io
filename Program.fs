@@ -83,7 +83,7 @@ let main argv =
             let content = File.ReadAllText(file)
             let filename = Path.GetFileNameWithoutExtension(file)
             let urlFriendlyTitle = Url.toUrlFriendly filename
-            let imageUrl = Obsidian.extractImageUrl content
+            let imageUrl = Obsidian.extractImageUrl file content
             let dateValue = Obsidian.extractDate content filename
             let summary = Obsidian.extractSummary content
             let description = Obsidian.extractDescription content
@@ -240,6 +240,16 @@ let main argv =
     Disk.copyFolderToOutput Config.imagesDir Config.outputImagesDir
     Disk.copyFolderToOutput Config.assetsDir Config.outputAssetsDir
     Disk.copyFolderToOutput Config.scriptsDir Config.outputScriptsDir
+
+    // 하위 폴더의 _assets도 복사
+    allFolders
+    |> Array.iter (fun dir ->
+        let folderName = Path.GetFileName(dir)
+        let subAssetsDir = Path.Combine(dir, "_assets")
+        if Directory.Exists(subAssetsDir) then
+            let urlFriendlyFolder = Url.toUrlFriendly folderName
+            let outputSubAssetsDir = Path.Combine(Config.outputDir, urlFriendlyFolder, "_assets")
+            Disk.copyFolderToOutput subAssetsDir outputSubAssetsDir)
 
     printf "\nBuild complete. Your site is ready for deployment!"
     0

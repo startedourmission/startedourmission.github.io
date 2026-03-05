@@ -116,28 +116,41 @@ module Url =
 
 module Obsidian =
     open System.Text.RegularExpressions
+    open System.IO
+
+    // 파일 경로에서 해당 파일의 _assets 접두사를 결정
+    // 루트 파일 → "_assets/", 하위 폴더 파일 → "{folder-url-friendly}/_assets/"
+    let getAssetsPrefix (markdownFilePath: string) =
+        let dir = Path.GetDirectoryName(markdownFilePath)
+        let parentDir = Path.GetDirectoryName(dir)
+        // markdownDir 바로 아래에 있으면 루트, 하위 폴더에 있으면 폴더명 사용
+        let folderName = Path.GetFileName(dir)
+        if folderName = Path.GetFileName(Config.markdownDir) then
+            "_assets/"
+        else
+            let urlFriendlyFolder = Url.toUrlFriendly folderName
+            $"{urlFriendlyFolder}/_assets/"
 
     // Obsidian 링크를 HTML 링크로 변환하는 함수
-    let convertWikiLinks (markdownContent: string) =
+    let convertWikiLinks (markdownFilePath: string) (markdownContent: string) =
+        let assetsPrefix = getAssetsPrefix markdownFilePath
         let wikiLinkPattern = @"(!?)\[\[(.*?)\]\]" // 이미지 링크(!)와 일반 링크를 모두 처리
-        
+
         let regex = Regex(wikiLinkPattern)
-        
+
         regex.Replace(markdownContent, fun m ->
             let isImage = m.Groups.[1].Value = "!"
             let linkContent = m.Groups.[2].Value
 
             if isImage then
                 // 이미지 링크 처리 ![[image.png]] or ![[image.png|505x324]]
-                let imageName = 
+                let imageName =
                     if linkContent.Contains("|") then
                         linkContent.Split('|').[0].Trim()
                     else
                         linkContent
-                // 모든 이미지는 '_assets' 폴더에 있다고 가정
-                let imageUrl = $"_assets/{imageName}"
                 // URL 인코딩 처리 (공백 등)
-                let encodedUrl = "_assets/" + System.Uri.EscapeDataString(imageName)
+                let encodedUrl = assetsPrefix + System.Uri.EscapeDataString(imageName)
                 $"<img src=\"{encodedUrl}\" alt=\"{imageName}\" class=\"embedded-image\" style=\"max-width: 600px; height: auto; display: block; margin: 1rem auto;\">"
             else
                 // 페이지 링크 처리 [[Page Name]] or [[Page Name|Display Text]]
@@ -177,15 +190,16 @@ module Obsidian =
             []
     
     // YAML 프론트매터에서 이미지 URL 추출
-    let extractImageUrl (markdownContent: string) = 
+    let extractImageUrl (markdownFilePath: string) (markdownContent: string) =
+        let assetsPrefix = getAssetsPrefix markdownFilePath
         let frontMatterPattern = @"^\s*---\s*\n([\s\S]*?)\n\s*---\s*\n"
         let frontMatterMatch = Regex.Match(markdownContent, frontMatterPattern)
-        
+
         if frontMatterMatch.Success then
             let yamlContent = frontMatterMatch.Groups.[1].Value
             let imagePattern = @"(?:^|\n)image:\s*([^\n\r]+)"
             let imageMatch = Regex.Match(yamlContent, imagePattern)
-            
+
             if imageMatch.Success then
                 let imageValue = imageMatch.Groups.[1].Value.Trim()
 
@@ -194,14 +208,12 @@ module Obsidian =
                 let wikiMatch = Regex.Match(imageValue, wikiImagePattern)
 
                 if wikiMatch.Success then
-                    // 옵시디언 링크 형식이면, 경로를 '_assets/'로 구성
                     let imageName = wikiMatch.Groups.[1].Value.Trim()
                     if System.String.IsNullOrEmpty(imageName) then
-                        None  // ![[]] 빈 이미지는 None으로 처리
+                        None
                     else
-                        Some ($"_assets/{imageName}")
+                        Some (assetsPrefix + imageName)
                 else
-                    // 일반 경로 형식이면, 그대로 사용
                     Some imageValue
             else
                 None
