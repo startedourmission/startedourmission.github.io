@@ -214,12 +214,7 @@ module Obsidian =
                     else
                         Some (assetsPrefix + imageName)
                 else
-                    // 일반 경로에서 _assets/ 접두사가 있으면 폴더별 prefix로 교체
-                    if imageValue.StartsWith("_assets/") then
-                        let imageName = imageValue.Substring(8) // "_assets/" 제거
-                        Some (assetsPrefix + imageName)
-                    else
-                        Some imageValue
+                    Some imageValue
             else
                 None
         else

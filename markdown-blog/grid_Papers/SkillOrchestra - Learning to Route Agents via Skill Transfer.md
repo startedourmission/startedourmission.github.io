@@ -4,10 +4,10 @@ tags:
   - 논문
   - Headliner
 aliases:
-image: "![[image-1.png]]"
+image: "![[image.png]]"
 description:
 ---
-![[image-1.png]]
+![[image.png]]
 
 ## 도입
 
