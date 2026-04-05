@@ -49,8 +49,8 @@ L = log(1 + sum(h_i^2)) - log(1 + sum(h_i^2))
 그럼에도 신경망은 잘 학습합니다. 역전파가 유일한 방법이 아닐 수도 있습니다.
 
 **선행 연구**:
-- Hinton은 2005년 "wake-sleep algorithm"에서 생물학적으로 타당한 학습을 시도했습니다.
-- 2015년 "feedback alignment"에서 임의의 피드백 가중치도 학습을 유도할 수 있음을 보여주었습니다.
+- Hinton은 1995년 "wake-sleep algorithm"에서 생물학적으로 타당한 학습을 시도했습니다.
+- Lillicrap et al.(2016)의 "feedback alignment"에서 임의의 피드백 가중치도 학습을 유도할 수 있음을 보여주었습니다.
 - Forward-Forward는 이 라인의 극단화입니다: 피드백 신호를 완전히 제거합니다.
 
 ### 방법론
@@ -73,8 +73,8 @@ L = log(1 + sum(h_i^2)) - log(1 + sum(h_i^2))
 ### 결과
 
 **MNIST, CIFAR-10, ImageNet에서의 성능**:
-- MNIST: 역전파와 비슷한 성능 (기존: 0.5% 오류 vs FF: ~0.8% 오류)
-- CIFAR-10: 더 격차가 벌어집니다 (역전파: 10% vs FF: ~30%)
+- MNIST: 역전파 기준 1.4%, FF 지도학습 1.36%, FF 비지도 1.37%, 지역 수용장+증강 시 0.64%
+- CIFAR-10: 역전파(지역 수용장) 37%, FF 41~46%
 - ImageNet: 테스트하지 않았습니다 (계산 비용 이유)
 
 **계산 비용**:

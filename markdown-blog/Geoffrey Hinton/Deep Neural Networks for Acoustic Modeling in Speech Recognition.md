@@ -10,7 +10,7 @@ description: "Google, Microsoft, IBM, Toronto 4개 연구팀의 공동 논문으
 
 ## 도입부
 
-2012년 초, 음성인식은 여전히 가우시안 혼합 모델(GMM) 기반 은닉 마코프 모델(HMM)에 의존하고 있었습니다. 이 논문은 Google, Microsoft, IBM, Toronto 대학이 함께 쓴 공동 연구로, 깊은 신경망이 음성인식에서 실제로 작동함을 보여주었습니다. 프레임 수준 정확도 86.6%라는 당시 기준으로는 혁신적 결과를 달성했고, 이는 딥러닝이 "실험실 기법"에서 "산업 표준"으로 전환되는 결정적 순간이었습니다.
+2012년 초, 음성인식은 여전히 가우시안 혼합 모델(GMM) 기반 은닉 마코프 모델(HMM)에 의존하고 있었습니다. 이 논문은 Google, Microsoft, IBM, Toronto 대학이 함께 쓴 공동 연구로, 깊은 신경망이 음성인식에서 실제로 작동함을 보여주었습니다. TIMIT 데이터셋에서 Phone Error Rate(PER) 20.0%를 달성했고, 이는 딥러닝이 "실험실 기법"에서 "산업 표준"으로 전환되는 결정적 순간이었습니다.
 
 > "We have seen ... deep neural networks trained on acoustic features are very effective in speech recognition systems." [1]
 
@@ -65,8 +65,8 @@ Geoffrey Hinton은 학문적 리더로 딥러닝을 산업계로 확산시키는
 
 ### 결과
 
-**프레임 수준 정확도 (Phone Classification):**
-- DBN-DNN: 86.6% (21개 특성에 대해)
+**음소 오류율 (Phone Error Rate):**
+- DBN-DNN: TIMIT 데이터셋에서 PER 20.0%
 - 기존 GMM 기반 방법보다 크게 앞섰습니다.
 
 **음성 인식 오류율 (Word Error Rate, WER):**
@@ -76,7 +76,7 @@ Geoffrey Hinton은 학문적 리더로 딥러닝을 산업계로 확산시키는
 - IBM 및 Toronto 대학: 공개 벤치마크에서 우수한 성능
 
 **일반화성:**
-음성, 음악, 환경음향 등 다양한 도메인에서 검증되어 방법의 범용성을 입증했습니다.
+음성인식 과제(TIMIT 및 대어휘 연속 음성인식)에서 검증되었습니다.
 
 ## 생각
 

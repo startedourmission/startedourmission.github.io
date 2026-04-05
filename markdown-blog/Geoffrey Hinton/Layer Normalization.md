@@ -70,8 +70,8 @@ $$\mathbf{y} = \gamma \odot \frac{\mathbf{x} - \mu_l}{\sqrt{\sigma_l^2 + \epsilo
 
 ### 결과
 
-RNN 실험 (Penn Treebank 언어 모델링):
-- 배치 정규화: 불안정, 진동 발생
+RNN 실험 (CNN 코퍼스, Teaching Machines to Read 과제):
+- 배치 정규화도 작동하지만 Layer Normalization이 더 빠르게 수렴하고 더 나은 성능을 보였습니다
 - 레이어 정규화: 안정적 수렴
 - 수렴 속도: 레이어 정규화가 더 빠름
 
