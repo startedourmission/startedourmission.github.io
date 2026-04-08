@@ -4,7 +4,7 @@ tags:
   - 정보
   - Headliner
 description: Anthropic이 공개한 Claude Mythos Preview 시스템 카드 완전 분석. 사상 최강 AI 모델이 공개되지 않은 이유, 제로데이 취약점 자동 발견, 보상 해킹, 정렬 평가, 모델 복지까지 150페이지 문서를 낱낱이 뜯어봤습니다.
-image: "![[1_Mythos_System_Card]]"
+image: "![[1_Mythos_System_Card.png]]"
 ---
 
 2026년 4월 7일, Anthropic이 이례적인 문서를 공개했습니다. Claude Mythos Preview의 시스템 카드입니다. 이 문서는 기술 보고서이자, AI 안전에 대한 솔직한 고백장이자, 그리고 산업 전체에 던지는 경고장입니다.
