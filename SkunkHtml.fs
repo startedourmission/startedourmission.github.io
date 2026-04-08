@@ -1,13 +1,17 @@
 ﻿module SkunkHtml
     open SkunkUtils
     open System.IO
+    open System.Net
     open FSharp.Formatting.Markdown
     open System.Text.RegularExpressions
+
+    let escHtml (s: string) = WebUtility.HtmlEncode(s)
+    let escJson (s: string) = s.Replace("\\", "\\\\").Replace("\"", "\\\"").Replace("\n", "\\n").Replace("\r", "")
 
     let generateFinalHtml (head: string) (header: string) (footer: string) (content: string) (script: string) =
         $"""
         <!DOCTYPE html>
-        <html lang="ko">
+        <html lang="ko-KR">
         <head>
             {head}
         </head>
@@ -50,26 +54,26 @@
         let postFullTitle = postTitle + titleSuffix
         let fullUrl = $"{Config.blogBaseUrl}/{pageUrl}"
 
-        // description이 있으면 기본 meta description 교체
+        // description이 있으면 기본 meta description 교체 (HTML 이스케이핑 적용)
         let headWithDesc =
             match description with
             | Some desc ->
                 baseHead.Replace(
                     "<meta name=\"description\" content=\"Papers, Books, and Projects that started our mission.\" />",
-                    $"<meta name=\"description\" content=\"{desc}\" />")
+                    $"<meta name=\"description\" content=\"{escHtml desc}\" />")
             | None -> baseHead
 
         let canonicalTag = $"<link rel=\"canonical\" href=\"{fullUrl}\" />"
 
         let ogMetaTags =
-            let titleTag = $"<meta property=\"og:title\" content=\"{postFullTitle}\" />"
+            let titleTag = $"<meta property=\"og:title\" content=\"{escHtml postFullTitle}\" />"
             let urlTag = $"<meta property=\"og:url\" content=\"{fullUrl}\" />"
             let typeTag = "<meta property=\"og:type\" content=\"article\" />"
-            let siteNameTag = $"<meta property=\"og:site_name\" content=\"{Config.blogTitle}\" />"
+            let siteNameTag = $"<meta property=\"og:site_name\" content=\"{escHtml Config.blogTitle}\" />"
 
             let descriptionTag =
                 match description with
-                | Some desc -> $"<meta property=\"og:description\" content=\"{desc}\" />"
+                | Some desc -> $"<meta property=\"og:description\" content=\"{escHtml desc}\" />"
                 | None -> ""
 
             let imageTag =
@@ -81,11 +85,11 @@
 
         let twitterMetaTags =
             let cardTag = "<meta name=\"twitter:card\" content=\"summary_large_image\" />"
-            let titleTag = $"<meta name=\"twitter:title\" content=\"{postFullTitle}\" />"
+            let titleTag = $"<meta name=\"twitter:title\" content=\"{escHtml postFullTitle}\" />"
 
             let descriptionTag =
                 match description with
-                | Some desc -> $"<meta name=\"twitter:description\" content=\"{desc}\" />"
+                | Some desc -> $"<meta name=\"twitter:description\" content=\"{escHtml desc}\" />"
                 | None -> ""
 
             let imageTag =
@@ -95,7 +99,7 @@
 
             $"{cardTag}\n    {titleTag}\n    {descriptionTag}\n    {imageTag}"
 
-        // JSON-LD BlogPosting 구조화 데이터
+        // JSON-LD BlogPosting 구조화 데이터 (JSON 이스케이핑 적용)
         let jsonLd =
             let datePublished =
                 match date with
@@ -104,18 +108,18 @@
             let keywordsField =
                 if tags.IsEmpty then ""
                 else
-                    let joined = tags |> List.map (fun t -> $"\"{t}\"") |> String.concat ","
+                    let joined = tags |> List.map (fun t -> $"\"{escJson t}\"") |> String.concat ","
                     $""","keywords":[{joined}]"""
             let descField =
                 match description with
-                | Some desc -> $""","description":"{desc}" """
+                | Some desc -> $""","description":"{escJson desc}" """
                 | None -> ""
             let imageField =
                 match imageUrl with
                 | Some img -> $""","image":"{Config.blogBaseUrl}/{img}" """
                 | None -> ""
             $"""<script type="application/ld+json">
-    {{"@context":"https://schema.org","@type":"BlogPosting","headline":"{postTitle}","url":"{fullUrl}","author":{{"@type":"Person","name":"Cha Jinwoo"}}{datePublished}{descField}{imageField}{keywordsField}}}
+    {{"@context":"https://schema.org","@type":"BlogPosting","headline":"{escJson postTitle}","url":"{fullUrl}","author":{{"@type":"Person","name":"Cha Jinwoo"}}{datePublished}{descField}{imageField}{keywordsField}}}
     </script>"""
 
         headWithDesc + $"\n    {canonicalTag}\n    {ogMetaTags}\n    {twitterMetaTags}\n    {jsonLd}"
@@ -323,10 +327,16 @@
         {tagsHtml}
         """
 
+        let indexOgTags =
+            $"""<meta property="og:title" content="{escHtml Config.blogTitle}" />
+    <meta property="og:url" content="{Config.blogBaseUrl}/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="{escHtml Config.blogTitle}" />
+    <meta property="og:description" content="{escHtml Config.blogDescription}" />"""
         let indexJsonLd = $"""<script type="application/ld+json">
-    {{"@context":"https://schema.org","@type":"WebSite","name":"{Config.blogTitle}","url":"{Config.blogBaseUrl}","description":"{Config.blogDescription}","author":{{"@type":"Person","name":"Cha Jinwoo"}}}}
+    {{"@context":"https://schema.org","@type":"WebSite","name":"{escJson Config.blogTitle}","url":"{Config.blogBaseUrl}","description":"{escJson Config.blogDescription}","author":{{"@type":"Person","name":"Cha Jinwoo"}}}}
     </script>"""
-        let indexHead = headWithCanonical "" "index.html" + $"\n    {indexJsonLd}"
+        let indexHead = headWithCanonical "" "index.html" + $"\n    {indexOgTags}\n    {indexJsonLd}"
         let frontPageHtmlContent = generateFinalHtml indexHead updatedHeader footer content highlightingScript
         let indexHtmlFilePath = Path.Combine(Config.outputDir, "index.html")
 
@@ -783,11 +793,25 @@
         Disk.writeFile sitemapPath sitemapXml
 
     let createRobotsTxt () =
-        let content = "User-agent: *\nAllow: /\n\nSitemap: " + Config.blogBaseUrl + "/sitemap.xml"
+        let content =
+            "User-agent: *\n"
+            + "Allow: /\n\n"
+            + "# AI Crawlers\n"
+            + "User-agent: GPTBot\n"
+            + "Allow: /\n\n"
+            + "User-agent: anthropic-ai\n"
+            + "Allow: /\n\n"
+            + "User-agent: ClaudeBot\n"
+            + "Allow: /\n\n"
+            + "User-agent: CCBot\n"
+            + "Allow: /\n\n"
+            + "User-agent: Google-Extended\n"
+            + "Allow: /\n\n"
+            + "Sitemap: " + Config.blogBaseUrl + "/sitemap.xml\n"
         let robotsPath = Path.Combine(Config.outputDir, "robots.txt")
         Disk.writeFile robotsPath content
 
-    let createLlmsTxt (posts: Post list) =
+    let createLlmsTxt (posts: Post list) (gridSections: (string * Post list) list) =
         let postsList =
             posts
             |> List.map (fun post ->
@@ -795,13 +819,33 @@
                     match post.Description with
                     | Some d -> ": " + d
                     | None -> ""
-                $"- [{post.Title}]({Config.blogBaseUrl}/{System.Uri.EscapeUriString(post.Url)})" + desc)
+                let tags =
+                    if post.Tags.IsEmpty then ""
+                    else " [" + (post.Tags |> String.concat ", ") + "]"
+                $"- [{post.Title}]({Config.blogBaseUrl}/{System.Uri.EscapeUriString(post.Url)}){desc}{tags}")
             |> String.concat "\n"
+
+        let gridSectionsList =
+            gridSections
+            |> List.map (fun (title, sectionPosts) ->
+                let header = $"### {title}\n"
+                let items =
+                    sectionPosts
+                    |> List.map (fun post ->
+                        $"- [{post.Title}]({Config.blogBaseUrl}/{System.Uri.EscapeUriString(post.Url)})")
+                    |> String.concat "\n"
+                header + items)
+            |> String.concat "\n\n"
 
         let content =
             "# " + Config.blogTitle + "\n\n"
             + "> " + Config.blogDescription + "\n\n"
+            + "- Author: Cha Jinwoo\n"
+            + "- URL: " + Config.blogBaseUrl + "\n"
+            + "- RSS: " + Config.blogBaseUrl + "/rss.xml\n"
+            + "- Language: ko\n\n"
             + "## Posts\n\n"
-            + postsList
+            + postsList + "\n\n"
+            + (if gridSectionsList.Length > 0 then "## Collections\n\n" + gridSectionsList + "\n" else "")
         let llmsPath = Path.Combine(Config.outputDir, "llms.txt")
         Disk.writeFile llmsPath content

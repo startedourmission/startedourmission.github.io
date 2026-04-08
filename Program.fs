@@ -226,7 +226,7 @@ let main argv =
         |> List.sort
     SkunkHtml.createSitemap allPosts gridSections navFolders allTags
     SkunkHtml.createRobotsTxt ()
-    SkunkHtml.createLlmsTxt allPosts
+    SkunkHtml.createLlmsTxt allPosts gridSections
 
     // Copy ads.txt to output
     let adsTxtSource = Path.Combine(Config.sourceDir, "ads.txt")
