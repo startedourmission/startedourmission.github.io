@@ -4,8 +4,12 @@ tags:
   - 정보
   - Headliner
 aliases:
-  - "Karpathy LLM Knowledge Base"
+  - Karpathy LLM Knowledge Base
+image: "![[1-karpathy-llm-kb.png]]"
 ---
+
+![[1-karpathy-llm-kb.png]]
+
 ## 원문 요약
 
 2026년 4월 2일, 전 Tesla AI / OpenAI 출신의 Andrej Karpathy가 X(구 트위터)에 올린 스레드입니다. LLM을 코드 작성이 아닌 **지식 관리** 도구로 활용하는 자신의 워크플로우를 공유했습니다. 옵시디언(Obsidian)을 프론트엔드로, LLM을 백엔드 엔진으로 쓰는 구조입니다.
