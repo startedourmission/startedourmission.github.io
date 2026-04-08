@@ -4,9 +4,9 @@ tags:
   - "#논문"
   - "#제프리힌턴"
 aliases:
-  - "Layer Normalization (2016)"
-  - "LayerNorm"
-image: 1-layer-norm.png
+  - Layer Normalization (2016)
+  - LayerNorm
+image: "![[1-layer-norm.png]]"
 description: 배치 대신 레이어 단위로 정규화하는 방법. RNN과 Transformer에서 핵심 구성요소가 된 기법
 ---
 

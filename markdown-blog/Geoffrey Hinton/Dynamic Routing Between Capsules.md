@@ -4,9 +4,9 @@ tags:
   - "#논문"
   - "#제프리힌턴"
 aliases:
-  - "캡슐 네트워크 (2017)"
-  - "CapsNet"
-image: 1-capsules.png
+  - 캡슐 네트워크 (2017)
+  - CapsNet
+image: "![[1-capsules.png]]"
 description: CNN의 공간 계층 무시 문제를 캡슐 네트워크와 동적 라우팅으로 해결하는 접근. 구조 정보 기반 신경망 설계
 ---
 

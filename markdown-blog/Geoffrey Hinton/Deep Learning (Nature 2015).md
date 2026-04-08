@@ -4,9 +4,9 @@ tags:
   - "#논문"
   - "#제프리힌턴"
 aliases:
-  - "딥러닝 Nature 리뷰 (2015)"
-image: 1-deep-learning-review.png
-description: "LeCun, Bengio, Hinton 3대 거장이 함께 쓴 딥러닝 분야 정의 논문으로, 이 분야의 핵심 개념과 이전 60년의 발전사를 종합한 이정표입니다."
+  - 딥러닝 Nature 리뷰 (2015)
+image: "![[1-deep-learning-review.png]]"
+description: LeCun, Bengio, Hinton 3대 거장이 함께 쓴 딥러닝 분야 정의 논문으로, 이 분야의 핵심 개념과 이전 60년의 발전사를 종합한 이정표입니다.
 ---
 
 ![[1-deep-learning-review.png]]

@@ -4,10 +4,10 @@ tags:
   - "#논문"
   - "#제프리힌턴"
 aliases:
-  - "Knowledge Distillation (2015)"
-  - "지식 증류"
-image: 1-distillation.png
-description: "지식 증류는 큰 모델의 '소프트 타겟'으로 작은 모델을 훈련하는 기법으로, 현대 모델 압축과 배포의 표준이 되었습니다."
+  - Knowledge Distillation (2015)
+  - 지식 증류
+image: "![[1-distillation.png]]"
+description: 지식 증류는 큰 모델의 '소프트 타겟'으로 작은 모델을 훈련하는 기법으로, 현대 모델 압축과 배포의 표준이 되었습니다.
 ---
 
 ![[1-distillation.png]]
