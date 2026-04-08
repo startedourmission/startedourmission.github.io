@@ -6,11 +6,14 @@ tags:
 aliases:
   - "BYOL (2020)"
 description: 부정 샘플 없이 자기지도 학습하는 방법. SimCLR과 달리 음의 예가 필요 없으며, 온라인-타겟 네트워크 구조로 표현 학습 수행
+image: "![[1-byol.png]]"
 ---
 
 # Bootstrap Your Own Latent: A New Approach to Self-Supervised Learning (BYOL, 2020)
 
 > Grill, J.-B., Strub, F., Altché, F., Tallec, C., Richemond, P. H., Buchatskaya, E., ..., & Hinton, G. E. (2020). Bootstrap your own latent: A new approach to self-supervised learning. In *Advances in Neural Information Processing Systems* (NeurIPS 2020).
+
+![[1-byol.png]]
 
 ## 배경
 

@@ -5,9 +5,11 @@ tags:
   - "#제프리힌턴"
 aliases:
   - "MDL 정규화 (1993)"
-image:
+image: 1-mdl.png
 description: "최소 설명 길이(MDL) 원칙으로 신경망의 가중치 복잡도를 줄여 과적합을 방지. 베이지안 딥러닝의 초기 연구"
 ---
+
+![[1-mdl.png]]
 
 # Keeping Neural Networks Simple by Minimizing the Description Length of the Weights (1993)
 

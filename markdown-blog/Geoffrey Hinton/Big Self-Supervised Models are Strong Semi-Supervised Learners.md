@@ -6,11 +6,14 @@ tags:
 aliases:
   - "SimCLRv2 (2020)"
 description: SimCLR 개선판. 자기지도 사전훈련 + 소량 라벨 미세조정의 강력함을 대규모로 검증. 반지도 학습의 새 기준
+image: "![[1-simclrv2.png]]"
 ---
 
 # Big Self-Supervised Models are Strong Semi-Supervised Learners (SimCLRv2, 2020)
 
 > Chen, T., Kornblith, S., Swersky, K., Norouzi, M., & Hinton, G. E. (2020). Big self-supervised models are strong semi-supervised learners. In *Advances in Neural Information Processing Systems* (NeurIPS 2020).
+
+![[1-simclrv2.png]]
 
 ## 배경
 

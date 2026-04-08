@@ -6,6 +6,7 @@ tags:
 aliases:
   - "Forward-Forward Algorithm (2022)"
 description: "역전파를 두 번의 순전파로 대체하는 Forward-Forward 알고리즘. 각 층이 자체 목적함수로 학습하며 생물학적 타당성 향상"
+image: "![[1-forward-forward.png]]"
 ---
 
 # The Forward-Forward Algorithm: Some Preliminary Investigations (2022)
@@ -13,6 +14,8 @@ description: "역전파를 두 번의 순전파로 대체하는 Forward-Forward 
 역전파는 신경망의 핵심이지만, 한 가지 치명적 약점이 있습니다. 뇌는 역전파를 하지 않습니다. 생물학적으로 설명 불가능하다는 뜻입니다. Hinton은 이 "역전파의 저주"를 벗어나기 위해 역전파를 완전히 제거하는 알고리즘을 제안합니다. Forward-Forward(FF)는 양수 데이터와 음수 데이터에 대해 각 층이 독립적으로 자신의 목적함수를 최적화합니다. 두 번의 순전파(forward pass)만으로 학습이 가능합니다. 재계산 오버헤드가 크지만, 이론적으로는 매우 깔끔합니다.
 
 > [1] G. E. Hinton, "The Forward-Forward algorithm: Some preliminary investigations," arXiv preprint arXiv:2212.13345, 2022.
+
+![[1-forward-forward.png]]
 
 ## 배경
 

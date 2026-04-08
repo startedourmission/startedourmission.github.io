@@ -7,6 +7,7 @@ aliases:
   - Products of Experts (2002)
   - Contrastive Divergence
 description: "대조 발산 알고리즘으로 전문가 혼합 모델을 훈련하는 실용적 방법, RBM 훈련의 핵심 기법"
+image: "![[1-contrastive-divergence.png]]"
 ---
 
 # Training Products of Experts by Minimizing Contrastive Divergence
@@ -22,6 +23,8 @@ description: "대조 발산 알고리즘으로 전문가 혼합 모델을 훈련
 ## 저자 소개
 
 Geoffrey Hinton은 UCL(University College London) Gatsby 계산신경과학 유닛에서 이 연구를 수행했습니다.
+
+![[1-contrastive-divergence.png]]
 
 ## 요약
 

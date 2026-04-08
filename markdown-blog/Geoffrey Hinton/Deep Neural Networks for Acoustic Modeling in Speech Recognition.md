@@ -6,6 +6,7 @@ tags:
 aliases:
   - "DNN 음성인식 (2012)"
 description: "Google, Microsoft, IBM, Toronto 4개 연구팀의 공동 논문으로, 딥러닝을 음성인식 산업에 처음 성공적으로 적용한 기념비적 논문입니다."
+image: "![[1-dnn-speech.png]]"
 ---
 
 ## 도입부
@@ -31,6 +32,8 @@ Geoffrey Hinton은 학문적 리더로 딥러닝을 산업계로 확산시키는
 - 사전 훈련(pre-training)을 통한 깊은 네트워크 초기화
 - 다양한 음성 인식 벤치마크에서 일관된 성능 향상
 - 실무(Google Voice Search, Microsoft, IBM)에 즉시 배포된 산업 적용 성과
+
+![[1-dnn-speech.png]]
 
 ## 논문 상세
 

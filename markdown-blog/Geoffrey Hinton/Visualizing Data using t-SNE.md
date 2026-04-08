@@ -5,7 +5,7 @@ tags:
   - "#제프리힌턴"
 aliases:
   - "t-SNE (2008)"
-image:
+image: "![[1-tsne.png]]"
 description: "확률적 근이웃 임베딩의 개선된 버전 t-SNE. 고차원 데이터의 시각화에 특화된 알고리즘으로 ML 연구에서 가장 널리 사용되는 방법."
 ---
 
@@ -22,6 +22,8 @@ description: "확률적 근이웃 임베딩의 개선된 버전 t-SNE. 고차원
 ## 저자 소개
 
 Laurens van der Maaten은 틸뷔르흐대(네덜란드) 연구자로, 이후 Facebook AI Research에서 활동했습니다. Geoffrey Hinton은 토론토대 교수였습니다.
+
+![[1-tsne.png]]
 
 ## 요약
 

@@ -6,7 +6,7 @@ tags:
 aliases:
   - "Deep Belief Nets (2006)"
   - "DBN"
-image:
+image: "![[1-deep-belief-nets.png]]"
 description: "층별 사전훈련으로 심층 신경망 학습을 가능하게 한 논문. 깊은 신경망 학습의 문제를 해결하고 '딥러닝'이라는 용어를 탄생시킨 획기적 연구."
 ---
 
@@ -23,6 +23,8 @@ description: "층별 사전훈련으로 심층 신경망 학습을 가능하게 
 ## 저자 소개
 
 Geoffrey Hinton은 토론토대 교수이자 CIFAR 프로그램 디렉터였습니다. Simon Osindero는 토론토대 박사과정 학생으로 이후 DeepMind에서 활동했습니다. Yee-Whye Teh는 비모수 베이지안 방법론의 권위자이며 이후 옥스퍼드대 교수가 되었습니다.
+
+![[1-deep-belief-nets.png]]
 
 ## 요약
 

@@ -6,6 +6,7 @@ tags:
 aliases:
   - "Dropout 원논문 (2012)"
 description: "Dropout의 원조 논문. 특징 탐지기의 공동적응을 방지하여 일반화 성능 개선. 2014 JMLR 논문의 전신"
+image: "![[1-dropout-original.png]]"
 ---
 
 # Improving Neural Networks by Preventing Co-adaptation of Feature Detectors (2012)
@@ -34,6 +35,8 @@ Training: h_i = {
 
 Testing: h_i = (1-p) * g(sum w_ij * x_j + b_i)
 ```
+
+![[1-dropout-original.png]]
 
 **핵심 혁신**: 이 간단한 기법이 왜 작동할까요? Hinton의 해석은 다음과 같습니다:
 1. **특징의 공동 적응 방지**: 뉴런을 비활성화하면, 다른 뉴런들이 그 역할을 대체해야 합니다. 따라서 특정 뉴런 조합에 과도하게 의존하지 않습니다.

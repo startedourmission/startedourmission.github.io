@@ -6,6 +6,7 @@ tags:
 aliases:
   - "Transforming Auto-encoders (2011)"
 description: "캡슐 신경망 아이디어의 첫 등장. 변환에 등변(equivariant)한 표현을 학습하여 기하학적 불변성 추구"
+image: "![[1-transforming-autoencoder.png]]"
 ---
 
 # Transforming Auto-encoders (2011)
@@ -37,6 +38,8 @@ h_i' = g(Σ_j w_ij * x_j' + b_i) ≈ h_i + (∂h_i/∂t) * Δt
 ```
 
 즉, 입력이 약간 변하면, 숨은 표현도 일관되게 변합니다. 이를 "등변성(equivariance)"이라 합니다.
+
+![[1-transforming-autoencoder.png]]
 
 **핵심 혁신**: 뉴런이 단순 활성화값이 아니라, 활성화값 + 변환 벡터를 함께 표현합니다. 예를 들어 얼굴을 인식하는 뉴런은 "얼굴의 수평 이동 정도(x-shift)"도 함께 인코딩합니다. 이를 통해 같은 물체의 다양한 시점을 일관성 있게 처리할 수 있습니다.
 
