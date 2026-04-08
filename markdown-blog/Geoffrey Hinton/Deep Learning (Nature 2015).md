@@ -1,8 +1,8 @@
 ---
 date: 2026-04-16
 tags:
-  - "#논문"
-  - "#제프리힌턴"
+  - 논문
+  - 제프리힌턴
 aliases:
   - 딥러닝 Nature 리뷰 (2015)
 image: "![[1-deep-learning-review.png]]"

@@ -1,8 +1,8 @@
 ---
 date: 2026-03-31
 tags:
-  - "#논문"
-  - "#제프리힌턴"
+  - 논문
+  - 제프리힌턴
 aliases:
   - Backpropagation
   - Backpropagation (1986)

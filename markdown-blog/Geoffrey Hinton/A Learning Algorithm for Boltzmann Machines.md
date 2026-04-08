@@ -1,8 +1,8 @@
 ---
 date: 2026-03-30
 tags:
-  - "#논문"
-  - "#제프리힌턴"
+  - 논문
+  - 제프리힌턴
 aliases:
   - Boltzmann Machines
   - Boltzmann Machines (1985)

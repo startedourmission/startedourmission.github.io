@@ -1,8 +1,8 @@
 ---
 date: 2026-04-09
 tags:
-  - "#논문"
-  - "#제프리힌턴"
+  - "논문"
+  - "제프리힌턴"
 aliases:
   - "Transforming Auto-encoders (2011)"
 description: "캡슐 신경망 아이디어의 첫 등장. 변환에 등변(equivariant)한 표현을 학습하여 기하학적 불변성 추구"

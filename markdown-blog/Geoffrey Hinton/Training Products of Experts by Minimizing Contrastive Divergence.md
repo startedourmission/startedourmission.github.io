@@ -1,8 +1,8 @@
 ---
 date: 2026-04-04
 tags:
-  - "#논문"
-  - "#제프리힌턴"
+  - 논문
+  - 제프리힌턴
 aliases:
   - Products of Experts (2002)
   - Contrastive Divergence

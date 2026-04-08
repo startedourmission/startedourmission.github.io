@@ -1,8 +1,8 @@
 ---
 date: 2026-04-15
 tags:
-  - "#논문"
-  - "#제프리힌턴"
+  - 논문
+  - 제프리힌턴
 aliases:
   - Knowledge Distillation (2015)
   - 지식 증류

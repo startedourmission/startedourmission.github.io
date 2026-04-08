@@ -1,8 +1,8 @@
 ---
 date: 2026-04-23
 tags:
-  - "#논문"
-  - "#제프리힌턴"
+  - 논문
+  - 제프리힌턴
 aliases:
   - "Forward-Forward Algorithm (2022)"
 description: "역전파를 두 번의 순전파로 대체하는 Forward-Forward 알고리즘. 각 층이 자체 목적함수로 학습하며 생물학적 타당성 향상"

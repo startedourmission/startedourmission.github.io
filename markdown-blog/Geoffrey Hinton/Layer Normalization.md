@@ -1,8 +1,8 @@
 ---
 date: 2026-04-17
 tags:
-  - "#논문"
-  - "#제프리힌턴"
+  - 논문
+  - 제프리힌턴
 aliases:
   - Layer Normalization (2016)
   - LayerNorm

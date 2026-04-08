@@ -1,8 +1,8 @@
 ---
 date: 2026-04-05
 tags:
-  - "#논문"
-  - "#제프리힌턴"
+  - 논문
+  - 제프리힌턴
 aliases:
   - "Deep Belief Nets (2006)"
   - "DBN"

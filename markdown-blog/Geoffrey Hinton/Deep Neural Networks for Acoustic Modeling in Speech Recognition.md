@@ -1,8 +1,8 @@
 ---
 date: 2026-04-11
 tags:
-  - "#논문"
-  - "#제프리힌턴"
+  - 논문
+  - 제프리힌턴
 aliases:
   - "DNN 음성인식 (2012)"
 description: "Google, Microsoft, IBM, Toronto 4개 연구팀의 공동 논문으로, 딥러닝을 음성인식 산업에 처음 성공적으로 적용한 기념비적 논문입니다."
