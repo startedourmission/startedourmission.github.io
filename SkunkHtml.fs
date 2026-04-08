@@ -76,14 +76,16 @@
                 | Some desc -> $"<meta property=\"og:description\" content=\"{escHtml desc}\" />"
                 | None -> ""
 
+            let defaultImage = $"{Config.blogBaseUrl}/assets/notion_avatar.png"
             let imageTag =
                 match imageUrl with
                 | Some img -> $"<meta property=\"og:image\" content=\"{Config.blogBaseUrl}/{img}\" />"
-                | None -> ""
+                | None -> $"<meta property=\"og:image\" content=\"{defaultImage}\" />"
 
             $"{titleTag}\n    {urlTag}\n    {typeTag}\n    {siteNameTag}\n    {descriptionTag}\n    {imageTag}"
 
         let twitterMetaTags =
+            let defaultImage = $"{Config.blogBaseUrl}/assets/notion_avatar.png"
             let cardTag = "<meta name=\"twitter:card\" content=\"summary_large_image\" />"
             let titleTag = $"<meta name=\"twitter:title\" content=\"{escHtml postFullTitle}\" />"
 
@@ -95,7 +97,7 @@
             let imageTag =
                 match imageUrl with
                 | Some img -> $"<meta name=\"twitter:image\" content=\"{Config.blogBaseUrl}/{img}\" />"
-                | None -> ""
+                | None -> $"<meta name=\"twitter:image\" content=\"{defaultImage}\" />"
 
             $"{cardTag}\n    {titleTag}\n    {descriptionTag}\n    {imageTag}"
 
@@ -117,7 +119,7 @@
             let imageField =
                 match imageUrl with
                 | Some img -> $""","image":"{Config.blogBaseUrl}/{img}" """
-                | None -> ""
+                | None -> $""","image":"{Config.blogBaseUrl}/assets/notion_avatar.png" """
             $"""<script type="application/ld+json">
     {{"@context":"https://schema.org","@type":"BlogPosting","headline":"{escJson postTitle}","url":"{fullUrl}","author":{{"@type":"Person","name":"Cha Jinwoo"}}{datePublished}{descField}{imageField}{keywordsField}}}
     </script>"""
@@ -296,7 +298,7 @@
                         let imageHtml =
                             match post.ImageUrl with
                             | Some imageUrl -> $"""<img src="{imageUrl}" alt="{post.Title}" class="post-thumbnail" />"""
-                            | None -> """<div class="post-thumbnail-empty"></div>"""
+                            | None -> """<img src="assets/notion_avatar.png" alt="Default" class="post-thumbnail" />"""
 
                         $"""
                         <li class="post-item">
@@ -359,7 +361,7 @@
                 let imageHtml =
                     match post.ImageUrl with
                     | Some imageUrl -> $"""<img src="{imageUrl}" alt="{post.Title}" class="post-thumbnail" />"""
-                    | None -> """<div class="post-thumbnail-empty"></div>"""
+                    | None -> """<img src="assets/notion_avatar.png" alt="Default" class="post-thumbnail" />"""
 
                 $"""
                 <li class="post-item">
@@ -430,7 +432,7 @@
                 let imageHtml =
                     match post.ImageUrl with
                     | Some imageUrl -> $"""<img src="{imageUrl}" alt="{post.Title}" class="post-thumbnail" />"""
-                    | None -> """<div class="post-thumbnail-empty"></div>"""
+                    | None -> """<img src="assets/notion_avatar.png" alt="Default" class="post-thumbnail" />"""
 
                 $"""
                 <li class="post-item">
