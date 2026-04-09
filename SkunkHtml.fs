@@ -149,6 +149,40 @@
     let extractTitleFromMarkdownFile (markdownFilePath: string) =
         Path.GetFileNameWithoutExtension(markdownFilePath)
     
+    let buildNav (header: string) (gridSections: (string * Post list) list) (navFolders: string array) =
+        let gridNavItems =
+            gridSections
+            |> List.map (fun (title, _) ->
+                let urlFriendlyName = Url.toUrlFriendly title
+                $"""<li><a href="{urlFriendlyName}.html">{title}</a></li>""")
+
+        let navFolderItems =
+            navFolders
+            |> Array.toList
+            |> List.map (fun folderName ->
+                let urlFriendlyName = Url.toUrlFriendly folderName
+                $"""<li><a href="{urlFriendlyName}.html">{folderName}</a></li>""")
+
+        let mainItems = ["""<li><a href="posts.html">Posts</a></li>"""] @ gridNavItems
+        let subItems = navFolderItems
+
+        let mainHtml = mainItems |> String.concat "\n        "
+        let subHtml = subItems |> String.concat "\n        "
+
+        let navBlock =
+            $"""<ul class="nav-main">
+        {mainHtml}
+    </ul>"""
+            + (if subItems.Length > 0 then
+                   $"""
+    <ul class="nav-sub">
+        {subHtml}
+    </ul>"""
+               else "")
+
+        header.Replace("""<ul>
+    </ul>""", navBlock)
+
     let generateTagsHtml (tags: string list) =
         if tags.IsEmpty then
             ""
@@ -249,30 +283,7 @@
                 </section>
                 """
 
-        // 동적 내비게이션 생성 (Posts + 그리드 섹션들 + navFolders)
-        let gridNavHtml =
-            gridSections
-            |> List.map (fun (title, _) ->
-                let urlFriendlyName = Url.toUrlFriendly title
-                $"""<li><a href="{urlFriendlyName}.html">{title}</a></li>""")
-            |> String.concat "\n        "
-
-        let navFoldersHtml =
-            navFolders
-            |> Array.map (fun folderName ->
-                let urlFriendlyName = Url.toUrlFriendly folderName
-                $"""<li><a href="{urlFriendlyName}.html">{folderName}</a></li>""")
-            |> String.concat "\n        "
-
-        let dynamicNavHtml =
-            $"""<li><a href="posts.html">Posts</a></li>
-        {gridNavHtml}
-        {navFoldersHtml}"""
-
-        let updatedHeader =
-            header.Replace("    </ul>",
-                          $"""        {dynamicNavHtml}
-    </ul>""")
+        let updatedHeader = buildNav header gridSections navFolders
 
         // Headliner 섹션 (Headliner 태그를 가진 글들)
         let headlinerPosts =
@@ -381,30 +392,7 @@
                 </li>""")
             |> String.concat "\n            "
 
-        // 동적 내비게이션 생성 (Posts + 그리드 섹션들 + navFolders)
-        let gridNavHtml =
-            gridFolders
-            |> List.map (fun (title, _) ->
-                let urlFriendlyName = Url.toUrlFriendly title
-                $"""<li><a href="{urlFriendlyName}.html">{title}</a></li>""")
-            |> String.concat "\n        "
-
-        let navFoldersHtml =
-            navFolders
-            |> Array.map (fun folderName ->
-                let urlFriendlyName = Url.toUrlFriendly folderName
-                $"""<li><a href="{urlFriendlyName}.html">{folderName}</a></li>""")
-            |> String.concat "\n        "
-
-        let dynamicNavHtml =
-            $"""<li><a href="posts.html">Posts</a></li>
-        {gridNavHtml}
-        {navFoldersHtml}"""
-
-        let updatedHeader =
-            header.Replace("    </ul>",
-                          $"""        {dynamicNavHtml}
-    </ul>""")
+        let updatedHeader = buildNav header gridFolders navFolders
 
         let content =
             $"""
@@ -452,30 +440,7 @@
                 </li>""")
             |> String.concat "\n            "
 
-        // 동적 내비게이션 생성 (Posts + 그리드 섹션들 + navFolders)
-        let gridNavHtml =
-            gridFolders
-            |> List.map (fun (title, _) ->
-                let urlFriendlyName = Url.toUrlFriendly title
-                $"""<li><a href="{urlFriendlyName}.html">{title}</a></li>""")
-            |> String.concat "\n        "
-
-        let navFoldersHtml =
-            navFolders
-            |> Array.map (fun folderName ->
-                let urlFriendlyName = Url.toUrlFriendly folderName
-                $"""<li><a href="{urlFriendlyName}.html">{folderName}</a></li>""")
-            |> String.concat "\n        "
-
-        let dynamicNavHtml =
-            $"""<li><a href="posts.html">Posts</a></li>
-        {gridNavHtml}
-        {navFoldersHtml}"""
-
-        let updatedHeader =
-            header.Replace("    </ul>",
-                          $"""        {dynamicNavHtml}
-    </ul>""")
+        let updatedHeader = buildNav header gridFolders navFolders
 
         let content =
             $"""
@@ -515,30 +480,7 @@
                     """)
             |> String.concat "\n"
 
-        // 동적 내비게이션 생성 (Posts + 그리드 섹션들 + navFolders)
-        let gridNavHtml =
-            gridFolders
-            |> List.map (fun (title, _) ->
-                let urlFriendlyName = Url.toUrlFriendly title
-                $"""<li><a href="{urlFriendlyName}.html">{title}</a></li>""")
-            |> String.concat "\n        "
-
-        let navFoldersHtml =
-            navFolders
-            |> Array.map (fun folderName ->
-                let urlFriendlyName = Url.toUrlFriendly folderName
-                $"""<li><a href="{urlFriendlyName}.html">{folderName}</a></li>""")
-            |> String.concat "\n        "
-
-        let dynamicNavHtml =
-            $"""<li><a href="posts.html">Posts</a></li>
-        {gridNavHtml}
-        {navFoldersHtml}"""
-
-        let updatedHeader =
-            header.Replace("    </ul>",
-                          $"""        {dynamicNavHtml}
-    </ul>""")
+        let updatedHeader = buildNav header gridFolders navFolders
 
         let content =
             $"""
@@ -590,18 +532,7 @@
 
         let canvasJson = $"""{{ "nodes": [{nodesJson}], "edges": [{edgesJson}] }}"""
 
-        // 동적 내비게이션 생성
-        let dynamicNavHtml =
-            navFolders
-            |> Array.map (fun folderName ->
-                let urlFriendlyName = Url.toUrlFriendly folderName
-                $"""<li><a href="{urlFriendlyName}.html">{folderName}</a></li>""")
-            |> String.concat "\n        "
-
-        let updatedHeader = 
-            header.Replace("    </ul>", 
-                          $"""        {dynamicNavHtml}
-    </ul>""")
+        let updatedHeader = buildNav header [] navFolders
 
         let content =
             $"""
@@ -672,16 +603,7 @@
         </ul>
         """
         
-        let dynamicNavHtml = 
-            navFolders
-            |> Array.map (fun folderName -> 
-                let urlFriendlyName = Url.toUrlFriendly folderName
-                $"<li><a href=\"{urlFriendlyName}.html\">{folderName}</a></li>")
-            |> String.concat "\n        "
-        let updatedHeader = 
-            header.Replace("    </ul>", 
-                          $"""        {dynamicNavHtml}
-    </ul>""")
+        let updatedHeader = buildNav header [] navFolders
         let tagPageUrl = $"tag-{Url.toUrlFriendly tagName}.html"
         let tagPageHtml = generateFinalHtml (headWithCanonical $" - 태그: {tagName}" tagPageUrl) updatedHeader footer content ""
         
