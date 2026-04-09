@@ -5,7 +5,6 @@ tags:
   - Headliner
   - 오픈소스
 description: "브라우저 없이 텍스트 너비를 정확히 측정하는 Node.js 라이브러리. Excalidraw 도해 자동 생성 과정에서 탄생한 서버사이드 measureText() 구현체."
-image: "![[1-boltzmann-machine.png]]"
 ---
 ## 한 줄 요약
 
@@ -161,13 +160,11 @@ wrap('The quick brown fox jumps over the lazy dog', '14px Helvetica', 300);
 
 처음에 삐뚤어진 라벨에서 시작한 일이었는데, node-pretext를 적용한 뒤로는 이렇게 나옵니다.
 
-![[1-boltzmann-machine.png]]
 
 볼츠만 머신의 Positive/Negative Phase를 나란히 보여주는 도해입니다. Python 스크립트가 node-pretext CLI를 호출해서 "Positive Phase (Data)", "Hidden Units", "Visible Units" 등 모든 라벨의 픽셀 너비를 측정합니다. 그 값으로 `cx - width/2` 좌표를 계산해서 `.excalidraw` JSON을 생성합니다.
 
 좌우 패널의 대칭이 맞는 이유가 여기 있습니다. "Positive Phase (Data)"와 "Negative Phase (Free)"의 글자 수가 다르지만, 각각의 실제 픽셀 너비를 알고 있으니 둘 다 패널 중앙에 정확히 놓을 수 있습니다. 글자 수로 대충 추정했다면 이 정렬은 불가능합니다.
 
-![[1-wake-sleep.png]]
 
 Wake-Sleep 알고리즘 도해입니다. Wake Phase에서는 위로 올라가는 화살표(Recognition), Sleep Phase에서는 아래로 내려가는 화살표(Generation)가 네트워크 옆에 배치됩니다. "Recognition (bottom-up)" 같은 2줄짜리 라벨도 각 줄의 너비를 따로 측정해서 중앙 정렬합니다.
 
