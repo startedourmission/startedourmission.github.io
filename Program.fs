@@ -82,13 +82,13 @@ let main argv =
         |> Array.map (fun file ->
             let content = File.ReadAllText(file)
             let filename = Path.GetFileNameWithoutExtension(file)
-            let urlFriendlyTitle = Url.toUrlFriendly filename
+            let hashId = Url.toHashId filename
             let imageUrl = Obsidian.extractImageUrl file content
             let dateValue = Obsidian.extractDate content filename
             let summary = Obsidian.extractSummary content
             let description = Obsidian.extractDescription content
             let tags = Obsidian.extractTags content
-            
+
             // 파일이 어떤 폴더에 속하는지 확인
             let category = 
                 // 먼저 grid 폴더 확인
@@ -104,7 +104,7 @@ let main argv =
             
             {
                 Title = filename
-                Url = $"{urlFriendlyTitle}.html"
+                Url = $"{hashId}.html"
                 ImageUrl = imageUrl
                 Category = category
                 Date = dateValue

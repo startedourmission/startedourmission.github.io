@@ -163,8 +163,8 @@
 
     let createPage (header: string) (footer: string) (markdownFilePath: string) =
         let title = extractTitleFromMarkdownFile(markdownFilePath)
-        // 파일명을 URL 친화적으로 변환
-        let fileName = Url.toUrlFriendly title
+        // 파일명 해시 기반 URL (한글 제목도 짧고 깔끔한 URL)
+        let fileName = Url.toHashId title
         let outputHtmlFilePath = Path.Combine(Config.outputDir, fileName + ".html")
         let markdownContent = File.ReadAllText(markdownFilePath)
         

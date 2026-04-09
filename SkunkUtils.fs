@@ -108,11 +108,19 @@ module Disk =
 
 module Url =
     open System.Text.RegularExpressions
+    open System.Security.Cryptography
+    open System.Text
 
     let toUrlFriendly (input: string) =
         input.ToLowerInvariant()
-        |> fun text -> Regex.Replace(text, @"[^\w\s]", "") // Remove all non-alphanumeric characters
-        |> fun text -> Regex.Replace(text, @"\s+", "-") // Replace spaces with hyphens
+        |> fun text -> Regex.Replace(text, @"[^\w\s]", "")
+        |> fun text -> Regex.Replace(text, @"\s+", "-")
+
+    let toHashId (input: string) =
+        use md5 = MD5.Create()
+        let bytes = Encoding.UTF8.GetBytes(input)
+        let hash = md5.ComputeHash(bytes)
+        hash |> Array.map (fun b -> b.ToString("x2")) |> String.concat "" |> fun s -> s.[..7]
 
 module Obsidian =
     open System.Text.RegularExpressions
@@ -159,11 +167,11 @@ module Obsidian =
                     let parts = linkText.Split('|')
                     let target = parts.[0].Trim()
                     let displayText = parts.[1].Trim()
-                    let urlFriendlyTarget = Url.toUrlFriendly target
-                    $"[{displayText}]({urlFriendlyTarget}.html)"
+                    let hashTarget = Url.toHashId target
+                    $"[{displayText}]({hashTarget}.html)"
                 else
-                    let urlFriendlyTarget = Url.toUrlFriendly linkText
-                    $"[{linkText}]({urlFriendlyTarget}.html)"
+                    let hashTarget = Url.toHashId linkText
+                    $"[{linkText}]({hashTarget}.html)"
         )
         
     // YAML 프론트매터에서 태그 추출
