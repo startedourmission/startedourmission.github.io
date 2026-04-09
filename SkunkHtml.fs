@@ -334,7 +334,12 @@
     <meta property="og:url" content="{Config.blogBaseUrl}/" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="{escHtml Config.blogTitle}" />
-    <meta property="og:description" content="{escHtml Config.blogDescription}" />"""
+    <meta property="og:description" content="{escHtml Config.blogDescription}" />
+    <meta property="og:image" content="{Config.blogBaseUrl}/assets/notion_avatar.png" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="{escHtml Config.blogTitle}" />
+    <meta name="twitter:description" content="{escHtml Config.blogDescription}" />
+    <meta name="twitter:image" content="{Config.blogBaseUrl}/assets/notion_avatar.png" />"""
         let indexJsonLd = $"""<script type="application/ld+json">
     {{"@context":"https://schema.org","@type":"WebSite","name":"{escJson Config.blogTitle}","url":"{Config.blogBaseUrl}","description":"{escJson Config.blogDescription}","author":{{"@type":"Person","name":"Cha Jinwoo"}}}}
     </script>"""
