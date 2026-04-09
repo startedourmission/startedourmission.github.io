@@ -4,7 +4,7 @@ tags:
   - 논문
   - LLM
 aliases:
-  - "Emu3.5: Native Multimodal Models are World Learners"
+  - Emu3.5: Native Multimodal Models are World Learners
 image: "![[1-Emu.png]]"
 description: 최신 멀티모달 모델의 화두는 세계를 이해하고 행동하는 모델입니다. BAAI(Beijing Academy of Artificial Intelligence)가 최근 공개한 Emu3.5는 이런 흐름을 타고 비전과 언어를 동시에 예측하는 '멀티모달 월드 모델'을 표방하며 장시간 순차적 추론과 실제 로봇 조작까지 가능하게 한다고 주장합니다.
 ---

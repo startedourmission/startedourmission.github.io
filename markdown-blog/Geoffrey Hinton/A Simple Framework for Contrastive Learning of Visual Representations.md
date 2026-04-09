@@ -4,7 +4,7 @@ tags:
   - 논문
   - 제프리힌턴
 aliases:
-  - "SimCLR (2020)"
+  - SimCLR (2020)
 description: 자기지도 대조 학습(contrastive learning) 프레임워크. 데이터 증강과 대조 손실로 라벨 없이 강력한 표현 학습. 10,000+ 인용
 image: "![[1-simclr.png]]"
 ---

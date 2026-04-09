@@ -4,7 +4,7 @@ tags:
   - 벤치마크
   - AI평가
 aliases:
-  - "Petri 2.0"
+  - Petri 2.0
 ---
 
 # Petri

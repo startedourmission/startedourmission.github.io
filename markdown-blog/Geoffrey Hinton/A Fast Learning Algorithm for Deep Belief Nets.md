@@ -4,8 +4,8 @@ tags:
   - 논문
   - 제프리힌턴
 aliases:
-  - "Deep Belief Nets (2006)"
-  - "DBN"
+  - Deep Belief Nets (2006)
+  - DBN
 image: "![[1-deep-belief-nets.png]]"
 description: "층별 사전훈련으로 심층 신경망 학습을 가능하게 한 논문. 깊은 신경망 학습의 문제를 해결하고 '딥러닝'이라는 용어를 탄생시킨 획기적 연구."
 ---

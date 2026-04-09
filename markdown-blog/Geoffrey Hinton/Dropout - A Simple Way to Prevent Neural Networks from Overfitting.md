@@ -4,7 +4,7 @@ tags:
   - 논문
   - 제프리힌턴
 aliases:
-  - "Dropout (2014)"
+  - Dropout (2014)
 description: "훈련 시 뉴런을 확률적으로 끄는 Dropout은 단순하면서도 강력한 정규화 기법으로, 딥러닝의 표준 도구가 되었습니다."
 image: "![[1-dropout-jmlr.png]]"
 ---

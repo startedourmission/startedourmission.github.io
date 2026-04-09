@@ -4,7 +4,7 @@ tags:
   - 논문
   - 제프리힌턴
 aliases:
-  - "초기화와 모멘텀 (2013)"
+  - 초기화와 모멘텀 (2013)
 description: "모멘텀 기반 최적화의 중요성을 입증. Nesterov 모멘텀과 적절한 초기화의 조합이 SGD를 크게 개선함을 보인 논문."
 image: "![[1-init-momentum.png]]"
 ---

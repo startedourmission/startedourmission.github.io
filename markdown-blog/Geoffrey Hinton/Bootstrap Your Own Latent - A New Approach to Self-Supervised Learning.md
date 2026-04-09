@@ -4,7 +4,7 @@ tags:
   - 논문
   - 제프리힌턴
 aliases:
-  - "BYOL (2020)"
+  - BYOL (2020)
 description: 부정 샘플 없이 자기지도 학습하는 방법. SimCLR과 달리 음의 예가 필요 없으며, 온라인-타겟 네트워크 구조로 표현 학습 수행
 image: "![[1-byol.png]]"
 ---

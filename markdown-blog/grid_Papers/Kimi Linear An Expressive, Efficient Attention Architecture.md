@@ -5,7 +5,7 @@ tags:
   - Headliner
   - LLM
 aliases:
-  - "Kimi Linear: An Expressive, Efficient Attention Architecture"
+  - Kimi Linear: An Expressive, Efficient Attention Architecture
 image: "![[1-KimiLinear.png]]"
 description: |-
   Kimi가 도약합니다.

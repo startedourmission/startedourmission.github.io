@@ -4,7 +4,7 @@ tags:
   - 논문
   - LLM
 aliases:
-  - "Less is More: Recursive Reasoning with Tiny Networks"
+  - Less is More: Recursive Reasoning with Tiny Networks
 image: "![[1-rtn1.png]]"
 description: 삼성에서 한 건 했습니다. LLM 추론 방식에 대한 근본적인 의문을 제시하고 Claude 3.7, GPT의 o3-mini, Gemini 2.5 Pro, Deepseek R1을 능가하는 추론 성능을 달성합니다. 심지어 0.01%에 불과한 파라미터로 말이죠. 삼성 SAIL AI 연구소가 제안한 TRM을 소개합니다.
 ---

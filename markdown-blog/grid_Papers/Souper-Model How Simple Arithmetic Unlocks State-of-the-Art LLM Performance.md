@@ -5,7 +5,7 @@ tags:
   - LLM
   - Headliner
 aliases:
-  - "Souper-Model: How Simple Arithmetic Unlocks State-of-the-Art LLM Performance"
+  - Souper-Model: How Simple Arithmetic Unlocks State-of-the-Art LLM Performance
 image: "![[1-souper.png]]"
 description: 여러 개의 언어 모델을 평균화하는 방식만으로 새로운 모델을 훈련시키지 않고도 성능을 높일 수 있습니다. 단순 평균이 아니라 각 모델의 강점이 나타나는 부분을 찾아 비율을 다르게 섞는 SoCE를 제안합니다. 함수 호출 벤치마크에서 새로운 최고 성능을 달성했습니다.
 ---

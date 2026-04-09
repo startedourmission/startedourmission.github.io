@@ -4,7 +4,7 @@ tags:
   - 논문
   - 제프리힌턴
 aliases:
-  - "Dropout 원논문 (2012)"
+  - Dropout 원논문 (2012)
 description: "Dropout의 원조 논문. 특징 탐지기의 공동적응을 방지하여 일반화 성능 개선. 2014 JMLR 논문의 전신"
 image: "![[1-dropout-original.png]]"
 ---

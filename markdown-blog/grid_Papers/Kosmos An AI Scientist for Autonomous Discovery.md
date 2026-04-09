@@ -4,7 +4,7 @@ tags:
   - 논문
   - 딥러닝
 aliases:
-  - "Kosmos: An AI Scientist for Autonomous Discovery"
+  - Kosmos: An AI Scientist for Autonomous Discovery
 image: "![[1-Kosmos.png]]"
 description: AI 과학자 Kosmos를 소개합니다. 데이터와 연구 목표를 주면 자동으로 논문을 읽고, 데이터를 분석하고, 가설을 생성해 과학 보고서를 작성합니다. 6개월간 인간 연구자가 수행할 작업을 하루에 끝내고 모든 단계가 투명하게 공개됩니다. 신경생물학, 재료과학, 통계유전학등 다양한 분야에서 실제 발견을 만들어냈습니다.
 ---

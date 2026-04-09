@@ -4,7 +4,7 @@ tags:
   - 벤치마크
   - AI평가
 aliases:
-  - "Humanity's Last Exam"
+  - Humanity's Last Exam
 ---
 
 # HLE

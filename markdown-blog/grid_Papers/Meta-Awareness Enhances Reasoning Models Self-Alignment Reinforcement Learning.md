@@ -1,6 +1,6 @@
 ---
 aliases:
-  - "Meta-Awareness Enhances Reasoning Models: Self-Alignment Reinforcement Learning"
+  - Meta-Awareness Enhances Reasoning Models: Self-Alignment Reinforcement Learning
 date: 2025-10-13
 tags:
   - 논문

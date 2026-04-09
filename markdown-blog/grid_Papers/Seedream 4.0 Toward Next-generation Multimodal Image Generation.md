@@ -5,7 +5,7 @@ tags:
   - LLM
   - 영상처리
 aliases:
-  - "Seedream 4.0: Toward Next-generation Multimodal Image Generation"
+  - Seedream 4.0: Toward Next-generation Multimodal Image Generation
 image: "![[1-seedream4.png]]"
 description: 벌써 4.5가 나온다구요? 두 달 정도밖에 안 지났습니다. 아직 4.5는 테크니컬 리포트가 없습니다. 대신 4.0 테크니컬 리포트를 가져왔습니다. 2K 해상도 이미지를 1.4~1.8초 만에 생성하며, T2I 생성과 이미지 편집 작업을 단일 모델에서 공동 학습합니다. 특히 복잡한 텍스트 렌더링, 다중 이미지 참조, 인컨텍스트 추론 생성 등 기존 모델들이 취약했던 영역에서 강점을 보입니다.
 ---

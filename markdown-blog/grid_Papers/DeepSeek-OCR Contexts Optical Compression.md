@@ -6,7 +6,7 @@ tags:
   - 베스트논문
   - Headliner
 aliases:
-  - "DeepSeek-OCR: Contexts Optical Compression"
+  - DeepSeek-OCR: Contexts Optical Compression
 image: "![[1-DeepSeek-OCR.png]]"
 description: |-
   이건 진짜 신박합니다. 장안의 화제인 논문, DeepSeek-OCR을 소개합니다. 

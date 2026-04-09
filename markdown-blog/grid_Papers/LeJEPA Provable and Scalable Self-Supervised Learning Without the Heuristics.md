@@ -4,7 +4,7 @@ tags:
   - 논문
   - LLM
 aliases:
-  - "LeJEPA: Provable and Scalable Self-Supervised Learning Without the Heuristics"
+  - LeJEPA: Provable and Scalable Self-Supervised Learning Without the Heuristics
 image: "![[1-LeJEPA.png]]"
 description: 얀 르쿤과 바렐스트리에로의 최신 연구입니다! 자기 지도 학습(Self-Supervised Learning)에서 표현 붕괴(representation collapse)를 막기 위해 쓰던 여러 임시방편(stop-gradient, teacher-student network 등)들을 이론적으로 정당화하고 이를 단 50줄의 코드로 구현한 LeJEPA 논문입니다. 핵심은 '임베딩이 등방성 가우시안 분포를 따라야 한다'는 수학적 증명에 있습니다.
 ---

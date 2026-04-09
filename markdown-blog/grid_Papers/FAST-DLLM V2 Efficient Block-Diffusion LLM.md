@@ -4,7 +4,7 @@ tags:
   - 논문
   - LLM
 aliases:
-  - "FAST-DLLM V2: Efficient Block-Diffusion LLM"
+  - FAST-DLLM V2: Efficient Block-Diffusion LLM
 image: "![[1-FAST-DLLM.png]]"
 description: NVIDIA의 힘은 GPU가 다가 아니죠.  명실상부 LLM 선두주자의 새로운 논문입니다. 자연어 처리 모델이 토큰을 생성하는 기본적인 방법인 자기회귀(AR)의 한계를 극복하는 병렬 텍스트 생성 모델입니다. 적은 토큰으로도 파인 튜닝이 가능하고 500배 적은 학습 데이터로 기존 Dream 모델과 동일한 성능을 달성합니다.
 ---

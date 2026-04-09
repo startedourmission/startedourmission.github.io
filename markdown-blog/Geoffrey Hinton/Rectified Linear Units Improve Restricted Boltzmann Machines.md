@@ -4,7 +4,7 @@ tags:
   - 논문
   - 제프리힌턴
 aliases:
-  - "ReLU (2010)"
+  - ReLU (2010)
 image: "![[1-relu.png]]"
 description: "ReLU 활성화 함수를 RBM에 도입. 이후 거의 모든 딥러닝의 표준 활성화 함수가 되어 신경망 실무를 크게 단순화한 논문."
 ---

@@ -4,7 +4,7 @@ tags:
   - 논문
   - 영상처리
 aliases:
-  - "Depth Anything 3: Recovering the Visual Space from Any Views"
+  - Depth Anything 3: Recovering the Visual Space from Any Views
 image: "![[1-DepthAnything3.png]]"
 description: 또이트댄스입니다. Depth Anything 3는 한 장의 이미지든 여러 장의 영상이든, 카메라 포즈 정보가 있든 없든 상관없이 3D 기하 정보를 예측하는 모델입니다. 평범한 트랜스포머 하나와 단순한 깊이-광선(depth-ray) 표현으로 이전 최고 성능을 44% 능가하는 성능을 달성했으며, 모든 데이터를 공개 학술 데이터셋으로만 학습했습니다.
 ---

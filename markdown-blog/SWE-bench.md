@@ -4,8 +4,8 @@ tags:
   - 벤치마크
   - AI평가
 aliases:
-  - "SWE-bench Verified"
-  - "SWE-bench Pro"
+  - SWE-bench Verified
+  - SWE-bench Pro
 ---
 
 # SWE-bench

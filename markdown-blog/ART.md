@@ -4,7 +4,7 @@ tags:
   - 벤치마크
   - AI평가
 aliases:
-  - "Agent Red Teaming"
+  - Agent Red Teaming
 ---
 
 # ART (Agent Red Teaming)

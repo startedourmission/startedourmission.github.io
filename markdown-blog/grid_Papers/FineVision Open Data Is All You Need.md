@@ -4,7 +4,7 @@ tags:
   - 논문
   - 데이터셋
 aliases:
-  - "FineVision: Open Data Is All You Need"
+  - FineVision: Open Data Is All You Need
 image: "![[1-FineVision.png]]"
 description: 인공지능 연구에서 가장 중요한 것은 데이터! 두 말하면 입아픈 이야기입니다. 최대 규모의 AI 플랫폼, 이제는 연구 커뮤니티의 역할을 톡톡히 하는 허깅페이스에서 최대 규모의 오픈 데이터 리소스를 발표했습니다. 오염이 심한 공개 데이터셋에서 세심하게 큐레이션해 2,400만 샘플 데이터셋을 통합하여 품질을 끌어올렸습니다. 기존 오픈 데이터셋 대비최대 46%의 벤치마크 성능 향상을 보입니다.
 ---

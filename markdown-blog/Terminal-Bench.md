@@ -4,7 +4,7 @@ tags:
   - 벤치마크
   - AI평가
 aliases:
-  - "Terminal-Bench 2.0"
+  - Terminal-Bench 2.0
 ---
 
 # Terminal-Bench

@@ -3,7 +3,7 @@ date: 2025-10-30
 tags:
   - 논문
 aliases:
-  - "A Survey of Data Agents: Emerging Paradigm or Overstated Hype?"
+  - A Survey of Data Agents: Emerging Paradigm or Overstated Hype?
 image: "![[1-A_Survey_of_Data_Agents.png]]"
 description: 현재 시장에는 "단순 쿼리 응답 도구"부터 "엔드-투-엔드 자동 분석 시스템"까지 모두 "데이터 에이전트"라고 불리고 있습니다. 이 논문은 자동주행 기술의 레벨 분류처럼, 데이터 에이전트의 자율성을 6단계로 명확히 정의합니다.
 ---

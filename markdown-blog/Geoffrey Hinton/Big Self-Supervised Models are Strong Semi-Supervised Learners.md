@@ -4,7 +4,7 @@ tags:
   - 논문
   - 제프리힌턴
 aliases:
-  - "SimCLRv2 (2020)"
+  - SimCLRv2 (2020)
 description: SimCLR 개선판. 자기지도 사전훈련 + 소량 라벨 미세조정의 강력함을 대규모로 검증. 반지도 학습의 새 기준
 image: "![[1-simclrv2.png]]"
 ---

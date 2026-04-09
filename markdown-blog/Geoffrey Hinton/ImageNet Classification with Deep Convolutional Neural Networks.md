@@ -4,7 +4,7 @@ tags:
   - 논문
   - 제프리힌턴
 aliases:
-  - "AlexNet (2012)"
+  - AlexNet (2012)
 description: "ImageNet 대회에서 압도적으로 우승한 AlexNet은 GPU 활용, ReLU, Dropout을 결합하여 딥러닝의 실용성을 처음 증명한 논문입니다."
 image: "![[1-alexnet.png]]"
 ---

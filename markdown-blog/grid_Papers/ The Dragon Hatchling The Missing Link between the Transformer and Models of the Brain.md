@@ -4,7 +4,7 @@ tags:
   - 논문
   - LLM
 aliases:
-  - "The Dragon Hatchling: The Missing Link between the Transformer and Models of the Brain"
+  - The Dragon Hatchling: The Missing Link between the Transformer and Models of the Brain
 image: "![[1-DragonHatchling.png]]"
 description: Dragon Hatchling(BDH)은 트랜스포머와 뇌 모델 사이의 연결고리를 찾습니다. 생물학적으로 그럴듯한 그래프 기반 뉴런 네트워크로 설계되어, 헤비안 학습과 스파이킹 뉴런을 사용하면서도 GPT-2 수준의 성능을 달성했습니다. 핵심은 attention을 시냅스 가소성으로, feed-forward를 국소적 그래프 동역학으로 재해석한 것입니다.
 ---
