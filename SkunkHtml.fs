@@ -627,39 +627,45 @@
         Disk.writeFile outputPath canvasPageHtml
     
     let createTagPage (header: string) (footer: string) (tagName: string) (tagPosts: Post list) (outputPath: string) (navFolders: string array) =
-        let postListHtml =
+        let postsHtml =
             tagPosts
             |> List.map (fun post ->
-                let dateStr = 
+                let dateHtml =
                     match post.Date with
-                    | Some date -> date.ToString("yyyy-MM-dd")
+                    | Some date -> $"""<span class="post-date">{date.ToString("yyyy-MM-dd")}</span>"""
                     | None -> ""
-                
-                let summaryStr = 
-                    match post.Summary with
-                    | Some summary -> $"<p class=\"post-summary\">{summary}</p>"
+
+                let descriptionHtml =
+                    match post.Description with
+                    | Some description -> $"""<p class="post-summary">{description}</p>"""
                     | None -> ""
-                
+
+                let imageHtml =
+                    match post.ImageUrl with
+                    | Some imageUrl -> $"""<img src="{imageUrl}" alt="{post.Title}" class="post-thumbnail" />"""
+                    | None -> """<img src="assets/notion_avatar.png" alt="Default" class="post-thumbnail" />"""
+
                 $"""
-                <article class="post-preview">
-                    <h3><a href="{post.Url}">{post.Title}</a></h3>
-                    <div class="post-meta">
-                        <time datetime="{dateStr}">{dateStr}</time>
-                        {if post.Tags.Length > 0 then generateTagsHtml post.Tags else ""}
+                <li class="post-item">
+                    {imageHtml}
+                    <div class="post-content">
+                        <div class="post-header">
+                            <a href="{post.Url}" class="post-title-link">{post.Title}</a>
+                            {dateHtml}
+                        </div>
+                        {descriptionHtml}
                     </div>
-                    {summaryStr}
-                </article>
-                """)
-            |> String.concat "\n"
-        
-        let content = 
+                </li>""")
+            |> String.concat "\n            "
+
+        let content =
             $"""
-            <h1>태그: {tagName}</h1>
-            <p>{tagPosts.Length}개의 게시물</p>
-            <div class="posts-list">
-                {postListHtml}
-            </div>
-            """
+        <h1>태그: {tagName}</h1>
+        <p>{tagPosts.Length}개의 게시물</p>
+        <ul class="posts-list posts-with-images">
+            {postsHtml}
+        </ul>
+        """
         
         let dynamicNavHtml = 
             navFolders
