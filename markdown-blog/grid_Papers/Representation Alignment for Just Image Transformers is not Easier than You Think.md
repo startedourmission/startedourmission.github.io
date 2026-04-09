@@ -1,7 +1,7 @@
 ---
 date: 2026-03-30
 tags:
-  - "#논문"
+  - 논문
 aliases:
 image: "![[image-2.png]]"
 description: REPA가 잠재 공간 디퓨전에서는 잘 작동하지만 픽셀 공간 디퓨전(JiT)에서는 오히려 성능을 악화시킨다는 걸 밝혔습니다. 원인은 정보 비대칭으로 인한 feature hacking. 이를 해결하는 PixelREPA를 제안하여 JiT-B/16 FID를 3.66에서 3.17로, JiT-H/16은 1.81까지 낮췄습니다. KAIST AI.
