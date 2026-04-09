@@ -6,11 +6,11 @@ author:
   - "[[Stanford Online]]"
 source: "https://www.youtube.com/playlist?list=PLoROMvodv4rOCXd21gf0CF4xr35yINeOy"
 tags:
-  - "cme295"
-  - "transformer"
-  - "llm"
-  - "book"
-  - "MOC"
+  - cme295
+  - transformer
+  - llm
+  - book
+  - MOC
 ---
 
 # CME295 트랜스포머와 LLM 강의 (2025 가을)

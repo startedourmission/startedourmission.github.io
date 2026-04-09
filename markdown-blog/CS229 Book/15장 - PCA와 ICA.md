@@ -8,9 +8,9 @@ series: "CS229 머신러닝 강의 (2018 가을)"
 chapter: 15
 image: "![[15-cs229-pca.png]]"
 tags:
-  - "cs229"
-  - "machine-learning"
-  - "book"
+  - cs229
+  - machine-learning
+  - book
 ---
 
 # 15장. PCA와 ICA

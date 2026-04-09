@@ -7,9 +7,9 @@ author:
 series: "CS229 머신러닝 강의 (2018 가을)"
 chapter: 17
 tags:
-  - "cs229"
-  - "machine-learning"
-  - "book"
+  - cs229
+  - machine-learning
+  - book
 image: "![[17-cs229-mdp.png]]"
 ---
 
