@@ -3,7 +3,6 @@ date: 2025-11-18
 tags:
   - 논문
   - 영상처리
-  - Headliner
 aliases:
   - "Depth Anything 3: Recovering the Visual Space from Any Views"
 image: "![[1-DepthAnything3.png]]"

@@ -2,7 +2,6 @@
 date: 2026-03-05
 tags:
   - 논문
-  - Headliner
 aliases:
 image: "![[image.png]]"
 description: 텍스트, 이미지, 영상에서 Lottie 벡터 애니메이션을 생성하는 최초의 멀티모달 프레임워크입니다. Lottie JSON을 파라미터화된 토큰으로 변환하는 토크나이저가 핵심이고, Qwen2.5-VL 기반 4B 모델로 88~93%의 생성 성공률을 달성했습니다. CVPR 2026 accept.

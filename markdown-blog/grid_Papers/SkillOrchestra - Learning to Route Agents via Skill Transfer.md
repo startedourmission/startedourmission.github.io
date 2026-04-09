@@ -2,7 +2,6 @@
 date: 2026-03-05
 tags:
   - 논문
-  - Headliner
 aliases:
 image: "![[image-1.png]]"
 description:

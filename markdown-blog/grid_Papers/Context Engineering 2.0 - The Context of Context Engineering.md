@@ -2,7 +2,6 @@
 date: 2025-11-05
 tags:
   - 논문
-  - Headliner
   - LLM
 aliases:
   - "Context Engineering 2.0: The Context of Context Engineering"
