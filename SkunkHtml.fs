@@ -66,7 +66,7 @@
         let canonicalTag = $"<link rel=\"canonical\" href=\"{fullUrl}\" />"
 
         let ogMetaTags =
-            let titleTag = $"<meta property=\"og:title\" content=\"{escHtml postFullTitle}\" />"
+            let titleTag = $"<meta property=\"og:title\" content=\"{escHtml postTitle}\" />"
             let urlTag = $"<meta property=\"og:url\" content=\"{fullUrl}\" />"
             let typeTag = "<meta property=\"og:type\" content=\"article\" />"
             let siteNameTag = $"<meta property=\"og:site_name\" content=\"{escHtml Config.blogTitle}\" />"
@@ -87,7 +87,7 @@
         let twitterMetaTags =
             let defaultImage = $"{Config.blogBaseUrl}/assets/notion_avatar.png"
             let cardTag = "<meta name=\"twitter:card\" content=\"summary_large_image\" />"
-            let titleTag = $"<meta name=\"twitter:title\" content=\"{escHtml postFullTitle}\" />"
+            let titleTag = $"<meta name=\"twitter:title\" content=\"{escHtml postTitle}\" />"
 
             let descriptionTag =
                 match description with
