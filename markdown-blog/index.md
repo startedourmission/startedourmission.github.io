@@ -30,7 +30,7 @@
 
 - [Github](https://github.com/startedourmission)
 - [X (Twitter)](https://x.com/started_our_mis?s=21)
-- [LinkedIn](https://www.linkedin.com/in/진우-차-a663a7368/)
+- [LinkedIn](https://www.linkedin.com/in/jinwoo-cha-a663a7368)
 - [Threads](https://www.threads.com/@chajinwoo_chajinwoo)
 
 ## Devs
