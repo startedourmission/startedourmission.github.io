@@ -222,12 +222,20 @@ module Obsidian =
                     else
                         Some (assetsPrefix + imageName)
                 else
+                    // 따옴표 제거
+                    let cleanValue = imageValue.Trim('"').Trim('\'')
                     // 일반 경로에서 _assets/ 접두사가 있으면 폴더별 prefix로 교체
-                    if imageValue.StartsWith("_assets/") then
-                        let imageName = imageValue.Substring(8) // "_assets/" 제거
+                    if cleanValue.StartsWith("_assets/") then
+                        let imageName = cleanValue.Substring(8)
                         Some (assetsPrefix + imageName)
+                    // 외부 URL은 그대로
+                    elif cleanValue.StartsWith("http://") || cleanValue.StartsWith("https://") then
+                        Some cleanValue
+                    // bare 파일명 (확장자가 이미지) → assetsPrefix 붙이기
+                    elif cleanValue.EndsWith(".png") || cleanValue.EndsWith(".jpg") || cleanValue.EndsWith(".jpeg") || cleanValue.EndsWith(".gif") || cleanValue.EndsWith(".webp") || cleanValue.EndsWith(".svg") then
+                        Some (assetsPrefix + cleanValue)
                     else
-                        Some imageValue
+                        Some cleanValue
             else
                 None
         else
