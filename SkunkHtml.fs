@@ -163,7 +163,7 @@
                 let urlFriendlyName = Url.toUrlFriendly folderName
                 $"""<li><a href="{urlFriendlyName}.html">{folderName}</a></li>""")
 
-        let mainItems = ["""<li><a href="posts.html">Posts</a></li>"""] @ gridNavItems
+        let mainItems = gridNavItems
         let subItems = navFolderItems
 
         let mainHtml = mainItems |> String.concat "\n        "

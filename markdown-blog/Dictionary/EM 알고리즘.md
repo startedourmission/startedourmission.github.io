@@ -25,8 +25,3 @@ EM 알고리즘(Expectation-Maximization Algorithm)은 잠재 변수(latent vari
 E-step: $Q(\theta, \theta^{(t)}) = \mathbb{E}_{z|x;\theta^{(t)}}[\log p(x,z;\theta)]$
 
 M-step: $\theta^{(t+1)} = \arg\max_\theta Q(\theta, \theta^{(t)})$
-
-## 등장하는 강의
-
-- [[13장 - EM 알고리즘]] (CS229)
-- [[14장 - EM 알고리즘과 인자 분석]] (CS229)

@@ -19,8 +19,3 @@ RLHF(Reinforcement Learning from Human Feedback, 인간 피드백으로부터의
 - KL 발산 제약으로 SFT 모델에서 너무 멀어지지 않게 정규화한다 (보상 해킹 방지)
 - ChatGPT, Claude, Gemini 등 현대 LLM 정렬의 핵심 기법이다
 - 인간 피드백 수집 비용과 보상 해킹이 주요 과제이다
-
-## 등장하는 강의
-
-- [[5장 - LLM 튜닝]] (CME295)
-- [[9장 - 종합 정리와 최신 동향]] (CME295)

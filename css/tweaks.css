@@ -68,6 +68,7 @@ nav .nav-main {
 nav .nav-main li a {
     font-size: 1.1rem;
     font-weight: 700;
+    white-space: nowrap;
 }
 
 nav .nav-sub {
@@ -83,6 +84,7 @@ nav .nav-sub {
 nav .nav-sub li a {
     font-size: 0.85rem;
     opacity: 0.7;
+    white-space: nowrap;
 }
 
 nav .nav-sub li a:hover {

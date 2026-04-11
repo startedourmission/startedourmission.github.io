@@ -23,7 +23,3 @@ ReLU(Rectified Linear Unit)는 $\text{ReLU}(z) = \max(0, z)$로 정의되는 신
 ## 수식
 
 $$\text{ReLU}(z) = \max(0, z) = \begin{cases} z & z \geq 0 \\ 0 & z < 0 \end{cases}$$
-
-## 등장하는 강의
-
-- [[10장 - 신경망 입문]] (CS229)

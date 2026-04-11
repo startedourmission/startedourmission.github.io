@@ -19,7 +19,3 @@ ALVINN(Autonomous Land Vehicle In a Neural Network)은 1989년 딘 포머로(Dea
 - 실제 고속도로 주행에서 상당한 성능을 보인 초기 자율주행 사례이다
 - 머신러닝이 실세계 문제에 적용된 초기 성공 사례로 자주 인용된다
 - 현대의 종단간 학습(end-to-end learning) 자율주행 연구의 선구자이다
-
-## 등장하는 강의
-
-- [[2장 - 선형 회귀와 경사 하강법]] (CS229)

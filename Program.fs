@@ -140,6 +140,7 @@ let main argv =
         
         orderedSections @ remainingSections
 
+    // grid_Posts 폴더의 글들을 Posts 페이지로 사용
     let regularPosts = allPosts |> List.filter (fun post -> post.Category = "Posts")
     
     // Canvas 파일들을 파싱하여 Canvas 객체 리스트 생성
@@ -198,12 +199,13 @@ let main argv =
         () // 모든 마크다운 파일이 블로그 글로 처리되므로 필요없음
 
     let createPostsAndGridPages () =
-        // Posts 페이지 생성
+        // Posts 페이지 생성 (grid_Posts 폴더의 글들을 리스트 형식으로)
         let postsPagePath = Path.Combine(Config.outputDir, "posts.html")
         SkunkHtml.createPostsPage header footer regularPosts postsPagePath navFolders gridSections
 
-        // Grid 섹션 페이지들 생성
+        // Grid 섹션 페이지들 생성 (Posts는 위에서 별도 처리)
         gridSections
+        |> List.filter (fun (title, _) -> title <> "Posts")
         |> List.iter (fun (title, posts) ->
             let urlFriendlyTitle = Url.toUrlFriendly title
             let gridPagePath = Path.Combine(Config.outputDir, $"{urlFriendlyTitle}.html")

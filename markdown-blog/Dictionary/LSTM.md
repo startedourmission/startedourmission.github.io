@@ -25,7 +25,3 @@ LSTM(Long Short-Term Memory, 장단기 기억 네트워크)은 망각 게이트(
 $f_t = \sigma(W_f[h_{t-1}, x_t] + b_f)$ (망각 게이트)
 
 $C_t = f_t \odot C_{t-1} + i_t \odot \tilde{C}_t$ (셀 상태 업데이트)
-
-## 등장하는 강의
-
-- [[1장 - 트랜스포머]] (CME295)
