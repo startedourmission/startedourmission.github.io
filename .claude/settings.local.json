@@ -5,5 +5,22 @@
       "Bash(dotnet run:*)",
       "Bash(grep:*)"
     ]
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"/Users/chajinwoo/Library/Mobile Documents/iCloud~md~obsidian/Documents/AutoVault/블로그/scripts/update-how-it-works.sh\"",
+            "if": "Bash(git push*)",
+            "timeout": 10,
+            "statusMessage": "Updating blog stats...",
+            "async": true
+          }
+        ]
+      }
+    ]
   }
 }
