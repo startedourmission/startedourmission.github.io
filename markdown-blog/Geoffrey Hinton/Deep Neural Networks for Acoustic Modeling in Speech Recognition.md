@@ -69,7 +69,7 @@ Geoffrey Hinton은 학문적 리더로 딥러닝을 산업계로 확산시키는
 ### 결과
 
 **음소 오류율 (Phone Error Rate):**
-- DBN-DNN: TIMIT 데이터셋에서 PER 20.0%
+- [[A Fast Learning Algorithm for Deep Belief Nets|DBN]]-DNN: TIMIT 데이터셋에서 PER 20.0%
 - 기존 GMM 기반 방법보다 크게 앞섰습니다.
 
 **음성 인식 오류율 (Word Error Rate, WER):**

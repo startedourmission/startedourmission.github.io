@@ -18,7 +18,7 @@ image: "![[5-cme295-rlhf-pipeline.png]]"
 # 5장. LLM 튜닝
 
 > SFT는 모델에게 "이렇게 생성하라"고 가르친다. 하지만 "이렇게 생성하지 마라"는 가르치지 못한다. 선호도 튜닝은 바로 이 부정적 신호를 주입할 수 있는 단계다.
-> — Afshine Amidi
+> — [[Afshine Amidi]]
 
 ---
 

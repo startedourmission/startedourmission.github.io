@@ -17,7 +17,7 @@ image: "![[1-simclrv2.png]]"
 
 ## 배경
 
-2020년, SimCLR 직후 Google Research 팀이 자기지도 사전훈련 → 소량 라벨 미세조정 → 지식 증류의 3단계 파이프라인을 NeurIPS 2020에서 제안했습니다. 라벨 1%로 완전 지도 학습의 99% 성능을 달성한 이 결과는 현대 AI 패러다임의 이론적 기초가 되었습니다.
+2020년, SimCLR 직후 Google Research 팀이 자기지도 사전훈련 → 소량 라벨 미세조정 → [[Distilling the Knowledge in a Neural Network|지식 증류]]의 3단계 파이프라인을 NeurIPS 2020에서 제안했습니다. 라벨 1%로 완전 지도 학습의 99% 성능을 달성한 이 결과는 현대 AI 패러다임의 이론적 기초가 되었습니다.
 
 ## 저자 소개
 

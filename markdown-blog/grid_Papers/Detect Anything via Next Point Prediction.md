@@ -11,7 +11,7 @@ description: |-
   Qwen과 대규모 영상 데이터셋을 갈아넣어 각종 벤치마크에서 뛰어난 성능을 보였습니다.
 ---
 
-객체 검출은 오랫동안 YOLO, DETR, Grounding DINO와 같은 회귀 기반 모델이 주도해왔습니다. 최근 MLLM(Multimodal Large Language Model)을 활용한 시도들이 있었지만, 낮은 재현율, 중복 예측, 좌표 불일치 등의 문제에 직면했습니다. 이 논문은 이러한 격차를 해소하기 위해 Rex-Omni라는 3B 파라미터 MLLM을 제안합니다. Rex-Omni는 COCO와 LVIS 벤치마크에서 제로샷 설정으로 DINO, Grounding DINO와 같은 회귀 기반 모델과 비슷하거나 더 나은 성능을 달성합니다.
+객체 검출은 오랫동안 [[You Only Look Once, Unified Real-Time Object Detection|YOLO]], DETR, Grounding DINO와 같은 회귀 기반 모델이 주도해왔습니다. 최근 MLLM(Multimodal Large Language Model)을 활용한 시도들이 있었지만, 낮은 재현율, 중복 예측, 좌표 불일치 등의 문제에 직면했습니다. 이 논문은 이러한 격차를 해소하기 위해 Rex-Omni라는 3B 파라미터 MLLM을 제안합니다. Rex-Omni는 COCO와 LVIS 벤치마크에서 제로샷 설정으로 DINO, Grounding DINO와 같은 회귀 기반 모델과 비슷하거나 더 나은 성능을 달성합니다.
 
 > Q. Jiang, J. Huo, X. Chen, Y. Xiong, Z. Zeng, Y. Chen, T. Ren, J. Yu, and L. Zhang, "Detect Anything via Next Point Prediction", arXiv preprint arXiv:2510.12798, 2025.
 

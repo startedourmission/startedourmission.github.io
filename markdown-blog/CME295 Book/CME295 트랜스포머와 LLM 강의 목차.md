@@ -15,7 +15,7 @@ tags:
 
 # CME295 트랜스포머와 LLM 강의 (2025 가을)
 
-> Stanford CME295: Transformers & Large Language Models — Afshine & Shervine Amidi
+> Stanford CME295: Transformers & Large Language Models — Afshine & [[Shervine Amidi]]
 > 유튜브 강의 트랜스크립트를 한국어 도서 형식으로 정리한 시리즈
 
 ---

@@ -84,7 +84,7 @@ $$\begin{aligned} \sigma_{t,l} &:= \left(\sigma_{t-1,l} + \left(\left(y_{t,l-1}x
 - $x_{t,l}, y_{t,l} \in \mathbb{R}_+^n$: 뉴런 활성화 벡터
 - $\sigma_{t,l} \in \mathbb{R}^{n \times n}$: 시냅스 상태 행렬
 - $G_s, G_e^x, G_i^x, G_e^y, G_i^y$: 뉴런 상호작용 그래프의 파라미터
-- $U$: 상태 감쇠/회전 행렬 (ALiBi 또는 RoPE)
+- $U$: 상태 감쇠/회전 행렬 (ALiBi 또는 [[RoPE]])
 
 **핵심 특징**:
 

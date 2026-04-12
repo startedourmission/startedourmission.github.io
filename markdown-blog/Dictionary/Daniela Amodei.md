@@ -6,7 +6,7 @@ aliases:
   - "Daniela Amodei"
 ---
 
-다니엘라 아모데이(Daniela Amodei)는 AI 안전 기업 Anthropic의 공동 창립자이자 사장(President)이다. 오빠 Dario Amodei가 기술과 연구를 총괄한다면, 다니엘라는 사업 운영, 재무, 정책, 인사 등 비즈니스 전반을 책임지는 실질적인 경영 엔진으로 평가받고 있다.
+다니엘라 아모데이(Daniela Amodei)는 AI 안전 기업 Anthropic의 공동 창립자이자 사장(President)이다. 오빠 [[Dario Amodei]]가 기술과 연구를 총괄한다면, 다니엘라는 사업 운영, 재무, 정책, 인사 등 비즈니스 전반을 책임지는 실질적인 경영 엔진으로 평가받고 있다.
 
 하버드 대학교를 졸업한 뒤 금융 분야에서 경력을 시작하였으며, 이후 Stripe에서 비즈니스 운영을 담당하였다. OpenAI에서는 운영 부사장(VP of Operations)으로 재직하며 조직의 급성장기를 관리하였고, 2021년 Anthropic 창립에 합류하였다.
 

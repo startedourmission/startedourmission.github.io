@@ -21,7 +21,7 @@ image: "![[1-init-momentum.png]]"
 
 ## 저자 소개
 
-Ilya Sutskever는 Hinton 연구실 박사과정으로 이후 OpenAI 공동 창립자가 되었습니다. James Martens는 Hessian-Free 최적화 전문가였습니다. George Dahl은 음성인식 분야에서도 활동했습니다. Geoffrey Hinton은 교신저자로 연구 방향을 지도했습니다.
+[[Ilya Sutskever]]는 Hinton 연구실 박사과정으로 이후 OpenAI 공동 창립자가 되었습니다. James Martens는 Hessian-Free 최적화 전문가였습니다. George Dahl은 음성인식 분야에서도 활동했습니다. Geoffrey Hinton은 교신저자로 연구 방향을 지도했습니다.
 
 ## 요약
 

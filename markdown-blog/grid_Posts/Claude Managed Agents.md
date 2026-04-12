@@ -11,7 +11,7 @@ description: "Anthropic이 발표한 Claude Managed Agents 퍼블릭 베타. 에
 
 프로토타입에서 프로덕션까지 수개월이 걸리는 이유는 모델 때문이 아니라 이 인프라 때문입니다.
 
-2026년 4월 8일, Anthropic이 **Claude Managed Agents** 퍼블릭 베타를 발표했습니다. 이 인프라를 통째로 맡기는 서비스입니다.
+2026년 4월 8일, Anthropic이 **Claude [[Managed Agents]]** 퍼블릭 베타를 발표했습니다. 이 인프라를 통째로 맡기는 서비스입니다.
 
 > 제품 발표: [Claude Managed Agents: get to production 10x faster](https://claude.com/blog/claude-managed-agents)
 > 기술 배경: [Scaling Managed Agents: Decoupling the brain from the hands](https://www.anthropic.com/engineering/managed-agents)

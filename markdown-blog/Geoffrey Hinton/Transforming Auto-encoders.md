@@ -21,7 +21,7 @@ image: "![[1-transforming-autoencoder.png]]"
 
 ## 저자 소개
 
-Geoffrey Hinton은 CNN의 대안적 접근을 모색하고 있었습니다. Alex Krizhevsky는 다음 해 AlexNet을 발표하게 되는 Hinton의 제자입니다. Sida Wang은 토론토대 학부 연구원이었습니다.
+Geoffrey Hinton은 CNN의 대안적 접근을 모색하고 있었습니다. Alex Krizhevsky는 다음 해 [[ImageNet Classification with Deep Convolutional Neural Networks|AlexNet]]을 발표하게 되는 Hinton의 제자입니다. Sida Wang은 토론토대 학부 연구원이었습니다.
 
 ## 요약
 

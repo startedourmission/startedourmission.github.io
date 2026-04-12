@@ -68,13 +68,13 @@ Emu3.5는 표준 트랜스포머 기반이지만 몇 가지 최신 기법을 추
 
 $$\text{Parameters: } 34.1\text{B} \text{ (Transformer: } 31.2\text{B, Embedding: } 2.9\text{B)}$$
 
-**GQA (Grouped Query Attention)**: 키-밸류 캐시를 줄여서 메모리 효율성 개선 **QK-Norm**: 쿼리와 키 프로젝션에 정규화로 어텐션 안정성 강화 **RoPE (Rotary Positional Embedding)**: 위치 인코딩
+**GQA (Grouped Query Attention)**: 키-밸류 캐시를 줄여서 메모리 효율성 개선 **QK-Norm**: 쿼리와 키 프로젝션에 정규화로 어텐션 안정성 강화 **[[RoPE]] (Rotary Positional Embedding)**: 위치 인코딩
 
 어텐션 헤드 수도 64개인데, 이 중 KV 헤드는 8개만 사용하는 구조입니다. 파라미터는 절약하되 성능 손실을 최소화하는 설계입니다.
 
 ### 4. 토크나이저
 
-시각 토크나이저는 **IBQ (Index Backpropagation Quantization)** 프레임워크 기반입니다.
+시각 토크나이저는 **IBQ (Index [[Learning representations by back-propagating errors|Backpropagation]] Quantization)** 프레임워크 기반입니다.
 
 다운샘플링 비율: 16배 (512×512 이미지 → ~1024 토큰), 코드북 크기: 131,072, 모델 크기: 455M 파라미터.
 

@@ -8,7 +8,7 @@ aliases:
   - "Rubin"
 ---
 
-NVIDIA Vera Rubin은 2026년 하반기 출시가 예정된 NVIDIA의 차차세대 데이터센터용 AI 가속기이다. Blackwell 이후의 로드맵에 해당하며, TSMC 3nm 공정을 채택한다.
+NVIDIA Vera Rubin은 2026년 하반기 출시가 예정된 NVIDIA의 차차세대 데이터센터용 AI 가속기이다. [[NVIDIA [[NVIDIA B200|B200]]|Blackwell]] 이후의 로드맵에 해당하며, TSMC 3nm 공정을 채택한다.
 
 ## 주요 사양
 

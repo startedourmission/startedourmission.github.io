@@ -339,7 +339,7 @@ Cursor ↔ ChatGPT 같은 경우:
 1. **의미적 관련성** (Semantic Relevance)
     
     - 벡터 유사도 기반 검색 (FAISS 등)
-    - RAG 파이프라인의 기본
+    - [[RAG]] 파이프라인의 기본
 2. **논리적 의존성** (Logical Dependency)
     
     - 현재 작업이 이전 결과에 직접 의존

@@ -6,7 +6,7 @@ aliases:
   - "Shervine Amidi"
 ---
 
-셰르빈 아미디(Shervine Amidi)는 스탠퍼드 대학교 CME295(트랜스포머와 LLM) 강의의 공동 강사로, 쌍둥이 형제인 Afshine Amidi와 함께 강의를 진행하고 있다.
+셰르빈 아미디(Shervine Amidi)는 스탠퍼드 대학교 CME295(트랜스포머와 LLM) 강의의 공동 강사로, 쌍둥이 형제인 [[Afshine Amidi]]와 함께 강의를 진행하고 있다.
 
 프랑스 에콜 폴리테크니크(살바르)를 졸업한 뒤 스탠퍼드 ICME(Institute for Computational and Mathematical Engineering)에서 석사 학위를 취득하였다. 산업 분야에서는 Uber, Google, Netflix에서 근무하였다.
 

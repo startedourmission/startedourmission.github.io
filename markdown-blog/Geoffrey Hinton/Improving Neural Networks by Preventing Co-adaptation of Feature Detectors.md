@@ -17,11 +17,11 @@ image: "![[1-dropout-original.png]]"
 
 ## 배경
 
-2012년, AlexNet 성공과 함께 깊은 신경망이 주목받았지만 과적합 문제는 심각했습니다. Hinton 그룹은 뉴런을 무작위로 끄는 것만으로 강력한 정규화가 가능하다는 것을 보였습니다. 성적 생식에서 유전자가 다양한 조합으로 작동해야 하는 것에서 영감을 얻었다고 알려져 있습니다.
+2012년, [[ImageNet Classification with Deep Convolutional Neural Networks|AlexNet]] 성공과 함께 깊은 신경망이 주목받았지만 과적합 문제는 심각했습니다. Hinton 그룹은 뉴런을 무작위로 끄는 것만으로 강력한 정규화가 가능하다는 것을 보였습니다. 성적 생식에서 유전자가 다양한 조합으로 작동해야 하는 것에서 영감을 얻었다고 알려져 있습니다.
 
 ## 저자 소개
 
-Geoffrey Hinton이 핵심 아이디어를 제안했습니다. Nitish Srivastava는 토론토대 박사과정 학생으로 이후 JMLR 정식 논문의 제1저자가 되었습니다. Alex Krizhevsky와 Ilya Sutskever는 AlexNet 공동 저자이기도 합니다. Ruslan Salakhutdinov는 토론토대 박사후 연구원이었습니다.
+Geoffrey Hinton이 핵심 아이디어를 제안했습니다. Nitish Srivastava는 토론토대 박사과정 학생으로 이후 JMLR 정식 논문의 제1저자가 되었습니다. Alex Krizhevsky와 [[Ilya Sutskever]]는 AlexNet 공동 저자이기도 합니다. Ruslan Salakhutdinov는 토론토대 박사후 연구원이었습니다.
 
 ## 요약
 

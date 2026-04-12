@@ -10,7 +10,7 @@ description: "Nous Research의 Hermes Agent — 스스로 배우고 성장하는
 
 요즘 AI 에이전트 하면 Claude Code, Cursor, Copilot 같은 IDE 내장형이나, ChatGPT/Claude 같은 API 래퍼를 떠올립니다. Hermes Agent는 둘 다 아닙니다.
 
-Nous Research가 2026년 2월에 공개한 Hermes Agent는 **"여러분의 서버에 살면서, 배운 것을 기억하고, 오래 쓸수록 더 잘하는"** 에이전트입니다. IDE에 붙어있지 않고, 특정 API에 종속되지 않고, 텔레그램이든 디스코드든 슬랙이든 이메일이든 어디서나 대화할 수 있습니다. GitHub 스타 53.4k, 포크 7k. MIT 라이선스.
+[[Nous Research]]가 2026년 2월에 공개한 Hermes Agent는 **"여러분의 서버에 살면서, 배운 것을 기억하고, 오래 쓸수록 더 잘하는"** 에이전트입니다. IDE에 붙어있지 않고, 특정 API에 종속되지 않고, 텔레그램이든 디스코드든 슬랙이든 이메일이든 어디서나 대화할 수 있습니다. GitHub 스타 53.4k, 포크 7k. MIT 라이선스.
 
 > GitHub: [NousResearch/hermes-agent](https://github.com/nousresearch/hermes-agent)
 > 공식 사이트: [hermes-agent.nousresearch.com](https://hermes-agent.nousresearch.com/)

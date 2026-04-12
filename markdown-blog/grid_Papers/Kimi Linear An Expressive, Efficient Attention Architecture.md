@@ -68,7 +68,7 @@ KDA는 스칼라 게이트를 **채널별 벡터 게이트**로 확장합니다:
 
 $$S_t = \left(I - \beta_t k_t k_t^\top\right) \text{Diag}(\alpha_t) S_{t-1} + \beta_t k_t v_t^\top$$
 
-여기서 $\text{Diag}(\alpha_t) \in \mathbb{R}^{d_k \times d_k}$는 각 특성 차원이 독립적인 망각률을 가집니다. 이는 RoPE의 차원별 다른 회전 주파수처럼, 각 차원에 다른 위치 인코딩을 효과적으로 부여합니다.
+여기서 $\text{Diag}(\alpha_t) \in \mathbb{R}^{d_k \times d_k}$는 각 특성 차원이 독립적인 망각률을 가집니다. 이는 [[RoPE]]의 차원별 다른 회전 주파수처럼, 각 차원에 다른 위치 인코딩을 효과적으로 부여합니다.
 
 **실제 계산**에서 이는 다음을 의미합니다:
 
