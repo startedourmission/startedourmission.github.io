@@ -1,7 +1,11 @@
 ---
 type: person
+description: UC Berkeley 교수, 로봇공학 및 강화학습 분야 세계적 전문가
 tags:
   - 인물
+  - 정보
+  - 머신러닝
+  - 딥러닝
 aliases:
   - "Pieter Abbeel"
 ---

@@ -1,8 +1,10 @@
 ---
 type: benchmark
+description: "Humanity's Last Exam 초고난도 벤치마크"
 tags:
   - 벤치마크
   - AI평가
+  - 정보
 aliases:
   - Humanity's Last Exam
 ---

@@ -1,7 +1,11 @@
 ---
 type: person
+description: Google DeepMind CEO, 2024년 노벨 화학상 수상자
 tags:
   - 인물
+  - 정보
+  - 딥러닝
+  - 머신러닝
 aliases:
   - "Demis Hassabis"
 ---
@@ -12,4 +16,4 @@ aliases:
 
 2010년 셰인 레그(Shane Legg), 무스타파 슐레이만(Mustafa Suleyman)과 함께 DeepMind를 공동 설립하였다. 2014년 Google이 DeepMind를 인수하였고, 2023년 Google Brain과 합병하여 Google DeepMind로 재편되면서 통합 조직의 CEO를 맡았다. AlphaGo(2016년 이세돌 9단 격파), AlphaFold(단백질 구조 예측 혁명), AlphaFold2 등을 개발하였으며, AlphaFold의 성과로 존 점퍼(John Jumper)와 함께 2024년 노벨 화학상을 공동 수상하였다.
 
-2025년 타임지 선정 '세계에서 가장 영향력 있는 100인'에 이름을 올렸으며, 2025년 타임지 '올해의 인물'에서는 "AI의 설계자들(Architects of AI)" 중 한 명으로 선정되었다. 인류가 "발견의 새로운 황금시대" 문턱에 서 있다고 주장하며, "급진적 풍요(radical abundance)"의 시대가 다가오고 있다고 전망하고 있다. 범용인공지능(AGI)이 2030년까지 실현될 수 있다고 예측하였으며, Google DeepMind에서는 Gemini 모델 시리즈 개발을 주도하고 있다.
+[[Yann LeCun]] 등과 함께 2025년 타임지 선정 '세계에서 가장 영향력 있는 100인'에 이름을 올렸으며, 2025년 타임지 '올해의 인물'에서는 "AI의 설계자들(Architects of AI)" 중 한 명으로 선정되었다. 인류가 "발견의 새로운 황금시대" 문턱에 서 있다고 주장하며, "급진적 풍요(radical abundance)"의 시대가 다가오고 있다고 전망하고 있다. 범용인공지능(AGI)이 2030년까지 실현될 수 있다고 예측하였으며, Google DeepMind에서는 Gemini 모델 시리즈 개발을 주도하고 있다.

@@ -1,7 +1,11 @@
 ---
 type: person
+description: Anthropic 공동 창립자, 신경망 해석가능성 분야 선구적 연구자
 tags:
   - 인물
+  - 정보
+  - LLM
+  - 딥러닝
 aliases:
   - "Christopher Olah"
 ---
@@ -10,6 +14,6 @@ aliases:
 
 Google Brain에 재직하던 시절 머신러닝 시각화 저널 distill.pub를 공동 창립하여 신경망 내부 작동 원리를 시각적으로 설명하는 새로운 연구 커뮤니케이션 방식을 개척하였다. 이 저널은 인터랙티브 시각화를 활용한 연구 발표 형식으로 학계에 큰 반향을 일으켰다.
 
-2021년 Anthropic 창립에 합류한 뒤로는 기계적 해석가능성(mechanistic interpretability) 연구를 주도하고 있다. 2024년에는 희소 오토인코더(Sparse Autoencoder)를 활용하여 Claude Sonnet 내부에서 3,400만 개 이상의 특징(feature)을 식별하는 데 성공하였다. 이 중에는 "풍자", "DNA 서열", "음모론" 등 구체적인 개념에 반응하는 특징들이 포함되어 있으며, 유명한 "금문교 뉴런(Golden Gate Bridge Neuron)" 실험에서는 특정 특징을 인위적으로 증폭하면 Claude가 해당 주제에 집착하는 행동을 보이는 것을 시연하였다.
+2021년 [[Dario Amodei]], [[Daniela Amodei]] 등이 주도한 Anthropic 창립에 합류한 뒤로는 기계적 해석가능성(mechanistic interpretability) 연구를 주도하고 있다. 2024년에는 희소 오토인코더(Sparse Autoencoder)를 활용하여 Claude Sonnet 내부에서 3,400만 개 이상의 특징(feature)을 식별하는 데 성공하였다. 이 중에는 "풍자", "DNA 서열", "음모론" 등 구체적인 개념에 반응하는 특징들이 포함되어 있으며, 유명한 "금문교 뉴런(Golden Gate Bridge Neuron)" 실험에서는 특정 특징을 인위적으로 증폭하면 Claude가 해당 주제에 집착하는 행동을 보이는 것을 시연하였다.
 
 Anthropic CEO [[Dario Amodei]]는 2027년까지 AI 모델의 대부분의 문제를 안정적으로 탐지하겠다는 목표를 제시하였으며, 올라의 해석가능성 연구가 이 목표의 핵심 축을 담당하고 있다. 올라의 연구는 단순히 신경망을 이해하는 수준을 넘어, AI 시스템의 행동을 정밀하게 제어할 수 있는 가능성을 열었다는 점에서 AI 안전 분야의 중추적 성과로 평가받고 있다.

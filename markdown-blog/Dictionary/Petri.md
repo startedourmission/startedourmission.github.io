@@ -1,8 +1,10 @@
 ---
 type: benchmark
+description: "AI 정렬 상태 자동 평가 벤치마크"
 tags:
   - 벤치마크
   - AI평가
+  - 정보
 aliases:
   - Petri 2.0
 ---

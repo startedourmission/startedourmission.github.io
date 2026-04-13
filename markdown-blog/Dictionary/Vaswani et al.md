@@ -1,7 +1,9 @@
 ---
 type: person
+description: "Attention Is All You Need 트랜스포머 논문 저자 그룹"
 tags:
   - 인물
+  - 트랜스포머
 aliases:
   - "Vaswani et al."
   - "트랜스포머 논문 저자"

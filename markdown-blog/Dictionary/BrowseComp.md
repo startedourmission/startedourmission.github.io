@@ -1,8 +1,10 @@
 ---
 type: benchmark
+description: "웹 브라우징+정보 수집 능력 평가 벤치마크"
 tags:
   - 벤치마크
   - AI평가
+  - 정보
 aliases:
   - BrowseComp
 ---

@@ -1,7 +1,11 @@
 ---
 type: person
+description: 스탠퍼드 CS229 딥러닝 파트 강사
 tags:
   - 인물
+  - 정보
+  - 머신러닝
+  - 딥러닝
 aliases:
   - "Kian Katanforoosh"
 ---

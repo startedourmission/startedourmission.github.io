@@ -1,8 +1,10 @@
 ---
 type: benchmark
+description: "GitHub 이슈 해결 소프트웨어 엔지니어링 벤치마크"
 tags:
   - 벤치마크
   - AI평가
+  - 정보
 aliases:
   - SWE-bench Verified
   - SWE-bench Pro

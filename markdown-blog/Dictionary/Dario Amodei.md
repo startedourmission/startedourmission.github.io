@@ -1,14 +1,17 @@
 ---
 type: person
+description: Anthropic 공동 창립자이자 CEO, AI 안전 연구의 선두 주자
 tags:
   - 인물
+  - 정보
+  - LLM
 aliases:
   - "Dario Amodei"
 ---
 
 다리오 아모데이(Dario Amodei)는 AI 안전 기업 Anthropic의 공동 창립자이자 CEO이다. 이탈리아계 미국인으로, 프린스턴 대학교에서 생물물리학 박사 학위를 취득하였다.
 
-OpenAI에서 연구 부사장(VP of Research)으로 GPT-2, GPT-3 개발을 이끌었으나, AI 안전에 대한 근본적인 방향 차이로 2021년 여동생 [[Daniela Amodei]]를 포함한 핵심 연구진과 함께 퇴사하여 Anthropic을 설립하였다. Anthropic은 Claude 시리즈 대규모 언어 모델을 개발하는 공익법인(Public Benefit Corporation)으로, 조종 가능하고 해석 가능하며 안전한 AI 시스템 구축을 목표로 한다.
+OpenAI에서 연구 부사장(VP of Research)으로 GPT-2, GPT-3 개발을 이끌었으나, AI 안전에 대한 근본적인 방향 차이로 2021년 여동생 [[Daniela Amodei]]를 포함한 [[Jared Kaplan]], [[Sam McCandlish]] 등 핵심 연구진과 함께 퇴사하여 Anthropic을 설립하였다. Anthropic은 Claude 시리즈 대규모 언어 모델을 개발하는 공익법인(Public Benefit Corporation)으로, 조종 가능하고 해석 가능하며 안전한 AI 시스템 구축을 목표로 한다.
 
 2025년 12월 타임지 '올해의 인물'로 선정되었으며, 같은 해 에세이 "Machines of Loving Grace"를 통해 AI가 가져올 긍정적 변화와 위험 요인을 동시에 조명하였다. 2026년 1월에는 후속 에세이 "The Adolescence of Technology"를 발표하여 강력한 AI가 초래할 위험에 대한 논의를 확장하였다.
 

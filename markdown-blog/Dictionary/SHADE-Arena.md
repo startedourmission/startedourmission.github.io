@@ -1,8 +1,10 @@
 ---
 type: benchmark
+description: "AI 은밀 부수 과제 수행 정렬 벤치마크"
 tags:
   - 벤치마크
   - AI평가
+  - 정보
 aliases:
   - SHADE Arena
 ---

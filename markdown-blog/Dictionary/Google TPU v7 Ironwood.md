@@ -1,8 +1,10 @@
 ---
 type: hardware
+description: "Google 7세대 TPU, 추론 최적화, 42.5 exaflops"
 tags:
   - 벤치마크
   - AI평가
+  - TPU
 aliases:
   - "TPU v7"
   - "Ironwood"

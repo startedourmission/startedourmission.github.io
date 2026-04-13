@@ -1,8 +1,10 @@
 ---
 type: hardware
+description: "H100 후속, 141GB HBM3e 추론 최적화 GPU"
 tags:
   - 벤치마크
   - AI평가
+  - GPU
 aliases:
   - "H200"
 ---

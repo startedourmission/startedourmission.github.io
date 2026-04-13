@@ -1,8 +1,10 @@
 ---
 type: benchmark
+description: "12개 언어 다국어 사실 환각 평가"
 tags:
   - 벤치마크
   - AI평가
+  - 정보
 aliases:
   - ECLeKTic
 ---

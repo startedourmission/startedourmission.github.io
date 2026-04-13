@@ -1,7 +1,11 @@
 ---
 type: person
+description: 스탠퍼드 CME295 트랜스포머와 LLM 강의 공동 강사, 치트시트 시리즈 제작자
 tags:
   - 인물
+  - 정보
+  - LLM
+  - 머신러닝
 aliases:
   - "Shervine Amidi"
 ---

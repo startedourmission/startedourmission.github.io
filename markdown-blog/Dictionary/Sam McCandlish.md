@@ -1,7 +1,10 @@
 ---
 type: person
+description: Anthropic 공동 창립자이자 수석 아키텍트, 스케일링 법칙 공동 연구자
 tags:
   - 인물
+  - 정보
+  - LLM
 aliases:
   - "Sam McCandlish"
 ---

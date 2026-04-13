@@ -1,7 +1,10 @@
 ---
 type: person
+description: GPT-3 논문 제1저자, Anthropic 공동 창립자이자 수석 컴퓨트 책임자
 tags:
   - 인물
+  - 정보
+  - LLM
 aliases:
   - "Tom Brown"
 ---

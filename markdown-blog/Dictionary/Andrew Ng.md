@@ -1,7 +1,11 @@
 ---
 type: person
+description: 스탠퍼드 CS229 교수, Coursera 공동 창립자, deeplearning.ai 설립자
 tags:
   - 인물
+  - 정보
+  - 머신러닝
+  - 딥러닝
 aliases:
   - "Andrew Ng"
 ---
