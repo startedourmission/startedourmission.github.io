@@ -3,7 +3,6 @@ date: 2026-04-05
 tags:
   - 정보
   - LLM
-  - Headliner
 description: "2026년 2월, 공개 GitHub 커밋의 4%—하루 약 13만 5천 건—가 Claude Code에 의해 작성됐다. 이게 어떤 의미인지 뜯어봤다."
 ---
 

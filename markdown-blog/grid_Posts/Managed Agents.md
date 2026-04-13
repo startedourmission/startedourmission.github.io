@@ -2,7 +2,6 @@
 date: 2026-04-09
 tags:
   - 정보
-  - Headliner
 aliases:
 image: "![[managed_agents.png]]"
 description: Anthropic이 관리형 에이전트(Managed Agents)를 설계하면서 얻은 아키텍처 교훈을 정리한 글입니다. 하네스 엔지니어링과 관리형 에이전트. 우리의 페인 포인트를 정확히 짚어낸 Anthropic의 통찰이 돋보입니다.

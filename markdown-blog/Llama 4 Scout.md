@@ -2,7 +2,6 @@
 date: 2026-04-11
 tags:
   - 정보
-  - Headliner
   - LLM
   - 오픈소스
 description: "Meta의 Llama 4 Scout — 17B 파라미터 오픈소스 멀티모달 MoE 모델. 단일 H100 GPU에서 10M 토큰 컨텍스트, Gemma 3와 Gemini Flash를 능가하는 성능."

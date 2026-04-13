@@ -2,7 +2,6 @@
 date: 2026-04-05
 tags:
   - 정보
-  - Headliner
   - 오픈소스
 description: "브라우저 없이 텍스트 너비를 정확히 측정하는 Node.js 라이브러리. Excalidraw 도해 자동 생성 과정에서 탄생한 서버사이드 measureText() 구현체."
 ---

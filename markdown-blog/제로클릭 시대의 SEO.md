@@ -2,7 +2,6 @@
 date: 2026-04-13
 tags:
   - 정보
-  - Headliner
 description: "검색의 60%가 클릭 없이 끝나는 제로클릭 시대. Google AI Overview가 CTR을 61% 떨어뜨린 현실과, 그래도 트래픽을 지키는 방법."
 ---
 

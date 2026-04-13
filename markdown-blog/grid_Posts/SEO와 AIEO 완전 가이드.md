@@ -2,7 +2,6 @@
 date: 2026-04-09
 tags:
   - 정보
-  - Headliner
 description: "2026년 기준 SEO와 AIEO(AI Engine Optimization) 실전 가이드. 검색엔진과 AI 크롤러 모두에 최적화하는 방법을 정리했습니다."
 ---
 

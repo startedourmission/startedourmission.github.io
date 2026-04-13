@@ -2,7 +2,6 @@
 date: 2026-04-11
 tags:
   - 정보
-  - Headliner
   - LLM
 description: "Claude Code의 Ultraplan — CLI에서 시작하고 브라우저에서 검토하고 클라우드에서 실행하는 계획 모드. 터미널을 점유하지 않고 Opus급 계획을 뽑아내는 방법."
 ---

@@ -2,7 +2,6 @@
 date: 2026-04-11
 tags:
   - 정보
-  - Headliner
   - LLM
   - 오픈소스
 description: "Nous Research의 Hermes Agent — 스스로 배우고 성장하는 오픈소스 AI 에이전트. 5단계 메모리, 자동 스킬 생성, 6개 실행 백엔드, 40+ 도구를 갖춘 로컬 퍼스트 에이전트 프레임워크."

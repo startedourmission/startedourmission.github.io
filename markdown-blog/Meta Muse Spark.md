@@ -2,7 +2,6 @@
 date: 2026-04-11
 tags:
   - 정보
-  - Headliner
   - LLM
 description: "Meta Superintelligence Labs의 첫 모델 Muse Spark. 네이티브 멀티모달 추론, 비주얼 CoT, 멀티에이전트 오케스트레이션을 갖춘 Meta의 AI 전략 전환점."
 ---

@@ -3,7 +3,6 @@ date: 2025-11-21
 tags:
   - 논문
   - LLM
-  - Headliner
 aliases:
   - Souper-Model: How Simple Arithmetic Unlocks State-of-the-Art LLM Performance
 image: "![[1-souper.png]]"

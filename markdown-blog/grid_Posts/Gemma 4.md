@@ -4,7 +4,6 @@ tags:
   - 정보
   - LLM
   - 구글
-  - Headliner
 aliases:
 image: "![[image.png]]"
 description: Google DeepMind이 Gemma 4를 공개했습니다. Gemini 3의 연구와 기술을 기반으로 만든 오픈 모델 패밀리이며, 이번엔 Apache 2.0 라이선스입니다. E2B, E4B, 26B MoE, 31B Dense 네 가지 사이즈로 나왔고, 31B 모델은 Arena AI 텍스트 리더보드에서 오픈 모델 3위, 26B MoE는 6위를 기록했습니다. 자기보다 20배 큰 모델을 이기는 파라미터 대비 지능(intelligence-per-parameter) 효율을 강조하고 있습니다. Gemma 시리즈 출시 이후 누적 다운로드 4억 회, 커뮤니티 변형 모델 10만 개라는 숫자도 인상적입니다.

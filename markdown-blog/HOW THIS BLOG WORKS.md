@@ -76,7 +76,6 @@ date: 2026-04-13
 tags:
   - 정보
   - LLM
-  - Headliner
 description: "한 줄 설명"
 image: "![[이미지.png]]"
 ---

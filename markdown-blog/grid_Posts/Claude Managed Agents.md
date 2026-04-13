@@ -2,7 +2,6 @@
 date: 2026-04-09
 tags:
   - 정보
-  - Headliner
 description: "Anthropic이 발표한 Claude Managed Agents 퍼블릭 베타. 에이전트 인프라를 통째로 맡기고, 프로토타입에서 프로덕션까지 수일 만에 가능하게 합니다."
 ---
 에이전트를 만드는 건 어렵지 않습니다. 프로덕션에 올리는 게 어렵습니다.

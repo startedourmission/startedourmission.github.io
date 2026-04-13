@@ -2,7 +2,6 @@
 date: 2026-04-05
 tags:
   - 정보
-  - Headliner
 aliases:
   - Karpathy LLM Knowledge Base
 description: "Andrej Karpathy가 공유한 LLM 기반 개인 지식 관리 워크플로우. 원본 자료를 LLM이 위키로 컴파일하고, 옵시디언으로 조회하고, Q&A와 린팅으로 지식을 누적하는 구조."

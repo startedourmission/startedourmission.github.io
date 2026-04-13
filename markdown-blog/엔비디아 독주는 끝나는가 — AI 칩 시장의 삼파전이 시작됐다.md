@@ -2,7 +2,6 @@
 date: 2026-04-06
 tags:
   - 정보
-  - Headliner
 
 description: "엔비디아의 GPU 독주가 흔들리기 시작했다. AMD, 구글 TPU, 커스텀 실리콘이 치고 올라오는 2026년 AI 칩 시장의 지형 변화를 뜯어봤다."
 ---
