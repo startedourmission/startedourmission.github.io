@@ -4,7 +4,8 @@ tags:
   - 정보
   - LLM
   - 오픈소스
-description: "Nous Research의 Hermes Agent — 스스로 배우고 성장하는 오픈소스 AI 에이전트. 5단계 메모리, 자동 스킬 생성, 6개 실행 백엔드, 40+ 도구를 갖춘 로컬 퍼스트 에이전트 프레임워크."
+  - headliner
+description: Nous Research의 Hermes Agent — 스스로 배우고 성장하는 오픈소스 AI 에이전트. 5단계 메모리, 자동 스킬 생성, 6개 실행 백엔드, 40+ 도구를 갖춘 로컬 퍼스트 에이전트 프레임워크.
 ---
 
 요즘 AI 에이전트 하면 Claude Code, Cursor, Copilot 같은 IDE 내장형이나, ChatGPT/Claude 같은 API 래퍼를 떠올립니다. Hermes Agent는 둘 다 아닙니다.

@@ -2,6 +2,7 @@
 date: 2026-04-10
 tags:
   - 논문
+  - headliner
 aliases: ""
 image: "![[Pasted image 20260411132458.png]]"
 description: 메타는 이미지의 세밀한 속성을 표현하기 위해 이미지 생성을 한 번에 하지 않고, 계획-스케치-검수-수정의 반복 루프로 분해합니다.

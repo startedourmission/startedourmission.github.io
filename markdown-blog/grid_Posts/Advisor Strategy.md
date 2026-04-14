@@ -3,6 +3,7 @@ date: 2026-04-09
 tags:
   - 정보
   - LLM
+  - headliner
 description: Anthropic의 Advisor Strategy — 큰 모델이 작은 모델에게 조언만 하고 실행은 맡기는 새로운 에이전트 아키텍처. Sonnet + Opus 조합으로 비용은 줄이고 성능은 올리는 방법.
 image: "![[advisor_strategy.png]]"
 ---
