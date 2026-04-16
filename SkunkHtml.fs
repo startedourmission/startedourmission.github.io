@@ -8,9 +8,9 @@
     let escHtml (s: string) = WebUtility.HtmlEncode(s)
     let escJson (s: string) = s.Replace("\\", "\\\\").Replace("\"", "\\\"").Replace("\n", "\\n").Replace("\r", "")
 
-    /// <!-- arch:preset_name --> 코멘트를 인터랙티브 플로차트 div로 변환
+    /// %%arch:preset_name%% 텍스트 마커를 인터랙티브 플로차트 div로 변환
     let expandArchMarkers (html: string) =
-        Regex.Replace(html, @"<!--\s*arch:(\w+)\s*-->", """<div class="arch-flow" data-arch="$1"></div>""")
+        Regex.Replace(html, @"<p>\s*%%arch:(\w+)%%\s*</p>", """<div class="arch-flow" data-arch="$1"></div>""")
 
     let generateFinalHtml (head: string) (header: string) (footer: string) (content: string) (script: string) =
         $"""
