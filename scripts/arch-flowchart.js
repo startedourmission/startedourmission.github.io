@@ -323,13 +323,20 @@
     /* 툴팁 */
     const tooltip = document.createElement("div");
     Object.assign(tooltip.style, {
-      position: "fixed", padding: "8px 14px", background: "#222", color: "#fff",
+      position: "absolute", padding: "8px 14px", background: "#222", color: "#fff",
       borderRadius: "6px", fontSize: "13px", lineHeight: "1.5",
       pointerEvents: "none", opacity: "0", transition: "opacity 0.15s",
       zIndex: "9999", maxWidth: "280px", whiteSpace: "pre-wrap",
       fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+      left: "50%", transform: "translateX(-50%)",
     });
-    document.body.appendChild(tooltip);
+    container.style.position = "relative";
+    container.appendChild(tooltip);
+
+    /* 다른 곳 탭하면 툴팁 닫기 (모바일) */
+    document.addEventListener("click", function (e) {
+      if (!container.contains(e.target)) tooltip.style.opacity = "0";
+    });
 
     /* 데이터 흐름 애니메이션용 라인 경로 */
     const flowPath = svgEl("line", {
@@ -372,18 +379,24 @@
       /* shape */
       g.appendChild(textEl(cx, y + 38, layer.shape, { size: "11", fill: "#666" }));
 
-      /* 호버 효과 */
-      g.addEventListener("mouseenter", function (e) {
+      /* 툴팁 위치 계산 (박스 아래 중앙) */
+      function positionTooltipBelow() {
+        var svgRect = svg.getBoundingClientRect();
+        var containerRect = container.getBoundingClientRect();
+        var scaleY = svgRect.height / parseFloat(svg.getAttribute("viewBox").split(" ")[3]);
+        var boxBottom = svgRect.top - containerRect.top + (y + BOX_H) * scaleY + 6;
+        tooltip.style.top = boxBottom + "px";
+      }
+
+      /* 데스크톱: 호버 */
+      g.addEventListener("mouseenter", function () {
         rect.setAttribute("stroke-width", "2.5");
         rect.setAttribute("filter", "url(#shadow)");
         if (layer.detail) {
           tooltip.textContent = layer.name + "\n" + layer.detail;
+          positionTooltipBelow();
           tooltip.style.opacity = "1";
         }
-      });
-      g.addEventListener("mousemove", function (e) {
-        tooltip.style.left = (e.clientX + 12) + "px";
-        tooltip.style.top = (e.clientY - 10) + "px";
       });
       g.addEventListener("mouseleave", function () {
         rect.setAttribute("stroke-width", "1.5");
@@ -391,14 +404,21 @@
         tooltip.style.opacity = "0";
       });
 
-      /* 클릭: detail 토글 (모바일 지원) */
-      g.addEventListener("click", function () {
+      /* 모바일 + 데스크톱: 클릭/탭 토글 */
+      g.addEventListener("click", function (e) {
+        e.stopPropagation();
         if (!layer.detail) return;
-        if (tooltip.style.opacity === "1") {
-          tooltip.style.opacity = "0";
-        } else {
+        var isVisible = tooltip.style.opacity === "1" && tooltip.textContent === layer.name + "\n" + layer.detail;
+        tooltip.style.opacity = "0";
+        if (!isVisible) {
           tooltip.textContent = layer.name + "\n" + layer.detail;
+          positionTooltipBelow();
           tooltip.style.opacity = "1";
+          rect.setAttribute("stroke-width", "2.5");
+          rect.setAttribute("filter", "url(#shadow)");
+        } else {
+          rect.setAttribute("stroke-width", "1.5");
+          rect.removeAttribute("filter");
         }
       });
 
