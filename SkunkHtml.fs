@@ -8,6 +8,10 @@
     let escHtml (s: string) = WebUtility.HtmlEncode(s)
     let escJson (s: string) = s.Replace("\\", "\\\\").Replace("\"", "\\\"").Replace("\n", "\\n").Replace("\r", "")
 
+    /// <!-- arch:preset_name --> 코멘트를 인터랙티브 플로차트 div로 변환
+    let expandArchMarkers (html: string) =
+        Regex.Replace(html, @"<!--\s*arch:(\w+)\s*-->", """<div class="arch-flow" data-arch="$1"></div>""")
+
     let generateFinalHtml (head: string) (header: string) (footer: string) (content: string) (script: string) =
         $"""
         <!DOCTYPE html>
@@ -218,13 +222,13 @@
 
         let htmlContent =
             match isArticle markdownFilePath with
-            | false -> Markdown.ToHtml(processedMarkdownContent)
+            | false -> Markdown.ToHtml(processedMarkdownContent) |> expandArchMarkers
             | true ->
                 let date = Path.GetFileNameWithoutExtension(markdownFilePath)
-                
+
                 // 파일명을 게시글 상단에 표시
                 let titleDisplay = $"<h1 class=\"post-title\">{date}</h1>"
-                
+
                 // 태그 표시
                 let tagsHtml = generateTagsHtml tags
 
@@ -232,7 +236,7 @@
                     Path.Combine(Config.htmlDir, "script_giscus.html")
                     |> Disk.readFile
 
-                let mainHtmlContent = titleDisplay + tagsHtml + Markdown.ToHtml(processedMarkdownContent)
+                let mainHtmlContent = titleDisplay + tagsHtml + (Markdown.ToHtml(processedMarkdownContent) |> expandArchMarkers)
                 mainHtmlContent  + giscusScript
 
         let finalHtmlContent =
