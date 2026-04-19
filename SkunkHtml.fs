@@ -245,7 +245,7 @@
         printfn $"Processing {Path.GetFileName markdownFilePath} ->"
         Disk.writeFile outputHtmlFilePath finalHtmlContent
 
-    let createIndexPage (header: string) (footer: string) (gridSections: (string * Post list) list) (navFolders: string array) (regularPosts: Post list) (allPosts: Post list) =
+    let createIndexPage (header: string) (footer: string) (gridSections: (string * Post list) list) (navFolders: string array) (regularPosts: Post list) (allPosts: Post list) (graphEdges: (string * string) list) =
         let frontPageMarkdownFilePath = Path.Combine(Config.markdownDir, Config.frontPageMarkdownFileName)
 
         let frontPageContentHtml =
@@ -337,9 +337,39 @@
                 </section>
                 """
 
+        // 그래프 뷰 데이터 직렬화 (노드 = 포스트, 엣지 = 위키링크)
+        let graphNodesJson =
+            allPosts
+            |> List.map (fun post ->
+                let hashId =
+                    if post.Url.EndsWith(".html") then post.Url.Substring(0, post.Url.Length - 5)
+                    else post.Url
+                $"""{{"id":"{escJson hashId}","title":"{escJson post.Title}","url":"{escJson post.Url}","category":"{escJson post.Category}"}}""")
+            |> String.concat ","
+        let graphEdgesJson =
+            graphEdges
+            |> List.map (fun (src, tgt) -> $"""{{"source":"{escJson src}","target":"{escJson tgt}"}}""")
+            |> String.concat ","
+        let graphJson = $"""{{"nodes":[{graphNodesJson}],"edges":[{graphEdgesJson}]}}"""
+        let graphViewHtml = $"""
+                <section class="graph-view-section">
+                    <h2>Graph</h2>
+                    <div id="graph-view-container">
+                        <div id="graph-view"></div>
+                        <div class="graph-view-controls">
+                            <button id="graph-reset" class="graph-btn" type="button">Reset</button>
+                        </div>
+                    </div>
+                </section>
+                <script src="https://d3js.org/d3.v7.min.js"></script>
+                <script>window.graphData = {graphJson};</script>
+                <script src="scripts/graph-view.js"></script>
+                """
+
         let content =
             $"""
         {frontPageContentHtml}
+        {graphViewHtml}
         {headlinerHtml}
         {tagsHtml}
         """

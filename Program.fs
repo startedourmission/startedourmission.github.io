@@ -142,6 +142,31 @@ let main argv =
 
     // grid_Posts 폴더의 글들을 Posts 페이지로 사용
     let regularPosts = allPosts |> List.filter (fun post -> post.Category = "Posts")
+
+    // 위키링크 그래프 데이터 수집
+    // 파일 경로 → (filename, hashId) 매핑 만들기
+    let postFileMap =
+        indexListFiles
+        |> Array.map (fun file ->
+            let filename = Path.GetFileNameWithoutExtension(file)
+            let hashId = Url.toHashId filename
+            (file, filename, hashId))
+    let titleToHash =
+        postFileMap
+        |> Array.map (fun (_, filename, hashId) -> (filename, hashId))
+        |> Map.ofArray
+    let graphEdges =
+        postFileMap
+        |> Array.collect (fun (file, _, sourceHash) ->
+            let content = File.ReadAllText(file)
+            Obsidian.extractPageWikiLinks content
+            |> List.choose (fun target ->
+                match Map.tryFind target titleToHash with
+                | Some targetHash when targetHash <> sourceHash -> Some (sourceHash, targetHash)
+                | _ -> None)
+            |> List.toArray)
+        |> Array.distinct
+        |> Array.toList
     
     // Canvas 파일들을 파싱하여 Canvas 객체 리스트 생성
     let allCanvases =
@@ -156,6 +181,7 @@ let main argv =
     printfn $"Grid sections: {gridSections.Length}"
     printfn $"Regular posts: {regularPosts.Length}"
     printfn $"Canvas files: {allCanvases.Length}"
+    printfn $"Graph edges: {graphEdges.Length}"
 
     let createBlogArticlePages () = 
         blogArticleFiles
@@ -211,7 +237,7 @@ let main argv =
             let gridPagePath = Path.Combine(Config.outputDir, $"{urlFriendlyTitle}.html")
             SkunkHtml.createGridSectionPage header footer title posts gridPagePath navFolders gridSections)
 
-    createIndexPage header footer gridSections navFolders regularPosts allPosts
+    createIndexPage header footer gridSections navFolders regularPosts allPosts graphEdges
     createOtherPages ()
     createBlogArticlePages ()
     createCategoryPages ()

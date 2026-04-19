@@ -196,7 +196,33 @@ module Obsidian =
                 []
         else
             []
-    
+
+    // 본문에서 페이지 위키링크 타겟 파일명만 추출 (이미지 ![[...]] 제외, 코드블록/인라인코드 제외)
+    let extractPageWikiLinks (markdownContent: string) =
+        // 프론트매터 제거
+        let frontMatterPattern = @"^\s*---\s*\n[\s\S]*?\n\s*---\s*\n"
+        let body = Regex.Replace(markdownContent, frontMatterPattern, "")
+        // 코드블록(```...```)과 인라인 코드(`...`) 제거
+        let withoutFences = Regex.Replace(body, @"```[\s\S]*?```", "")
+        let withoutInline = Regex.Replace(withoutFences, @"`[^`\n]*`", "")
+        // 이미지 위키링크(![[...]])는 매칭에서 제외하기 위해 선행 '!' 제외
+        let pattern = @"(?<!!)\[\[([^\]]+)\]\]"
+        Regex.Matches(withoutInline, pattern)
+        |> Seq.cast<Match>
+        |> Seq.map (fun m ->
+            let raw = m.Groups.[1].Value
+            // 파이프 표시 분리, 헤더앵커(#) 제거
+            let target =
+                if raw.Contains("|") then raw.Split('|').[0]
+                else raw
+            let cleaned =
+                if target.Contains("#") then target.Split('#').[0]
+                else target
+            cleaned.Trim())
+        |> Seq.filter (fun s -> s.Length > 0)
+        |> Seq.distinct
+        |> Seq.toList
+
     // YAML 프론트매터에서 이미지 URL 추출
     let extractImageUrl (markdownFilePath: string) (markdownContent: string) =
         let assetsPrefix = getAssetsPrefix markdownFilePath
