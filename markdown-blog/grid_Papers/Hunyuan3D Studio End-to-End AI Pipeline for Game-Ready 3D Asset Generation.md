@@ -19,7 +19,7 @@ description: 텐센트의 Hunyuan3D Studio 논문을 요약합니다. 단일 이
 
 프롬프트로 생성할 수도 있고 기존 사진으로 만들 수도 있네요. 3D 모델링을 잘 몰라도 제법 고품질이라는 것을 알 수 있었습니다. 중국의 기술 발전이 새삼 무섭네요.
 
-![[Hun_1.png]]
+![[블로그/markdown-blog/grid_Papers/_assets/Hun_1.png]]
 
 # 요약
 

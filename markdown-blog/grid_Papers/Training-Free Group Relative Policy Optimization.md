@@ -16,7 +16,7 @@ description: LLM의 성능 향상을 위해 강화 학습을 흔히 사용하죠
 
 **핵심 아이디어**: 기존 GRPO가 그래디언트 업데이트를 통해 파라미터 공간에서 정책을 최적화하는 반면, Training-Free GRPO는 맥락 공간(context space)에서 정책을 최적화합니다. 즉, 모델 파라미터는 동결한 채로 경험적 지식(experiential knowledge)을 토큰 사전 정보(token prior)로 활용하여 출력 분포를 조정합니다.
 
-![[1-trainig-free-grpo-1.png]]
+![[블로그/markdown-blog/grid_Papers/_assets/1-trainig-free-grpo-1.png]]
 
 **주요 구성 요소**:
 

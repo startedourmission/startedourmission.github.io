@@ -13,7 +13,7 @@ description: Gensyn AI의 SAPO 논문을 요약합니다. 분산된 노드들이
 
 Gensyn는 LLM 모델 개발 회사는 아닙니다. 블록체인 기반 회사입니다. SAPO에 블록체인을 사용한 것도 아닙니다. 그들이 개발한 것은 기존 모델을 훈련할 수 있는 방법론과 플랫폼을 제공합니다. 신기한 비즈니스 모델이네요. 그런데 이 SAPO라는 것이 재밌습니다. 전통적인 중앙집중식 시스템과 다르게 각 노드가 자신만의 정책을 관리하면서 생성한 경험(rollout)을 다른 노드들과 공유하는 분산형 구조입니다. 이를테면 학생들이 서로 문제 풀이 과정을 공유하며 함께 공부하는 것 같습니다.
 
-![[SharingisCaring_1.png]]
+![[블로그/markdown-blog/grid_Papers/_assets/SharingisCaring_1.png]]
 
 # 요약
 

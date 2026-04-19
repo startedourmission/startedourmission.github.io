@@ -12,7 +12,7 @@ description: Prefix-Tuning 논문을 요약하며, 대형 언어모델의 파라
 
 기존 파인튜닝 방식은 GPT-2의 774M개, GPT-3의 175B개 파라미터를 모두 업데이트하고 각 태스크마다 전체 모델을 저장해야 했습니다. 만약 100개의 서로 다른 태스크가 있다면 100개의 모델 복사본이 필요한 셈이죠. Prefix-Tuning은 이런 비효율성을 해결하기 위해 모델 파라미터는 고정하고 작은 연속적인 프롬프트만 최적화하는 방법을 제안합니다.
 
-![[Prefix-Tuning_1.png]]
+![[블로그/markdown-blog/grid_Papers/_assets/Prefix-Tuning_1.png]]
 # 요약
 
 **아키텍처**: 사전훈련된 언어모델에 학습 가능한 연속적 prefix 벡터를 추가하는 구조

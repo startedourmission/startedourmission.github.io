@@ -27,7 +27,7 @@ David Rumelhart는 UCSD 인지과학자로 병렬분산처리(PDP) 그룹의 중
 
 **핵심 혁신**: 은닉층이 임의로 깊어져도 체인 룰(chain rule)로 모든 그래디언트를 계산할 수 있다는 증명입니다. 네트워크가 자동으로 "숨겨진 특징"을 배웁니다.
 
-![[1-backpropagation.png]]
+![[블로그/markdown-blog/Geoffrey Hinton/_assets/1-backpropagation.png]]
 
 ## 논문 상세
 

@@ -14,7 +14,7 @@ description: |-
 ---
 RDR은 embedding 기반의 자동화된 분석 파이프라인으로, 논문 수집, 콘텐츠 분석, embedding 기반 클러스터링, 추세 분석을 통해 연구 분야를 종합적으로 파악합니다. Foundation Models과 Robotics를 중심으로 적용되었으며, Computer Vision, NLP, Machine Learning 등 다양한 분야로 확장되었습니다.
 
-![[1-rdr.png|654x310]]
+![[블로그/markdown-blog/grid_Papers/_assets/1-rdr.png|654x310]]
 
 
 

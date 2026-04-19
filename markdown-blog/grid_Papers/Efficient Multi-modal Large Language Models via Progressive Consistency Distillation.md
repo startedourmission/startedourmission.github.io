@@ -15,7 +15,7 @@ description: 더 효율적인 멀티모달 LLM을 위한 다양한 시도가 이
 
 **핵심 아이디어**: EPIC(Efficient MLLMs via Progressive Consistency Distillation)은 점진적 학습 전략을 통해 시각 토큰 압축의 어려움을 해결합니다.
 
-![[1-em1.png]]
+![[블로그/markdown-blog/grid_Papers/_assets/1-em1.png]]
 
 **주요 구성 요소**:
 

@@ -9,7 +9,7 @@ description: 이번에는 네이버에서 제안한 논문을 들고왔습니다
 
 > Shin et al., "Exploring Conditions for Diffusion Models in Robotic Control", arXiv:2510.15510, 2025
 
-![[1-Exploring.png]]
+![[블로그/markdown-blog/grid_Papers/_assets/1-Exploring.png]]
 
 
 

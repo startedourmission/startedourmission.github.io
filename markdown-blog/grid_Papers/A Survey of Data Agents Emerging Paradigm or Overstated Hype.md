@@ -15,7 +15,7 @@ description: 현재 시장에는 "단순 쿼리 응답 도구"부터 "엔드-투
 
 
 
-![[1-A_Survey_of_Data_Agents.png]]
+![[블로그/markdown-blog/grid_Papers/_assets/1-A_Survey_of_Data_Agents.png]]
 ## 요약
 
 이 연구는 **데이터 에이전트의 자율성을 L0(수동 작업)부터 L5(완전 자율 생성)까지 6단계 계층으로 분류**합니다. SAE J3016 자동주행 표준에서 영감을 받았습니다.

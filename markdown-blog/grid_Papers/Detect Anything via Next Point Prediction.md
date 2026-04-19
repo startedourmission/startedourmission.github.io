@@ -15,7 +15,7 @@ description: |-
 
 > Q. Jiang, J. Huo, X. Chen, Y. Xiong, Z. Zeng, Y. Chen, T. Ren, J. Yu, and L. Zhang, "Detect Anything via Next Point Prediction", arXiv preprint arXiv:2510.12798, 2025.
 
-![[1-das.png|851x446]]
+![[블로그/markdown-blog/grid_Papers/_assets/1-das.png|851x446]]
 ## 요약
 
 **아키텍처**: Rex-Omni는 Qwen2.5-VL-3B를 기반으로 구축되었으며, 0부터 999까지의 양자화된 좌표를 나타내는 특수 토큰을 사용합니다. 마지막 1,000개의 어휘 토큰을 재사용하여 좌표를 표현합니다.
@@ -299,7 +299,7 @@ $$\text{Recall} = \frac{\sum_{j=1}^{n} r_j}{n}, \quad \text{Precision} = \frac{\
 - MLLM 기반 검출이 제로샷으로 회귀 기반 모델 능가 가능
 - IoU 0.95에서는 회귀 모델에 약간 뒤처짐 (정밀한 박스 위치에서는 한계)
 - GRPO 후처리로 큰 성능 향상 (SFT 68.2% → GRPO 72.0%)
-![[2-das.png|874x429]]
+![[블로그/markdown-blog/grid_Papers/_assets/2-das.png|874x429]]
 ### Long-tailed Object Detection (LVIS)
 
 **벤치마크**: 1,203개 카테고리, 19,626개 테스트 이미지
@@ -336,7 +336,7 @@ $$\text{Recall} = \frac{\sum_{j=1}^{n} r_j}{n}, \quad \text{Precision} = \frac{\
 
 - SFT-only 모델은 이러한 문제 심각
 - GRPO 후처리로 중복 예측 거의 사라짐
-![[4-das.png|874x429]]
+![[블로그/markdown-blog/grid_Papers/_assets/4-das.png|874x429]]
 ### Referring Object Detection
 
 **벤치마크**:
@@ -350,7 +350,7 @@ $$\text{Recall} = \frac{\sum_{j=1}^{n} r_j}{n}, \quad \text{Precision} = \frac{\
 - **RefCOCOg val**: Rex-Omni F1@0.5 86.6% > Grounding DINO 52.9%
 - **RefCOCOg test**: Rex-Omni F1@0.5 86.8% > Grounding DINO 53.8%
 
-![[5-das.png|874x429]]
+![[블로그/markdown-blog/grid_Papers/_assets/5-das.png|874x429]]
 ### Visual Prompting
 
 **평가**:

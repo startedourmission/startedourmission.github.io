@@ -20,7 +20,7 @@ description: |-
 
 결과는 놀랍습니다. GPT-4의 AGI 점수는 27%, GPT-5는 57%입니다. 빠른 발전에도 불구하고, 현재 AI는 여전히 AGI와 상당한 거리가 있다는 것을 구체적인 수치로 보여줍니다.
 
-![[1-ADefinitionofAGI.png]]
+![[블로그/markdown-blog/grid_Papers/_assets/1-ADefinitionofAGI.png]]
 ## 요약
 
 ### 아키텍처 및 방법론

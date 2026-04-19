@@ -9,7 +9,7 @@ status:
 ---
 벡터 애니메이션 생성은 AI가 어려워하는 분야 중 하나입니다. 이미지 생성은 Stable Diffusion, DALL-E가 있고, 영상 생성은 Sora가 있습니다. 하지만 벡터 애니메이션은 없습니다. 래스터 이미지와 달리 수학적 좌표와 곡선으로 정의되는 벡터는 기존 확산 모델의 접근 방식으로는 풀기 어려웠습니다.
 
-![[image.png]]
+![[블로그/markdown-blog/grid_Papers/_assets/image.png]]
 
 OmniLottie는 텍스트, 이미지, 영상에서 Lottie 포맷의 벡터 애니메이션을 직접 생성하는 최초의 엔드투엔드 멀티모달 프레임워크입니다. CVPR 2026에 accept 되었고, 모델과 코드 모두 공개되었습니다.
 

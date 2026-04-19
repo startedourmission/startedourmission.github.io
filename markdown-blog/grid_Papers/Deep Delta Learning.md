@@ -30,7 +30,7 @@ ResNet이 등장한 지 거의 10년이 지났습니다. 그동안 identity shor
 
 ## 요약
 
-![[1-Ddl.png|328x496]]
+![[블로그/markdown-blog/grid_Papers/_assets/1-Ddl.png|328x496]]
 Deep Delta Learning은 기존 residual block의 identity shortcut에 **Delta Operator**라는 rank-1 기하학적 변환을 추가합니다:
 
 $$ X_{l+1} = A(X_l)X_l + \beta(X_l)k(X_l)v(X_l)^\top $$

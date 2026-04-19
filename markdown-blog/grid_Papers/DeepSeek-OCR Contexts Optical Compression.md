@@ -23,7 +23,7 @@ description: |-
 
 > H. Wei, Y. Sun and Y. Li, "DeepSeek-OCR: Contexts Optical Compression", arXiv preprint arXiv:2510.18234, 2025.
 
-![[1-DeepSeek-OCR.png|344x431]]
+![[블로그/markdown-blog/grid_Papers/_assets/1-DeepSeek-OCR.png|344x431]]
 ## 요약
 
 DeepSeek-OCR은 두 가지 핵심 구성 요소로 이루어져 있습니다:
