@@ -94,9 +94,11 @@
         .text(d => d.title.length > 24 ? d.title.slice(0, 23) + '…' : d.title);
 
     const simulation = d3.forceSimulation(rawNodes)
-        .force('link', d3.forceLink(links).id(d => d.id).distance(60).strength(0.4))
-        .force('charge', d3.forceManyBody().strength(-120))
+        .force('link', d3.forceLink(links).id(d => d.id).distance(55).strength(0.5))
+        .force('charge', d3.forceManyBody().strength(d => (degree.get(d.id) || 0) === 0 ? -25 : -110))
         .force('center', d3.forceCenter(width / 2, height / 2))
+        .force('x', d3.forceX(width / 2).strength(d => (degree.get(d.id) || 0) === 0 ? 0.18 : 0.07))
+        .force('y', d3.forceY(height / 2).strength(d => (degree.get(d.id) || 0) === 0 ? 0.18 : 0.07))
         .force('collide', d3.forceCollide().radius(d => 10 + Math.sqrt(degree.get(d.id) || 0) * 2))
         .on('tick', () => {
             linkSel
@@ -123,6 +125,8 @@
             height = container.clientHeight || height;
             svg.attr('width', width).attr('height', height);
             simulation.force('center', d3.forceCenter(width / 2, height / 2));
+            simulation.force('x', d3.forceX(width / 2).strength(d => (degree.get(d.id) || 0) === 0 ? 0.18 : 0.07));
+            simulation.force('y', d3.forceY(height / 2).strength(d => (degree.get(d.id) || 0) === 0 ? 0.18 : 0.07));
             simulation.alpha(0.3).restart();
         });
     });
