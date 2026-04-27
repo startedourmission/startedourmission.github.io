@@ -187,3 +187,23 @@ Google은 경쟁사의 경쟁 모델을 자사 칩에서 돌립니다. "TPU는 G
 3. **장기 로드맵 예측 가능성** — Google이 가장 단순합니다(자사 컨트롤). OpenAI는 Stargate·Broadcom 일정 변수가 많습니다. Anthropic은 파트너 의존이 분산돼 변동이 적습니다.
 
 결국 모델 품질만큼이나 **어느 클라우드에서 어떤 칩으로 서빙되는가**가 비용과 지연시간을 결정합니다. 모델 벤치마크 옆에 인프라 지도를 같이 봐야 하는 시대입니다.
+
+---
+
+## 업데이트 — 4월 20·24 Anthropic 메가딜
+
+이 글을 올린 직후, Anthropic 쪽 숫자가 또 한 단계 올라갔습니다.
+
+**4월 20일 — Amazon $250억 추가 투자**
+
+기존 $80억 위에 Amazon이 **추가로 최대 $250억**을 투입한다고 발표했습니다. 대가는 명확합니다. Anthropic이 향후 10년간 **AWS에 $1,000억+ 지출**을 약정했고, **최대 5GW 신규 컴퓨트**를 추가로 받습니다. 본문의 Project Rainier 위에 또 한 층이 얹히는 구조입니다.
+
+**4월 24일 — Google 최대 $400억**
+
+며칠 뒤 Google이 **즉시 $100억 + 추가 최대 $300억** 투자를 공개했습니다. 동시에 Google Cloud가 **향후 5년 5GW TPU 용량**을 공급합니다. 본문에서 본 100만 TPU 계약 위에 5GW가 또 올라가는 셈입니다.
+
+두 발표를 합치면 Anthropic이 일주일 만에 컴퓨트 측에서만 **10GW에 가까운 신규 용량**을 확보했습니다. OpenAI Stargate 10GW와 같은 자릿수입니다. "분산 헤지"를 택했던 Anthropic이 결과적으로 OpenAI에 견줄 만한 절대 규모로 올라섰다는 게 이번 발표들의 의미입니다.
+
+칩 다변화도 더 굳어졌습니다. Anthropic은 이제 **Trainium(Amazon) + TPU(Google) + GPU(Nvidia)** 세 축을 모두 기가와트급으로 깔게 됩니다. 본문 표의 "공표된 용량"과 "공표된 투자" 행은 이 시점부터 한 단계씩 위로 올려 읽어주시면 됩니다.
+
+[Amazon 추가 $25B (CNBC)](https://www.cnbc.com/2026/04/20/amazon-invest-up-to-25-billion-in-anthropic-part-of-ai-infrastructure.html) · [Google 최대 $40B (TechCrunch)](https://techcrunch.com/2026/04/24/google-to-invest-up-to-40b-in-anthropic-in-cash-and-compute/) · [Anthropic·Amazon 5GW 발표](https://www.anthropic.com/news/anthropic-amazon-compute)
