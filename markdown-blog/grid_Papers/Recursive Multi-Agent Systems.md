@@ -342,3 +342,15 @@ def spawn_agent(task, depth=0, agent_count=[0]):
 - Park et al. (2023). [Generative Agents: Interactive Simulacra of Human Behavior](https://arxiv.org/abs/2304.03442). *arXiv:2304.03442*
 - Liu et al. (2023). [Lost in the Middle: How Language Models Use Long Contexts](https://arxiv.org/abs/2307.03172). *arXiv:2307.03172*
 - Shen et al. (2023). [HuggingGPT: Solving AI Tasks with ChatGPT and its Friends in Hugging Face](https://arxiv.org/abs/2303.17580). *arXiv:2303.17580*
+
+---
+
+## 실무에서 어떻게 쓰이나
+
+"AI 에이전트를 여러 개 쓰면 더 좋아지는가"라는 질문에 대한 가장 정직한 답이 이 논문에 있습니다.
+
+**언제 멀티에이전트가 유리한가.** 단일 에이전트는 긴 컨텍스트를 유지하다 품질이 떨어집니다. 재귀적 분해는 각 서브에이전트가 좁은 범위에 집중하게 해서 이 문제를 구조적으로 회피합니다. 코드 작성→리뷰→테스트를 각각 다른 에이전트에 맡기는 파이프라인이 대표적인 사례입니다.
+
+**오케스트레이터 설계가 핵심.** 재귀 시스템의 품질은 작업을 쪼개는 상위 에이전트(오케스트레이터)의 분해 전략에 달려 있습니다. 실무에서 "멀티에이전트를 썼는데 왜 더 나쁘지"라는 경우는 대부분 오케스트레이터의 지시가 모호해서 서브에이전트가 제각각 방향으로 움직이는 경우입니다.
+
+**Claude Code, AutoGen, LangGraph 등 현재 도구들.** 이 논문의 구조가 현재 에이전트 프레임워크 대부분의 기반입니다. 도구를 쓸 때 "이 도구는 오케스트레이터와 실행 에이전트를 어떻게 분리하는가"를 물어보면 설계 의도가 바로 보입니다.
