@@ -1,15 +1,13 @@
 ---
 date: 2026-05-08
 type: ai-concept
-description: "원인이 결과를 만들고 그 결과가 다시 원인이 되는 순환 구조"
+description: 원인이 결과를 만들고 그 결과가 다시 원인이 되는 순환 구조
 tags:
   - LLM
 aliases:
   - 인과 루프
   - causal loop
 ---
-date: 2026-05-08
-
 Causal Loop(인과 루프)는 원인이 결과를 만들고, 그 결과가 다시 원인에 영향을 주는 순환 구조다. [[Feedback Loop|피드백 루프]]를 포함하는 더 넓은 개념이다.
 
 두 가지 유형으로 나뉜다.

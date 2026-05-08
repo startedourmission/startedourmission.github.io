@@ -46,3 +46,8 @@
 - [Termimmim : 터미널 연습 시뮬레이터](https://startedourmission.github.io/Termimmim/)
 - [Advanced Base : 옵시디언 베이스 확장](https://github.com/startedourmission/obsidian-advanced-base)
 - [node-pretext : pretext의 Node.js 래핑](https://github.com/startedourmission/node-pretext)
+
+# Blog
+
+- [[AI를 공부하는 좋은 방법]]
+- [문제 & 개선사항 이슈 제보](https://github.com/startedourmission/startedourmission.github.io/issues)
