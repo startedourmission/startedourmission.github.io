@@ -4,7 +4,6 @@ description: "독해 기반 추출형 질의응답 벤치마크"
 tags:
   - 벤치마크
   - AI평가
-  - 정보
 aliases:
   - Stanford Question Answering Dataset
   - SQuAD 1.1

@@ -2,7 +2,6 @@
 type: ai-model
 description: "Elon Musk의 xAI가 개발하는 LLM, X 데이터와 통합된 챗봇"
 tags:
-  - 정보
   - LLM
 aliases:
   - Grok

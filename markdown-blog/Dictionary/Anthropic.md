@@ -2,7 +2,6 @@
 type: company
 description: "AI 안전성을 핵심 가치로 내세우는 미국 AI 기업, Claude 시리즈 개발사"
 tags:
-  - 정보
   - LLM
 aliases:
   - Anthropic

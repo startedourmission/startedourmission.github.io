@@ -3,7 +3,6 @@ type: person
 description: Extreme Programming 창시자, TDD 대중화, JUnit·SUnit 개발, CRC 카드 공동 발안, 디자인 패턴 선구자, Agile 선언문 17인 중 1인, 현재 Gusto 소프트웨어 펠로우
 tags:
   - 인물
-  - 정보
 aliases:
   - "Kent Beck"
   - "켄트 벡"

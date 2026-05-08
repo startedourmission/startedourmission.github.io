@@ -4,7 +4,6 @@ description: "미공개 연구 수준 수학 벤치마크"
 tags:
   - 벤치마크
   - AI평가
-  - 정보
 ---
 
 # FrontierMath

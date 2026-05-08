@@ -4,7 +4,6 @@ description: "추상 추론 퍼즐 기반 AGI 평가"
 tags:
   - 벤치마크
   - AI평가
-  - 정보
 aliases:
   - ARC-AGI
 ---

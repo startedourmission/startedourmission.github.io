@@ -2,7 +2,6 @@
 type: ai-model
 description: "Alibaba의 오픈 웨이트 LLM 시리즈, 다국어와 풀라인업 사이즈가 특징"
 tags:
-  - 정보
   - LLM
   - 오픈소스
 aliases:

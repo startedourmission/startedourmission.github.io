@@ -4,7 +4,6 @@ description: "일상 상식 5지선다 질의응답 벤치마크"
 tags:
   - 벤치마크
   - AI평가
-  - 정보
 ---
 
 # CommonsenseQA

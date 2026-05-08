@@ -2,7 +2,6 @@
 type: company
 description: "프랑스 파리에 본사를 둔 AI 기업, 유럽을 대표하는 LLM 개발사"
 tags:
-  - 정보
   - LLM
   - 오픈소스
 aliases:

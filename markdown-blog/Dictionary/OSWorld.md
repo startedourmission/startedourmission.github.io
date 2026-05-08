@@ -4,7 +4,6 @@ description: "데스크톱 GUI 환경 과제 수행 능력 평가"
 tags:
   - 벤치마크
   - AI평가
-  - 정보
 aliases:
   - OSWorld
 ---

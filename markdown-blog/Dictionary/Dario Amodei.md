@@ -3,7 +3,6 @@ type: person
 description: Anthropic 공동 창립자이자 CEO, AI 안전 연구의 선두 주자
 tags:
   - 인물
-  - 정보
   - LLM
 aliases:
   - "Dario Amodei"

@@ -3,7 +3,6 @@ type: person
 description: 소프트웨어 개발에 칸반 방법을 체계화한 개척자, Kanban University 창립자
 tags:
   - 인물
-  - 정보
 aliases:
   - "David J. Anderson"
   - "David Anderson"

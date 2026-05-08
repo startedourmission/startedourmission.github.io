@@ -4,7 +4,6 @@ description: "긴 컨텍스트 그래프 탐색 능력 평가"
 tags:
   - 벤치마크
   - AI평가
-  - 정보
 aliases:
   - GraphWalks
 ---

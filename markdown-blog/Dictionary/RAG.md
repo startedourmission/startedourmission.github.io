@@ -1,7 +1,6 @@
 ---
 date: 2026-04-10
 tags:
-  - 정보
   - LLM
 aliases: Retrieval-Augmented Generation, 검색 증강 생성
 image: "![[]]"

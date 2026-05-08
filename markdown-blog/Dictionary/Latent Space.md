@@ -3,7 +3,6 @@ date: 2026-05-08
 type: ai-concept
 description: "임베딩된 벡터들이 이루는 고차원 의미 지도로, AI의 개념 이해가 표현되는 공간"
 tags:
-  - 정보
   - LLM
 aliases:
   - 잠재 공간

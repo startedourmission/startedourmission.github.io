@@ -2,7 +2,6 @@
 type: ai-model
 description: "프랑스 Mistral AI의 오픈 웨이트·상업용 LLM 시리즈"
 tags:
-  - 정보
   - LLM
   - 오픈소스
 aliases:

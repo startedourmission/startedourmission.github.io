@@ -4,7 +4,6 @@ description: "CTF 사이버보안 챌린지 벤치마크"
 tags:
   - 벤치마크
   - AI평가
-  - 정보
 aliases:
   - Cybench CTF
 ---

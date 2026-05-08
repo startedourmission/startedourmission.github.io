@@ -4,7 +4,6 @@ description: "다지선다 종합 지식 평가 벤치마크"
 tags:
   - 벤치마크
   - AI평가
-  - 정보
 aliases:
   - Massive Multitask Language Understanding
 ---

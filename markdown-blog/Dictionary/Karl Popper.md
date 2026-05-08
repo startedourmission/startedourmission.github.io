@@ -3,7 +3,6 @@ type: person
 description: 20세기 과학철학자, 반증 가능성을 과학-비과학의 경계 기준으로 제시, 열린사회 정치철학자
 tags:
   - 인물
-  - 정보
 aliases:
   - "Karl Popper"
   - "Sir Karl Raimund Popper"

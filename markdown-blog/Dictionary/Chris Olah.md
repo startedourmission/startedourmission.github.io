@@ -3,7 +3,6 @@ type: person
 description: Anthropic 공동 창립자, 신경망 해석가능성 분야 선구적 연구자
 tags:
   - 인물
-  - 정보
   - LLM
   - 딥러닝
 aliases:

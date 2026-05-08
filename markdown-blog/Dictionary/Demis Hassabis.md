@@ -3,7 +3,6 @@ type: person
 description: Google DeepMind CEO, 2024년 노벨 화학상 수상자
 tags:
   - 인물
-  - 정보
   - 딥러닝
   - 머신러닝
 aliases:

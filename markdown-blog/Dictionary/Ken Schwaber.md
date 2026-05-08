@@ -3,7 +3,6 @@ type: person
 description: Scrum 공동 창시자, Scrum Alliance 및 Scrum.org 창립자, Scrum Guide 공저자
 tags:
   - 인물
-  - 정보
 aliases:
   - "Ken Schwaber"
   - "켄 슈와버"

@@ -4,7 +4,6 @@ description: "실제 오피스 업무 기반 멀티모달 평가"
 tags:
   - 벤치마크
   - AI평가
-  - 정보
 ---
 
 # OfficeQA Pro

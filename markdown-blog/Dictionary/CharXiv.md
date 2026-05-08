@@ -4,7 +4,6 @@ description: "차트/그래프 이해 및 추론 벤치마크"
 tags:
   - 벤치마크
   - AI평가
-  - 정보
 aliases:
   - CharXiv Reasoning
 ---

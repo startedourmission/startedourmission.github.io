@@ -4,7 +4,6 @@ description: "지속 갱신되는 코드 컨테스트 벤치마크"
 tags:
   - 벤치마크
   - AI평가
-  - 정보
 ---
 
 # LiveCodeBench

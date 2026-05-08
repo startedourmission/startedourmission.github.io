@@ -1,7 +1,6 @@
 ---
 date: 2026-05-08
 tags:
-  - 정보
 aliases:
 image: "![[]]"
 description:

@@ -3,7 +3,6 @@ type: person
 description: Scrum 공동 창시자, Easel Corporation CTO 출신, Scrum Inc. 창립자
 tags:
   - 인물
-  - 정보
 aliases:
   - "Jeff Sutherland"
   - "제프 서덜랜드"

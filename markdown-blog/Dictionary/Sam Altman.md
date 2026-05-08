@@ -3,7 +3,6 @@ type: person
 description: OpenAI CEO, ChatGPT와 GPT 시리즈 상용화를 주도한 핵심 인물
 tags:
   - 인물
-  - 정보
   - LLM
 aliases:
   - "Sam Altman"

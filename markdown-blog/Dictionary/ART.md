@@ -4,7 +4,6 @@ description: "Agent Red Teaming 프롬프트 인젝션 강건성 벤치마크"
 tags:
   - 벤치마크
   - AI평가
-  - 정보
 aliases:
   - Agent Red Teaming
 ---

@@ -2,7 +2,6 @@
 type: ai-model
 description: "Moonshot AI의 LLM 시리즈, 긴 컨텍스트와 추론 모델 K1.5·K2로 알려진 중국 모델"
 tags:
-  - 정보
   - LLM
 aliases:
   - Kimi

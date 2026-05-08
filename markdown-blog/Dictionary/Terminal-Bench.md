@@ -4,7 +4,6 @@ description: "터미널 복합 작업 수행 능력 평가"
 tags:
   - 벤치마크
   - AI평가
-  - 정보
 aliases:
   - Terminal-Bench 2.0
 ---

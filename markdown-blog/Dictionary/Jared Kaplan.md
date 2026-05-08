@@ -3,7 +3,6 @@ type: person
 description: Anthropic 공동 창립자이자 수석 과학자, 스케일링 법칙 핵심 저자
 tags:
   - 인물
-  - 정보
   - LLM
   - 딥러닝
 aliases:

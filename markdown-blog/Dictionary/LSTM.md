@@ -1,7 +1,6 @@
 ---
 date: 2026-04-10
 tags:
-  - 정보
   - 딥러닝
 aliases: 장단기 기억 네트워크, Long Short-Term Memory
 image: "![[]]"

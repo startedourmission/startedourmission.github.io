@@ -1,7 +1,6 @@
 ---
 date: 2026-04-10
 tags:
-  - 정보
   - 머신러닝
 aliases: 주성분 분석, Principal Component Analysis
 image: "![[]]"

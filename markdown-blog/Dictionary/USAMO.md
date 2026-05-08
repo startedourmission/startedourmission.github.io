@@ -4,7 +4,6 @@ description: "미국 수학 올림피아드 수학 추론 벤치마크"
 tags:
   - 벤치마크
   - AI평가
-  - 정보
 aliases:
   - United States of America Mathematical Olympiad
 ---

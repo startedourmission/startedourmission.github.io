@@ -4,7 +4,6 @@ description: "파이썬 함수 작성 코딩 벤치마크"
 tags:
   - 벤치마크
   - AI평가
-  - 정보
 ---
 
 # HumanEval

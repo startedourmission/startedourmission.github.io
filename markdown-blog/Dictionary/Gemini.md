@@ -2,7 +2,6 @@
 type: ai-model
 description: "Google DeepMind의 멀티모달 네이티브 AI 모델 시리즈"
 tags:
-  - 정보
   - LLM
 aliases:
   - Gemini

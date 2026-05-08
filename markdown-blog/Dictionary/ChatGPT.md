@@ -2,7 +2,6 @@
 type: ai-model
 description: "OpenAI의 대화형 AI 서비스, GPT 모델 기반 챗봇 제품"
 tags:
-  - 정보
   - LLM
 aliases:
   - ChatGPT

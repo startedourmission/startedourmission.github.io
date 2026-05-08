@@ -4,7 +4,6 @@ description: "초등 과학 객관식 추론 벤치마크"
 tags:
   - 벤치마크
   - AI평가
-  - 정보
 aliases:
   - AI2 Reasoning Challenge
   - ARC-Easy

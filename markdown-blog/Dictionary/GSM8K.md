@@ -4,7 +4,6 @@ description: "초등 수학 문장제 벤치마크"
 tags:
   - 벤치마크
   - AI평가
-  - 정보
 ---
 
 # GSM8K

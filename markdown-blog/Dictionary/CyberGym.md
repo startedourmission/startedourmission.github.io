@@ -4,7 +4,6 @@ description: "실제 오픈소스 취약점 재현 능력 평가"
 tags:
   - 벤치마크
   - AI평가
-  - 정보
 aliases:
   - CyberGym benchmark
 ---

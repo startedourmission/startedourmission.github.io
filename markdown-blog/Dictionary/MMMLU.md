@@ -4,7 +4,6 @@ description: "MMLU의 다국어 확장, 57개 과목 14개 언어"
 tags:
   - 벤치마크
   - AI평가
-  - 정보
 aliases:
   - Multilingual MMLU
 ---

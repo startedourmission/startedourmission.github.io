@@ -3,7 +3,6 @@ type: person
 description: NVIDIA 공동 창립자이자 CEO, GPU 기반 AI 컴퓨팅 혁명의 주역
 tags:
   - 인물
-  - 정보
   - 딥러닝
 aliases:
   - "Jensen Huang"

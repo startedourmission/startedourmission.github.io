@@ -2,7 +2,6 @@
 type: ai-model
 description: "Meta의 오픈 웨이트 LLM 시리즈, 오픈소스 LLM 생태계의 사실상 표준"
 tags:
-  - 정보
   - LLM
   - 오픈소스
 aliases:

@@ -2,7 +2,6 @@
 type: tool
 description: "StackBlitz의 브라우저 기반 풀스택 앱 빌더, WebContainer 위에서 실시간 실행"
 tags:
-  - 정보
   - LLM
 aliases:
   - Bolt

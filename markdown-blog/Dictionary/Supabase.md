@@ -2,7 +2,6 @@
 type: tool
 description: "Postgres 기반 오픈소스 BaaS, 바이브 코딩 시대 백엔드의 사실상 표준"
 tags:
-  - 정보
   - 오픈소스
 aliases:
   - Supabase

@@ -4,7 +4,6 @@ description: "상식 추론 문장 완성 벤치마크"
 tags:
   - 벤치마크
   - AI평가
-  - 정보
 ---
 
 # HellaSwag

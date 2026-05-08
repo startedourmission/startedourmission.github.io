@@ -3,7 +3,6 @@ type: person
 description: Scale AI 창립자 출신 Meta 수석 AI 책임자
 tags:
   - 인물
-  - 정보
   - LLM
   - AI평가
 aliases:

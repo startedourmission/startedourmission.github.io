@@ -3,7 +3,6 @@ type: person
 description: SSI 공동 창립자이자 CEO, OpenAI 전 수석 과학자
 tags:
   - 인물
-  - 정보
   - LLM
   - 딥러닝
 aliases:

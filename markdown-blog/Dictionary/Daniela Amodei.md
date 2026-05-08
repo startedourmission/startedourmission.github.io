@@ -3,7 +3,6 @@ type: person
 description: Anthropic 공동 창립자이자 사장, 비즈니스 운영 총괄
 tags:
   - 인물
-  - 정보
   - LLM
 aliases:
   - "Daniela Amodei"

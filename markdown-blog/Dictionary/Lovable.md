@@ -2,7 +2,6 @@
 type: tool
 description: "스웨덴 스타트업의 자연어 풀스택 앱 빌더, GPT Engineer의 후신"
 tags:
-  - 정보
   - LLM
 aliases:
   - Lovable

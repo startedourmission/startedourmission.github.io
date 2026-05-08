@@ -3,7 +3,6 @@ type: person
 description: Extreme Programming 공저자, 애자일 선언문 17인 서명자, Dark Scrum 개념 제시자
 tags:
   - 인물
-  - 정보
 aliases:
   - "Ron Jeffries"
   - "론 제프리스"

@@ -3,7 +3,6 @@ type: person
 description: Tesla AI 디렉터 출신 AI 교육자, Eureka Labs 설립자
 tags:
   - 인물
-  - 정보
   - LLM
   - 딥러닝
 aliases:

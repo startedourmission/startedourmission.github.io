@@ -3,7 +3,6 @@ type: person
 description: 1970년 대규모 소프트웨어 시스템 개발 논문 저자, 이름과 달리 반복적 개발을 권장한 인물
 tags:
   - 인물
-  - 정보
 aliases:
   - "Winston W. Royce"
   - "Winston Royce"

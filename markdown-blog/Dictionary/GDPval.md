@@ -4,7 +4,6 @@ description: "실제 직무 산출물 기반 경제 가치 평가"
 tags:
   - 벤치마크
   - AI평가
-  - 정보
 ---
 
 # GDPval

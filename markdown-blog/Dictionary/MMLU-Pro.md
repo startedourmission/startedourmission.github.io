@@ -4,7 +4,6 @@ description: "MMLU의 후계, 10지선다 고난도 지식 평가"
 tags:
   - 벤치마크
   - AI평가
-  - 정보
 ---
 
 # MMLU-Pro

@@ -2,7 +2,6 @@
 type: concept
 description: "대규모 언어 모델, 거대한 텍스트 데이터로 학습한 트랜스포머 기반 신경망"
 tags:
-  - 정보
   - LLM
 aliases:
   - 대규모 언어 모델
