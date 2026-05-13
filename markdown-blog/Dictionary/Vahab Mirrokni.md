@@ -1,0 +1,25 @@
+---
+type: person
+description: Google Fellow & VP, Google Research Algorithms & Optimization 총괄, Gemini Data Area Lead
+tags:
+  - 인물
+  - 머신러닝
+  - 알고리즘
+aliases:
+  - "Vahab Mirrokni"
+  - "Vahab S. Mirrokni"
+---
+
+바하브 미로크니(Vahab Mirrokni)는 Google Fellow이자 Google Research의 Vice President이다. Google Research New York의 Algorithms and Optimization 그룹을 오랫동안 이끌어 왔으며, 최근에는 Gemini Data Area Lead 역할도 맡고 있다.
+
+MIT에서 응용수학(이론 전산학)으로 박사 학위를 받았으며, 지도교수는 Michel Goemans였다. 박사 논문 주제는 *Approximation Algorithms for Selfish and Distributed Agents*로, 게임이론·시장 설계와 닿아 있는 알고리즘이었다. 이후 Google에 합류해 distinguished scientist와 senior research director를 거쳐 현재의 직책에 이르렀다.
+
+연구 관심은 알고리즘과 시장 설계, GenAI 알고리즘, 머신러닝 스케일링, 그래프 알고리즘이다. 그가 이끄는 팀들은 시장 알고리즘, 대규모 그래프 마이닝, 대규모 최적화, 그리고 최근에는 LLM·벡터 검색 엔진의 압축을 위한 양자화(예: TurboQuant) 등을 다룬다.
+
+본 논문에서는 시니어 저자로 [[Nested Learning]] 프로젝트의 전반적 방향을 설정하는 역할이다. 그의 팀에 있는 [[Peilin Zhong]]은 같은 그룹의 Research Scientist이며, [[Meisam Razaviyayn]]은 파트타임으로 합류한 USC 교수, [[Ali Behrouz]]는 Cornell 박사과정의 인턴이다. 즉 이 논문은 미로크니의 NYC Algorithms 팀이 메모리·최적화·연속 학습의 세 갈래를 하나의 패러다임으로 묶어내는 작업물이다.
+
+## 관련 문서
+
+- [[Ali Behrouz]] — 1저자
+- [[Peilin Zhong]] — 같은 팀 Research Scientist
+- [[Meisam Razaviyayn]] — USC 교수, 파트타임 공저자
