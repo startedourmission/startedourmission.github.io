@@ -3,7 +3,8 @@ date: 2026-05-07
 tags:
   - 논문
   - LLM
-description: "숫자 시퀀스만으로 AI의 성향이 전파됩니다. 콘텐츠 필터링도, AI 교차 검사도, 인컨텍스트 학습도 잡아내지 못합니다. Subliminal Learning — AI 안전에 새로운 구조적 구멍이 생겼습니다."
+  - headliner
+description: 숫자 시퀀스만으로 AI의 성향이 전파됩니다. 콘텐츠 필터링도, AI 교차 검사도, 인컨텍스트 학습도 잡아내지 못합니다. Subliminal Learning — AI 안전에 새로운 구조적 구멍이 생겼습니다.
 ---
 
 > **원제:** Subliminal Learning: Language Models Transmit Behavioral Traits via Hidden Signals in Data
