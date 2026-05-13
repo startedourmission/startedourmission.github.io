@@ -1,0 +1,16 @@
+---
+type: person
+description: EleutherAI 소속 다국어 NLP·토크나이저 연구자, UC San Diego 언어학 PhD
+tags:
+  - 인물
+  - LLM
+  - 오픈소스
+aliases:
+  - Catherine Arnett
+---
+
+캐서린 아넷(Catherine Arnett)은 비영리 AI 연구조직 **EleutherAI**의 NLP 연구원이다. UC San Diego에서 컴퓨테이셔널 사회과학 특화 언어학 박사 학위를 받았고, 다국어 NLP와 토크나이저 설계가 주요 연구 분야다.
+
+저자원 언어 LM 작업으로 힌디어 모델 **LilMoo**와 벵골어 모델 **LilTii**를 공개했고, 각 언어용 큐레이션 데이터셋도 함께 배포했다. 2025년 COLM에서 열린 1회 **Workshop on Multilingual Data Quality Signals (WMDQS)**의 조직자로 참여했다.
+
+2026년에는 [[Guijin Son]]이 1저자인 **SOOHAK** 벤치마크의 조직 팀에 들어갔다. SOOHAK이 한↔영 양방향 이중언어 벤치마크라는 점에서 다국어 NLP 전문성이 필요한 자리였다.

@@ -1,0 +1,18 @@
+---
+type: person
+description: 수학 LLM·자동 증명 분야 핵심 연구자, CMU LTI 조교수, DARPA expMath PI
+tags:
+  - 인물
+  - LLM
+  - 머신러닝
+aliases:
+  - Sean Welleck
+---
+
+션 웰렉(Sean Welleck)은 카네기멜런대학교 언어기술연구소(CMU LTI) 조교수이자 CMU L3 Lab의 리더다. 연구 영역은 LLM의 학습·추론·평가 알고리즘 전반이지만, 특히 **수학적 추론**과 **자동 증명 생성**에서 두각을 보이고 있다.
+
+대표 작업은 **NaturalProver**(NeurIPS 2022)다. 정의·정리 같은 배경 지식을 검색하거나 사람이 제공하는 방식으로 조건화해서 자연어 증명을 생성하고, constrained decoding으로 그 사용을 강제할 수 있다. 후속작 **Draft, Sketch, and Prove**(ICLR 2023 oral)는 비공식 증명을 가이드로 활용해 형식 증명기를 돕는 프레임워크다. 분야 전반을 정리한 "A Survey of Deep Learning for Mathematical Reasoning"(ACL 2023)도 그의 저작이다.
+
+최근에는 **DARPA expMath** 그랜트의 lead PI로 선정돼 AI for mathematics 프로젝트를 이끌고 있다. CMU 내 Hoskinson Center for Formal Mathematics에도 소속돼 있어, 형식 수학(formal mathematics)과 LLM의 접점에서 연구를 진행한다.
+
+2026년 [[Guijin Son]]이 1저자인 **SOOHAK** 벤치마크의 조직 팀에 합류했다. SOOHAK이 한계로 짚은 "proof-assistant 기반 채점으로의 확장"이 바로 그의 본업이라는 점에서, 다음 단계 벤치마크 설계에서도 핵심 역할을 할 가능성이 크다.
