@@ -708,6 +708,54 @@
         let rssFilePath = Path.Combine(Config.outputDir, "rss.xml")
         Disk.writeFile rssFilePath rssXml
 
+        let postsOnly = posts |> List.filter (fun p -> p.Category <> "Dictionary")
+        if postsOnly <> posts then
+            let postsItems =
+                postsOnly
+                |> List.map (fun post ->
+                    let postUrl = $"{Config.blogBaseUrl}/{System.Uri.EscapeUriString(post.Url)}"
+                    let pubDate =
+                        match post.Date with
+                        | Some date -> date.ToUniversalTime().ToString("R")
+                        | None -> ""
+                    let description =
+                        match post.Description with
+                        | Some desc -> $"<![CDATA[\n  {desc}\n]]>"
+                        | None -> "<![CDATA[]]>"
+                    let enclosureTag =
+                        match post.ImageUrl with
+                        | Some imageUrl ->
+                            let absoluteImageUrl = $"{Config.blogBaseUrl}/{System.Uri.EscapeUriString(imageUrl)}"
+                            let imageType =
+                                let ext = Path.GetExtension(imageUrl)
+                                if ext.Length > 1 then $"image/{ext.Substring(1).ToLower()}" else "image/png"
+                            $"\n<enclosure url=\"{absoluteImageUrl}\" type=\"{imageType}\" length=\"0\"/>"
+                        | None -> ""
+                    $"""<item>
+<title><![CDATA[ {post.Title} ]]></title>
+<link>{postUrl}</link>
+<guid isPermaLink="true">{postUrl}</guid>
+<pubDate>{pubDate}</pubDate>
+
+<description>{description}</description>{enclosureTag}
+</item>"""
+                )
+                |> String.concat "\n"
+            let postsRssXml =
+                $"""<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+    <title>{Config.blogTitle}</title>
+    <link>{Config.blogBaseUrl}</link>
+    <description>{Config.blogDescription}</description>
+    <language>ko-kr</language>
+    <lastBuildDate>{latestBuildDate}</lastBuildDate>
+    <atom:link href="{Config.blogBaseUrl}/rss-posts.xml" rel="self" type="application/rss+xml" />
+    {postsItems}
+</channel>
+</rss>"""
+            Disk.writeFile (Path.Combine(Config.outputDir, "rss-posts.xml")) postsRssXml
+
     let private sitemapUrl (loc: string) (lastmod: string) (priority: string) =
         $"  <url>\n    <loc>{loc}</loc>\n    <lastmod>{lastmod}</lastmod>\n    <priority>{priority}</priority>\n  </url>"
 
