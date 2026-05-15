@@ -1,0 +1,18 @@
+---
+type: person
+description: JD.COM VP이자 JD Explore Academy Vision and Multimodal Lab 디렉터. 마이크로소프트 리서치 아시아 NLP 그룹 시니어 프린시펄 리서처, StepFun Technical Fellow를 거쳐 합류. NLP·코드 인텔리전스·멀티모달 파운데이션 모델·AI 에이전트 분야 시니어 저자.
+tags:
+  - 인물
+  - LLM
+  - 머신러닝
+aliases:
+  - Nan Duan
+  - 두안난
+  - 단난
+---
+
+Nan Duan(段楠)은 JD.COM VP이자 [[JD Explore Academy]] Vision and Multimodal Lab의 디렉터입니다. 마이크로소프트 리서치 아시아(MSRA) NLP 그룹에서 Senior Principal Researcher 겸 리서치 매니저로 오래 일했고, 이후 StepFun에서 Technical Fellow를 거쳐 현재 JD로 옮겼습니다.
+
+연구 영역은 자연어 처리, 코드 인텔리전스, 멀티모달 파운데이션 모델, AI 에이전트에 걸쳐 있습니다. 약 200편 이상의 top-tier 학회 논문과 20여 건의 특허, h-index 76, 인용 28,000여 회로 NLP·멀티모달 연구계의 시니어 그룹에 속합니다. USTC·시안교통대·톈진대 겸임 교수로 박사 지도도 병행합니다.
+
+[[OmniNFT - Modality-wise Omni Diffusion Reinforcement for Joint Audio-Video Generation|OmniNFT]]에서는 JD Explore Academy 측 시니어 저자로 참여했습니다. USTC 학생 그룹([[Guohui Zhang]]·[[Feng Zhao]] 라인)과 JD의 산업 데이터·인프라가 결합되는 협업 구조에서 JD 쪽 디렉터 역할을 맡고 있습니다. 본 논문이 [[LTX-2]] 백본을 그대로 가져가며 19B 규모 모델에 RL fine-tuning을 돌리는 *컴퓨트가 무거운 셋업*이라는 점도 산업 랩과의 협력이 자연스러웠던 배경으로 보입니다.

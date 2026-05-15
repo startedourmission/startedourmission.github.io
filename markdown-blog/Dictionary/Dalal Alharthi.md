@@ -1,0 +1,19 @@
+---
+date: 2026-05-14
+type: person
+description: University of Arizona College of Applied Science & Technology의 사이버보안 조교수. UC Irvine 컴퓨터과학 박사. 클라우드 보안과 AI 기반 보안 위협을 함께 다루는 연구자.
+tags:
+  - 인물
+  - 머신러닝
+aliases:
+  - Dalal Alharthi
+  - 달랄 알하르티
+---
+
+Dalal Alharthi는 University of Arizona College of Applied Science & Technology(CAST)에서 사이버보안을 가르치는 조교수입니다. UC Irvine에서 컴퓨터과학 박사학위를 받았고, 학계로 오기 전에 Farmers Insurance의 클라우드 보안 엔지니어, Palo Alto Networks의 Resident Engineer, Dell의 Prisma Cloud 컨설턴트로 산업계에서 클라우드 보안 실무를 쌓았습니다.
+
+관심 분야는 클라우드·컨테이너 보안, 침투 시험, 디지털 포렌식, HCI, 프라이버시, 머신러닝까지 폭이 넓습니다. 최근 몇 년은 *AI가 양방향으로 사이버보안에 충격을 준다*는 관점에서 LLM과 멀티에이전트 시스템의 구조적 취약성을 다루는 쪽으로 옮겨가고 있습니다. Varonis Speed Data 인터뷰에서도 AI 기반 공격을 미래 위협으로 짚었습니다.
+
+University of Arizona에서는 Women in Cybersecurity(WiCyS) 학생 지부를 출범시켜 학생 멘토링과 커뮤니티 빌딩을 병행합니다. 학부 연구와 College of Information Science의 협력 트랙에도 이름을 올려두고 있어 사이버보안과 AI 안전의 경계선에서 학생 프로젝트를 지도하는 시니어 역할을 합니다.
+
+[[Predictive Maps of Multi-Agent Reasoning - A Successor-Representation Spectrum for LLM Communication Topologies]]에서는 시니어 저자로 합류해, 사이버보안 관점에서 *공격자가 멀티에이전트 그래프 어디를 흔들 수 있는가*를 곁가지로 묻는 부록(Appendix A.6의 malicious star leaf 분석)을 글의 줄기 안에 끼워넣는 역할을 했습니다. 함께 일한 1저자는 [[Ethan David James Parks]].

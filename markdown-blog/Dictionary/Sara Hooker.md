@@ -1,0 +1,18 @@
+---
+type: person
+description: "AI 모델 효율성·공정성 연구로 알려진 컴퓨터 과학자, Cohere For AI 전 VP, Adaption Labs 공동 창업자 겸 CEO"
+tags:
+  - 인물
+  - 머신러닝
+  - LLM
+aliases:
+  - "Sara Hooker"
+---
+
+사라 후커(Sara Hooker)는 모델 효율성, 알고리즘 편향, 머신러닝 공정성 분야로 알려진 컴퓨터 과학자다. 코히어(Cohere)의 Vice President of Research를 역임하며 Cohere의 연구 조직 *Cohere For AI* 를 이끌었고, *Cohere For AI Scholars* 프로그램을 출범시켰다. 그 이전에는 Google Brain에서 모델 압축·해석 가능성을 연구했다.
+
+대표 연구로는 *Lottery Ticket* 가설과 모델 가지치기(pruning)의 한계를 보인 *"What Do Compressed Deep Neural Networks Forget?"*, 데이터 편향이 모델 압축 시 어떻게 증폭되는지 보인 *"Characterising Bias in Compressed Models"* 등이 있다. 작은 모델로 큰 효율을 끌어내는 *"scaling race에 반대하는 베팅"* 노선의 학계 대표자 중 한 명이다.
+
+2025년 Cohere를 떠나 [Adaption Labs](https://adaptionlabs.ai)를 공동 창업했다(공동창업자: 전 Cohere inference director Sudip Roy). Emergence Capital과 Mozilla Ventures가 리드한 5000만 달러 시드를 받았으며, *적응형 데이터·지능·인터페이스* 세 축을 표방한다. 2026년 5월 13일 첫 제품 [AutoScientist](https://www.adaptionlabs.ai/blog/autoscientist) — 모델 학습·정렬 루프 자체를 자동화하는 시스템 — 를 공개하며 *사내 AI 리서처 대비 +35% 성능 / win rate 48%→64%* 라는 수치를 공개했다.
+
+[[Anthropic]]·OpenAI·Google이 *더 큰 모델 + 더 많은 컴퓨트* 경로에 집중하는 동안, *학습 expertise 자동화* 라는 다른 병목을 푸는 방향을 잡은 인물이다.

@@ -1,0 +1,15 @@
+---
+type: person
+description: USTC 박사과정. [[Feng Zhao]] 연구실에서 image restoration·diffusion·flow-based generative model을 연구. OmniNFT 공저자.
+tags:
+  - 인물
+  - 머신러닝
+  - 영상처리
+aliases:
+  - Hu Yu
+  - 위후
+---
+
+Hu Yu는 USTC [[Feng Zhao]] 연구실의 박사과정 연구자입니다. image restoration, diffusion model, flow-based generative model 라인의 1·공동 저자로 다수 논문에 이름이 올라 있으며, [[Guohui Zhang]]과 함께 같은 연구실의 시각 생성 + RL 라인을 구성합니다.
+
+[[OmniNFT - Modality-wise Omni Diffusion Reinforcement for Joint Audio-Video Generation|OmniNFT]]에서는 공저자로 참여했습니다. 같은 연구실에서 나온 MaskFocus 등 RL 기반 image generation 라인과 자연스럽게 연결됩니다.

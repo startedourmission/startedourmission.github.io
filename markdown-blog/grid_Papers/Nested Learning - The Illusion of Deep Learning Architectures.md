@@ -6,7 +6,7 @@ tags:
   - 딥러닝
 aliases:
   - "Nested Learning: The Illusion of Deep Learning Architectures"
-image:
+image: "![[1-NestedLearning.png]]"
 description: 트랜스포머와 모던 옵티마이저(Adam, Muon)는 사실 같은 것의 다른 레벨이라는 주장입니다. Google Research가 NeurIPS 2025에서 발표한 Nested Learning은 모델 아키텍처와 옵티마이저를 "본인의 컨텍스트 흐름을 압축하는 연상 기억"의 중첩 시스템으로 통합합니다. 이를 토대로 만든 Hope 아키텍처는 1.3B/100B 토큰 규모에서 트랜스포머·Titans·Samba를 넘기며, 10M 컨텍스트까지 성능을 유지합니다.
 ---
 
