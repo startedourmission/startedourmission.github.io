@@ -1,0 +1,16 @@
+---
+type: person
+description: Second Brain·PARA 메소드로 디지털 PKM을 대중화한 미국의 생산성 작가.
+tags:
+  - 인물
+aliases:
+  - "Tiago Forte"
+---
+
+티아고 포르테(Tiago Forte)는 미국의 생산성 작가이자 교육자로, [[Second Brain]] 개념과 PARA 메소드를 대중화한 인물입니다.
+
+2017년부터 "Building a Second Brain"이라는 온라인 코스를 운영하다가 2022년 동명의 책을 출간하면서 글로벌하게 알려졌습니다. [[Obsidian]], [[Notion]], [[Roam Research]] 같은 디지털 PKM 도구가 함께 성장한 시기와 맞물려, 이 책은 [[PKM]] 분야의 표준 입문서로 자리잡았습니다.
+
+PARA(Projects, Areas, Resources, Archives)는 그가 제안한 노트·파일 분류 체계로, 실행 가능성(actionability)을 기준으로 자료를 네 폴더로 나누는 방식입니다. 디지털 PKM 도구 사용자들 사이에서 가장 많이 채택된 분류법 중 하나입니다.
+
+이전에는 컨설팅 회사 직원이었으며, 만성 통증 관리를 위해 노트 시스템을 정교화한 것이 작업의 시작이었다고 밝힌 바 있습니다.
