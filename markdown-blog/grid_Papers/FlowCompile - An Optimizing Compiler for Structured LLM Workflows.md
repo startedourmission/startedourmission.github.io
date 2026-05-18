@@ -63,7 +63,7 @@ p_{\text{cond}}     &= \sum_i w_i \, p_i, & t_{\text{cond}}     &= \sum_i w_i \,
 \end{aligned}
 $$
 
-식 자체가 정확할 필요는 없습니다. 이 proxy가 만족해야 할 조건은 두 가지뿐입니다. 첫째 frontier consistency — 진짜 non-dominated 설정이 proxy 추정에서도 non-dominated여야 합니다. 둘째 local order preservation — frontier 근처에서 설정 간 상대 순위가 보존되어야 합니다. 이 두 조건만 지키면, proxy는 정확한 시뮬레이터가 아니어도 탐색을 안내하기에 충분합니다.
+식 자체가 정확할 필요는 없습니다. 이 proxy가 만족해야 할 조건은 두 가지뿐입니다. 첫째, frontier consistency. 진짜 non-dominated 설정이 proxy 추정에서도 non-dominated여야 합니다. 둘째, local order preservation. frontier 근처에서 설정 간 상대 순위가 보존되어야 합니다. 이 두 조건만 지키면, proxy는 정확한 시뮬레이터가 아니어도 탐색을 안내하기에 충분합니다.
 
 탐색은 두 단계로 진행됩니다. 먼저 sub-agent 레벨에서 locally dominated 설정을 잘라냅니다. sub-agent 하나의 후보가 65~80개라면, 이 단계에서 6~19개까지 줄어듭니다. 그 다음 가지치기된 워크플로 설정들에 대해 proxy로 정확도와 지연을 추정하고, Kung-Luccio-Preparata의 $O(N \log N)$ non-dominated sorting으로 Pareto frontier를 뽑습니다.
 
