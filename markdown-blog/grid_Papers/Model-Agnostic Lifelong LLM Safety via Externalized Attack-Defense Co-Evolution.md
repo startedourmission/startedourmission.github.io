@@ -54,15 +54,48 @@ EvoSafety의 발상은 단순합니다. 인류가 인지 부담을 외부 도구
 
 ## 결과
 
-수치 자체가 EvoSafety가 어디에 강점이 있는지 분명히 말해줍니다.
+공격, 방어, Guard 모드를 차례로 봅니다.
 
-공격 성능(ASR@1, %)부터 봅니다. Qwen3-4B / Llama-3.1-8B / Llama-3.1-70B / GPT-5.1 / Gemini-3-Flash에 대해 평균 ASR이 92.8(judge: Qwen3Guard) / 86.3(judge: LLM)이고, 1턴 만에 multi-turn 최강이던 ICON을 2.6%p 앞섭니다. RL 기반 베이스라인 Jailbreak-R1 대비로는 65.3%p 차이가 납니다. held-out skill library만 써서 측정한 zero-shot 변형도 평균 84.6 / 74.8로 대부분의 multi-turn 방법보다 12.18%p 높습니다. saturation 이후에도 새 skill을 라이브러리에 더하는 것만으로 ASR이 회복되는 셈입니다.
+**공격 성능 (ASR@1, %, 높을수록 강함).** Qwen3-4B / Llama-3.1-8B / Llama-3.1-70B / GPT-5.1 / Gemini-3-Flash 다섯 victim에 대해 1턴 공격 성공률 평균입니다.
 
-방어 성능(ASR@1, 낮을수록 좋음)은 더 인상적입니다. skill-unseen / skill-seen / co-evolved attacker 세 가지 공격을 4B / 8B / 70B victim에 걸어 측정한 평균 ASR이 11.62%로, 가장 강한 베이스라인이자 co-evolutionary 방식인 TriPlay-RL의 19.92%를 40% 이상 낮춥니다. 메모리 확장 변형(Ours+)은 평균 ASR을 6.93%까지 더 내립니다. 일반 reasoning 성능 저하는 평균 -0.29%로 거의 없습니다 — TriPlay-RL의 -2.15와 비교됩니다.
+| 공격 방법 | Judge: Qwen3Guard | Judge: LLM |
+| --- | --- | --- |
+| **EvoSafety** | **92.8** | **86.3** |
+| ICON (이전 최강 multi-turn) | 90.2 | — |
+| Jailbreak-R1 (RL baseline) | 27.5 | — |
+| EvoSafety zero-shot (held-out skill) | 84.6 | 74.8 |
 
-Guard 모드의 LLM guard 비교는 더 결정적입니다. 4B / 8B / 70B victim 평균으로 EvoSafety의 3B defender는 attack-successful 프롬프트에 대해 98.89 / 98.14 / 99.47%의 필터링 정확도를 보입니다. 같은 조건에서 [[Llama]] 계열 Llama-Guard-3-8B는 47.51 / 34.67 / 65.13, Qwen3Guard-8B는 72.15 / 61.31 / 86.80입니다. 3B 모델이 8B 모델을 24.92 / 14.13%p 이상 앞서면서 benign 입력에 대한 false positive도 거의 없습니다(GSM8K 100, MMLU 99.47). 논문 abstract의 "99.61% defense success rate, Qwen3Guard-8B 대비 14.13%p, 파라미터 37.5%"라는 표현이 여기서 나옵니다.
+1턴 만에 multi-turn 최강이던 ICON을 2.6%p 앞서고, RL 베이스라인 Jailbreak-R1과는 65.3%p 차이입니다. held-out skill만 써도 평균 84.6%로 대부분의 multi-turn 방법보다 12.18%p 높습니다. saturation 이후에도 새 skill을 라이브러리에 더하기만 하면 ASR이 회복됩니다.
 
-라운드별 공진화는 4 라운드에 걸쳐 attacker ASR이 단조 증가하고 defender ASR이 단조 감소합니다. held-out skill로 측정한 그래프에서도 같은 추세입니다. 새 공격 기법이 나왔을 때 그 skill로 추가 학습한 결과(Table 4) Steer 모드는 Llama-3.1-70B의 ASR을 12.54%에서 2.31%로 5배 가까이 내렸고, Guard 모드는 4B / 8B 모두 100% 성공률에 도달했습니다. 기존에 방어하던 공격이나 reasoning 성능 저하 없이 그렇게 됩니다.
+**방어 성능 (ASR@1, %, 낮을수록 좋음).** skill-unseen / skill-seen / co-evolved attacker 세 가지 공격을 4B / 8B / 70B victim에 걸어 측정한 평균입니다.
+
+| 방어 방법 | 평균 ASR (%) | Reasoning 성능 저하 (%p) |
+| --- | --- | --- |
+| **EvoSafety (Ours+)** | **6.93** | — |
+| EvoSafety | 11.62 | **−0.29** |
+| TriPlay-RL (이전 co-evolutionary 최강) | 19.92 | −2.15 |
+
+가장 강한 베이스라인 TriPlay-RL 대비 40% 이상 낮추면서, 일반 reasoning 성능 저하는 거의 없습니다.
+
+**Guard 모드 필터링 정확도 (%, 높을수록 좋음).** attack-successful 프롬프트를 얼마나 잘 거르느냐, victim별로.
+
+| Guard 모델 | 파라미터 | vs Qwen3-4B | vs Llama-3.1-8B | vs Llama-3.1-70B |
+| --- | --- | --- | --- | --- |
+| **EvoSafety defender** | **3B** | **98.89** | **98.14** | **99.47** |
+| Qwen3Guard-8B | 8B | 72.15 | 61.31 | 86.80 |
+| [[Llama]]-Guard-3-8B | 8B | 47.51 | 34.67 | 65.13 |
+
+3B 모델이 8B 모델을 14.13~24.92%p 앞서면서 benign 입력에 대한 false positive도 거의 없습니다 (GSM8K 100, MMLU 99.47). 논문 abstract의 *99.61% defense success rate, Qwen3Guard-8B 대비 14.13%p, 파라미터 37.5%*라는 표현이 여기서 나옵니다.
+
+**공진화와 신규 skill 흡수.** 4 라운드에 걸쳐 attacker ASR은 단조 증가, defender ASR은 단조 감소합니다. 새 공격 기법이 나왔을 때 그 skill로 추가 학습한 결과(Table 4)는 다음과 같습니다.
+
+| 신규 skill 흡수 후 | victim | ASR before → after (%) |
+| --- | --- | --- |
+| Steer 모드 | Llama-3.1-70B | 12.54 → **2.31** |
+| Guard 모드 | Qwen3-4B | — → **100** |
+| Guard 모드 | Llama-3.1-8B | — → **100** |
+
+기존에 방어하던 공격이나 reasoning 성능 저하 없이 그렇게 됩니다.
 
 ## 회고
 

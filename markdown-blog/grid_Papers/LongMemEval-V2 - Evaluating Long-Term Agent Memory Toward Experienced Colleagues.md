@@ -62,17 +62,45 @@ LongMemEval-V2 한 줄로 정리하면 *Web agent 도메인 + 멀티모달 + 다
 
 평가 포뮬레이션이 흥미롭습니다. *context gathering*이라는 이름으로, 메모리 시스템은 `Insert(h)`와 `Query(q)` 두 API만 노출합니다. trajectory를 순서대로 Insert하고, 마지막에 Query로 200K 토큰 budget의 context를 받아 *고정 reader model*(Qwen3.5-9B)이 답합니다. 메모리 시스템의 품질이 reader 능력에 묻히지 않도록 reader를 고정해둔 게 핵심입니다. accuracy와 query latency 둘 다 보고합니다.
 
-먼저 기준점입니다. trajectory를 전혀 안 주고 frontier LLM이 parametric knowledge만으로 푸는 경우, 최고가 Kimi K2.5의 14.1%, [[Claude]] Opus 4.6은 11.8%, GPT-5.2는 4.7%, Gemini-3.1-Pro는 11.0%. 즉 *모델이 그냥 알지는 못한다*는 게 확실합니다. 반대로 oracle answer-bearing trajectory만 정확히 주면 Qwen3.5-9B가 59.6%, GPT-5.4-mini가 65.3%, Codex 코딩 에이전트(GPT-5.4-mini xhigh reasoning)는 89.7%까지 갑니다. 즉 *trajectory만 정확히 찾아주면 풀리는 문제*인 셈입니다. 두 끝점 사이의 간극이 메모리 시스템이 메우는 부분입니다.
+먼저 두 개의 기준점을 잡습니다. trajectory를 전혀 안 주고 frontier LLM이 parametric knowledge만으로 푸는 *no-context* 하한과, 정답이 들어 있는 trajectory만 정확히 골라준 *oracle* 상한입니다.
+
+| 기준점 | 모델 | 정확도 (%) |
+| --- | --- | --- |
+| No-context (parametric only) | Kimi K2.5 | **14.1** |
+| No-context | Gemini-3.1-Pro | 11.0 |
+| No-context | [[Claude]] Opus 4.6 | 11.8 |
+| No-context | GPT-5.2 | 4.7 |
+| Oracle trajectory | Qwen3.5-9B (reader) | 59.6 |
+| Oracle trajectory | GPT-5.4-mini | 65.3 |
+| Oracle trajectory | Codex (GPT-5.4-mini xhigh) | **89.7** |
+
+모델이 그냥 알지는 못합니다(14% 이하). 반면 정답 trajectory만 정확히 찾아주면 89.7%까지 갑니다. 메모리 시스템이 메우는 건 이 두 끝점 사이입니다.
 
 저자들이 제안한 베이스라인 두 가지가 그 간극을 다른 방식으로 채웁니다.
 
-**AgentRunbook-R**(R for RAG)은 trajectory를 세 개의 knowledge pool로 분리합니다. raw state slice(상태 윈도우 + 주변 액션), state transition event(상태 변화 이벤트), procedure & hint note(워크플로 요약과 환경 gotcha 노트). query time에 LLM controller가 어느 pool에 어떤 쿼리를 던질지 정합니다. LME-V2-Small에서 59.6%, Medium에서 57.0%로 simple RAG 베이스라인(Small 42.8% / Medium 38.1%)을 크게 앞섭니다. latency는 26초로 빠른 편이고, slice + note 조합이 빠지면 워크플로 정확도가 무너지는 ablation 결과를 함께 보입니다.
+**AgentRunbook-R**(R for RAG)은 trajectory를 세 개의 knowledge pool로 분리합니다. raw state slice(상태 윈도우 + 주변 액션), state transition event(상태 변화 이벤트), procedure & hint note(워크플로 요약과 환경 gotcha 노트). query time에 LLM controller가 어느 pool에 어떤 쿼리를 던질지 정합니다. slice + note 조합이 빠지면 워크플로 정확도가 무너지는 ablation 결과를 함께 보입니다.
 
-**AgentRunbook-C**(C for coding agent)는 더 과감합니다. trajectory를 그대로 파일로 디스크에 깔아두고, query마다 coding agent(Codex)에게 sandbox workspace를 만들어 던집니다. 그 워크스페이스에는 workflow document, manifest artifacts(현재 메모리 레이아웃 요약), helper script(상태 span 보기, trajectory 검색)가 들어 있어 *코딩 에이전트가 트레젝토리를 마음대로 grep·열람*해서 답에 필요한 증거를 모읍니다. LME-V2-Small에서 74.9% / Medium에서 70.1%로 전체 1위입니다. vanilla [[OpenAI]] Codex가 같은 trajectory 파일을 받아 풀면 69.9% / 68.7%이고, latency는 Codex가 평균 182초인 데 비해 AgentRunbook-C는 약 32% 더 빠릅니다. workflow guidance·manifest·helper script가 *coding agent의 메모리 컨트롤러 역할을 정형화*해주기 때문이라는 해석입니다.
+**AgentRunbook-C**(C for coding agent)는 더 과감합니다. trajectory를 그대로 파일로 디스크에 깔아두고, query마다 coding agent(Codex)에게 sandbox workspace를 만들어 던집니다. 그 워크스페이스에는 workflow document, manifest artifacts(현재 메모리 레이아웃 요약), helper script(상태 span 보기, trajectory 검색)가 들어 있어 *코딩 에이전트가 trajectory를 마음대로 grep·열람*해서 답에 필요한 증거를 모읍니다. workflow guidance·manifest·helper script가 *coding agent의 메모리 컨트롤러 역할을 정형화*해주기 때문이라는 해석입니다.
 
-전체 평균으로 정리하면 AgentRunbook-C 72.5% vs Codex 69.3% vs AgentRunbook-R 58.3% vs simple RAG 48.5%. 한 줄로 *coding agent를 메모리 컨트롤러로 쓰는 게 RAG보다 좋다, 다만 scaffolding을 잘 짠 경우에 한해*.
+| 시스템 | Small (%) | Medium (%) | 평균 (%) |
+| --- | --- | --- | --- |
+| **AgentRunbook-C** | **74.9** | **70.1** | **72.5** |
+| Codex (vanilla, [[OpenAI]]) | 69.9 | 68.7 | 69.3 |
+| AgentRunbook-R | 59.6 | 57.0 | 58.3 |
+| Simple RAG | 42.8 | 38.1 | 48.5 |
 
-세부적으로 보면 어디서 무너지는지가 더 흥미롭습니다. AgentRunbook-C가 static(82.0%)·dynamic(72.4%)·workflow(72.6%)에서는 잘 하지만 *premise awareness가 들어가는 abstention*과 *gotchas(51.7%)*에서는 절반 수준에 머뭅니다. *없는 것을 없다고 말하기*가 가장 어렵습니다. 모델이 늘 그렇듯 confabulate 합니다.
+한 줄로 정리하면 *coding agent를 메모리 컨트롤러로 쓰는 게 RAG보다 좋다, 다만 scaffolding을 잘 짠 경우에 한해*. latency도 AgentRunbook-C가 Codex 평균 182초 대비 약 32% 더 빠릅니다.
+
+세부적으로 어디서 무너지는지가 더 흥미롭습니다. 카테고리별 정확도를 보면 AgentRunbook-C의 약점은 환경 gotcha와 premise abstention입니다.
+
+| 카테고리 | AgentRunbook-C (%) |
+| --- | --- |
+| Static state recall | **82.0** |
+| Workflow knowledge | 72.6 |
+| Dynamic state tracking | 72.4 |
+| Environment gotchas | 51.7 |
+
+*없는 것을 없다고 말하기*가 가장 어렵습니다. 모델이 늘 그렇듯 confabulate 합니다.
 
 언급된 외부 메모리 시스템들(Mem0, Letta/MemGPT, Memory-R1, Mem-α, MemSkill, A-MEM, StateLM)은 본 논문의 baseline pool에는 직접 포함되지 않습니다. 저자들은 *이런 시스템들은 user-assistant chat이나 high-level strategy 중심으로 설계돼 noisy agent trajectory에 그대로 적용하면 효과가 떨어진다*고 명시하며, 그래서 AgentRunbook 시리즈를 새로 만들었다고 설명합니다.
 
