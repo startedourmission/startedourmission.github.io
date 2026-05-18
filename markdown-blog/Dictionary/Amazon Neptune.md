@@ -4,7 +4,6 @@ tags:
   - 오픈소스
 description: "AWS가 제공하는 완전 관리형 그래프 데이터베이스. Property Graph와 RDF를 모두 지원해 Cypher·Gremlin·SPARQL을 모두 쓸 수 있습니다."
 ---
-
 Amazon Neptune은 AWS가 2018년 GA한 완전 관리형 그래프 데이터베이스입니다.
 
 특징은 두 가지 그래프 모델을 동시에 지원한다는 점입니다.
