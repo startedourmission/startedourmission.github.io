@@ -1,0 +1,18 @@
+---
+type: person
+description: Microsoft Research Distinguished Scientist 겸 부사장. MSR Asia의 Chief Scientist이자 GenAI 그룹 총괄. NLP, 음성, 멀티모달, foundation model 전반을 지휘
+tags:
+  - 인물
+  - LLM
+aliases:
+  - 웨이푸루
+  - Furu Wei
+---
+
+Furu Wei는 [[Microsoft Research Asia]]의 Distinguished Scientist 겸 부사장(Vice President)으로, MSR Asia의 Chief Scientist이자 GenAI 그룹 총괄입니다. 본 논문 [[The Era of Agentic Organization - Learning to Organize with Language Models|AsyncThink]]의 contact 저자이며, 그룹 전반의 시니어 책임자 라인을 맡습니다.
+
+대표 연구 라인은 [[Li Dong]]과 거의 동일한데, 두 사람이 MSR Asia NLP/멀티모달 분야를 사실상 공동 운영하는 구도이기 때문입니다. UniLM, MiniLM, InfoXLM, BEiT(비전 사전학습), Kosmos, WavLM(음성) 등 분야 횡단 시리즈에 모두 시니어로 이름이 올라갑니다.
+
+최근 라인은 GenAI 그룹 차원에서 *대규모 사전학습 → agentic LLM* 으로 이동 중입니다. AsyncThink는 그 전환의 가시적 결과 중 하나이고, "Reward Reasoning Model" (arXiv 2505.14674) 같은 reward modeling 라인도 같은 그룹에서 동시에 진행 중입니다.
+
+직책상 직접 1저자나 알고리즘 디테일을 쥐는 위치는 아니지만, 그룹 차원의 방향 설정과 자원 배분, 외부 협업의 결정권자 역할입니다. 박사 인턴 라인에서 정규직 합류로 이어지는 [[Microsoft Research Asia]] 파이프라인의 양 끝을 [[Li Dong]]과 함께 잡고 있다고 볼 수 있습니다.

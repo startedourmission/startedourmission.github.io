@@ -1,0 +1,18 @@
+---
+type: person
+description: 호주 University of Queensland EECS 강사. 비전-언어 모델과 멀티모달 추론을 연구하며 전 Meta Research Scientist
+tags:
+  - 인물
+  - 딥러닝
+aliases:
+  - 차이위쥔
+  - Yujun Cai
+---
+
+Yujun Cai는 호주 University of Queensland 전기·컴퓨터공학부 강사(Lecturer)입니다. 연구 관심사는 컴퓨터 비전, 멀티모달 인식, 자연어 처리에 걸쳐 있고, 특히 비전-언어 모델 보안과 멀티모달 추론을 최근 라인으로 잡고 있습니다.
+
+박사는 싱가포르 난양공대(NTU)에서 마쳤고, 지도교수는 Tat Jen Cham, Jianfei Cai, Junsong Yuan, Nadia Magnenat Thalmann까지 네 분이 공동으로 붙은 형태였습니다. Meta Inc.에서 Research Scientist로 근무하다가 학계로 자리를 옮긴 케이스죠.
+
+Self-Manager에서는 1저자 [[Yilong Xu]]와 [[Yiwei Wang]] 사이를 잇는 공저자로 참여했습니다. 본인이 직접적으로 비전 라인이라기보다는, 같은 Queensland 그룹의 Xiang Long과 함께 평가·실험 설계 쪽으로 합류한 것으로 보입니다. CVPR 2025에 비전-언어 모델 보안 관련 논문을 발표하는 등 멀티모달 트러스트워디 LLM이 최근 핵심 라인입니다.
+
+피인용은 약 5,400회 수준이고, Multi-Modal Understanding과 Vision-Language Models를 본인 specialty로 명시하고 있습니다.

@@ -12,7 +12,7 @@ image: "![[evosafety-overview.png]]"
 
 > Zhang, X., Li, C., Liu, H., Yan, S., Yan, B., Ye, Q., & Li, H. (2026). Model-Agnostic Lifelong LLM Safety via Externalized Attack-Defense Co-Evolution. arXiv:2605.13411.
 
-지금까지 LLM safety는 거의 전부 가중치 안에 박혀 있었습니다. [[Anthropic]]의 Constitutional AI도, RLHF도, safety SFT도, 결국 "이 모델의 파라미터에 safe behavior를 새긴다"는 발상이었습니다. 그래서 모델을 한 번 갈아끼울 때마다 safety 파이프라인 전체를 다시 돌려야 했습니다. EvoSafety는 그 흐름에서 한 발 빠져나옵니다. safety를 모델 밖에 있는 외부 구조(공격 스킬 라이브러리, 검증된 메모리 뱅크, 경량 보조 디펜더)로 옮기고, 그것을 victim model과 분리해서 운영합니다. 모델은 얼려둔 채로, safety 자산만 따로 키우는 발상입니다.
+지금까지 LLM safety는 거의 전부 가중치 안에 있었습니다. [[Anthropic]]의 Constitutional AI도, RLHF도, safety SFT도, 결국 "이 모델의 파라미터에 safe behavior를 새긴다"는 발상이었습니다. 그래서 모델을 한 번 갈아끼울 때마다 safety 파이프라인 전체를 다시 돌려야 했습니다. EvoSafety는 그 흐름에서 한 발 빠져나옵니다. safety를 모델 밖에 있는 외부 구조(공격 스킬 라이브러리, 검증된 메모리 뱅크, 경량 보조 디펜더)로 옮기고, 그것을 victim model과 분리해서 운영합니다. 모델은 얼려둔 채로, safety 자산만 따로 키우는 발상입니다.
 
 ## 저자
 

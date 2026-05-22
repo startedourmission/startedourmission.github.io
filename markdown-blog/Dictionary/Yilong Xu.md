@@ -1,0 +1,18 @@
+---
+type: person
+description: 중국과학원 ICT 박사과정 + ModelBest 소속. Xueqi Cheng·Huawei Shen 그룹에서 retrieval-augmented LLM과 agentic search를 연구하며 Self-Manager의 1저자
+tags:
+  - 인물
+  - LLM
+aliases:
+  - 쉬이룽
+  - Yilong Xu
+---
+
+Yilong Xu는 비동기 병렬 에이전트 루프 구조 Self-Manager의 1저자입니다. 소속은 중국과학원 컴퓨팅기술연구소(CAS ICT) 박사과정이며, 동시에 ModelBest Inc.에서 인턴 신분으로 모델 연구를 병행합니다.
+
+그의 지도그룹은 Xueqi Cheng과 Huawei Shen이 이끄는 CAS ICT의 정보 검색·NLP 라인입니다. 대표 연구는 세 갈래로 정리됩니다. 첫째, 인용 생성의 위치 단위 평가를 다룬 Aliice (NAACL 2025)로, 검색 기반 LLM이 어떤 토큰 위치에서 출처를 어떻게 인용하는지를 fine-grained로 평가하는 벤치마크입니다. 둘째, retrieval-augmented language model을 위한 utility-based retriever 학습(arXiv 2504.00573)입니다. 검색기를 단순 relevance가 아니라 생성 효용 기반으로 학습시키는 방향이죠. 셋째, agentic search의 reality-aligned 평가를 제안한 Ravine (arXiv 2507.16725)입니다.
+
+Self-Manager에서는 단일 에이전트 루프가 "thread" 개념을 갖도록 일반화하고, Thread Control Block이라는 OS 영감 메타 구조를 LLM 에이전트에 끼워 넣자는 핵심 아이디어를 본인이 주도했습니다. GitHub `ylXuu/ParallelAgent`로 코드를 공개합니다.
+
+이 흐름은 같은 ICT 그룹이 꾸준히 진행해온 *검색-기반 LLM의 적응적 행동 학습* 라인의 연장입니다. retrieval, citation, evaluation, agent loop가 차례로 쌓이면서 self-managing parallel agent까지 왔다고 볼 수 있습니다.

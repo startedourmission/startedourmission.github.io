@@ -1,0 +1,18 @@
+---
+type: person
+description: UC Merced 조교수, UC Merced NLP Lab 디렉터. 신뢰성 있는 LLM 제어와 멀티모달 추론을 다루며 Self-Manager의 시니어 저자
+tags:
+  - 인물
+  - LLM
+aliases:
+  - 왕이웨이
+  - Yiwei Wang
+---
+
+Yiwei Wang은 UC Merced 컴퓨터과학부 조교수이자 UC Merced NLP Lab 디렉터입니다. 본 논문 [[Self-Manager - Parallel Agent Loop for Long-form Deep Research|Self-Manager]]에서는 마지막 저자, 즉 시니어 포지션을 맡아 [[Yilong Xu]]가 주도한 비동기 병렬 에이전트 루프 연구를 지도했습니다.
+
+학력은 동남대학교 학사(2017), 홍콩과기대 석사(2019)를 거쳐 싱가포르국립대학교에서 박사를 마쳤습니다(2023). 박사 졸업 직후 곧장 UC Merced에 부임해 NLP Lab을 시작했습니다.
+
+연구 관심사는 자연어 처리, 대형 언어 모델, 그래프 머신러닝, 소셜 미디어로 분산되어 있는데, 최근 라인은 "control"이라는 키워드로 묶입니다. 분할 정복 방식으로 LLM을 제어하는 EMNLP 2024 논문(Control Large Language Models via Divide-and-Conquer)과, 컨텍스트 충실성을 위한 정렬을 다룬 Context-DPO (ACL 2025)가 대표적입니다. Self-Manager의 thread 단위 격리 컨텍스트 관리도 그 연장으로 읽힙니다.
+
+박사·박사후 인력을 적극적으로 모집 중이라고 본인 홈페이지에 명시하고 있으며, 중국·동아시아 NLP 커뮤니티의 미국 진출 라인 중에서 비교적 빠르게 자기 랩을 세운 케이스입니다.

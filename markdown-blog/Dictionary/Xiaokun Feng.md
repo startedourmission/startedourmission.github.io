@@ -1,0 +1,17 @@
+---
+type: person
+description: 중국과학원 자동화연구소(CASIA) 박사과정 연구자로 비전·언어 객체 추적과 train-free 비디오 생성 작업을 병행하는 1저자급 연구자
+tags:
+  - 인물
+  - 컴퓨터비전
+  - 비디오생성
+aliases:
+  - Xiaokun Feng
+  - 펑샤오쿤
+---
+
+중국과학원 자동화연구소(CASIA) 박사과정 학생으로, [[Kaiqi Huang]] 교수 그룹 소속입니다. 본 전공은 vision-language object tracking 쪽이며, NeurIPS 2024의 MemVLT(Visual-Language Tracking with Adaptive Memory-based Prompts), ICCV 2025의 ATCTrack 같은 작업이 대표 논문입니다. CVPRW DTLLM-VLT로 Best Paper Honorable Mention도 받았습니다.
+
+박사과정 인턴으로 알리바바 AMAP CV 라인에 합류하면서 video generation 쪽 작업이 늘었습니다. AMAP-ML이 공개한 S²-Guidance(ICLR 2026), ImagerySearch(AAAI 2026) 같은 train-free 비디오 생성 강화 시리즈에 공저자로 들어가 있고, NarrLV(arXiv:2507.11245) 같은 long-video narrative 벤치마크 1저자이기도 합니다.
+
+본 논문 [[Enhancing Train-Free Infinite-Frame Generation for Consistent Long Videos|MIGA]]는 AMAP 인턴 기간에 1저자로 수행한 작업입니다. tracking 출신이 *프레임 간 일관성 평가*라는 문제를 추적 도메인 감각으로 푸는 점이 이 논문의 self-reflection 메커니즘(cosine similarity 기반 anomaly 탐지)에 그대로 드러납니다.
