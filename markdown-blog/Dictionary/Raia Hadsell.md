@@ -1,0 +1,21 @@
+---
+type: person
+description: DrLIM·연속 학습·로봇 RL의 권위자, Google DeepMind VP of Research, 인문학 학부에서 ML 박사로 전환한 이력
+tags:
+  - 인물
+  - 딥러닝
+  - 머신러닝
+aliases:
+  - Raia Hadsell
+  - 라이아 해드셀
+---
+
+라이아 해드셀(Raia Hadsell)은 미국 출신의 머신러닝·로보틱스 연구자로, 현재 Google DeepMind의 *VP of Research*이면서 *Frontier AI* 부문 공동 리드를 맡고 있다.
+
+학력은 다소 독특하다. Reed College에서 *종교학*으로 학사 학위를 받은 뒤 컴퓨터 과학으로 전환하였고, 2009년 NYU에서 [[Yann LeCun|얀 르쿤]] 지도로 박사 학위를 받았다. 박사 논문 *Learning Long-range Vision for Offroad Robots*는 DARPA LAGR 프로젝트의 일환으로 야외 이동 로봇이 자기지도로 장거리 시각 인식을 학습하도록 한 작업이며, 2009년 NYU *Outstanding Dissertation Award*를 수상하였다.
+
+박사 기간의 또 다른 핵심 작업은 *Dimensionality Reduction by Learning an Invariant Mapping*(Hadsell, Chopra, LeCun, CVPR 2006), 곧 *DrLIM*이다. 같은 클래스 표본은 가깝게, 다른 클래스 표본은 마진보다 멀게 끌고 미는 contrastive loss로 저차원 매니폴드를 학습하는 정식으로, [[Sumit Chopra|수밋 초프라]]의 얼굴 검증 작업과 함께 현대 contrastive learning 연구의 기반이 되었다.
+
+박사 후 경력은 CMU Robotics Institute 포스닥(Drew Bagnell·Martial Hebert 지도), SRI International 비전·로보틱스 그룹을 거쳐 2014년 DeepMind에 합류하였다. DeepMind에서는 *Progressive Neural Networks*, *PathNet*, *Policy Distillation*, *Elastic Weight Consolidation* 등 연속 학습(continual learning)과 강화학습 기반 로봇 연구를 이끌었다.
+
+본 글의 *A Tutorial on Energy-Based Learning*(2006) 작업에서 그의 기여는 박사 논문 시기에 다듬어 둔 DrLIM 형식이 *§5 Good and Bad Loss Functions* 분석에 그대로 반영되도록 손실 함수와 margin 조건을 정리한 것이다. [[Sumit Chopra|수밋 초프라]]와 함께 NYU 르쿤 연구실의 대조 학습 라인을 만든 두 사람이다.
