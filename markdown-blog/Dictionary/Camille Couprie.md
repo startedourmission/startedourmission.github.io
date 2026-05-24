@@ -1,0 +1,18 @@
+---
+type: person
+description: 그래프 기반 영상 분할과 수리형태학을 잇는 프랑스 출신 연구자, Meta FAIR Paris 리서치 사이언티스트
+tags:
+  - 인물
+  - 딥러닝
+aliases:
+  - Camille Couprie
+  - 카미유 쿠프리
+---
+
+카미유 쿠프리(Camille Couprie)는 프랑스 출신의 컴퓨터 비전 연구자로, 그래프 기반 영상 분할과 수리형태학을 잇는 작업으로 알려져 있다. 현재 Meta(구 Facebook) AI Research Paris의 리서치 사이언티스트이다.
+
+학력은 ESIEE Paris 공학 학위(최고 영예) 직후 Université Paris-Est에서 [[Laurent Najman|로랑 나즈만]]과 Hugues Talbot 공동지도로 2011년 박사 학위를 받았다. 박사 논문은 *Power Watersheds*와 *그래프 기반 영상 분할의 통일적 프레임워크*에 관한 것으로, 그래프 컷·랜덤 워크·워터셰드를 같은 최적화 식 안에 묶었다.
+
+박사 후 2011년 가을 NYU Courant Institute의 [[Yann LeCun|얀 르쿤]] 그룹에 포스닥으로 합류하였다. 본 글의 *Learning Hierarchical Features for Scene Labeling*(2013) 작업에서 그의 기여는 *segmentation tree*와 *optimal cover* 알고리즘의 설계, 그리고 *Conditional Random Field over superpixels* 후처리 정식화이다. 박사 시절의 그래프 기반 분할 노하우가 합성곱 신경망의 출력을 영상의 경계와 정렬시키는 후처리 단으로 자연스럽게 들어왔다.
+
+이후 Facebook AI Research Paris에 합류해 영상 분할, 자기지도 학습, 비디오 이해 등의 분야에서 꾸준히 연구를 이어가고 있다.
