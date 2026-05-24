@@ -1,0 +1,19 @@
+---
+type: person
+description: AT&T Bell Labs Adaptive Systems Research 부서장, NIPS 학회 공동 창립자, DARPA 자율 주행 프로그램 매니저
+tags:
+  - 인물
+  - 딥러닝
+aliases:
+  - Larry Jackel
+  - Lawrence D. Jackel
+  - 래리 재클
+---
+
+래리 재클(Lawrence D. Jackel)은 미국의 실험물리학자 출신 신경망 연구자로, 1980년대 중반 AT&T Bell Labs Holmdel에 *Adaptive Systems Research* 부서를 세우고 부서장으로서 현대 머신러닝의 초기 인프라를 닦은 인물이다. 1989년 [[Yann LeCun|얀 르쿤]]의 손글씨 숫자 인식 합성곱 신경망 논문에서 시니어 저자(마지막 저자)로 이름을 올렸다.
+
+코넬 대학교에서 초전도 소자에 대한 박사 논문으로 실험물리학 박사를 받았다. 1984년 Bell Labs Holmdel에서 *Adaptive Systems Research Department*를 창설하여 부서장으로 부임하였고, [[Yann LeCun|얀 르쿤]], [[John S. Denker|존 덴커]], [[Bernhard Boser|베른하르트 보저]] 등을 이 부서로 영입하였다. 1987년 부서의 첫 신경망 연구는 하드웨어 전문가 Hans-Peter Graf와 부서 공동 책임자였던 Richard Howard, 재클 본인이 함께 발표하였다.
+
+학회 활동 측면에서는 Snowbird Workshop on Neural Networks for Computer 와 NIPS(현재 NeurIPS) 학회의 공동 창립자이다. 두 모임은 1980년대 신경망 연구 공동체의 회의 인프라가 되었고, 지금도 머신러닝의 대표 학회로 남아 있다.
+
+1995년 AT&T 분할 이후에는 AT&T Labs에 새 부문을 만들어 웹 기반 통합 메시징과 IP 호 관리 서비스를 개척하였다. 2002년 AT&T를 떠나 컨설팅 회사 North-C Technologies를 창업하였고, 2003년부터 2007년까지는 DARPA의 IPTO/TTO에서 프로그램 매니저로 자율 지상 로봇 항법(Autonomous Ground Robot navigation)과 운동 제어 프로그램을 기획·운영하였다. 이 프로그램이 자율주행 기술의 군사·민간 이중 용도 토대를 만들었다. 2015년부터는 NVIDIA의 자문이다. 미국 물리학회(APS)와 IEEE 펠로우이다.
