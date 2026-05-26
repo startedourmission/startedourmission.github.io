@@ -342,8 +342,8 @@ input[type="submit"]:active {
     filter: brightness(var(--active-brightness));
 }
 
-a b,
-a strong,
+.cta a b,
+.cta a strong,
 button,
 input[type="submit"] {
     background-color: var(--color-link);
@@ -351,8 +351,8 @@ input[type="submit"] {
     color: var(--color-bg);
 }
 
-a em,
-a i {
+.cta a em,
+.cta a i {
     border: 2px solid var(--color-link);
     border-radius: var(--border-radius);
     color: var(--color-link);
