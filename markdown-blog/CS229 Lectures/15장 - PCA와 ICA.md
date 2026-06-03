@@ -9,7 +9,7 @@ chapter: 15
 image: "![[15-cs229-pca.png]]"
 tags:
   - cs229
-  - machine-learning
+  - 머신러닝
   - book
 ---
 

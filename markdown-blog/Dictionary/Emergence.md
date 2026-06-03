@@ -1,6 +1,6 @@
 ---
 date: 2026-05-08
-type: ai-concept
+type: concept
 description: "모델 규모가 임계점을 넘으면 예측 불가능한 능력이 갑자기 나타나는 현상"
 tags:
   - LLM

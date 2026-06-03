@@ -9,9 +9,10 @@ series: "CME295 트랜스포머와 LLM 강의 (2025 가을)"
 chapter: 5
 tags:
   - cme295
-  - transformer
-  - llm
+  - 트랜스포머
+  - LLM
   - book
+  - 강화학습
 image: "![[5-cme295-rlhf-pipeline.png]]"
 ---
 

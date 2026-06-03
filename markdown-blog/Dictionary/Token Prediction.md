@@ -1,6 +1,6 @@
 ---
 date: 2026-05-08
-type: ai-concept
+type: concept
 description: "AI가 다음 토큰을 확률적으로 예측하며 텍스트를 생성하는 근본 원리"
 tags:
   - LLM

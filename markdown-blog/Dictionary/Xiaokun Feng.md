@@ -4,7 +4,7 @@ description: 중국과학원 자동화연구소(CASIA) 박사과정 연구자로
 tags:
   - 인물
   - 컴퓨터비전
-  - 비디오생성
+  - 영상처리
 aliases:
   - Xiaokun Feng
   - 펑샤오쿤

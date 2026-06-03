@@ -4,6 +4,7 @@ description: Microsoft Research GenAI 그룹 연구원. BIT 박사(2024) 후 정
 tags:
   - 인물
   - LLM
+  - 에이전트
 aliases:
   - 치쩌원
   - Zewen Chi

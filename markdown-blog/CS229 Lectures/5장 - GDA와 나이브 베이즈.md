@@ -8,7 +8,7 @@ series: "CS229 머신러닝 강의 (2018 가을)"
 chapter: 5
 tags:
   - cs229
-  - machine-learning
+  - 머신러닝
   - book
 image: "![[5-cs229-generative-discriminative.png]]"
 ---

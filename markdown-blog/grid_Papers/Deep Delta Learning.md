@@ -1,6 +1,7 @@
 ---
 date: 2026-01-06
 tags:
+  - 논문
   - LLM
   - 베스트논문
 aliases:
