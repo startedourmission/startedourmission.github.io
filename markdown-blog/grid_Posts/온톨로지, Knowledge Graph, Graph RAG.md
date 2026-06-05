@@ -4,7 +4,7 @@ tags:
   - 정보
   - LLM
   - 머신러닝
-  - Headliner
+  - headliner
 description: 그래프, 그래프 DB, Knowledge Graph, 온톨로지, Graph RAG, Second Brain. 이름이 비슷한 개념들을 한 줄로 줄세우고, 진짜 차이가 어디에 있는지 정리합니다
 ---
 그래프, 그래프 DB, Knowledge Graph, 온톨로지, Graph RAG, Second Brain. 이름은 비슷한데 실제로는 결이 꽤 다른 개념들입니다. 각자 무엇이고, 어디가 다르고, 어디에 쓰는지를 한 번 줄세워보겠습니다.

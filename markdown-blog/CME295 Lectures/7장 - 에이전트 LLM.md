@@ -9,10 +9,9 @@ series: "CME295 트랜스포머와 LLM 강의 (2025 가을)"
 chapter: 7
 tags:
   - cme295
-  - 트랜스포머
-  - LLM
+  - transformer
+  - llm
   - book
-  - 에이전트
 image: "![[7-cme295-rag-pipeline.png]]"
 ---
 

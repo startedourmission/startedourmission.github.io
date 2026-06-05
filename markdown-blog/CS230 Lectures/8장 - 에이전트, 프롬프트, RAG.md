@@ -11,7 +11,6 @@ tags:
   - cs230
   - LLM
   - book
-  - 에이전트
 description: "Stanford CS230 딥러닝 강의 Lecture 8. 프롬프트 엔지니어링, RAG, 에이전트 워크플로우, 멀티 에이전트 시스템을 다루는 실전 강의."
 ---
 

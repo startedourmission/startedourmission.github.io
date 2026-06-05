@@ -4,7 +4,6 @@ tags:
   - 논문
   - LLM
   - 영상처리
-  - 멀티모달
 aliases:
   - Seedream 4.0: Toward Next-generation Multimodal Image Generation
 image: "![[1-seedream4.png]]"

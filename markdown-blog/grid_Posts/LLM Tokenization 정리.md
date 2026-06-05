@@ -1,7 +1,6 @@
 ---
 date: 2025-09-13
 tags:
-  - 정보
   - 딥러닝
 aliases:
 image: "![[1-Tokenization.png]]"

@@ -1,9 +1,7 @@
 ---
-type: concept
 date: 2026-04-10
 tags:
   - LLM
-  - 트랜스포머
 aliases: Rotary Position Embeddings
 image: "![[]]"
 description: "토큰 쌍 간의 상대 위치를 회전 행렬로 어텐션에 직접 반영하는 위치 인코딩 방법"

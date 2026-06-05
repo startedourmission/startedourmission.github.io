@@ -5,7 +5,6 @@ tags:
   - 인물
   - 머신러닝
   - 영상처리
-  - 멀티모달
 aliases:
   - Feng Zhao
   - 자오펑

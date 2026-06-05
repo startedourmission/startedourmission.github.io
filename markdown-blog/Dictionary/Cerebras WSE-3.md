@@ -4,7 +4,7 @@ description: "웨이퍼 스케일 AI 칩, 4조 트랜지스터, 접시 크기"
 tags:
   - 벤치마크
   - AI평가
-  - 반도체
+  - 커스텀칩
 aliases:
   - "WSE-3"
   - "Wafer-Scale Engine 3"

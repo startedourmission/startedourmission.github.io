@@ -1,5 +1,4 @@
 ---
-type: product
 date: 2026-05-18
 tags:
   - 오픈소스

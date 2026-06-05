@@ -5,8 +5,6 @@ date: 2025-10-13
 tags:
   - 논문
   - LLM
-  - 추론
-  - 강화학습
 image: "![[1-Masa.png]]"
 description: 대한민국 KAIST에서 제안하는 추론 모델의 메타 인지(meta-awareness) 능력 향상 방법입니다. 이 논문은 모델이 예측한 메타 정보와 실제 추론 과정 사이의 정렬(alignment)을 통해 메타 인지 능력을 향상시키는 MASA(Meta-Awareness via Self-Alignment) 프레임워크를 제안합니다. Qwen3를 기반으로 외부 소스 없이 메타 인지를 학습합니다.
 ---

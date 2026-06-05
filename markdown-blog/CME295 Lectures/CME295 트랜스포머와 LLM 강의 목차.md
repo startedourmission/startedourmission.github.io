@@ -7,8 +7,8 @@ author:
 source: "https://www.youtube.com/playlist?list=PLoROMvodv4rOCXd21gf0CF4xr35yINeOy"
 tags:
   - cme295
-  - 트랜스포머
-  - LLM
+  - transformer
+  - llm
   - book
   - MOC
 ---
