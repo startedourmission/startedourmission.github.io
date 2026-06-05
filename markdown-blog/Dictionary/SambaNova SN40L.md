@@ -4,7 +4,7 @@ description: "SambaNova Reconfigurable Dataflow Unit, 엔터프라이즈 추론"
 tags:
   - 벤치마크
   - AI평가
-  - 커스텀칩
+  - 반도체
 aliases:
   - "SN40L"
   - "RDU"

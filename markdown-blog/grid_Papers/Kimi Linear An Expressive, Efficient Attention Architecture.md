@@ -3,6 +3,7 @@ date: 2025-11-05
 tags:
   - 논문
   - LLM
+  - 트랜스포머
 aliases:
   - Kimi Linear: An Expressive, Efficient Attention Architecture
 image: "![[1-KimiLinear.png]]"

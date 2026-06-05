@@ -3,6 +3,7 @@ date: 2025-10-21
 tags:
   - 논문
   - LLM
+  - 에이전트
 aliases:
   - MCPMark: A Benchmark for Stress-Testing Realistic and Comprehensive MCP Use
 image: "![[1-mcpmark.png]]"

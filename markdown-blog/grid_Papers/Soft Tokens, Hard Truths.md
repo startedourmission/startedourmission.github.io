@@ -3,6 +3,8 @@ date: 2025-09-23
 tags:
   - 논문
   - LLM
+  - 추론
+  - 강화학습
 aliases:
 image: "![[1-SoftTokens_HardTruths.png]]"
 description: 대형 언어 모델(LLM)의 추론 능력은 Chain-of-Thought(CoT) 기법을 통해 크게 향상되었지만, 기존의 discrete token 기반 접근법은 여러 추론 경로를 동시에 탐색하는 데 한계가 있습니다. 이러한 한계를 극복하기 위해 continuous token을 사용한 새로운 강화학습 기반 훈련 방법을 제안합니다.

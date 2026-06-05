@@ -3,6 +3,8 @@ date: 2025-08-10
 tags:
   - 논문
   - LLM
+  - 추론
+  - 강화학습
 aliases:
   - 엑사원 4.0
 image: "![[exaone_1.png]]"

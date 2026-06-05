@@ -3,6 +3,7 @@ date: 2025-10-21
 tags:
   - 논문
   - LLM
+  - 트랜스포머
 aliases:
   - The Dragon Hatchling: The Missing Link between the Transformer and Models of the Brain
 image: "![[1-DragonHatchling.png]]"

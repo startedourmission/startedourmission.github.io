@@ -4,6 +4,7 @@ tags:
   - 논문
   - 데이터분석
   - LLM
+  - 에이전트
 aliases:
   - 데이터 시각화까지 넘보는 LLM
 image: "![[1-coda1.png]]"

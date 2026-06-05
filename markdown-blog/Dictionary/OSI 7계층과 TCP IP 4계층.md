@@ -1,4 +1,5 @@
 ---
+type: concept
 date: 2025-04-05
 tags:
 aliases:

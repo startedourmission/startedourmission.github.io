@@ -1,0 +1,14 @@
+---
+type: person
+description: 화둥사범대 소속 연구자. MetaForge 자가진화 멀티모달 에이전트의 교신저자
+tags:
+  - 인물
+  - 에이전트
+aliases:
+  - 장민
+  - Min Zhang
+---
+
+[[Min Zhang]]은 화둥사범대학교(East China Normal University) 소속 연구자로, [[MetaForge - A Self-Evolving Multimodal Agent that Retrieves, Adapts, and Forges Tools On Demand]]의 교신저자이자 프로젝트 리더입니다.
+
+이 논문에서 그는 멀티모달 에이전트의 행동을 Decide·Retrieve·Adapt·Forge 네 단계로 나누고, 멀티턴 [[GRPO]] 복합 보상으로 도구를 적응적으로 쓰고 새로 만들어 재사용하는 프레임워크를 이끌었습니다. 공동 1저자는 같은 화둥사범대의 Shouang Wei와 Houcheng Min입니다.

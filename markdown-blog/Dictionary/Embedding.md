@@ -1,6 +1,6 @@
 ---
 date: 2026-05-08
-type: ai-concept
+type: concept
 description: "단어·문장·이미지를 숫자 벡터로 변환해 의미를 수치화하는 기법"
 tags:
   - LLM

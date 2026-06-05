@@ -4,6 +4,7 @@ tags:
   - 논문
   - 딥러닝
   - 머신러닝
+  - 멀티모달
 aliases:
   - "WAM Survey"
   - "World Action Models"

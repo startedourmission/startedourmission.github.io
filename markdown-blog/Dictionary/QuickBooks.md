@@ -3,7 +3,6 @@ type: tool
 description: "Intuit의 SMB·소규모 사업자용 회계 SaaS, 미국 시장 점유율 1위로 Claude for Small Business의 주력 커넥터 중 하나"
 tags:
   - 도구
-  - 회계
   - SaaS
 aliases:
   - "QuickBooks"

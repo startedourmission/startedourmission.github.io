@@ -3,6 +3,7 @@ date: 2025-11-05
 tags:
   - 논문
   - LLM
+  - 멀티모달
 aliases:
   - Emu3.5: Native Multimodal Models are World Learners
 image: "![[1-Emu.png]]"

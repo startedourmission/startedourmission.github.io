@@ -1,6 +1,6 @@
 ---
 date: 2026-05-08
-type: ai-concept
+type: concept
 description: "출력이 다시 입력에 영향을 주는 순환 구조로, AI 학습의 핵심 메커니즘"
 tags:
   - LLM

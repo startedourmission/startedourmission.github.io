@@ -4,7 +4,7 @@ description: "AWS 커스텀 AI 칩, 128GB HBM3e, UltraServer 144칩"
 tags:
   - 벤치마크
   - AI평가
-  - 커스텀칩
+  - 반도체
 aliases:
   - "Trainium3"
   - "Trainium 3"

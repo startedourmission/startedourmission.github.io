@@ -5,6 +5,7 @@ tags:
   - 인물
   - LLM
   - 머신러닝
+  - 멀티모달
 aliases:
   - "Kai-Wei Chang"
 ---
