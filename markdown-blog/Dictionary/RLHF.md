@@ -1,9 +1,7 @@
 ---
-type: concept
 date: 2026-04-10
 tags:
   - LLM
-  - 강화학습
 aliases: Reinforcement Learning from Human Feedback
 image: "![[]]"
 description: "인간의 선호도 피드백으로 훈련된 보상 모델을 사용해 LLM을 정렬하는 기법"

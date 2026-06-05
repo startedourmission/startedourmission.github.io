@@ -4,7 +4,7 @@ description: "Groq Language Processing Unit, 초저지연 추론 특화"
 tags:
   - 벤치마크
   - AI평가
-  - 반도체
+  - 커스텀칩
 aliases:
   - "LPU"
   - "Groq"

@@ -3,6 +3,7 @@ type: tool
 description: "팀 협업·메시징 SaaS, 2020년 Salesforce가 인수, Claude for Small Business가 주간 브리핑 전달 채널로 활용"
 tags:
   - 도구
+  - 협업
   - SaaS
 aliases:
   - "Slack"

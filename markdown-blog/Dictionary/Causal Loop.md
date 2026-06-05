@@ -1,6 +1,6 @@
 ---
 date: 2026-05-08
-type: concept
+type: ai-concept
 description: 원인이 결과를 만들고 그 결과가 다시 원인이 되는 순환 구조
 tags:
   - LLM

@@ -3,7 +3,6 @@ date: 2025-10-09
 tags:
   - 논문
   - LLM
-  - 확산모델
 aliases:
   - FAST-DLLM V2: Efficient Block-Diffusion LLM
 image: "![[1-FAST-DLLM.png]]"

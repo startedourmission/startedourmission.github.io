@@ -5,7 +5,6 @@ tags:
   - 인물
   - 머신러닝
   - 영상처리
-  - 강화학습
 aliases:
   - Guohui Zhang
   - 장궈후이

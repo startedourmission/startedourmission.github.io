@@ -1,9 +1,7 @@
 ---
-type: ai-model
 date: 2026-04-10
 tags:
   - 머신러닝
-  - 컴퓨터비전
 aliases: ""
 image: "![[]]"
 description: "1989년 개발된 자율 주행 신경망으로, 머신러닝 역사의 초기 사례 중 하나"

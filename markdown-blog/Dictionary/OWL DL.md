@@ -1,9 +1,7 @@
 ---
-type: concept
 date: 2026-05-18
 tags:
   - LLM
-  - 추론
 description: "W3C OWL 표준의 결정가능한 프로파일. Description Logic을 기반으로 하며 온톨로지 표현력과 추론 효율의 균형점입니다."
 ---
 

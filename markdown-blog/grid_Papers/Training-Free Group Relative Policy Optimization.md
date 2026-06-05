@@ -3,7 +3,6 @@ date: 2025-10-15
 tags:
   - 논문
   - LLM
-  - 강화학습
 aliases:
 image: "![[1-trainig-free-grpo-1.png]]"
 description: LLM의 성능 향상을 위해 강화 학습을 흔히 사용하죠. 강화 학습 훈련을 위해서는 높은 학습 비용이 필요합니다. 이 논문은 훈련 없이 프롬프트만으로 훈련 없이 강화 학습 정책을 변경합니다.

@@ -1,5 +1,4 @@
 ---
-type: concept
 date: 2026-04-10
 tags:
   - 머신러닝

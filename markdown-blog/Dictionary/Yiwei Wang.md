@@ -4,8 +4,6 @@ description: UC Merced 조교수, UC Merced NLP Lab 디렉터. 신뢰성 있는 
 tags:
   - 인물
   - LLM
-  - 에이전트
-  - NLP
 aliases:
   - 왕이웨이
   - Yiwei Wang

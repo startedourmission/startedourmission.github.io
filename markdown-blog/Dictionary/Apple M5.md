@@ -4,7 +4,7 @@ description: "Apple Silicon M5, 온디바이스 AI 추론, M4 대비 4배"
 tags:
   - 벤치마크
   - AI평가
-  - 반도체
+  - SoC
 aliases:
   - "M5"
   - "Apple Silicon M5"

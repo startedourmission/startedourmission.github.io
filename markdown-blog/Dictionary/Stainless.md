@@ -1,5 +1,4 @@
 ---
-type: company
 date: 2026-05-19
 tags:
   - 정보

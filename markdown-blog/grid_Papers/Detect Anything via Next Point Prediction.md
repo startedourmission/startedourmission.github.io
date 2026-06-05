@@ -2,9 +2,8 @@
 date: 2025-10-22
 tags:
   - 논문
-  - 컴퓨터비전
+  - 객체탐지
   - LLM
-  - 멀티모달
 aliases:
 image: "![[1-das.png]]"
 description: |-

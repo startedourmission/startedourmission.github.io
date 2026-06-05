@@ -5,7 +5,6 @@ tags:
   - 인물
   - LLM
   - 멀티모달
-  - 에이전트
 aliases:
   - Hao Tian
   - 톈하오

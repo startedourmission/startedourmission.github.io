@@ -1,5 +1,4 @@
 ---
-type: concept
 date: 2026-05-18
 tags:
   - LLM

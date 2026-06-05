@@ -1,9 +1,7 @@
 ---
-type: concept
 date: 2026-05-18
 tags:
   - LLM
-  - 추론
 description: "온톨로지의 형식 정의로부터 새로운 사실을 자동 도출하는 추론 엔진. HermiT·Pellet·FaCT++가 대표적입니다."
 ---
 
