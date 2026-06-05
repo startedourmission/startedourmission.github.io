@@ -4,7 +4,8 @@ tags:
   - 정보
   - 머신러닝
   - 벤치마크
-  - headliner
+  - Headliner
+  - 멀티모달
 description: WRING은 모델 구조 훼손을 최소화하고 두더지 잡기 딜레마를 완화합니다. 재학습이 불필요해 실용적입니다.
 ---
 ICLR 2026에서 MIT, [[우스터공과대학교]](Worcester Polytechnic Institute), 구글 공동 연구진이 WRING(Weighted Rotational DebiasING)이라는 새로운 편향 제거 기법을 발표했습니다. AI타임스가 5월 3일 보도한 내용을 살펴봤는데요, 기존 디바이어싱의 고질적 문제였던 "두더지 잡기 딜레마"를 회전이라는 다소 의외의 방식으로 풀어낸 게 인상적이었습니다.

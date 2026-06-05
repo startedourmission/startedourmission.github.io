@@ -2,8 +2,8 @@
 date: 2026-05-22
 tags:
   - 논문
-  - GUI에이전트
-  - 데이터셋
+  - 에이전트
+  - 데이터분석
   - 멀티모달
 description: 라벨 없는 유튜브 비디오 5억 개에서 GUI 인터랙션 트래젝토리 1,200만 개를 자동 추출해 만든 WildGUI 데이터셋과 그 추출 파이프라인 Video2GUI. Qwen2.5-VL·MiMo-VL를 사전학습하면 ScreenSpot-Pro·OSWorld-G에서 15~20점 상승, 온라인 OSWorld·AndroidWorld까지 일관된 개선이 나타납니다.
 image: "![[video2gui-pipeline.png]]"

@@ -1,4 +1,5 @@
 ---
+type: concept
 date: 2026-04-17
 tags:
 aliases:

@@ -3,6 +3,7 @@ date: 2025-10-08
 tags:
   - 논문
   - LLM
+  - 추론
 aliases:
   - Less is More: Recursive Reasoning with Tiny Networks
 image: "![[1-rtn1.png]]"

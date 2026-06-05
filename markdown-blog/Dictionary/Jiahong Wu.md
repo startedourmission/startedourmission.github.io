@@ -3,7 +3,7 @@ type: person
 description: 알리바바 AMAP의 비디오 생성 라인 project lead로 MACE-Dance·S²-Guidance·VMBench·Omni-Effects 등 train-free·평가 작업을 묶어 이끄는 연구자
 tags:
   - 인물
-  - 비디오생성
+  - 영상처리
   - 멀티모달
 aliases:
   - Jiahong Wu

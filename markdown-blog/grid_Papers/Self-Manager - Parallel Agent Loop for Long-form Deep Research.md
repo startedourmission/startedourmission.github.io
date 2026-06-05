@@ -3,6 +3,7 @@ date: 2026-05-22
 tags:
   - 논문
   - LLM
+  - 에이전트
 description: 단일 에이전트 루프를 운영체제의 스레드 구조로 일반화하면, 비동기·병렬·격리 컨텍스트를 얻을 수 있다는 단순하고 강한 제안. ReAct 위에 Thread Control Block을 끼워 넣어, 본 스레드가 서브스레드들을 직접 관리합니다. DeepResearch Bench에서 단일 에이전트 베이스라인을 일관되게 앞서고, OS의 스레드 추상을 LLM 에이전트로 끌어온 첫 정식 정리에 가깝습니다.
 image: "![[self-manager-overview.png]]"
 ---
