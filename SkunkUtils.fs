@@ -5,6 +5,7 @@ type Post = {
     Url: string
     ImageUrl: string option
     Category: string
+    SubCategory: string option
     Date: System.DateTime option
     Summary: string option
     Description: string option
@@ -64,13 +65,18 @@ module Config =
     let frontPageMarkdownFileName = "index.md"
     
     // 인덱스 페이지에 표시하지 않을 특수 파일들
-    let specialFiles = [frontPageMarkdownFileName; "links.md"]
-    
+    // moc.md / sub_index.md는 MOC 카테고리 페이지로 따로 렌더하므로 일반 글 목록·개별 페이지에서 제외
+    let specialFiles = [frontPageMarkdownFileName; "links.md"; "moc.md"; "sub_index.md"]
+
+    // MOC 폴더의 랜딩 페이지 파일명, 각 하위 폴더의 소목차 파일명
+    let mocFileName = "moc.md"
+    let subIndexFileName = "sub_index.md"
+
     // 그리드 섹션 순서 설정
     let gridSectionOrder = ["Posts"; "Papers"; "BookReview"; "Portfolio"]
-    
-    // 내비게이션 섹션 순서 설정
-    let navSectionOrder = ["LLM"]
+
+    // 내비게이션 섹션(nav-sub) 순서 설정
+    let navSectionOrder = ["Mastermind"; "Lectures Translate"; "Language"; "Dictionary"]
 
     // RSS 피드 정보
     let blogTitle = "startedourmission"

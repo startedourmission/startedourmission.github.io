@@ -445,6 +445,93 @@
         printfn $"Processing category page: {categoryName} ->"
         Disk.writeFile outputPath categoryPageHtml
 
+    // MOC 카테고리 페이지: moc.md 본문 + 하위 leaf 폴더별 그룹(sub_index 소개 + 글목록)
+    // leafGroups: (leaf 폴더명, sub_index.md 경로, 그 폴더 글목록) 리스트
+    let createMocPage (header: string) (footer: string) (categoryName: string) (mocPath: string) (leafGroups: (string * string * Post list) list) (loosePosts: Post list) (outputPath: string) (navFolders: string array) (gridFolders: (string * Post list) list) =
+        // 글 한 편을 리스트 아이템으로 렌더
+        let renderPostItem (post: Post) =
+            let dateHtml =
+                match post.Date with
+                | Some date -> $"""<span class="post-date">{date.ToString("yyyy-MM-dd")}</span>"""
+                | None -> ""
+            let descriptionHtml =
+                match post.Description with
+                | Some description -> $"""<p class="post-summary">{description}</p>"""
+                | None -> ""
+            let imageHtml =
+                match post.ImageUrl with
+                | Some imageUrl -> $"""<img src="{imageUrl}" alt="{post.Title}" class="post-thumbnail" />"""
+                | None -> """<img src="assets/notion_avatar.png" alt="Default" class="post-thumbnail" />"""
+            $"""
+                <li class="post-item">
+                    {imageHtml}
+                    <div class="post-content">
+                        <div class="post-header">
+                            <a href="{post.Url}" class="post-title-link">{post.Title}</a>
+                            {dateHtml}
+                        </div>
+                        {descriptionHtml}
+                    </div>
+                </li>"""
+
+        let renderPostList (posts: Post list) =
+            posts
+            |> List.map renderPostItem
+            |> String.concat "\n            "
+
+        // markdown 파일을 본문 HTML로 변환 (없으면 빈 문자열)
+        let mdToHtml (path: string) =
+            if File.Exists(path) then
+                File.ReadAllText(path)
+                |> Obsidian.removeYamlFrontMatter
+                |> Obsidian.convertWikiLinks path
+                |> Markdown.ToHtml
+            else ""
+
+        let mocBodyHtml = mdToHtml mocPath
+
+        // leaf 폴더별 섹션 (소개문 + 글목록)
+        let leafSectionsHtml =
+            leafGroups
+            |> List.map (fun (leaf, subIndexPath, posts) ->
+                let introHtml = mdToHtml subIndexPath
+                let listHtml =
+                    if posts.IsEmpty then ""
+                    else $"""<ul class="posts-list posts-with-images">
+            {renderPostList posts}
+        </ul>"""
+                $"""
+        <section class="moc-leaf-section">
+            <h2 class="moc-leaf-title">{leaf}</h2>
+            {introHtml}
+            {listHtml}
+        </section>""")
+            |> String.concat "\n"
+
+        // leaf에 안 속한 직속 글 (있을 때만)
+        let looseHtml =
+            if loosePosts.IsEmpty then ""
+            else $"""
+        <ul class="posts-list posts-with-images">
+            {renderPostList loosePosts}
+        </ul>"""
+
+        let updatedHeader = buildNav header gridFolders navFolders
+
+        let content =
+            $"""
+        <h1>{categoryName}</h1>
+        <div class="moc-intro">{mocBodyHtml}</div>
+        {looseHtml}
+        {leafSectionsHtml}
+        """
+
+        let mocPageUrl = $"{Url.toUrlFriendly categoryName}.html"
+        let mocPageHtml = generateFinalHtml (headWithCanonical $" - {categoryName}" mocPageUrl) updatedHeader footer content highlightingScript
+
+        printfn $"Processing MOC page: {categoryName} ->"
+        Disk.writeFile outputPath mocPageHtml
+
     let createPostsPage (header: string) (footer: string) (posts: Post list) (outputPath: string) (navFolders: string array) (gridFolders: (string * Post list) list) =
         let postsHtml =
             posts

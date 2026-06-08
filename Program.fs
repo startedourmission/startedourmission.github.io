@@ -31,10 +31,15 @@ let main argv =
             // 특수 파일 목록에 없는 파일만 목록에 표시
             not (Config.specialFiles |> List.contains (Path.GetFileName(file))))
             
-    // 모든 블로그 글로 처리할 파일들 (인덱스 페이지 제외)
+    // 모든 블로그 글로 처리할 파일들 (인덱스 및 MOC 특수 파일 제외)
+    // moc.md / sub_index.md는 개별 해시 페이지로 만들지 않고 MOC 카테고리 페이지로만 렌더
     let blogArticleFiles =
         allMarkdownFiles
-        |> Array.filter (fun file -> Path.GetFileName(file) <> Config.frontPageMarkdownFileName)
+        |> Array.filter (fun file ->
+            let name = Path.GetFileName(file)
+            name <> Config.frontPageMarkdownFileName &&
+            name <> Config.mocFileName &&
+            name <> Config.subIndexFileName)
 
     // 모든 폴더들 찾기
     let allFolders = Directory.GetDirectories(Config.markdownDir)
@@ -90,23 +95,30 @@ let main argv =
             let tags = Obsidian.extractTags content
 
             // 파일이 어떤 폴더에 속하는지 확인
-            let category = 
+            let category =
                 // 먼저 grid 폴더 확인
                 match gridFolders |> Array.tryFind (fun (folderPath, _) -> file.StartsWith(folderPath)) with
                 | Some (_, title) -> title
                 | None ->
-                    // grid 폴더가 아니면 nav 폴더 확인
-                    match navFolders |> Array.tryFind (fun folderName -> 
+                    // grid 폴더가 아니면 nav 폴더 확인 (MOC 폴더는 하위 글도 StartsWith로 부모에 귀속됨)
+                    match navFolders |> Array.tryFind (fun folderName ->
                         let folderPath = Path.Combine(Config.markdownDir, folderName)
                         file.StartsWith(folderPath)) with
                     | Some folderName -> folderName
                     | None -> "Posts" // 어떤 폴더에도 속하지 않으면 Posts
-            
+
+            // 직속 폴더명이 category(부모 MOC/카테고리)와 다르면 leaf 하위 폴더 (그룹핑용)
+            let subCategory =
+                let immediateFolder = Path.GetFileName(Path.GetDirectoryName(file))
+                if immediateFolder = category then None
+                else Some immediateFolder
+
             {
                 Title = filename
                 Url = $"{hashId}.html"
                 ImageUrl = imageUrl
                 Category = category
+                SubCategory = subCategory
                 Date = dateValue
                 Summary = summary
                 Description = description
@@ -168,7 +180,31 @@ let main argv =
             printfn $"Category: {folderName}, Posts count: {categoryPosts.Length}"
             categoryPosts |> List.iter (fun post -> printfn $"  - {post.Title}")
             let categoryPagePath = Path.Combine(Config.outputDir, $"{Url.toUrlFriendly folderName}.html")
-            SkunkHtml.createCategoryPage header footer folderName categoryPosts categoryPagePath navFolders gridSections)
+
+            // MOC 폴더(moc.md 보유)면 MOC 페이지, 아니면 일반 카테고리 페이지
+            // 본문 markdown→html 변환은 SkunkHtml.createMocPage 안에서 처리(Markdig 의존을 Program.fs에 두지 않음)
+            let mocPath = Path.Combine(Config.markdownDir, folderName, Config.mocFileName)
+            if File.Exists(mocPath) then
+                // 하위 leaf 폴더 순서(알파벳) + 각 폴더 sub_index 경로 + 그 폴더 글목록
+                let leafGroups =
+                    Directory.GetDirectories(Path.Combine(Config.markdownDir, folderName))
+                    |> Array.map Path.GetFileName
+                    |> Array.filter (fun n -> n <> "_assets" && not (n.StartsWith(".")))
+                    |> Array.sort
+                    |> Array.toList
+                    |> List.map (fun leaf ->
+                        let subIndexPath = Path.Combine(Config.markdownDir, folderName, leaf, Config.subIndexFileName)
+                        let leafPosts =
+                            categoryPosts |> List.filter (fun post -> post.SubCategory = Some leaf)
+                        (leaf, subIndexPath, leafPosts))
+
+                // leaf에 속하지 않은(=MOC 폴더 직속) 글들
+                let loosePosts =
+                    categoryPosts |> List.filter (fun post -> post.SubCategory.IsNone)
+
+                SkunkHtml.createMocPage header footer folderName mocPath leafGroups loosePosts categoryPagePath navFolders gridSections
+            else
+                SkunkHtml.createCategoryPage header footer folderName categoryPosts categoryPagePath navFolders gridSections)
     
     let createCanvasPages () = 
         allCanvases
@@ -243,13 +279,14 @@ let main argv =
     Disk.copyFolderToOutput Config.assetsDir Config.outputAssetsDir
     Disk.copyFolderToOutput Config.scriptsDir Config.outputScriptsDir
 
-    // 하위 폴더의 _assets도 복사
-    allFolders
-    |> Array.iter (fun dir ->
-        let folderName = Path.GetFileName(dir)
-        let subAssetsDir = Path.Combine(dir, "_assets")
-        if Directory.Exists(subAssetsDir) then
-            let urlFriendlyFolder = Url.toUrlFriendly folderName
+    // 모든 깊이의 _assets 폴더를 복사 (중첩 MOC 구조 지원)
+    // 이미지 URL prefix는 글의 직속 폴더명을 쓰므로(getAssetsPrefix), 출력도 직속 폴더명 기준으로 복사
+    Directory.GetDirectories(Config.markdownDir, "_assets", SearchOption.AllDirectories)
+    |> Array.iter (fun subAssetsDir ->
+        let parentFolder = Path.GetFileName(Path.GetDirectoryName(subAssetsDir))
+        // 루트(_assets)는 위에서 imagesDir로 이미 복사됨 → 건너뜀
+        if parentFolder <> Path.GetFileName(Config.markdownDir) then
+            let urlFriendlyFolder = Url.toUrlFriendly parentFolder
             let outputSubAssetsDir = Path.Combine(Config.outputDir, urlFriendlyFolder, "_assets")
             Disk.copyFolderToOutput subAssetsDir outputSubAssetsDir)
 
