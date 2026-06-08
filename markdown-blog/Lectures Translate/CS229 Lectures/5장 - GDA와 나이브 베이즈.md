@@ -6,6 +6,7 @@ author:
   - "[[Stanford Online]]"
 series: "CS229 머신러닝 강의 (2018 가을)"
 chapter: 5
+date: 2026-04-09
 tags:
   - cs229
   - 머신러닝

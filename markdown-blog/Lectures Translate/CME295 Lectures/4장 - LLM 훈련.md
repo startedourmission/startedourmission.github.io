@@ -7,6 +7,7 @@ author:
   - "[[Stanford Online]]"
 series: "CME295 트랜스포머와 LLM 강의 (2025 가을)"
 chapter: 4
+date: 2026-04-10
 tags:
   - cme295
   - 트랜스포머

@@ -6,7 +6,7 @@ author:
   - "[[Stanford Online]]"
 series: "CS230 딥러닝 강의 (2025 가을)"
 chapter: 6
-date: 2026-04-14
+date: 2026-04-08
 tags:
   - cs230
   - 딥러닝
