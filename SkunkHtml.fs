@@ -245,7 +245,7 @@
         printfn $"Processing {Path.GetFileName markdownFilePath} ->"
         Disk.writeFile outputHtmlFilePath finalHtmlContent
 
-    let createIndexPage (header: string) (footer: string) (gridSections: (string * Post list) list) (navFolders: string array) (regularPosts: Post list) (allPosts: Post list) (graphEdges: (string * string) list) =
+    let createIndexPage (header: string) (footer: string) (gridSections: (string * Post list) list) (navFolders: string array) (regularPosts: Post list) (allPosts: Post list) =
         let frontPageMarkdownFilePath = Path.Combine(Config.markdownDir, Config.frontPageMarkdownFileName)
 
         let frontPageContentHtml =
@@ -274,11 +274,11 @@
             if allTags.IsEmpty then 
                 ""
             else
-                let tagLinks = 
+                let tagLinks =
                     allTags
-                    |> List.map (fun tag -> 
+                    |> List.map (fun tag ->
                         let tagUrl = Url.toUrlFriendly tag
-                        $"<a href=\"/tag-{tagUrl}.html\">{tag}</a>")
+                        $"<a href=\"/tag-{tagUrl}.html\" class=\"tag-filter\" data-tag=\"{escHtml tag}\">{tag}</a>")
                     |> String.concat " · "
                 $"""
                 <section class="tags-section">
@@ -337,39 +337,42 @@
                 </section>
                 """
 
-        // 그래프 뷰 데이터 직렬화 (노드 = 포스트, 엣지 = 위키링크)
-        let graphNodesJson =
+        // 검색 인덱스 직렬화 (제목 · 설명 · 태그 · 카테고리 · 날짜로 클라이언트 검색)
+        let searchIndexJson =
             allPosts
             |> List.map (fun post ->
-                let hashId =
-                    if post.Url.EndsWith(".html") then post.Url.Substring(0, post.Url.Length - 5)
-                    else post.Url
-                $"""{{"id":"{escJson hashId}","title":"{escJson post.Title}","url":"{escJson post.Url}","category":"{escJson post.Category}"}}""")
+                let descStr =
+                    match post.Description with
+                    | Some d -> d
+                    | None -> ""
+                let dateStr =
+                    match post.Date with
+                    | Some d -> d.ToString("yyyy-MM-dd")
+                    | None -> ""
+                let tagsJson =
+                    post.Tags
+                    |> List.map (fun t -> $"\"{escJson t}\"")
+                    |> String.concat ","
+                $"""{{"title":"{escJson post.Title}","url":"{escJson post.Url}","description":"{escJson descStr}","category":"{escJson post.Category}","date":"{escJson dateStr}","tags":[{tagsJson}]}}""")
             |> String.concat ","
-        let graphEdgesJson =
-            graphEdges
-            |> List.map (fun (src, tgt) -> $"""{{"source":"{escJson src}","target":"{escJson tgt}"}}""")
-            |> String.concat ","
-        let graphJson = $"""{{"nodes":[{graphNodesJson}],"edges":[{graphEdgesJson}]}}"""
-        let graphViewHtml = $"""
-                <section class="graph-view-section">
-                    <h2>Graph</h2>
-                    <div id="graph-view-container">
-                        <div id="graph-view"></div>
-                        <div class="graph-view-controls">
-                            <button id="graph-reset" class="graph-btn" type="button">Reset</button>
-                        </div>
+        let searchDataJson = $"""[{searchIndexJson}]"""
+        let searchViewHtml = $"""
+                <section class="search-section">
+                    <div class="search-box">
+                        <input type="search" id="search-input" class="search-input" placeholder="제목 · 내용 · 태그 검색" autocomplete="off" aria-label="글 검색" />
+                        <button id="search-clear" class="search-clear" type="button" aria-label="검색 초기화">&times;</button>
                     </div>
+                    <div id="search-active-tags" class="search-active-tags"></div>
+                    <div id="search-results" class="search-results" hidden></div>
                 </section>
-                <script src="https://d3js.org/d3.v7.min.js"></script>
-                <script>window.graphData = {graphJson};</script>
-                <script src="scripts/graph-view.js"></script>
+                <script>window.searchData = {searchDataJson};</script>
+                <script src="scripts/search.js"></script>
                 """
 
         let content =
             $"""
         {frontPageContentHtml}
-        {graphViewHtml}
+        {searchViewHtml}
         {headlinerHtml}
         {tagsHtml}
         """
