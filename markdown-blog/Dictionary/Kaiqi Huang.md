@@ -5,7 +5,6 @@ tags:
   - 인물
   - 컴퓨터비전
   - 머신러닝
-  - 영상처리
 aliases:
   - Kaiqi Huang
   - 황카이치

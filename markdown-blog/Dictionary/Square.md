@@ -3,6 +3,7 @@ type: tool
 description: "오프라인 SMB·요식업 중심의 결제 처리·POS SaaS, Block의 핵심 제품이자 Claude for Small Business의 부가 커넥터"
 tags:
   - 도구
+  - 결제
   - SaaS
 aliases:
   - "Square"

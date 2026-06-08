@@ -5,7 +5,6 @@ tags:
   - 인물
   - LLM
   - 오픈소스
-  - NLP
 aliases:
   - Catherine Arnett
 ---

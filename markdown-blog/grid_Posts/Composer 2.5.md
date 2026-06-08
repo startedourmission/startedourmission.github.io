@@ -3,9 +3,7 @@ date: 2026-05-19
 tags:
   - 정보
   - LLM
-  - Headliner
-  - 에이전트
-  - 강화학습
+  - headliner
 description: Cursor가 공개한 코딩 에이전트 모델 Composer 2.5의 학습 방법과 벤치마크를 정리합니다
 ---
 [[Cursor]]가 2026년 5월 18일 [Composer 2.5](https://cursor.com/blog/composer-2-5)를 공개했습니다. Cursor가 자체 학습시키는 코딩 에이전트 모델이고, 베이스는 Composer 2와 같은 [[Kimi]] K2.5 오픈소스 체크포인트입니다.

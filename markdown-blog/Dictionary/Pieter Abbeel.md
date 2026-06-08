@@ -5,7 +5,6 @@ tags:
   - 인물
   - 머신러닝
   - 딥러닝
-  - 강화학습
 aliases:
   - "Pieter Abbeel"
 ---

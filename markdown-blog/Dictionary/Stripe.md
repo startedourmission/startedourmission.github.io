@@ -3,6 +3,7 @@ type: tool
 description: "개발자 친화적인 온라인 결제 인프라 SaaS, SaaS·이커머스 스타트업의 표준 결제 처리기이자 Claude for Small Business의 부가 커넥터"
 tags:
   - 도구
+  - 결제
   - SaaS
 aliases:
   - "Stripe"

@@ -3,7 +3,6 @@ date: 2026-04-25
 tags:
   - 논문
   - LLM
-  - 에이전트
 description: "Claude Code의 TypeScript 소스를 직접 뜯어본 MBZUAI·UCL 연구. 핵심 루프는 while-true 한 덩이지만, 권한 시스템·컨텍스트 압축·서브에이전트가 코드의 98.4%를 차지합니다."
 image: "![[1-DiveIntoClaudeCode.png]]"
 ---

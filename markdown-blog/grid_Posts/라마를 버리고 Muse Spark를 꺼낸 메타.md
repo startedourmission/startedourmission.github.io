@@ -3,7 +3,6 @@ date: 2026-05-14
 tags:
   - 정보
   - LLM
-  - 멀티모달
 description: "Meta가 2026년 4월 Llama 오픈소스 노선을 사실상 끝내고, Meta Superintelligence Labs의 첫 사유 모델 Muse Spark를 공개했습니다. Yann LeCun이 떠나고 Alexandr Wang이 들어온 자리에서 만든 첫 결과물, Llama 4 Maverick 대비 1자릿수 이상 적은 컴퓨트로 같은 성능을 낸다고 주장하는 모델, 그리고 Apollo Research가 '관측한 모델 중 가장 evaluation awareness가 높다'고 평가한 안전성 이슈까지 전수 정리했습니다."
 ---
 

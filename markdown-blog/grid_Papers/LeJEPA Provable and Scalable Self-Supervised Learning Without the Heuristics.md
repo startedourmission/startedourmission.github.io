@@ -3,7 +3,6 @@ date: 2025-11-17
 tags:
   - 논문
   - LLM
-  - 컴퓨터비전
 aliases:
   - LeJEPA: Provable and Scalable Self-Supervised Learning Without the Heuristics
 image: "![[1-LeJEPA.png]]"

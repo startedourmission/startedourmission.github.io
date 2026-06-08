@@ -5,7 +5,6 @@ tags:
   - 인물
   - LLM
   - 머신러닝
-  - 추론
 aliases:
   - Sean Welleck
 ---

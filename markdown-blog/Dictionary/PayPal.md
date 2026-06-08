@@ -3,6 +3,7 @@ type: tool
 description: "전 세계 SMB·이커머스가 가장 널리 쓰는 온라인 결제 서비스, Claude for Small Business의 주력 커넥터"
 tags:
   - 도구
+  - 결제
   - SaaS
 aliases:
   - "PayPal"

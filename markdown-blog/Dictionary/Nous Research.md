@@ -1,10 +1,10 @@
 ---
-type: company
+type: organization
 description: "Hermes 모델/에이전트 오픈소스 AI 팀, agentskills.io 표준"
 tags:
   - 인물
   - 오픈소스
-  - 에이전트
+  - AI에이전트
 aliases:
   - "Nous Research"
 ---

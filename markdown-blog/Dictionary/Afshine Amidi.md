@@ -5,7 +5,6 @@ tags:
   - 인물
   - LLM
   - 딥러닝
-  - 트랜스포머
 aliases:
   - "Afshine Amidi"
 ---

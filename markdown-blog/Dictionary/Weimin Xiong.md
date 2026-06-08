@@ -4,7 +4,7 @@ description: 베이징대학교(PKU) 박사과정 NLP 연구자로 GUI 에이전
 tags:
   - 인물
   - NLP
-  - 에이전트
+  - GUI에이전트
 aliases:
   - Weimin Xiong
   - 슝웨이민

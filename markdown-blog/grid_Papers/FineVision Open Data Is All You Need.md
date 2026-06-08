@@ -2,7 +2,7 @@
 date: 2025-10-25
 tags:
   - 논문
-  - 데이터분석
+  - 데이터셋
 aliases:
   - FineVision: Open Data Is All You Need
 image: "![[1-FineVision.png]]"
