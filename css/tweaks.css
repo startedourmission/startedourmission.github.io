@@ -365,12 +365,54 @@ table th[align="right"] {
     color: var(--color-text, #555);
 }
 
-.moc-leaf-section {
-    margin: 2rem 0;
+/* MOC → 하위 분야 링크 목록 */
+.moc-leaf-list {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0;
 }
 
-.moc-leaf-title {
+.moc-leaf-item {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    padding: 12px 14px;
+    border: 1px solid var(--color-border, #e0e0e0);
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+.moc-leaf-item:hover {
+    border-color: var(--color-link, #0066cc);
+}
+
+.moc-leaf-link {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--color-link, #0066cc);
+    text-decoration: none;
+}
+
+.moc-leaf-link:hover {
+    text-decoration: underline;
+}
+
+.moc-leaf-count {
+    font-size: 13px;
+    color: var(--color-text-muted, #999);
+}
+
+/* sub_index 페이지의 상위 MOC 돌아가기 */
+.subindex-breadcrumb {
     margin: 0 0 0.5rem;
-    padding-bottom: 6px;
-    border-bottom: 1px solid var(--color-border, #e0e0e0);
+    font-size: 14px;
+}
+
+.subindex-breadcrumb a {
+    color: var(--color-text-muted, #999);
+    text-decoration: none;
+}
+
+.subindex-breadcrumb a:hover {
+    color: var(--color-link, #0066cc);
 }

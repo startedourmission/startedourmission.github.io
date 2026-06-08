@@ -181,11 +181,11 @@ let main argv =
             categoryPosts |> List.iter (fun post -> printfn $"  - {post.Title}")
             let categoryPagePath = Path.Combine(Config.outputDir, $"{Url.toUrlFriendly folderName}.html")
 
-            // MOC 폴더(moc.md 보유)면 MOC 페이지, 아니면 일반 카테고리 페이지
-            // 본문 markdown→html 변환은 SkunkHtml.createMocPage 안에서 처리(Markdig 의존을 Program.fs에 두지 않음)
+            // MOC 폴더(moc.md 보유)면 MOC 페이지(leaf 링크 목록), 아니면 일반 카테고리 페이지
+            // 본문 markdown→html 변환은 SkunkHtml 함수 안에서 처리(Markdig 의존을 Program.fs에 두지 않음)
             let mocPath = Path.Combine(Config.markdownDir, folderName, Config.mocFileName)
             if File.Exists(mocPath) then
-                // 하위 leaf 폴더 순서(알파벳) + 각 폴더 sub_index 경로 + 그 폴더 글목록
+                // 하위 leaf 폴더 순서(알파벳) + URL + sub_index 경로 + 그 폴더 글목록
                 let leafGroups =
                     Directory.GetDirectories(Path.Combine(Config.markdownDir, folderName))
                     |> Array.map Path.GetFileName
@@ -194,15 +194,26 @@ let main argv =
                     |> Array.toList
                     |> List.map (fun leaf ->
                         let subIndexPath = Path.Combine(Config.markdownDir, folderName, leaf, Config.subIndexFileName)
+                        let leafUrl = $"{Url.toUrlFriendly leaf}.html"
                         let leafPosts =
                             categoryPosts |> List.filter (fun post -> post.SubCategory = Some leaf)
-                        (leaf, subIndexPath, leafPosts))
+                        (leaf, leafUrl, subIndexPath, leafPosts))
 
                 // leaf에 속하지 않은(=MOC 폴더 직속) 글들
                 let loosePosts =
                     categoryPosts |> List.filter (fun post -> post.SubCategory.IsNone)
 
-                SkunkHtml.createMocPage header footer folderName mocPath leafGroups loosePosts categoryPagePath navFolders gridSections
+                // MOC 페이지: moc 본문 + leaf 링크 목록(+직속 글)
+                let mocLeafLinks =
+                    leafGroups |> List.map (fun (leaf, url, _, posts) -> (leaf, url, posts.Length))
+                SkunkHtml.createMocPage header footer folderName mocPath mocLeafLinks loosePosts categoryPagePath navFolders gridSections
+
+                // 각 leaf의 sub_index 페이지: 소개 + 그 폴더 글목록 (상위 MOC로 돌아가는 링크 포함)
+                let mocUrl = $"{Url.toUrlFriendly folderName}.html"
+                leafGroups
+                |> List.iter (fun (leaf, leafUrl, subIndexPath, leafPosts) ->
+                    let leafPagePath = Path.Combine(Config.outputDir, leafUrl)
+                    SkunkHtml.createSubIndexPage header footer leaf folderName mocUrl subIndexPath leafPosts leafPagePath navFolders gridSections)
             else
                 SkunkHtml.createCategoryPage header footer folderName categoryPosts categoryPagePath navFolders gridSections)
     
