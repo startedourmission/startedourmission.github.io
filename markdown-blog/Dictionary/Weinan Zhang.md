@@ -1,0 +1,16 @@
+---
+type: person
+description: 상하이교통대(SJTU) 컴퓨터과학부 교수. 강화학습·에이전트 AI·임바디드 AI 분야의 대가로 논문 200편 이상, 피인용 3만 회를 넘는다.
+tags:
+  - 인물
+  - 강화학습
+  - 머신러닝
+aliases:
+  - Weinan Zhang
+---
+
+[[Weinan Zhang]]은 상하이교통대학교(Shanghai Jiao Tong University, SJTU) 컴퓨터과학부 교수이자 박사 지도교수, 학부장 보좌역입니다. 강화학습, 에이전트 AI, 임바디드 AI를 주로 연구합니다.
+
+주요 학회·저널에 200편이 넘는 논문을 냈고 구글 스칼라 피인용이 3만 회를 넘습니다. ICML, NeurIPS, ICLR, KDD의 에어리어 체어와 TPAMI 부편집장을 맡아 왔으며, ACM 라이징 스타 어워드(2017), 알리바바 다모 영 스칼라 어워드(2018)를 받았습니다.
+
+본 논문 [[Autoregressive Diffusion World Models for Off-Policy Evaluation of LLM Agents]]에는 공저자로 참여했습니다. 강화학습과 월드 모델에 대한 그의 오랜 축적이, LLM 에이전트의 오프폴리시 평가를 디퓨전 월드 모델로 푸는 이 논문의 이론적 뼈대를 떠받칩니다. 같은 SJTU의 [[Guojun Xiong]], 에모리대의 [[Shengpu Tang]]·[[Kaixuan Liu]]와 함께했습니다.

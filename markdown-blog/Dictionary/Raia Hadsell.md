@@ -5,6 +5,7 @@ tags:
   - 인물
   - 딥러닝
   - 머신러닝
+  - 강화학습
 aliases:
   - Raia Hadsell
   - 라이아 해드셀

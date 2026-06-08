@@ -1,0 +1,16 @@
+---
+type: person
+description: 상하이교통대 전자정보전기공학원 교수. NLP 보안, 언어모델 백도어·적대적 위협을 연구
+tags:
+  - 인물
+  - NLP
+aliases:
+  - 류궁선
+  - Gongshen Liu
+---
+
+[[Gongshen Liu]]는 상하이교통대학교 전자정보전기공학원(School of Electronic, Information and Electrical Engineering)의 교수입니다. 데이터 마이닝, 인공신경망, 자연어 처리를 폭넓게 다룹니다.
+
+특히 NLP 시스템의 보안에 관심이 많습니다. 언어모델의 백도어 공격, 적대적 위협처럼 모델을 속이거나 망가뜨리는 방법과 그 방어를 연구합니다. LLM이 NLP에서 뛰어난 성능을 내면서도 새로운 보안 위협을 함께 키운다는 문제의식이 작업의 바탕에 있습니다.
+
+[[HLL - Can Agents Cross Humanity's Last Line of Verification]]에는 공동저자로 참여했습니다. CAPTCHA를 봇 방어선으로 보는 시각, 즉 자동화 악용을 막는 보안 메커니즘으로 다루는 관점이 그의 NLP 보안 연구와 맞닿아 있습니다.

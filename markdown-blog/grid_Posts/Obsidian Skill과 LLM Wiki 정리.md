@@ -2,7 +2,7 @@
 date: 2026-05-14
 tags:
   - 정보
-  - Obsidian
+  - 도구
   - LLM
 image: "![[obsidian-skill-llm-wiki.png]]"
 description: "Obsidian CEO kepano가 만든 공식 Obsidian Skills와 Andrej Karpathy가 제안한 LLM Wiki 패턴. 둘은 별개 프로젝트지만 합치면 'Claude가 내 옵시디언 볼트를 직접 운영하는 지식 위키'가 됩니다."

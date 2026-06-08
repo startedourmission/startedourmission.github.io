@@ -1,9 +1,10 @@
 ---
-type: organization
+type: company
 description: JD.COM 산하 AI 연구 조직. Vision and Multimodal Lab을 [[Nan Duan]] 디렉터가 이끌고 있으며, 비전·멀티모달 파운데이션 모델과 비디오 생성 라인을 외부 대학(USTC 등)과 공동 연구.
 tags:
   - 머신러닝
   - 영상처리
+  - 멀티모달
 aliases:
   - JD Explore Academy
 ---

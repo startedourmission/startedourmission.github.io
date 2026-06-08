@@ -1,0 +1,16 @@
+---
+type: person
+description: 미국 에모리대 컴퓨터과학과 교수. 오프라인 강화학습과 오프폴리시 평가(OPE)를 의료 의사결정에 적용해 온 연구자다.
+tags:
+  - 인물
+  - 강화학습
+  - 머신러닝
+aliases:
+  - Shengpu Tang
+---
+
+[[Shengpu Tang]]은 미국 에모리대학교(Emory University) 컴퓨터과학과 소속 연구자로, 오프라인 강화학습(offline RL)과 오프폴리시 평가(off-policy evaluation, OPE)를 전공합니다. 특히 의료·임상 의사결정에 강화학습을 적용하는 연구로 알려져 있습니다.
+
+대표 연구로는 분해된 행동 공간(factored action space)을 활용한 효율적 오프라인 RL(NeurIPS 2022), 의료 환경에서의 오프라인 RL 모델 선택, 온라인 RL을 위한 데이터 기반 오프라인 시뮬레이션(OffSim4RL) 등이 있습니다. OPE를 검증 성능의 프록시로 쓰는 파이프라인을 깊이 다뤄 왔습니다.
+
+본 논문 [[Autoregressive Diffusion World Models for Off-Policy Evaluation of LLM Agents]]에서는 시니어 저자로 참여했습니다. OPE를 오래 연구해온 그의 문제의식이, "새 에이전트를 실제로 굴리지 않고 과거 로그만으로 성능을 가늠한다"는 이 논문의 출발점입니다. 제1저자 [[Kaixuan Liu]]가 같은 에모리대 소속입니다.

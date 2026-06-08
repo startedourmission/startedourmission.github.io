@@ -4,6 +4,7 @@ tags:
   - 논문
   - 벤치마크
   - LLM
+  - 에이전트
 aliases:
   - "LongMemEval-V2"
 image: "![[longmemeval-v2-overview.png]]"

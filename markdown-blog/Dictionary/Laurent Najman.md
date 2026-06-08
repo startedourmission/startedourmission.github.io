@@ -4,6 +4,7 @@ description: 워터셰드 분할과 segmentation tree 이론의 권위자, ESIEE
 tags:
   - 인물
   - 머신러닝
+  - 컴퓨터비전
 aliases:
   - Laurent Najman
   - 로랑 나즈만

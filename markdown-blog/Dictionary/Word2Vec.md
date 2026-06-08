@@ -1,7 +1,9 @@
 ---
+type: concept
 date: 2026-04-10
 tags:
   - LLM
+  - NLP
 aliases: ""
 image: "![[]]"
 description: "단어를 주변 문맥 기반으로 밀집 벡터로 표현하는 정적 임베딩 알고리즘"

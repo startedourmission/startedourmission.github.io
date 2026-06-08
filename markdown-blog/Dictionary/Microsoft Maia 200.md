@@ -4,7 +4,7 @@ description: "Microsoft 커스텀 AI 칩, TSMC 3nm, 216GB HBM3e"
 tags:
   - 벤치마크
   - AI평가
-  - 커스텀칩
+  - 반도체
 aliases:
   - "Maia 200"
 ---

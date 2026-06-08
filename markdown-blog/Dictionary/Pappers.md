@@ -3,7 +3,6 @@ type: tool
 description: "프랑스 기업 정보·판례 데이터베이스 SaaS, 자체 MCP 서버를 통해 Claude를 법률 AI 에이전트로 확장하는 버티컬 통합의 대표 사례"
 tags:
   - 도구
-  - 법률
   - SaaS
 aliases:
   - "Pappers"

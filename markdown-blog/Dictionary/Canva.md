@@ -3,7 +3,6 @@ type: tool
 description: "호주에서 시작한 비전문가용 그래픽 디자인 SaaS, SMB 마케팅 자산 제작의 표준 도구로 Claude for Small Business가 캠페인 자산 생성에 활용"
 tags:
   - 도구
-  - 디자인
   - SaaS
 aliases:
   - "Canva"

@@ -1,0 +1,18 @@
+---
+type: person
+description: 텐센트 AI Applications 디렉터. MOBA 게임을 심층강화학습으로 정복한 JueWu(絕悟)로 알려진 대규모 ML·AI 에이전트 연구자. NTU 박사.
+tags:
+  - 인물
+  - 강화학습
+aliases:
+  - Deheng Ye
+  - 예더헝
+---
+
+Deheng Ye(예더헝)는 텐센트(선전)의 AI Applications 디렉터로, 대규모 머신러닝 플랫폼과 지능형 AI 에이전트 개발 팀을 이끕니다.
+
+대표 연구는 MOBA 게임을 심층강화학습으로 마스터한 작업입니다(Mastering Complex Control in MOBA Games with Deep Reinforcement Learning, AAAI). 관심사는 AI 에이전트, 대규모 머신러닝, 심층강화학습, LLM, 그리고 이들의 상용화·산업화입니다. 난양공대(NTU)에서 2016년 컴퓨터과학 박사를 받았고, 텐센트 합류 전 마이크로소프트 리서치 아시아(MSRA)의 Data Knowledge Intelligence 그룹 연구원으로 일했습니다.
+
+본 논문 [[Audio Interaction Model]]에는 공동 교신저자로 참여했습니다. always-on 모델이 매 청크마다 응답할지 침묵할지를 스스로 결정하는 구조는 에이전트가 환경을 보며 행동 타이밍을 고르는 강화학습적 의사결정 문제와 닮아 있어, 그의 에이전트·대규모 학습 경험이 닿는 지점입니다.
+
+NTU 라인의 [[Zhifei Xie]], 공동 교신저자 [[Chunyan Miao]]와 함께 작업했습니다.

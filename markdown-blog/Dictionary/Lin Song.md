@@ -5,6 +5,7 @@ tags:
   - 인물
   - 머신러닝
   - 영상처리
+  - 컴퓨터비전
 aliases:
   - Lin Song
   - 송린

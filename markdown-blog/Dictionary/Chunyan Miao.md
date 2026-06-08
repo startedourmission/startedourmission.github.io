@@ -1,0 +1,19 @@
+---
+type: person
+description: NTU 컴퓨팅·데이터과학대 학장이자 President's Chair Professor. Human-Centered AI 전문가로 고령화·헬스·교육 분야 AI를 이끈다. IEEE 펠로우.
+tags:
+  - 인물
+  - 머신러닝
+aliases:
+  - Chunyan Miao
+  - 먀오춘옌
+  - Miao Chun Yan
+---
+
+Chunyan Miao(먀오춘옌)는 난양공과대학교(NTU) 컴퓨팅·데이터과학대(CCDS)의 President's Chair Professor이자 학장입니다.
+
+NTU-UBC 공동 고령자 액티브리빙 연구센터(LILY)의 창립 디렉터 겸 리드 PI로, 65명 규모 팀을 이끌며 AI로 고령 세대를 지원하는 연구를 해 왔습니다. Human-Centered AI 전문가로 인간지능·인공지능·행동데이터 분석을 결합하는 "휴머나이즈드 AI"를 표방하며 디지털 학습, 건강한 고령화, 예방 의료, 살기 좋은 도시 문제에 적용합니다. NRF Investigatorship(2019), AAAI Innovative Applications of AI Award(2018·2020) 등 20여 개 수상 이력이 있고 2022년 IEEE 펠로우가 되었습니다.
+
+본 논문 [[Audio Interaction Model]]에서는 교신저자로, NTU 측 연구를 총괄하는 시니어 역할을 맡았습니다. always-on 오디오 어시스턴트가 사람의 생리적 위급 신호에 먼저 반응한다는 ProactiveSound-Bench의 문제의식은 그의 헬스·고령화 중심 Human-Centered AI 관심사와 자연스럽게 맞물립니다.
+
+같은 NTU 라인의 [[Zhifei Xie]], 공동 교신저자 [[Deheng Ye]], 시니어 [[Shuicheng Yan]]과 함께 작업했습니다.

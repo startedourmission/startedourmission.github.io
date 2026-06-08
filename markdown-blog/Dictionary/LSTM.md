@@ -1,4 +1,5 @@
 ---
+type: ai-model
 date: 2026-04-10
 tags:
   - 딥러닝

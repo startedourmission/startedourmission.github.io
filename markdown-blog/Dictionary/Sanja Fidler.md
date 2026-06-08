@@ -1,0 +1,17 @@
+---
+type: person
+date: 2026-06-06
+tags:
+  - 컴퓨터비전
+  - 딥러닝
+description: NVIDIA AI 연구 부사장이자 토론토대 교수. NVIDIA 토론토의 Spatial Intelligence Lab을 이끌며 3D 비전과 월드 모델을 연구한다.
+aliases:
+  - Sanja Fidler
+  - 산야 피들러
+---
+
+Sanja Fidler는 NVIDIA의 AI 연구 부사장(VP of AI Research)이자 토론토대학교 부교수입니다. NVIDIA 토론토의 Spatial Intelligence Lab을 이끌고, Vector Institute의 공동 창립 멤버이며 Canadian CIFAR AI Chair를 맡고 있습니다.
+
+컴퓨터비전, 머신러닝, 자연어처리 분야에서 130편 넘는 논문을 냈고, 3D 재구성과 장면 이해, 합성 데이터 생성으로 잘 알려져 있습니다. NVIDIA Pioneer of AI Award를 비롯한 다수의 학계 상을 받았습니다.
+
+[[Cosmos 3 - Omnimodal World Models for Physical AI]]에서는 공간 지능과 3D 월드 표현이라는 그의 전문성이 직접 닿는 부분, 즉 월드 모델이 물리 세계의 기하 구조와 동역학을 어떻게 담아내는지에 기여했습니다. [[Ming-Yu Liu]], [[Jan Kautz]]와 함께 NVIDIA Research의 생성 모델 라인을 떠받치는 인물입니다.
