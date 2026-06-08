@@ -2,6 +2,7 @@
 date: 2026-06-04
 tags:
   - 정보
+  - Headliner
   - LLM
   - 오픈소스
   - 멀티모달

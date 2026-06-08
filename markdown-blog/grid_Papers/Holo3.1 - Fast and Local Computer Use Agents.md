@@ -2,6 +2,7 @@
 date: 2026-06-06
 tags:
   - 정보
+  - Headliner
   - 에이전트
   - 오픈소스
 description: "12GB GPU에서 140ms에 도는 로컬 컴퓨터 유즈 에이전트. FP8, NVFP4, Q4 양자화 체크포인트로 완전 온디바이스 GUI 자동화를 처음 프로덕션급으로 제공하는 H Company의 Holo3.1 VLM 패밀리"

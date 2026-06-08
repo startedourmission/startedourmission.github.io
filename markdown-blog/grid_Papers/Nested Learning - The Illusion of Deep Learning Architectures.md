@@ -4,7 +4,6 @@ tags:
   - 논문
   - LLM
   - 딥러닝
-  - Headliner
 aliases:
   - "Nested Learning: The Illusion of Deep Learning Architectures"
 image: "![[1-NestedLearning.png]]"

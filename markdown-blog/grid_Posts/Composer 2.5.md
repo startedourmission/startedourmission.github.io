@@ -3,7 +3,6 @@ date: 2026-05-19
 tags:
   - 정보
   - LLM
-  - Headliner
   - 에이전트
   - 강화학습
 description: Cursor가 공개한 코딩 에이전트 모델 Composer 2.5의 학습 방법과 벤치마크를 정리합니다

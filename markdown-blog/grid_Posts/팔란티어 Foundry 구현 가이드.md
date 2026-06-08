@@ -2,6 +2,7 @@
 date: 2026-05-14
 tags:
   - 정보
+  - Headliner
 image: "![[palantir-foundry-guide.png]]"
 description: 팔란티어 Foundry를 실제로 구현한다는 게 무엇인지를 데이터 통합부터 온톨로지·Workshop·AIP·OSDK 배포까지 공식 문서 기반으로 따라갑니다. 단순한 BI 도구가 아니라 데이터·로직·액션을 한 거버넌스 안에 묶는 운영 OS로서 Foundry가 어떻게 짜여 있는지 — 도구 한 줄, 컴포넌트 한 줄까지 정리했습니다.
 ---

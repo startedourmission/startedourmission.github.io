@@ -2,6 +2,7 @@
 date: 2026-05-26
 tags:
   - 정보
+  - Headliner
   - 오픈소스
   - LLM
 description: "코드가 아니라 아키텍처에 집중한 오픈소스 지식 베이스 awesome-architecture를, 튜토리얼 9장과 실전 시스템 템플릿 25개를 중심으로 자세히 살펴봅니다"

@@ -3,7 +3,6 @@ date: 2026-05-13
 tags:
   - 논문
   - 벤치마크
-  - Headliner
 aliases:
 image: "![[]]"
 description: 처음부터 새로 쓴 1141가지 수학 문제. IMO 이후 LLM 수학 평가가 어디로 가야 하는지를 묻는 SOOHAK 벤치마크를 알아봅니다.

@@ -2,6 +2,7 @@
 date: 2026-06-07
 tags:
   - 정보
+  - Headliner
   - LLM
   - 에이전트
 description: "저장 메모리 목록을 비동기 백그라운드 합성으로 대체한 OpenAI의 새 ChatGPT 메모리 아키텍처 Dreaming V3를 뜯어봅니다"

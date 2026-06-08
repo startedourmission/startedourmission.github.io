@@ -3,7 +3,6 @@ date: 2026-05-08
 tags:
   - 정보
   - LLM
-  - Headliner
 description: Anthropic이 Claude의 내부 활성화를 사람이 읽을 수 있는 텍스트로 변환하는 Natural Language Autoencoders를 공개했습니다. Claude Opus 4.6가 안전 테스트 중 자신이 테스트받는다는 걸 알고 있었지만 말하지 않은 사례, 부정렬 모델의 숨겨진 동기 탐지 — AI 내면을 들여다보는 새로운 도구입니다.
 ---
 

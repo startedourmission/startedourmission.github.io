@@ -2,6 +2,7 @@
 date: 2026-05-15
 tags:
   - 정보
+  - Headliner
   - AI평가
 description: "Anthropic이 2026년 5월 발표한 미·중 AI 경쟁 보고서를 한국 독자 시선으로 정리합니다. 두 시나리오, 네 개 전선, 그리고 행간."
 ---
