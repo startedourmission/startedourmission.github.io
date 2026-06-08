@@ -365,7 +365,7 @@ table th[align="right"] {
     color: var(--color-text, #555);
 }
 
-/* MOC → 하위 분야 링크 목록 */
+/* MOC → 하위 분야 링크 목록 (기존 글 목록과 동일하게 구분선만) */
 .moc-leaf-list {
     list-style: none;
     padding: 0;
@@ -375,21 +375,19 @@ table th[align="right"] {
 .moc-leaf-item {
     display: flex;
     align-items: baseline;
-    gap: 10px;
-    padding: 12px 14px;
-    border: 1px solid var(--color-border, #e0e0e0);
-    border-radius: 8px;
-    margin-bottom: 8px;
+    gap: 0.5rem;
+    padding: 1.2rem 0;
+    border-bottom: 1px solid var(--color-bg-secondary);
 }
 
-.moc-leaf-item:hover {
-    border-color: var(--color-link, #0066cc);
+.moc-leaf-item:last-child {
+    border-bottom: none;
 }
 
 .moc-leaf-link {
-    font-size: 17px;
-    font-weight: 600;
-    color: var(--color-link, #0066cc);
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--color-link);
     text-decoration: none;
 }
 
@@ -398,7 +396,7 @@ table th[align="right"] {
 }
 
 .moc-leaf-count {
-    font-size: 13px;
+    font-size: 0.85rem;
     color: var(--color-text-muted, #999);
 }
 
