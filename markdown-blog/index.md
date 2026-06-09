@@ -7,7 +7,7 @@
 
 **도서가 출간되었습니다! 《바로바로 클로드 with 코워크, 스킬, 클로드 코드, 디자인》 **
 
-![[Pasted image 20260506145400.png]]
+<img src="_assets/Pasted%20image%2020260506145400.png" alt="바로바로 클로드 표지" style="max-width: 280px; height: auto; display: block; margin: 1rem auto;">
 
 - 교보문고 : https://product.kyobobook.co.kr/detail/S000219916961
 - 예스24 : https://www.yes24.com/product/goods/189114943
