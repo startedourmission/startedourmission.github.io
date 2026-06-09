@@ -1,0 +1,16 @@
+---
+type: person
+description: RIKEN iTHEMS 연구원이자 도쿄대 지능물리학 연구소 조교수. 머신러닝과 물리학의 접점, 특히 QCD 역문제를 딥러닝으로 푸는 연구자
+tags:
+  - 인물
+  - 머신러닝
+aliases:
+  - 링샤오 왕
+  - Lingxiao Wang
+---
+
+[[Lingxiao Wang]]는 일본 RIKEN iTHEMS(학제적 이론·수리과학 연구센터)의 연구원이자 도쿄대학교 지능물리학 연구소(Institute for Physics of Intelligence) 조교수입니다. 머신러닝과 물리학의 접점에서 약 10년간 연구해 왔습니다.
+
+심층 신경망과 생성 AI로 양자색역학(QCD) 물질과 격자 계산을 다루는 물리 기반 학습(physics-driven learning)이 주특기입니다. 2025년 1월 Nature Reviews Physics에 "Physics-Driven Learning for Inverse Problems in Quantum Chromodynamics" 리뷰를 냈고, RIKEN-iTHEMS에서 과학의 역문제를 딥러닝으로 푸는 DEEP-IN 워킹그룹을 이끕니다.
+
+물리학자가 LLM을 들여다보는 흐름의 한가운데 있는 인물입니다. 통계물리·장론의 언어로 신경망과 생성 모델을 해석하는 그의 방향이 [[Generative Criticality in Large Language Model Temperature Scaling]]에 그대로 들어갔습니다. 이 논문에서 교신저자를 맡았고, 함께 교신을 맡은 [[Xingyu Guo]], 1저자 [[Huajian Ruan]]과 함께 작업했습니다.

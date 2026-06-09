@@ -1,0 +1,16 @@
+---
+type: person
+description: H Company의 모델링 총괄. Holo 컴퓨터 유즈 VLM 라인업을 이끄는 연구자
+tags:
+  - 인물
+  - 에이전트
+  - 강화학습
+aliases:
+  - Pierre-Louis Cedoz
+---
+
+Pierre-Louis Cedoz는 [[H Company]]에서 모델링을 총괄하는 연구자입니다. 파리를 거점으로 Holo 컴퓨터 유즈 VLM 라인업의 학습과 평가를 이끕니다.
+
+스탠퍼드 대학에서 수학했고, 2016년부터 2018년까지 스탠퍼드 의대 Olivier Gevaert 랩에서 딥러닝 연구 보조로 일했습니다. 이후 Google과 BenevolentAI를 거쳐 H Company에 합류했습니다. 연구 관심사는 강화학습과 Large Action Model입니다.
+
+H Company에서는 Holo-1, Holo-1.5, Holo-2, Holo3에 이르는 오픈 웨이트 에이전트 모델 라인을 연속으로 이끌어 왔습니다. 본 글이 다루는 [[Holo3.1 - Fast and Local Computer Use Agents]]에서는 0.8B부터 35B-A3B까지의 패밀리 확장과, FP8·NVFP4·Q4 GGUF 양자화 체크포인트를 통한 온디바이스 실행이라는 두 축을 모델링 관점에서 주도했습니다.
