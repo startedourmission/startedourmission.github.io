@@ -1,0 +1,17 @@
+---
+type: person
+description: 베이징대 머신러닝연구센터(CMLR) 조교수, 데이터 중심 AI(DCAI) 그룹 리더. 데이터 중심 ML·그래프 ML·ML 시스템 연구. 텐센트·애플 거쳐 Mila(Bengio) 포닥 출신.
+tags:
+  - 인물
+  - 머신러닝
+  - 데이터분석
+aliases:
+  - Wentao Zhang
+  - 장원타오
+---
+
+Wentao Zhang(张文涛)은 베이징대 머신러닝연구센터(CMLR)의 조교수이자 데이터 중심 인공지능(Data-centric AI, DCAI) 그룹을 이끄는 PI입니다. 개인 페이지는 zwt233.github.io입니다.
+
+연구 영역은 데이터 중심 머신러닝(어노테이션·증강·불균형·노이즈·증류·분포 외 일반화·프라이버시), 그래프 신경망과 그래프 표현학습, 그리고 대규모 분산학습·AutoML 같은 ML 시스템입니다. SIGMOD·VLDB·ICDE·KDD·WWW·ICML·NeurIPS·ICLR에 40편 넘게 발표했고 1저자 논문만 10편 이상입니다. WWW 2022 최우수 학생논문상을 비롯한 수상 이력이 있습니다. 베이징대에 오기 전 텐센트 ML·데이터 플랫폼과 애플 AIML에서 4년을 일했고, [[Yoshua Bengio]]가 이끄는 Mila에서 포닥을 지냈습니다.
+
+본 논문에서는 베이징대 측 시니어 저자로 참여했습니다. [[SpatialWorld - Benchmarking Interactive Spatial Reasoning of Multimodal Agents in Real-World Tasks]]가 760개 과제를 사람 주석·교차검증으로 깐깐하게 쌓아 올린 데이터셋 논문이라는 점에서, 데이터 품질·일관성·재현성을 파는 그의 데이터 중심 AI 전문성이 벤치마크 구축 파이프라인에 직접 닿습니다.

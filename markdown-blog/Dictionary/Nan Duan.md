@@ -16,3 +16,5 @@ Nan Duan(段楠)은 JD.COM VP이자 [[JD Explore Academy]] Vision and Multimodal
 연구 영역은 자연어 처리, 코드 인텔리전스, 멀티모달 파운데이션 모델, AI 에이전트에 걸쳐 있습니다. 약 200편 이상의 top-tier 학회 논문과 20여 건의 특허, h-index 76, 인용 28,000여 회로 NLP·멀티모달 연구계의 시니어 그룹에 속합니다. USTC·시안교통대·톈진대 겸임 교수로 박사 지도도 병행합니다.
 
 [[OmniNFT - Modality-wise Omni Diffusion Reinforcement for Joint Audio-Video Generation|OmniNFT]]에서는 JD Explore Academy 측 시니어 저자로 참여했습니다. USTC 학생 그룹([[Guohui Zhang]]·[[Feng Zhao]] 라인)과 JD의 산업 데이터·인프라가 결합되는 협업 구조에서 JD 쪽 디렉터 역할을 맡고 있습니다. 본 논문이 [[LTX-2]] 백본을 그대로 가져가며 19B 규모 모델에 RL fine-tuning을 돌리는 *컴퓨트가 무거운 셋업*이라는 점도 산업 랩과의 협력이 자연스러웠던 배경으로 보입니다.
+
+[[SpatialWorld - Benchmarking Interactive Spatial Reasoning of Multimodal Agents in Real-World Tasks]]에도 시니어 저자(논문 표기상 Joy Future Academy 소속)로 참여했습니다. 언어를 넘어 비전·음성·체화 AI까지 파운데이션 모델 연구를 넓혀 온 그의 행보에서, 멀티모달 에이전트의 공간지능을 측정하는 이 벤치마크는 체화 AI 평가 쪽 연장선에 있습니다.
