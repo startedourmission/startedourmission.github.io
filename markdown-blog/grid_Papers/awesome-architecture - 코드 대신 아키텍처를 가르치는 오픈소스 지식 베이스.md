@@ -2,10 +2,9 @@
 date: 2026-05-26
 tags:
   - 정보
-  - Headliner
   - 오픈소스
   - LLM
-description: "코드가 아니라 아키텍처에 집중한 오픈소스 지식 베이스 awesome-architecture를, 튜토리얼 9장과 실전 시스템 템플릿 25개를 중심으로 자세히 살펴봅니다"
+description: 코드가 아니라 아키텍처에 집중한 오픈소스 지식 베이스 awesome-architecture를, 튜토리얼 9장과 실전 시스템 템플릿 25개를 중심으로 자세히 살펴봅니다
 ---
 GitHub에 [study8677/awesome-architecture](https://github.com/study8677/awesome-architecture)라는 저장소가 있습니다. 이름은 흔한 awesome 리스트처럼 보이지만, 안을 열어보면 링크 모음이 아닙니다. "코드가 아니라 아키텍처"를 가르치겠다는, 꽤 분명한 주장을 가진 지식 베이스입니다.
 

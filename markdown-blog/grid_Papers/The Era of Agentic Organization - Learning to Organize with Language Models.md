@@ -2,7 +2,6 @@
 date: 2026-05-22
 tags:
   - 논문
-  - Headliner
   - LLM
   - 에이전트
   - 추론

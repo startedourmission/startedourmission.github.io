@@ -2,11 +2,10 @@
 date: 2026-06-04
 tags:
   - 정보
-  - Headliner
   - LLM
   - 오픈소스
   - 멀티모달
-description: "프런티어 코딩과 1M 토큰 컨텍스트, 네이티브 멀티모달을 한 모델에 담은 첫 오픈웨이트 모델 MiniMax M3를 MSA 희소 어텐션 중심으로 뜯어봅니다"
+description: 프런티어 코딩과 1M 토큰 컨텍스트, 네이티브 멀티모달을 한 모델에 담은 첫 오픈웨이트 모델 MiniMax M3를 MSA 희소 어텐션 중심으로 뜯어봅니다
 image: "![[minimax-m3-msa-arch.png]]"
 ---
 

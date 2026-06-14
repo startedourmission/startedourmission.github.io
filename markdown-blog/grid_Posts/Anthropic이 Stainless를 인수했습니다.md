@@ -2,9 +2,8 @@
 date: 2026-05-19
 tags:
   - 정보
-  - Headliner
   - LLM
-description: "Anthropic이 SDK 자동 생성 도구 Stainless를 약 3억 달러에 인수했습니다. 단순한 도구 확보가 아니라 OpenAI, Google, Cloudflare가 공유하던 인프라를 Anthropic이 사적으로 가져간 사건입니다."
+description: Anthropic이 SDK 자동 생성 도구 Stainless를 약 3억 달러에 인수했습니다. 단순한 도구 확보가 아니라 OpenAI, Google, Cloudflare가 공유하던 인프라를 Anthropic이 사적으로 가져간 사건입니다.
 ---
 
 [[Anthropic]]이 2026년 5월 18일 [[Stainless]] 인수를 발표했습니다. SDK 자동 생성 도구와 [[MCP]] 서버 도구 회사이고, 보도된 인수가는 3억 달러 이상입니다.
