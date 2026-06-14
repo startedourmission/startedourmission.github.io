@@ -1,0 +1,17 @@
+---
+type: person
+description: 홍콩 이공대학교 NLP 교수. 텍스트 요약·질의응답·다중 문서 추론 연구로 H-Index 52, 인용 13,000회+를 쌓은 시니어 연구자.
+tags:
+  - 인물
+  - LLM
+  - 멀티모달
+  - NLP
+aliases:
+  - Wenjie Li
+---
+
+홍콩 이공대학교(PolyU) 컴퓨터학과 교수로, NLP 그룹을 이끌고 있습니다. H-Index 52, 누적 인용 13,000회 이상으로 자동 요약, 정보 검색, 다중 문서 추론 분야에서 오랜 성과를 쌓아온 시니어 연구자입니다.
+
+대표 연구는 지식 집약적 QA와 장문 생성, 그리고 최근 들어 멀티모달 대형 언어 모델의 추론 효율화로 이어집니다. On-Policy Supervised Fine-Tuning for Efficient Reasoning, Speculative Decoding 관련 튜토리얼 작성 등 LLM 추론 경량화 쪽으로도 활발하게 논문을 내고 있습니다.
+
+[[Optical Reasoning - Rethinking Images as an Expressive Reasoning Medium Beyond Text]] 에서는 지도 교수이자 교신 저자로 참여했습니다. 텍스트 대신 이미지를 추론 매체로 삼는 "Optical Reasoning" 아이디어의 배경 이론과 연구 방향을 주도했습니다.
