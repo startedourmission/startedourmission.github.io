@@ -1,17 +1,14 @@
 ---
 type: person
-description: BrainChip 주임 연구과학자, 신경망 효율화 및 변압기 아키텍처 전문
+description: BrainChip Inc. 선임 연구원. 뉴로모픽 칩 기반 엣지 AI 추론을 위한 트랜스포머 경량화 연구자.
 tags:
   - 인물
-  - 머신러닝
-  - 신경망
-  - 효율화
+  - 트랜스포머
+  - LLM
 aliases:
   - Ali Kayyam
 ---
 
-Ali Kayyam는 BrainChip Inc.의 Principal Research Scientist로 근무 중입니다. 그는 Computational Neuroscience 박사 학위를 테헤란의 IPM(Institute for Studies in Fundamental Sciences)에서 받았으며, 컴퓨터 공학 학부 학위를 Petroleum University에서 취득했습니다.
+BrainChip Inc.(미국 캘리포니아 라구나힐스) 소속 선임 연구원. 트랜스포머 아키텍처의 연산 효율화를 연구하며, BrainChip의 Akida 뉴로모픽 프로세서에서 대형 언어 모델을 실용적으로 구동하기 위한 경량화 기법을 개발한다.
 
-Kayyam은 University of Southern California에서 인공지능 박사후 과정(2010-2014)을 이수하며 시스템 신경과학과 신경망 설계를 깊이 있게 연구했습니다. 그는 Eyenuk, Quintic AI, HCL America 등 다양한 조직에서 머신러닝과 컴퓨터 비전 분야의 경력을 쌓았습니다.
-
-BrainChip에서는 신경망의 희소성(sparsity)을 활용한 저전력 신경망과 사건 기반 합성곱(event-based convolution)을 연구했습니다. [[Anusha Madan Gopal]]과 [[M Anthony Lewis]]와의 협업을 통해 변압기 구조의 근본적인 효율화 문제인 QKV 투영 공유(projection sharing)에 대한 체계적 연구를 주도했습니다.
+2026년 ICML에 발표된 "Do Transformers Need Three Projections?"([[Do Transformers Need Three Projections - Systematic Study of QKV Variants]])의 제1 저자다. 이 논문에서 Q, K, V 프로젝션 행렬을 공유하는 세 가지 변형(Q=K-V, Q-K=V, Q=K=V)을 체계적으로 비교 분석하고, Q-K=V 방식이 KV 캐시를 50% 줄이면서 혼란도 손실을 3%대로 억제하는 최적 트레이드오프임을 보였다. 공저자로는 같은 BrainChip 소속의 [[Anusha Madan Gopal]]과 [[M Anthony Lewis]]가 있다.

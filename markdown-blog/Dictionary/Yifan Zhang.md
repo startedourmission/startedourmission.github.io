@@ -1,0 +1,17 @@
+---
+type: person
+description: 프린스턴 대학교 컴퓨터과학 박사과정, Princeton AI Lab Fellow, LLM 아키텍처 및 추론 연구
+tags:
+  - LLM
+  - 딥러닝
+  - 머신러닝
+aliases:
+  - Yifan Zhang
+  - 장이판
+---
+
+Yifan Zhang은 프린스턴 대학교 컴퓨터과학 박사과정 학생이자 Princeton AI Lab Fellow다. Mengdi Wang, Andy Yao, Quanquan Gu 교수와 함께 연구하고 있으며, LLM 추론 능력 향상을 위한 강화학습 기법, 파운데이션 모델 데이터 선별 알고리즘, 그리고 새로운 어텐션 메커니즘 설계를 주된 연구 주제로 삼는다. 과거 UCLA에서 방문 박사과정으로도 연구를 수행했다.
+
+주요 성과로는 "Tensor Product Attention Is All You Need"(arXiv:2501.06425)가 NeurIPS 2025 Spotlight(상위 3%)에 선정된 것이 꼽힌다. 이 논문은 텐서 분해를 이용해 쿼리, 키, 값을 저랭크로 압축 표현하는 Tensor Product Attention(TPA)을 제안하며, 표준 Multi-Head Attention 대비 KV 캐시 메모리를 수배에서 한 자릿수 배수까지 줄이면서도 동등하거나 더 나은 언어 모델링 성능을 보였다. 같은 시기 "Autonomous Data Selection with Zero-shot Generative Classifiers for Mathematical Texts"가 ACL 2025 Findings에 게재됐고, 2026년에는 CVPR 2026에 Meta, 프린스턴, UMD와의 공동 연구 3편이 채택됐다.
+
+2026년 1월, UCLA의 Quanquan Gu 교수와 프린스턴의 Mengdi Wang 교수와 공동으로 "Deep Delta Learning"(arXiv:2601.00417)을 발표했다. 이 논문은 ResNet에서 identity shortcut을 학습 가능한 기하학적 변환으로 일반화한 것으로, 층마다 단일 스칼라 게이트 하나로 항등 매핑부터 Householder 반사까지 전환하는 Delta Operator를 도입한다. 해당 논문의 제1저자로서, 프로젝트 페이지와 공식 구현 코드도 직접 공개했다.

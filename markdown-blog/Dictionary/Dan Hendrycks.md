@@ -1,0 +1,17 @@
+---
+type: person
+description: CAIS(Center for AI Safety) 설립자 겸 이사, MMLU·MATH·GELU 저자, AI 안전 및 평가 연구자
+tags:
+  - 머신러닝
+  - AI평가
+aliases:
+  - Dan Hendrycks
+---
+
+Dan Hendrycks는 미국의 AI 안전 연구자이자 AI 평가 벤치마크 설계자다. 미주리 주 마샬필드 출신으로, 시카고 대학교에서 컴퓨터 과학 학사(2018)를 마친 뒤 UC 버클리에서 Dawn Song, Jacob Steinhardt의 지도 아래 박사 학위(2022)를 받았다.
+
+학부 시절부터 활발한 연구를 시작해, 2016년 공개한 GELU(Gaussian Error Linear Units) 활성화 함수는 이후 BERT, GPT, ViT 등 주요 모델의 기본 활성화 함수로 채택됐다. 박사 과정에서는 AI 능력 측정에 집중했다. 2021년 발표한 MMLU(Massive Multitask Language Understanding)는 57개 도메인, 1만 5908개 문항으로 구성된 다지선다 벤치마크로, LLM 평가의 표준으로 자리 잡았다. 같은 해 발표한 MATH 데이터셋은 수학 경시 문제 1만 2500개로 모델의 수학 추론 한계를 구체적으로 드러냈다.
+
+2022년 AI 안전 연구 비영리 기관 CAIS를 설립하고 이사직을 맡고 있다. 2023년 CAIS가 주도해 발표한 "AI 위험에 관한 성명"에는 [[Geoffrey Hinton]], [[Yoshua Bengio]] 등 수백 명의 연구자가 서명했다. 2025년 초에는 Scale AI와 공동으로 Humanity's Last Exam(HLE)을 발표했다. 2500개의 전문가 수준 문항으로 구성됐으며, 공개 당시 최상위 모델도 2~8%를 기록해 기존 벤치마크 포화 문제를 정면으로 제기했다. 같은 해 10월, [[Yoshua Bengio]], Eric Schmidt, Gary Marcus, Max Tegmark 등 30명 이상과 함께 "A Definition of AGI"(arXiv:2510.18212)를 발표했다. CHC 심리측정 이론을 기반으로 AGI를 10개 인지 영역으로 정량화한 논문으로, GPT-4는 27%, GPT-5는 57%로 평가됐다.
+
+xAI(일론 머스크의 AI 기업)와 Scale AI의 안전 자문을 겸직하고 있으며, AI 안전과 능력 평가를 잇는 보기 드문 위치에 있다.
