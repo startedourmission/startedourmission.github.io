@@ -10,8 +10,8 @@ aliases:
   - 왕멍디
 ---
 
-Mengdi Wang은 프린스턴 대학교 전기컴퓨터공학과 및 통계기계학습센터(CSML) 교수다. 칭화대학교 자동화학부를 졸업한 뒤 18세에 MIT 대학원에 입학해 Dimitri Bertsekas 지도 하에 확률적 최적화를 연구했고, 2013년 박사 학위를 취득했다. 2014년 프린스턴에 조교수로 합류했으며, 연속 최적화 분야 청년 연구자상(Mathematical Optimization Society, 2016), NSF Career Award(2017), Google Faculty Award(2017), MIT Technology Review 35세 이하 35인(2018), AACC Donald Eckman Award(2024) 등을 수상했다.
+Mengdi Wang은 프린스턴 대학교 전기컴퓨터공학과 및 통계기계학습센터(CSML) 교수입니다. 칭화대학교 자동화학부를 졸업한 뒤 18세에 MIT 대학원에 입학해 Dimitri Bertsekas 지도 하에 확률적 최적화를 연구했고, 2013년 박사 학위를 취득했습니다. 2014년 프린스턴에 조교수로 합류했으며, 연속 최적화 분야 청년 연구자상(Mathematical Optimization Society, 2016), NSF Career Award(2017), Google Faculty Award(2017), MIT Technology Review 35세 이하 35인(2018), AACC Donald Eckman Award(2024) 등을 수상했습니다.
 
-주요 연구는 강화학습 이론, 생성형 AI, LLM 에이전트 학습으로 이어진다. 이론 측면에서는 합성 최적화(compositional optimization)에 대한 확률적 경사 하강법을 최초로 제안했다. 최근에는 LLM 추론과 에이전트 시스템에 RL을 접목하는 연구를 집중적으로 내놓고 있다. 2024년 NeurIPS에서는 조직화된 팀 구조를 학습하는 멀티 에이전트 협력 연구를 발표했고, 2025년에는 "Demystifying Reinforcement Learning in Agentic Reasoning"을 통해 에이전트 추론에서 RL이 어떻게 작동하는지 원리를 분석했다.
+주요 연구는 강화학습 이론, 생성형 AI, LLM 에이전트 학습으로 이어집니다. 이론 측면에서는 합성 최적화(compositional optimization)에 대한 확률적 경사 하강법을 최초로 제안했습니다. 최근에는 LLM 추론과 에이전트 시스템에 RL을 접목하는 연구를 집중적으로 내놓고 있습니다. 2024년 NeurIPS에서는 조직화된 팀 구조를 학습하는 멀티 에이전트 협력 연구를 발표했고, 2025년에는 "Demystifying Reinforcement Learning in Agentic Reasoning"을 통해 에이전트 추론에서 RL이 어떻게 작동하는지 원리를 분석했습니다.
 
-2026년 3월에는 Gen-Verse 그룹과 공동으로 OpenClaw-RL을 발표했다. 배포된 에이전트가 서빙을 중단하지 않고 실시간 대화 피드백만으로 스스로 개선될 수 있음을 보인 연구로, 수동 레이블링 없이 개인화와 범용 에이전트 학습을 하나의 비동기 RL 파이프라인에서 처리한다. Wang의 강화학습 이론 배경이 실제 배포 환경에서의 온라인 학습 문제와 맞물린 결과물이다.
+2026년 3월에는 Gen-Verse 그룹과 공동으로 OpenClaw-RL을 발표했습니다. 배포된 에이전트가 서빙을 중단하지 않고 실시간 대화 피드백만으로 스스로 개선될 수 있음을 보인 연구로, 수동 레이블링 없이 개인화와 범용 에이전트 학습을 하나의 비동기 RL 파이프라인에서 처리합니다. Wang의 강화학습 이론 배경이 실제 배포 환경에서의 온라인 학습 문제와 맞물린 결과물입니다.
