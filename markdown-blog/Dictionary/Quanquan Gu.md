@@ -10,8 +10,8 @@ aliases:
   - 구전취안
 ---
 
-Quanquan Gu는 UCLA 컴퓨터과학과 부교수이자 UCLA Artificial General Intelligence Lab을 이끄는 연구자다. 일리노이 대학교 어바나-샴페인(UIUC)에서 컴퓨터과학 박사학위를 받은 뒤 프린스턴 대학교에서 박사후 연구원을 거쳤고, 2018년부터 UCLA에 자리를 잡았다. 2023년부터는 ByteDance Seed 리서치 사이언티스트를 겸직하고 있다. NSF CAREER Award, Simons Berkeley Research Fellowship, Yahoo! Academic Career Enhancement Award 등을 수상했으며, Google Scholar 누적 피인용 수 3만 1천 회를 넘긴다.
+Quanquan Gu는 UCLA 컴퓨터과학과 부교수이자 UCLA Artificial General Intelligence Lab을 이끄는 연구자입니다. 일리노이 대학교 어바나-샴페인(UIUC)에서 컴퓨터과학 박사학위를 받은 뒤 프린스턴 대학교에서 박사후 연구원을 거쳤고, 2018년부터 UCLA에 자리를 잡았습니다. 2023년부터는 ByteDance Seed 리서치 사이언티스트를 겸직하고 있습니다. NSF CAREER Award, Simons Berkeley Research Fellowship, Yahoo! Academic Career Enhancement Award 등을 수상했으며, Google Scholar 누적 피인용 수 3만 1천 회를 넘깁니다.
 
-연구의 핵심 축은 세 가지다. 첫째, 비볼록 최적화(nonconvex optimization) 이론으로, 교번 최소화(alternating minimization) 알고리즘이 저랭크 행렬과 스파스 행렬을 동시에 복원할 수 있음을 이론적으로 규명한 일련의 연구("Low-Rank and Sparse Structure Pursuit", AISTATS 2016)가 대표적이다. 둘째, 딥러닝 이론으로, 신경망의 일반화 경계와 수렴 보장을 엄밀하게 분석하는 연구를 꾸준히 발표해왔다. 셋째, 강화학습 이론으로 RLHF에서 능동 쿼리(active queries)를 활용해 데이터 효율을 높이는 APPO/ADPO 등 LLM 정렬 방법론에 기여했다.
+연구의 핵심 축은 세 가지입니다. 첫째, 비볼록 최적화(nonconvex optimization) 이론으로, 교번 최소화(alternating minimization) 알고리즘이 저랭크 행렬과 스파스 행렬을 동시에 복원할 수 있음을 이론적으로 규명한 일련의 연구("Low-Rank and Sparse Structure Pursuit", AISTATS 2016)가 대표적입니다. 둘째, 딥러닝 이론으로, 신경망의 일반화 경계와 수렴 보장을 엄밀하게 분석하는 연구를 꾸준히 발표해왔습니다. 셋째, 강화학습 이론으로 RLHF에서 능동 쿼리(active queries)를 활용해 데이터 효율을 높이는 APPO/ADPO 등 LLM 정렬 방법론에 기여했습니다.
 
-2026년 1월에는 프린스턴 대학교 Yifan Zhang, Mengdi Wang과 공동으로 "Deep Delta Learning"(arXiv:2601.00417)을 발표했다. ResNet의 identity shortcut에 학습 가능한 기하학적 변환(Householder 반사 기반)을 추가해 층마다 항등 매핑, 직교 투영, 기하학적 반사를 동적으로 선택하도록 만든 연구로, ResNet 구조의 표현 한계를 정면으로 다루었다.
+2026년 1월에는 프린스턴 대학교 Yifan Zhang, Mengdi Wang과 공동으로 "Deep Delta Learning"(arXiv:2601.00417)을 발표했습니다. ResNet의 identity shortcut에 학습 가능한 기하학적 변환(Householder 반사 기반)을 추가해 층마다 항등 매핑, 직교 투영, 기하학적 반사를 동적으로 선택하도록 만든 연구로, ResNet 구조의 표현 한계를 정면으로 다루었습니다.
