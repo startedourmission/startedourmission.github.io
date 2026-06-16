@@ -1,6 +1,6 @@
 ---
 type: person
-description: 메타 FAIR 리서치 사이언티스트. 분포 이동·가짜 상관·그룹 강건성 전문가로, 마지막 레이어 재학습(DFR)과 AbstentionBench로 알려져 있다.
+description: 메타 FAIR 리서치 사이언티스트. 분포 이동·가짜 상관·그룹 강건성 전문가로, 마지막 레이어 재학습(DFR)과 AbstentionBench로 알려져 있습니다.
 tags:
   - 인물
   - 머신러닝

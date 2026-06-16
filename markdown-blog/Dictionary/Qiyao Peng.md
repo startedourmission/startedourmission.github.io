@@ -1,6 +1,6 @@
 ---
 type: person
-description: 중국 톈진대(Tianjin University) 연구자. 자연어처리와 추천 시스템을 연구하며 문서 QA 에이전트로 영역을 넓혔다.
+description: 중국 톈진대(Tianjin University) 연구자. 자연어처리와 추천 시스템을 연구하며 문서 QA 에이전트로 영역을 넓혔습니다.
 tags:
   - 인물
   - NLP

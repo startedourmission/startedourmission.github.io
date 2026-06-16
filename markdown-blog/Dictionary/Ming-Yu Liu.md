@@ -4,7 +4,7 @@ date: 2026-06-06
 tags:
   - 멀티모달
   - 딥러닝
-description: NVIDIA Research 부사장이자 Cosmos Lab을 이끄는 연구자. Physical AI를 위한 월드 파운데이션 모델과 생성 모델 연구의 책임자다.
+description: NVIDIA Research 부사장이자 Cosmos Lab을 이끄는 연구자. Physical AI를 위한 월드 파운데이션 모델과 생성 모델 연구의 책임자입니다.
 aliases:
   - Ming-Yu Liu
   - 밍유 리우

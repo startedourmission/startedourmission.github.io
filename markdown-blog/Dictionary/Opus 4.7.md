@@ -6,7 +6,7 @@ tags:
 description: "[[Claude]] 4.X 시리즈의 이전 버전. Fable 5와의 성능 비교 대상"
 ---
 
-[[Anthropic]]의 Claude 4.X 시리즈 모델로, [[Claude Fable 5|Fable 5]] 등장 이전의 고성능 모델. 루프 구조와 메모리 활용에서 Fable 5에 비해 제한적이다.
+[[Anthropic]]의 Claude 4.X 시리즈 모델로, [[Claude Fable 5|Fable 5]] 등장 이전의 고성능 모델. 루프 구조와 메모리 활용에서 Fable 5에 비해 제한적입니다.
 
 ## Fable 5와의 차이
 
