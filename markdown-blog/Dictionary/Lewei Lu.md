@@ -1,6 +1,6 @@
 ---
 type: person
-description: SenseTime Research 디렉터. InternVL·SenseNova 라인의 멀티모달 시스템 엔지니어링을 이끈다.
+description: SenseTime Research 디렉터. InternVL·SenseNova 라인의 멀티모달 시스템 엔지니어링을 이끕니다.
 tags:
   - 인물
   - 멀티모달

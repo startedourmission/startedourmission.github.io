@@ -1,6 +1,6 @@
 ---
 type: person
-description: 중국 톈진대(Tianjin University) 연구자. 멀티모달 긴 문서 질의응답과 에이전트 메모리를 연구한다.
+description: 중국 톈진대(Tianjin University) 연구자. 멀티모달 긴 문서 질의응답과 에이전트 메모리를 연구합니다.
 tags:
   - 인물
   - 멀티모달

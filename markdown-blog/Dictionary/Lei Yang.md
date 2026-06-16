@@ -1,6 +1,6 @@
 ---
 type: person
-description: SenseTime Research의 spatial intelligence·평가 인프라 리드. SenseNova-SI·EASI 라인을 이끈다.
+description: SenseTime Research의 spatial intelligence·평가 인프라 리드. SenseNova-SI·EASI 라인을 이끕니다.
 tags:
   - 인물
   - 멀티모달
