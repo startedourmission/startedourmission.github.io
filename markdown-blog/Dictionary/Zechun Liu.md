@@ -1,6 +1,6 @@
 ---
 type: person
-description: 메타(Reality Labs)의 LLM 양자화 전문 연구자. SpinQuant, LLM-QAT, MobileLLM 등 온디바이스 효율화·압축 연구를 이끌었다.
+description: 메타(Reality Labs)의 LLM 양자화 전문 연구자. SpinQuant, LLM-QAT, MobileLLM 등 온디바이스 효율화·압축 연구를 이끌었습니다.
 tags:
   - 인물
   - 딥러닝

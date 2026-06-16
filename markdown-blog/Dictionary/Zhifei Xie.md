@@ -1,6 +1,6 @@
 ---
 type: person
-description: 난양공대(NTU) 연구자. Mini-Omni 계열 오디오 언어모델의 핵심 저자로 실시간 음성 상호작용 모델을 연이어 내놓고 있다.
+description: 난양공대(NTU) 연구자. Mini-Omni 계열 오디오 언어모델의 핵심 저자로 실시간 음성 상호작용 모델을 연이어 내놓고 있습니다.
 tags:
   - 인물
   - 멀티모달

@@ -1,6 +1,6 @@
 ---
 type: person
-description: Google DeepMind 디스팅귀시드 리서치 사이언티스트. TrueSkill 개발자, AlphaGo 공저자. 2025년 복귀 후 post-AGI 미래 팀을 이끌고 있다.
+description: Google DeepMind 디스팅귀시드 리서치 사이언티스트. TrueSkill 개발자, AlphaGo 공저자. 2025년 복귀 후 post-AGI 미래 팀을 이끌고 있습니다.
 tags:
   - 머신러닝
   - LLM
