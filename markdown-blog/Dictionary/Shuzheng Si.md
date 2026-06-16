@@ -9,8 +9,8 @@ aliases:
   - Shuzheng Si
 ---
 
-칭화대학교 컴퓨터과학기술과 박사과정이다. 지도교수는 마오쑹 선(Maosong Sun). TsinghuaNLP 연구실 소속.
+칭화대학교 컴퓨터과학기술과 박사과정입니다. 지도교수는 마오쑹 선(Maosong Sun). TsinghuaNLP 연구실 소속.
 
-주요 연구 분야는 데이터 중심 NLP 방법론이다. 데이터 선택, 데이터 합성, 노이즈 학습 등을 연구하며, LLM의 할루시네이션을 데이터 관점에서 분석하는 연구를 진행했다.
+주요 연구 분야는 데이터 중심 NLP 방법론입니다. 데이터 선택, 데이터 합성, 노이즈 학습 등을 연구하며, LLM의 할루시네이션을 데이터 관점에서 분석하는 연구를 진행했습니다.
 
-[[Crafter - A Multi-Agent Harness for Editable Scientific Figure Generation from Diverse Inputs]]에서 [[Haozhe Zhao]]와 공동 1저자로 참여했다. 칭화대-UIUC-북경대 공동 연구의 칭화대 측 핵심 기여자다.
+[[Crafter - A Multi-Agent Harness for Editable Scientific Figure Generation from Diverse Inputs]]에서 [[Haozhe Zhao]]와 공동 1저자로 참여했습니다. 칭화대-UIUC-북경대 공동 연구의 칭화대 측 핵심 기여자입니다.
