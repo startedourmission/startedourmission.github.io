@@ -12,12 +12,12 @@ aliases:
   - 마르카우렐리오 란차토
 ---
 
-마르카우렐리오 란차토(Marc'Aurelio Ranzato)는 이탈리아 파도바 출신의 머신러닝 연구자로, NYU 박사 시절의 *희소 부호화 기반 비지도 학습*에서 Meta의 다언어 기계 번역(*No Language Left Behind*)까지를 잇는 보기 드문 궤적을 그려 왔다. 현재 Google DeepMind의 *Research Scientist Director*이다.
+마르카우렐리오 란차토(Marc'Aurelio Ranzato)는 이탈리아 파도바 출신의 머신러닝 연구자로, NYU 박사 시절의 *희소 부호화 기반 비지도 학습*에서 Meta의 다언어 기계 번역(*No Language Left Behind*)까지를 잇는 보기 드문 궤적을 그려 왔습니다. 현재 Google DeepMind의 *Research Scientist Director*입니다.
 
-학력은 2004년부터 2009년까지 NYU에서 [[Yann LeCun|얀 르쿤]] 지도로 박사 학위를 받았다. 박사 논문 주제는 *feature hierarchy*의 비지도 학습이며, 당시 분야 용어는 *deep learning*보다 *unsupervised feature learning*에 가까웠다. 대표 작업으로 *Efficient Learning of Sparse Representations with an Energy-Based Model*(Ranzato et al., NIPS 2006)과 Koray Kavukcuoglu·[[Yann LeCun|얀 르쿤]]과의 *Predictive Sparse Decomposition*이 있다. 둘 다 EBM의 잠재 변수 형식을 희소 부호화에 응용한 작업이다.
+학력은 2004년부터 2009년까지 NYU에서 [[Yann LeCun|얀 르쿤]] 지도로 박사 학위를 받았습니다. 박사 논문 주제는 *feature hierarchy*의 비지도 학습이며, 당시 분야 용어는 *deep learning*보다 *unsupervised feature learning*에 가까웠습니다. 대표 작업으로 *Efficient Learning of Sparse Representations with an Energy-Based Model*(Ranzato et al., NIPS 2006)과 Koray Kavukcuoglu·[[Yann LeCun|얀 르쿤]]과의 *Predictive Sparse Decomposition*이 있습니다. 둘 다 EBM의 잠재 변수 형식을 희소 부호화에 응용한 작업입니다.
 
-박사 후 2009년부터 2년간 University of Toronto에서 [[Geoffrey Hinton|제프리 힌턴]] 포스닥으로 합류해 *Deep Belief Net*과 RBM 연구를 이어갔다. 이후 2011년 Google Brain에 합류하여 *DistBelief* 시대의 대규모 비지도 학습을 다뤘다. Quoc Le·Jeff Dean과의 *Building High-Level Features Using Large Scale Unsupervised Learning*(2012), 곧 *고양이 detector* 논문과 *DeViSE*(영상·텍스트 공동 임베딩, 2013)가 이 시기의 결과물이다.
+박사 후 2009년부터 2년간 University of Toronto에서 [[Geoffrey Hinton|제프리 힌턴]] 포스닥으로 합류해 *Deep Belief Net*과 RBM 연구를 이어갔습니다. 이후 2011년 Google Brain에 합류하여 *DistBelief* 시대의 대규모 비지도 학습을 다뤘습니다. Quoc Le·Jeff Dean과의 *Building High-Level Features Using Large Scale Unsupervised Learning*(2012), 곧 *고양이 detector* 논문과 *DeViSE*(영상·텍스트 공동 임베딩, 2013)가 이 시기의 결과물입니다.
 
-2013년 Facebook AI Research(FAIR)로 옮겨 2021년까지 머무는 동안 기계 번역 팀을 이끌었다. 저자원 언어 번역과 *No Language Left Behind*(NLLB) 200개 언어 번역 모델의 초기 설계에 기여하였고, 그 후 2021년 DeepMind로 자리를 옮겼다.
+2013년 Facebook AI Research(FAIR)로 옮겨 2021년까지 머무는 동안 기계 번역 팀을 이끌었습니다. 저자원 언어 번역과 *No Language Left Behind*(NLLB) 200개 언어 번역 모델의 초기 설계에 기여하였고, 그 후 2021년 DeepMind로 자리를 옮겼습니다.
 
-본 글의 *A Tutorial on Energy-Based Learning*(2006) 작업에서 그의 기여는 박사 시기 희소 부호화 작업을 EBM의 잠재 변수 형식으로 다시 쓰는 부분, 그리고 *§4 Architectures with Latent Variables*에서 다루는 잠재 변수 최소화 정식의 정리이다.
+본 글의 *A Tutorial on Energy-Based Learning*(2006) 작업에서 그의 기여는 박사 시기 희소 부호화 작업을 EBM의 잠재 변수 형식으로 다시 쓰는 부분, 그리고 *§4 Architectures with Latent Variables*에서 다루는 잠재 변수 최소화 정식의 정리입니다.

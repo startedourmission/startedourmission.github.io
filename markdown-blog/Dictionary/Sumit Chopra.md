@@ -10,12 +10,12 @@ aliases:
   - 수밋 초프라
 ---
 
-수밋 초프라(Sumit Chopra)는 인도 출신의 머신러닝 연구자로, 현대 대조 학습(contrastive learning)의 직계 조상에 해당하는 *contrastive loss for Siamese networks*를 처음 정식화한 인물이다. 현재 뉴욕대학교(NYU) Courant 정보과학연구소 정보학과 부교수이면서, NYU Grossman School of Medicine 영상의학과 부교수와 *Machine Learning Research* 디렉터를 겸하고 있다.
+수밋 초프라(Sumit Chopra)는 인도 출신의 머신러닝 연구자로, 현대 대조 학습(contrastive learning)의 직계 조상에 해당하는 *contrastive loss for Siamese networks*를 처음 정식화한 인물입니다. 현재 뉴욕대학교(NYU) Courant 정보과학연구소 정보학과 부교수이면서, NYU Grossman School of Medicine 영상의학과 부교수와 *Machine Learning Research* 디렉터를 겸하고 있습니다.
 
-학력은 2003년부터 2008년까지 NYU에서 [[Yann LeCun|얀 르쿤]] 지도로 박사 학위를 받았다. 박사 과정 중인 2005년 CVPR에서 [[Raia Hadsell|라이아 해드셀]]·[[Yann LeCun|얀 르쿤]]과 함께 발표한 *Learning a similarity metric discriminatively, with application to face verification*은 contrastive loss를 도입한 메트릭 학습의 출발점이며, 이후 SimCLR·MoCo·CLIP 계보의 대조 학습 연구가 모두 이 형식 위에서 작동한다.
+학력은 2003년부터 2008년까지 NYU에서 [[Yann LeCun|얀 르쿤]] 지도로 박사 학위를 받았습니다. 박사 과정 중인 2005년 CVPR에서 [[Raia Hadsell|라이아 해드셀]]·[[Yann LeCun|얀 르쿤]]과 함께 발표한 *Learning a similarity metric discriminatively, with application to face verification*은 contrastive loss를 도입한 메트릭 학습의 출발점이며, 이후 SimCLR·MoCo·CLIP 계보의 대조 학습 연구가 모두 이 형식 위에서 작동합니다.
 
-박사 후 경력은 2008년부터 AT&T Labs Research 리서치 사이언티스트, 2014년부터 Facebook AI Research(FAIR), 2017년부터 의료 영상 스타트업 *Imagen Technologies* 수석 연구자를 거쳐 2021년 NYU에 정착했다. FAIR 시절에는 Jason Weston·Antoine Bordes와 *Memory Networks*를 공동 제안하여 질의응답·텍스트 이해 연구의 초기 흐름을 만들었다.
+박사 후 경력은 2008년부터 AT&T Labs Research 리서치 사이언티스트, 2014년부터 Facebook AI Research(FAIR), 2017년부터 의료 영상 스타트업 *Imagen Technologies* 수석 연구자를 거쳐 2021년 NYU에 정착했습니다. FAIR 시절에는 Jason Weston·Antoine Bordes와 *Memory Networks*를 공동 제안하여 질의응답·텍스트 이해 연구의 초기 흐름을 만들었습니다.
 
-본 글의 *A Tutorial on Energy-Based Learning*(2006) 작업에서 그의 기여는 1저자 [[Yann LeCun|얀 르쿤]]과 함께 EBM 프레임워크의 정식 표기와 *contrastive loss*의 이론적 토대를 마련한 것이다. 박사 논문 자체가 이 튜토리얼과 거의 같은 시기에 진행되었기 때문에 박사 연구의 결과물이 그대로 튜토리얼에 녹아 들어갔다고 보아도 무리가 없다.
+본 글의 *A Tutorial on Energy-Based Learning*(2006) 작업에서 그의 기여는 1저자 [[Yann LeCun|얀 르쿤]]과 함께 EBM 프레임워크의 정식 표기와 *contrastive loss*의 이론적 토대를 마련한 것입니다. 박사 논문 자체가 이 튜토리얼과 거의 같은 시기에 진행되었기 때문에 박사 연구의 결과물이 그대로 튜토리얼에 녹아 들어갔다고 보아도 무리가 없습니다.
 
-현재 연구 주제는 의료 영상, 특히 *MRI 재구성*과 임상 영상 분석을 위한 머신러닝이다. NYU 영상의학과 ML 그룹을 이끌고 있다.
+현재 연구 주제는 의료 영상, 특히 *MRI 재구성*과 임상 영상 분석을 위한 머신러닝입니다. NYU 영상의학과 ML 그룹을 이끌고 있습니다.

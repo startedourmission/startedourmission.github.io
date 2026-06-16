@@ -10,12 +10,12 @@ aliases:
   - 푸제 황
 ---
 
-푸제 황(Fu Jie Huang)은 중국 출신의 컴퓨터 비전 연구자로, NYU [[Yann LeCun|얀 르쿤]] 연구실 박사 출신이다. 2000년대 중반 *조명·포즈 불변*을 갖추는 객체 인식 연구를 주도하였다.
+푸제 황(Fu Jie Huang)은 중국 출신의 컴퓨터 비전 연구자로, NYU [[Yann LeCun|얀 르쿤]] 연구실 박사 출신입니다. 2000년대 중반 *조명·포즈 불변*을 갖추는 객체 인식 연구를 주도하였습니다.
 
-박사 시기 핵심 작업은 *NORB 데이터셋*이다. NORB(*NYU Object Recognition Benchmark*)는 네 발 동물·사람·비행기·트럭·자동차 다섯 범주 50개의 장난감 객체를 통제된 스튜디오에서 2대의 카메라, 6가지 조명, 9가지 고도, 18가지 방위각으로 촬영한 영상 모음이다. *small NORB*와 풀 NORB 두 가지로 공개되었고, ImageNet 등장 이전 시대에 합성곱 신경망의 *조명·포즈 불변성*을 정량적으로 측정하는 표준 벤치마크 역할을 하였다.
+박사 시기 핵심 작업은 *NORB 데이터셋*입니다. NORB(*NYU Object Recognition Benchmark*)는 네 발 동물·사람·비행기·트럭·자동차 다섯 범주 50개의 장난감 객체를 통제된 스튜디오에서 2대의 카메라, 6가지 조명, 9가지 고도, 18가지 방위각으로 촬영한 영상 모음입니다. *small NORB*와 풀 NORB 두 가지로 공개되었고, ImageNet 등장 이전 시대에 합성곱 신경망의 *조명·포즈 불변성*을 정량적으로 측정하는 표준 벤치마크 역할을 하였습니다.
 
-대표 논문은 [[Yann LeCun|얀 르쿤]]·Leon Bottou와의 *Learning Methods for Generic Object Recognition with Invariance to Pose and Lighting*(CVPR 2004), 그리고 [[Yann LeCun|얀 르쿤]]과의 *Large-Scale Learning with SVM and Convolutional Nets for Generic Object Categorization*(CVPR 2006)이다. 두 작업 모두 NORB 위에서 ConvNet과 SVM·k-NN을 직접 비교하며 합성곱 신경망의 우위를 보였다.
+대표 논문은 [[Yann LeCun|얀 르쿤]]·Leon Bottou와의 *Learning Methods for Generic Object Recognition with Invariance to Pose and Lighting*(CVPR 2004), 그리고 [[Yann LeCun|얀 르쿤]]과의 *Large-Scale Learning with SVM and Convolutional Nets for Generic Object Categorization*(CVPR 2006)입니다. 두 작업 모두 NORB 위에서 ConvNet과 SVM·k-NN을 직접 비교하며 합성곱 신경망의 우위를 보였습니다.
 
-본 글의 *A Tutorial on Energy-Based Learning*(2006) 작업에서 그의 기여는 EBM 위에서 객체 인식 실험을 재구성하고, *§5* 실험 영역의 정량 비교 부분을 담당한 것이다.
+본 글의 *A Tutorial on Energy-Based Learning*(2006) 작업에서 그의 기여는 EBM 위에서 객체 인식 실험을 재구성하고, *§5* 실험 영역의 정량 비교 부분을 담당한 것입니다.
 
-박사 학위 이후 학계·산업계 공개 활동 기록이 거의 남아 있지 않아 현재 소속은 확인되지 않는다. 본 글에서는 NORB와 EBM 튜토리얼 두 가지 박사 시기 작업으로 그를 기억한다.
+박사 학위 이후 학계·산업계 공개 활동 기록이 거의 남아 있지 않아 현재 소속은 확인되지 않습니다. 본 글에서는 NORB와 EBM 튜토리얼 두 가지 박사 시기 작업으로 그를 기억합니다.
