@@ -9,10 +9,10 @@ aliases:
   - 黄超
 ---
 
-Chao Huang(黄超)은 홍콩대학교(HKU) 컴퓨터 과학과 조교수이자 Musketeers Foundation Institute of Data Science 소속 연구자다. University of Notre Dame에서 그래프 신경망과 추천 시스템으로 박사 학위를 받았으며, 현재 Data Intelligence Lab @ HKU(HKUDS)를 이끌고 있다.
+Chao Huang(黄超)은 홍콩대학교(HKU) 컴퓨터 과학과 조교수이자 Musketeers Foundation Institute of Data Science 소속 연구자입니다. University of Notre Dame에서 그래프 신경망과 추천 시스템으로 박사 학위를 받았으며, 현재 Data Intelligence Lab @ HKU(HKUDS)를 이끌고 있습니다.
 
-연구 방향은 그래프 구조 학습과 RAG(검색 증강 생성)의 결합이다. 2024년 공개한 LightRAG는 단순 청크 검색을 넘어 그래프 기반 듀얼 레벨 검색(저수준 엔티티 + 고수준 개념)을 RAG에 통합한 프레임워크로, 공개 직후 GitHub 스타 36,000개 이상을 받으며 오픈소스 RAG 생태계의 기준 중 하나가 됐다. EMNLP 2025 Findings에 채택됐다. 같은 해 SIGIR 2024에 발표한 GraphGPT는 LLM을 그래프 데이터에 맞게 인스트럭션 튜닝하는 첫 시도였고, KDD 2024의 UrbanGPT는 LLM을 도시 시공간 예측(교통, 범죄 등)에 적용했다.
+연구 방향은 그래프 구조 학습과 RAG(검색 증강 생성)의 결합입니다. 2024년 공개한 LightRAG는 단순 청크 검색을 넘어 그래프 기반 듀얼 레벨 검색(저수준 엔티티 + 고수준 개념)을 RAG에 통합한 프레임워크로, 공개 직후 GitHub 스타 36,000개 이상을 받으며 오픈소스 RAG 생태계의 기준 중 하나가 됐습니다. EMNLP 2025 Findings에 채택됐습니다. 같은 해 SIGIR 2024에 발표한 GraphGPT는 LLM을 그래프 데이터에 맞게 인스트럭션 튜닝하는 첫 시도였고, KDD 2024의 UrbanGPT는 LLM을 도시 시공간 예측(교통, 범죄 등)에 적용했습니다.
 
-2025년 10월 발표한 RAG-Anything(arXiv:2510.12323)은 텍스트뿐 아니라 이미지, 표, 수식, 코드를 노드로 잡는 멀티모달 그래프를 구성해, 문서 내 모달 간 관계를 유지한 채 검색하는 프레임워크다. LightRAG의 멀티모달 확장판으로 볼 수 있으며, 공개 직후 GitHub Trending 1위에 오르고 2만 1000개 이상의 스타를 받았다.
+2025년 10월 발표한 RAG-Anything(arXiv:2510.12323)은 텍스트뿐 아니라 이미지, 표, 수식, 코드를 노드로 잡는 멀티모달 그래프를 구성해, 문서 내 모달 간 관계를 유지한 채 검색하는 프레임워크입니다. LightRAG의 멀티모달 확장판으로 볼 수 있으며, 공개 직후 GitHub Trending 1위에 오르고 2만 1000개 이상의 스타를 받았습니다.
 
-HKUDS 랩은 2025년 기준 GitHub 스타 누적 7만 7000개 이상, GitHub Trending 59회 진입을 기록하고 있다. 2025년 AI 100 Young Pioneers Award 수상자이며, Stanford Top 2% Scientists에 2022년부터 연속 선정됐다.
+HKUDS 랩은 2025년 기준 GitHub 스타 누적 7만 7000개 이상, GitHub Trending 59회 진입을 기록하고 있습니다. 2025년 AI 100 Young Pioneers Award 수상자이며, Stanford Top 2% Scientists에 2022년부터 연속 선정됐습니다.
