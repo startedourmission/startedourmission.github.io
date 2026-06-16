@@ -7,8 +7,8 @@ aliases:
   - Sun Haohai
 ---
 
-MiniMax에서 사전학습 파이프라인을 총괄하는 연구 리드다. MiniMax-01, MiniMax-M1, MiniMax-M2, 그리고 [[MiniMax Sparse Attention]] 기술 보고서에 걸쳐 사전학습 설계와 실행을 담당했다. [[Pengyu Zhao]]가 MiniMax M2 공개 당시 X(트위터)에서 직접 "pre-training lead Haohai Sun"으로 소개하며 역할을 공식 확인했다.
+MiniMax에서 사전학습 파이프라인을 총괄하는 연구 리드입니다. MiniMax-01, MiniMax-M1, MiniMax-M2, 그리고 [[MiniMax Sparse Attention]] 기술 보고서에 걸쳐 사전학습 설계와 실행을 담당했습니다. [[Pengyu Zhao]]가 MiniMax M2 공개 당시 X(트위터)에서 직접 "pre-training lead Haohai Sun"으로 소개하며 역할을 공식 확인했습니다.
 
-[[MiniMax Sparse Attention]] 논문에서는 희소 어텐션 패턴이 적용된 상태로 109B MoE 모델을 3T 토큰 예산 전훈련하는 작업에 참여했다. 이 실험이 MSA가 풀 어텐션과 동등하거나 그 이상의 품질을 낼 수 있음을 스케일에서 검증한 핵심 근거다.
+[[MiniMax Sparse Attention]] 논문에서는 희소 어텐션 패턴이 적용된 상태로 109B MoE 모델을 3T 토큰 예산 전훈련하는 작업에 참여했습니다. 이 실험이 MSA가 풀 어텐션과 동등하거나 그 이상의 품질을 낼 수 있음을 스케일에서 검증한 핵심 근거입니다.
 
-세부 학력과 MiniMax 합류 시기는 공개되지 않았다.
+세부 학력과 MiniMax 합류 시기는 공개되지 않았습니다.
