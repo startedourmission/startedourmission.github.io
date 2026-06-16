@@ -816,11 +816,9 @@
         Disk.writeFile (Path.Combine(Config.outputDir, fileName)) rssXml
 
     let createRssFeed (posts: Post list) =
-        writeRssFeed posts "rss.xml" Config.blogTitle Config.blogDescription
-
         let postsOnly = posts |> List.filter (fun p -> p.Category <> "Dictionary")
-        if postsOnly <> posts then
-            writeRssFeed postsOnly "rss-posts.xml" Config.blogTitle Config.blogDescription
+        writeRssFeed postsOnly "rss.xml" Config.blogTitle Config.blogDescription
+        writeRssFeed postsOnly "rss-posts.xml" Config.blogTitle Config.blogDescription
 
         let gridPostsOnly = posts |> List.filter (fun p -> p.Category = "Posts")
         if not gridPostsOnly.IsEmpty then
