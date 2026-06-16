@@ -789,7 +789,7 @@
         )
         |> String.concat "\n"
 
-    let private writeRssFeed (posts: Post list) (fileName: string) =
+    let private writeRssFeed (posts: Post list) (fileName: string) (channelTitle: string) (channelDescription: string) =
         let items = renderRssItems posts
 
         let latestBuildDate =
@@ -804,9 +804,9 @@
             $"""<?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-    <title>{Config.blogTitle}</title>
+    <title>{channelTitle}</title>
     <link>{Config.blogBaseUrl}</link>
-    <description>{Config.blogDescription}</description>
+    <description>{channelDescription}</description>
     <language>ko-kr</language>
     <lastBuildDate>{latestBuildDate}</lastBuildDate>
     <atom:link href="{Config.blogBaseUrl}/{fileName}" rel="self" type="application/rss+xml" />
@@ -816,19 +816,27 @@
         Disk.writeFile (Path.Combine(Config.outputDir, fileName)) rssXml
 
     let createRssFeed (posts: Post list) =
-        writeRssFeed posts "rss.xml"
+        writeRssFeed posts "rss.xml" Config.blogTitle Config.blogDescription
 
         let postsOnly = posts |> List.filter (fun p -> p.Category <> "Dictionary")
         if postsOnly <> posts then
-            writeRssFeed postsOnly "rss-posts.xml"
+            writeRssFeed postsOnly "rss-posts.xml" Config.blogTitle Config.blogDescription
 
         let gridPostsOnly = posts |> List.filter (fun p -> p.Category = "Posts")
         if not gridPostsOnly.IsEmpty then
-            writeRssFeed gridPostsOnly "rss-grid-posts.xml"
+            writeRssFeed
+                gridPostsOnly
+                "rss-grid-posts.xml"
+                $"{Config.blogTitle} - Posts"
+                "General posts feed from startedourmission."
 
         let gridPapersOnly = posts |> List.filter (fun p -> p.Category = "Papers")
         if not gridPapersOnly.IsEmpty then
-            writeRssFeed gridPapersOnly "rss-grid-papers.xml"
+            writeRssFeed
+                gridPapersOnly
+                "rss-grid-papers.xml"
+                $"{Config.blogTitle} - Papers"
+                "Papers feed from startedourmission."
 
     let private sitemapUrl (loc: string) (lastmod: string) (priority: string) =
         $"  <url>\n    <loc>{loc}</loc>\n    <lastmod>{lastmod}</lastmod>\n    <priority>{priority}</priority>\n  </url>"
