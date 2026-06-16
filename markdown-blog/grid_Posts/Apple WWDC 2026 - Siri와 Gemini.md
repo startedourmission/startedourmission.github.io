@@ -4,7 +4,6 @@ tags:
   - 정보
   - LLM
   - 에이전트
-  - Headliner
 description: Apple이 Google과 함께 만든 모델로 Siri를 재구축하고, Foundation Models의 LanguageModel 프로토콜과 Core AI로 개발자가 앱에 Gemini·Claude·오픈 모델을 붙이게 연 WWDC 2026 키노트를 공식 발표와 보도를 구분해 정리합니다
 image: "![[wwdc26-keynote-overview.png]]"
 ---

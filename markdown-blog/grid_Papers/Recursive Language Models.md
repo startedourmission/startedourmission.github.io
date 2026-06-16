@@ -2,13 +2,12 @@
 date: 2026-06-09
 tags:
   - 논문
-  - Headliner
   - LLM
   - 추론
   - 에이전트
 description: 긴 프롬프트를 신경망에 통째로 밀어넣지 않고 REPL 환경의 변수로 두는 추론 패러다임. 모델이 코드를 써서 컨텍스트를 들여다보고 자기 자신을 재귀 호출한다. 컨텍스트 창을 한 자리 수 배가 아니라 10M 토큰 단위로 넘기면서도 비용은 비슷하게 유지한다.
 image: "![[recursive-language-models-overview.png]]"
-buzz: 304
+buzz: 288
 ---
 > A. L. Zhang, T. Kraska, and O. Khattab, "Recursive Language Models," arXiv:2512.24601, 2026.
 

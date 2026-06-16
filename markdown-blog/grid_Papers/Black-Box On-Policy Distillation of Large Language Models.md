@@ -2,7 +2,6 @@
 date: 2025-11-20
 tags:
   - 논문
-  - Headliner
   - LLM
 aliases:
 image: "![[1-Black-BoX.png]]"

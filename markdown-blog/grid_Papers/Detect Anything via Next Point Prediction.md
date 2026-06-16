@@ -2,7 +2,6 @@
 date: 2025-10-22
 tags:
   - 논문
-  - Headliner
   - 컴퓨터비전
   - LLM
   - 멀티모달

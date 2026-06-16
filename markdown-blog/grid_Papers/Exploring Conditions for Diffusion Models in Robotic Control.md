@@ -5,7 +5,7 @@ tags:
 aliases:
 image: "![[1-Exploring.png]]"
 description: 이번에는 네이버에서 제안한 논문을 들고왔습니다. 팔이 또 안으로 굽는다고, 저는 우리나라 논문을 보면 이렇게 가져오고싶네요. 확산 모델의 조건화를 로보틱스 분야에 적용하고 도메인 갭을 메우는 흥미로운 내용입니다.
-buzz: 107
+buzz: 43
 ---
 
 > Shin et al., "Exploring Conditions for Diffusion Models in Robotic Control", arXiv:2510.15510, 2025

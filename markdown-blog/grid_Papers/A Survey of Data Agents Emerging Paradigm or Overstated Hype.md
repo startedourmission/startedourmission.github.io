@@ -2,7 +2,6 @@
 date: 2025-10-30
 tags:
   - 논문
-  - Headliner
 aliases:
   - A Survey of Data Agents: Emerging Paradigm or Overstated Hype?
 image: "![[1-A_Survey_of_Data_Agents.png]]"

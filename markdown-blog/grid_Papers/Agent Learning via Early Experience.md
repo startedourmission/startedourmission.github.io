@@ -2,7 +2,6 @@
 date: 2025-10-12
 tags:
   - 논문
-  - Headliner
   - LLM
   - 에이전트
 aliases:

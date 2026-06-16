@@ -6,7 +6,7 @@ tags:
 aliases:
 image: "![[]]"
 description: 처음부터 새로 쓴 1141가지 수학 문제. IMO 이후 LLM 수학 평가가 어디로 가야 하는지를 묻는 SOOHAK 벤치마크를 알아봅니다.
-buzz: 187
+buzz: 117
 ---
 
 > Son, G., Kim, S., Arnett, C., et al. (2026). SOOHAK: A Mathematician-Curated Benchmark for Evaluating Research-level Math Capabilities of LLMs. arXiv:2605.09063.

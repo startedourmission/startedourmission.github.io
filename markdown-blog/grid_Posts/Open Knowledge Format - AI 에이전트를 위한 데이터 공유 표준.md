@@ -2,6 +2,7 @@
 date: 2026-06-14
 tags:
   - 정보
+  - Headliner
   - 데이터분석
   - 오픈소스
 description: "Google Cloud가 제안한 OKF는 AI 에이전트가 데이터를 이해할 수 있도록 마크다운과 YAML 프론트매터로 지식을 표현하는 개방형 표준입니다. CLAUDE.md와 Obsidian vault 같은 패턴의 데이터 카탈로그 버전입니다"

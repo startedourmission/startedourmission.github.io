@@ -2,7 +2,6 @@
 date: 2025-08-10
 tags:
   - 논문
-  - Headliner
   - LLM
   - 추론
   - 강화학습
