@@ -6,7 +6,7 @@ tags:
 description: "[[Anthropic]]의 클라우드 기반 에이전트 관리 플랫폼. 장기 실행 태스크와 메모리 공유에 최적화"
 ---
 
-[[Anthropic]]이 제공하는 클라우드 기반 에이전트 호스팅 플랫폼. [[Claude]] 모델을 포함한 에이전트를 오래 실행하거나, 여러 에이전트 간 메모리를 공유하고, 별도의 검증 에이전트를 자동으로 생성·실행할 수 있다.
+[[Anthropic]]이 제공하는 클라우드 기반 에이전트 호스팅 플랫폼입니다. [[Claude]] 모델을 포함한 에이전트를 오래 실행하거나, 여러 에이전트 간 메모리를 공유하고, 별도의 검증 에이전트를 자동으로 생성·실행할 수 있습니다.
 
 ## 핵심 기능
 
@@ -15,4 +15,4 @@ description: "[[Anthropic]]의 클라우드 기반 에이전트 관리 플랫폼
 - **Outcomes**: 에이전트의 자가 평가 대신 별도 grader 서브에이전트가 독립적 컨텍스트에서 평가
 - **샌드박스**: Anthropic 호스팅 또는 자체 GPU 환경(self-hosted) 지원
 
-[[Parameter Golf]]나 [[Continual Learning Bench 1.0]] 같은 복잡한 자가 수정 루프에 필수적이다.
+[[Parameter Golf]]나 [[Continual Learning Bench 1.0]] 같은 복잡한 자가 수정 루프에 필수적입니다.
