@@ -8,10 +8,10 @@ aliases:
   - David Eigen
 ---
 
-데이비드 아이겐(David Eigen)은 미국 컴퓨터 비전 연구자로, *단일 이미지로부터의 깊이 추정* 연구를 표준화한 인물이다. NYU Courant Institute에서 [[Rob Fergus|롭 퍼거스]] 지도로 2010~2015년 박사 과정을 마쳤다.
+데이비드 아이겐(David Eigen)은 미국 컴퓨터 비전 연구자로, *단일 이미지로부터의 깊이 추정* 연구를 표준화한 인물입니다. NYU Courant Institute에서 [[Rob Fergus|롭 퍼거스]] 지도로 2010~2015년 박사 과정을 마쳤습니다.
 
-박사 학위 논문 주제는 *합성곱 신경망으로 이미지 그 자체를 예측하는 것*으로, 깊이·표면 법선·의미 분할을 같은 다중 스케일 망으로 푸는 작업이다. 대표 논문은 *Depth Map Prediction from a Single Image using a Multi-Scale Deep Network*(Eigen, Puhrsch, Fergus, NIPS 2014)이고, 후속작 *Predicting Depth, Surface Normals and Semantic Labels with a Common Multi-Scale Convolutional Architecture*(ICCV 2015)에서 한 망으로 세 가지 픽셀 예측 작업을 동시에 푸는 구조를 제안하였다.
+박사 학위 논문 주제는 *합성곱 신경망으로 이미지 그 자체를 예측하는 것*으로, 깊이·표면 법선·의미 분할을 같은 다중 스케일 망으로 푸는 작업입니다. 대표 논문은 *Depth Map Prediction from a Single Image using a Multi-Scale Deep Network*(Eigen, Puhrsch, Fergus, NIPS 2014)이고, 후속작 *Predicting Depth, Surface Normals and Semantic Labels with a Common Multi-Scale Convolutional Architecture*(ICCV 2015)에서 한 망으로 세 가지 픽셀 예측 작업을 동시에 푸는 구조를 제안하였습니다.
 
-OverFeat 작업에서 그의 기여는 *바운딩 박스 회귀 망*의 설계와 학습이다. 분류 망의 특징 추출 층을 그대로 두고 마지막 단을 4차원 좌표 회귀로 바꾼 *Localization Network*가 그의 작업이다.
+OverFeat 작업에서 그의 기여는 *바운딩 박스 회귀 망*의 설계와 학습입니다. 분류 망의 특징 추출 층을 그대로 두고 마지막 단을 4차원 좌표 회귀로 바꾼 *Localization Network*가 그의 작업입니다.
 
-박사 후 2015년 Clarifai에 연구 과학자로 합류해 현재까지 같은 회사에서 일하고 있다.
+박사 후 2015년 Clarifai에 연구 과학자로 합류해 현재까지 같은 회사에서 일하고 있습니다.
