@@ -4,7 +4,7 @@ date: 2026-06-06
 tags:
   - 에이전트
   - 강화학습
-description: NVIDIA AI 디렉터이자 Distinguished Scientist. GEAR Lab 공동 리더이자 휴머노이드 프로젝트 GR00T의 공동 책임자로 Physical AI를 연구한다.
+description: NVIDIA AI 디렉터이자 Distinguished Scientist. GEAR Lab 공동 리더이자 휴머노이드 프로젝트 GR00T의 공동 책임자로 Physical AI를 연구합니다.
 aliases:
   - Jim Fan
   - Linxi Fan

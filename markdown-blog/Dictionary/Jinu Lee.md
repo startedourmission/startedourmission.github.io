@@ -1,6 +1,6 @@
 ---
 type: person
-description: 미국 일리노이대 어배너섐페인(UIUC) 컴퓨터과학 박사과정. 추론의 의미론과 뉴로심볼릭 추론을 연구하며 Julia Hockenmaier가 지도한다.
+description: 미국 일리노이대 어배너섐페인(UIUC) 컴퓨터과학 박사과정. 추론의 의미론과 뉴로심볼릭 추론을 연구하며 Julia Hockenmaier가 지도합니다.
 tags:
   - 인물
   - 추론

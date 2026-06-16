@@ -1,6 +1,6 @@
 ---
 type: person
-description: 상하이교통대 John Hopcroft Center 테뉴어트랙 부교수. 강화학습·레스트리스 밴딧·온라인 순차 의사결정·에이전트를 연구하며 하버드 박사후연구원을 거쳤다.
+description: 상하이교통대 John Hopcroft Center 테뉴어트랙 부교수. 강화학습·레스트리스 밴딧·온라인 순차 의사결정·에이전트를 연구하며 하버드 박사후연구원을 거쳤습니다.
 tags:
   - 인물
   - 강화학습

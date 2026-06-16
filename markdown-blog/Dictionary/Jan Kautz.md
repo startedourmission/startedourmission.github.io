@@ -4,7 +4,7 @@ date: 2026-06-06
 tags:
   - 컴퓨터비전
   - 딥러닝
-description: NVIDIA Learning and Perception Research 부사장. 컴퓨터비전, 생성 모델, 효율적 딥러닝, 임바디드 AI를 폭넓게 연구한다.
+description: NVIDIA Learning and Perception Research 부사장. 컴퓨터비전, 생성 모델, 효율적 딥러닝, 임바디드 AI를 폭넓게 연구합니다.
 aliases:
   - Jan Kautz
   - 얀 카우츠
