@@ -10,10 +10,10 @@ aliases:
   - 존 덴커
 ---
 
-존 덴커(John Stewart Denker)는 미국의 물리학자이자 신경망 연구자로, 1980년대 후반부터 1990년대 중반까지 AT&T Bell Labs Holmdel 연구소에서 학습 이론, 신경망 일반화, 가지치기(pruning) 연구를 주도하였다. 1989년 [[Yann LeCun|얀 르쿤]]의 손글씨 숫자 인식 합성곱 신경망 논문에서 핵심 공저자로 참여하였다.
+존 덴커(John Stewart Denker)는 미국의 물리학자이자 신경망 연구자로, 1980년대 후반부터 1990년대 중반까지 AT&T Bell Labs Holmdel 연구소에서 학습 이론, 신경망 일반화, 가지치기(pruning) 연구를 주도하였습니다. 1989년 [[Yann LeCun|얀 르쿤]]의 손글씨 숫자 인식 합성곱 신경망 논문에서 핵심 공저자로 참여하였습니다.
 
-1984년 AT&T Bell Labs Holmdel 연구소에 기술 직원(Member of Technical Staff)으로 합류하였고 1991년 Distinguished Member of Technical Staff, 이후 Department Head 및 Division Manager까지 승진하였다. 1986년부터 1987년까지는 UC Santa Barbara 이론물리연구소(ITP) 객원 교수를 지냈다.
+1984년 AT&T Bell Labs Holmdel 연구소에 기술 직원(Member of Technical Staff)으로 합류하였고 1991년 Distinguished Member of Technical Staff, 이후 Department Head 및 Division Manager까지 승진하였습니다. 1986년부터 1987년까지는 UC Santa Barbara 이론물리연구소(ITP) 객원 교수를 지냈습니다.
 
-대표 연구 두 갈래가 있다. 첫째는 *Large Automatic Learning, Rule Extraction and Generalization* (Complex Systems, 1987)로 신경망의 entropy를 줄이는 아키텍처가 일반화를 돕는다는 이론적 토대를 제공하였다. 둘째는 [[Yann LeCun|얀 르쿤]], 솔라 등과 함께 NeurIPS 1989에서 발표한 *Optimal Brain Damage*로, 이차 미분으로 가중치 중요도를 계산해 신경망을 가지치기하는 방법을 제안하였다. 1989년 손글씨 우편번호 합성곱 신경망의 파라미터를 4배 줄인 데도 이 기법이 쓰였다.
+대표 연구 두 갈래가 있습니다. 첫째는 *Large Automatic Learning, Rule Extraction and Generalization* (Complex Systems, 1987)로 신경망의 entropy를 줄이는 아키텍처가 일반화를 돕는다는 이론적 토대를 제공하였습니다. 둘째는 [[Yann LeCun|얀 르쿤]], 솔라 등과 함께 NeurIPS 1989에서 발표한 *Optimal Brain Damage*로, 이차 미분으로 가중치 중요도를 계산해 신경망을 가지치기하는 방법을 제안하였습니다. 1989년 손글씨 우편번호 합성곱 신경망의 파라미터를 4배 줄인 데도 이 기법이 쓰였습니다.
 
-Bell Labs를 떠난 뒤에는 항공·물리 분야의 공개 교육 자료(av8n.com)를 운영하며 비행 역학과 통계물리 해설서를 작성해 왔다.
+Bell Labs를 떠난 뒤에는 항공·물리 분야의 공개 교육 자료(av8n.com)를 운영하며 비행 역학과 통계물리 해설서를 작성해 왔습니다.
