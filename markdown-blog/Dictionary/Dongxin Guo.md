@@ -1,6 +1,6 @@
 ---
 type: person
-description: 홍콩대(HKU) 박사과정 최종학년. LLM 추론의 아키텍처적 한계를 증명하고 그 한계를 우회하는 시스템을 짓는 연구자. Betty Guo로도 알려져 있다.
+description: 홍콩대(HKU) 박사과정 최종학년. LLM 추론의 아키텍처적 한계를 증명하고 그 한계를 우회하는 시스템을 짓는 연구자. Betty Guo로도 알려져 있습니다.
 tags:
   - 인물
   - LLM

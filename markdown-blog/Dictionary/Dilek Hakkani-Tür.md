@@ -1,6 +1,6 @@
 ---
 type: person
-description: 미국 일리노이대 어배너섐페인(UIUC) 컴퓨터과학과 교수. 대화형 AI의 권위자로 아마존 알렉사 AI 수석 주임과학자를 지냈다.
+description: 미국 일리노이대 어배너섐페인(UIUC) 컴퓨터과학과 교수. 대화형 AI의 권위자로 아마존 알렉사 AI 수석 주임과학자를 지냈습니다.
 tags:
   - 인물
   - NLP
