@@ -10,10 +10,10 @@ aliases:
   - 미카엘 마티외
 ---
 
-미카엘 마티외(Michael Mathieu)는 프랑스 출신의 머신러닝 연구자로, NYU Courant Institute에서 [[Yann LeCun|얀 르쿤]] 지도로 박사 학위를 받았다. 박사 학위는 2017년 5월에 수여되었다.
+미카엘 마티외(Michael Mathieu)는 프랑스 출신의 머신러닝 연구자로, NYU Courant Institute에서 [[Yann LeCun|얀 르쿤]] 지도로 박사 학위를 받았습니다. 박사 학위는 2017년 5월에 수여되었습니다.
 
-대표 연구는 *Deep Multi-Scale Video Prediction Beyond Mean Square Error*(Mathieu, Couprie, LeCun, ICLR 2016)로, 평균제곱오차로 학습한 영상 예측 망의 *흐릿한 미래 프레임* 문제를 *적대 손실 + 다중 스케일 손실*로 해결한 초기 작업이다. 이전에는 *Fast Training of Convolutional Networks through FFTs*(ICLR 2014)에서 FFT 기반 합성곱 가속 기법을 제안하였다.
+대표 연구는 *Deep Multi-Scale Video Prediction Beyond Mean Square Error*(Mathieu, Couprie, LeCun, ICLR 2016)로, 평균제곱오차로 학습한 영상 예측 망의 *흐릿한 미래 프레임* 문제를 *적대 손실 + 다중 스케일 손실*로 해결한 초기 작업입니다. 이전에는 *Fast Training of Convolutional Networks through FFTs*(ICLR 2014)에서 FFT 기반 합성곱 가속 기법을 제안하였습니다.
 
-OverFeat 작업에서 그는 학습 인프라와 ImageNet 대규모 실험을 담당하였다.
+OverFeat 작업에서 그는 학습 인프라와 ImageNet 대규모 실험을 담당하였습니다.
 
-박사 후 Google DeepMind에 합류하였고, 강화학습과 비지도 학습 쪽에서 일하고 있다. *AlphaStar*(StarCraft II) 시기 기여자 가운데 한 명이다.
+박사 후 Google DeepMind에 합류하였고, 강화학습과 비지도 학습 쪽에서 일하고 있습니다. *AlphaStar*(StarCraft II) 시기 기여자 가운데 한 명입니다.
