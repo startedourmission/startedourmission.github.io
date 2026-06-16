@@ -58,7 +58,7 @@ Claude Code가 실제로 어떻게 만들어져 있는지를 **소스 레벨로*
 
 200K(레거시 모델) 또는 1M(Claude 4.6 시리즈) 컨텍스트가 binding constraint라는 전제로, 모델 호출 직전 다섯 단계의 shaper가 비용 낮은 순서대로 작동합니다.
 
-- **Budget reduction** — 개별 도구 출력이 한도를 넘기면 자른다.
+- **Budget reduction** — 개별 도구 출력이 한도를 넘기면 자릅니다.
 - **Snip** — 시간적 깊이 관리.
 - **Microcompact** — 캐시 오버헤드에 반응.
 - **Context collapse** — 매우 긴 히스토리 압축.
@@ -70,7 +70,7 @@ Claude Code가 실제로 어떻게 만들어져 있는지를 **소스 레벨로*
 
 - **CLAUDE.md 지연 로딩** — 하위 디렉토리 지침은 그 디렉토리 파일을 읽을 때만 로드.
 - **deferred tool schemas** — ToolSearch 활성 시 도구 이름만 먼저, 스키마는 필요할 때.
-- **subagent summary-only return** — 서브에이전트는 요약만 부모에게 돌려준다.
+- **subagent summary-only return** — 서브에이전트는 요약만 부모에게 돌려줍니다.
 - **per-tool-result budget** — 단일 verbose 출력이 컨텍스트를 잠식하지 못하게.
 
 ---
@@ -80,11 +80,11 @@ Claude Code가 실제로 어떻게 만들어져 있는지를 **소스 레벨로*
 권한 시스템은 단일 게이트가 아니라 **7중 레이어**로 설명됩니다. 어떤 레이어 하나라도 차단하면 동작이 막히는 구조입니다.
 
 1. **Tool pre-filtering** — 차단된 도구는 모델 시야에서 아예 제외.
-2. **Deny-first 룰 평가** — deny가 allow를 항상 이긴다.
+2. **Deny-first 룰 평가** — deny가 allow를 항상 이깁니다.
 3. **권한 모드 제약** — 현 모드가 룰에 없는 요청의 기본값을 결정.
 4. **Auto-mode ML 분류기** — 룰이 허용해도 분류기가 거부 가능.
 5. **셸 샌드박스** — 승인된 명령도 파일/네트워크 접근 제한.
-6. **Resume 시 권한 미복원** — 세션 권한이 재시작 시 살아나지 않는다.
+6. **Resume 시 권한 미복원** — 세션 권한이 재시작 시 살아나지 않습니다.
 7. **PreToolUse / PermissionRequest 훅** — 결정을 수정하거나 비동기 해소.
 
 저자들이 비교 사례로 꺼내는 SWE-Agent·OpenHands는 Docker 컨테이너 격리 한 겹, Aider는 Git 롤백 한 겹에 의존합니다. Claude Code의 다층 방어는 명확히 다른 길입니다.
@@ -115,7 +115,7 @@ Claude Code가 실제로 어떻게 만들어져 있는지를 **소스 레벨로*
 
 마지막 섹션이 이 논문에서 실질적으로 가장 흥미로운 부분일 수 있습니다. 저자들이 후속 연구 영역으로 정리한 6가지입니다.
 
-1. **observability ↔ evaluation 사이의 간극** — 로그가 풍부해도 평가가 빈곤하다.
+1. **observability ↔ evaluation 사이의 간극** — 로그가 풍부해도 평가가 빈곤합니다.
 2. **cross-session persistence** — 세션을 넘는 학습·기억의 경계.
 3. **harness boundary evolution** — 하네스의 어디까지를 모델이 직접 만들 수 있나.
 4. **horizon scaling** — 더 긴 작업 지평을 견디는 구조.
