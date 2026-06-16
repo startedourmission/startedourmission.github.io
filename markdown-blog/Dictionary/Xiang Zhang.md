@@ -9,8 +9,8 @@ aliases:
   - 샹 장
 ---
 
-샹 장(Xiang Zhang)은 NYU Courant Institute에서 [[Yann LeCun|얀 르쿤]] 지도로 박사 학위를 받은 컴퓨터 비전·자연어 처리 연구자이다. *문자 단위 합성곱 신경망*을 텍스트 분류에 처음 본격적으로 적용한 *Character-level Convolutional Networks for Text Classification*(Zhang, Zhao, LeCun, NIPS 2015)으로 알려져 있다.
+샹 장(Xiang Zhang)은 NYU Courant Institute에서 [[Yann LeCun|얀 르쿤]] 지도로 박사 학위를 받은 컴퓨터 비전·자연어 처리 연구자입니다. *문자 단위 합성곱 신경망*을 텍스트 분류에 처음 본격적으로 적용한 *Character-level Convolutional Networks for Text Classification*(Zhang, Zhao, LeCun, NIPS 2015)으로 알려져 있습니다.
 
-이 논문이 같이 공개한 *AG News*, *Yelp Review*, *DBpedia*, *Yahoo Answers* 등 대규모 텍스트 분류 데이터셋이 이후 텍스트 분류 벤치마크의 표준 출발점이 되었다.
+이 논문이 같이 공개한 *AG News*, *Yelp Review*, *DBpedia*, *Yahoo Answers* 등 대규모 텍스트 분류 데이터셋이 이후 텍스트 분류 벤치마크의 표준 출발점이 되었습니다.
 
-OverFeat 작업에서 그는 박사과정 초기 학생으로서 학습 인프라와 실험을 담당하였다. 박사 후 Element AI(2018~2020) 연구 과학자를 거쳐 현재 Google 연구 과학자로 일하고 있다.
+OverFeat 작업에서 그는 박사과정 초기 학생으로서 학습 인프라와 실험을 담당하였습니다. 박사 후 Element AI(2018~2020) 연구 과학자를 거쳐 현재 Google 연구 과학자로 일하고 있습니다.
