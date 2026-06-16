@@ -1,0 +1,18 @@
+---
+type: person
+description: UC 버클리 CS 교수. AI 보안·에이전트 분야 선구자. MacArthur Fellowship 수상자.
+tags:
+  - LLM
+  - 에이전트
+aliases:
+  - Dawn Xiaodong Song
+  - 송 새벽
+---
+
+UC 버클리 컴퓨터과학과 교수이자 Berkeley Center for Responsible Decentralized Intelligence (RDI) 공동 소장이다. 중국 다롄 출신으로, 고등학교에서 수학 올림피아드 특수반을 거쳐 칭화대 물리학과에 진학했다. 이후 코넬대 물리학 박사과정에서 컴퓨터과학으로 전향해 카네기멜런대에서 석사를, UC 버클리에서 박사 학위를 받았다.
+
+주요 연구 분야는 AI 안전·보안, 에이전트 AI, 딥러닝, 프라이버시, 탈중앙화 기술이다. 2002년부터 2007년까지 카네기멜런대 조교수로 재직했고, 2007년부터 UC 버클리 교수로 있다. 컴퓨터 보안 분야 최다 인용 학자(AMiner Award, Most Influential Scholar)로, 보안·딥러닝 최우수 논문상을 10회 이상 수상했다. MacArthur Fellowship, Guggenheim Fellowship, NSF CAREER Award, Alfred P. Sloan Research Fellowship을 비롯해 MIT TR-35, ACM SIGSAC Outstanding Innovation Award 등을 받았으며 ACM·IEEE 펠로이자 미국 예술과학아카데미 회원이다.
+
+AI 안전을 실제 배포 환경에서 검증하는 평가 인프라에 관심이 높다. 자신의 연구 그룹에서 에이전트 평가, OOD 일반화, LLM 신뢰성 등을 연구하는 박사과정생들과 함께 [[Agents' Last Exam]]을 제안했다. 직접 실행팀을 이끌며 250명 이상의 산업 전문가 네트워크를 구성하는 데 핵심 역할을 했다. 연쇄 창업자이기도 해 Oasis Labs를 공동 창업했으며, Inc. 여성 창업자 100인, Wired25 혁신가 명단에 올랐다.
+
+관련 인물: [[Yiyou Sun]]

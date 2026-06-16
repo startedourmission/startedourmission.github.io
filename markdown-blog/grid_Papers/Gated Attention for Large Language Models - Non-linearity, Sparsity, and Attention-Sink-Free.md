@@ -2,10 +2,12 @@
 date: 2026-06-15
 tags:
   - 논문
+  - Headliner
   - LLM
   - 트랜스포머
 description: 어텐션 출력 뒤에 헤드별 시그모이드 게이트 하나. PPL -0.2, MMLU +2점, 어텐션 싱크 소멸. NeurIPS 2025 Best Paper.
 image: "![[gated-attention-overview.png]]"
+buzz: 299
 ---
 
 > Z. Qiu, Z. Wang, B. Zheng, Z. Huang, et al., "Gated Attention for Large Language Models: Non-linearity, Sparsity, and Attention-Sink-Free," arXiv:2505.06708, 2025.

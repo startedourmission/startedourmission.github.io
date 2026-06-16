@@ -5,9 +5,9 @@ tags:
   - LLM
   - 멀티모달
   - 추론
-  - Headliner
 description: 추론 과정을 텍스트 대신 이미지 공간에 그려 넣는다. 수식·그래프를 시각적 스크래치패드로 쓰면 텍스트 추론과 동등한 정확도를 유지하면서 토큰을 평균 28.57% 아낄 수 있다는 논문.
 image: "![[optical-reasoning-overview.png]]"
+buzz: 19
 ---
 > Y. Bian, D. Cheng, H. Xia, Y. Li, and W. Li, "Optical Reasoning: Rethinking Images as an Expressive Reasoning Medium Beyond Text," arXiv:2606.09585, 2026.
 

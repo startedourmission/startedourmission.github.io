@@ -6,6 +6,7 @@ tags:
   - 에이전트
 description: 수십에서 수백 페이지짜리 멀티모달 문서를 읽는 QA 에이전트가 상호작용 기록을 하나의 거대한 맥락에 계속 쌓다 보면 정작 핵심 증거가 노이즈에 묻힙니다. 톈진대 연구진의 MARDoc은 탐색·정제·반성 세 에이전트가 구조화된 메모리(증거 메모리 + 추론 메모리)로 소통하는 루프로 그 문제를 풉니다. 오픈 Qwen3-30B만으로 DocAgent + Claude 3.5 Sonnet과 맞먹고, DocBench에서는 사람 기준선을 넘었습니다.
 image: "![[mardoc-overview.png]]"
+buzz: 0
 ---
 
 > K. Chen, H. Liu, Q. Peng, J. Yang, Y. Liu, X. Zhang, and Q. Yang, "MARDoc: A Memory-Aware Refinement Agent Framework for Multimodal Long Document QA," arXiv:2606.05749, 2026.

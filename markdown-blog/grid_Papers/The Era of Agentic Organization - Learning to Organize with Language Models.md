@@ -7,6 +7,7 @@ tags:
   - 추론
 description: LLM의 사고 과정을 organizer와 worker 두 역할로 분리하고 Fork-Join 액션으로 비동기 사고를 학습시키는 새로운 추론 패러다임. 단일 모델이 두 역할을 모두 수행하며, RL로 사고 구조 자체를 최적화합니다. 병렬 사고 대비 추론 지연 28% 감소에 수학 추론 정확도 동시 개선, 미학습 태스크로도 비동기 사고가 zero-shot 일반화됩니다. agentic organization 시대를 선언하는 Microsoft Research의 첫 정식 정리입니다.
 image: "![[era-agentic-org-overview.png]]"
+buzz: 112
 ---
 
 > Z. Chi, L. Dong, Q. Dong, Y. Hao, X. Wu, S. Huang, and F. Wei, "The Era of Agentic Organization: Learning to Organize with Language Models," arXiv:2510.26658, 2025.

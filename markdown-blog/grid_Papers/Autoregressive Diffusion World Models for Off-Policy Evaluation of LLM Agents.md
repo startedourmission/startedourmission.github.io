@@ -6,6 +6,7 @@ tags:
   - 강화학습
 description: 새 LLM 에이전트를 실제 환경에 굴려보지 않고 과거 로그만으로 성능을 가늠하는 오프폴리시 평가 프레임워크 ADWM을 에모리대와 상하이교통대 연구진이 내놨습니다. 핵심은 월드 모델 자체를 디퓨전 과정으로 세우고, 정책 유도 궤적 법칙을 단일 스텝 조건부로 정확히 분해해 평가 정책이 매 디노이징 스텝을 조종하게 한 것. 네 개 멀티턴 벤치마크에서 ADWM만 모든 셀에서 양의 순위 상관을 냈습니다.
 image: "![[adwm-overview.png]]"
+buzz: 0
 ---
 
 > K. Liu, G. Xiong, W. Zhang, and S. Tang, "Autoregressive Diffusion World Models for Off-Policy Evaluation of LLM Agents," arXiv:2606.05558, 2026.

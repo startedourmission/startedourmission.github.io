@@ -6,6 +6,7 @@ tags:
   - LLM
 description: 추론 모델을 양자화하면 정확도가 떨어지면서 chain-of-thought는 오히려 길어진다. 그 원인이 사고력이 아니라 "멈추지 못함"임을 KL 발산으로 진단하고, 과사고 마커에 학습 없이 로짓 페널티를 주는 처방을 제시한 메타 FAIR 논문을 뜯어봅니다.
 image: "![[quantized-reasoning-overthink.png]]"
+buzz: 0
 ---
 
 > S. Lotfi, P. Kirichenko, S. Li, and Z. Liu, "Quantized Reasoning Models Think They Need to Think Longer, but They Do Not," arXiv:2606.00206, 2026.

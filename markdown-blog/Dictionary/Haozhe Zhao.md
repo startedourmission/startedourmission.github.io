@@ -1,0 +1,16 @@
+---
+type: person
+description: UIUC CS 박사과정. 과학 논문 피겨 자동 생성 연구. Crafter 제1저자.
+tags:
+  - 멀티모달
+  - 에이전트
+aliases:
+  - 하오저 자오
+  - Haozhe Zhao
+---
+
+일리노이대학교 어바나-샴페인(UIUC) 컴퓨터과학과 박사과정이다. 이메일은 haozhez6@illinois.edu. 지도교수는 [[Minjia Zhang]].
+
+연구 관심사는 멀티모달 LLM, 과학 피겨 자동 생성, 에이전트 파이프라인이다. 특히 연구자가 실제로 사용하는 복잡한 워크플로우(스케치에서 피겨 생성, 기존 피겨 편집)를 자동화하는 데 집중한다.
+
+[[Crafter - A Multi-Agent Harness for Editable Scientific Figure Generation from Diverse Inputs]]에서 [[Shuzheng Si]]와 공동 1저자로 참여했으며, 하네스 기반 멀티에이전트 프레임워크 설계와 CRAFTBENCH 데이터셋 구축을 주도했다.

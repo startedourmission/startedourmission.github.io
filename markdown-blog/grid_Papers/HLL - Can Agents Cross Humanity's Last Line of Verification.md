@@ -7,6 +7,7 @@ tags:
   - 멀티모달
 description: 멀티모달 에이전트가 사람을 대신해 인터페이스를 조작하는 시대에, CAPTCHA는 봇과 사람을 가르는 마지막 검증 관문입니다. HLL은 이 관문을 에이전트가 넘을 수 있는지 정답 인식이 아니라 실제 상호작용으로 측정하는 벤치마크입니다. 8개 프런티어 에이전트는 깨끗한 화면에서는 곧잘 풀지만, 현실적인 방해와 행동 궤적 검증이 들어오면 무너집니다.
 image: "![[hll-overview.png]]"
+buzz: 0
 ---
 
 > X. Song, S. Su, S. Song, H. Wu, et al., "HLL: Can Agents Cross Humanity's Last Line of Verification?," arXiv:2606.02449, 2026.

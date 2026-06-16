@@ -2,10 +2,12 @@
 date: 2026-06-14
 tags:
   - 논문
+  - Headliner
   - LLM
   - 오픈소스
 description: 이미지·표·수식을 그래프 노드로 통합한 멀티모달 RAG 프레임워크. 장문서에서 기존 방법 대비 13포인트 이상 우위.
 image: "![[rag-anything-overview.png]]"
+buzz: 239
 ---
 
 > Z. Guo, X. Ren, L. Xu, J. Zhang, and C. Huang, "RAG-Anything: All-in-One RAG Framework," arXiv:2510.12323, 2025.

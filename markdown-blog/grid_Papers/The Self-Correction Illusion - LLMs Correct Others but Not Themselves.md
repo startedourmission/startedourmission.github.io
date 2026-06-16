@@ -6,6 +6,7 @@ tags:
   - 에이전트
 description: LLM 에이전트가 자기 추론 속 오류는 못 고치면서 같은 주장이 외부 출처로 붙으면 잘 고치는 현상을, 국립성공대 연구진이 통제 실험으로 파헤쳤습니다. 결론은 자기 교정 실패가 능력 결함이 아니라 채팅 템플릿의 역할 라벨 아티팩트라는 것. 틀린 주장을 바이트 단위로 똑같이 둔 채 감싸는 역할만 self에서 external로 바꾸면 명시적 교정률이 23~93%p 뛰었습니다.
 image: "![[self-correction-illusion-overview.png]]"
+buzz: 0
 ---
 
 > K.-Y. Chen, F.-Y. Su, and J.-H. Chiang, "The Self-Correction Illusion: LLMs Correct Others but Not Themselves," arXiv:2606.05976, 2026.

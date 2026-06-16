@@ -5,6 +5,7 @@ tags:
 aliases:
 image: "![[image-2.png]]"
 description: REPA가 잠재 공간 디퓨전에서는 잘 작동하지만 픽셀 공간 디퓨전(JiT)에서는 오히려 성능을 악화시킨다는 걸 밝혔습니다. 원인은 정보 비대칭으로 인한 feature hacking. 이를 해결하는 PixelREPA를 제안하여 JiT-B/16 FID를 3.66에서 3.17로, JiT-H/16은 1.81까지 낮췄습니다. KAIST AI.
+buzz: 71
 status:
 ---
 REPA(Representation Alignment)는 디퓨전 트랜스포머 훈련을 가속하는 단순하고 효과적인 방법으로 자리 잡았습니다. DINOv2 같은 사전학습된 시맨틱 인코더의 특징과 디퓨전 모델의 중간 활성화를 정렬하면 수렴이 빨라지고 최종 품질도 올라갑니다. DiT, SiT 같은 잠재 공간(latent space) 디퓨전에서요.
