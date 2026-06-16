@@ -1,6 +1,6 @@
 ---
 type: person
-description: SenseTime Senior Research Manager. LLMC·QDrop 등 LLM·VLM 경량화·양자화 라인을 이끈다.
+description: SenseTime Senior Research Manager. LLMC·QDrop 등 LLM·VLM 경량화·양자화 라인을 이끕니다.
 tags:
   - 인물
   - LLM

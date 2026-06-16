@@ -4,7 +4,7 @@ date: 2026-06-06
 tags:
   - 컴퓨터비전
   - 딥러닝
-description: NVIDIA AI 연구 부사장이자 토론토대 교수. NVIDIA 토론토의 Spatial Intelligence Lab을 이끌며 3D 비전과 월드 모델을 연구한다.
+description: NVIDIA AI 연구 부사장이자 토론토대 교수. NVIDIA 토론토의 Spatial Intelligence Lab을 이끌며 3D 비전과 월드 모델을 연구합니다.
 aliases:
   - Sanja Fidler
   - 산야 피들러
