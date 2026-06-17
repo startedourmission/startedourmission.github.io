@@ -2,7 +2,6 @@
 date: 2026-06-13
 tags:
   - 정보
-  - Headliner
   - 개인금융
 description: OpenAI가 Hiro Finance를 acqui-hire 방식으로 인수했습니다. 서비스는 종료되고 창업자와 팀 전원이 OpenAI에 합류합니다
 ---

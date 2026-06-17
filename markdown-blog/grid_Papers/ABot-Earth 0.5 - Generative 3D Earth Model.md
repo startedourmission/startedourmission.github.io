@@ -2,6 +2,7 @@
 date: 2026-06-16
 tags:
   - 논문
+  - Headliner
   - 컴퓨터비전
   - 확산모델
 description: 알리바바 AMAP CV Lab의 생성형 3D 지구 모델입니다. 위성 영상만으로 도시 규모 3DGS 장면을 10분/km² 속도로 생성하며, 3.2조 개의 Gaussian primitive로 전 세계를 커버하는 지구 규모 배포 시스템을 함께 제시합니다.
