@@ -1,0 +1,16 @@
+---
+type: person
+description: 난징대학 컴퓨터학과 교수로 비디오 이해·행동 인식 분야 권위자이며 HYDRA-X 통합 멀티모달 모델의 교신저자
+tags:
+  - 컴퓨터비전
+  - 영상처리
+aliases:
+  - Limin Wang
+  - 王立民
+---
+
+난징대학(Nanjing University) 컴퓨터학과 교수로 비디오 이해·행동 인식 분야를 대표하는 연구자입니다. 2015년 홍콩중문대학에서 탕샤오어우(Xiaoou Tang) 교수 지도 아래 박사학위를 받은 뒤, ETH 취리히에서 뤽 반 구올(Luc Van Gool) 교수 그룹에서 박사후 연구를 거쳐(2015–2018) 현재 직위에 올랐습니다.
+
+대표 연구로는 비디오 이해의 핵심 뼈대가 된 TSN(Temporal Segment Networks, ECCV 2016), 시간 관계 추론을 위한 TRN(Temporal Relation Network), 효율적 행동 인식 프레임워크인 TENet 등이 있습니다. 장기 비디오에서 행동을 인식하는 문제를 일관되게 파고들며, 수십 개 이상의 영향력 있는 논문을 발표했습니다.
+
+[[HYDRA-X - Native Unified Multimodal Models with Holistic Visual Tokenizers|HYDRA-X]](arXiv:2606.13289, 2026)에서는 교신저자로 전체 연구 방향을 이끌었습니다. [[Xuerui Qiu]], [[Guozhen Zhang]] 등 14인 저자 팀과 함께, 단일 시각 토크나이저(HYDRA-XTok)와 잠재 공간 편집 메커니즘(STI)으로 이미지·비디오 이해·생성·편집을 통합하는 네이티브 멀티모달 모델을 완성했습니다.
