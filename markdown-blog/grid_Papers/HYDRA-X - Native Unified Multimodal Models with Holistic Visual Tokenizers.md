@@ -51,8 +51,6 @@ HYDRA-XTok이 이미지와 영상 모두를 하나의 이산 토큰 공간으로
 
 ## 결과
 
-![[hydra-x-teaser.png]]
-
 ### 재구성 품질
 
 | 방법 | 이미지 PSNR | 이미지 SSIM | rFID | rFVD |
