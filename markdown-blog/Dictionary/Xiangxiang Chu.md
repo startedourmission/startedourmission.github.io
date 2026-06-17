@@ -15,3 +15,5 @@ aliases:
 연구 이력은 NAS·Transformer 아키텍처 쪽에서 굵직합니다. FairNAS(공정한 NAS 평가), Twins(spatial attention 재정의), CPVT(conditional positional encoding) 세 편이 PaperDigest 영향력 논문 리스트에 올라가 있고, 1저자 논문만 20편 이상입니다. 2023년 AMiner Top 100 AI Scholar. 국내외 특허 50건 이상.
 
 본 논문 [[Enhancing Train-Free Infinite-Frame Generation for Consistent Long Videos|MIGA]]에서는 AMAP 시니어로 참여해 train-free long video generation 작업을 산업 인프라와 연결합니다. AMAP-ML(공개 GitHub org)은 S²-Guidance, VMBench, MACE-Dance, Omni-Effects, ImagerySearch 같은 video generation·평가 라인을 한 흐름으로 묶고 있는데, [[Xiangxiang Chu]]가 그 흐름의 시니어 이름으로 자주 등장합니다.
+
+[[DreamX-World 1.0 - A General-Purpose Interactive World Model|DreamX-World 1.0]]에서는 DreamX Team의 일원으로, E-PRoPE 카메라 제어·Memory-Conditioned Scene Persistence·자동회귀 증류·RL 후처리까지 포괄하는 풀스택 인터랙티브 월드 모델 전체를 이끌었습니다. [[Jiachen Lei]], [[Jiashu Zhu]]와 함께 핵심 기여자로 참여했습니다.
