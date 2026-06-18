@@ -1,0 +1,15 @@
+---
+type: person
+description: KAIST 컴퓨터비전 연구자. 밀집 대응 및 시각적 매칭 분야 전문가로 SpatialClaw 논문의 지도 교수급 공동 저자.
+tags:
+  - 인물
+  - 컴퓨터비전
+aliases:
+  - Seungryong Kim
+---
+
+KAIST 소속 컴퓨터비전 연구자로, 밀집 대응(dense correspondence), 시맨틱 매칭(semantic matching), 광학 흐름 추정 분야에서 다수의 연구를 발표했습니다. [[Seokju Cho]] 등 제자와 함께 [[NVIDIA]]와의 공동 연구를 통해 SpatialClaw 프로젝트에 참여했습니다.
+
+대응 추정과 기하 이해에 관한 깊은 전문성이 SpatialClaw의 핵심 설계, 즉 중간 상태(마스크, 깊이 맵, 카메라 기하)를 변수로 보존하고 다음 스텝에서 재활용한다는 발상에 이론적 기반을 제공했습니다. 카메라 모션 추론(+7.2pp), 다중 시점 추론(+9.1pp), 상대적 방향(+9.1pp)에서 향상 폭이 가장 크게 나타난 것은 이 팀의 배경 지식과 직결됩니다.
+
+[[SpatialClaw - Rethinking Action Interface for Agentic Spatial Reasoning]] 논문의 공동 저자.

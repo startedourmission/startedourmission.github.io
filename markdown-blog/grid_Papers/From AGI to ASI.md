@@ -7,7 +7,7 @@ tags:
   - 머신러닝
 description: "AGI 이후의 세계를 다룬 Google DeepMind의 분석 보고서. Legg-Hutter 점수로 AGI/ASI/UAI를 형식적으로 구분하고, 네 가지 경로(스케일링·패러다임 전환·재귀적 자기 개선·멀티에이전트 집합)와 여섯 가지 병목을 체계적으로 분석합니다."
 image: "![[from-agi-to-asi-table3-pathways.png]]"
-buzz: 28
+buzz: 40
 ---
 
 > T. Genewein, S. Legg, M. Hutter, A. Dafoe, I. Gabriel, and T. Graepel, "From AGI to ASI," arXiv:2606.12683, 2026.

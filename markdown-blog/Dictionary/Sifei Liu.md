@@ -1,0 +1,18 @@
+---
+type: person
+description: NVIDIA Research Santa Clara 연구 과학자. 공간 전파 네트워크 및 4D 장면 생성 전문가.
+tags:
+  - 인물
+  - 컴퓨터비전
+  - 확산모델
+aliases:
+  - Sifei Liu
+---
+
+[[NVIDIA]] Research Santa Clara 소속 연구 과학자로, 미국 UC Merced에서 Ming-Hsuan Yang 교수의 지도 아래 박사학위를 받았습니다.
+
+대표 연구는 공간 전파 네트워크(Spatial Propagation Networks, SPN)로, 선형 확산 과정을 모방하는 미분가능 빌딩 블록을 제안해 색상, 깊이, 의미 지도 전파를 데이터 기반으로 수행합니다. 이 모듈은 규칙 구조 및 비규칙 구조 데이터 모두에서 공간, 시간, 3D 도메인에 걸쳐 범용적으로 활용됩니다. 최근에는 4D 장면 생성, Vision-Language 모델, 3D 재구성, 텍스트-이미지 및 텍스트-영상 합성 등 생성형 AI 방향으로 연구를 확장하고 있습니다.
+
+[[NVIDIA]]의 Learning and Perception Research(LPR), AI-Mediated Reality and Interaction(AMRI), Fundamental Generative AI Research(GenAIR) 등 여러 연구 그룹에 소속되어 있으며, 이 다중 소속이 SpatialClaw에서 인식 도구(perception tool) 설계와 생성적 요소를 연결하는 역할로 이어졌습니다.
+
+[[SpatialClaw - Rethinking Action Interface for Agentic Spatial Reasoning]] 논문의 공동 저자.
