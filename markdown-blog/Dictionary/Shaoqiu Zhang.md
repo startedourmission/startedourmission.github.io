@@ -1,0 +1,14 @@
+---
+type: person
+description: 상하이교통대학(SJTU) 연구원, Microsoft CoreAI 프로젝트 참여. FastContext 공동 제1저자.
+tags:
+  - 인물
+  - 에이전트
+  - LLM
+aliases:
+  - Shaoqiu Zhang
+---
+
+상하이교통대학(Shanghai Jiao Tong University, SJTU) 소속이며, Microsoft CoreAI 프로젝트 파견 기간 동안 FastContext 연구에 참여했습니다. [[Maoquan Wang]]과 함께 공동 제1저자로 기여했습니다.
+
+[[FastContext - Training Efficient Repository Explorer for Coding Agents]] 논문에서 참조 모델 궤적 수집과 SFT 훈련 데이터셋(2,954개) 구성을 담당했습니다. 특히 세 가지 데이터 소스(parallel_toolcalls, multiturn_traj, linerange)로 탐색 행동의 각기 다른 측면을 분리해 가르치는 분해 지도 방식을 고안했습니다.
