@@ -1,0 +1,16 @@
+---
+type: person
+description: 절강대학교(ZJU) 컴퓨터과학기술학부 교수. 그래프 기초 모델과 LLM-그래프 연계 연구를 이끄는 중국 그래프 AI 분야 핵심 PI.
+tags:
+  - LLM
+  - 머신러닝
+aliases:
+  - 양양
+  - Yang Yang
+---
+
+절강대학교(Zhejiang University) 컴퓨터과학기술학부 정교수이자 인공지능 학과장입니다. 2016년 칭화대학교에서 Jie Tang, Juanzi Li 교수 지도하에 박사 학위를 받았습니다.
+
+Google Scholar 기준 h-index 38, 총 인용 5,600회를 넘는 그래프 AI 분야 중견 연구자입니다. 대표 연구로는 트라이어딕 클로저 과정을 모델링한 동적 네트워크 임베딩 연구(2018, 646회 인용), 강화학습 기반 관계 분류 연구(2018, 436회 인용)가 있습니다. 최근에는 그래프 기초 모델(Graph Foundation Models)과 LLM-그래프 연계 연구를 집중 추진하고 있습니다. [[GraphLLM]](2023)으로 LLM의 그래프 추론 능력을 향상시킨 연구, Universal Prompt Tuning for GNN(NeurIPS 2023)도 주요 성과입니다.
+
+[[Yifei Sun]]의 박사 지도교수이자 [[HyGRAG - A Unified Framework for Context-Aware and Relation-Aware Graph Retrieval-Augmented Generation]] 연구 그룹의 총괄 PI입니다. [[Chunping Wang]], [[Lei Chen]]과 장기 산학 협력 관계를 유지하고 있습니다. NSFC 우수청년과학자 펀드를 수혜했습니다.
