@@ -786,7 +786,8 @@
         Disk.writeFile outputPath tagPageHtml
 
     let private cdata (content: string) =
-        $"<![CDATA[{content.Replace("]]>", "]]]]><![CDATA[>")}]]>"
+        let safeContent = content.Replace("]]>", "]]]]><![CDATA[>")
+        "<![CDATA[" + safeContent + "]]>"
 
     let private makeFeedUrlsAbsolute (html: string) =
         let prefixAbsoluteUrl (m: Match) =
