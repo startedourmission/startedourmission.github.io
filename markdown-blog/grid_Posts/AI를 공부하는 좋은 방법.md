@@ -69,7 +69,7 @@ Afshine Amidi의 CME295. 트랜스포머 구조부터 LLM 훈련·튜닝·추론
 1. [[Learning representations by back-propagating errors]] (1986) — 역전파의 시작
 2. [[ImageNet Classification with Deep Convolutional Neural Networks]] (2012) — 딥러닝 부활
 3. [[Dropout - A Simple Way to Prevent Neural Networks from Overfitting]] (2014) — 아직도 쓰는 기법
-4. [[Attention Is All You Needs]] (2017) — 트랜스포머의 탄생
+4. [[Attention Is All You Need]] (2017) — 트랜스포머의 탄생
 5. [[The Forward-Forward Algorithm - Some Preliminary Investigations]] (2023) — 역전파의 대안?
 
 ---
