@@ -364,7 +364,7 @@
                     |> String.concat "\n            "
                 $"""
                 <section class="stars-section">
-                    <h2 class="stars-title">Stars</h2>
+                    <h2 class="stars-title">Masters</h2>
                     <ul class="stars-list">
             {starItemsHtml}
                     </ul>
