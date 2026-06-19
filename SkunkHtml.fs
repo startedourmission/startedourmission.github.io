@@ -337,12 +337,12 @@
                 </section>
                 """
 
-        // Stars 섹션 (Star 태그를 가진 person 노트, buzz/star 점수 내림차순 top 10)
+        // Stars 섹션 (Star 태그를 가진 person 노트, buzz/star 점수 내림차순 top 20)
         let starPosts =
             allPosts
             |> List.filter (fun post -> post.Tags |> List.exists (fun tag -> tag.ToLower() = "star"))
             |> List.sortByDescending (fun post -> post.Buzz |> Option.defaultValue 0)
-            |> List.truncate 10
+            |> List.truncate 20
 
         let starsHtml =
             if starPosts.IsEmpty then ""
@@ -354,16 +354,11 @@
                             match post.ImageUrl with
                             | Some imageUrl -> $"""<img src="{imageUrl}" alt="{post.Title}" class="star-avatar" />"""
                             | None -> """<img src="assets/notion_avatar.png" alt="avatar" class="star-avatar" />"""
-                        let buzzHtml =
-                            match post.Buzz with
-                            | Some n when n > 0 -> $"""<span class="star-score">{n}</span>"""
-                            | _ -> ""
                         $"""
                         <li class="star-item">
                             <a href="{post.Url}" class="star-link">
                                 {avatarHtml}
                                 <span class="star-name">{post.Title}</span>
-                                {buzzHtml}
                             </a>
                         </li>""")
                     |> String.concat "\n            "

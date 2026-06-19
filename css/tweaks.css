@@ -465,7 +465,3 @@ table th[align="right"] {
     line-height: 1.2;
 }
 
-.star-score {
-    font-size: 0.7rem;
-    color: var(--color-text-muted, #999);
-}
