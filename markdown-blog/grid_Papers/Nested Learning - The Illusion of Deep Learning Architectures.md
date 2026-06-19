@@ -22,13 +22,13 @@ description: 트랜스포머와 모던 옵티마이저(Adam, Muon)는 사실 같
 
 저자는 네 명뿐입니다. 모두 Google Research New York의 Algorithms and Optimization 팀에 직접 또는 부속으로 묶여 있습니다.
 
-[[Ali Behrouz]]는 1저자입니다. Cornell 박사과정 학생이자 Google NYC의 Student Researcher로, 2025년부터 Titans → Atlas → Miras로 이어지는 메모리 모듈 시리즈를 빠르게 발표해 왔습니다. Titans가 "테스트 시점에 기억하는 법을 배우는" 장기 기억 모듈을 제안했다면, [[Nested Learning]]은 그 흐름을 메타 레벨에서 묶어 *왜* 그런 메모리 모듈이 트랜스포머의 MLP 자리를 차지할 수 있는지, *어떻게* 그것이 옵티마이저와 연결되는지를 형식화하는 작업입니다.
+[[알리 베루즈]]는 1저자입니다. Cornell 박사과정 학생이자 Google NYC의 Student Researcher로, 2025년부터 Titans → Atlas → Miras로 이어지는 메모리 모듈 시리즈를 빠르게 발표해 왔습니다. Titans가 "테스트 시점에 기억하는 법을 배우는" 장기 기억 모듈을 제안했다면, [[Nested Learning]]은 그 흐름을 메타 레벨에서 묶어 *왜* 그런 메모리 모듈이 트랜스포머의 MLP 자리를 차지할 수 있는지, *어떻게* 그것이 옵티마이저와 연결되는지를 형식화하는 작업입니다.
 
-[[Vahab Mirrokni]]는 시니어 저자입니다. Google Fellow이자 VP, Algorithms and Optimization 그룹의 오랜 리더이며, 최근에는 Gemini Data Area Lead까지 맡고 있습니다. MIT에서 응용수학으로 박사를 받은 이론 전산학 출신입니다. 베흐루즈의 메모리 노선이 미로크니의 알고리즘·최적화 인프라와 결합하는 자리가 바로 이 논문입니다.
+[[바하브 미로크니]]는 시니어 저자입니다. Google Fellow이자 VP, Algorithms and Optimization 그룹의 오랜 리더이며, 최근에는 Gemini Data Area Lead까지 맡고 있습니다. MIT에서 응용수학으로 박사를 받은 이론 전산학 출신입니다. 베흐루즈의 메모리 노선이 미로크니의 알고리즘·최적화 인프라와 결합하는 자리가 바로 이 논문입니다.
 
-[[Peilin Zhong]]은 미로크니 팀의 Research Scientist입니다. Columbia에서 sketching·streaming·고차원 기하 같은 이론 알고리즘으로 박사를 받았습니다. 메모리 모듈을 "컨텍스트 흐름을 압축하는 연산자"로 형식화하고, 업데이트 빈도로 레벨을 명시적으로 정렬하는 정의가 이 사람의 시각과 닮아 있습니다.
+[[중페이린]]은 미로크니 팀의 Research Scientist입니다. Columbia에서 sketching·streaming·고차원 기하 같은 이론 알고리즘으로 박사를 받았습니다. 메모리 모듈을 "컨텍스트 흐름을 압축하는 연산자"로 형식화하고, 업데이트 빈도로 레벨을 명시적으로 정렬하는 정의가 이 사람의 시각과 닮아 있습니다.
 
-[[Meisam Razaviyayn]]은 USC 부교수이자 Google Research의 파트타임 Research Scientist입니다. 신뢰 가능한 대규모 최적화 — min-max, 공정성, 연합 학습, 차분 프라이버시 — 가 본업입니다. 이 논문에서 새로 등장하는 Delta Gradient Descent, Delta Momentum, Multi-scale Momentum Muon(M3) 같은 학습 규칙들이 최적화 측면에서 깊이를 갖는 데 그의 합류가 중요했을 것으로 보입니다.
+[[메이삼 라자비얀]]은 USC 부교수이자 Google Research의 파트타임 Research Scientist입니다. 신뢰 가능한 대규모 최적화 — min-max, 공정성, 연합 학습, 차분 프라이버시 — 가 본업입니다. 이 논문에서 새로 등장하는 Delta Gradient Descent, Delta Momentum, Multi-scale Momentum Muon(M3) 같은 학습 규칙들이 최적화 측면에서 깊이를 갖는 데 그의 합류가 중요했을 것으로 보입니다.
 
 ## 배경
 

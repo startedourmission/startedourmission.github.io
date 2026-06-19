@@ -2,7 +2,7 @@
 title: "9장 - AI 커리어 조언"
 source: "https://www.youtube.com/watch?v=AuZoDsNmG_s&list=PLoROMvodv4rNRRGdS0rBbXOUGA0wjdh1X&index=8"
 author:
-  - "[[Andrew Ng]]"
+  - "[[앤드류 응]]"
   - "[[Lawrence Moroney]]"
   - "[[Stanford Online]]"
 series: "CS230 딥러닝 강의 (2025 가을)"
@@ -18,13 +18,13 @@ description: "Stanford CS230 딥러닝 강의 Lecture 9. AI 시대의 커리어 
 # 9장. AI 커리어 조언
 
 > AI로 커리어를 쌓기에 지금보다 좋은 시기는 없었다. 우리 모두는 1년 전 지구상 누구도 만들 수 없었던 소프트웨어를 지금 만들 수 있다.
-> — [[Andrew Ng]]
+> — [[앤드류 응]]
 
 ---
 
 ## 9.1 AI의 황금기: 왜 지금인가
 
-[[Andrew Ng]]는 강의 도입부에서 "AI가 둔화되고 있는가?"라는 최근의 질문에 대해 명확히 반론한다. 벤치마크 정확도가 100%에 수렴하면 더 이상 올라갈 곳이 없으므로 진보가 멈춘 것처럼 보이지만, METR(Model Evaluation & Threat Research)의 연구는 전혀 다른 그림을 보여준다.
+[[앤드류 응]]는 강의 도입부에서 "AI가 둔화되고 있는가?"라는 최근의 질문에 대해 명확히 반론한다. 벤치마크 정확도가 100%에 수렴하면 더 이상 올라갈 곳이 없으므로 진보가 멈춘 것처럼 보이지만, METR(Model Evaluation & Threat Research)의 연구는 전혀 다른 그림을 보여준다.
 
 **핵심 지표: 작업 복잡도의 배가 시간**
 
@@ -44,7 +44,7 @@ description: "Stanford CS230 딥러닝 강의 Lecture 9. AI 시대의 커리어 
 
 ## 9.2 AI 코딩 도구와 프론티어에 머무는 법
 
-[[Andrew Ng]]는 개인적으로 사용하는 코딩 도구가 **3~6개월마다 바뀐다**고 말한다. 몇 달 전까지 Claude Code가 1순위였고, GPT-5 출시 후 OpenAI Codex가 크게 약진했으며, 강의 당일 아침에는 Gemini 3가 발표되었다.
+[[앤드류 응]]는 개인적으로 사용하는 코딩 도구가 **3~6개월마다 바뀐다**고 말한다. 몇 달 전까지 Claude Code가 1순위였고, GPT-5 출시 후 OpenAI Codex가 크게 약진했으며, 강의 당일 아침에는 Gemini 3가 발표되었다.
 
 > 반 세대 뒤처진 도구를 쓰는 것은 솔직히 생산성에서 상당한 차이를 만든다.
 

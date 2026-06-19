@@ -12,7 +12,7 @@ image: "![[1-karpathy-llm-kb.png]]"
 
 ## 원문 요약
 
-2026년 4월 2일, 전 Tesla AI / OpenAI 출신의 [[Andrej Karpathy]]가 X(구 트위터)에 올린 스레드입니다. LLM을 코드 작성이 아닌 **지식 관리** 도구로 활용하는 자신의 워크플로우를 공유했습니다. 옵시디언(Obsidian)을 프론트엔드로, LLM을 백엔드 엔진으로 쓰는 구조입니다.
+2026년 4월 2일, 전 Tesla AI / OpenAI 출신의 [[안드레이 카파시]]가 X(구 트위터)에 올린 스레드입니다. LLM을 코드 작성이 아닌 **지식 관리** 도구로 활용하는 자신의 워크플로우를 공유했습니다. 옵시디언(Obsidian)을 프론트엔드로, LLM을 백엔드 엔진으로 쓰는 구조입니다.
 
 > 원문: [Thread by @karpathy (2026-04-02)](https://x.com/karpathy/status/2039805659525644595)
 

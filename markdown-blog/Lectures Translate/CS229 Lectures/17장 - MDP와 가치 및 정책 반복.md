@@ -2,7 +2,7 @@
 title: "17장 - MDP와 가치 및 정책 반복"
 source: "https://www.youtube.com/watch?v=d5gaWTo6kDM"
 author:
-  - "[[Andrew Ng]]"
+  - "[[앤드류 응]]"
   - "[[Stanford Online]]"
 series: "CS229 머신러닝 강의 (2018 가을)"
 chapter: 17

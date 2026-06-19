@@ -13,9 +13,9 @@ buzz: 53
 
 ## 저자
 
-DreamX-World 1.0은 알리바바 AMAP의 연구팀인 DreamX Team이 공개한 논문입니다. 저자 명단은 알파벳 순으로 나열되어 있으며, Yancheng Bai, Rui Chen, [[추샹샹]], Rujing Dang, Hao Dou, Bingjie Gao, Qiwen Gu, Siyu Hong, [[Jiachen Lei]], Geng Li, Jifan Li, Ruimin Lin, Qingfeng Shi, Bingze Song, Lei Sun, Jing Tang, Ruitian Tian, Jun Wang, Jiahong Wu, Pengfei Zhang, Shen Zhang, [[Jiashu Zhu]] 등 총 22명입니다.
+DreamX-World 1.0은 알리바바 AMAP의 연구팀인 DreamX Team이 공개한 논문입니다. 저자 명단은 알파벳 순으로 나열되어 있으며, Yancheng Bai, Rui Chen, [[추샹샹]], Rujing Dang, Hao Dou, Bingjie Gao, Qiwen Gu, Siyu Hong, [[레이자첸]], Geng Li, Jifan Li, Ruimin Lin, Qingfeng Shi, Bingze Song, Lei Sun, Jing Tang, Ruitian Tian, Jun Wang, Jiahong Wu, Pengfei Zhang, Shen Zhang, [[주자슈]] 등 총 22명입니다.
 
-[[추샹샹]]는 AMAP의 Senior Director로, FairNAS, Twins, CPVT 등 아키텍처 연구부터 최근 FingER(ACM MM 2025), AngelSlim, Omni-WorldBench, GPG(ICLR 2026)까지 이 팀 연구 전반의 시니어 이름입니다. 2023년 AMiner Top 100 AI Scholar에 선정됐습니다. [[Jiachen Lei]]는 "There is No VAE: End-to-End Pixel-Space Generative Modeling"(ICLR 2026)를 통해 VAE 없는 픽셀 공간 생성 모델을 제안한 연구자이고, [[Jiashu Zhu]]는 minWM 프레임워크와 AngelSlim 모델 압축 도구를 이끌었습니다. 세 사람 모두 세계 모델 평가 벤치마크인 Omni-WorldBench의 공동 저자이기도 합니다.
+[[추샹샹]]는 AMAP의 Senior Director로, FairNAS, Twins, CPVT 등 아키텍처 연구부터 최근 FingER(ACM MM 2025), AngelSlim, Omni-WorldBench, GPG(ICLR 2026)까지 이 팀 연구 전반의 시니어 이름입니다. 2023년 AMiner Top 100 AI Scholar에 선정됐습니다. [[레이자첸]]는 "There is No VAE: End-to-End Pixel-Space Generative Modeling"(ICLR 2026)를 통해 VAE 없는 픽셀 공간 생성 모델을 제안한 연구자이고, [[주자슈]]는 minWM 프레임워크와 AngelSlim 모델 압축 도구를 이끌었습니다. 세 사람 모두 세계 모델 평가 벤치마크인 Omni-WorldBench의 공동 저자이기도 합니다.
 
 ## 배경
 

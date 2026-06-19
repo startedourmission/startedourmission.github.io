@@ -21,7 +21,7 @@ image: "![[1-dropout-original.png]]"
 
 ## 저자 소개
 
-Geoffrey Hinton이 핵심 아이디어를 제안했습니다. Nitish Srivastava는 토론토대 박사과정 학생으로 이후 JMLR 정식 논문의 제1저자가 되었습니다. Alex Krizhevsky와 [[Ilya Sutskever]]는 AlexNet 공동 저자이기도 합니다. Ruslan Salakhutdinov는 토론토대 박사후 연구원이었습니다.
+Geoffrey Hinton이 핵심 아이디어를 제안했습니다. Nitish Srivastava는 토론토대 박사과정 학생으로 이후 JMLR 정식 논문의 제1저자가 되었습니다. Alex Krizhevsky와 [[일리야 수츠케버]]는 AlexNet 공동 저자이기도 합니다. Ruslan Salakhutdinov는 토론토대 박사후 연구원이었습니다.
 
 ## 요약
 

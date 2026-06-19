@@ -20,9 +20,9 @@ buzz: 57
 
 ## 저자
 
-UCLA NLP의 [[Kai-Wei Chang]] 그룹과 [[Nanyun Peng]] 그룹이 함께 붙은 작업입니다. 1저자 Di Wu는 2025년 ICLR에 발표된 1세대 LongMemEval의 1저자이기도 합니다. V1이 user-assistant 채팅 기반이었고 평가 대상이 RAG 컴포넌트(인덱싱·검색·읽기) 위주였던 반면, 같은 저자가 그 한계를 인정하면서 *채팅 히스토리만으로는 진짜 에이전트 메모리를 못 본다*고 자기 작업을 다시 짚어 V2로 이어왔습니다.
+UCLA NLP의 [[장카이웨이]] 그룹과 [[펑난윈]] 그룹이 함께 붙은 작업입니다. 1저자 Di Wu는 2025년 ICLR에 발표된 1세대 LongMemEval의 1저자이기도 합니다. V1이 user-assistant 채팅 기반이었고 평가 대상이 RAG 컴포넌트(인덱싱·검색·읽기) 위주였던 반면, 같은 저자가 그 한계를 인정하면서 *채팅 히스토리만으로는 진짜 에이전트 메모리를 못 본다*고 자기 작업을 다시 짚어 V2로 이어왔습니다.
 
-시니어 저자 라인은 [[Nanyun Peng]]과 [[Kai-Wei Chang]]입니다. Kai-Wei Chang은 UCLA NLP 그룹을 이끄는 Associate Professor이자 Amazon Scholar로, 멀티모달·신뢰성 NLP 쪽에서 VisualBERT 같은 초기 비전-언어 모델 작업으로도 알려져 있습니다. 이번 논문에서 *coding agent를 memory controller로 쓴다*는 발상이 자연스럽게 나오는 배경에는 이 그룹이 그동안 쌓아온 multimodal·long-context 경험이 있습니다.
+시니어 저자 라인은 [[펑난윈]]과 [[장카이웨이]]입니다. Kai-Wei Chang은 UCLA NLP 그룹을 이끄는 Associate Professor이자 Amazon Scholar로, 멀티모달·신뢰성 NLP 쪽에서 VisualBERT 같은 초기 비전-언어 모델 작업으로도 알려져 있습니다. 이번 논문에서 *coding agent를 memory controller로 쓴다*는 발상이 자연스럽게 나오는 배경에는 이 그룹이 그동안 쌓아온 multimodal·long-context 경험이 있습니다.
 
 ## 배경
 

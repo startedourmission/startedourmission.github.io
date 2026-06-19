@@ -2,7 +2,7 @@
 title: "5장 - GDA와 나이브 베이즈"
 source: "https://www.youtube.com/watch?v=nt63k3bfXS0"
 author:
-  - "[[Andrew Ng]]"
+  - "[[앤드류 응]]"
   - "[[Stanford Online]]"
 series: "CS229 머신러닝 강의 (2018 가을)"
 chapter: 5
@@ -17,7 +17,7 @@ image: "![[5-cs229-generative-discriminative.png]]"
 # 5장. GDA와 나이브 베이즈
 
 > 지금까지 배운 학습 알고리즘은 모두 판별 학습 알고리즘이었다. 이번 장에서는 완전히 다른 접근법인 생성 학습 알고리즘을 소개한다. 가우시안 판별 분석(GDA)으로 연속형 특성을, 나이브 베이즈로 이산형 특성을 다루는 방법을 배운다.
-> — [[Andrew Ng]]
+> — [[앤드류 응]]
 
 ---
 

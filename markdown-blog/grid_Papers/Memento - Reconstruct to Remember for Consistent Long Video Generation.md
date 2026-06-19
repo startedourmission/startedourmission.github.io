@@ -13,7 +13,7 @@ buzz: 11
 
 ## 저자
 
-[[Xuan Wei]]는 샤먼대학 박사과정생으로 Baidu ERNIE Team 인턴 중 이 연구를 이끌었습니다. Baidu ERNIE Team의 [[Zhenyu Zhang]]이 Project Lead로 전체 실험 설계와 훈련 인프라를 담당했고, 샤먼대학 [[Qingqi Hong]] 교수가 교신저자로 연구 방향을 감독했습니다. Longbin Ji, Guan Wang, Shuohuan Wang, Yu Sun 등 Baidu ERNIE Team 소속 연구자 다수가 Wan2.2 기반 비디오 생성 파이프라인 구축에 합류했습니다.
+[[웨이쉬안]]는 샤먼대학 박사과정생으로 Baidu ERNIE Team 인턴 중 이 연구를 이끌었습니다. Baidu ERNIE Team의 [[장전위]]이 Project Lead로 전체 실험 설계와 훈련 인프라를 담당했고, 샤먼대학 [[홍칭치]] 교수가 교신저자로 연구 방향을 감독했습니다. Longbin Ji, Guan Wang, Shuohuan Wang, Yu Sun 등 Baidu ERNIE Team 소속 연구자 다수가 Wan2.2 기반 비디오 생성 파이프라인 구축에 합류했습니다.
 
 장기 영상 생성의 정체성 드리프트 문제는 최근 StoryMem, OneStory 같은 선행 연구에서도 해결하지 못한 공백으로 남아 있었습니다. Baidu의 ERNIE 비디오 생성 팀이 이 문제를 명시적 학습 목표로 전환하는 새로운 접근을 제안한 것이 이번 논문의 배경입니다.
 

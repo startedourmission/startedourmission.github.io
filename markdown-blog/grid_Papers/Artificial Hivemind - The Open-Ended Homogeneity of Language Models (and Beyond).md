@@ -22,7 +22,7 @@ buzz: 220
 
 교신저자 [[최예진]]는 Stanford HAI 교수이자 NVIDIA 수석 연구 과학자입니다. 상식 추론과 AI 가치 평가에서 쌓아온 연구 방향이 이 논문의 핵심 질문과 정확히 겹칩니다. "AI가 정말 다양한 관점을 갖고 있는가"라는 물음은 그의 연구실이 수년째 파고들어 온 문제입니다.
 
-[[Maarten Sap]]은 CMU Language Technologies Institute 조교수이자 AI2 AI 안전 수석 연구 과학자로, 소셜 NLP와 AI 편향 진단 분야의 전문가입니다. Jiang과 Choi가 워싱턴 대학교에서 형성한 연구 협업 관계에서 이 논문이 나왔습니다.
+[[마르턴 삽]]은 CMU Language Technologies Institute 조교수이자 AI2 AI 안전 수석 연구 과학자로, 소셜 NLP와 AI 편향 진단 분야의 전문가입니다. Jiang과 Choi가 워싱턴 대학교에서 형성한 연구 협업 관계에서 이 논문이 나왔습니다.
 
 ## 배경
 

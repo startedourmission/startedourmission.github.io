@@ -2,8 +2,8 @@
 title: "8장 - LLM 평가"
 source: "https://www.youtube.com/watch?v=8fNP4N46RRo"
 author:
-  - "[[Afshine Amidi]]"
-  - "[[Shervine Amidi]]"
+  - "[[아프신 아미디]]"
+  - "[[셔빈 아미디]]"
   - "[[Stanford Online]]"
 series: "CME295 트랜스포머와 LLM 강의 (2025 가을)"
 chapter: 8
@@ -19,7 +19,7 @@ image: "![[8-cme295-llm-judge.png]]"
 # 8장. LLM 평가
 
 > LLM의 성능을 측정할 수 없다면, 무엇을 개선해야 하는지도 알 수 없다. 평가는 모델 개발의 나침반이다.
-> — [[Afshine Amidi]]
+> — [[아프신 아미디]]
 
 ---
 

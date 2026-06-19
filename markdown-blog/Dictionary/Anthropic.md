@@ -7,7 +7,7 @@ aliases:
   - Anthropic
 ---
 
-Anthropic은 2021년 [[Dario Amodei]]·[[Daniela Amodei]] 남매를 비롯해 OpenAI 출신 연구진이 설립한 미국 AI 기업입니다. 안전한 AI(safe AI) 연구를 회사의 존재 이유로 내세우며, Public Benefit Corporation 형태로 운영됩니다.
+Anthropic은 2021년 [[다리오 아모데이]]·[[다니엘라 아모데이]] 남매를 비롯해 OpenAI 출신 연구진이 설립한 미국 AI 기업입니다. 안전한 AI(safe AI) 연구를 회사의 존재 이유로 내세우며, Public Benefit Corporation 형태로 운영됩니다.
 
 대표 제품은 [[Claude]] 시리즈와 Claude Code, MCP(Model Context Protocol) 등 개발자 도구입니다. 모델 가족은 Haiku, Sonnet, Opus 세 등급으로 단순화되어 있으며 2026년 4월 기준 Opus 4.7이 최상위입니다.
 

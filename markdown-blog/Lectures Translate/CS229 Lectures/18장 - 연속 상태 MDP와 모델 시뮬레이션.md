@@ -2,7 +2,7 @@
 title: "18장 - 연속 상태 MDP와 모델 시뮬레이션"
 source: "https://www.youtube.com/watch?v=QFu5nuc-S0s"
 author:
-  - "[[Andrew Ng]]"
+  - "[[앤드류 응]]"
   - "[[Stanford Online]]"
 series: "CS229 머신러닝 강의 (2018 가을)"
 chapter: 18

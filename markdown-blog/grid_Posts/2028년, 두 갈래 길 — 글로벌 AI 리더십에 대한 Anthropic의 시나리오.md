@@ -8,7 +8,7 @@ description: Anthropic이 2026년 5월 발표한 미·중 AI 경쟁 보고서를
 
 [[Anthropic]]이 2026년 5월 14일에 짧지 않은 정책 에세이를 한 편 공개했습니다. 제목은 *"2028: Two scenarios for global AI leadership"*. 미국과 중국의 AI 경쟁을 두 가지 시나리오로 정리하고, 미국이 지금 무엇을 해야 하는지를 분명하게 주장하는 글입니다. 회사가 직접 정치 영역에 발을 들이는 건 흔치 않은 일이라 한 번 차분히 정리해 둘 가치가 있다고 봤습니다.
 
-핵심 주장은 단순합니다. "지금 미국·동맹이 가진 reality check 수준의 compute 우위를 정책적으로 지켜내야 한다. 안 그러면 2028년에는 권위주의 진영이 AI의 규범을 쓰게 된다." Anthropic의 [[Dario Amodei]] CEO가 그동안 [에세이](https://www.darioamodei.com/essay/machines-of-loving-grace)에서 말해온 입장과 같은 맥락이지만, 이번 글은 정책 디테일까지 들어가 있다는 점이 다릅니다.
+핵심 주장은 단순합니다. "지금 미국·동맹이 가진 reality check 수준의 compute 우위를 정책적으로 지켜내야 한다. 안 그러면 2028년에는 권위주의 진영이 AI의 규범을 쓰게 된다." Anthropic의 [[다리오 아모데이]] CEO가 그동안 [에세이](https://www.darioamodei.com/essay/machines-of-loving-grace)에서 말해온 입장과 같은 맥락이지만, 이번 글은 정책 디테일까지 들어가 있다는 점이 다릅니다.
 
 ## 왜 지금인가 — Mythos Preview가 깬 균형
 
@@ -16,7 +16,7 @@ Anthropic이 이번 보고서의 톤을 다급하게 끌어올린 가장 큰 이
 
 본문에 인용된 중국 보안 분석가의 표현이 가장 인상 깊습니다. *"우리는 아직 검을 갈고 있는데, 저쪽은 갑자기 자동 개틀링 건을 거치한 모양새다."* 이 한 마디가 Anthropic이 정책 제언을 서두르는 이유를 압축해서 보여줍니다. AI의 능력 차이가 누적 곡선이 아니라 계단식으로 벌어지는 구간에 들어섰고, 한 번 벌어진 차이가 R&D 자체에 다시 투입되며 격차를 더 키운다는 인식입니다.
 
-이런 흐름이 [[Dario Amodei]]가 종종 말하는 "data center 안의 천재 국가(country of geniuses in a data center)" 단계로 진입하는 신호라는 것이 보고서의 진단입니다. 2028년 정도면 그 수준이 현실이 된다고 전제하고 그 시점에 누가 우위에 있느냐를 따집니다.
+이런 흐름이 [[다리오 아모데이]]가 종종 말하는 "data center 안의 천재 국가(country of geniuses in a data center)" 단계로 진입하는 신호라는 것이 보고서의 진단입니다. 2028년 정도면 그 수준이 현실이 된다고 전제하고 그 시점에 누가 우위에 있느냐를 따집니다.
 
 ## 네 개의 전선
 

@@ -61,7 +61,7 @@ description: "Fable 5가 루프 구조에서 탁월한 이유와 자가 수정, 
 
 ## Parameter Golf로 본 Fable 5의 실력
 
-[[R Lance Martin]]은 [[Parameter Golf]]라는 벤치마크로 Fable 5를 테스트했습니다. 이 벤치마크는 16MB 크기의 모델을 10분 안에 8개의 H100 GPU에서 학습하는 과제인데, 에이전트가 직접 학습 코드를 수정하고 실행하고 로그를 확인하며 다음 실험을 결정해야 합니다. [[Andrej Karpathy]]의 [[autoresearch]] 프로젝트와 비슷한 구조죠.
+[[R Lance Martin]]은 [[Parameter Golf]]라는 벤치마크로 Fable 5를 테스트했습니다. 이 벤치마크는 16MB 크기의 모델을 10분 안에 8개의 H100 GPU에서 학습하는 과제인데, 에이전트가 직접 학습 코드를 수정하고 실행하고 로그를 확인하며 다음 실험을 결정해야 합니다. [[안드레이 카파시]]의 [[autoresearch]] 프로젝트와 비슷한 구조죠.
 
 결과를 보면 [[Claude Fable 5|Fable 5]]가 [[Opus 4.7]]보다 약 6배 더 큰 성능 개선을 이뤄냈습니다. 더 흥미로운 건 그 방식의 차이입니다.
 

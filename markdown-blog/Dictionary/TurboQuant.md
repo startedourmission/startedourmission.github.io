@@ -10,7 +10,7 @@ aliases:
   - "PolarQuant"
 ---
 
-TurboQuant는 [Google Research](https://research.google)의 *Amir Zandieh* (Research Scientist)와 [[Vahab Mirrokni]] (Google Fellow, VP)가 개발한 LLM KV cache 압축 알고리즘입니다. ICLR 2026에서 발표되며, arXiv ID는 2504.19874입니다. [공식 발표](https://research.google/blog/turboquant-redefining-ai-efficiency-with-extreme-compression/)에 따르면 KV cache 메모리를 6배 이상 압축하면서 정확도 손실이 *거의 zero* — needle-in-a-haystack 검색에서 unquantized와 동일한 점수를 받습니다.
+TurboQuant는 [Google Research](https://research.google)의 *Amir Zandieh* (Research Scientist)와 [[바하브 미로크니]] (Google Fellow, VP)가 개발한 LLM KV cache 압축 알고리즘입니다. ICLR 2026에서 발표되며, arXiv ID는 2504.19874입니다. [공식 발표](https://research.google/blog/turboquant-redefining-ai-efficiency-with-extreme-compression/)에 따르면 KV cache 메모리를 6배 이상 압축하면서 정확도 손실이 *거의 zero* — needle-in-a-haystack 검색에서 unquantized와 동일한 점수를 받습니다.
 
 핵심 기법은 *random rotation* + *PolarQuant* 두 단계입니다. 데이터 벡터를 무작위 회전시켜 기하 구조를 단순화한 뒤, 표준 좌표가 아닌 *극좌표(polar coordinates)* 로 변환해 *반지름(magnitude)* 과 *각도(direction)* 를 분리합니다. 각도 분포가 예측 가능하고 집중돼 있어, 기존 양자화기가 필요로 하는 비싼 per-block 정규화 단계를 건너뛸 수 있습니다.
 

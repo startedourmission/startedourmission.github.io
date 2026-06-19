@@ -17,9 +17,9 @@ buzz: 299
 
 ## 저자
 
-[[Zihan Qiu]], Zekun Wang, Bo Zheng은 Alibaba Qwen Team 소속 공동 1저자들이고, 에든버러 대학교의 Zeyu Huang도 공동 1저자로 합류했습니다. 교신저자는 [[Dayiheng Liu]]와 [[Junyang Lin]]입니다.
+[[치우쯔한]], Zekun Wang, Bo Zheng은 Alibaba Qwen Team 소속 공동 1저자들이고, 에든버러 대학교의 Zeyu Huang도 공동 1저자로 합류했습니다. 교신저자는 [[류다이헝]]와 [[린준양]]입니다.
 
-외부에서 합류한 가장 주목할 인물은 MIT CSAIL의 [[Songlin Yang]]입니다. Gated DeltaNet(Mamba2에 게이팅과 Delta Rule을 결합한 ICLR 2025 연구)으로 선형 어텐션 계열에서 게이팅의 효과를 직접 다룬 연구자가, 이번에는 소프트맥스 어텐션에 같은 질문을 던지는 팀에 합류한 구도입니다. [[Songlin Yang]]의 게이팅 경험이 이 논문의 분석 깊이와 직결됩니다.
+외부에서 합류한 가장 주목할 인물은 MIT CSAIL의 [[양송린]]입니다. Gated DeltaNet(Mamba2에 게이팅과 Delta Rule을 결합한 ICLR 2025 연구)으로 선형 어텐션 계열에서 게이팅의 효과를 직접 다룬 연구자가, 이번에는 소프트맥스 어텐션에 같은 질문을 던지는 팀에 합류한 구도입니다. [[양송린]]의 게이팅 경험이 이 논문의 분석 깊이와 직결됩니다.
 
 ## 배경
 

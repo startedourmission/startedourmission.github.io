@@ -7,7 +7,7 @@ aliases:
   - ChatGPT
 ---
 
-ChatGPT는 OpenAI가 2022년 11월 30일 공개한 대화형 AI 서비스입니다. 출시 5일 만에 100만 사용자를 돌파하며 LLM 대중화의 결정적 분기점이 된 제품으로, [[Sam Altman]]이 CEO로 있는 OpenAI의 대표 서비스입니다.
+ChatGPT는 OpenAI가 2022년 11월 30일 공개한 대화형 AI 서비스입니다. 출시 5일 만에 100만 사용자를 돌파하며 LLM 대중화의 결정적 분기점이 된 제품으로, [[샘 올트먼]]이 CEO로 있는 OpenAI의 대표 서비스입니다.
 
 내부적으로 GPT 시리즈 모델을 기반으로 동작합니다. 출시 당시 GPT-3.5에서 시작해 GPT-4, GPT-4o, GPT-5를 거쳐 현재 GPT-5.4 계열이 주력입니다. 무료·Plus·Pro·Team·Enterprise 등급으로 운영되며 등급에 따라 사용 가능한 모델과 사고(reasoning) 모드 접근이 달라집니다.
 

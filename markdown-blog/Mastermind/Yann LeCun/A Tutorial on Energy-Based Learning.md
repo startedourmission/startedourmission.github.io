@@ -13,7 +13,7 @@ image: "![[lecun-2006-energy-surface.png]]"
 
 ## 저자
 
-저자 명단은 [[Yann LeCun|얀 르쿤]]과 그의 NYU 학생 네 명으로 구성됩니다. 1저자 [[Yann LeCun|얀 르쿤]]은 [[Gradient-Based Learning Applied to Document Recognition|LeNet-5 논문]] 시절부터 Graph Transformer Network라는 이름으로 에너지 기반 학습 정식을 끌고 왔고, 2006년 시점에서 그 흐름을 정리할 필요를 느낀 것이 이 튜토리얼의 출발점입니다.
+저자 명단은 [[얀 르쿤|얀 르쿤]]과 그의 NYU 학생 네 명으로 구성됩니다. 1저자 [[얀 르쿤|얀 르쿤]]은 [[Gradient-Based Learning Applied to Document Recognition|LeNet-5 논문]] 시절부터 Graph Transformer Network라는 이름으로 에너지 기반 학습 정식을 끌고 왔고, 2006년 시점에서 그 흐름을 정리할 필요를 느낀 것이 이 튜토리얼의 출발점입니다.
 
 [[Sumit Chopra|수밋 초프라]]와 [[Raia Hadsell|라이아 해드셀]]은 박사 과정에서 contrastive loss와 DrLIM을 만들고 있던 두 사람입니다. 본 튜토리얼의 §5 Good and Bad Loss Functions는 두 사람의 박사 작업이 만들어 낸 마진 조건 분석이 그대로 들어간 결과입니다.
 

@@ -16,11 +16,11 @@ buzz: 97
 
 [[NVIDIA]] 지각·학습 연구팀과 KAIST 컴퓨터비전 그룹의 교차점에서 이 논문이 나왔습니다.
 
-[[Min-Hung Chen]] (NVIDIA Research Taiwan)은 직전 연구인 SpaceTools-Toolshed에서 구조화 도구 호출(structured tool-call) 방식을 직접 구현하고 평가한 인물입니다. 그 경험을 통해 JSON/XML 인터페이스가 열어주는 자유도의 한계를 누구보다 잘 알고 있었고, "인터페이스 자체를 바꿔야 한다"는 방향을 설정했습니다.
+[[천민훙]] (NVIDIA Research Taiwan)은 직전 연구인 SpaceTools-Toolshed에서 구조화 도구 호출(structured tool-call) 방식을 직접 구현하고 평가한 인물입니다. 그 경험을 통해 JSON/XML 인터페이스가 열어주는 자유도의 한계를 누구보다 잘 알고 있었고, "인터페이스 자체를 바꿔야 한다"는 방향을 설정했습니다.
 
-[[Seokju Cho]] (1저자, KAIST)는 [[Seungryong Kim]] 교수 지도 아래 밀집 대응(dense correspondence) 및 다중 시점 기하 연구를 해온 연구자입니다. 카메라 기하와 시점 간 추론에 대한 깊은 이해가, 코드로 중간 결과를 보존하며 체이닝하는 persistent kernel 설계로 자연스럽게 이어졌습니다.
+[[조석주]] (1저자, KAIST)는 [[김승룡]] 교수 지도 아래 밀집 대응(dense correspondence) 및 다중 시점 기하 연구를 해온 연구자입니다. 카메라 기하와 시점 간 추론에 대한 깊은 이해가, 코드로 중간 결과를 보존하며 체이닝하는 persistent kernel 설계로 자연스럽게 이어졌습니다.
 
-[[Abhishek Badki]]와 [[Sifei Liu]] (NVIDIA Learning and Perception Research)는 스테레오 깊이, 광학 흐름, 4D 장면 이해 등 저수준 인식 도구를 직접 개발해온 팀입니다. SpatialClaw의 SAM3, DA3, Reconstruct 등 핵심 perception tool이 이들의 손에서 나왔습니다.
+[[아비셰크 바드키]]와 [[류스페이]] (NVIDIA Learning and Perception Research)는 스테레오 깊이, 광학 흐름, 4D 장면 이해 등 저수준 인식 도구를 직접 개발해온 팀입니다. SpatialClaw의 SAM3, DA3, Reconstruct 등 핵심 perception tool이 이들의 손에서 나왔습니다.
 
 세 계열의 역할이 맞아 떨어진 셈입니다. 도구를 만든 사람, 인터페이스 한계를 경험한 사람, 그리고 기하를 체이닝하는 법을 아는 사람.
 

@@ -41,7 +41,7 @@ GTIG는 영향받은 벤더와 함께 *책임 있는 공개(responsible disclosu
 
 ## TurboQuant
 
-[[Vahab Mirrokni]] (Google Fellow, VP)와 Amir Zandieh가 ICLR 2026에 발표한 [TurboQuant](https://research.google/blog/turboquant-redefining-ai-efficiency-with-extreme-compression/)는 한 줄로 이렇게 정리됩니다 — *학습 없이 LLM의 KV cache를 3-bit으로 압축하면서 정확도 손실 zero*.
+[[바하브 미로크니]] (Google Fellow, VP)와 Amir Zandieh가 ICLR 2026에 발표한 [TurboQuant](https://research.google/blog/turboquant-redefining-ai-efficiency-with-extreme-compression/)는 한 줄로 이렇게 정리됩니다 — *학습 없이 LLM의 KV cache를 3-bit으로 압축하면서 정확도 손실 zero*.
 
 핵심 결과는 다음 셋입니다.
 

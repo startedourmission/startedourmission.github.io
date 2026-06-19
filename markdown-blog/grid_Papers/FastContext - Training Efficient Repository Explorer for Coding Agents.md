@@ -16,7 +16,7 @@ buzz: 81
 
 [[Microsoft]] Research와 상하이교통대학(SJTU)의 공동 연구입니다.
 
-[[Shaoqiu Zhang]](SJTU, Microsoft CoreAI 파견)과 [[Maoquan Wang]](Microsoft)이 공동 제1저자이고, [[Shengyu Fu]](Microsoft)가 교신 저자입니다. 두 제1저자는 애초에 다른 역할로 출발했습니다. Maoquan Wang은 Mini-SWE-Agent 레포지토리와 SWE-bench 평가 파이프라인을 다루는 팀에서 왔고, Shaoqiu Zhang은 SJTU에서 탐색 데이터 파이프라인과 모델 훈련을 담당했습니다.
+[[장샤오치우]](SJTU, Microsoft CoreAI 파견)과 [[왕마오취안]](Microsoft)이 공동 제1저자이고, [[푸성위]](Microsoft)가 교신 저자입니다. 두 제1저자는 애초에 다른 역할로 출발했습니다. Maoquan Wang은 Mini-SWE-Agent 레포지토리와 SWE-bench 평가 파이프라인을 다루는 팀에서 왔고, Shaoqiu Zhang은 SJTU에서 탐색 데이터 파이프라인과 모델 훈련을 담당했습니다.
 
 이 논문의 출발점은 문제 발굴에 있습니다. 팀은 GPT-5.4가 Mini-SWE-Agent에서 생성한 궤적 300개를 직접 분석해, 탐색(읽기+검색)이 전체 도구 호출 턴의 56.2%이고 총 토큰 소비의 46.5%를 차지한다는 수치를 뽑았습니다. 이 실증 분석이 "탐색을 분리하자"는 설계 결정으로 이어졌습니다.
 

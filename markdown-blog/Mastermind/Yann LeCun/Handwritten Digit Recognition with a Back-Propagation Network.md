@@ -16,7 +16,7 @@ image: "![[lecun-1989-architecture.png]]"
 
 ## 저자
 
-저자 7명은 모두 AT&T Bell Laboratories Holmdel 연구소의 *Adaptive Systems Research Department* 소속이었습니다. 1984년 [[Larry Jackel|래리 재클]]이 이 부서를 만들면서 사람을 모으기 시작했고, 1988년 [[Yann LeCun|얀 르쿤]]이 [[Geoffrey Hinton|제프리 힌턴]] 밑에서 박사후를 마치고 합류했습니다. 회로 박사를 막 끝낸 [[Bernhard Boser|베른하르트 보저]]도 같은 해에 들어왔습니다. [[John S. Denker|존 덴커]]는 1984년부터 이론 쪽을 맡고 있었습니다. 부서장이던 [[Larry Jackel|래리 재클]]이 마지막 저자로 이름을 올린 것은 단순한 관리 책임자 표기가 아닙니다. 그는 같은 해 [[John S. Denker|존 덴커]] 등과 함께 첫 번째 우편번호 분류 시스템을 발표한 바 있고, 이 후속 작업의 방향을 정한 사람입니다.
+저자 7명은 모두 AT&T Bell Laboratories Holmdel 연구소의 *Adaptive Systems Research Department* 소속이었습니다. 1984년 [[Larry Jackel|래리 재클]]이 이 부서를 만들면서 사람을 모으기 시작했고, 1988년 [[얀 르쿤|얀 르쿤]]이 [[Geoffrey Hinton|제프리 힌턴]] 밑에서 박사후를 마치고 합류했습니다. 회로 박사를 막 끝낸 [[Bernhard Boser|베른하르트 보저]]도 같은 해에 들어왔습니다. [[John S. Denker|존 덴커]]는 1984년부터 이론 쪽을 맡고 있었습니다. 부서장이던 [[Larry Jackel|래리 재클]]이 마지막 저자로 이름을 올린 것은 단순한 관리 책임자 표기가 아닙니다. 그는 같은 해 [[John S. Denker|존 덴커]] 등과 함께 첫 번째 우편번호 분류 시스템을 발표한 바 있고, 이 후속 작업의 방향을 정한 사람입니다.
 
 핵심 동기는 *학습으로 손글씨 인식기를 만들 수 있는가*가 아니라 *그것이 우체국 컨베이어 옆에서 굴러갈 수 있는가*였습니다. 미국 우정공사는 손글씨 우편번호 자동 분류 시스템을 발주하고 있었고, AT&T는 통신 회사로서 이 시장에 들어가려 했습니다. 그래서 이 논문은 학습 결과뿐 아니라 DSP 보드 위 실시간 처리량까지 보고합니다.
 

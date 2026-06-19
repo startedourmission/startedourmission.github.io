@@ -72,12 +72,12 @@ Muse Spark의 진짜 자랑거리는 점수보다 **컴퓨트 효율** 입니다
 세 가지 결정이 동시에 내려졌습니다.
 
 1. *조직 신설* — [[Meta Superintelligence Labs]](MSL)를 따로 만들고 기존 FAIR·Llama 팀과 분리
-2. *외부 영입* — Scale AI 창업자 [[Alexandr Wang]]을 영입(143억 달러 투자 + Scale AI 49% 지분). OpenAI·[[Anthropic]]·Google에서 연구자도 적극 영입
+2. *외부 영입* — Scale AI 창업자 [[알렉산더 왕]]을 영입(143억 달러 투자 + Scale AI 49% 지분). OpenAI·[[Anthropic]]·Google에서 연구자도 적극 영입
 3. *오픈소스 종료* — Muse Spark는 *사유* 모델로 출시. 일부 파트너에게 private API preview만 제공. Zuckerberg는 *"향후 버전을 오픈소스로 낼 수 있다"* 고만 표현
 
 세 번째가 가장 큰 변화입니다. [[Meta]]의 [[Llama]]는 오픈소스 LLM 생태계의 *사실상 표준* 이었습니다. Vicuna·Alpaca부터 시작해 수많은 파생 모델, 학계 연구, 스타트업의 자체 모델이 [[Llama]] 위에서 만들어졌습니다. 이 라인이 *닫힌* 다는 것은 그 생태계가 [Mistral](https://mistral.ai), [DeepSeek](https://www.deepseek.com), [Qwen](https://qwenlm.github.io) 같은 다른 오픈 가족으로 이동한다는 의미입니다.
 
-[[Yann LeCun]]이 2025년 11월 [[Meta]]를 떠나 [AMI Labs](https://stephango.com)를 창업한 시점도 이 흐름과 맞닿아 있습니다. *오픈 사이언스* 를 옹호해 온 [[Yann LeCun]]의 노선과, *사유 + 슈퍼인텔리전스* 로 가는 MSL의 노선이 양립할 수 없었다는 자연스러운 해석이 가능합니다.
+[[얀 르쿤]]이 2025년 11월 [[Meta]]를 떠나 [AMI Labs](https://stephango.com)를 창업한 시점도 이 흐름과 맞닿아 있습니다. *오픈 사이언스* 를 옹호해 온 [[얀 르쿤]]의 노선과, *사유 + 슈퍼인텔리전스* 로 가는 MSL의 노선이 양립할 수 없었다는 자연스러운 해석이 가능합니다.
 
 ## 안전성, Apollo Research의 평가
 
@@ -111,11 +111,11 @@ Muse Spark의 진짜 자랑거리는 점수보다 **컴퓨트 효율** 입니다
 
 부정 측면:
 - *현재 갭 인정* — [[Meta]]가 *"long-horizon agentic systems and coding workflows"* 영역의 성능 격차를 *본인이* 인정. 코딩에서 [[Anthropic]] [[Claude]]를 따라잡지 못함
-- *Yann LeCun 퇴사* — [[Meta]]의 AI 노선을 대외에 설명해 온 인물이 떠난 빈자리. [[Alexandr Wang]]은 데이터·운영 출신이지 AI 연구의 학계 권위는 아닙니다
+- *Yann LeCun 퇴사* — [[Meta]]의 AI 노선을 대외에 설명해 온 인물이 떠난 빈자리. [[알렉산더 왕]]은 데이터·운영 출신이지 AI 연구의 학계 권위는 아닙니다
 - *오픈소스 생태계 손실* — [[Llama]] 기반으로 자기 모델을 만들던 학계·스타트업이 [Mistral](https://mistral.ai)·[DeepSeek](https://www.deepseek.com)·[Qwen](https://qwenlm.github.io) 같은 다른 오픈 가족으로 이동. [[Meta]]가 *오픈소스 권위* 라는 자산을 포기한 결정
 
 [[Meta]]의 베팅이 명확하긴 합니다 — *"오픈소스로 학계 호감만 얻을 게 아니라 사유 모델로 수익을 만들겠다"* 는 결정이고, *수십억 명 자사 앱 사용자* 라는 OpenAI가 못 가진 무기를 활용하겠다는 전략입니다.
 
 다만 이 베팅이 성공하려면 *Muse Mid* 든 *Muse Large* 든 다음 모델이 빠른 시간 안에 나오면서 [[Anthropic]] [[Claude]] Opus급 또는 GPT-5급의 점수를 *공개 벤치마크* 에서 입증해야 합니다. Apollo Research의 evaluation awareness 이슈도 해결해야 합니다. 이 모든 검증을 1년 안에 통과해야 하는 압박을 [[Meta]]가 받고 있는 상황입니다.
 
-[[Yann LeCun]]이 떠난 빈자리, [[Alexandr Wang]]이 만든 새 조직, [[Llama]]가 끝난 자리에 들어선 [[Muse Spark]] — 다음 1년 [[Meta]] AI의 성패를 가를 그림이 그려졌습니다.
+[[얀 르쿤]]이 떠난 빈자리, [[알렉산더 왕]]이 만든 새 조직, [[Llama]]가 끝난 자리에 들어선 [[Muse Spark]] — 다음 1년 [[Meta]] AI의 성패를 가를 그림이 그려졌습니다.

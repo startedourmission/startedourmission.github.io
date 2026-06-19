@@ -2,8 +2,8 @@
 title: "6장 - LLM 추론"
 source: "https://www.youtube.com/watch?v=k5Fh-UgTuCo"
 author:
-  - "[[Afshine Amidi]]"
-  - "[[Shervine Amidi]]"
+  - "[[아프신 아미디]]"
+  - "[[셔빈 아미디]]"
   - "[[Stanford Online]]"
 series: "CME295 트랜스포머와 LLM 강의 (2025 가을)"
 chapter: 6
@@ -20,7 +20,7 @@ image: "![[6-cme295-grpo.png]]"
 # 6장. LLM 추론
 
 > 추론 모델의 핵심은 단순하다. 답을 바로 내놓지 말고, 먼저 생각하라. 그리고 그 "생각"을 RL로 학습시켜라. 검증 가능한 보상만 있으면 가치 함수 없이도 작동한다.
-> — [[Afshine Amidi]]
+> — [[아프신 아미디]]
 
 ---
 

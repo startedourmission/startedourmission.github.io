@@ -12,15 +12,15 @@ image: "![[sermanet-2014-overfeat-sliding.png]]"
 
 2012년 [[ImageNet Classification with Deep Convolutional Neural Networks|AlexNet]]이 ImageNet 분류 부문을 가져간 직후입니다. *분류 다음은 무엇인가*라는 질문이 분명한 시점이었고, 다음 단계는 *물체의 위치까지* 동시에 찾는 것이었습니다. OverFeat은 그 다음 단계를 한 망으로 푸는 방법을 1년 만에 정식화하고 ILSVRC 2013 위치 추정 부문에서 우승한 연구입니다.
 
-이 글의 한 마디 요지는 *합성곱 망 자체가 슬라이딩 윈도우다*입니다. 분류용으로 학습한 합성곱 망을 더 큰 이미지에 그대로 통과시키면 위치별 분류 점수 지도가 *자동으로* 나옵니다. 1989년 [[Handwritten Digit Recognition with a Back-Propagation Network|손글씨 우편번호 연구]]에서 [[Yann LeCun|얀 르쿤]] 본인이 한 번 사용했고, 1998년 [[Gradient-Based Learning Applied to Document Recognition|LeNet-5 논문]] §VII *Space Displacement Neural Network*에서 한 번 더 정리했던 그 발상을 ImageNet 스케일에서 다시 꺼낸 것이 OverFeat입니다.
+이 글의 한 마디 요지는 *합성곱 망 자체가 슬라이딩 윈도우다*입니다. 분류용으로 학습한 합성곱 망을 더 큰 이미지에 그대로 통과시키면 위치별 분류 점수 지도가 *자동으로* 나옵니다. 1989년 [[Handwritten Digit Recognition with a Back-Propagation Network|손글씨 우편번호 연구]]에서 [[얀 르쿤|얀 르쿤]] 본인이 한 번 사용했고, 1998년 [[Gradient-Based Learning Applied to Document Recognition|LeNet-5 논문]] §VII *Space Displacement Neural Network*에서 한 번 더 정리했던 그 발상을 ImageNet 스케일에서 다시 꺼낸 것이 OverFeat입니다.
 
 ## 저자
 
-저자 여섯 명은 모두 NYU Courant Institute의 *CILVR(Computational Intelligence, Learning, Vision, and Robotics)* 연구실 소속이었습니다. [[Yann LeCun|얀 르쿤]]과 [[Rob Fergus|롭 퍼거스]]가 시니어 지도자, 나머지 네 명은 박사과정 학생들이었습니다.
+저자 여섯 명은 모두 NYU Courant Institute의 *CILVR(Computational Intelligence, Learning, Vision, and Robotics)* 연구실 소속이었습니다. [[얀 르쿤|얀 르쿤]]과 [[Rob Fergus|롭 퍼거스]]가 시니어 지도자, 나머지 네 명은 박사과정 학생들이었습니다.
 
 1저자 [[Pierre Sermanet|피에르 세르마네]]는 박사 과정 막바지였습니다. 그가 이전에 같은 합성곱 망을 *교통 표지 인식*(2011)과 *보행자 검출*(2013)에 적용해본 경험이 본 논문의 직접적 토대가 되었습니다. 두 작업 모두 다중 스케일 슬라이딩 윈도우를 합성곱으로 효율화한 것이었고, 본 논문은 같은 발상을 1000클래스 ImageNet에 확장한 것입니다.
 
-[[David Eigen|데이비드 아이겐]]은 [[Rob Fergus|롭 퍼거스]] 지도 학생으로 *단일 이미지 깊이 추정*을 표준화한 인물입니다. 본 논문에서는 *바운딩 박스 회귀 망*을 담당하였습니다. 마지막 단을 4차원 좌표 회귀로 바꾸고 $\ell_2$ 손실로 학습시키는 *위치 추정 회귀기*가 그의 작업입니다. [[Xiang Zhang|샹 장]]과 [[Michael Mathieu|미카엘 마티외]]는 [[Yann LeCun|얀 르쿤]] 지도 학생들로 학습 인프라와 ImageNet 대규모 실험을 맡았습니다. [[Michael Mathieu|마티외]]는 같은 해 *Fast Training of Convolutional Networks through FFTs*(ICLR 2014)로 FFT 기반 합성곱 가속을 제안하였는데, 본 논문의 학습 속도가 그 작업의 직접적 수혜자입니다.
+[[데이비드 아이겐|데이비드 아이겐]]은 [[Rob Fergus|롭 퍼거스]] 지도 학생으로 *단일 이미지 깊이 추정*을 표준화한 인물입니다. 본 논문에서는 *바운딩 박스 회귀 망*을 담당하였습니다. 마지막 단을 4차원 좌표 회귀로 바꾸고 $\ell_2$ 손실로 학습시키는 *위치 추정 회귀기*가 그의 작업입니다. [[Xiang Zhang|샹 장]]과 [[Michael Mathieu|미카엘 마티외]]는 [[얀 르쿤|얀 르쿤]] 지도 학생들로 학습 인프라와 ImageNet 대규모 실험을 맡았습니다. [[Michael Mathieu|마티외]]는 같은 해 *Fast Training of Convolutional Networks through FFTs*(ICLR 2014)로 FFT 기반 합성곱 가속을 제안하였는데, 본 논문의 학습 속도가 그 작업의 직접적 수혜자입니다.
 
 [[Rob Fergus|롭 퍼거스]]가 같은 시기 *Visualizing and Understanding Convolutional Networks*(Zeiler & Fergus, 같은 ILSVRC 2013에서 분류 부문 우승)를 발표하고 있었다는 점이 흥미롭습니다. 같은 연구실 같은 시기에 *분류 성능을 끌어올리는 방향*과 *분류 다음 단계로 확장하는 방향*이 동시에 진행되고 있었습니다.
 

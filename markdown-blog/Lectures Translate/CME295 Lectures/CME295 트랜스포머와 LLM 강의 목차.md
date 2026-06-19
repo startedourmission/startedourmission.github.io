@@ -1,8 +1,8 @@
 ---
 title: "CME295 트랜스포머와 LLM 강의 (2025 가을) — 목차"
 author:
-  - "[[Afshine Amidi]]"
-  - "[[Shervine Amidi]]"
+  - "[[아프신 아미디]]"
+  - "[[셔빈 아미디]]"
   - "[[Stanford Online]]"
 source: "https://www.youtube.com/playlist?list=PLoROMvodv4rOCXd21gf0CF4xr35yINeOy"
 tags:
@@ -16,7 +16,7 @@ date: 2026-04-14
 
 # CME295 트랜스포머와 LLM 강의 (2025 가을)
 
-> Stanford CME295: Transformers & Large Language Models — Afshine & [[Shervine Amidi]]
+> Stanford CME295: Transformers & Large Language Models — Afshine & [[셔빈 아미디]]
 > 유튜브 강의 트랜스크립트를 한국어 도서 형식으로 정리한 시리즈
 
 ---

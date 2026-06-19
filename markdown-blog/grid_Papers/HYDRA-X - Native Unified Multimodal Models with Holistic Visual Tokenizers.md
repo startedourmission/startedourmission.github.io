@@ -13,9 +13,9 @@ buzz: 28
 
 ## 저자
 
-[[Guozhen Zhang]], [[Xuerui Qiu]], Yutao Cui가 공동 제1저자로 참여했습니다. 세 사람 모두 난징대학(Nanjing University) [[Limin Wang]] 교수 그룹 소속입니다. [[Xuerui Qiu]]는 중국과학원(CASIA)과 중관촌학원을 겸하는 박사과정생으로, 뉴로모픽 컴퓨팅과 LLM 양자화 경험을 시각 토크나이저 설계에 접목했습니다. Tencent Hunyuan, Shanghai AI Lab 소속 공동저자 10인이 가세해 모델 훈련과 평가 인프라를 뒷받침했습니다.
+[[장궈전]], [[치우쉐루이]], Yutao Cui가 공동 제1저자로 참여했습니다. 세 사람 모두 난징대학(Nanjing University) [[왕리민]] 교수 그룹 소속입니다. [[치우쉐루이]]는 중국과학원(CASIA)과 중관촌학원을 겸하는 박사과정생으로, 뉴로모픽 컴퓨팅과 LLM 양자화 경험을 시각 토크나이저 설계에 접목했습니다. Tencent Hunyuan, Shanghai AI Lab 소속 공동저자 10인이 가세해 모델 훈련과 평가 인프라를 뒷받침했습니다.
 
-[[Limin Wang]] 교수는 비디오 이해·행동 인식 분야의 권위자로, TSN(Temporal Segment Networks) 등 장기 비디오 표현 연구로 이름을 알렸습니다. 이번 HYDRA-X는 그의 비디오 이해 전문성이 시각 통합 생성 모델로 확장된 결과물입니다.
+[[왕리민]] 교수는 비디오 이해·행동 인식 분야의 권위자로, TSN(Temporal Segment Networks) 등 장기 비디오 표현 연구로 이름을 알렸습니다. 이번 HYDRA-X는 그의 비디오 이해 전문성이 시각 통합 생성 모델로 확장된 결과물입니다.
 
 ## 배경
 

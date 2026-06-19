@@ -21,7 +21,7 @@ image: "![[1-alexnet.png]]"
 
 ## 저자 소개
 
-Alex Krizhevsky는 우크라이나 출신 토론토대 박사과정 학생으로 GPU 프로그래밍에 뛰어났습니다. [[Ilya Sutskever]]는 이후 OpenAI 공동 창립자가 되었습니다. Geoffrey Hinton은 이 논문의 성공으로 2013년 Google에 합류했습니다.
+Alex Krizhevsky는 우크라이나 출신 토론토대 박사과정 학생으로 GPU 프로그래밍에 뛰어났습니다. [[일리야 수츠케버]]는 이후 OpenAI 공동 창립자가 되었습니다. Geoffrey Hinton은 이 논문의 성공으로 2013년 Google에 합류했습니다.
 
 ## 요약
 

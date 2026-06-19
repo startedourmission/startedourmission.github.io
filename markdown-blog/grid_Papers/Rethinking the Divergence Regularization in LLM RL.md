@@ -13,9 +13,9 @@ buzz: 41
 
 ## 저자
 
-[[Tencent Hunyuan]]과 싱가포르국립대(NUS)의 공동 연구입니다. Tencent 측에서는 [[Jiarui Yao]](UIUC 박사과정 + Hunyuan 인턴), [[Xiangxin Zhou]], [[Liefeng Bo]], [[Tianyu Pang]]이 참여했고, NUS에서는 [[Penghui Qi]]와 [[Wee Sun Lee]]가 합류했습니다.
+[[Tencent Hunyuan]]과 싱가포르국립대(NUS)의 공동 연구입니다. Tencent 측에서는 [[Jiarui Yao]](UIUC 박사과정 + Hunyuan 인턴), [[Xiangxin Zhou]], [[Liefeng Bo]], [[팡톈위]]이 참여했고, NUS에서는 [[치펑후이]]와 [[Wee Sun Lee]]가 합류했습니다.
 
-두 그룹의 연결 고리는 DPPO입니다. [[Penghui Qi]]와 [[Tianyu Pang]]은 이미 2026년 초 "Rethinking the Trust Region in LLM Reinforcement Learning"을 함께 썼습니다. 그 논문에서 ratio 기반 trust region의 한계를 이론으로 정리했고, 이번 DRPO는 그 분석 위에서 hard mask를 제거하는 다음 단계를 밟은 것입니다.
+두 그룹의 연결 고리는 DPPO입니다. [[치펑후이]]와 [[팡톈위]]은 이미 2026년 초 "Rethinking the Trust Region in LLM Reinforcement Learning"을 함께 썼습니다. 그 논문에서 ratio 기반 trust region의 한계를 이론으로 정리했고, 이번 DRPO는 그 분석 위에서 hard mask를 제거하는 다음 단계를 밟은 것입니다.
 
 ## 배경
 
@@ -27,7 +27,7 @@ LLM RL은 구조적으로 off-policy입니다. 추론 엔진과 학습 엔진의
 
 문제는 LLM의 어휘가 수만 개에 이르고 분포가 극도로 long-tail이라는 점입니다. 저빈도 토큰은 확률 변화가 작아도 ratio가 폭발적으로 커집니다. 예를 들어 $\mu = 10^{-5}$인 토큰이 $\pi = 10^{-3}$이 되면 ratio는 100입니다. 반면 $\mu = 0.99$인 토큰이 $\pi = 0.80$이 되어도 ratio는 0.81에 불과합니다. 실제 분포 변화는 후자가 훨씬 크지만, ratio 기반 trust region은 전자를 더 강하게 제약합니다.
 
-[[Penghui Qi]] 팀이 2026년 초 DPPO로 이 문제에 대응했습니다. ratio 대신 sampled token의 절대 확률 이동량 $|π(y_t|s_t) - µ(y_t|s_t)|$(Binary-TV)을 trust region 기준으로 쓰는 것입니다. Long-tail 어휘에서 훨씬 안정적입니다. 하지만 DPPO도 한 가지 문제를 안고 있었습니다. 여전히 binary mask입니다. 토큰이 trust region을 벗어나면 gradient를 통째로 0으로 만듭니다. 경계 근처에서 gradient가 급변하고, 벗어난 방향으로 돌아오게 유도하는 신호도 없습니다.
+[[치펑후이]] 팀이 2026년 초 DPPO로 이 문제에 대응했습니다. ratio 대신 sampled token의 절대 확률 이동량 $|π(y_t|s_t) - µ(y_t|s_t)|$(Binary-TV)을 trust region 기준으로 쓰는 것입니다. Long-tail 어휘에서 훨씬 안정적입니다. 하지만 DPPO도 한 가지 문제를 안고 있었습니다. 여전히 binary mask입니다. 토큰이 trust region을 벗어나면 gradient를 통째로 0으로 만듭니다. 경계 근처에서 gradient가 급변하고, 벗어난 방향으로 돌아오게 유도하는 신호도 없습니다.
 
 DRPO는 여기서 출발합니다. DPPO의 trust region 기하(geometry)는 유지하되, binary mask를 smooth regularizer로 교체합니다.
 

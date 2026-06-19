@@ -2,8 +2,8 @@
 title: "4장 - LLM 훈련"
 source: "https://www.youtube.com/watch?v=VlA_jt_3Qc4"
 author:
-  - "[[Afshine Amidi]]"
-  - "[[Shervine Amidi]]"
+  - "[[아프신 아미디]]"
+  - "[[셔빈 아미디]]"
   - "[[Stanford Online]]"
 series: "CME295 트랜스포머와 LLM 강의 (2025 가을)"
 chapter: 4
@@ -19,7 +19,7 @@ image: "![[4-cme295-training-pipeline.png]]"
 # 4장. LLM 훈련
 
 > 오늘 드디어 LLM이 어떻게 훈련되는지를 다룬다. 1강에서 셀프 어텐션과 트랜스포머를, 2강에서 다양한 기법과 변형을, 3강에서 LLM 자체를 소개했다면, 이번 강의에서는 이 거대한 모델을 실제로 학습시키는 전체 과정을 살펴본다.
-> — [[Afshine Amidi]]
+> — [[아프신 아미디]]
 
 ---
 

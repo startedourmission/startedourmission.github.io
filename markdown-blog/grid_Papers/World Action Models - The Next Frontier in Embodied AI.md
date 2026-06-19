@@ -17,7 +17,7 @@ buzz: 181
 
 RT-2가 등장한 뒤로 임바디드 정책 학습은 *Vision-Language-Action 모델*이라는 한 단어로 압축되어 왔습니다. VLM 백본 위에 action token을 얹어서 *관측 → 행동* 매핑을 학습하는 방식인데, 사전학습된 의미 정보를 모터 제어로 그대로 끌어 쓸 수 있다는 점에서 이전 task-specific controller와는 분명히 다른 자리에 있습니다. 그런데 이 흐름이 정점을 찍을 즈음 *세계가 어떻게 변할지를 모델이 예측하지 않는다*는 한계가 점점 부각되기 시작했습니다.
 
-World Model 쪽 흐름은 거의 같은 시기에 별도로 굴러갔습니다. Dreamer 계열의 latent dynamics 모델, [[Yann LeCun]]이 밀던 JEPA 계열의 예측적 표현 학습, Sora·Veo·Wan 같은 비디오 생성 기반 world model이 각각 *세계의 dynamics를 모델링한다*는 같은 목표를 다른 방식으로 풀어왔습니다. 이 두 흐름이 작년 한 해를 거치면서 한 모델 안으로 합쳐지기 시작했고, 그 합쳐진 모델을 부르는 이름이 논문마다 달랐습니다. UniPi, VPP, GR-2, FLARE, VLA-JEPA, Cosmos Policy, DreamZero, X-WAM — 모두 본질은 비슷한데 명명만 다른 상황입니다.
+World Model 쪽 흐름은 거의 같은 시기에 별도로 굴러갔습니다. Dreamer 계열의 latent dynamics 모델, [[얀 르쿤]]이 밀던 JEPA 계열의 예측적 표현 학습, Sora·Veo·Wan 같은 비디오 생성 기반 world model이 각각 *세계의 dynamics를 모델링한다*는 같은 목표를 다른 방식으로 풀어왔습니다. 이 두 흐름이 작년 한 해를 거치면서 한 모델 안으로 합쳐지기 시작했고, 그 합쳐진 모델을 부르는 이름이 논문마다 달랐습니다. UniPi, VPP, GR-2, FLARE, VLA-JEPA, Cosmos Policy, DreamZero, X-WAM — 모두 본질은 비슷한데 명명만 다른 상황입니다.
 
 Fudan University의 신뢰성 임바디드 AI 연구소(Institute of Trustworthy Embodied AI)는 이 합류 지점을 *World Action Models(WAMs)*로 묶고 첫 서베이를 내놓았습니다. 단순히 "이런 모델들이 있다"가 아니라 *VLA·VAM·Video Policy·AWM과 어떻게 다른가*를 정의 단에서 정리하고, Cascaded와 Joint라는 두 축으로 아키텍처 공간을 나누고, 데이터 생태계 네 갈래와 평가 프로토콜 세 갈래를 정리한 뒤 미해결 과제를 던지는 구성입니다.
 
@@ -58,7 +58,7 @@ $$\mathcal{L}_{\text{WAM}} = \mathbb{E}_{(o, l, o', a) \sim \mathcal{D}} \left[ 
 
 VLA는 p(a | o, l)만 학습하고, World Model은 p(o' | o, a)만 학습하던 자리에 *둘을 함께 학습하는* 객체로 WAM이 들어가는 셈입니다.
 
-비슷한 명명이 이미 있었습니다. *Action World Model(AWM)*은 같은 객체를 다른 위계로 부른 단어입니다. AWM은 "World Model"이 주어 자리에 있어서 *행동으로 augment된 시뮬레이터*라는 뉘앙스가 강하고, WAM은 "Action"과 "World"를 동격에 두어 *에이전트가 본체*라는 뉘앙스가 강합니다. 저자들은 이 차이를 *VLA 계보의 직접 후계자*임을 분명히 하려는 의도라고 명시합니다. 이 점은 [[Yann LeCun]]이 밀어온 *world model 중심 에이전트* 비전과 미묘하게 다릅니다. LeCun식 비전은 world model을 핵심으로 두고 정책을 그 위에서 planning으로 풀자는 입장에 가깝습니다. WAM은 *world와 action을 동시에 학습 객체로 두는* 합류점입니다. 명명이 정착할지는 별도로 봐야 할 부분입니다.
+비슷한 명명이 이미 있었습니다. *Action World Model(AWM)*은 같은 객체를 다른 위계로 부른 단어입니다. AWM은 "World Model"이 주어 자리에 있어서 *행동으로 augment된 시뮬레이터*라는 뉘앙스가 강하고, WAM은 "Action"과 "World"를 동격에 두어 *에이전트가 본체*라는 뉘앙스가 강합니다. 저자들은 이 차이를 *VLA 계보의 직접 후계자*임을 분명히 하려는 의도라고 명시합니다. 이 점은 [[얀 르쿤]]이 밀어온 *world model 중심 에이전트* 비전과 미묘하게 다릅니다. LeCun식 비전은 world model을 핵심으로 두고 정책을 그 위에서 planning으로 풀자는 입장에 가깝습니다. WAM은 *world와 action을 동시에 학습 객체로 두는* 합류점입니다. 명명이 정착할지는 별도로 봐야 할 부분입니다.
 
 WAM과 인접 개념의 경계도 따로 정리됩니다. *Video Action Models(VAMs)*는 video 합성과 action 생성을 정렬하는 모델이라 WAM의 부분집합입니다. *Video Policies*는 video diffusion backbone을 정책으로 직접 쓰는 모델인데, world modeling objective로 *명시적으로* supervise되어야 WAM이 됩니다. backbone의 implicit 정보만 활용하면 video policy로 분류됩니다.
 

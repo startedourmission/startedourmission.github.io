@@ -78,7 +78,7 @@ Afshine Amidi의 CME295. 트랜스포머 구조부터 LLM 훈련·튜닝·추론
 
 강의와 논문을 읽다가 모르는 단어가 나오면 [Dictionary](https://startedourmission.github.io/dictionary.html) 섹션을 활용하세요. 벤치마크, 인물, 모델, 하드웨어까지 200개 이상의 항목이 정리돼 있습니다.
 
-자주 찾는 항목들: [[Andrew Ng]], [[Andrej Karpathy]], [[ARC-AGI-2]], [[BrowseComp]], [[ChatGPT]], [[Claude]]
+자주 찾는 항목들: [[앤드류 응]], [[안드레이 카파시]], [[ARC-AGI-2]], [[BrowseComp]], [[ChatGPT]], [[Claude]]
 
 ---
 

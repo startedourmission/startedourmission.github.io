@@ -2,8 +2,8 @@
 title: "7장 - 에이전트 LLM"
 source: "https://www.youtube.com/watch?v=h-7S6HNq0Vg"
 author:
-  - "[[Afshine Amidi]]"
-  - "[[Shervine Amidi]]"
+  - "[[아프신 아미디]]"
+  - "[[셔빈 아미디]]"
   - "[[Stanford Online]]"
 series: "CME295 트랜스포머와 LLM 강의 (2025 가을)"
 chapter: 7
@@ -20,7 +20,7 @@ image: "![[7-cme295-rag-pipeline.png]]"
 # 7장. 에이전트 LLM
 
 > LLM을 바깥 세계와 연결하면 단순한 텍스트 생성기에서 행동하는 시스템으로 도약한다. RAG로 지식의 한계를 넘고, 도구 호출로 실세계에 개입하며, 에이전트 루프로 복잡한 목표를 자율적으로 추구할 수 있다.
-> — [[Shervine Amidi]]
+> — [[셔빈 아미디]]
 
 ---
 

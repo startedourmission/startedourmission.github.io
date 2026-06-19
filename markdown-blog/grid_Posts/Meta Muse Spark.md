@@ -9,7 +9,7 @@ description: "Meta Superintelligence Labs의 첫 모델 Muse Spark. 네이티브
 
 # Meta Muse Spark: 140조 원을 건 AI 전략의 첫 번째 결과물
 
-2026년 4월 8일, Meta가 새로운 AI 모델 **Muse Spark**를 공개했습니다. 이름만 보면 여느 모델 업데이트처럼 보일 수 있지만, 이 모델이 갖는 의미는 상당히 무겁습니다. Muse Spark는 Mark Zuckerberg가 기존 AI 전략에 불만을 품고 140억 달러(약 19조 원)를 투입해 영입한 [[Alexandr Wang]]이 이끄는 Meta Superintelligence Labs의 첫 번째 공식 모델이기 때문입니다. 코드명 'Avocado'로 개발된 이 모델은 Meta가 그동안 고수해 온 오픈소스 노선에서 벗어나 비공개 모델로 출시되었다는 점에서도 업계의 주목을 받고 있습니다.
+2026년 4월 8일, Meta가 새로운 AI 모델 **Muse Spark**를 공개했습니다. 이름만 보면 여느 모델 업데이트처럼 보일 수 있지만, 이 모델이 갖는 의미는 상당히 무겁습니다. Muse Spark는 Mark Zuckerberg가 기존 AI 전략에 불만을 품고 140억 달러(약 19조 원)를 투입해 영입한 [[알렉산더 왕]]이 이끄는 Meta Superintelligence Labs의 첫 번째 공식 모델이기 때문입니다. 코드명 'Avocado'로 개발된 이 모델은 Meta가 그동안 고수해 온 오픈소스 노선에서 벗어나 비공개 모델로 출시되었다는 점에서도 업계의 주목을 받고 있습니다.
 
 ## Alexandr Wang과 Meta Superintelligence Labs의 탄생
 

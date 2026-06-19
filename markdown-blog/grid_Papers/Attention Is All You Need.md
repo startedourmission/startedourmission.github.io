@@ -14,21 +14,21 @@ buzz: 0
 
 ## 저자
 
-[[Ashish Vaswani]]가 1저자입니다. [[Noam Shazeer]], [[Niki Parmar]], [[Jakob Uszkoreit]], [[Llion Jones]], [[Aidan N. Gomez]], [[Lukasz Kaiser]], [[Illia Polosukhin]]까지 총 8명이 이름을 올렸습니다. 발표 당시 대부분이 Google Brain과 Google Research 소속이었고, [[Aidan N. Gomez]]는 University of Toronto 학부생 신분으로 구글 인턴십 중이었습니다.
+[[아시시 바스와니]]가 1저자입니다. [[노암 셰이저]], [[니키 파마르]], [[야코프 우스코레이트]], [[리온 존스]], [[에이단 고메즈]], [[루카시 카이저]], [[일리아 폴로수킨]]까지 총 8명이 이름을 올렸습니다. 발표 당시 대부분이 Google Brain과 Google Research 소속이었고, [[에이단 고메즈]]는 University of Toronto 학부생 신분으로 구글 인턴십 중이었습니다.
 
 이 사람들, 지금은 무엇을 하고 있을까요? 
 
-[[Ashish Vaswani]], [[Niki Parmar]], [[Llion Jones]]는 Essential AI를 공동창업했습니다. 
+[[아시시 바스와니]], [[니키 파마르]], [[리온 존스]]는 Essential AI를 공동창업했습니다. 
 
-[[Aidan N. Gomez]]는 Cohere를 창업해 엔터프라이즈 LLM 시장을 공략하고 있습니다. 
+[[에이단 고메즈]]는 Cohere를 창업해 엔터프라이즈 LLM 시장을 공략하고 있습니다. 
 
-[[Noam Shazeer]]는 Character.AI를 만들었다가 Google로 복귀했고, 2026년 6월 OpenAI로 이적했습니다. 
+[[노암 셰이저]]는 Character.AI를 만들었다가 Google로 복귀했고, 2026년 6월 OpenAI로 이적했습니다. 
 
-[[Jakob Uszkoreit]]는 RNA 약물 설계 스타트업 Inceptive를 세웠습니다. 
+[[야코프 우스코레이트]]는 RNA 약물 설계 스타트업 Inceptive를 세웠습니다. 
 
-[[Illia Polosukhin]]은 블록체인 프로토콜 NEAR를 공동창업했습니다. 
+[[일리아 폴로수킨]]은 블록체인 프로토콜 NEAR를 공동창업했습니다. 
 
-[[Lukasz Kaiser]]는 OpenAI 연구원을 거쳤습니다. 논문 하나에서 시작해 LLM, 엔터프라이즈 AI, 생명공학, 블록체인으로 뻗어나간 팀입니다.
+[[루카시 카이저]]는 OpenAI 연구원을 거쳤습니다. 논문 하나에서 시작해 LLM, 엔터프라이즈 AI, 생명공학, 블록체인으로 뻗어나간 팀입니다.
 
 ## 배경
 

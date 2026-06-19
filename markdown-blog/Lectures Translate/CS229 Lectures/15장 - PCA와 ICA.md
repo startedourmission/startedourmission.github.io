@@ -2,7 +2,7 @@
 title: "15장 - PCA와 ICA"
 source: "https://www.youtube.com/watch?v=dyb_cFywuik"
 author:
-  - "[[Andrew Ng]]"
+  - "[[앤드류 응]]"
   - "[[Stanford Online]]"
 series: "CS229 머신러닝 강의 (2018 가을)"
 chapter: 15

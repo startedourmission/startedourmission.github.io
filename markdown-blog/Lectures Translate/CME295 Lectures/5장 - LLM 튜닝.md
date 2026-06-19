@@ -2,8 +2,8 @@
 title: "5장 - LLM 튜닝"
 source: "https://www.youtube.com/watch?v=PmW_TMQ3l0I"
 author:
-  - "[[Afshine Amidi]]"
-  - "[[Shervine Amidi]]"
+  - "[[아프신 아미디]]"
+  - "[[셔빈 아미디]]"
   - "[[Stanford Online]]"
 series: "CME295 트랜스포머와 LLM 강의 (2025 가을)"
 chapter: 5
@@ -20,7 +20,7 @@ image: "![[5-cme295-rlhf-pipeline.png]]"
 # 5장. LLM 튜닝
 
 > SFT는 모델에게 "이렇게 생성하라"고 가르친다. 하지만 "이렇게 생성하지 마라"는 가르치지 못한다. 선호도 튜닝은 바로 이 부정적 신호를 주입할 수 있는 단계다.
-> — [[Afshine Amidi]]
+> — [[아프신 아미디]]
 
 ---
 

@@ -16,17 +16,17 @@ buzz: 40
 
 이 보고서는 Google DeepMind에서 이론과 거버넌스 양쪽을 대표하는 여섯 명이 모인 결과물입니다.
 
-1저자 [[Tim Genewein]]은 정보이론 기반 메타러닝과 유계 합리성을 연구하는 리서치 사이언티스트입니다. [[Marcus Hutter]]와 공저한 NeurIPS 2025 논문에서 사전학습이 베이즈 메타러닝과 어떻게 연결되는지 보인 바 있으며, 이 보고서에서도 AIXI와 Legg-Hutter 점수의 현대적 해석 부분을 주도했습니다.
+1저자 [[팀 게네바인]]은 정보이론 기반 메타러닝과 유계 합리성을 연구하는 리서치 사이언티스트입니다. [[마르쿠스 후터]]와 공저한 NeurIPS 2025 논문에서 사전학습이 베이즈 메타러닝과 어떻게 연결되는지 보인 바 있으며, 이 보고서에서도 AIXI와 Legg-Hutter 점수의 현대적 해석 부분을 주도했습니다.
 
-[[Shane Legg]]는 DeepMind 공동창업자이자 Chief AGI Scientist입니다. Hutter의 지도 아래 루가노 대학교에서 박사를 받으면서 "Machine Super Intelligence"를 썼고, Hutter와 함께 Legg-Hutter 보편 지능 측도를 제안했습니다(Minds and Machines, 2007). 이 보고서의 핵심 개념적 뼈대가 그들의 2007년 논문에서 비롯됐습니다.
+[[셰인 레그]]는 DeepMind 공동창업자이자 Chief AGI Scientist입니다. Hutter의 지도 아래 루가노 대학교에서 박사를 받으면서 "Machine Super Intelligence"를 썼고, Hutter와 함께 Legg-Hutter 보편 지능 측도를 제안했습니다(Minds and Machines, 2007). 이 보고서의 핵심 개념적 뼈대가 그들의 2007년 논문에서 비롯됐습니다.
 
-[[Marcus Hutter]]는 AIXI 프레임워크 창시자로, 솔로모노프 귀납과 순차 결정 이론을 결합해 이론적 최적 에이전트를 정의한 연구자입니다(2000). 현재 ANU 교수와 DeepMind 시니어 리서치 사이언티스트를 겸직하고 있습니다.
+[[마르쿠스 후터]]는 AIXI 프레임워크 창시자로, 솔로모노프 귀납과 순차 결정 이론을 결합해 이론적 최적 에이전트를 정의한 연구자입니다(2000). 현재 ANU 교수와 DeepMind 시니어 리서치 사이언티스트를 겸직하고 있습니다.
 
-[[Allan Dafoe]]는 Cooperative AI Foundation 창립자이자 DeepMind 프론티어 전략·거버넌스 시니어 디렉터입니다. [[Thore Graepel]]과 공저한 "Cooperative AI: Machines Must Learn to Find Common Ground"(Nature, 2021)로 AI 거버넌스를 학문 분야로 개척했습니다.
+[[앨런 다포]]는 Cooperative AI Foundation 창립자이자 DeepMind 프론티어 전략·거버넌스 시니어 디렉터입니다. [[토레 그래펠]]과 공저한 "Cooperative AI: Machines Must Learn to Find Common Ground"(Nature, 2021)로 AI 거버넌스를 학문 분야로 개척했습니다.
 
-[[Iason Gabriel]]은 DeepMind의 AGI and Society Lead입니다. "Artificial Intelligence, Values and Alignment"(Minds and Machines, 2020)로 AI 정렬 문제를 철학적으로 정의한 연구자로, 보고서의 ASI 목표·도구적 수렴·자율성 논의 부분에 기여했습니다.
+[[이아손 가브리엘]]은 DeepMind의 AGI and Society Lead입니다. "Artificial Intelligence, Values and Alignment"(Minds and Machines, 2020)로 AI 정렬 문제를 철학적으로 정의한 연구자로, 보고서의 ASI 목표·도구적 수렴·자율성 논의 부분에 기여했습니다.
 
-[[Thore Graepel]]은 TrueSkill 개발자이자 AlphaGo 공저자입니다. 2021-2025년 수명연장 바이오테크 기업 Altos Labs에서 계산과학·AI 대표를 지낸 뒤 2025년 DeepMind에 복귀해 "포스트-AGI 미래" 연구팀을 이끌고 있습니다. 복귀 시점이 이 보고서 작성 시기와 맞물려 있다는 점이 주목됩니다.
+[[토레 그래펠]]은 TrueSkill 개발자이자 AlphaGo 공저자입니다. 2021-2025년 수명연장 바이오테크 기업 Altos Labs에서 계산과학·AI 대표를 지낸 뒤 2025년 DeepMind에 복귀해 "포스트-AGI 미래" 연구팀을 이끌고 있습니다. 복귀 시점이 이 보고서 작성 시기와 맞물려 있다는 점이 주목됩니다.
 
 ## 배경
 
