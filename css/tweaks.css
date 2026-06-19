@@ -428,13 +428,13 @@ table th[align="right"] {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
     gap: 1rem;
 }
 
 .star-item {
-    flex: 0 0 auto;
+    display: contents;
 }
 
 .star-link {
@@ -444,7 +444,6 @@ table th[align="right"] {
     gap: 0.4rem;
     text-decoration: none;
     color: var(--color-text);
-    width: 80px;
 }
 
 .star-link:hover .star-name {
