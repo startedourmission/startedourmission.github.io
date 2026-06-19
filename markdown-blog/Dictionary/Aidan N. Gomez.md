@@ -1,0 +1,16 @@
+---
+type: person
+description: 트랜스포머 논문 공동저자, Cohere 창업자 겸 CEO
+tags:
+  - 인물
+  - LLM
+aliases:
+  - Aidan Gomez
+  - Aidan N. Gomez
+---
+
+Aidan N. Gomez는 2017년 "[[Attention Is All You Need]]" 논문의 공동저자입니다. 논문 발표 당시 University of Toronto 학부생 신분으로 Google Brain에서 인턴십 중이었습니다. 저자 8명 가운데 가장 어린 나이였습니다.
+
+2019년 Nick Frosst, Ivan Zhang과 함께 Cohere를 공동창업했습니다. Cohere는 엔터프라이즈 AI에 특화된 LLM 플랫폼으로, GPT·Claude와 다른 축에서 B2B 시장을 공략하고 있습니다. Gomez는 현재 Cohere CEO를 맡고 있습니다.
+
+트랜스포머 논문 저자 중 창업 이력이 가장 먼저 알려진 인물입니다. "학부 인턴이 쓴 논문이 업계 전체를 바꿨다"는 이야기와 함께 자주 언급됩니다.

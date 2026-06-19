@@ -1,0 +1,15 @@
+---
+type: person
+description: 트랜스포머 논문 공동저자, 전 Google Brain 선임 연구원. OpenAI 연구원
+tags:
+  - 인물
+  - LLM
+  - 딥러닝
+aliases:
+  - Lukasz Kaiser
+  - Łukasz Kaiser
+---
+
+Lukasz Kaiser는 2017년 "[[Attention Is All You Need]]" 논문의 공동저자입니다. Google Brain 선임 연구원으로서 [[Transformer]] 아키텍처 개발에 참여했습니다. 트랜스포머 이후 범용 시퀀스 모델링 연구를 이어가며 Universal Transformers, Reformer 등 어텐션 아키텍처 확장 논문에도 이름을 올렸습니다.
+
+이후 OpenAI로 이직해 연구원으로 활동했습니다. 범용 신경망 아키텍처와 학습 효율성 쪽 연구를 지속했습니다.

@@ -1,0 +1,14 @@
+---
+type: person
+description: 트랜스포머 논문 공동저자, 전 Google Brain 연구원. Inceptive 창업자
+tags:
+  - 인물
+  - LLM
+  - 딥러닝
+aliases:
+  - Jakob Uszkoreit
+---
+
+Jakob Uszkoreit는 2017년 "[[Attention Is All You Need]]" 논문의 공동저자입니다. Google Brain에서 자연어 처리와 신경망 아키텍처를 연구했으며, [[Transformer]] 설계에 참여했습니다.
+
+논문 발표 이후 Google을 떠나 Inceptive를 창업했습니다. Inceptive는 RNA 약물 설계에 딥러닝을 적용하는 생명공학 스타트업으로, 트랜스포머 아키텍처를 언어 이외 도메인에 확장한 사례입니다. 언어 모델에서 생명과학으로 피벗한 트랜스포머 저자들 중 대표적인 케이스입니다.
