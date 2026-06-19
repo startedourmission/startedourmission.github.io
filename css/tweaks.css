@@ -414,3 +414,59 @@ table th[align="right"] {
 .subindex-breadcrumb a:hover {
     color: var(--color-link, #0066cc);
 }
+
+/* Stars 섹션 */
+.stars-section {
+    margin: 2rem 0;
+}
+
+.stars-title {
+    margin-bottom: 1rem;
+}
+
+.stars-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.star-item {
+    flex: 0 0 auto;
+}
+
+.star-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+    text-decoration: none;
+    color: var(--color-text);
+    width: 80px;
+}
+
+.star-link:hover .star-name {
+    color: var(--color-link, #0066cc);
+}
+
+.star-avatar {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.star-name {
+    font-size: 0.75rem;
+    text-align: center;
+    word-break: keep-all;
+    line-height: 1.2;
+}
+
+.star-score {
+    font-size: 0.7rem;
+    color: var(--color-text-muted, #999);
+}

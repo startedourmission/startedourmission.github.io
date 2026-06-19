@@ -10,6 +10,7 @@ type Post = {
     Summary: string option
     Description: string option
     Tags: string list
+    Buzz: int option
 }
 
 type CanvasNode = {
@@ -337,6 +338,22 @@ module Obsidian =
         else
             None
     
+    // YAML 프론트매터에서 buzz 또는 star 숫자 필드 추출
+    let extractBuzz (markdownContent: string) =
+        let frontMatterPattern = @"^\s*---\s*\n([\s\S]*?)\n\s*---\s*\n"
+        let frontMatterMatch = Regex.Match(markdownContent, frontMatterPattern)
+        if frontMatterMatch.Success then
+            let yamlContent = frontMatterMatch.Groups.[1].Value
+            // buzz: 또는 star: 중 있는 것 사용
+            let pattern = @"(?:^|\n)(?:buzz|star):\s*(\d+)"
+            let m = Regex.Match(yamlContent, pattern)
+            if m.Success then
+                match System.Int32.TryParse(m.Groups.[1].Value.Trim()) with
+                | true, n -> Some n
+                | _ -> None
+            else None
+        else None
+
     // 마크다운 내용에서 첫 번째 문단을 요약으로 추출
     let extractSummary (markdownContent: string) =
         // YAML 프론트매터 제거

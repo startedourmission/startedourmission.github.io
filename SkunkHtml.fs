@@ -337,6 +337,45 @@
                 </section>
                 """
 
+        // Stars 섹션 (Star 태그를 가진 person 노트, buzz/star 점수 내림차순 top 10)
+        let starPosts =
+            allPosts
+            |> List.filter (fun post -> post.Tags |> List.exists (fun tag -> tag.ToLower() = "star"))
+            |> List.sortByDescending (fun post -> post.Buzz |> Option.defaultValue 0)
+            |> List.truncate 10
+
+        let starsHtml =
+            if starPosts.IsEmpty then ""
+            else
+                let starItemsHtml =
+                    starPosts
+                    |> List.map (fun post ->
+                        let avatarHtml =
+                            match post.ImageUrl with
+                            | Some imageUrl -> $"""<img src="{imageUrl}" alt="{post.Title}" class="star-avatar" />"""
+                            | None -> """<img src="assets/notion_avatar.png" alt="avatar" class="star-avatar" />"""
+                        let buzzHtml =
+                            match post.Buzz with
+                            | Some n when n > 0 -> $"""<span class="star-score">{n}</span>"""
+                            | _ -> ""
+                        $"""
+                        <li class="star-item">
+                            <a href="{post.Url}" class="star-link">
+                                {avatarHtml}
+                                <span class="star-name">{post.Title}</span>
+                                {buzzHtml}
+                            </a>
+                        </li>""")
+                    |> String.concat "\n            "
+                $"""
+                <section class="stars-section">
+                    <h2 class="stars-title">Stars</h2>
+                    <ul class="stars-list">
+            {starItemsHtml}
+                    </ul>
+                </section>
+                """
+
         // 검색 인덱스 직렬화 (제목 · 설명 · 태그 · 카테고리 · 날짜로 클라이언트 검색)
         let searchIndexJson =
             allPosts
@@ -373,6 +412,7 @@
             $"""
         {frontPageContentHtml}
         {searchViewHtml}
+        {starsHtml}
         {headlinerHtml}
         {tagsHtml}
         """

@@ -93,6 +93,7 @@ let main argv =
             let summary = Obsidian.extractSummary content
             let description = Obsidian.extractDescription content
             let tags = Obsidian.extractTags content
+            let buzz = Obsidian.extractBuzz content
 
             // 파일이 어떤 폴더에 속하는지 확인
             let category =
@@ -123,6 +124,7 @@ let main argv =
                 Summary = summary
                 Description = description
                 Tags = tags
+                Buzz = buzz
             })
         |> Array.sortByDescending (fun post -> post.Date)
         |> Array.toList
