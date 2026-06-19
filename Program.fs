@@ -117,6 +117,7 @@ let main argv =
             {
                 Title = filename
                 Url = $"{hashId}.html"
+                SourcePath = file
                 ImageUrl = imageUrl
                 Category = category
                 SubCategory = subCategory

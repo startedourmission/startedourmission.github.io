@@ -3,6 +3,7 @@
 type Post = {
     Title: string
     Url: string
+    SourcePath: string
     ImageUrl: string option
     Category: string
     SubCategory: string option

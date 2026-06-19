@@ -785,6 +785,36 @@
         printfn $"Processing tag page: {tagName} -> {tagPosts.Length} posts"
         Disk.writeFile outputPath tagPageHtml
 
+    let private cdata (content: string) =
+        $"<![CDATA[{content.Replace("]]>", "]]]]><![CDATA[>")}]]>"
+
+    let private makeFeedUrlsAbsolute (html: string) =
+        let prefixAbsoluteUrl (m: Match) =
+            let attr = m.Groups.["attr"].Value
+            let url = m.Groups.["url"].Value
+            if url.StartsWith("/") then
+                $"{attr}{Config.blogBaseUrl}{url}"
+            else
+                $"{attr}{Config.blogBaseUrl}/{url}"
+
+        Regex.Replace(
+            html,
+            "(?<attr>\\s(?:href|src)=\")(?<url>(?!https?://|mailto:|tel:|data:|#)[^\"]+)",
+            MatchEvaluator(prefixAbsoluteUrl))
+
+    let private renderRssContent (post: Post) =
+        if File.Exists(post.SourcePath) then
+            File.ReadAllText(post.SourcePath)
+            |> Obsidian.removeYamlFrontMatter
+            |> Obsidian.convertWikiLinks post.SourcePath
+            |> (fun md -> Regex.Replace(md, "(?m)^#+\s", "\n<!-- -->\n$0"))
+            |> Markdown.ToHtml
+            |> expandArchMarkers
+            |> makeFeedUrlsAbsolute
+            |> cdata
+        else
+            cdata ""
+
     let private renderRssItems (posts: Post list) =
         posts
         |> List.map (fun post ->
@@ -798,8 +828,10 @@
             // description은 YAML의 description 사용
             let description =
                 match post.Description with
-                | Some desc -> $"<![CDATA[\n  {desc}\n]]>"
-                | None -> "<![CDATA[]]>"
+                | Some desc -> cdata desc
+                | None -> cdata ""
+
+            let content = renderRssContent post
 
             // enclosure 태그 생성 (이미지가 있는 경우)
             let enclosureTag =
@@ -814,12 +846,13 @@
                 | None -> ""
 
             $"""<item>
-<title><![CDATA[ {post.Title} ]]></title>
+<title>{cdata post.Title}</title>
 <link>{postUrl}</link>
 <guid isPermaLink="true">{postUrl}</guid>
 <pubDate>{pubDate}</pubDate>
 
-<description>{description}</description>{enclosureTag}
+<description>{description}</description>
+<content:encoded>{content}</content:encoded>{enclosureTag}
 </item>"""
         )
         |> String.concat "\n"
@@ -837,7 +870,7 @@
 
         let rssXml =
             $"""<?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
 <channel>
     <title>{channelTitle}</title>
     <link>{Config.blogBaseUrl}</link>
