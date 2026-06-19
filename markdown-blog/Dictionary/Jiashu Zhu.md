@@ -15,4 +15,4 @@ aliases:
 
 세계 모델 평가 분야에서는 Omni-WorldBench(2026) 공동 저자로 인터랙션 중심 4D 평가 기준을 설계했습니다. minWM(shengshu-ai/minWM)은 실시간 인터랙티브 월드 모델을 위한 최소·우아한 프레임워크로, 이 분야를 처음 접하는 연구자를 위한 참고 구현으로 널리 쓰입니다.
 
-[[DreamX-World 1.0 - A General-Purpose Interactive World Model|DreamX-World 1.0]]에서는 DreamX Team의 일원으로 추론 가속화와 풀스택 설계에 기여했습니다. [[Xiangxiang Chu]], [[Jiachen Lei]]와 함께 AMAP-ML 인터랙티브 월드 모델 라인을 이끄는 연구자입니다.
+[[DreamX-World 1.0 - A General-Purpose Interactive World Model|DreamX-World 1.0]]에서는 DreamX Team의 일원으로 추론 가속화와 풀스택 설계에 기여했습니다. [[추샹샹]], [[Jiachen Lei]]와 함께 AMAP-ML 인터랙티브 월드 모델 라인을 이끄는 연구자입니다.

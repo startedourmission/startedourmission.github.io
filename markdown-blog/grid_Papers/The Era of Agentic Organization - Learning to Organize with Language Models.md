@@ -14,11 +14,11 @@ buzz: 112
 
 ## 저자
 
-1저자 [[Zewen Chi]]는 Microsoft Research GenAI 그룹 연구원으로 베이징이공대 박사를 2024년에 마치고 정규 합류했습니다. 초기에는 다국어 인코더(XY-LENT, InfoXLM)와 [[Microsoft Research Asia]]의 멀티모달 라인(Kosmos-1)에 참여했고, 본인 표현으로 최근 라인은 "agentic LLM과 inference-time scaling"으로 명시적으로 옮겨졌습니다. AsyncThink가 그 첫 가시적 결과물입니다.
+1저자 [[치쩌원]]는 Microsoft Research GenAI 그룹 연구원으로 베이징이공대 박사를 2024년에 마치고 정규 합류했습니다. 초기에는 다국어 인코더(XY-LENT, InfoXLM)와 [[Microsoft Research Asia]]의 멀티모달 라인(Kosmos-1)에 참여했고, 본인 표현으로 최근 라인은 "agentic LLM과 inference-time scaling"으로 명시적으로 옮겨졌습니다. AsyncThink가 그 첫 가시적 결과물입니다.
 
-[[Li Dong]]과 [[Furu Wei]]가 2저자·시니어 저자로 붙는 구도는 MSR Asia NLP/멀티모달 라인의 정석 패턴입니다. 두 사람이 사실상 공동으로 그룹을 운영하면서 UniLM, MiniLM, InfoXLM, BEiT, Kosmos, WavLM까지 분야 횡단 시리즈를 끌어왔는데, AsyncThink는 그 그룹이 "대규모 사전학습"에서 "agentic LLM"으로 이동하는 표시판에 가깝습니다.
+[[둥리]]과 [[웨이푸루]]가 2저자·시니어 저자로 붙는 구도는 MSR Asia NLP/멀티모달 라인의 정석 패턴입니다. 두 사람이 사실상 공동으로 그룹을 운영하면서 UniLM, MiniLM, InfoXLM, BEiT, Kosmos, WavLM까지 분야 횡단 시리즈를 끌어왔는데, AsyncThink는 그 그룹이 "대규모 사전학습"에서 "agentic LLM"으로 이동하는 표시판에 가깝습니다.
 
-공저자 [[Qingxiu Dong]]은 베이징대 박사 4년차로 인컨텍스트 학습 서베이의 1저자로 가장 잘 알려져 있고, [[Zewen Chi]]와 같이 MSR Asia 인턴 라인에서 합류했습니다. organizer가 자기 사고 구조를 동적으로 결정하는 방식은 그의 in-context learning 배경과 자연스럽게 맞물립니다.
+공저자 [[둥칭슈]]은 베이징대 박사 4년차로 인컨텍스트 학습 서베이의 1저자로 가장 잘 알려져 있고, [[치쩌원]]와 같이 MSR Asia 인턴 라인에서 합류했습니다. organizer가 자기 사고 구조를 동적으로 결정하는 방식은 그의 in-context learning 배경과 자연스럽게 맞물립니다.
 
 나머지 공저자 Yaru Hao, Xun Wu, Shaohan Huang은 같은 GenAI 그룹의 시니어 연구원들로, 그룹 차원에서 같은 시기 진행되는 reward modeling 라인(Reward Reasoning Model, arXiv 2505.14674)에도 함께 이름이 올라갑니다. AsyncThink가 단일 페이퍼가 아니라 그룹 전략의 한 조각이라는 신호입니다.
 

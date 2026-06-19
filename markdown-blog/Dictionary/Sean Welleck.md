@@ -16,4 +16,4 @@ aliases:
 
 최근에는 **DARPA expMath** 그랜트의 lead PI로 선정돼 AI for mathematics 프로젝트를 이끌고 있습니다. CMU 내 Hoskinson Center for Formal Mathematics에도 소속돼 있어, 형식 수학(formal mathematics)과 LLM의 접점에서 연구를 진행합니다.
 
-2026년 [[Guijin Son]]이 1저자인 **SOOHAK** 벤치마크의 조직 팀에 합류했습니다. SOOHAK이 한계로 짚은 "proof-assistant 기반 채점으로의 확장"이 바로 그의 본업이라는 점에서, 다음 단계 벤치마크 설계에서도 핵심 역할을 할 가능성이 큽니다.
+2026년 [[손귀진]]이 1저자인 **SOOHAK** 벤치마크의 조직 팀에 합류했습니다. SOOHAK이 한계로 짚은 "proof-assistant 기반 채점으로의 확장"이 바로 그의 본업이라는 점에서, 다음 단계 벤치마크 설계에서도 핵심 역할을 할 가능성이 큽니다.

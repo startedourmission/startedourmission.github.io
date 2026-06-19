@@ -14,19 +14,19 @@ buzz: 114
 
 멀티모달 모델은 오래 이중적인 구조를 끌고 왔습니다. 이해(understanding) 쪽은 사전학습된 vision encoder(CLIP·SigLIP·DINOv2 같은)가 이미지를 의미 토큰으로 바꾸고, 생성(generation) 쪽은 VAE가 픽셀을 latent로 압축해 diffusion이 그 위에서 돕니다. 같은 트랜스포머 백본에 둘을 얹어도 토크나이저·헤드·학습 목표가 갈라져 있어서 진짜로 하나의 시스템이라고 말하긴 어려웠습니다.
 
-SenseTime의 [[Haiwen Diao]]가 끌고 온 SenseNova-U1은 그 두 다리를 둘 다 잘라 버립니다. vision encoder도, VAE도 없습니다. 픽셀과 단어를 처음부터 한 트랜스포머 안의 같은 스트림으로 보고, 32×32 패치 단위로 자르고, 32× 압축률로 X2I(any-to-image) 생성까지 같이 합니다. 2026년 5월 12일 arXiv 공개, Apache 2.0 라이선스, dense 8B와 30B-A3B MoE 두 변종을 동시에 풀었습니다.
+SenseTime의 [[디아오 하이웬]]가 끌고 온 SenseNova-U1은 그 두 다리를 둘 다 잘라 버립니다. vision encoder도, VAE도 없습니다. 픽셀과 단어를 처음부터 한 트랜스포머 안의 같은 스트림으로 보고, 32×32 패치 단위로 자르고, 32× 압축률로 X2I(any-to-image) 생성까지 같이 합니다. 2026년 5월 12일 arXiv 공개, Apache 2.0 라이선스, dense 8B와 30B-A3B MoE 두 변종을 동시에 풀었습니다.
 
 ## 저자
 
-Project Sponsor and Advisor는 [[Dahua Lin]] 단독 1인입니다. CUHK MMLab을 끌고 SenseTime을 공동창업한 인물이 모델·데이터·평가 전체에 우산을 씌운 구조입니다. Senior Project Lead 6명에는 NTU MMLab의 [[Ziwei Liu]], SenseTime Research의 [[Lewei Lu]]·Quan Wang·Wenxiu Sun, spatial intelligence 라인의 [[Lei Yang]], 경량화·서빙 라인의 [[Ruihao Gong]]이 들어갔습니다. Project Lead는 [[Haiwen Diao]] 한 명입니다.
+Project Sponsor and Advisor는 [[린 다후아]] 단독 1인입니다. CUHK MMLab을 끌고 SenseTime을 공동창업한 인물이 모델·데이터·평가 전체에 우산을 씌운 구조입니다. Senior Project Lead 6명에는 NTU MMLab의 [[리우 즈웨이]], SenseTime Research의 [[루 르웨이]]·Quan Wang·Wenxiu Sun, spatial intelligence 라인의 [[양 레이]], 경량화·서빙 라인의 [[공 루이하오]]이 들어갔습니다. Project Lead는 [[디아오 하이웬]] 한 명입니다.
 
-이 명단을 보면 합류 동기가 비교적 선명하게 읽힙니다. [[Haiwen Diao]]는 EVE·EVEv2·NEO·NEO-unify로 본인이 끌고 온 encoder-free 노선의 산업적 결정판을 [[Dahua Lin]] 우산 아래 만들고 싶었던 것이고, [[Lewei Lu]]·[[Ruihao Gong]] 라인은 SenseTime 내부의 LIGHTLLM·LIGHTX2V·Phased DMD 같은 추론 인프라를 native unified 위에 얹는 역할입니다. [[Lei Yang]]은 SenseNova-SI에서 쌓은 spatial intelligence 평가 자산을 U1 평가에 그대로 끌어들였습니다.
+이 명단을 보면 합류 동기가 비교적 선명하게 읽힙니다. [[디아오 하이웬]]는 EVE·EVEv2·NEO·NEO-unify로 본인이 끌고 온 encoder-free 노선의 산업적 결정판을 [[린 다후아]] 우산 아래 만들고 싶었던 것이고, [[루 르웨이]]·[[공 루이하오]] 라인은 SenseTime 내부의 LIGHTLLM·LIGHTX2V·Phased DMD 같은 추론 인프라를 native unified 위에 얹는 역할입니다. [[양 레이]]은 SenseNova-SI에서 쌓은 spatial intelligence 평가 자산을 U1 평가에 그대로 끌어들였습니다.
 
 ## 배경
 
 UMM(unified multimodal model) 줄기는 크게 두 갈래로 갈라져 있었습니다. 하나는 모든 모달리티를 discrete token으로 떨어뜨려 autoregressive로 묶는 노선입니다. Chameleon, Emu3, Janus가 여기에 가깝습니다. 시각이 lossy하게 압축되는 게 약점입니다. 다른 하나는 continuous한 시각 인터페이스를 가져가는 노선입니다. Show-o, OmniGen, BAGEL이 여기에 있고, 일부는 공유 tokenizer를, 일부는 representation autoencoder를 두지만, 결국 중간 표현이 의미와 픽셀 정밀도를 동시에 만족시키지 못한다는 본질적 한계는 그대로였습니다.
 
-이 와중에 픽셀 공간에서 직접 모델링이 가능하다는 신호가 두 군데서 동시에 나왔습니다. 하나는 [[Haiwen Diao]] 본인의 EVE 계열이 "vision encoder 없이도 디코더만으로 vision-language가 된다"를 증명한 흐름, 다른 하나는 Tianhong Li·Kaiming He의 JiT·PixelFlow 계열이 "VAE latent 없이 픽셀에서 직접 diffusion이 된다"를 보인 흐름입니다. SenseNova-U1은 이 두 신호를 한 모델 안에서 동시에 실현한 첫 사례입니다. 그래서 논문이 굳이 "first principles로 돌아간다"는 표현을 반복합니다.
+이 와중에 픽셀 공간에서 직접 모델링이 가능하다는 신호가 두 군데서 동시에 나왔습니다. 하나는 [[디아오 하이웬]] 본인의 EVE 계열이 "vision encoder 없이도 디코더만으로 vision-language가 된다"를 증명한 흐름, 다른 하나는 Tianhong Li·Kaiming He의 JiT·PixelFlow 계열이 "VAE latent 없이 픽셀에서 직접 diffusion이 된다"를 보인 흐름입니다. SenseNova-U1은 이 두 신호를 한 모델 안에서 동시에 실현한 첫 사례입니다. 그래서 논문이 굳이 "first principles로 돌아간다"는 표현을 반복합니다.
 
 ## NEO-unify 디자인
 
@@ -55,7 +55,7 @@ UMM(unified multimodal model) 줄기는 크게 두 갈래로 갈라져 있었습
 | MathVision | **75.82** | 62.70 |
 | OCRBench | **82.10** | 81.90 |
 
-Spatial intelligence(VSI-Bench, ViewSpatial, MindCube-Tiny, 3DSR-Bench) 트랙은 [[Lei Yang]] 라인이 끌고 들어와 32-frame 기준으로 Qwen3VL을 추월합니다. Qwen3VL이 128-frame을 써야 비교 가능한 점수를 내는 항목들이 따로 별표로 표시돼 있습니다.
+Spatial intelligence(VSI-Bench, ViewSpatial, MindCube-Tiny, 3DSR-Bench) 트랙은 [[양 레이]] 라인이 끌고 들어와 32-frame 기준으로 Qwen3VL을 추월합니다. Qwen3VL이 128-frame을 써야 비교 가능한 점수를 내는 항목들이 따로 별표로 표시돼 있습니다.
 
 생성 쪽 핵심 지표는 다음과 같습니다.
 

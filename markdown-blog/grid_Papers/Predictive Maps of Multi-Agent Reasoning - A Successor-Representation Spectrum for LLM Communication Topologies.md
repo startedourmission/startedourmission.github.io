@@ -14,11 +14,11 @@ buzz: 0
 
 멀티에이전트 LLM 시스템을 짤 때 가장 답답한 순간은, 똑같은 모델을 chain으로 묶을지 star로 묶을지 mesh로 묶을지 결정하는 자리입니다. 아무도 *어느 토폴로지가 drift에 약한가*, *어느 토폴로지가 consensus를 잘 만드는가*를 미리 알지 못합니다. 일단 돌려보고 망가지면 다른 모양으로 갈아끼우는 식으로 일이 흘러갑니다. AutoGen·MetaGPT·CrewAI·LangGraph 같은 프레임워크가 topology를 1급 설정값으로 만들었지만, 그 설정값을 *고르는 기준*은 여전히 시행착오 한 가지입니다.
 
-University of Arizona의 [[Ethan David James Parks]]와 [[Dalal Alharthi]]가 arXiv에 올린 [Predictive Maps of Multi-Agent Reasoning](https://arxiv.org/abs/2605.11453)은 이 자리에 도구 하나를 갖다 놓습니다. 그래프 자체에서 세 개의 고윳값을 뽑아 추론을 돌리기 전에 토폴로지를 줄세우자는 제안입니다. 강화학습에서 30년 된 successor representation을, 신경과학이 hippocampal predictive map의 후보로 받아간 그 객체를 통신 그래프에 그대로 얹습니다.
+University of Arizona의 [[Ethan David James Parks]]와 [[달랄 알하르티]]가 arXiv에 올린 [Predictive Maps of Multi-Agent Reasoning](https://arxiv.org/abs/2605.11453)은 이 자리에 도구 하나를 갖다 놓습니다. 그래프 자체에서 세 개의 고윳값을 뽑아 추론을 돌리기 전에 토폴로지를 줄세우자는 제안입니다. 강화학습에서 30년 된 successor representation을, 신경과학이 hippocampal predictive map의 후보로 받아간 그 객체를 통신 그래프에 그대로 얹습니다.
 
 ## 저자
 
-저자는 두 명뿐입니다. [[Ethan David James Parks]]가 1저자, [[Dalal Alharthi]]가 시니어입니다. Alharthi는 University of Arizona의 사이버보안 조교수로 클라우드·컨테이너 보안과 AI 보안 위협을 함께 다루는 사람입니다. Parks는 공개 프로필이 거의 없는 신진으로, 이 논문이 공개 트랙에서 잡히는 첫 1저자 논문입니다.
+저자는 두 명뿐입니다. [[Ethan David James Parks]]가 1저자, [[달랄 알하르티]]가 시니어입니다. Alharthi는 University of Arizona의 사이버보안 조교수로 클라우드·컨테이너 보안과 AI 보안 위협을 함께 다루는 사람입니다. Parks는 공개 프로필이 거의 없는 신진으로, 이 논문이 공개 트랙에서 잡히는 첫 1저자 논문입니다.
 
 분야 조합이 흥미롭습니다. 강화학습의 successor representation, 신경과학의 predictive map, 그래프 신호처리의 over-squashing, 그리고 LLM 멀티에이전트 실패 모드 catalog — 한 분야의 깊이로는 안 나오는 조합입니다. 시니어가 사이버보안에서 들어왔기에 *공격자가 한 leaf만 잡으면 그래프 진단이 얼마나 망가지는가*를 묻는 부록 A.6 같은 줄기가 자연스럽게 본문에 끼어들었습니다. 1저자 쪽에서는 chain·star·mesh의 closed-form 고윳값 유도부터 √k 예측, 100 trial 실험까지 한 트랙으로 밀어붙였습니다.
 

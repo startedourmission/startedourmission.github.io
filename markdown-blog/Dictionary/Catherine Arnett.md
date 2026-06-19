@@ -14,4 +14,4 @@ aliases:
 
 저자원 언어 LM 작업으로 힌디어 모델 **LilMoo**와 벵골어 모델 **LilTii**를 공개했고, 각 언어용 큐레이션 데이터셋도 함께 배포했습니다. 2025년 COLM에서 열린 1회 **Workshop on Multilingual Data Quality Signals (WMDQS)**의 조직자로 참여했습니다.
 
-2026년에는 [[Guijin Son]]이 1저자인 **SOOHAK** 벤치마크의 조직 팀에 들어갔습니다. SOOHAK이 한↔영 양방향 이중언어 벤치마크라는 점에서 다국어 NLP 전문성이 필요한 자리였습니다.
+2026년에는 [[손귀진]]이 1저자인 **SOOHAK** 벤치마크의 조직 팀에 들어갔습니다. SOOHAK이 한↔영 양방향 이중언어 벤치마크라는 점에서 다국어 NLP 전문성이 필요한 자리였습니다.

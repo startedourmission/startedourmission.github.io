@@ -10,11 +10,11 @@ image: "![[backprop-symmetry-network.png]]"
 
 > D. E. Rumelhart, G. E. Hinton, and R. J. Williams, "Learning representations by back-propagating errors," Nature, vol. 323, pp. 533-536, 1986.
 
-다층 신경망을 어떻게 훈련할 것인가. 1986년에는 답이 없는 질문이었습니다. 단층 퍼셉트론은 XOR도 풀지 못한다는 비판이 17년 동안 신경망 연구를 얼려놓았고, 깊이를 늘리면 학습 신호를 어떻게 흘려야 할지 아무도 정리하지 못한 상태였습니다. [[David Rumelhart]], [[Geoffrey Hinton]], [[Ronald Williams]] 세 사람은 4페이지짜리 Nature 논문 한 편으로 이 문제를 정리해버립니다. 그 알고리즘이 오늘날 우리가 부르는 역전파(back-propagation)입니다.
+다층 신경망을 어떻게 훈련할 것인가. 1986년에는 답이 없는 질문이었습니다. 단층 퍼셉트론은 XOR도 풀지 못한다는 비판이 17년 동안 신경망 연구를 얼려놓았고, 깊이를 늘리면 학습 신호를 어떻게 흘려야 할지 아무도 정리하지 못한 상태였습니다. [[데이비드 루멜하트]], [[제프리 힌턴]], [[로널드 윌리엄스]] 세 사람은 4페이지짜리 Nature 논문 한 편으로 이 문제를 정리해버립니다. 그 알고리즘이 오늘날 우리가 부르는 역전파(back-propagation)입니다.
 
 ## 저자
 
-세 저자 모두 1980년대 connectionism 부흥의 한복판에 있던 사람들입니다. [[David Rumelhart]]는 UCSD Institute for Cognitive Science에서 PDP(parallel distributed processing) 그룹을 이끌고 있었고, 같은 해 출간된 3권짜리 PDP 시리즈로 분야의 교과서를 함께 정리하던 중이었습니다. [[Ronald Williams]]는 1983-1986년 사이 UCSD PDP 그룹에서 Rumelhart와 함께 일한 뒤 이 논문이 나온 해에 노스이스턴대로 옮겨갑니다. [[Geoffrey Hinton]]은 당시 카네기멜론대 컴퓨터과학과에서 신경망 연구를 이끌고 있었고, Boltzmann Machine 작업과 PDP 프로젝트에 동시에 발을 걸치고 있었습니다.
+세 저자 모두 1980년대 connectionism 부흥의 한복판에 있던 사람들입니다. [[데이비드 루멜하트]]는 UCSD Institute for Cognitive Science에서 PDP(parallel distributed processing) 그룹을 이끌고 있었고, 같은 해 출간된 3권짜리 PDP 시리즈로 분야의 교과서를 함께 정리하던 중이었습니다. [[로널드 윌리엄스]]는 1983-1986년 사이 UCSD PDP 그룹에서 Rumelhart와 함께 일한 뒤 이 논문이 나온 해에 노스이스턴대로 옮겨갑니다. [[제프리 힌턴]]은 당시 카네기멜론대 컴퓨터과학과에서 신경망 연구를 이끌고 있었고, Boltzmann Machine 작업과 PDP 프로젝트에 동시에 발을 걸치고 있었습니다.
 
 세 사람이 손을 잡은 동기는 명확합니다. PDP 시리즈는 "분산 표상이 인지를 설명한다"는 큰 주장을 펼치고 있었는데, 그 주장이 작동하려면 *다층 네트워크가 실제로 학습될 수 있다*는 증거가 필요했습니다. 역전파는 그 자리에 들어갈 알고리즘이었습니다. 논문 자체는 4페이지로 짧지만, 같은 해 PDP Vol. 1의 8장에 더 긴 버전이 실립니다.
 

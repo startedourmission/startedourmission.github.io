@@ -16,7 +16,7 @@ GUI 에이전트의 가장 큰 병목은 모델이 아니라 데이터입니다.
 
 ## 저자
 
-학계와 산업계가 한 팀으로 붙은 구조입니다. 1저자 [[Weimin Xiong]]은 베이징대학교(PKU) [[Sujian Li]] 그룹의 박사과정 학생으로, Xiaomi LLM-Core 팀 인턴 기간에 이 작업을 수행했습니다. corresponding author는 PKU 쪽의 [[Sujian Li]]와 Xiaomi 쪽의 [[Hao Tian]] 두 명입니다. Xiaomi MiMo-VL 라인에 깊이 관여한 [[Lei Li (HKU)|Lei Li]]가 공저자로 들어와 있는 것도 이번 평가에서 MiMo-VL이 Qwen2.5-VL과 동급 베이스로 비교되는 구도와 직결됩니다. 공저자 중 [[Zihao Yue]]는 RUC Qin Jin 그룹의 비디오 사전학습 연구자로, 30만 시간 분량 영상을 다루는 파이프라인 쪽에 자연스럽게 결합됐다고 보면 됩니다.
+학계와 산업계가 한 팀으로 붙은 구조입니다. 1저자 [[슝웨이민]]은 베이징대학교(PKU) [[리수젠]] 그룹의 박사과정 학생으로, Xiaomi LLM-Core 팀 인턴 기간에 이 작업을 수행했습니다. corresponding author는 PKU 쪽의 [[리수젠]]와 Xiaomi 쪽의 [[톈하오]] 두 명입니다. Xiaomi MiMo-VL 라인에 깊이 관여한 [[Lei Li (HKU)|Lei Li]]가 공저자로 들어와 있는 것도 이번 평가에서 MiMo-VL이 Qwen2.5-VL과 동급 베이스로 비교되는 구도와 직결됩니다. 공저자 중 [[Zihao Yue]]는 RUC Qin Jin 그룹의 비디오 사전학습 연구자로, 30만 시간 분량 영상을 다루는 파이프라인 쪽에 자연스럽게 결합됐다고 보면 됩니다.
 
 요약하면 데이터·평가 기획은 PKU NLP 그룹, 모델 베이스와 컴퓨트는 Xiaomi LLM-Core MiMo 라인, 비디오 처리 노하우는 RUC 측이 묶인 형태입니다.
 

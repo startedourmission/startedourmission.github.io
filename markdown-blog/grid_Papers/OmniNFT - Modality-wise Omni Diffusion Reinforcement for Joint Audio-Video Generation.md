@@ -18,11 +18,11 @@ Sora·Veo 3·Movie Gen 흐름을 지나오면서 *비디오 생성*의 표면이
 
 ## 저자
 
-USTC + [[JD Explore Academy]] 합작 라인업입니다. 1저자 [[Guohui Zhang]]은 USTC [[Feng Zhao]] 연구실 박사과정으로, MaskFocus(2025)·Group Critical-Token Policy Optimization(2025) 등 *image generation에서 정책 최적화를 critical 영역에 집중시킨다*는 연구를 이어온 사람입니다. 본 논문의 region-wise loss reweighting은 그 발상의 연장입니다.
+USTC + [[JD Explore Academy]] 합작 라인업입니다. 1저자 [[장궈후이]]은 USTC [[자오펑]] 연구실 박사과정으로, MaskFocus(2025)·Group Critical-Token Policy Optimization(2025) 등 *image generation에서 정책 최적화를 critical 영역에 집중시킨다*는 연구를 이어온 사람입니다. 본 논문의 region-wise loss reweighting은 그 발상의 연장입니다.
 
-교신 저자 [[Feng Zhao]]는 USTC 자동화학과 정교수로 컴퓨터 비전·멀티모달 모델 연구 그룹을 이끌고 있습니다. 같은 연구실에서 [[Hu Yu]], Xiaoxiao Ma, Jie Huang, Hang Xu가 함께 OmniNFT에 이름을 올렸습니다.
+교신 저자 [[자오펑]]는 USTC 자동화학과 정교수로 컴퓨터 비전·멀티모달 모델 연구 그룹을 이끌고 있습니다. 같은 연구실에서 [[위후]], Xiaoxiao Ma, Jie Huang, Hang Xu가 함께 OmniNFT에 이름을 올렸습니다.
 
-산업 랩 측에서는 [[Lin Song]]이 *project leader*로 들어왔습니다. CVPR 2024 YOLO-World의 공동·교신 저자로 알려진 비전 연구자입니다. 시니어 라인의 [[Nan Duan]]은 JD Explore Academy Vision and Multimodal Lab 디렉터로, 마이크로소프트 리서치 아시아 NLP 그룹과 StepFun을 거쳐 합류한 인물입니다. 19B 규모 [[LTX-2]] backbone에 RL fine-tuning을 도는 컴퓨트 무거운 셋업이라, 학교 측 RL 연구 라인과 산업 측 인프라·데이터가 맞물려야 굴러가는 구조가 자연스럽게 만들어졌습니다.
+산업 랩 측에서는 [[송린]]이 *project leader*로 들어왔습니다. CVPR 2024 YOLO-World의 공동·교신 저자로 알려진 비전 연구자입니다. 시니어 라인의 [[두안난]]은 JD Explore Academy Vision and Multimodal Lab 디렉터로, 마이크로소프트 리서치 아시아 NLP 그룹과 StepFun을 거쳐 합류한 인물입니다. 19B 규모 [[LTX-2]] backbone에 RL fine-tuning을 도는 컴퓨트 무거운 셋업이라, 학교 측 RL 연구 라인과 산업 측 인프라·데이터가 맞물려야 굴러가는 구조가 자연스럽게 만들어졌습니다.
 
 ## 배경
 

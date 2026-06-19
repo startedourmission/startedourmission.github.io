@@ -13,11 +13,11 @@ buzz: 15
 
 ## 저자
 
-1저자 [[Yilong Xu]]는 중국과학원 컴퓨팅기술연구소(CAS ICT) 박사과정이고 ModelBest Inc.에서 인턴으로 모델 연구를 병행합니다. 그동안 retrieval-augmented LLM 라인을 따라 인용 평가(Aliice), utility-based retriever 학습, agentic search 평가(Ravine)를 차곡차곡 쌓아왔습니다. Self-Manager는 그 라인의 자연스러운 다음 칸으로, 검색을 잘하는 에이전트에서 복수의 검색 줄기를 동시에 굴리는 에이전트로 한 단계 더 올린 것입니다.
+1저자 [[쉬이룽]]는 중국과학원 컴퓨팅기술연구소(CAS ICT) 박사과정이고 ModelBest Inc.에서 인턴으로 모델 연구를 병행합니다. 그동안 retrieval-augmented LLM 라인을 따라 인용 평가(Aliice), utility-based retriever 학습, agentic search 평가(Ravine)를 차곡차곡 쌓아왔습니다. Self-Manager는 그 라인의 자연스러운 다음 칸으로, 검색을 잘하는 에이전트에서 복수의 검색 줄기를 동시에 굴리는 에이전트로 한 단계 더 올린 것입니다.
 
-시니어 저자는 UC Merced NLP Lab을 이끄는 [[Yiwei Wang]]입니다. 분할 정복으로 LLM을 제어하는 라인을 EMNLP 2024부터 진행했고, 컨텍스트 충실성 정렬(Context-DPO)을 ACL 2025에 발표했습니다. Self-Manager의 thread 격리 컨텍스트 관리도 "control" 키워드의 연장으로 읽힙니다.
+시니어 저자는 UC Merced NLP Lab을 이끄는 [[왕이웨이]]입니다. 분할 정복으로 LLM을 제어하는 라인을 EMNLP 2024부터 진행했고, 컨텍스트 충실성 정렬(Context-DPO)을 ACL 2025에 발표했습니다. Self-Manager의 thread 격리 컨텍스트 관리도 "control" 키워드의 연장으로 읽힙니다.
 
-공저자 [[Yujun Cai]]는 University of Queensland 강사로, Meta Research Scientist 이력을 가진 멀티모달 연구자입니다. 같은 Queensland 그룹의 Xiang Long과 함께 평가·실험 설계 쪽으로 합류한 것으로 보입니다. Zhi Zheng은 ModelBest의 MiniCPM 라인 공저자로, 1저자의 ModelBest 라인 쪽 멘토 역할로 추정됩니다.
+공저자 [[차이위쥔]]는 University of Queensland 강사로, Meta Research Scientist 이력을 가진 멀티모달 연구자입니다. 같은 Queensland 그룹의 Xiang Long과 함께 평가·실험 설계 쪽으로 합류한 것으로 보입니다. Zhi Zheng은 ModelBest의 MiniCPM 라인 공저자로, 1저자의 ModelBest 라인 쪽 멘토 역할로 추정됩니다.
 
 다섯 명을 한 줄로 묶으면 retrieval-기반 LLM 그룹 + control-기반 LLM 그룹 + 멀티모달 평가 그룹의 교집합입니다. agentic search라는 키워드가 이 셋을 한 자리에 모은 것에 가깝습니다.
 

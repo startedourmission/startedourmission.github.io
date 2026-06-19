@@ -13,4 +13,4 @@ aliases:
 
 천진대학교 학부, Asian Institute of Technology 석사를 거쳐 2005년 University of Waterloo에서 컴퓨터과학 박사 학위를 받았습니다. SIGMOD Test-of-Time Award(2015), VLDB Best Research Paper Award(2022), Google Faculty Award(2013)를 수상했습니다. 2026년 Springer에서 출판한 「Graph Neural Network Training: From Data Management Perspective」는 GNN 훈련 전반을 데이터 관리 관점에서 체계화한 종합서입니다.
 
-[[HyGRAG - A Unified Framework for Context-Aware and Relation-Aware Graph Retrieval-Augmented Generation]]에서는 FinVolution 소속으로 공동 교신저자를 맡았습니다. [[Yang Yang]], [[Yifei Sun]], [[Chunping Wang]]과 복수의 연구를 함께 진행하는 핵심 협력 인물입니다.
+[[HyGRAG - A Unified Framework for Context-Aware and Relation-Aware Graph Retrieval-Augmented Generation]]에서는 FinVolution 소속으로 공동 교신저자를 맡았습니다. [[양양]], [[Yifei Sun]], [[Chunping Wang]]과 복수의 연구를 함께 진행하는 핵심 협력 인물입니다.

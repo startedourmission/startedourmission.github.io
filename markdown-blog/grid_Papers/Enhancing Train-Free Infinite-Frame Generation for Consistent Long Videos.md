@@ -18,9 +18,9 @@ buzz: 52
 
 ## 저자
 
-알리바바 AMAP 측 8명과 학계 CASIA 측 1명이 묶인 형태입니다. 1저자 [[Xiaokun Feng]]은 중국과학원 자동화연구소(CASIA) 박사과정 학생으로, 본 작업은 알리바바 AMAP 인턴 기간에 수행한 것입니다. 본 전공은 visual-language object tracking이라 프레임 간 일관성 평가를 추적 도메인 감각으로 다룹니다. 본 논문의 self-reflection이 cosine similarity 기반 anomaly detection으로 풀린 점이 그 출신과 잘 맞아 떨어집니다.
+알리바바 AMAP 측 8명과 학계 CASIA 측 1명이 묶인 형태입니다. 1저자 [[펑샤오쿤]]은 중국과학원 자동화연구소(CASIA) 박사과정 학생으로, 본 작업은 알리바바 AMAP 인턴 기간에 수행한 것입니다. 본 전공은 visual-language object tracking이라 프레임 간 일관성 평가를 추적 도메인 감각으로 다룹니다. 본 논문의 self-reflection이 cosine similarity 기반 anomaly detection으로 풀린 점이 그 출신과 잘 맞아 떨어집니다.
 
-corresponding author는 두 명입니다. CASIA 측은 [[Kaiqi Huang]] 정교수로 시각 추적 분야 시니어 PI이고, 알리바바 AMAP 측 시니어는 [[Xiangxiang Chu]] Senior Director로 FairNAS·Twins·CPVT 등 영향력 있는 아키텍처 논문 저자입니다. project lead는 [[Jiahong Wu]]가 맡았고, AMAP-ML GitHub org에 공개된 S²-Guidance, VMBench, MACE-Dance, Omni-Effects, ImagerySearch 같은 train-free·평가 시리즈와 직접 이어집니다.
+corresponding author는 두 명입니다. CASIA 측은 [[황카이치]] 정교수로 시각 추적 분야 시니어 PI이고, 알리바바 AMAP 측 시니어는 [[추샹샹]] Senior Director로 FairNAS·Twins·CPVT 등 영향력 있는 아키텍처 논문 저자입니다. project lead는 [[우자홍]]가 맡았고, AMAP-ML GitHub org에 공개된 S²-Guidance, VMBench, MACE-Dance, Omni-Effects, ImagerySearch 같은 train-free·평가 시리즈와 직접 이어집니다.
 
 저자들은 conflict of interest 공시에서 흥미로운 지점을 짚어 둡니다. 실험에 쓴 foundation 모델 중 하나인 Wan2.1은 같은 알리바바 산하지만 Tongyi Lab이 독립적으로 개발했고, 저자들은 공개 오픈소스 릴리스 이외에는 별도 접근 권한이 없었다는 점입니다. VBench·NarrLV 표준 프로토콜로 평가했다는 공정성 선언이기도 합니다.
 

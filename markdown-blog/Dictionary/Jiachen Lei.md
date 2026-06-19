@@ -15,4 +15,4 @@ aliases:
 
 세계 모델 평가 측에서는 Omni-WorldBench 공동 저자로 참여해 인터랙션 중심 4D 월드 모델 벤치마크 구축에 기여했습니다.
 
-[[DreamX-World 1.0 - A General-Purpose Interactive World Model|DreamX-World 1.0]]에서는 DreamX Team의 일원으로 카메라 제어·장기 생성·메모리 일관성 파이프라인 전반에 걸쳐 역할을 담당했습니다. [[Xiangxiang Chu]], [[Jiashu Zhu]]와 함께 AMAP-ML의 인터랙티브 월드 모델 연구를 이끌고 있습니다.
+[[DreamX-World 1.0 - A General-Purpose Interactive World Model|DreamX-World 1.0]]에서는 DreamX Team의 일원으로 카메라 제어·장기 생성·메모리 일관성 파이프라인 전반에 걸쳐 역할을 담당했습니다. [[추샹샹]], [[Jiashu Zhu]]와 함께 AMAP-ML의 인터랙티브 월드 모델 연구를 이끌고 있습니다.

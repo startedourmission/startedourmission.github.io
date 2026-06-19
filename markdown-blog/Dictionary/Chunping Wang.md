@@ -9,7 +9,7 @@ aliases:
   - Chunping Wang
 ---
 
-핀테크 기업 FinVolution Group(玖富集团)의 Chief AI Scientist입니다. 학계와 산업계를 잇는 산학 협력 연구자로, [[Yang Yang]], [[Lei Chen]] 그룹과 지속적으로 공동 연구를 진행합니다.
+핀테크 기업 FinVolution Group(玖富集团)의 Chief AI Scientist입니다. 학계와 산업계를 잇는 산학 협력 연구자로, [[양양]], [[Lei Chen]] 그룹과 지속적으로 공동 연구를 진행합니다.
 
 Google Scholar 기준 h-index 23, 총 인용 2,300회를 넘습니다. Universal Prompt Tuning for Graph Neural Networks(NeurIPS 2023, 265회 인용)로 GNN 범용 프롬프트 튜닝 프레임워크를 제안했습니다. DGraph(2022, 210회 인용)는 금융 그래프 이상 탐지 분야의 대규모 벤치마크 데이터셋으로 많이 쓰입니다. DropMessage(2023, 112회 인용)는 GNN의 랜덤 드롭 기법을 통합한 연구입니다.
 
