@@ -2,7 +2,6 @@
 date: 2026-06-14
 tags:
   - 정보
-  - Headliner
   - SaaS
   - LLM
 description: GPT를 만든 회사의 상장 카운트다운. OpenAI가 6월 8일 SEC에 기밀 S-1을 제출하며 2026 하반기 공모를 예고했습니다. 연 매출 $250억에도 $140억 손실을 내야 하는 구조, Anthropic과의 IPO 레이스, 투자자 희석 이슈를 한 번에 짚습니다.

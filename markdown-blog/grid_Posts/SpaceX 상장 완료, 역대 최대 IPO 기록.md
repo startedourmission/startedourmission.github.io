@@ -3,7 +3,6 @@ date: 2026-06-15
 tags:
   - 정보
   - 우주산업
-  - Headliner
 description: SpaceX가 역대 최대 규모 IPO로 나스닥에 상장했습니다. 공모가 대비 19% 상승, 시총 2조 달러 돌파의 의미를 정리합니다.
 image: "![[SpaceX 상장 완료, 역대 최대 IPO 기록.png]]"
 ---

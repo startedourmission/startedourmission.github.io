@@ -2,6 +2,7 @@
 date: 2026-06-19
 tags:
   - 정보
+  - Headliner
   - LLM
 description: "Transformer 공동 발명자이자 Gemini 공동 리드였던 Noam Shazeer가 2026년 6월 OpenAI로 이동했습니다. Google이 2년 전 27억 달러를 들여 데려온 인물입니다."
 image: "![[noam-shazeer-to-openai.png]]"
