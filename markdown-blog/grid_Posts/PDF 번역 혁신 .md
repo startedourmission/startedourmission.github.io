@@ -34,7 +34,7 @@ uv run server.py
 ![[1-zoteroplugin3.png|590x235]]
 
 
-Zotero에서 플러그인을 추가하기 위해 Zotero-도구-Plugins에 들어갑니다.
+Zotero에서 플러그인을 추가하기 위해 Zotero-도구-Plugins에 들어갑니다.
 
 ![[1-zoteroplugin.png]]
 
