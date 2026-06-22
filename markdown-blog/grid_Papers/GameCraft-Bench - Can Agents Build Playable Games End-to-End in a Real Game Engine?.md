@@ -13,7 +13,7 @@ buzz: 43
 
 ## 저자
 
-[[Benyou Wang]] CUHK Shenzhen 교수 그룹과 Tencent Hunyuan 팀이 힘을 합친 논문입니다. 제1저자 세 명([[Tongxu Luo]], [[Rongsheng Wang]], Jiaxi Bi)은 모두 공동 제1저자(*) 표기로 균등 기여를 인정받았습니다. Tongxu Luo와 Rongsheng Wang은 Wang 교수 소속 CUHK Shenzhen 연구 그룹이고, Jiaxi Bi는 Tencent Hunyuan 팀에서 왔습니다. USTB, DualverseAI, SJTU, NUS 소속 연구자들도 참여해 총 25인 규모의 협업으로 완성된 벤치마크입니다.
+[[왕벤유|Benyou Wang]] CUHK Shenzhen 교수 그룹과 Tencent Hunyuan 팀이 힘을 합친 논문입니다. 제1저자 세 명([[Tongxu Luo]], [[왕룽성|Rongsheng Wang]], Jiaxi Bi)은 모두 공동 제1저자(*) 표기로 균등 기여를 인정받았습니다. Tongxu Luo와 Rongsheng Wang은 Wang 교수 소속 CUHK Shenzhen 연구 그룹이고, Jiaxi Bi는 Tencent Hunyuan 팀에서 왔습니다. USTB, DualverseAI, SJTU, NUS 소속 연구자들도 참여해 총 25인 규모의 협업으로 완성된 벤치마크입니다.
 
 이 팀이 게임 생성 벤치마크를 만든 배경에는 공통된 문제의식이 있습니다. 코딩 에이전트를 평가하는 도구는 많지만, "실제로 실행되고 플레이 가능한" 결과물을 측정하는 도구는 없었습니다. 게임 생성은 코드·에셋·씬·런타임 상호작용이 모두 맞물려야 성립하기 때문에, 기존 코딩 벤치마크가 비켜 가는 바로 그 통합 능력을 시험할 수 있다고 판단했습니다.
 

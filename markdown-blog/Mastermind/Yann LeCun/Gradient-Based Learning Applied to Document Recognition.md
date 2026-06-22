@@ -16,9 +16,9 @@ image: "![[lecun-1998-lenet5-architecture.png]]"
 
 ## 저자
 
-저자 네 명은 모두 AT&T Labs-Research의 *Speech and Image Processing Services Research Laboratory* 소속이었습니다. AT&T가 1996년 두 번째로 분할되면서 그 자리에 만들어진 연구소이고, [[얀 르쿤|얀 르쿤]]이 부서장이었습니다. [[Leon Bottou|레옹 보투]]가 1995년 Bell Labs로 돌아온 직후, [[Yoshua Bengio|요슈아 벤지오]]는 1992~1993년 박사후 시절 Bell Labs에서 시간을 보낸 적이 있고 본 작업에서는 Université de Montréal 객원 자격으로 합류하였습니다. [[Patrick Haffner|패트릭 하프너]]는 1995년 합류해 산업 배포를 맡았습니다.
+저자 네 명은 모두 AT&T Labs-Research의 *Speech and Image Processing Services Research Laboratory* 소속이었습니다. AT&T가 1996년 두 번째로 분할되면서 그 자리에 만들어진 연구소이고, [[얀 르쿤]]이 부서장이었습니다. [[레옹 보투]]가 1995년 Bell Labs로 돌아온 직후, [[Yoshua Bengio|요슈아 벤지오]]는 1992~1993년 박사후 시절 Bell Labs에서 시간을 보낸 적이 있고 본 작업에서는 Université de Montréal 객원 자격으로 합류하였습니다. [[Patrick Haffner|패트릭 하프너]]는 1995년 합류해 산업 배포를 맡았습니다.
 
-네 사람이 한 논문에 모인 이유는 단순하지 않습니다. [[얀 르쿤|얀 르쿤]]은 합성곱 신경망의 다음 단계, 즉 *단일 문자를 넘어 문자열 전체*를 다루고 싶었습니다. [[Leon Bottou|레옹 보투]]는 SGD와 *Graph Transformer Networks*라는 새 학습 프레임을 들고 있었습니다. [[Yoshua Bengio|요슈아 벤지오]]는 박사 논문에서 신경망과 HMM을 결합한 *판별적 전방 학습*을 정식화한 직후였습니다. [[Patrick Haffner|패트릭 하프너]]는 CNET 시절 *Multi-State TDNN*으로 음성 시퀀스를 단어 단위로 학습시킨 경험을 가지고 있었습니다. 이 네 사람이 만나야 *손글씨 한 글자 인식*에서 시작해 *수표 한 장 전체 판독*까지 한 시스템으로 묶을 수 있었습니다.
+네 사람이 한 논문에 모인 이유는 단순하지 않습니다. [[얀 르쿤]]은 합성곱 신경망의 다음 단계, 즉 *단일 문자를 넘어 문자열 전체*를 다루고 싶었습니다. [[레옹 보투]]는 SGD와 *Graph Transformer Networks*라는 새 학습 프레임을 들고 있었습니다. [[Yoshua Bengio|요슈아 벤지오]]는 박사 논문에서 신경망과 HMM을 결합한 *판별적 전방 학습*을 정식화한 직후였습니다. [[Patrick Haffner|패트릭 하프너]]는 CNET 시절 *Multi-State TDNN*으로 음성 시퀀스를 단어 단위로 학습시킨 경험을 가지고 있었습니다. 이 네 사람이 만나야 *손글씨 한 글자 인식*에서 시작해 *수표 한 장 전체 판독*까지 한 시스템으로 묶을 수 있었습니다.
 
 ## 배경
 

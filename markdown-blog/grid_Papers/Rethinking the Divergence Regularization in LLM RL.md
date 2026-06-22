@@ -13,7 +13,7 @@ buzz: 41
 
 ## 저자
 
-[[Tencent Hunyuan]]과 싱가포르국립대(NUS)의 공동 연구입니다. Tencent 측에서는 [[Jiarui Yao]](UIUC 박사과정 + Hunyuan 인턴), [[Xiangxin Zhou]], [[Liefeng Bo]], [[팡톈위]]이 참여했고, NUS에서는 [[치펑후이]]와 [[Wee Sun Lee]]가 합류했습니다.
+[[Hunyuan|Tencent Hunyuan]]과 싱가포르국립대(NUS)의 공동 연구입니다. Tencent 측에서는 [[Jiarui Yao]](UIUC 박사과정 + Hunyuan 인턴), [[Xiangxin Zhou]], [[Liefeng Bo]], [[팡톈위]]이 참여했고, NUS에서는 [[치펑후이]]와 [[Wee Sun Lee]]가 합류했습니다.
 
 두 그룹의 연결 고리는 DPPO입니다. [[치펑후이]]와 [[팡톈위]]은 이미 2026년 초 "Rethinking the Trust Region in LLM Reinforcement Learning"을 함께 썼습니다. 그 논문에서 ratio 기반 trust region의 한계를 이론으로 정리했고, 이번 DRPO는 그 분석 위에서 hard mask를 제거하는 다음 단계를 밟은 것입니다.
 

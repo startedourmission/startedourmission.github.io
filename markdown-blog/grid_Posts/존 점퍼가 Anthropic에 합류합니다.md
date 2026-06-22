@@ -7,7 +7,7 @@ tags:
 description: 알파폴드2로 2024년 노벨 화학상을 받은 존 점퍼(John Jumper)가 구글 DeepMind를 떠나 Anthropic에 합류합니다.
 image: "![[john-jumper-anthropic.png]]"
 ---
-2026년 6월 19일, [[존 점퍼]](John Jumper)가 [[Google DeepMind]]를 떠나 [[Anthropic]]에 합류한다고 밝혔습니다. [[AlphaFold2]]를 이끌어 2024년 노벨 화학상을 공동 수상한 연구자가, 노벨상 수상 이후 약 1년 반 만에 안전 중심 AI 연구소를 다음 무대로 택한 것입니다.
+2026년 6월 19일, [[존 점퍼]](John Jumper)가 [[Google DeepMind]]를 떠나 [[Anthropic]]에 합류한다고 밝혔습니다. [[AlphaFold|AlphaFold2]]를 이끌어 2024년 노벨 화학상을 공동 수상한 연구자가, 노벨상 수상 이후 약 1년 반 만에 안전 중심 AI 연구소를 다음 무대로 택한 것입니다.
 
 ## 존 점퍼는 누구인가
 

@@ -27,7 +27,7 @@ Compile에서 발표한 1.5조 파라미터 프론티어 모델이 실제로 어
 
 Composer가 아닌 **Grok V9-Medium**입니다. Cursor developer workflow 데이터로 훈련됐고, xAI의 [[Colossus]] 슈퍼컴퓨터에서 돌아갑니다. Composer가 독립적인 Cursor 고유 모델로 남는 게 아니라 Grok 브랜드 아래 편입됩니다.
 
-당연히 단순한 브랜드 교체는 아니죠. Grok이 들어간다는 건 [[Elon Musk]]의 AI 스택 전체가 들어온다는 의미입니다. 모델 선택 우선순위, 가격 구조, 데이터 처리 방식, 그리고 어떤 회사의 모델이 Cursor 기본값으로 설정될지까지 전부 [[xAI]]와 [[SpaceX]]가 결정합니다.
+당연히 단순한 브랜드 교체는 아니죠. Grok이 들어간다는 건 [[일론 머스크|Elon Musk]]의 AI 스택 전체가 들어온다는 의미입니다. 모델 선택 우선순위, 가격 구조, 데이터 처리 방식, 그리고 어떤 회사의 모델이 Cursor 기본값으로 설정될지까지 전부 [[xAI]]와 [[SpaceX]]가 결정합니다.
 
 ## SpaceX의 운명이 Grok에게 달렸다
 
