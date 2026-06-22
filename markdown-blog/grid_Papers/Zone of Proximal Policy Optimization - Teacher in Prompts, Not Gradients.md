@@ -13,7 +13,7 @@ buzz: 46
 
 ## 저자
 
-[[Byung-Kwan Lee]]가 프로젝트 리드로 이 연구를 이끌었습니다. NVIDIA Research Taiwan을 중심으로 Ximing Lu, Shizhe Diao, Minki Kang, Saurav Muralidharan, Karan Sapra, Andrew Tao, Pavlo Molchanov, [[Yejin Choi]], Yu-Chiang Frank Wang, Ryo Hachiuma가 합류한 NVIDIA 11인 팀입니다. [[Yejin Choi]]는 자연어처리와 상식 추론 분야에서 MacArthur Fellow, Time100 AI 선정 이력을 가진 연구자로, 이번 논문에서는 소형 모델이 대형 교사의 지식을 더 효과적으로 흡수하도록 하는 방향의 연구에 함께했습니다.
+[[Byung-Kwan Lee]]가 프로젝트 리드로 이 연구를 이끌었습니다. NVIDIA Research Taiwan을 중심으로 Ximing Lu, Shizhe Diao, Minki Kang, Saurav Muralidharan, Karan Sapra, Andrew Tao, Pavlo Molchanov, [[최예진|Yejin Choi]], Yu-Chiang Frank Wang, Ryo Hachiuma가 합류한 NVIDIA 11인 팀입니다. [[최예진|Yejin Choi]]는 자연어처리와 상식 추론 분야에서 MacArthur Fellow, Time100 AI 선정 이력을 가진 연구자로, 이번 논문에서는 소형 모델이 대형 교사의 지식을 더 효과적으로 흡수하도록 하는 방향의 연구에 함께했습니다.
 
 ## 배경
 

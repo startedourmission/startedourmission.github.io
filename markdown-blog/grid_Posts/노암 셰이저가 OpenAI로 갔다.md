@@ -9,7 +9,7 @@ image: "![[noam-shazeer-to-openai.png]]"
 ---
 [[노암 셰이저]]가 [[OpenAI]]로 갔습니다. 2026년 6월 18일, 본인이 X에 직접 올린 발표입니다. 직함은 Lead of Architecture Research. 모델을 어떻게 설계할 것인가를 연구하는 자리입니다.
 
-이름이 낯설 수 있지만, 셰이저는 2017년 "Attention Is All You Need" 논문의 공동 저자입니다. [[Transformer]]를 만든 여덟 명 중 한 명이고, 그 구조 위에 [[Gemini]]도 [[ChatGPT]]도 서 있습니다. 지금 LLM 판에서 셰이저급 인물의 이동은 칩이나 데이터센터 발표만큼 무게가 있습니다.
+이름이 낯설 수 있지만, 셰이저는 2017년 "Attention Is All You Need" 논문의 공동 저자입니다. [[트랜스포머]]를 만든 여덟 명 중 한 명이고, 그 구조 위에 [[Gemini]]도 [[ChatGPT]]도 서 있습니다. 지금 LLM 판에서 셰이저급 인물의 이동은 칩이나 데이터센터 발표만큼 무게가 있습니다.
 
 ## 왜 이게 큰일인가
 
