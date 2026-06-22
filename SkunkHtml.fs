@@ -337,10 +337,10 @@
                 </section>
                 """
 
-        // Stars 섹션 (Star 태그를 가진 person 노트, buzz/star 점수 내림차순 top 20)
+        // Masters 섹션 (인물 태그를 가진 노트, star/buzz 점수 내림차순 top 20)
         let starPosts =
             allPosts
-            |> List.filter (fun post -> post.Tags |> List.exists (fun tag -> tag.ToLower() = "star"))
+            |> List.filter (fun post -> post.Tags |> List.exists (fun tag -> tag.ToLower() = "인물"))
             |> List.sortByDescending (fun post -> post.Buzz |> Option.defaultValue 0)
             |> List.truncate 20
 
