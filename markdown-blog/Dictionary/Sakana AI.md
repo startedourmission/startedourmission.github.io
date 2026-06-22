@@ -8,7 +8,7 @@ aliases:
   - Sakana AI
   - 사카나 AI
 ---
-Sakana AI는 2023년 7월 도쿄에서 설립된 일본 AI 기업입니다. [[Google DeepMind]] 출신 데이비드 하(David Ha, CEO), 트랜스포머 논문 [[Attention Is All You Need]]의 공동 저자 라이언 존스(Llion Jones, CTO), 그리고 이토 렌(Ren Ito, Chairman) 세 명이 공동 창업했습니다. 라이언 존스는 Google Research를 떠나 직접 일본 도쿄로 건너와 회사를 세웠습니다. 회사 이름 "사카나"는 물고기를 뜻하는 일본어로, 작은 개체가 무리를 이뤄 만들어내는 집단지능을 상징합니다.
+Sakana AI는 2023년 7월 도쿄에서 설립된 일본 AI 기업입니다. Google Brain 출신 [[데이비드 하]](David Ha, CEO), 트랜스포머 논문 [[Attention Is All You Need]]의 공동 저자 [[리온 존스]](Llion Jones, CTO), 그리고 전 외교관 출신 [[이토 렌]](Ren Ito, COO) 세 명이 공동 창업했습니다. 리온 존스는 Google Research를 떠나 직접 일본 도쿄로 건너와 회사를 세웠습니다. 회사 이름 "사카나"는 물고기를 뜻하는 일본어로, 작은 개체가 무리를 이뤄 만들어내는 집단지능을 상징합니다.
 
 거대한 단일 모델을 키우는 미국식 노선 대신, 자연에서 영감을 받은 진화·집단지능 접근으로 차별화합니다. 여러 모델을 합쳐 새 모델을 만드는 진화적 모델 머징(Evolutionary Model Merge), 논문 작성을 자동화하는 AI Scientist, 그리고 모델 풀을 동적으로 지휘하는 [[Sakana Fugu]] 등을 발표했습니다.
 
