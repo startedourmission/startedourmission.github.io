@@ -5,9 +5,7 @@
 
 주인장은 기술 동향과 인공지능에 관심이 많은 IT 애호가입니다. 개발자도, 전문가도 아니기 때문에 틀린 내용이 있을 수 있습니다. 콘텐츠에 대한 의견과 피드백을 환영합니다. 
 
-**도서가 출간되었습니다! 《바로바로 클로드 with 코워크, 스킬, 클로드 코드, 디자인》 **
-
-<img src="_assets/Pasted%20image%2020260506145400.png" alt="바로바로 클로드 표지" style="max-width: 280px !important; height: auto; display: block; margin: 1rem auto;">
+도서가 출간되었습니다! 《바로바로 클로드 with 코워크, 스킬, 클로드 코드, 디자인》
 
 - 교보문고 : https://product.kyobobook.co.kr/detail/S000219916961
 - 예스24 : https://www.yes24.com/product/goods/189114943
