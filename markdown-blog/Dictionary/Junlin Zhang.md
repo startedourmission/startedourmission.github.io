@@ -9,6 +9,7 @@ tags:
 aliases:
   - Junlin Zhang
   - 张俊林
+star: 0
 ---
 
 Sina Weibo Inc. 소속 시니어 AI 연구원. 이메일(`junlin6@staff.weibo.com`)로 [[Sen Xu]]와 함께 VibeThinker 시리즈 전체의 co-correspondence author를 맡고 있습니다.

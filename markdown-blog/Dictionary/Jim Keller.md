@@ -6,7 +6,6 @@ tags:
   - 반도체
   - 머신러닝
   - CEO
-  - Star
 last_active: 2026
 papers: []
 star: 25

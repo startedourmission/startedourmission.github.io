@@ -6,7 +6,6 @@ tags:
   - 컴퓨터비전
   - 딥러닝
   - 교수
-  - Star
 last_active: 2026
 papers:
   - Moebius - 0.2B Lightweight Image Inpainting Framework with 10B-Level Performance

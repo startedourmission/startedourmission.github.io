@@ -6,7 +6,6 @@ tags:
   - LLM
   - AI평가
   - 멀티모달
-  - Star
 last_active: 2026
 papers:
   - Beyond the Current Observation - Evaluating Multimodal Large Language Models in Controllable Non-Markov Games

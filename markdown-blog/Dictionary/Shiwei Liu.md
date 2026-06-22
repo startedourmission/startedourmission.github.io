@@ -6,14 +6,12 @@ tags:
   - LLM
   - 머신러닝
   - 교수
-  - NeurIPS논문
-  - Star
 aliases:
   - 류스웨이
 last_active: 2026
 papers:
   - Learning from the Self-future - On-policy Self-distillation for dLLMs
-star: 25
+star: 19
 ---
 
 ELLIS 튀빙겐(ELLIS Institute Tübingen) PI 겸 막스 플랑크 지능 시스템 연구소(Max Planck Institute for Intelligent Systems) 그룹 리더. 옥스퍼드 대학교 소머빌 칼리지 주니어 리서치 펠로(JRF) 및 로열 소사이어티 뉴턴 국제 펠로를 역임했다. 그 이전에는 Atlas Wang 지도 아래 UT 오스틴에서 박사후 연구원으로 재직했으며, 2022년 아인트호벤 공과대학교(TU/e)에서 최우등(Cum Laude) 박사학위를 받았다.

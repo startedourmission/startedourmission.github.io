@@ -6,7 +6,6 @@ tags:
   - 컴퓨터비전
   - 머신러닝
   - 교수
-  - Star
 aliases:
   - 탕하오
 last_active: 2026
