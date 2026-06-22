@@ -13,9 +13,9 @@ buzz: 43
 
 ## 저자
 
-Shengyuan Ding(복단대·상하이 혁신연구소), Xilin Wei(복단대), Xinyu Fang(절강대)이 공동 제1저자입니다. [[Haodong Duan]](홍콩중문대), [[Dahua Lin]](홍콩중문대·SAIL), Jiaqi Wang(상하이 혁신연구소), Yuhang Zang(SAIL)이 교신저자를 맡았습니다.
+Shengyuan Ding(복단대·상하이 혁신연구소), Xilin Wei(복단대), Xinyu Fang(절강대)이 공동 제1저자입니다. [[Haodong Duan]](홍콩중문대), [[린 다후아|Dahua Lin]](홍콩중문대·SAIL), Jiaqi Wang(상하이 혁신연구소), Yuhang Zang(SAIL)이 교신저자를 맡았습니다.
 
-[[Haodong Duan]]은 MMBench와 VLMEvalKit 등 MLLM 평가 인프라를 개발해온 연구자이며, [[Dahua Lin]]은 그의 박사 지도 교수이자 SenseTime 공동 창업자입니다. RNG-Bench의 평가 하니스 역시 VLMEvalKit 위에 구축됐습니다.
+[[Haodong Duan]]은 MMBench와 VLMEvalKit 등 MLLM 평가 인프라를 개발해온 연구자이며, [[린 다후아|Dahua Lin]]은 그의 박사 지도 교수이자 SenseTime 공동 창업자입니다. RNG-Bench의 평가 하니스 역시 VLMEvalKit 위에 구축됐습니다.
 
 ## 배경
 
