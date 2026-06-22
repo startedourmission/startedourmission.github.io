@@ -2,6 +2,7 @@
 date: 2026-06-21
 tags:
   - 정보
+  - Headliner
   - 반도체
   - AI평가
 description: "Qualcomm이 스타트업 Tenstorrent를 80억~100억 달러에 인수 협상 중. Jim Keller가 이끄는 RISC-V 기반 AI 가속기 스타트업으로, 성사 시 Qualcomm의 엣지·데이터센터 AI 가속기 전략에 중대한 전환점."

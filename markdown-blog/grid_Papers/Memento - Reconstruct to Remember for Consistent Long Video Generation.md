@@ -6,7 +6,7 @@ tags:
   - 확산모델
 description: "장기 영상 생성에서 반복 등장 인물의 정체성을 유지하기 위해 메모리 기반 피사체 재구성을 보조 학습 목표로 삼는 Memento 프레임워크. 이중 경로 메모리(story query + shot query)로 장기 아이덴티티 단서와 단기 문맥을 분리해, 샷 단위 자기회귀 생성에서 일관된 인물 외형을 유지합니다."
 image: "![[memento-teaser.png]]"
-buzz: 11
+buzz: 33
 ---
 
 > X. Wei, L. Ji, G. Wang, X. Liu, Z. Zhang, S. Wang, Y. Sun, and Q. Hong, "Memento: Reconstruct to Remember for Consistent Long Video Generation," arXiv:2606.14667, 2026.

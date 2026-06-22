@@ -2,7 +2,6 @@
 date: 2026-06-18
 tags:
   - 정보
-  - Headliner
   - 도구
   - 에이전트
 description: 6월 16일 샌프란시스코에서 열린 Cursor 첫 컨퍼런스 Compile의 발표를 정리합니다. SpaceX 600억 달러 인수부터 GitHub 대항마 Origin, 1.5조 파라미터 프론티어 모델, iOS 앱, BugBot 개선까지.

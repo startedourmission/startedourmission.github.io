@@ -2,6 +2,7 @@
 date: 2026-06-22
 tags:
   - 정보
+  - Headliner
   - LLM
   - 에이전트
 description: "여러 프런티어 모델을 동적으로 지휘하는 Sakana AI의 멀티에이전트 오케스트레이션 모델 Fugu를 정리합니다"

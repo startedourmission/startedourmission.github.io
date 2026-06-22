@@ -2,6 +2,7 @@
 date: 2026-06-20
 tags:
   - 정보
+  - Headliner
   - LLM
   - 머신러닝
 description: 알파폴드2로 2024년 노벨 화학상을 받은 존 점퍼(John Jumper)가 구글 DeepMind를 떠나 Anthropic에 합류합니다.

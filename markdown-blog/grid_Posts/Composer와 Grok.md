@@ -2,7 +2,6 @@
 date: 2026-06-18
 tags:
   - 정보
-  - Headliner
   - 도구
   - LLM
 description: "SpaceX 인수 이후 Cursor의 모델 선택권이 사라질 수 있다는 우려가 커지고 있습니다. Composer가 Grok에 흡수되는 구조, Anthropic이 받는 타격, 그리고 개발자들이 지금 준비해야 할 것들을 짚습니다."
