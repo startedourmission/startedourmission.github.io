@@ -2,13 +2,15 @@
 type: person
 description: 화중과기대(HUST) Vision Lab 연구원. 이미지 인페인팅 분야. PixelHacker(2504.20438)·Moebius(2606.19195) 공동 제1저자.
 tags:
+  - 인물
   - 컴퓨터비전
   - 확산모델
+  - Star
 last_active: 2026
 papers:
   - Moebius - 0.2B Lightweight Image Inpainting Framework with 10B-Level Performance
   - PixelHacker - Image Inpainting with Structural and Semantic Consistency
-star: 0
+star: 10
 ---
 
 ## 개요

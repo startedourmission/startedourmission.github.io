@@ -1,4 +1,5 @@
 ---
+type: person
 name: Junlin-Zhang
 description: Sina Weibo AI 시니어 연구원. VibeThinker 시리즈 co-correspondence author. WeiboAI 팀의 연구 방향을 이끄는 리더.
 tags:

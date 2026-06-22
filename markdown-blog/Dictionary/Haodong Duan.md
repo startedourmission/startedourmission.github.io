@@ -2,13 +2,15 @@
 type: person
 description: 상하이 인공지능 연구소(SAIL) 포스닥. 멀티모달 LLM 평가 전문. MMBench·VLMEvalKit·RNG-Bench 주요 저자.
 tags:
+  - 인물
   - LLM
   - AI평가
   - 멀티모달
+  - Star
 last_active: 2026
 papers:
   - Beyond the Current Observation - Evaluating Multimodal Large Language Models in Controllable Non-Markov Games
-star: 0
+star: 10
 ---
 
 ## 개요

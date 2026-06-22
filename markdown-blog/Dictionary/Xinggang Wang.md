@@ -2,6 +2,7 @@
 type: person
 description: 화중과기대(HUST) 전자정보통신학부 교수. 컴퓨터비전·딥러닝 분야 연구 그룹 HUST Vision Lab 주재. CVPR·NeurIPS 등 100편 이상 논문 발표.
 tags:
+  - 인물
   - 컴퓨터비전
   - 딥러닝
   - 교수
@@ -9,7 +10,7 @@ tags:
 last_active: 2026
 papers:
   - Moebius - 0.2B Lightweight Image Inpainting Framework with 10B-Level Performance
-star: 8
+star: 18
 ---
 
 ## 개요

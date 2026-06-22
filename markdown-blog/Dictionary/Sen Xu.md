@@ -1,4 +1,5 @@
 ---
+type: person
 name: Sen-Xu
 description: Sina Weibo AI 연구원. VibeThinker 시리즈(1.5B, 3B) 1저자. 소형 언어 모델의 검증 가능한 추론 한계를 탐구하는 Spectrum-to-Signal Principle 설계자.
 tags:
