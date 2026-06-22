@@ -6,6 +6,7 @@ tags:
   - 벤치마크
 description: 250명 이상의 산업 전문가가 실제 업무를 그대로 가져온 벤치마크입니다. 55개 직군, 1,490개 태스크를 자동 채점으로 평가하는데, 지금 최고 성능 에이전트의 전체 통과율은 24%에 불과합니다.
 image: "![[agents-last-exam-positioning.png]]"
+buzz: 68
 ---
 > Y. Sun, X. Han, W. Zhang, Y. Pang, T. Wang, Y. Cao, Y. Huang, C. Duroiu, et al., "Agents' Last Exam," arXiv:2606.05405, 2026.
 
