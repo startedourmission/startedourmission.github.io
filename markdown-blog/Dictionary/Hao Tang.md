@@ -11,7 +11,7 @@ aliases:
 last_active: 2026
 papers:
   - DragMesh-2 - Physically Plausible Dexterous Hand-Object Interaction with Articulated Objects
-star: 18
+star: 29
 ---
 
 베이징대학교(PKU) 컴퓨터과학대학 조교수(2024년 7월 부임). Embodied and Generative Intelligence Lab을 이끌며 체화 AI, 생성 AI, 컴퓨터비전, 로보틱스를 연구한다. ETH Zurich, CMU, NUS, 옥스퍼드 대학교 등과 교류 및 협업 관계를 유지하고 있으며, 포스닥 및 학생 연구원을 활발히 모집 중이다.

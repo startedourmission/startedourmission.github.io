@@ -9,7 +9,7 @@ last_active: 2026
 papers:
   - Moebius - 0.2B Lightweight Image Inpainting Framework with 10B-Level Performance
   - PixelHacker - Image Inpainting with Structural and Semantic Consistency
-star: 10
+star: 22
 ---
 
 ## 개요

@@ -10,7 +10,7 @@ aliases:
 last_active: 2026
 papers:
   - Zone of Proximal Policy Optimization - Teacher in Prompts, Not Gradients
-star: 10
+star: 21
 ---
 
 NVIDIA Research Taiwan 소속 연구원. 소형 비전-언어 모델(VLM) 효율화와 지식 이전(knowledge transfer) 연구를 중심으로 활동한다.

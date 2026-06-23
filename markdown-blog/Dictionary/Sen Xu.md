@@ -12,7 +12,7 @@ aliases:
   - 徐森
 papers:
   - VibeThinker-3B - Exploring the Frontier of Verifiable Reasoning in Small Language Models
-star: 14
+star: 28
 ---
 
 Sina Weibo Inc. 소속 AI 연구원. 이메일 주소(`xusen1@staff.weibo.com`)를 통해 co-correspondence author로 등재되어 있습니다.

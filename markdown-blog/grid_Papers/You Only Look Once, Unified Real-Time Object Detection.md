@@ -6,6 +6,7 @@ tags:
   - 베스트논문
 aliases:
   - YOLO
+arxiv: 1506.02640
 image: https://paper-assets.alphaxiv.org/figures/1506.02640v5/img-0.jpeg
 description: 실시간 객체 탐지의 시대를 연 YOLO(You Only Look Once) 논문을 요약합니다. 전체 이미지를 단일 신경망에 한 번만 통과시켜 객체의 경계 상자와 클래스를 동시에 예측하는 혁신적인 통합 아키텍처의 원리와 성능을 설명합니다.
 ---
