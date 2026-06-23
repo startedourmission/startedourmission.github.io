@@ -15,7 +15,7 @@ citations: 0
 
 ## 저자
 
-[[쉬준동]]와 [[Qingchuan Li]]가 공동 1저자입니다. 두 사람은 모두 싱가포르국립대학교(NUS) 소속으로, 각각 LLM 추론과 에이전트 메모리 쪽 연구를 해왔습니다. 시니어 라인에는 NUS의 [[브라이언 후이]]와 [[후즈위안]]가 있고, 밖으로는 [[샤오밍 슝]](전 Salesforce AI Research SVP, 현 Recursive Superintelligence 공동창업자)과 MIT의 Hae Won Park이 자문 역할로 함께했습니다. Caiming Xiong의 참여는 논문 각주에 "Work Partially Done at Salesforce AI Research"라고 명시되어 있습니다.
+[[쉬준동]]와 [[Qingchuan Li]]가 공동 1저자입니다. 두 사람은 모두 싱가포르국립대학교(NUS) 소속으로, 각각 LLM 추론과 에이전트 메모리 쪽 연구를 해왔습니다. 시니어 라인에는 NUS의 [[브라이언 후이]]와 [[후즈위안]]가 있고, 밖으로는 [[차이밍 슝]](전 Salesforce AI Research SVP, 현 Recursive Superintelligence 공동창업자)과 MIT의 Hae Won Park이 자문 역할로 함께했습니다. Caiming Xiong의 참여는 논문 각주에 "Work Partially Done at Salesforce AI Research"라고 명시되어 있습니다.
 
 사실상 이 논문은 NUS 그룹이 주도하되, 싱가포르경영대, 워싱턴대, UPenn, UCL, NTU, MIT까지 여러 기관의 공동 작업으로 완성된 벤치마크 논문입니다. 참여 기관이 많은 만큼 세 종류의 벤치마크(터미널, 소프트웨어, 개인화 대화)를 동시에 설계하고 검증하는 데 분업이 가능했습니다.
 
