@@ -8,7 +8,7 @@ tags:
   - CEO
 last_active: 2026
 papers: []
-star: 25
+star: 32
 ---
 
 반도체 업계에서 "짐 켈러가 합류했다"는 말은 그 회사를 다시 봐야 한다는 신호로 통합니다. AMD에서 거의 몰락 직전이던 회사를 살린 Zen 마이크로아키텍처를 설계했고, Apple A4/A5 프로세서로 스마트폰 CPU 시대를 열었습니다. Tesla에서는 자율주행용 FSD 칩을 만들었고, Intel에서는 Silicon Engineering Group 수장을 맡았습니다. 이 전적을 갖고 2021년 Tenstorrent로 옮겨 CTO를 거쳐 CEO가 됐습니다.

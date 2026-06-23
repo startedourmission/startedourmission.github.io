@@ -9,7 +9,7 @@ tags:
 last_active: 2026
 papers:
   - Moebius - 0.2B Lightweight Image Inpainting Framework with 10B-Level Performance
-star: 30
+star: 61
 ---
 
 ## 개요

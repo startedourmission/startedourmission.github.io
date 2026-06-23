@@ -9,7 +9,7 @@ tags:
 last_active: 2026
 papers:
   - Beyond the Current Observation - Evaluating Multimodal Large Language Models in Controllable Non-Markov Games
-star: 21
+star: 46
 ---
 
 ## 개요
