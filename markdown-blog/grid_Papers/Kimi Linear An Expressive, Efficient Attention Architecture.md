@@ -2,16 +2,13 @@
 date: 2025-11-05
 tags:
   - 논문
-  - Headliner
   - LLM
   - 트랜스포머
 aliases:
   - Kimi Linear: An Expressive, Efficient Attention Architecture
 image: "![[1-KimiLinear.png]]"
-description: |-
-buzz: 323
-  Kimi가 도약합니다.
-  현대 트랜스포머 기반 모델의 약점을 개선하고 높은 성능을 달성한 새로운 Kimi를 소개합니다.
+description: 현대 트랜스포머의 약점을 개선한 새 어텐션 구조 Kimi Linear를 소개합니다. 선형 어텐션 기반으로 효율과 성능을 동시에 끌어올린 접근을 다룹니다.
+buzz: 324
 citations: 86
 ---
 
