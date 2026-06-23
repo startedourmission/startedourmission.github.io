@@ -7,12 +7,13 @@ tags:
   - 멀티모달
 aliases:
 image: "![[1-das.png]]"
-description: |-
+description: 멀티모달 LLM으로 객체 탐지에 도전한 모델입니다. Qwen과 대규모 영상 데이터로 학습해 각종 탐지 벤치마크에서 높은 성능을 보입니다.
 buzz: 269
-  LLM이 전통적인 컴퓨터 비전 태스크에 도전장을 내밉니다. 새로운 MLLM 객체 탐지 모델입니다. 원래는 효율과 정확도 문제로 쉽사리 정복하지 못한 분야죠. 
-  Qwen과 대규모 영상 데이터셋을 갈아넣어 각종 벤치마크에서 뛰어난 성능을 보였습니다.
 citations: 49
 ---
+
+LLM이 전통적인 컴퓨터 비전 태스크에 도전장을 내밉니다. 새로운 MLLM 객체 탐지 모델입니다. 원래는 효율과 정확도 문제로 쉽사리 정복하지 못한 분야죠. 
+Qwen과 대규모 영상 데이터셋을 갈아넣어 각종 벤치마크에서 뛰어난 성능을 보였습니다.
 
 객체 검출은 오랫동안 [[You Only Look Once, Unified Real-Time Object Detection|YOLO]], DETR, Grounding DINO와 같은 회귀 기반 모델이 주도해왔습니다. 최근 MLLM(Multimodal Large Language Model)을 활용한 시도들이 있었지만, 낮은 재현율, 중복 예측, 좌표 불일치 등의 문제에 직면했습니다. 이 논문은 이러한 격차를 해소하기 위해 Rex-Omni라는 3B 파라미터 MLLM을 제안합니다. Rex-Omni는 COCO와 LVIS 벤치마크에서 제로샷 설정으로 DINO, Grounding DINO와 같은 회귀 기반 모델과 비슷하거나 더 나은 성능을 달성합니다.
 

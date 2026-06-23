@@ -5,15 +5,17 @@ tags:
   - LLM
 aliases:
 image: "![[1-ADefinitionofAGI.png]]"
-description: |-
+description: AGI를 정량화하는 체계적 프레임워크를 제시한 논문입니다. 인간 인지능력 모델(CHC 이론)로 측정해 GPT-4는 27%, GPT-5는 57%라는 AGI 점수를 내놓습니다.
 buzz: 230
-  인공일반지능(AGI)은 무엇일까요? AI가 체스를 마스터하고, 수학 문제를 풀고, 심지어 예술 작품을 만들어내는 지금, AGI의 정의는 점점 더 모호해지고 있습니다. 
-
-  한때 불가능하다고 여겨졌던 작업들을 AI가 해내면서, 골대는 계속 움직이고 있죠.이 논문은 그러한 모호함을 깨고 AGI를 정량화할 수 있는 체계적인 프레임워크를 제시합니다. 핵심 아이디어는 간단합니다. AGI란 교육받은 성인의 인지적 다재다능함과 숙련도를 따라잡거나 능가하는 AI입니다. 이를 측정하기 위해 연구팀은 인간 인지 능력의 가장 검증된 모델인 Cattell-Horn-Carroll(CHC) 이론을 활용했습니다.
-
-  결과는 놀랍습니다. GPT-4의 AGI 점수는 27%, GPT-5는 57%입니다. 빠른 발전에도 불구하고, 현재 AI는 여전히 AGI와 상당한 거리가 있다는 것을 구체적인 수치로 보여줍니다.
 citations: 29
 ---
+
+인공일반지능(AGI)은 무엇일까요? AI가 체스를 마스터하고, 수학 문제를 풀고, 심지어 예술 작품을 만들어내는 지금, AGI의 정의는 점점 더 모호해지고 있습니다. 
+
+한때 불가능하다고 여겨졌던 작업들을 AI가 해내면서, 골대는 계속 움직이고 있죠.이 논문은 그러한 모호함을 깨고 AGI를 정량화할 수 있는 체계적인 프레임워크를 제시합니다. 핵심 아이디어는 간단합니다. AGI란 교육받은 성인의 인지적 다재다능함과 숙련도를 따라잡거나 능가하는 AI입니다. 이를 측정하기 위해 연구팀은 인간 인지 능력의 가장 검증된 모델인 Cattell-Horn-Carroll(CHC) 이론을 활용했습니다.
+
+결과는 놀랍습니다. GPT-4의 AGI 점수는 27%, GPT-5는 57%입니다. 빠른 발전에도 불구하고, 현재 AI는 여전히 AGI와 상당한 거리가 있다는 것을 구체적인 수치로 보여줍니다.
+
 > D. Hendrycks, D. Song, C. Szegedy, H. Lee, Y. Gal, E. Brynjolfsson, S. Li, A. Zou, L. Levine, B. Han, J. Fu, Z. Liu, J. Shin, K. Lee, M. Mazeika, L. Phan, G. Ingebretsen, A. Khoja, C. Xie, O. Salaudeen, M. Hein, K. Zhao, A. Pan, D. Duvenaud, B. Li, S. Omohundro, G. Alfour, M. Tegmark, K. McGrew, G. Marcus, J. Tallinn, E. Schmidt, and Y. Bengio, "A Definition of AGI", arXiv preprint arXiv:2510.18212, 2025.
 
 인공일반지능(AGI)은 무엇일까요? AI가 체스를 마스터하고, 수학 문제를 풀고, 심지어 예술 작품을 만들어내는 지금, AGI의 정의는 점점 더 모호해지고 있습니다. 한때 불가능하다고 여겨졌던 작업들을 AI가 해내면서, 골대는 계속 움직이고 있죠.
