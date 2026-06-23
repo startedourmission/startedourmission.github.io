@@ -7,7 +7,7 @@ tags:
   - 오픈소스
 description: 학습 없이 기성 비디오 디퓨전 모델로 1,000프레임짜리 긴 영상을 생성하는 MIGA. FIFO-Diffusion 계열의 train-inference gap을 zigzag·unified 두 단계로 좁히고, self-reflection + long-range frame guidance로 장기 일관성을 끌어올려 VBench·NarrLV에서 SOTA를 찍습니다.
 image: "![[miga-teaser.png]]"
-buzz: 52
+buzz: 81
 citations: 1
 ---
 

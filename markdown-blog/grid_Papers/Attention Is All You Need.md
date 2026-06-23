@@ -2,13 +2,14 @@
 date: 2025-09-01
 tags:
   - 논문
+  - Headliner
   - 베스트논문
   - 트랜스포머
   - NLP
 description: "'Attention Is All You Need'는 RNN을 버리고 셀프 어텐션만으로 시퀀스를 처리하는 Transformer 아키텍처를 제안한 2017년 논문입니다. 기계 번역에서 당시 SOTA를 경신했고, 이후 BERT·GPT·Claude를 포함한 거의 모든 대형 언어 모델의 기반이 되었습니다."
 image: "![[transformer_1.png]]"
+buzz: 665
 arxiv: 1706.03762
-buzz: 528
 citations: 181100
 ---
 

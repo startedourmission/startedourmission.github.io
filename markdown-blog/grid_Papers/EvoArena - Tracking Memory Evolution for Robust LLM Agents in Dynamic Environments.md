@@ -7,7 +7,7 @@ tags:
   - LLM
 description: "현실의 에이전트는 인터페이스가 바뀌고, 코드베이스가 쌓이고, 사용자 취향이 변한다. EvoArena는 이 '진화하는 환경'을 측정하는 벤치마크이고, EvoMem은 메모리가 어떻게 바뀌었는지를 패치 이력으로 남기는 가벼운 해법이다."
 image: "![[evoarena-construction.png]]"
-buzz: 131
+buzz: 57
 citations: 0
 ---
 

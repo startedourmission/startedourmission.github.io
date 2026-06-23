@@ -10,7 +10,7 @@ aliases:
   - "World Action Models"
 image: "![[wam-overview.png]]"
 description: Vision-Language-Action 모델이 학습하는 reactive observation-to-action 매핑과 World Model 계열의 예측적 dynamics 모델링이 별도의 흐름으로 흘러오다가 한 모델 안에서 합쳐지기 시작했습니다. Fudan 신뢰성 임바디드 AI 연구소가 이 합류 지점을 World Action Models로 명명하고 정의·아키텍처·데이터·평가의 네 축으로 정리한 첫 서베이를 살펴봅니다.
-buzz: 181
+buzz: 187
 citations: 11
 ---
 
