@@ -9,6 +9,7 @@ aliases:
 description: fine-tuning 없이 모델 외부에 safety 자산을 두는 LLM 안전 프레임워크입니다. 공격 스킬 라이브러리와 경량 보조 디펜더가 공진화하며, victim model을 바꿔도 safety 자산을 그대로 재사용할 수 있습니다.
 image: "![[evosafety-overview.png]]"
 buzz: 0
+citations: 0
 ---
 
 > Zhang, X., Li, C., Liu, H., Yan, S., Yan, B., Ye, Q., & Li, H. (2026). Model-Agnostic Lifelong LLM Safety via Externalized Attack-Defense Co-Evolution. arXiv:2605.13411.

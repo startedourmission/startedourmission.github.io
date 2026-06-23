@@ -5,10 +5,11 @@ tags:
   - LLM
   - 트랜스포머
 aliases:
-  - The Dragon Hatchling: The Missing Link between the Transformer and Models of the Brain
+  - "The Dragon Hatchling: The Missing Link between the Transformer and Models of the Brain"
 image: "![[1-DragonHatchling.png]]"
 description: Dragon Hatchling(BDH)은 트랜스포머와 뇌 모델 사이의 연결고리를 찾습니다. 생물학적으로 그럴듯한 그래프 기반 뉴런 네트워크로 설계되어, 헤비안 학습과 스파이킹 뉴런을 사용하면서도 GPT-2 수준의 성능을 달성했습니다. 핵심은 attention을 시냅스 가소성으로, feed-forward를 국소적 그래프 동역학으로 재해석한 것입니다.
 buzz: 168
+citations: 4
 ---
 "트랜스포머는 어떻게 작동하는가?"와 "뇌는 어떻게 사고하는가?"는 각각 AI와 신경과학의 핵심 질문입니다. 하지만 이 둘을 동시에 답하려는 시도는 많지 않았습니다. 트랜스포머는 밀집 텐서 연산에 기반한 중앙집중식 시스템이고, 뇌는 국소적으로 상호작용하는 분산 그래프 시스템이기 때문입니다.
 

@@ -12,6 +12,7 @@ buzz: 230
   한때 불가능하다고 여겨졌던 작업들을 AI가 해내면서, 골대는 계속 움직이고 있죠.이 논문은 그러한 모호함을 깨고 AGI를 정량화할 수 있는 체계적인 프레임워크를 제시합니다. 핵심 아이디어는 간단합니다. AGI란 교육받은 성인의 인지적 다재다능함과 숙련도를 따라잡거나 능가하는 AI입니다. 이를 측정하기 위해 연구팀은 인간 인지 능력의 가장 검증된 모델인 Cattell-Horn-Carroll(CHC) 이론을 활용했습니다.
 
   결과는 놀랍습니다. GPT-4의 AGI 점수는 27%, GPT-5는 57%입니다. 빠른 발전에도 불구하고, 현재 AI는 여전히 AGI와 상당한 거리가 있다는 것을 구체적인 수치로 보여줍니다.
+citations: 29
 ---
 > D. Hendrycks, D. Song, C. Szegedy, H. Lee, Y. Gal, E. Brynjolfsson, S. Li, A. Zou, L. Levine, B. Han, J. Fu, Z. Liu, J. Shin, K. Lee, M. Mazeika, L. Phan, G. Ingebretsen, A. Khoja, C. Xie, O. Salaudeen, M. Hein, K. Zhao, A. Pan, D. Duvenaud, B. Li, S. Omohundro, G. Alfour, M. Tegmark, K. McGrew, G. Marcus, J. Tallinn, E. Schmidt, and Y. Bengio, "A Definition of AGI", arXiv preprint arXiv:2510.18212, 2025.
 

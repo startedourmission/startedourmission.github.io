@@ -8,6 +8,7 @@ tags:
 description: CoT가 왜 되는지 아무도 몰랐습니다. KisMATH는 추론 트레이스에서 인과 그래프를 자동으로 추출하고, 그 그래프 경로를 억제했을 때 모델이 실제로 붕괴하는지 실험으로 확인했습니다. "중간 토큰이 장식이냐 실제 계산이냐"는 질문에 처음으로 엄밀한 인과 답변을 내놓은 연구입니다.
 image: "![[1-KisMATH.png]]"
 buzz: 25
+citations: 1
 ---
 
 > **원제:** KisMATH: Do LLMs Have Knowledge of Implicit Structures in Mathematical Reasoning?

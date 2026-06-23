@@ -12,6 +12,7 @@ description: |-
 buzz: 323
   Kimi가 도약합니다.
   현대 트랜스포머 기반 모델의 약점을 개선하고 높은 성능을 달성한 새로운 Kimi를 소개합니다.
+citations: 86
 ---
 
 > **Kimi Team et al., 2025** ([arXiv:2510.26692](http://arxiv.org/abs/2510.26692))

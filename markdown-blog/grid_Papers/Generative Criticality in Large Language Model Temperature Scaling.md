@@ -7,6 +7,7 @@ tags:
 image: "![[gencrit-susceptibility.png]]"
 description: 물리학자들이 LLM의 temperature 슬라이더를 통계물리의 상전이로 들여다본 논문입니다. 토큰 임베딩을 스핀 변수로 놓고 보면, 특정 임계온도 근처에서 출력의 질서와 무질서가 물의 끓는점처럼 급격히 바뀌는 임계 현상이 나타납니다. susceptibility 급첨두, order parameter 붕괴, 내재 차원 최소라는 세 신호가 같은 지점을 가리킵니다.
 buzz: 0
+citations: 0
 ---
 
 > H. Ruan, J. Li, X. Guo, and L. Wang, "Generative Criticality in Large Language Model Temperature Scaling," arXiv:2606.06238, 2026.

@@ -8,6 +8,7 @@ tags:
 description: "복잡한 에이전틱 하네스의 성능을 실제로 끌어올리는 건 뭘까요? 이 논문은 답이 '병렬 추론 + 순차적 종합'이라는 두 단계 패턴에 있다고 봅니다. Best-of-N의 이론적 상한을 넘는 Heavy Thinking의 구조와 실험 결과를 정리합니다."
 image: "![[1-HeavySkill.png]]"
 buzz: 61
+citations: 1
 ---
 
 > **원제:** HeavySkill: Heavy Thinking as the Inner Skill in Agentic Harness

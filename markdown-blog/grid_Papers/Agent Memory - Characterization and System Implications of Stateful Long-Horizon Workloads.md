@@ -7,6 +7,7 @@ tags:
 description: 에이전트에 기억을 붙이는 일을 정확도가 아니라 시스템 비용의 문제로 처음 해부한 논문입니다. 메모리 시스템을 네 갈래로 분류하고, 구축·검색·생성 단계별로 토큰과 GPU 에너지를 측정해 열 개 시스템을 비교합니다. 정답 하나를 만드는 데 드는 에너지가 시스템 간 수십 배 벌어지며, 그 비용 대부분이 사용자 눈에 안 보이는 기억 구축 단계에 숨어 있다는 것을 보입니다.
 image: "![[agent-memory-energy.png]]"
 buzz: 0
+citations: 0
 ---
 
 > Y. Omri, Z. Gan, Z. Broveak, R. Geens, et al., "Agent Memory: Characterization and System Implications of Stateful Long-Horizon Workloads," arXiv:2606.06448, 2026.

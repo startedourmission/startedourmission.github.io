@@ -10,6 +10,7 @@ aliases:
 description: 사전 정의된 워크플로 그래프 위에서 sub-agent의 모델·reasoning budget·구조 선택을 컴파일 타임에 한 번에 탐색해 정확도-지연 trade-off 집합을 만들어내는 컴파일러입니다. DSPy가 프롬프트 자동화였다면, FlowCompile은 그래프 자체의 자동화로 한 칸 더 나아간 시도입니다.
 image: "![[flowcompile-overview.png]]"
 buzz: 0
+citations: 0
 ---
 > Li, J., Hong, Z.-W., Shen, M., Zhang, Y., & Gan, C. (2026). *FlowCompile: An Optimizing Compiler for Structured LLM Workflows*. arXiv:2605.13647.
 

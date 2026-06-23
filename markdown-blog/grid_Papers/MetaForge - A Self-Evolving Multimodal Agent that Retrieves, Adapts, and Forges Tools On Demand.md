@@ -8,6 +8,7 @@ tags:
 description: 멀티모달 에이전트는 도구를 써서 복잡한 추론을 풀지만, 미리 정해진 도구 목록은 처음 보는 상황에 일반화되지 못하고 도구를 마구 부르면 비용과 오류만 늘어납니다. MetaForge는 에이전트의 행동을 Decide, Retrieve, Adapt, Forge 네 단계로 나누고, 도구를 언제 쓸지와 도구를 어떻게 늘릴지를 강화학습으로 함께 배우게 합니다.
 image: "![[metaforge-overview.png]]"
 buzz: 0
+citations: 0
 ---
 > S. Wei, H. Min, X. Dong, X. Lin, et al., "MetaForge: A Self-Evolving Multimodal Agent that Retrieves, Adapts, and Forges Tools On Demand," arXiv:2606.01801, 2026.
 

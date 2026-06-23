@@ -7,6 +7,7 @@ tags:
 description: 긴 chain-of-thought가 어느 지점부터 오히려 정확도를 무너뜨리는지를 디코더 어텐션의 정보이론적 용량 한계로 증명한 ICML 2026 논문. 19~31스텝의 Deterministic Horizon을 넘으면 신경 추론 대신 도구에 위임하라는 결론을 뜯어봅니다.
 image: "![[deterministic-horizon-decay.png]]"
 buzz: 0
+citations: 0
 ---
 
 > D. Guo, J. Wu, and S. M. Yiu, "The Deterministic Horizon: When Extended Reasoning Fails and Tool Delegation Becomes Necessary," arXiv:2606.00376, 2026.
