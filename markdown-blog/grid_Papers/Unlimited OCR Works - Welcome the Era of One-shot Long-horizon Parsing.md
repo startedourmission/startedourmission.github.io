@@ -37,7 +37,7 @@ $$N(t) = P \cup D_n(t)$$
 
 각 위치 $j \in N(t)$에 대한 어텐션 가중치는 표준 스케일드 닷 프로덕트로 계산합니다.
 
-$$\alpha_{tj} = \frac{\exp\!\left(\frac{q_t^\top k_j}{\sqrt{d_k}}\right)}{\sum_{i \in N(t)} \exp\!\left(\frac{q_t^\top k_i}{\sqrt{d_k}}\right)}$$
+$$\alpha_{tj} = \frac{\exp\!(\frac{q_t^\top k_j}{\sqrt{d_k}})}{\sum_{i \in N(t)} \exp\!(\frac{q_t^\top k_i}{\sqrt{d_k}})}$$
 
 이 결과로 KV 캐시 크기는 상수로 고정됩니다.
 

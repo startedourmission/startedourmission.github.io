@@ -34,7 +34,7 @@ buzz: 52
 
 **PerceptionDLM-Base.** 확산 언어 모델을 비주얼 인스트럭션 튜닝으로 멀티모달까지 확장한 베이스 모델입니다. 비전 인코더로 SigLIP-2를, 디코더로 LLaDA-8B를 쓰고, 2층 MLP 커넥터가 시각 특징을 텍스트 임베딩 공간으로 투영합니다. 학습 시 확산 forward 과정을 타깃 응답 토큰에만 적용하고, 이미지 표현과 인스트럭션 토큰은 조건으로 보존합니다. 손실은 마스크된 타깃 토큰만 예측하는 형태입니다.
 
-$$\mathcal{L}_{\text{Base}} = -\mathbb{E}_{(X_v, X_q, X_a),\, t,\, x_t}\left[\frac{1}{t}\sum_{i \in \mathcal{M}_a} \log p_\theta(x_0^i \mid x_t, H_v, X_q)\right]$$
+$$\mathcal{L}_{\text{Base}} = -\mathbb{E}_{(X_v, X_q, X_a),\, t,\, x_t}[\frac{1}{t}\sum_{i \in \mathcal{M}_a} \log p_\theta(x_0^i \mid x_t, H_v, X_q)]$$
 
 여기서 $\mathcal{M}_a$는 타깃 응답 $X_a$ 안에서 마스크된 토큰의 인덱스입니다. 고해상도 이미지는 $512 \times 512$ 타일 격자로 동적 분할하고, 타일이 여럿이면 원본 썸네일을 끝에 덧붙입니다. 학습은 4단계입니다. 비전-언어 정렬, 대규모 중간 학습(지식 주입), 22M 규모 인스트럭션 튜닝, 그리고 Honey-Data-15M으로 하는 고품질 SFT 정제입니다.
 
