@@ -2,6 +2,7 @@
 date: 2025-11-05
 tags:
   - 논문
+  - Headliner
   - LLM
   - 트랜스포머
 aliases:

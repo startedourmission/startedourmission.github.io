@@ -2,7 +2,6 @@
 date: 2025-10-08
 tags:
   - 논문
-  - Headliner
   - LLM
   - 추론
 aliases:
