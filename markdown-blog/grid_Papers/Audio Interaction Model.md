@@ -7,7 +7,7 @@ tags:
 description: 오프라인 오디오 언어모델과 단일 과제 스트리밍 모델을 하나의 always-on 모델로 합친 Audio Interaction Model. 매 청크마다 말할지 침묵할지를 스스로 정하는 perceive-decide-respond 루프와 이를 데이터부터 추론까지 구현한 SoundFlow 프레임워크를 뜯어봅니다.
 image: "![[audio-interaction-overview.png]]"
 citations: 0
-buzz: 48
+buzz: 47
 ---
 > Z. Xie, Z. Liu, Z. An, X. Hu, et al., "Audio Interaction Model," arXiv:2606.05121, 2026.
 

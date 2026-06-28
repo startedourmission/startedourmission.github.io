@@ -2,7 +2,6 @@
 date: 2026-06-20
 tags:
   - 정보
-  - Headliner
   - LLM
 description: "2026년 6월, 미국 상무부가 Anthropic의 Fable 5와 Mythos 5 모델 접근을 외국 국적자에게 전면 금지했습니다. 사상 첫 AI 모델 수출 통제 집행 사례입니다."
 image: "![[fable5-export-control.png]]"

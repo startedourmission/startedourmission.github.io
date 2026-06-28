@@ -1,0 +1,15 @@
+---
+type: person
+description: 청화대학교 자동화학과 정교수. 음성 합성·인식·감정 처리 및 에이전틱 AI 분야를 연구하는 시니어 연구자.
+tags:
+  - 인물
+  - 음성
+  - 에이전트
+  - 교수
+last_active: 2026
+papers:
+  - OPID - On-Policy Skill Distillation for Agentic Reinforcement Learning
+star: 12
+---
+
+청화대학교(Tsinghua University) 자동화학과 정교수. 2001년 청화대에서 박사학위를 취득한 뒤 같은 대학에서 연구를 이어왔다. 음성 합성·코딩·인간-컴퓨터 상호작용·감정 처리를 주요 연구 분야로 삼고 있으며, 국가자연과학기금 우수청년과학자 수상자다. 최근에는 Jinyang Wu 등과 함께 LLM 에이전트 훈련 연구를 이끌고 있다.

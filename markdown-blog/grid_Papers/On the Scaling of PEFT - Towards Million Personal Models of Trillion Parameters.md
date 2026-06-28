@@ -8,7 +8,7 @@ tags:
 description: PEFT를 비용 절감 수단이 아닌 수백만 개의 퍼스널 모델을 운용하는 스케일링 메커니즘으로 재정의한 Mind Lab의 연구입니다. Scale Up, Scale Down, Scale Out 세 축의 의존 구조와 MinT 인프라를 제시합니다.
 image: "![[peft-scaling-three-axes.png]]"
 citations: 0
-buzz: 58
+buzz: 57
 ---
 
 > Mind Lab, "On the Scaling of PEFT: Towards Million Personal Models of Trillion Parameters," arXiv:2606.02437, 2026.
