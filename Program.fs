@@ -268,6 +268,7 @@ let main argv =
     createCanvasPages ()
     createTagPages ()
     createPostsAndGridPages ()
+    SkunkHtml.createTrendsPage header footer navFolders gridSections
     SkunkHtml.createRssFeed allPosts
 
     // SEO + GEO 파일 생성

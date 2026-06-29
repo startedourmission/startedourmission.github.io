@@ -167,7 +167,9 @@
                 let urlFriendlyName = Url.toUrlFriendly folderName
                 $"""<li><a href="{urlFriendlyName}.html">{folderName}</a></li>""")
 
-        let mainItems = gridNavItems
+        // Trends는 마크다운 글 목록이 아닌 별도 인터랙티브 페이지라 nav-main에 직접 추가
+        let trendsNavItem = """<li><a href="trends.html">Trends</a></li>"""
+        let mainItems = gridNavItems @ [trendsNavItem]
         let subItems = navFolderItems
 
         let mainHtml = mainItems |> String.concat "\n        "
@@ -672,6 +674,54 @@
 
         printfn $"Processing {sectionTitle} page ->"
         Disk.writeFile outputPath gridPageHtml
+
+    // Trends 페이지: Hacker News 언급량을 Algolia HN Search API로 방문자 브라우저에서
+    // 직접 조회해 그리는 인터랙티브 차트. 빌드 시점 데이터/백엔드 없음.
+    let createTrendsPage (header: string) (footer: string) (navFolders: string array) (gridFolders: (string * Post list) list) =
+        let updatedHeader = buildNav header gridFolders navFolders
+
+        // 본문은 정적 HTML(보간 없음) — 모든 로직은 scripts/hn-trends.js 에 있음
+        let content =
+            """
+        <section class="hnt-section">
+            <h1 class="grid-title">Trends</h1>
+            <p class="hnt-intro">기술과 제품이 개발자 담론에서 언제 떠오르고 식었는지, Hacker News에 쌓인 글과 댓글의 언급량으로 추적합니다.</p>
+
+            <h2 class="hnt-heading">Hacker News Trends</h2>
+            <p class="hnt-desc">키워드를 입력하면 <a href="https://hn.algolia.com/api" target="_blank" rel="noopener">Algolia HN Search API</a>로 연도별 언급 횟수를 실시간 조회해 비교합니다. 검색량이 아니라 실제로 작성된 글·댓글 본문의 매칭 수이며, 멀티워드는 구문(phrase)으로 매칭합니다.</p>
+
+            <div class="hnt-presets">
+                <button class="hnt-preset" data-kw="Claude Code, Cursor, Copilot, Codex">AI 코딩툴</button>
+                <button class="hnt-preset" data-kw="Claude, GPT, Gemini, Llama">AI 모델</button>
+                <button class="hnt-preset" data-kw="OpenAI, Anthropic, Google DeepMind, Mistral">LLM 랩</button>
+                <button class="hnt-preset" data-kw="Neovim, VS Code, Zed, Emacs">에디터</button>
+                <button class="hnt-preset" data-kw="PostgreSQL, MySQL, MongoDB, SQLite">데이터베이스</button>
+                <button class="hnt-preset" data-kw="React, Vue, Svelte, htmx">프론트엔드</button>
+            </div>
+
+            <div class="hnt-controls">
+                <input id="hnt-input" type="text" autocomplete="off" placeholder="키워드를 쉼표로 구분 (예: Claude, GPT, Gemini) · 최대 5개" />
+                <button id="hnt-run" type="button">비교</button>
+            </div>
+
+            <div class="hnt-chart-wrap">
+                <canvas id="hnt-chart"></canvas>
+            </div>
+
+            <div id="hnt-status" class="hnt-status"></div>
+            <div id="hnt-links" class="hnt-links"></div>
+
+            <p class="hnt-note">언급량은 개발자 커뮤니티의 관심도를 나타낼 뿐, 시장점유율이나 기술적 우수성을 직접 증명하지 않습니다. 동명의 일반 명사나 비판·장애 맥락의 언급도 함께 잡힙니다. 데이터는 Hacker News(2007년~)이며 올해 값은 진행 중입니다.</p>
+        </section>
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@4" defer></script>
+        <script src="scripts/hn-trends.js" defer></script>
+        """
+
+        let trendsPageHtml = generateFinalHtml (headWithCanonical " - Trends" "trends.html") updatedHeader footer content ""
+
+        printfn "Processing Trends page ->"
+        Disk.writeFile (Path.Combine(Config.outputDir, "trends.html")) trendsPageHtml
 
     let createCanvasPage (header: string) (footer: string) (canvas: Canvas) (outputPath: string) (navFolders: string array) =
         // Canvas 데이터를 JSON으로 직렬화
