@@ -5,7 +5,6 @@ tags:
   - AI평가
   - 에이전트
   - LLM
-  - Headliner
 description: Nature 계열 학술지 논문 90편에서 추출한 과학 태스크 벤치마크. 최강 모델도 17.8%만 SOTA를 넘었고, 성공의 절반 가까이는 과학적 발견이 아닌 지도학습 문제 변환에 기댄 것으로 드러났습니다.
 image: "![[naturebench-overview.png]]"
 buzz: 56

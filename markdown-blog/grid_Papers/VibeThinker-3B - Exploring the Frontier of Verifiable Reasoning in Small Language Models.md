@@ -8,7 +8,7 @@ tags:
 description: "Sina Weibo의 9인 연구팀이 3B 파라미터만으로 DeepSeek V3.2(671B), Kimi K2.5(1T) 수준의 수학 추론 성능을 달성한 방법. Spectrum-to-Signal Principle 기반 5단계 포스트트레이닝 레시피와, 검증 가능한 추론이 지식 저장보다 파라미터 효율이 높다는 Parametric Compression-Coverage Hypothesis를 제안합니다."
 image: "![[vibethinker-3b-overview.png]]"
 citations: 7
-buzz: 168
+buzz: 167
 ---
 
 > S. Xu, S. Liu, W. Wang, J. Min, Y. Dai, Z. Yin, Y. Chen, X. Zhou, and J. Zhang, "VibeThinker-3B: Exploring the Frontier of Verifiable Reasoning in Small Language Models," , 2026.

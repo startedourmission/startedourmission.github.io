@@ -2,6 +2,7 @@
 date: 2026-06-28
 tags:
   - 정보
+  - Headliner
   - LLM
   - 벤치마크
 description: "Google DeepMind가 6월 22일 공개한 Gemini 2.5 Pro의 확장 추론 모드. GPQA Diamond 82.4%로 박사급 과학 벤치마크에서 상위권을 기록했으며, 추론 토큰 예산을 늘릴수록 정확도가 올라가는 구조입니다."

@@ -2,7 +2,6 @@
 date: 2026-06-21
 tags:
   - 정보
-  - Headliner
   - 에이전트
   - 오픈소스
   - AI평가

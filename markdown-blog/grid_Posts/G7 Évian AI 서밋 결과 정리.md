@@ -2,7 +2,6 @@
 date: 2026-06-20
 tags:
   - 정보
-  - Headliner
   - LLM
 description: "2026년 6월 프랑스 에비앙에서 열린 G7 정상회의에서 AI 거버넌스가 의제를 차지했습니다. 히로시마 AI 프로세스 3년 후 어디까지 왔는지 정리합니다."
 image: "![[g7-evian-ai-summit.png]]"
