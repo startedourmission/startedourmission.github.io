@@ -685,33 +685,28 @@
             """
         <section class="hnt-section">
             <h1 class="grid-title">Trends</h1>
-            <p class="hnt-intro">기술과 제품이 개발자 담론에서 언제 떠오르고 식었는지, Hacker News에 쌓인 글과 댓글의 언급량으로 추적합니다.</p>
+            <p class="hnt-intro">기술과 제품이 개발자 담론에서 언제 떠오르고 식었는지, Hacker News에 쌓인 글과 댓글의 언급량으로 추적합니다. 숫자는 검색량이 아니라 실제로 작성된 글·댓글 본문에서 그 이름이 매칭된 횟수이며, 멀티워드는 구문(phrase)으로 셉니다.</p>
+            <p id="hnt-asof" class="hnt-asof"></p>
 
-            <h2 class="hnt-heading">Hacker News Trends</h2>
-            <p class="hnt-desc">키워드를 입력하면 <a href="https://hn.algolia.com/api" target="_blank" rel="noopener">Algolia HN Search API</a>로 연도별 언급 횟수를 실시간 조회해 비교합니다. 검색량이 아니라 실제로 작성된 글·댓글 본문의 매칭 수이며, 멀티워드는 구문(phrase)으로 매칭합니다.</p>
-
-            <div class="hnt-presets">
-                <button class="hnt-preset" data-kw="Claude Code, Cursor, Copilot, Codex">AI 코딩툴</button>
-                <button class="hnt-preset" data-kw="Claude, GPT, Gemini, Llama">AI 모델</button>
-                <button class="hnt-preset" data-kw="OpenAI, Anthropic, Google DeepMind, Mistral">LLM 랩</button>
-                <button class="hnt-preset" data-kw="Neovim, VS Code, Zed, Emacs">에디터</button>
-                <button class="hnt-preset" data-kw="PostgreSQL, MySQL, MongoDB, SQLite">데이터베이스</button>
-                <button class="hnt-preset" data-kw="React, Vue, Svelte, htmx">프론트엔드</button>
+            <div id="hnt-gallery" class="hnt-gallery">
+                <p class="hnt-status">트렌드 차트를 불러오는 중…</p>
             </div>
 
+            <hr class="hnt-divider" />
+
+            <h2 class="hnt-heading">직접 비교해보기</h2>
+            <p class="hnt-desc">궁금한 이름을 직접 넣어보세요. <a href="https://hn.algolia.com/api" target="_blank" rel="noopener">Algolia HN Search API</a>로 그 자리에서 조회합니다. 쉼표로 구분, 최대 5개.</p>
             <div class="hnt-controls">
-                <input id="hnt-input" type="text" autocomplete="off" placeholder="키워드를 쉼표로 구분 (예: Claude, GPT, Gemini) · 최대 5개" />
+                <input id="hnt-input" type="text" autocomplete="off" placeholder="예: Rust, Go, Zig" />
                 <button id="hnt-run" type="button">비교</button>
             </div>
-
-            <div class="hnt-chart-wrap">
-                <canvas id="hnt-chart"></canvas>
-            </div>
-
             <div id="hnt-status" class="hnt-status"></div>
+            <div id="hnt-custom-wrap" class="hnt-chart-wrap" style="display:none;">
+                <canvas id="hnt-custom-chart"></canvas>
+            </div>
             <div id="hnt-links" class="hnt-links"></div>
 
-            <p class="hnt-note">언급량은 개발자 커뮤니티의 관심도를 나타낼 뿐, 시장점유율이나 기술적 우수성을 직접 증명하지 않습니다. 동명의 일반 명사나 비판·장애 맥락의 언급도 함께 잡힙니다. 데이터는 Hacker News(2007년~)이며 올해 값은 진행 중입니다.</p>
+            <p class="hnt-note">언급량은 개발자 커뮤니티의 관심도를 나타낼 뿐, 시장점유율이나 기술적 우수성을 직접 증명하지 않습니다. 동명의 일반 명사나 비판·장애 맥락의 언급도 함께 잡힙니다. 한 그래프에서 한 이름이 압도적으로 크면 나머지가 눌려 보일 수 있습니다(예: 2026년의 Claude). 데이터는 Hacker News(2007년~)이며 올해 값은 진행 중입니다.</p>
         </section>
 
         <script src="https://cdn.jsdelivr.net/npm/chart.js@4" defer></script>
