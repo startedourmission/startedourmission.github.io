@@ -5,7 +5,6 @@ tags:
   - LLM
 description: "둘 다 AI인데 왜 따로 쓰는 건지 궁금하셨나요. 학습 방식, 안전 철학, 실제로 잘 하는 것이 다릅니다. 스펙 비교가 아니라 쓰임새로 정리했습니다."
 ---
-
 ## 현재 주요 모델 라인업
 
 | Anthropic (Claude) | OpenAI (GPT)      |              |
