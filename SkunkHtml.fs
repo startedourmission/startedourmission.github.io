@@ -529,10 +529,11 @@
         let leafLinksHtml =
             leafLinks
             |> List.map (fun (leaf, url, count) ->
+                let countHtml = if count > 0 then $"""<span class="moc-leaf-count">{count}편</span>""" else ""
                 $"""
                 <li class="moc-leaf-item">
                     <a href="{url}" class="moc-leaf-link">{leaf}</a>
-                    <span class="moc-leaf-count">{count}편</span>
+                    {countHtml}
                 </li>""")
             |> String.concat "\n            "
 
@@ -569,14 +570,17 @@
 
         let updatedHeader = buildNav header gridFolders navFolders
 
+        let postsListHtml =
+            if posts.IsEmpty then ""
+            else $"""<ul class="posts-list posts-with-images">
+            {postsHtml}
+        </ul>"""
         let content =
             $"""
         <p class="subindex-breadcrumb"><a href="{parentUrl}">← {parentName}</a></p>
         <h1>{leafName}</h1>
         <div class="moc-intro">{introHtml}</div>
-        <ul class="posts-list posts-with-images">
-            {postsHtml}
-        </ul>
+        {postsListHtml}
         """
 
         let leafPageUrl = $"{Url.toUrlFriendly leafName}.html"

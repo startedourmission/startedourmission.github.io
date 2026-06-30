@@ -78,7 +78,7 @@ module Config =
     let gridSectionOrder = ["Posts"; "Papers"; "BookReview"; "Portfolio"]
 
     // 내비게이션 섹션(nav-sub) 순서 설정
-    let navSectionOrder = ["Mastermind"; "Lectures Translate"; "Language"; "Dictionary"]
+    let navSectionOrder = ["Mastermind"; "Lectures Translate"; "Course"; "Dictionary"]
 
     // RSS 피드 정보
     let blogTitle = "startedourmission"
