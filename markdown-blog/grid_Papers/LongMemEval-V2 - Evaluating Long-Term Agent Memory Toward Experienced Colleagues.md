@@ -9,8 +9,8 @@ aliases:
   - "LongMemEval-V2"
 image: "![[longmemeval-v2-overview.png]]"
 description: UCLA 팀이 ICLR 2025의 LongMemEval을 웹 에이전트 trajectory 환경으로 확장한 후속 벤치마크입니다. 451개 수작업 문항으로 static state recall·dynamic state tracking·workflow knowledge·environment gotchas·premise awareness 다섯 메모리 능력을 측정하며, 채팅 히스토리에서 ServiceNow·WebArena의 실제 에이전트 행적으로 옮겨가 25M~115M 토큰 규모의 haystack을 다룹니다.
-buzz: 57
 citations: 2
+buzz: 60
 ---
 
 > D. Wu, Z. Ji, A. Kawatkar, B. Kwan, J.-C. Gu, N. Peng, and K.-W. Chang, "LongMemEval-V2: Evaluating Long-Term Agent Memory Toward Experienced Colleagues," arXiv:2605.12493, 2026.

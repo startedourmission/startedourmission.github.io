@@ -8,8 +8,8 @@ aliases:
   - FAST-DLLM V2: Efficient Block-Diffusion LLM
 image: "![[1-FAST-DLLM.png]]"
 description: NVIDIA의 힘은 GPU가 다가 아니죠.  명실상부 LLM 선두주자의 새로운 논문입니다. 자연어 처리 모델이 토큰을 생성하는 기본적인 방법인 자기회귀(AR)의 한계를 극복하는 병렬 텍스트 생성 모델입니다. 적은 토큰으로도 파인 튜닝이 가능하고 500배 적은 학습 데이터로 기존 Dream 모델과 동일한 성능을 달성합니다.
-buzz: 305
 citations: 92
+buzz: 209
 ---
 대규모 언어 모델(LLM)은 자연어 처리 분야에서 놀라운 성능을 보여주고 있지만, 기존의 자기회귀(Autoregressive, AR) 방식은 토큰을 순차적으로 하나씩 생성하기 때문에 추론 속도에 제약이 있습니다. 이러한 한계를 극복하기 위해 확산 기반 언어 모델(Diffusion Language Model, dLLM)이 제안되었지만, 여전히 실용적인 배포에는 어려움이 있었습니다.
 

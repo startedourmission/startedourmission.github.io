@@ -2,7 +2,6 @@
 date: 2025-10-24
 tags:
   - 논문
-  - Headliner
   - LLM
   - 베스트논문
   - 멀티모달
@@ -10,8 +9,8 @@ aliases:
   - DeepSeek-OCR: Contexts Optical Compression
 image: "![[1-DeepSeek-OCR.png]]"
 description: 긴 텍스트를 이미지로 변환해 LLM 컨텍스트를 압축하는 DeepSeek-OCR을 소개합니다. 10배 압축에서 97% 정확도를 유지하며, 광학적 컨텍스트 압축이라는 새 발상을 제시합니다.
-buzz: 336
 citations: 131
+buzz: 226
 ---
 긴 텍스트를 처리하는 것보다 차라리 이미지로 읽으면 연산량이 적지 않을까. 텍스트를 이미지로 변환해 LLM 컨텍스트를 압축하면서도 놀라운 정확도를 유지하는 발상입니다.
 

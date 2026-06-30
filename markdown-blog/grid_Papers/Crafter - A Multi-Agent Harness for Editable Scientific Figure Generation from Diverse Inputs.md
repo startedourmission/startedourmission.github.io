@@ -7,7 +7,7 @@ tags:
 description: 과학 논문 피겨 생성에서 더 강한 생성 모델이 아닌 더 나은 오케스트레이션이 답이라는 주장입니다. 멀티에이전트 하네스로 3가지 피겨 유형, 4가지 입력 조건을 단일 구조로 처리합니다.
 image: "![[crafter-architecture.png]]"
 citations: 0
-buzz: 58
+buzz: 57
 ---
 > H. Zhao, S. Si, Z. Wang, Z. Wang, L. Chen, X. Li, Z. Liang, M. Sun, and M. Zhang, "Crafter: A Multi-Agent Harness for Editable Scientific Figure Generation from Diverse Inputs," arXiv:2605.30611, 2026.
 

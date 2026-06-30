@@ -7,7 +7,7 @@ tags:
   - 머신러닝
 description: "로봇 조작 데이터가 비싸고 편향된 문제를 인간 1인칭 영상 1,478시간으로 보완한 VLA 사전학습 프레임워크. 공간·구조·시간 세 축의 표현 통합과 신뢰도 가중 보조 손실로 RoboCasa, RoboTwin 2.0 모두에서 최고 성능을 달성했습니다."
 image: "![[ace-ego-0-overview.png]]"
-buzz: 45
+buzz: 44
 ---
 
 > H. Li, G. Zhao, Y. Liu, H. Hou, G. Ye, T. Fang, C. Liu, S. Huang, J. Liu, X. Wang, and H. Li, "ACE-Ego-0: Unifying Egocentric Human and Robotic Data for VLA Pretraining," arXiv:2606.17200, 2026.

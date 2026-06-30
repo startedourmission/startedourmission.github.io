@@ -7,7 +7,7 @@ tags:
   - 벤치마크
 description: "SJTU·Tsinghua·MemTensor 팀이 LLM 에이전트 메모리 시스템 12종을 데이터 관리 관점에서 체계적으로 비교했습니다. 단일 만능 구조는 없으며, 효과는 워크로드에 맞는 추상화 수준에 달려 있음을 9가지 발견으로 정리합니다."
 image: "![[agent-native-memory-overview.png]]"
-buzz: 86
+buzz: 52
 ---
 
 > W. Zhou, X. Zhou, S. Han, H. Xu, G. Li, Z. Li, F. Xiong, and F. Wu, "Are We Ready For An Agent-Native Memory System?," arXiv:2606.24775, 2026.

@@ -8,7 +8,7 @@ tags:
 description: CUHK·LIGHTSPEED·PKU·THU 공동 연구팀이 제안한 Orchestra-o1은 텍스트·이미지·오디오·영상을 넘나드는 복합 태스크를 오케스트레이터-서브에이전트 구조로 처리하는 옴니모달 에이전트 프레임워크입니다. OmniGAIA 벤치마크에서 Gemini-3-Pro 대비 10.3%p 높은 72.8%를 기록하며 SOTA를 세웠고, 오픈소스 모델 Orchestra-o1-8B도 30.0%로 이전 최고 기록을 9.2%p 앞질렀습니다.
 image: "![[orchestra-o1-comparison.png]]"
 citations: 0
-buzz: 41
+buzz: 40
 ---
 
 > F. Zhang, V. Zhang, S. Qian, H. Li, H. Wu, J. Wu, D. Zhou, Z. Zhu, Z. Lian, X. Wang, and P.-A. Heng, "Orchestra-o1: Omnimodal Agent Orchestration," arXiv:2606.13707, 2026.

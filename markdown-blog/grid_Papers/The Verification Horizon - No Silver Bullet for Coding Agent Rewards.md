@@ -7,7 +7,7 @@ tags:
   - 강화학습
 description: "Qwen 팀이 코딩 에이전트 보상 설계의 실전 경험을 정리한 논문. 테스트 통과, 시각 판정, 사용자 피드백, 에이전트 평가자 네 가지 방식을 분석하고, 어떤 단일 검증 함수도 모델이 강해질수록 결국 부족해진다고 주장합니다."
 image: "![[verification-horizon-coevolution.png]]"
-buzz: 30
+buzz: 42
 ---
 
 > B. Wang, C. Zhang, D. Liu, J. Zhang, J. Chen, M. Chen, R. Fang, S. Zhang, X. Wang, Y. Jing, Z. Ma, Z. Cui, et al., "The Verification Horizon: No Silver Bullet for Coding Agent Rewards," arXiv:2606.26300, 2026.

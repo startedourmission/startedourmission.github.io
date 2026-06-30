@@ -124,6 +124,13 @@ async function pool(items, limit, worker) {
     groups
   };
 
+  // Sanity guard: never clobber a good file with a failed/empty run (matters for the daily cron).
+  const total = groups.reduce((a, g) => a + g.series.reduce((b, s) => b + s.counts.reduce((c, n) => c + (n || 0), 0), 0), 0);
+  if (total === 0 || stillNull > jobs.length * 0.2) {
+    console.error(`Refusing to overwrite (total=${total}, null=${stillNull}/${jobs.length}). Existing file kept.`);
+    process.exit(1);
+  }
+
   fs.mkdirSync(path.dirname(OUT), { recursive: true });
   fs.writeFileSync(OUT, JSON.stringify(out));
   console.error(`Wrote ${OUT} (${groups.length} groups, ${(JSON.stringify(out).length / 1024).toFixed(1)} KB)`);

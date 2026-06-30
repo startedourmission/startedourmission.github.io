@@ -12,6 +12,7 @@ aliases:
 last_active: 2026
 papers:
   - LoopCoder-v2 - Only Loop Once for Efficient Test-Time Computation Scaling
+  - Improved Large Language Diffusion Models
 star: 12
 ---
 

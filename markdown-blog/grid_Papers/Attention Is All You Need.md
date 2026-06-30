@@ -8,9 +8,9 @@ tags:
   - NLP
 description: "'Attention Is All You Need'는 RNN을 버리고 셀프 어텐션만으로 시퀀스를 처리하는 Transformer 아키텍처를 제안한 2017년 논문입니다. 기계 번역에서 당시 SOTA를 경신했고, 이후 BERT·GPT·Claude를 포함한 거의 모든 대형 언어 모델의 기반이 되었습니다."
 image: "![[transformer_1.png]]"
-buzz: 665
 arxiv: 1706.03762
 citations: 181100
+buzz: 539
 ---
 
 > A. Vaswani, N. Shazeer, N. Parmar, J. Uszkoreit, L. Jones, A. N. Gomez, L. Kaiser, and I. Polosukhin, "Attention Is All You Need," presented at the 31st Conference on Neural Information Processing Systems (NIPS 2017), Long Beach, CA, USA, 2017.

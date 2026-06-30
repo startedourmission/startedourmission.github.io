@@ -2,7 +2,6 @@
 date: 2026-06-22
 tags:
   - 정보
-  - Headliner
 description: "미국 연방에너지규제위원회(FERC)가 2026년 6월 18일 6개 전력 계통운영자에 Section 206 입증 명령을 발령했습니다. AI 데이터센터의 대규모 전력 연계 요청이 기존 대기열을 뒤흔들고 있기 때문입니다."
 image: "![[ferc-datacenter-grid.png]]"
 ---

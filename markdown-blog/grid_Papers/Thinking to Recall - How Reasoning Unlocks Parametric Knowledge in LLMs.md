@@ -5,9 +5,9 @@ tags:
 aliases:
 image: "![[]]"
 description: 추론(reasoning)이 수학이나 코딩이 아닌 단순 사실 질문에서도 도움이 되는 이유를 밝힌 논문입니다. 두 가지 메커니즘을 발견했는데, 하나는 추론 토큰이 추가 연산 버퍼로 작용하는 것이고, 다른 하나는 관련 사실을 생성하면서 정답 회상을 촉진하는 factual priming입니다. 다만 중간에 할루시네이션된 사실이 끼면 최종 답도 틀릴 확률이 크게 올라갑니다. Google Research + Technion.
-buzz: 162
 status:
 citations: 7
+buzz: 120
 ---
 추론 모델(R-LLM)이 수학이나 코딩에서 효과적인 건 직관적으로 이해됩니다. 복잡한 문제를 단계별로 분해해야 하니까요. 근데 "네팔의 10번째 왕은 누구야?" 같은 단순 사실 질문에서도 추론이 도움이 된다면? 단계별 논리 분해가 필요 없는 질문인데, 왜 thinking을 켜면 정답률이 올라갈까요. 이 논문은 그 메커니즘을 실험적으로 파헤칩니다. Google Research와 Technion, Tel Aviv University의 공동 연구입니다.
 

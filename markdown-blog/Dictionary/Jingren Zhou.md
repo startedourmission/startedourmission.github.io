@@ -12,6 +12,7 @@ aliases:
 last_active: 2026
 papers:
   - Qwen-AgentWorld - Language World Models for General Agents
+  - Wan-Streamer v0.1 - End-to-end Real-time Interactive Foundation Models
 star: 24
 ---
 
