@@ -7,7 +7,7 @@ tags:
 description: "단일 시각 토크나이저 HYDRA-XTok으로 이미지·비디오 이해·생성·편집을 하나의 모델에 통합한 네이티브 멀티모달 프레임워크. 튜블릿 인과 어텐션과 계층적 패치파이, 잠재 공간 기반 STI 편집으로 다섯 가지 태스크를 단일 7B 모델에서 처리합니다."
 image: "![[hydra-x-teaser.png]]"
 citations: 0
-buzz: 36
+buzz: 35
 ---
 
 > G. Zhang, X. Qiu, Y. Cui, T. Song, et al., "HYDRA-X: Native Unified Multimodal Models with Holistic Visual Tokenizers," arXiv:2606.13289, 2026.

@@ -1,0 +1,20 @@
+---
+type: person
+description: University of Washington Information School 조교수 겸 Allen Institute for AI(Ai2) 연구과학자. LARCH 랩 수장. 과학·의료 문서 이해와 정보 접근성을 위한 NLP 연구.
+tags:
+  - 인물
+  - NLP
+  - 교수
+aliases:
+  - Lucy Lu Wang
+last_active: 2026
+papers:
+  - Agentic Abstention - Do Agents Know When to Stop Instead of Act?
+star: 12
+---
+
+University of Washington Information School 조교수이자 Allen Institute for AI(Ai2) Research Scientist입니다. Language Accessibility Research(LARCH) 랩을 이끌고 있습니다. UW 전산생명의학 박사 출신으로, CS&E·생물의학정보학·인간중심설계공학 부서에 겸직으로 소속됩니다.
+
+주요 연구 주제는 과학 텍스트와 의료 문서에서 정보를 추출·이해하는 NLP 시스템 구축입니다. 특히 시각 장애인의 학술 콘텐츠 접근성 향상, 의학 문헌 합성, 임상 의사결정 지원에 집중합니다.
+
+지도 학생 [[Bingbing Wen]]과 함께 LLM abstention 연구를 주도하고 있습니다. "Know Your Limits" 서베이(TACL 2025)와 "Agentic Abstention"(arXiv:2606.28733, 2026)이 대표 공저 성과입니다.

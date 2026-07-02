@@ -8,7 +8,7 @@ tags:
 description: "VLM 공간 추론 에이전트에서 어떤 도구를 쓰느냐보다 어떻게 도구를 호출하느냐가 더 중요하다. NVIDIA 연구팀이 persistent Python kernel을 활용한 SpatialClaw를 제안해 20개 벤치마크에서 기존 최고 에이전트 대비 평균 +11.2pp를 달성했습니다."
 image: "![[spatialclaw-interfaces.png]]"
 citations: 0
-buzz: 77
+buzz: 97
 ---
 
 > S. Cho, R. Hachiuma, A. Badki, H. Su, B.-K. Lee, C. H. Song, S. Liu, S. Radhakrishnan, S. Kim, Y.-C. F. Wang, and M.-H. Chen, "SpatialClaw: Rethinking Action Interface for Agentic Spatial Reasoning," arXiv:2606.13673, 2026.

@@ -6,7 +6,7 @@ tags:
   - AI평가
 description: "현재 화면만 봐서는 다음 수를 알 수 없는 상황에서 MLLM이 얼마나 잘 기억하고 행동하는지 측정합니다. Matching Pairs 카드 게임과 3D 미로 탐색으로 구성된 RNG-Bench의 결과는 솔직합니다."
 image: "![[rng-bench-overview.png]]"
-buzz: 42
+buzz: 41
 ---
 
 > S. Ding, X. Wei, X. Fang, H. Duan, D. Lin, J. Wang, and Y. Zang, "Beyond the Current Observation: Evaluating Multimodal Large Language Models in Controllable Non-Markov Games," arXiv:2606.19338, 2026.
