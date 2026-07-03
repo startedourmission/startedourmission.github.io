@@ -3,7 +3,6 @@ date: 2026-06-28
 tags:
   - 잡담
   - LLM
-  - Headliner
 description: Ed Zitron이 쓴 에세이를 중심으로, AI가 느려지고 있다는 주장이 실제로 무엇을 뜻하는지 살펴봅니다. 기술적 둔화가 아니라 경제적 지속가능성 문제입니다.
 image: "![[ai-is-slowing-down.png]]"
 ---

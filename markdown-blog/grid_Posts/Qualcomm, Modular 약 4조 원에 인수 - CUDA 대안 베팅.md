@@ -2,7 +2,6 @@
 date: 2026-06-26
 tags:
   - 정보
-  - Headliner
   - 반도체
   - 오픈소스
 description: "Qualcomm이 Chris Lattner의 Modular를 약 39억 달러에 인수했습니다. 핵심 자산은 CUDA 없이 NVIDIA, AMD, Apple Silicon 어떤 하드웨어에서도 동일 코드로 AI 추론을 실행하는 MAX 런타임입니다."

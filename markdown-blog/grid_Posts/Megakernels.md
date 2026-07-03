@@ -2,6 +2,7 @@
 date: 2026-06-29
 tags:
   - 정보
+  - Headliner
   - LLM
 description: "LLM 추론 성능을 높이기 위한 커널 융합 기법과 구현 전략"
 image: "![[Megakernels-thumb.png]]"

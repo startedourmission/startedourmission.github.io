@@ -2,7 +2,6 @@
 date: 2026-06-28
 tags:
   - 정보
-  - Headliner
   - LLM
 description: "SpaceX가 오픈소스 AI 스타트업 Reflection AI에 컴퓨트 인프라를 제공하는 최대 63억 달러 규모 계약을 체결했습니다. SpaceX의 Colossus 데이터센터가 상업용 AI 컴퓨트 플랫폼으로 자리잡아가는 과정입니다."
 image: "![[spacex-reflection-ai.png]]"

@@ -2,6 +2,7 @@
 date: 2026-07-02
 tags:
   - 정보
+  - Headliner
   - LLM
   - 에이전트
 description: "Newsom 주지사, 캘리포니아 전 주정부 기관에 Claude 50% 할인 도입 발표. DMV 고객서비스, Medicaid 워크플로우, CDT·CalOES 사이버보안(Claude Security + Claude Code)까지 전 분야에 걸친 미국 최초 규모의 주정부 AI 계약입니다."

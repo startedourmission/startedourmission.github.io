@@ -2,6 +2,7 @@
 date: 2026-06-29
 tags:
   - 정보
+  - Headliner
   - LLM
 description: "NVIDIA Dynamo: PyTorch 동적 그래프를 정적 연산으로 최적화하는 컴파일러"
 image: "![[NVIDIA Dynamo-thumb.png]]"

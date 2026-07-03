@@ -2,6 +2,7 @@
 date: 2026-06-29
 tags:
   - 정보
+  - Headliner
   - LLM
 description: "LLM 생성 속도를 높이는 추론 최적화 기법: 추측적 디코딩과 다중 토큰 예측"
 image: "![[Speculative Decoding and MTP-thumb.png]]"

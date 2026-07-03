@@ -2,7 +2,6 @@
 date: 2026-06-23
 tags:
   - 정보
-  - Headliner
   - 에이전트
   - 오픈소스
 description: "탈취된 컨트리뷰터 계정으로 @mastra npm 스코프 패키지들이 88분 만에 백도어됐습니다. easy-day-js라는 dayjs 타이포스쿼트가 정보 탈취 페이로드를 심었고, MS는 북한 Sapphire Sleet에 귀속했습니다."
