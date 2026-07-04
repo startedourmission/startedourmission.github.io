@@ -3,6 +3,7 @@ date: 2026-06-27
 tags:
   - 정보
   - 반도체
+  - Headliner
 description: OpenAI가 Broadcom과 공동 설계한 첫 번째 자체 AI 추론 칩 Jalapeño. TSMC 3nm 공정, 8개 HBM 스택, 9개월 개발 주기로 설계됐습니다. GPU 대비 추론 비용 약 50% 절감을 목표로 2026년 하반기 소규모 배포를 시작합니다.
 image: "![[openai-broadcom-jalapeno.png]]"
 ---

@@ -7,7 +7,7 @@ tags:
   - LLM
 description: "단일 에이전트 경험 학습의 구조적 결함인 Self-Confirmation Trap을 공식화하고, 이종 병렬 실행·제3자 증류·합의 기반 검증의 EDV 프레임워크로 해결합니다."
 image: "![[edv-self-confirmation-trap-comparison.png]]"
-buzz: 45
+buzz: 46
 ---
 
 > S. Zhu, Y. Qi, Y. Wang, J. Li, C. Song, Y. Shi, Y. Miao, H. Gao, and K. Zhang, "Escaping the Self-Confirmation Trap: An Execute-Distill-Verify Paradigm for Agentic Experience Learning," arXiv:2606.24428, 2026.

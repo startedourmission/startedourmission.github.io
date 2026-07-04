@@ -6,7 +6,7 @@ tags:
   - AI평가
 description: "병원·직장·가정처럼 여러 사람이 한 AI 어시스턴트의 메모리를 함께 쓰는 환경을 평가하는 벤치마크. 잘 기억하는 것을 넘어, 권한 밖 정보를 막고 삭제 요청을 지키는 거버넌스까지 측정합니다. 어떤 방법도 유용성·접근제어·능동 망각 세 가지를 동시에 잡지 못했습니다."
 image: "![[gatemem-overview.png]]"
-buzz: 31
+buzz: 32
 ---
 > Z. Ren, Y. Yang, Y. Chen, Z. Zhao, et al., "GateMem: Benchmarking Memory Governance in Multi-Principal Shared-Memory Agents," arXiv:2606.18829, 2026.
 

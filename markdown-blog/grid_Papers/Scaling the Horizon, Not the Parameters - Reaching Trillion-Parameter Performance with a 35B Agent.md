@@ -6,7 +6,7 @@ tags:
   - LLM
 description: "Shanghai AI Lab의 Agents-A1은 35B MoE 모델로 트릴리언 파라미터급 에이전트 성능을 달성합니다. 파라미터가 아닌 지평선을 스케일링하는 KAG 인프라와 다중 교사 증류로 SEAL-0, IFBench 등 5개 주요 벤치마크에서 1위를 기록합니다."
 image: "![[scaling-horizon-pipeline.png]]"
-buzz: 50
+buzz: 48
 ---
 
 > Agents-A1 Team, "Scaling the Horizon, Not the Parameters: Reaching Trillion-Parameter Performance with a 35B Agent," arXiv:2606.30616, 2026.

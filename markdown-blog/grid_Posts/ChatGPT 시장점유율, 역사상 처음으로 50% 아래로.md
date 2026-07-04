@@ -2,6 +2,7 @@
 date: 2026-06-24
 tags:
   - 정보
+  - Headliner
   - LLM
   - 산업
 description: "Sensor Tower 보고서에 따르면 2026년 3월 ChatGPT의 AI 앱 시장점유율이 46.4%로 하락했습니다. 출시 이후 처음으로 50% 아래로 떨어진 것이며, Gemini 27.7%, Claude 10.3%가 뒤를 잇습니다."

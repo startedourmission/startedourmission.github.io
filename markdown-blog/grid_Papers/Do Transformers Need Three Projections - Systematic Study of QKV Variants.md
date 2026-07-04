@@ -7,7 +7,7 @@ tags:
 description: 트랜스포머의 핵심 구성 요소인 Q, K, V 세 가지 투영을 공유하는 경우를 체계적으로 평가한 논문. 언어 모델링에서 Q-K=V 투영 공유는 KV 캐시를 50% 감소시키면서 퍼플렉시티는 3.1%만 저하된다는 결과를 제시합니다.
 image: "![[qkv-fig1-architecture.png]]"
 citations: 0
-buzz: 11
+buzz: 29
 ---
 
 > A. Kayyam, A. Madan Gopal, and M. A. Lewis, "Do Transformers Need Three Projections? Systematic Study of QKV Variants," arXiv:2606.04032, 2026.

@@ -7,7 +7,7 @@ tags:
   - 머신러닝
 description: "파라미터를 공유하는 단일 트랜스포머 블록을 반복 적용해 환경 상태를 정제하는 세계 모델. 1B 파라미터로 claude-opus-4-6-max 대비 ScienceWorld EM +21.2%p를 달성하며, 잠재 깊이를 새로운 스케일링 축으로 제안합니다."
 image: "![[looped-world-models-overview.png]]"
-buzz: 96
+buzz: 97
 ---
 
 > H.A. Lu, Z.L.V. Wei, Q. Zhang, J. Zeng, et al., "Looped World Models," arXiv:2606.18208, 2026.
