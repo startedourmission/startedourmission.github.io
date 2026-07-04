@@ -2,6 +2,7 @@
 date: 2026-06-29
 tags:
   - 정보
+  - Headliner
   - LLM
 description: "LLM 추론의 두 단계를 분리해서 최적화하는 시스템 아키텍처"
 image: "![[Prefill-Decode Disaggregation-thumb.png]]"

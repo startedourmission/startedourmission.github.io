@@ -6,7 +6,7 @@ tags:
   - 확산모델
 description: "0.22B 파라미터로 11.9B짜리 FLUX.1-Fill-Dev와 맞먹는 이미지 인페인팅을 구현한 Moebius. 표현 병목을 깨기 위해 Local-λ Mix Interaction 블록과 잠재 공간 다중 입도 증류를 결합했습니다."
 image: "![[moebius-pipeline.png]]"
-buzz: 52
+buzz: 51
 ---
 
 > K. Duan, Z. Xu, W. Liu, X. Ruan, X. Chen, and X. Wang, "Moebius: 0.2B Lightweight Image Inpainting Framework with 10B-Level Performance," arXiv:2606.19195, 2026.

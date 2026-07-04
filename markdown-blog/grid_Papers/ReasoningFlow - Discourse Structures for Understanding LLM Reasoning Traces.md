@@ -7,7 +7,7 @@ tags:
 description: 추론 모델이 토해내는 길고 비선형적인 사고 트레이스를, UIUC 연구진이 8종 노드와 14종 엣지의 방향성 비순환 그래프로 파싱하는 프레임워크 ReasoningFlow를 내놨습니다. 1,260개 트레이스(24만 7천 스텝)를 분석한 결과 중 충격적인 하나. LRM이 만든 오류 스텝의 14.4%만이 실제로 틀린 최종 답에 인과적으로 기여했고, 79.6%는 아예 최종 답과 연결조차 안 됐습니다.
 image: "![[reasoningflow-overview.png]]"
 citations: 0
-buzz: 23
+buzz: 7
 ---
 
 > J. Lee, S. Agarwal, A. Parulekar, S. Madala, D. Hakkani-Tür, and J. Hockenmaier, "ReasoningFlow: Discourse Structures for Understanding LLM Reasoning Traces," arXiv:2606.05402, 2026.

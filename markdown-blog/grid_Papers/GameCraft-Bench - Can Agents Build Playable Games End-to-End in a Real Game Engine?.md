@@ -6,7 +6,7 @@ tags:
   - 벤치마크
 description: "Godot 엔진에서 코딩 에이전트가 실제로 플레이 가능한 게임을 처음부터 끝까지 만들 수 있는지 측정하는 벤치마크. 15개 장르 140개 태스크, 코드 생성부터 상호작용 검증까지 자동화된 평가 프레임워크입니다."
 image: "![[gamecraft-bench-overview.png]]"
-buzz: 43
+buzz: 42
 ---
 
 > T. Luo, R. Wang, J. Bi, C. Xu, et al., "GameCraft-Bench: Can Agents Build Playable Games End-to-End in a Real Game Engine?," arXiv:2606.17861, 2026.

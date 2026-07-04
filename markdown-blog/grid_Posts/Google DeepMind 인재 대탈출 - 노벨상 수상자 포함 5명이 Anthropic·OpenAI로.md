@@ -2,6 +2,7 @@
 date: 2026-07-01
 tags:
   - 정보
+  - Headliner
   - LLM
 description: "Transformer 공동저자 Noam Shazeer와 노벨상 수상자 John Jumper가 동시에 Google을 떠났습니다. 계산 자원 배분 갈등과 기초연구 우선순위 하락 속에서, Anthropic과 OpenAI가 명확한 장기 비전으로 AI 최상 인재를 확보하며 업계 권력이 재편되고 있습니다."
 ---

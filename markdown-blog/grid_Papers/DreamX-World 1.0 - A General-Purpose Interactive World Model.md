@@ -7,7 +7,7 @@ tags:
 description: "알리바바 AMAP-ML DreamX Team이 공개한 5B 파라미터 인터랙티브 월드 모델. E-PRoPE 카메라 제어, 기하학 기반 메모리 검색, 이벤트 합성 제어를 갖추고 8B·14B 경쟁 모델을 전체 스코어에서 앞섰습니다."
 image: "![[dreamx-world-teaser.png]]"
 citations: 0
-buzz: 76
+buzz: 48
 ---
 
 > DreamX Team, "DreamX-World 1.0: A General-Purpose Interactive World Model," arXiv:2606.16993, 2026.

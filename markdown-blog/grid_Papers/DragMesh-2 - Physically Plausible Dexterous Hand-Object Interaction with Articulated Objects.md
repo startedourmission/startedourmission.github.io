@@ -7,7 +7,7 @@ tags:
 description: 관절형 오브젝트(서랍, 문)의 가동 부위를 손-핸들 접촉만으로 움직이는 접촉 주도 프레임워크 DragMesh-2. PICA는 물리 신호를 PPO에 주입해 감쇠 4배 조건에서 State-only PPO 대비 두 배 이상의 성공률을 달성합니다.
 image: "![[dragmesh-2-architecture.png]]"
 citations: 0
-buzz: 46
+buzz: 45
 ---
 
 > T. Zhang, Y. Duan, Y. Li, Z. Zhang, and H. Tang, "DragMesh-2: Physically Plausible Dexterous Hand-Object Interaction with Articulated Objects," arXiv:2606.15133, 2026.

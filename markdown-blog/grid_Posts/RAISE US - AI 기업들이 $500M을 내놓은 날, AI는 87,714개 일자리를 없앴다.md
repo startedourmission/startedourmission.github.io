@@ -2,6 +2,7 @@
 date: 2026-07-01
 tags:
   - 정보
+  - Headliner
   - 에이전트
   - AI평가
 description: "AI 해고 87,714건 데이터 발표 닷새 후 OpenAI, Anthropic, Amazon, Microsoft가 $500M 재교육 펀드 RAISE US를 출범했습니다."

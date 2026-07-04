@@ -6,7 +6,7 @@ tags:
   - 머신러닝
 description: "VLA 모델이 새로운 카메라 시점에서 실패하는 원인을 시스템 식별 문제로 재정의하고, 랜덤 탐색 행동 몇 가지를 컨텍스트로 주입해 파라미터 업데이트 없이 적응하는 ICWM 프레임워크를 제안합니다."
 image: "![[icwm-overview.png]]"
-buzz: 47
+buzz: 46
 ---
 
 > S. Wang, J. Shi, S. Fei, Z. Fu, L. Ji, J. Gong, and X. Qiu, "In-Context World Modeling for Robotic Control," arXiv:2606.26025, 2026.

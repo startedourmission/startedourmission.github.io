@@ -7,7 +7,7 @@ tags:
   - 강화학습
 description: "ByteDance Seed와 NUS가 제안한 on-policy 생성 필드 증류 프레임워크. 하나의 flow-matching 학생 모델에 T2I, 로컬 편집, 글로벌 편집 능력을 충돌 없이 합성하는 세 가지 설계 원칙을 제시합니다."
 image: "![[danceopd-overview.png]]"
-buzz: 49
+buzz: 48
 ---
 
 > W. Zhou, X. Zhu, Z. Xu, B. Dong, L. Gong, Y. Liang, M. Chu, L. Qu, L. Kong, W. Liu, and T.-S. Chua, "DanceOPD: On-Policy Generative Field Distillation," arXiv:2606.27377, 2026.

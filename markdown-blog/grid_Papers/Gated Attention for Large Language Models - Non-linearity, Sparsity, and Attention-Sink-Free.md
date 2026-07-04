@@ -8,7 +8,7 @@ tags:
 description: 어텐션 출력 뒤에 헤드별 시그모이드 게이트 하나. PPL -0.2, MMLU +2점, 어텐션 싱크 소멸. NeurIPS 2025 Best Paper.
 image: "![[gated-attention-overview.png]]"
 citations: 208
-buzz: 294
+buzz: 290
 ---
 
 > Z. Qiu, Z. Wang, B. Zheng, Z. Huang, et al., "Gated Attention for Large Language Models: Non-linearity, Sparsity, and Attention-Sink-Free," arXiv:2505.06708, 2025.

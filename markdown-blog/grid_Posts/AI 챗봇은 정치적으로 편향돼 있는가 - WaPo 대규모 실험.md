@@ -2,7 +2,6 @@
 date: 2026-06-26
 tags:
   - 정보
-  - Headliner
   - LLM
   - AI평가
 description: "Washington Post가 Dartmouth·Stanford 연구진과 함께 주요 AI 챗봇 6종의 정치 편향을 대규모로 테스트했습니다. ChatGPT는 80% 이상 좌편향 응답, Grok은 보수 마케팅과 달리 좌편향, Gemini는 93% 균형이라는 결과가 나왔습니다."

@@ -7,7 +7,7 @@ tags:
 description: "1M 토큰 컨텍스트에서 어텐션 연산량을 28.4배 줄이면서 성능 손실을 거의 없앤 MiniMax의 희소 어텐션 메커니즘. 경량 인덱서가 GQA 그룹마다 필요한 KV 블록만 선별하고, GPU 커널을 이것에 맞춰 공동 설계했다."
 image: "![[minimax-sparse-attention-architecture.png]]"
 citations: 0
-buzz: 51
+buzz: 50
 ---
 
 > X. Lai, W. Xu, Y. Yang, Q. Chen, Y. Xu, L. Zeng, X. Li, H. Sun, H. Zhu, V. Zhang, J. Hu, J. Li, R. Gao, Z. Li, S. Zhu, J. Zhou, and P. Zhao, "MiniMax Sparse Attention," arXiv:2606.13392, 2026.
