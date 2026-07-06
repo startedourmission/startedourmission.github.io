@@ -2,7 +2,6 @@
 date: 2026-07-03
 tags:
   - 정보
-  - Headliner
   - LLM
   - 오픈소스
 description: "Aramco·NVIDIA·Vista·General Catalyst 주도 $8억 시리즈C로 Together AI가 $8.3B 밸류에이션에 도달했습니다. 연간 예약 $11.5억, 500MW 컴퓨트 약정 확보. 오픈웨이트 모델 기반 AI 추론 인프라가 클로즈드 API를 대체하는 구도입니다."

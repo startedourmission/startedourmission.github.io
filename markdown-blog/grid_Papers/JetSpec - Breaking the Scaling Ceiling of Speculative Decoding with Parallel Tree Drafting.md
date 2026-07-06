@@ -6,7 +6,7 @@ tags:
   - 추론
 description: "투기적 디코딩의 스케일링 한계를 해결합니다. 드래프트 예산을 늘릴수록 속도가 오르려면 수락률은 높고 드래프팅 비용은 낮아야 하는데, JetSpec은 트리-인과 어텐션 마스크 하나로 두 조건을 동시에 만족해 MATH-500에서 9.64배 가속을 달성합니다."
 image: "![[jetspec-results.png]]"
-buzz: 39
+buzz: 40
 ---
 
 > L. Hu, Z. Feng, Y. Wu, H. Yuan, Y. Zhao, Y.-Y. Qian, B. Wang, P. Zhao, D. Jiang, Y. Zhu, T. Rosing, and H. Zhang, "JetSpec: Breaking the Scaling Ceiling of Speculative Decoding with Parallel Tree Drafting," arXiv:2606.18394, 2026.

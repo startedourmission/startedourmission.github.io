@@ -7,7 +7,7 @@ tags:
   - 오픈소스
 description: "파라미터 공유 트랜스포머 블록을 병렬로 여러 번 돌리는 PLT 아키텍처에서, 루프를 딱 두 번만 돌릴 때 SWE-bench Verified 43.0% → 64.4%로 최적 성능이 나옵니다. 세 번째 루프부터는 오히려 퇴보합니다."
 image: "![[loopcoder-v2-overview.png]]"
-buzz: 55
+buzz: 56
 ---
 
 > J. Yang, S. Guo, W. Zhang, T. Zheng, et al., "LoopCoder-v2: Only Loop Once for Efficient Test-Time Computation Scaling," arXiv:2606.18023, 2026.

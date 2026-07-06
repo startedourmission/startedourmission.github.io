@@ -6,7 +6,7 @@ tags:
   - 확산모델
 description: "청화대와 HKUST가 공동으로 제안한 스트리밍 비디오 편집 프레임워크. 3단계 확산 모델 증류와 AR-oriented Mask Cache를 조합해 InsV2V 대비 97.38배 지연을 단축하고, 12.66 FPS 실시간 편집을 달성합니다."
 image: "![[liveedit-overview.png]]"
-buzz: 49
+buzz: 50
 ---
 
 > X. Wang, C. Zhao, F. Zhan, and Y. Ma, "LiveEdit: Towards Real-Time Diffusion-Based Streaming Video Editing," arXiv:2606.26740, 2026.
