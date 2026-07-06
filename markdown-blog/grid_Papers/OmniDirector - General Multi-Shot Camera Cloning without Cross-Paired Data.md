@@ -7,7 +7,7 @@ tags:
 description: 쾌수 Kling 팀이 제안한 멀티샷 카메라 클로닝 프레임워크입니다. 레퍼런스 비디오의 카메라 파라미터를 3D 빈 공간 그리드 영상으로 변환해 크로스 페어드 데이터 없이도 복잡한 카메라 모션을 클로닝합니다.
 image: "![[omnidirector-teaser.png]]"
 citations: 1
-buzz: 126
+buzz: 125
 ---
 
 > J. Liu, S. Li, Z. Fang, X. Li, Y. Zhou, Z. Meng, Z. Zhang, Y. Luo, G. Zhang, Y.-S. Liu, and P. Wan, "OmniDirector: General Multi-Shot Camera Cloning without Cross-Paired Data," arXiv:2606.13432, 2026.

@@ -7,7 +7,7 @@ tags:
   - 벤치마크
 description: "1,665개 도구 생태계에서 LLM 에이전트의 장기 계획 능력을 측정하는 대규모 벤치마크. GPT-5.4는 도구 차단 조건에서 51.9%에서 11.36%로 붕괴하며, 실패의 핵심은 검색 부족이 아니라 이미 가진 도구를 제대로 고르지 못하는 선택 실패였습니다."
 image: "![[planbench-xl-overview.png]]"
-buzz: 77
+buzz: 75
 ---
 
 > J. Liu, Q. Lin, C. Qian, R. Wang, E. C. Acikgoz, X. Yang, J. Liu, Z. Wang, X. Chen, H. Ji, and D. Hakkani-Tür, "PlanBench-XL: Evaluating Long-Horizon Planning of LLM Tool-Use Agents in Large-Scale Tool Ecosystems," arXiv:2606.22388, 2026.

@@ -7,7 +7,7 @@ tags:
   - NLP
 description: "자기회귀 없이 완전 양방향 어텐션으로 LLM을 처음부터 학습하는 마스크드 확산 언어 모델 iLLaDA — 12T 토큰 사전학습과 25B 지시문 미세조정으로 Base 성능에서 Qwen2.5 7B를 처음으로 따라잡습니다."
 image: "![[illada-sft-epoch-ablation.png]]"
-buzz: 43
+buzz: 42
 ---
 
 > S. Nie, Q. Min, S. Xu, Z. Huang, Y. Song, Y. Shan, Y. Lin, W. X. Zhao, C. Li, and J.-R. Wen, "Improved Large Language Diffusion Models," arXiv:2606.25331, 2026.

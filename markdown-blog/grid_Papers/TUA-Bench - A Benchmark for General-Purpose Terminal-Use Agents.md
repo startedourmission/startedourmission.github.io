@@ -6,7 +6,7 @@ tags:
   - 벤치마크
 description: "Meta AI, Duke, Stanford 공동 연구팀이 터미널 환경에서 범용 에이전트를 평가하는 120개 태스크 벤치마크를 공개했습니다. 가장 강한 구성(Claude Code + Opus 4.8)도 65.8% 성공률에 그치며, Office와 Multimedia에서 공통적으로 막히는 패턴이 드러납니다."
 image: "![[tuabench-overview.png]]"
-buzz: 44
+buzz: 43
 ---
 
 > S. Chen, L. Wang, X. Yang, Z. Liu, et al., "TUA-Bench: A Benchmark for General-Purpose Terminal-Use Agents," arXiv:2606.28480, 2026.

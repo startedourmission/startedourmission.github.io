@@ -7,7 +7,7 @@ tags:
   - 벤치마크
 description: "에이전트가 실행 가능한 정책 코드를 128회 에피소드 예산 안에서 반복 개선하는 능력을 측정하는 벤치마크. GPT-5.5가 Core16 16개 환경 모두 Top-2, Claude Opus 4.7이 MiniGrid에서 가장 강한 두각을 보입니다."
 image: "![[evopolicygym-overview.png]]"
-buzz: 39
+buzz: 43
 ---
 
 > Z. Wang, H. Song, R. Zhan, J. Du, J. Chen, T. Li, Q. Yin, Y. Wu, Z. Shen, T. Zhu, Y. Li, G. Chen, D. F. Wong, Y. Li, Y. Cheng, and Y. Yang, "EvoPolicyGym: Evaluating Autonomous Policy Evolution in Interactive Environments," arXiv:2607.02440, 2026.

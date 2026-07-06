@@ -6,7 +6,7 @@ tags:
   - 오픈소스
 description: "AI 에이전트를 OS 1급 시민으로 다루는 AOSP 기반 오픈소스 에이전트 하네스. 기존 앱 중심 Android 대비 태스크 완료율 +21%, 토큰 비용 -52%, 실행 시간 -44% 달성."
 image: "![[aohp-overview.png]]"
-buzz: 38
+buzz: 37
 ---
 
 > S. Zhao, J. Liu, G. Liu, J. Yan, J. Ye, Y. Yang, H. Wen, S. Tian, Y. Yuan, Y. Chen, Y. Liu, J. Ren, Y.-Q. Zhang, C. Huang, Y. Guo, and Y. Li, "AOHP: An Open-Source OS-Level Agent Harness for Personalized, Efficient and Secure Interaction," arXiv:2606.23449, 2026.
