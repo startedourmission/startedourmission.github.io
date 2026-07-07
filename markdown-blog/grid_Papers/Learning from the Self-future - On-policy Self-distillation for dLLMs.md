@@ -6,7 +6,7 @@ tags:
   - 확산모델
 description: 확산 LLM(dLLM)에 온폴리시 자기증류를 처음 적용한 d-OPSD. 모델이 스스로 완성한 미래 답변을 suffix로 조건화해 RLVR 대비 약 10% 최적화 스텝으로 동급 성능을 달성합니다.
 image: "![[learning-from-self-future-overview.png]]"
-buzz: 46
+buzz: 45
 ---
 
 > Y. Luo, Z. Chen, H. Wang, X. Hu, Y. Zhang, Z. Sha, and S. Liu, "Learning from the Self-future: On-policy Self-distillation for dLLMs," arXiv:2606.18195, 2026.

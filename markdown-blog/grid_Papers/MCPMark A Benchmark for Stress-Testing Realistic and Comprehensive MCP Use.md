@@ -9,7 +9,7 @@ aliases:
 image: "![[1-mcpmark.png]]"
 description: 여러분은 MCP를 자주 활용하나요? 저는 매일 사용해서 없으면 안 될 수준입니다. 가끔은 내가 필요한 MCP를 직접 만들고 싶은 때도 있죠. 그렇다면 실제로 MCP가 얼마나 유용한지, 어떤 MCP 서버가 좋은 MCP 서버인지 구별하려면 어떤 기준을 세우면 좋을까요? 이번 논문은 MCP가 실제 업무의 복잡성을 평가하는 벤치마크를 제안하고 MCP 활용 능력을 종합적으로 평가합니다.
 citations: 17
-buzz: 127
+buzz: 134
 ---
 
 > Z. Wu, X. Liu, X. Zhang, L. Chen, F. Meng, L. Du, Y. Zhao, F. Zhang, Y. Ye, J. Wang, Z. Wang, J. Ni, Y. Yang, A. Xu, and M. Q. Shieh, "MCPMark: A Benchmark for Stress-Testing Realistic and Comprehensive MCP Use", arXiv preprint arXiv:2509.24002, 2025.

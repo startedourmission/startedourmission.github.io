@@ -7,7 +7,7 @@ tags:
 description: "Claude Code의 TypeScript 소스를 직접 뜯어본 MBZUAI·UCL 연구. 핵심 루프는 while-true 한 덩이지만, 권한 시스템·컨텍스트 압축·서브에이전트가 코드의 98.4%를 차지합니다."
 image: "![[1-DiveIntoClaudeCode.png]]"
 citations: 9
-buzz: 123
+buzz: 121
 ---
 
 > J. Liu, X. Zhao, X. Shang, Z. Shen, "Dive into Claude Code: The Design Space of Today's and Future AI Agent Systems", arXiv preprint arXiv:2604.14228, 2026.
