@@ -2,9 +2,8 @@
 date: 2026-06-29
 tags:
   - 정보
-  - Headliner
   - LLM
-description: "언어 모델 KV 캐시의 GPU-CPU 자동 관리 시스템"
+description: Berkeley가 공개한 경량 KV 캐시 관리자. Mooncake보다 단순한 시간 기반 프리페칭으로 GPU-CPU-NVMe 스왑을 자동화해, 128K 컨텍스트에서 90% 레이턴시 증가만으로 OOM을 회피합니다.
 image: "![[LMCache-thumb.png]]"
 ---
 

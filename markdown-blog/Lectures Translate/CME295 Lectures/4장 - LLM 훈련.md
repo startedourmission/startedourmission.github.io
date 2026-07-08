@@ -8,6 +8,7 @@ author:
 series: "CME295 트랜스포머와 LLM 강의 (2025 가을)"
 chapter: 4
 date: 2026-04-10
+description: "스케일링 법칙과 데이터 및 모델 병렬 처리, 플래시 어텐션과 양자화 등 LLM 사전 훈련 최적화 기법과, LoRA를 이용한 효율적 미세 조정을 다룹니다"
 tags:
   - cme295
   - 트랜스포머

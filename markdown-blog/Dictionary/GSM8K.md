@@ -1,6 +1,6 @@
 ---
 type: benchmark
-description: "초등 수학 문장제 벤치마크"
+description: "2021년 OpenAI가 공개한 8,500문항의 초등 수학 문장제로, 2023년 95%를 넘긴 뒤 2026년 기준 99%대로 포화됐다"
 tags:
   - 벤치마크
   - AI평가

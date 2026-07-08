@@ -2,10 +2,9 @@
 date: 2026-07-01
 tags:
   - 정보
-  - Headliner
   - 에이전트
   - AI평가
-description: "AI 해고 87,714건 데이터 발표 닷새 후 OpenAI, Anthropic, Amazon, Microsoft가 $500M 재교육 펀드 RAISE US를 출범했습니다."
+description: AI 해고 87,714건 데이터 발표 닷새 후 OpenAI, Anthropic, Amazon, Microsoft가 $500M 재교육 펀드 RAISE US를 출범했습니다.
 ---
 
 > 이 글은 [TechTimes](https://www.techtimes.com/articles/319342/20260630/ai-cuts-87714-jobs-while-its-makers-fund-1-billion-worker-retraining-push.htm)와 [The Next Web](https://thenextweb.com/news/raise-us-ai-giants-fund-worker-retraining)을 참고하여 작성했습니다.

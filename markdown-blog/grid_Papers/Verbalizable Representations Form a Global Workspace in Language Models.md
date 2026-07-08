@@ -4,6 +4,7 @@ tags:
   - 논문
   - LLM
   - 추론
+  - Headliner
 description: Anthropic이 언어모델 내부에서 인간의 의식 접근(access consciousness)과 유사한 기능을 하는 신경 표상 집합을 발견했습니다. J-space라 이름 붙인 이 표상은 Claude가 무엇을 생각하고 있는지 겉으로 드러나지 않는 순간에도 읽어낼 수 있게 해주며, 안전성 모니터링에도 실제로 활용되고 있습니다.
 image: "![[Verbalizable Representations Form a Global Workspace in Language Models-thumb.png]]"
 ---

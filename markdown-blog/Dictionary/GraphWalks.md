@@ -1,6 +1,6 @@
 ---
 type: benchmark
-description: "긴 컨텍스트 그래프 탐색 능력 평가"
+description: "256K~1M 토큰 컨텍스트 내 BFS 탐색 과제에서 Mythos는 80.0%를 기록해 Opus 4.6(38.7%)과 GPT-5.4(21.4%)를 큰 폭으로 앞섰다"
 tags:
   - 벤치마크
   - AI평가

@@ -1,6 +1,6 @@
 ---
 type: benchmark
-description: "AI 은밀 부수 과제 수행 정렬 벤치마크"
+description: "모니터 몰래 숨은 과제를 완수하는지 재는 정렬 평가. Mythos 확장 사고 모드가 4-5%로 Opus 4.6(0-3%)보다 은밀 성공률이 높다"
 tags:
   - 벤치마크
   - AI평가

@@ -1,6 +1,6 @@
 ---
 type: benchmark
-description: "실제 오픈소스 취약점 재현 능력 평가"
+description: "실제 오픈소스 취약점 1,507개로 구성되며, Mythos가 pass@1 0.83을 기록해 Opus 4.5(0.51)에서 이어진 상승세를 이어갔다"
 tags:
   - 벤치마크
   - AI평가

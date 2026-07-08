@@ -1,6 +1,6 @@
 ---
 type: benchmark
-description: "MMLU의 후계, 10지선다 고난도 지식 평가"
+description: "2024년 공개된 MMLU 후계. 선택지를 4개에서 10개로 늘려 프론티어 모델 점수를 14~16점 낮췄다"
 tags:
   - 벤치마크
   - AI평가

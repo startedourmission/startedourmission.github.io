@@ -1,6 +1,6 @@
 ---
 type: benchmark
-description: "Agent Red Teaming 프롬프트 인젝션 강건성 벤치마크"
+description: "k=100 시도 기준 Mythos의 공격 성공률은 4.1%로, Opus 4.6(21.7%)·GPT-5.4(37.7%)·Gemini 3.1 Pro(56.1%)와 압도적 차이를 보였다"
 tags:
   - 벤치마크
   - AI평가

@@ -1,6 +1,6 @@
 ---
 type: benchmark
-description: "Cursor 엔지니어링 팀의 실제 코딩 세션에서 만든 사내 코딩 에이전트 벤치마크"
+description: "Cursor 엔지니어링 팀의 실제 코딩 세션에서 뽑은 사내 벤치마크로, v3.1에서 Composer 2.5가 63.2%를 기록해 Opus 4.7 max effort(64.8%)에 근접했다"
 tags:
   - 벤치마크
   - AI평가

@@ -1,6 +1,6 @@
 ---
 type: benchmark
-description: "초등 과학 객관식 추론 벤치마크"
+description: "2018년 Allen Institute for AI가 공개한 약 7,800문항의 과학 4지선다 문제로, 2023년 이후 프론티어 모델이 95%를 넘어 사실상 포화됐다"
 tags:
   - 벤치마크
   - AI평가

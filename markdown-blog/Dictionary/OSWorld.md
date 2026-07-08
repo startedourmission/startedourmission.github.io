@@ -1,6 +1,6 @@
 ---
 type: benchmark
-description: "데스크톱 GUI 환경 과제 수행 능력 평가"
+description: "실제 Ubuntu VM에서 GUI를 조작하는 시험. Mythos 79.6%가 인간 기준선 72.4%를 넘어선 드문 사례다"
 tags:
   - 벤치마크
   - AI평가

@@ -2,9 +2,8 @@
 date: 2026-06-29
 tags:
   - 정보
-  - Headliner
   - LLM
-description: "LLM 추론 성능을 높이기 위한 커널 융합 기법과 구현 전략"
+description: 여러 GPU 커널을 하나로 융합해 중간 결과를 VRAM 왕복 없이 shared memory에 머물게 하는 기법. FlashAttention이 대표 사례이며, 디코드 단계 배치가 작을수록 오버헤드 절감 효과가 커집니다.
 image: "![[Megakernels-thumb.png]]"
 ---
 

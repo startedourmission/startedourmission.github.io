@@ -2,9 +2,8 @@
 date: 2026-06-29
 tags:
   - 정보
-  - Headliner
   - LLM
-description: "LLM 추론의 두 단계를 분리해서 최적화하는 시스템 아키텍처"
+description: 처리량이 목표인 prefill과 레이턴시가 목표인 decode를 서로 다른 GPU 그룹에 분리 배치하는 서빙 아키텍처. vLLM 적용 시 혼합 워크로드 기준 1.5~2배 처리량 향상을 보입니다.
 image: "![[Prefill-Decode Disaggregation-thumb.png]]"
 ---
 

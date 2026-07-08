@@ -8,6 +8,7 @@ author:
 series: "CME295 트랜스포머와 LLM 강의 (2025 가을)"
 chapter: 5
 date: 2026-04-09
+description: "인간 선호도로 LLM을 정렬하는 RLHF 파이프라인과 보상 모델, PPO를 이용한 정책 최적화, 그리고 대안인 DPO의 원리를 다룹니다"
 tags:
   - cme295
   - 트랜스포머

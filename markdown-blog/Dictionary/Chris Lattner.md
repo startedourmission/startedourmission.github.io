@@ -1,6 +1,6 @@
 ---
 type: person
-description: Modular AI 공동창업자·CEO. LLVM·Clang·Swift·MLIR·Mojo 제작자. AI 추론 크로스-하드웨어 스택 선도
+description: "LLVM·Swift·Mojo를 만든 컴파일러 창시자. 공동창업한 Modular AI가 2026년 6월 39억 달러에 Qualcomm으로 인수됐다"
 tags:
   - 인물
   - 분야창시자

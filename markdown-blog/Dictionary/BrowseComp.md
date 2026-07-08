@@ -1,6 +1,6 @@
 ---
 type: benchmark
-description: "웹 브라우징+정보 수집 능력 평가 벤치마크"
+description: "Mythos가 86.9%를 기록했고, 도구 없이 사전 지식만으로 푼 오염 기준선은 24.0%에 그쳐 실제 브라우징 능력과의 격차를 드러낸다"
 tags:
   - 벤치마크
   - AI평가

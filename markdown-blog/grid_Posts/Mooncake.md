@@ -2,9 +2,8 @@
 date: 2026-06-29
 tags:
   - 정보
-  - Headliner
   - LLM
-description: "대규모 LLM을 위한 분산 KV 캐시 관리 시스템 Mooncake"
+description: Microsoft가 공개한 분산 KV 캐시 시스템. GPU-CPU-NVMe 3단 계층에 어텐션 패턴을 학습해 자동으로 스왑, 압축 없이 GPU 메모리 사용량을 40~50% 줄이고 256K 컨텍스트까지 처리 가능하게 합니다.
 image: "![[Mooncake-thumb.png]]"
 ---
 

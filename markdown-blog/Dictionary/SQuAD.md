@@ -1,6 +1,6 @@
 ---
 type: benchmark
-description: "독해 기반 추출형 질의응답 벤치마크"
+description: "2016년 스탠퍼드 공개, 2.0은 15만 문항 규모. 2018년 BERT가 사람 상한을 넘기며 이후 LLM엔 완전 포화됐다"
 tags:
   - 벤치마크
   - AI평가
