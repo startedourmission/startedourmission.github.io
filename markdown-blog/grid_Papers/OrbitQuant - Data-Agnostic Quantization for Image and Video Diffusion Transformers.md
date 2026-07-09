@@ -6,7 +6,7 @@ tags:
   - 컴퓨터비전
 description: "DiT 활성화의 타임스텝·프롬프트별 드리프트 문제를 RPBH 회전으로 정규화된 분포로 고정하고, 단일 Lloyd-Max 코드북으로 캘리브레이션 없이 가중치와 활성화를 동시에 양자화합니다. GenEval W2A4에서 기존 방법들이 모두 붕괴할 때 유일하게 생성 가능한 품질을 유지합니다."
 image: "![[orbitquant-qualitative.png]]"
-buzz: 34
+buzz: 40
 ---
 
 > D. Lee, J. Chavan, D. Nguyen, S. Huang, L. Jiang, P. Panda, T. Mertens, and S. Shukla, "OrbitQuant: Data-Agnostic Quantization for Image and Video Diffusion Transformers," arXiv:2607.02461, 2026.

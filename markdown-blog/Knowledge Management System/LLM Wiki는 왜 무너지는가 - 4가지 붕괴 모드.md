@@ -73,4 +73,4 @@ Tom Nguyen이 솔직하게 인정했습니다. "정확하지 않은 위키는 �
 
 ---
 
-*참고: [Your LLM Wiki Will Collapse (gist)](https://gist.github.com/V-interactions/a0d2a62c1b16d1fecf1bd81e8f611fba) / [HN 토론 (2026-04-25)](https://news.ycombinator.com/item?id=47899844) / [Mehul Gupta — LLM Wiki is a Bad Idea](https://medium.com/data-science-in-your-pocket/andrej-karpathys-llm-wiki-is-a-bad-idea-8c7e8953c618)*
+참고: [Your LLM Wiki Will Collapse (gist)](https://gist.github.com/V-interactions/a0d2a62c1b16d1fecf1bd81e8f611fba) / [HN 토론 (2026-04-25)](https://news.ycombinator.com/item?id=47899844) / [Mehul Gupta — LLM Wiki is a Bad Idea](https://medium.com/data-science-in-your-pocket/andrej-karpathys-llm-wiki-is-a-bad-idea-8c7e8953c618)

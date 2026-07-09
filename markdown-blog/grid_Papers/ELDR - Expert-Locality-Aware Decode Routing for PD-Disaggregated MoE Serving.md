@@ -7,7 +7,7 @@ tags:
   - 머신러닝
 description: "PD 분리(Prefill-Decode 분리) 환경에서 MoE 모델의 decode 지연을 5.9-13.9% 줄이는 ELDR을 제안합니다. Prefill 단계의 전문가 활성화 패턴(서명)을 활용해, 이미 해당 전문가 가중치를 캐시한 워커로 decode 요청을 라우팅합니다."
 image: "![[eldr-architecture.png]]"
-buzz: 37
+buzz: 39
 ---
 
 > S. Choi, S. Cho, Y. Xiong, Z. Yang, Y. Kwon, and P. Cheng, "ELDR: Expert-Locality-Aware Decode Routing for PD-Disaggregated MoE Serving," arXiv:2607.00466, 2026.

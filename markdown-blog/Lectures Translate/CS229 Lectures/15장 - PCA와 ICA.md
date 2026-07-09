@@ -7,6 +7,7 @@ author:
 series: "CS229 머신러닝 강의 (2018 가을)"
 chapter: 15
 date: 2026-03-30
+description: "주성분 분석으로 데이터의 차원을 축소하는 수학적 유도와 응용 사례를 다루고, 독립 성분 분석이 풀고자 하는 문제 설정을 소개합니다"
 image: "![[15-cs229-pca.png]]"
 tags:
   - cs229

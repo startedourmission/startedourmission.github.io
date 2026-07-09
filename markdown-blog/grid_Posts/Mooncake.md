@@ -2,7 +2,6 @@
 date: 2026-06-29
 tags:
   - 정보
-  - Headliner
   - LLM
 description: "대규모 LLM을 위한 분산 KV 캐시 관리 시스템 Mooncake"
 image: "![[Mooncake-thumb.png]]"

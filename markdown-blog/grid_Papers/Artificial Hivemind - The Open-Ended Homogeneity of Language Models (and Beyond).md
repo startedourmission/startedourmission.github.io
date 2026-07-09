@@ -8,7 +8,7 @@ tags:
 description: 70개 이상 LLM을 2만 6천 개 개방형 질문으로 평가해 모델 간 출력 동질화를 실증한 NeurIPS 2025 Best Paper.
 image: "![[artificial-hivemind-overview.png]]"
 citations: 90
-buzz: 221
+buzz: 220
 ---
 
 > L. Jiang, Y. Chai, M. Li, M. Liu, R. Fok, N. Dziri, Y. Tsvetkov, M. Sap, A. Albalak, and Y. Choi, "Artificial Hivemind: The Open-Ended Homogeneity of Language Models (and Beyond)," arXiv:2510.22954, 2025.

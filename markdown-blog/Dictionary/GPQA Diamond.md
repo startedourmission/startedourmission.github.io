@@ -1,6 +1,6 @@
 ---
 type: benchmark
-description: "대학원 수준 과학 질의응답 벤치마크"
+description: "198문항의 Google-proof 과학 문제로, Mythos 94.5%와 Gemini 3.1 Pro 94.3%의 격차가 0.2%p에 불과해 상단 포화 조짐을 보인다"
 tags:
   - 벤치마크
   - AI평가

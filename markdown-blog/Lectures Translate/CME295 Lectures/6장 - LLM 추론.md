@@ -8,6 +8,7 @@ author:
 series: "CME295 트랜스포머와 LLM 강의 (2025 가을)"
 chapter: 6
 date: 2026-04-08
+description: "추론 능력을 강화학습으로 확장하는 GRPO 알고리즘과 PPO의 차이, 길이 편향 문제, DeepSeek R1의 훈련 레시피를 다룹니다"
 tags:
   - cme295
   - 트랜스포머

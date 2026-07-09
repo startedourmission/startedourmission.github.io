@@ -8,6 +8,7 @@ author:
 series: "CME295 트랜스포머와 LLM 강의 (2025 가을)"
 chapter: 8
 date: 2026-04-06
+description: "BLEU, ROUGE 같은 규칙 기반 지표의 한계를 짚고, LLM as a Judge의 편향과 모범 사례, 에이전트 평가와 벤치마크 설계 방법을 다룹니다"
 tags:
   - cme295
   - 트랜스포머

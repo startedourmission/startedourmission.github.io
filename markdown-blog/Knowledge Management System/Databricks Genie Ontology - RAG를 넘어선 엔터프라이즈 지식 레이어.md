@@ -76,4 +76,4 @@ Genie Ontology가 흥미로운 이유는 "조직의 지식을 AI가 이해하게
 
 ---
 
-*참고: [Databricks 공식 블로그 (2026-06-16)](https://www.databricks.com/blog/introducing-genie-one-genie-ontology-and-genie-agents) / [InfoWorld — From RAG to ontology](https://www.infoworld.com/article/4186146/from-rag-to-ontology-databricks-bets-on-context-as-the-key-to-trusted-ai-agents.html)*
+참고: [Databricks 공식 블로그 (2026-06-16)](https://www.databricks.com/blog/introducing-genie-one-genie-ontology-and-genie-agents) / [InfoWorld — From RAG to ontology](https://www.infoworld.com/article/4186146/from-rag-to-ontology-databricks-bets-on-context-as-the-key-to-trusted-ai-agents.html)

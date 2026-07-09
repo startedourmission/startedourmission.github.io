@@ -7,7 +7,7 @@ aliases:
 image: "![[1-Black-BoX.png]]"
 description: 교사 모델의 내부를 전혀 들여다볼 수 없는 상황에서, 어떻게 효과적으로 지식을 전달받을 수 있을까요? Microsoft Research가 제안한 GAD(Generative Adversarial Distillation)는 이 문제에 대한 신선한 해법을 제시합니다.
 citations: 32
-buzz: 158
+buzz: 161
 ---
 대규모 언어 모델의 [[Distilling the Knowledge in a Neural Network|지식 증류]]는 거대한 교사 모델의 능력을 작고 효율적인 학생 모델로 압축하는 핵심 기술입니다. 하지만 GPT-5나 Gemini 같은 최신 모델들은 API로만 접근 가능하고, 내부 확률 분포나 히든 스테이트를 공개하지 않습니다. 이런 블랙박스 환경에서는 전통적인 화이트박스 증류 기법들이 무용지물이 되죠.
 

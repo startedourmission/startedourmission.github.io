@@ -4,18 +4,19 @@ tags:
   - 정보
   - 도구
   - LLM
+  - KMS
 image: "![[obsidian-skill-llm-wiki.png]]"
-description: "Obsidian CEO kepano가 만든 공식 Obsidian Skills와 Andrej Karpathy가 제안한 LLM Wiki 패턴. 둘은 별개 프로젝트지만 합치면 'Claude가 내 옵시디언 볼트를 직접 운영하는 지식 위키'가 됩니다."
+description: "옵시디언 CEO kepano가 만든 공식 옵시디언 스킬과 카파시가 제안한 LLM Wiki 패턴. 둘은 별개 프로젝트지만 합치면 'Claude가 내 옵시디언 볼트를 직접 운영하는 지식 위키'가 됩니다."
 ---
 
-> Obsidian CEO Steph Ango(kepano)가 만든 **공식 Obsidian Skills**와, Andrej Karpathy가 제안한 **LLM Wiki** 패턴. 둘은 별개 프로젝트지만, 합치면 "Claude가 내 옵시디언 볼트를 직접 운영하는 지식 위키"가 된다.
+> 옵시디언 CEO Steph Ango(kepano)가 만든 **공식 옵시디언 스킬**과, [[안드레이 카파시]]가 제안한 **LLM Wiki** 패턴. 둘은 별개 프로젝트지만, 합치면 "Claude가 내 옵시디언 볼트를 직접 운영하는 지식 위키"가 된다.
 
 ---
 
-## 1. Obsidian Skills (kepano/obsidian-skills)
+## 1. 옵시디언 스킬 (kepano/obsidian-skills)
 
 ### 한 줄 정의
-**Steph Ango(Obsidian CEO, GitHub: kepano)가 직접 만든 공식 Agent Skills 묶음.** Claude Code, Codex CLI, OpenCode 등 "Agent Skills 스펙"을 지원하는 모든 에이전트가 옵시디언 파일 형식을 정확히 다루도록 가르치는 규칙서다.
+**Steph Ango(옵시디언 CEO, GitHub: kepano)가 직접 만든 공식 Agent Skills 묶음.** Claude Code, Codex CLI, OpenCode 등 "Agent Skills 스펙"을 지원하는 모든 에이전트가 옵시디언 파일 형식을 정확히 다루도록 가르치는 규칙서다.
 
 ### 왜 필요한가
 Claude Code는 기본적으로 옵시디언의 "비표준" 파일 형식을 모른다. 그대로 시키면:
@@ -52,7 +53,7 @@ npx skills add kepano/obsidian-skills@obsidian-cli -g -y
 ### 의의·맥락
 - repo 생성: **2026-01-02**, MIT 라이선스
 - 별 30,897개, 포크 2,115개 (2026-05-13 기준) — Agent Skills 생태계 중 최상위 인기
-- "툴 벤더가 직접 공식 스킬을 만들기 시작한 신호탄" — Obsidian 외에 다른 제품들도 이 흐름을 따라갈 가능성
+- "툴 벤더가 직접 공식 스킬을 만들기 시작한 신호탄" — 옵시디언 외에 다른 제품들도 이 흐름을 따라갈 가능성
 - skills.sh 통계: obsidian-bases 3.9K, obsidian-markdown 3.4K, json-canvas 2.2K, obsidian-cli 1.3K 설치
 
 ### 1차 출처
@@ -61,15 +62,15 @@ npx skills add kepano/obsidian-skills@obsidian-cli -g -y
 
 ---
 
-## 2. LLM Wiki (Karpathy 패턴)
+## 2. LLM Wiki (카파시 패턴)
 
 ### 한 줄 정의
-**Andrej Karpathy가 2026-04-04 gist로 제안한 패턴.** RAG처럼 매번 원본을 검색하지 말고, **LLM이 마크다운 위키를 직접 짓고 유지·갱신**하게 만들자는 접근.
+**카파시가 2026-04-04 gist로 제안한 패턴.** RAG처럼 매번 원본을 검색하지 말고, **LLM이 마크다운 위키를 직접 짓고 유지·갱신**하게 만들자는 접근.
 
 ### 핵심 통찰 (직접 인용)
 
 > "지식 베이스 유지에서 지루한 부분은 읽기나 생각이 아니라 **bookkeeping**이다."
-> — Karpathy, llm-wiki gist
+> — 카파시, llm-wiki gist
 
 사람이 손으로는 한 달도 못 버티는 교차참조·일관성 관리를 LLM은 잘한다. 그래서 사람은 소스를 던지고, LLM이 위키를 키운다.
 
@@ -102,16 +103,16 @@ CLAUDE.md   ← 스키마: 규칙·워크플로 정의
 | 적합 규모 | 수만~수백만 문서 | **수백~수천 페이지의 큐레이션된 지식** |
 
 ### 1차 출처
-- Karpathy 원본 gist: <https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f>
+- 카파시 원본 gist: <https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f>
 
 ---
 
 ## 3. 두 개를 합치면
 
-**Obsidian Skills + LLM Wiki = "Claude가 내 옵시디언 볼트를 운영하는 지식 위키"**
+**옵시디언 스킬 + LLM Wiki = "Claude가 내 옵시디언 볼트를 운영하는 지식 위키"**
 
-- LLM Wiki 패턴이 *왜·무엇을* 정의한다면
-- Obsidian Skills는 *어떻게 옵시디언 안에서* 정확히 해낼지를 정의한다
+- LLM Wiki 패턴이 **왜·무엇을** 정의한다면
+- 옵시디언 스킬은 **어떻게 옵시디언 안에서** 정확히 해낼지를 정의한다
 - 합치면 Claude Code가 볼트 안에서 raw/ → wiki/ 사이클을 옵시디언 표준 파일(.md/.canvas/.base)로 정확하게 돌릴 수 있다
 
 골든래빗 자료 중 이미 이 결합을 구현한 사례:

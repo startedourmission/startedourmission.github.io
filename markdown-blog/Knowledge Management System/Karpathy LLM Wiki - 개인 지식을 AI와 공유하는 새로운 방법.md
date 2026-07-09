@@ -6,7 +6,7 @@ tags:
   - 에이전트
   - KMS
 image: "![[karpathy-llm-wiki.png]]"
-description: "Andrej Karpathy가 2026년 4월 공개한 LLM Wiki 개념을 소개합니다. 작은 마크다운 파일들을 컨텍스트로 넣어 AI가 내 도메인을 깊이 이해하게 만드는 방법, 실제 도입 사례와 한계까지 솔직하게 정리합니다."
+description: "카파시가 2026년 4월 공개한 LLM Wiki 개념을 소개합니다. 작은 마크다운 파일들을 컨텍스트로 넣어 AI가 내 도메인을 깊이 이해하게 만드는 방법, 실제 도입 사례와 한계까지 솔직하게 정리합니다."
 ---
 
 AI와 일하다 보면 반복되는 답답함이 있습니다. 어제 설명한 내용을 오늘 또 설명해야 합니다. 내 프로젝트 구조, 팀의 코딩 컨벤션, 자주 쓰는 용어들을 매번 처음부터 알려줘야 합니다. 모델은 능력이 있지만, 내 세계를 모릅니다.
@@ -117,4 +117,4 @@ LLM Wiki는 개인 수준에서 빠르게 시작할 수 있는 방법입니다. 
 
 ---
 
-*참고 자료: [카파시 LLM Wiki 원본 gist](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f) / [AAIF Agent Memory 해석](https://aaif.io/blog/karpathys-llm-wiki-as-agent-memory/) / [Tom Nguyen 후기](https://tomnguyenit.medium.com/i-built-karpathys-llm-wiki-for-my-day-job-here-s-what-actually-works-0d4ec6d1e433) / [HN 토론](https://news.ycombinator.com/item?id=47899844)*
+참고 자료: [카파시 LLM Wiki 원본 gist](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f) / [AAIF Agent Memory 해석](https://aaif.io/blog/karpathys-llm-wiki-as-agent-memory/) / [Tom Nguyen 후기](https://tomnguyenit.medium.com/i-built-karpathys-llm-wiki-for-my-day-job-here-s-what-actually-works-0d4ec6d1e433) / [HN 토론](https://news.ycombinator.com/item?id=47899844)

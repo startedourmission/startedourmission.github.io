@@ -1,6 +1,6 @@
 ---
 type: benchmark
-description: "AI 정렬 상태 자동 평가 벤치마크"
+description: "비정렬 행동·아첨·기만 등 6개 지표로 모델당 362회 조사하는 정렬 평가. Mythos는 초기 버전임에도 최상위권을 기록했다"
 tags:
   - 벤치마크
   - AI평가

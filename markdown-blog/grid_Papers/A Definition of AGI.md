@@ -7,7 +7,7 @@ aliases:
 image: "![[1-ADefinitionofAGI.png]]"
 description: AGI를 정량화하는 체계적 프레임워크를 제시한 논문입니다. 인간 인지능력 모델(CHC 이론)로 측정해 GPT-4는 27%, GPT-5는 57%라는 AGI 점수를 내놓습니다.
 citations: 29
-buzz: 148
+buzz: 151
 ---
 
 인공일반지능(AGI)은 무엇일까요? AI가 체스를 마스터하고, 수학 문제를 풀고, 심지어 예술 작품을 만들어내는 지금, AGI의 정의는 점점 더 모호해지고 있습니다. 

@@ -6,7 +6,7 @@ tags:
   - 오픈소스
 description: "VLA와 WAM 모델을 이기종 로봇 에지 기기에서 실행하기 위한 C++ 5-레이어 추론 런타임. Python 스택 단편화 문제를 아키텍처적으로 해소하고, HY-VLA 100%, pi0.5 91% 태스크 성공률을 보고합니다."
 image: "![[embodied-cpp-overview.png]]"
-buzz: 41
+buzz: 45
 ---
 
 > L. Xu, C. Han, B. Li, H. Wu, S. Jiang, T. Cao, C. Li, S. Zhong, and S. Wang, "Embodied.cpp: A Portable Inference Runtime of Embodied AI Models on Heterogeneous Robots," arXiv:2607.02501, 2026.

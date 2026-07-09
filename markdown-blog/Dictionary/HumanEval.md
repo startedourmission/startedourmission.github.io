@@ -1,6 +1,6 @@
 ---
 type: benchmark
-description: "파이썬 함수 작성 코딩 벤치마크"
+description: "2021년 OpenAI가 Codex 논문과 함께 공개한 164문항 코딩 시험. 2026년 GPT-5.4가 93.1%로 상단을 압축시켰다"
 tags:
   - 벤치마크
   - AI평가

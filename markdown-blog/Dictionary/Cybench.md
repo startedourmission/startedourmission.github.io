@@ -1,6 +1,6 @@
 ---
 type: benchmark
-description: "CTF 사이버보안 챌린지 벤치마크"
+description: "2024년 공개 당시 프론티어 모델이 20% 미만이었지만, Mythos와 Opus 4.6이 나란히 100%를 기록하며 2년 만에 완전히 포화됐다"
 tags:
   - 벤치마크
   - AI평가

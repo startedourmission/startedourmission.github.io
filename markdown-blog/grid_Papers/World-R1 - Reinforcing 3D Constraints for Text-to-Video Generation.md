@@ -7,7 +7,7 @@ tags:
 description: 텍스트-투-비디오 모델들은 눈을 뗄 수 없을 만큼 아름다운 영상을 만들어냅니다. 그런데 카메라가 크게 움직이는 순간, 뭔가 이상해집니다. 건물 벽이 녹아내리고, 물체가 갑자기 사라지고, 물리적으로 말이 안 되는 장면을 생성합니다. World-R1은 이 문제를 아키텍처 수정 없이, 강화학습(RL)만으로 해결한다고 주장합니다.
 image: "![[Pasted image 20260430160734.png]]"
 citations: 4
-buzz: 124
+buzz: 120
 ---
 > **원제:** World-R1: Reinforcing 3D Constraints for Text-to-Video Generation
 > 

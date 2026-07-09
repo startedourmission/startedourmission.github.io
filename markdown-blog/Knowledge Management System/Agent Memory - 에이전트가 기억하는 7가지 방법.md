@@ -106,4 +106,4 @@ LangChain, CrewAI, AutoGen 등 21개 프레임워크와 통합되고, 관리형 
 
 ---
 
-*참고: [AAIF — Karpathy's LLM Wiki as Agent Memory](https://aaif.io/blog/karpathys-llm-wiki-as-agent-memory/) / [mem0 — State of AI Agent Memory 2026](https://mem0.ai/blog/state-of-ai-agent-memory-2026)*
+참고: [AAIF — Karpathy's LLM Wiki as Agent Memory](https://aaif.io/blog/karpathys-llm-wiki-as-agent-memory/) / [mem0 — State of AI Agent Memory 2026](https://mem0.ai/blog/state-of-ai-agent-memory-2026)

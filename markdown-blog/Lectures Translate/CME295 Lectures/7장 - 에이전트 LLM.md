@@ -8,6 +8,7 @@ author:
 series: "CME295 트랜스포머와 LLM 강의 (2025 가을)"
 chapter: 7
 date: 2026-04-07
+description: "지식 베이스 검색과 순위 재조정으로 구성되는 RAG 파이프라인과, 도구 호출 및 MCP를 활용한 ReAct 에이전트의 관찰과 행동 루프를 다룹니다"
 tags:
   - cme295
   - 트랜스포머

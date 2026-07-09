@@ -1,6 +1,6 @@
 ---
 type: benchmark
-description: "미공개 연구 수준 수학 벤치마크"
+description: "2024년 Epoch AI가 공개한 비공개 연구 수준 수학 문제로, 2026년 4월 기준 선두 GPT-5.4도 약 47.6%에 그친다"
 tags:
   - 벤치마크
   - AI평가

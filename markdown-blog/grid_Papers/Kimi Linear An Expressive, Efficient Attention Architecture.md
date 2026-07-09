@@ -9,7 +9,7 @@ aliases:
 image: "![[1-KimiLinear.png]]"
 description: 현대 트랜스포머의 약점을 개선한 새 어텐션 구조 Kimi Linear를 소개합니다. 선형 어텐션 기반으로 효율과 성능을 동시에 끌어올린 접근을 다룹니다.
 citations: 86
-buzz: 212
+buzz: 213
 ---
 
 > **Kimi Team et al., 2025** ([arXiv:2510.26692](http://arxiv.org/abs/2510.26692))

@@ -1,6 +1,6 @@
 ---
 type: benchmark
-description: "실제 직무 산출물 기반 경제 가치 평가"
+description: "OpenAI가 미국 GDP 상위 9개 산업, 44개 직업군의 실제 업무 산출물을 전문가가 채점하며, 2026년 4월 GPT-5.4가 약 83%를 기록했다"
 tags:
   - 벤치마크
   - AI평가

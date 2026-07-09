@@ -1,6 +1,6 @@
 ---
 type: benchmark
-description: "MMLU의 다국어 확장, 57개 과목 14개 언어"
+description: "57과목을 14개 비영어 언어로 확장한 시험. Mythos 92.67%가 Opus 4.6(91.1%)를 앞서지만 상위권 격차는 1~2%p뿐이다"
 tags:
   - 벤치마크
   - AI평가

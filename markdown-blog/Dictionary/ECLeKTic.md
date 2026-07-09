@@ -1,6 +1,6 @@
 ---
 type: benchmark
-description: "12개 언어 다국어 사실 환각 평가"
+description: "12개 언어에 걸쳐 사실 환각을 측정하며, Mythos는 오답 비율 12.1%로 최저를 기록하고 불확실 응답 비율은 31.5%로 높게 나타났다"
 tags:
   - 벤치마크
   - AI평가

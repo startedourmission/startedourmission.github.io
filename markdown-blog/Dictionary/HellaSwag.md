@@ -1,6 +1,6 @@
 ---
 type: benchmark
-description: "상식 추론 문장 완성 벤치마크"
+description: "2019년 공개 당시 인간 95.6%, GPT-2 48%였던 상식 추론 시험. 2022년 이후 LLM이 95%를 넘기며 포화됐다"
 tags:
   - 벤치마크
   - AI평가
