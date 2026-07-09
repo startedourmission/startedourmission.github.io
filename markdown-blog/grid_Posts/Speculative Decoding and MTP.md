@@ -2,7 +2,6 @@
 date: 2026-06-29
 tags:
   - 정보
-  - Headliner
   - LLM
 description: LLM 생성의 시퀀셜 병목을 우회하는 두 기법을 비교합니다. 작은 모델이 추측하고 큰 모델이 검증하는 Speculative Decoding(2~3배 가속, 추가 모델 필요)과, 여러 토큰을 동시에 예측하도록 재학습하는 MTP(3~4배 이론적 가속, 정확도 트레이드오프)입니다.
 image: "![[Speculative Decoding and MTP-thumb.png]]"

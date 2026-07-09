@@ -3,7 +3,7 @@ date: 2026-06-29
 tags:
   - 정보
   - LLM
-description: "NVIDIA Dynamo: PyTorch 동적 그래프를 정적 연산으로 최적화하는 컴파일러"
+description: PyTorch의 define-by-run 방식을 유지하면서 바이트코드를 추적해 그래프를 정적화하는 JIT 컴파일러. TorchInductor·ONNX·TensorRT 백엔드로 컴파일해 ResNet-50 25%, ViT 42% 속도 향상을 보입니다.
 image: "![[NVIDIA Dynamo-thumb.png]]"
 ---
 
