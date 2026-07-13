@@ -126,7 +126,11 @@ module Url =
 
     let toHashId (input: string) =
         use md5 = MD5.Create()
-        let bytes = Encoding.UTF8.GetBytes(input)
+        // macOS presents Korean filenames in decomposed Unicode, while wikilinks
+        // are normally entered in composed form. Hash one canonical form so both
+        // resolve to the same generated page URL.
+        let normalizedInput = input.Normalize(NormalizationForm.FormC)
+        let bytes = Encoding.UTF8.GetBytes(normalizedInput)
         let hash = md5.ComputeHash(bytes)
         hash |> Array.map (fun b -> b.ToString("x2")) |> String.concat "" |> fun s -> s.[..7]
 
