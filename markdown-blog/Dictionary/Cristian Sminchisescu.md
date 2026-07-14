@@ -1,0 +1,25 @@
+---
+type: person
+description: Google DeepMind 엔지니어링 매니저 + 룬드대 교수. 인간 포즈 추정·아바타 모델링 전문가. BlazePose·GHUM 개발.
+tags:
+  - 인물
+  - 컴퓨터비전
+  - 머신러닝
+  - 교수
+aliases:
+  - Cristian Sminchisescu
+last_active: 2026
+papers:
+  - Video Generation Models are General-Purpose Vision Learners
+star: 12
+---
+
+Google DeepMind 엔지니어링 매니저 겸 룬드대(Lund University) 교수, 루마니아 아카데미 교수. INRIA에서 박사(응용수학, 비전·로보틱스), 이후 토론토대 AI Lab 박사후 연구.
+
+인간 3D 포즈 추정 분야의 선구자. 주요 기여:
+
+- **BlazePose GHUM** - Android·iOS·TensorFlow.js용 실시간 3D 인간 포즈 추정 라이브러리
+- **BlazeHands GHUM** - 실시간 3D 손 추적
+- **GHUM** (Generative Human Unified Model) - 풀바디·얼굴 표현 통합 아바타 모델
+
+[[Joao Carreira]]의 박사 지도교수이기도 하다. [[GenCeption]] 논문의 교신저자(corresponding author).
