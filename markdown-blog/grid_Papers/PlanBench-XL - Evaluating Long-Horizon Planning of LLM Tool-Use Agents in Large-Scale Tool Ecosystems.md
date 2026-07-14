@@ -7,14 +7,14 @@ tags:
   - 벤치마크
 description: "1,665개 도구 생태계에서 LLM 에이전트의 장기 계획 능력을 측정하는 대규모 벤치마크. GPT-5.4는 도구 차단 조건에서 51.9%에서 11.36%로 붕괴하며, 실패의 핵심은 검색 부족이 아니라 이미 가진 도구를 제대로 고르지 못하는 선택 실패였습니다."
 image: "![[planbench-xl-overview.png]]"
-buzz: 74
+buzz: 72
 ---
 
 > J. Liu, Q. Lin, C. Qian, R. Wang, E. C. Acikgoz, X. Yang, J. Liu, Z. Wang, X. Chen, H. Ji, and D. Hakkani-Tür, "PlanBench-XL: Evaluating Long-Horizon Planning of LLM Tool-Use Agents in Large-Scale Tool Ecosystems," arXiv:2606.22388, 2026.
 
 ## 저자
 
-[[Heng Ji]]와 [[Dilek Hakkani-Tür]]가 지도하는 UIUC BLENDER Lab·ConvAI Lab 합동 연구입니다. 1저자 Jiayu Liu는 HKUST 학부생으로 UIUC 교환 연구 인턴 중 이 논문을 냈습니다. Heng Ji는 정보 추출과 지식 증강 LLM으로 잘 알려진 연구자이고, Dilek Hakkani-Tür는 Amazon Alexa·Google·Microsoft Research를 거쳐 2024년 학계로 복귀한 대화형 AI 전문가입니다. 두 교수가 같은 랩 공간을 공유하며 에이전트 평가 연구를 진행하고 있다는 점이 이 벤치마크의 배경입니다.
+[[Heng Ji]]와 [[딜렉 하카니튀르|Dilek Hakkani-Tür]]가 지도하는 UIUC BLENDER Lab·ConvAI Lab 합동 연구입니다. 1저자 Jiayu Liu는 HKUST 학부생으로 UIUC 교환 연구 인턴 중 이 논문을 냈습니다. Heng Ji는 정보 추출과 지식 증강 LLM으로 잘 알려진 연구자이고, Dilek Hakkani-Tür는 Amazon Alexa·Google·Microsoft Research를 거쳐 2024년 학계로 복귀한 대화형 AI 전문가입니다. 두 교수가 같은 랩 공간을 공유하며 에이전트 평가 연구를 진행하고 있다는 점이 이 벤치마크의 배경입니다.
 
 ## 배경
 

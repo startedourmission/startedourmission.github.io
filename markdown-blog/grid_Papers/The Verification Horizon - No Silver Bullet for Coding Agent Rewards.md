@@ -7,14 +7,14 @@ tags:
   - 강화학습
 description: "Qwen 팀이 코딩 에이전트 보상 설계의 실전 경험을 정리한 논문. 테스트 통과, 시각 판정, 사용자 피드백, 에이전트 평가자 네 가지 방식을 분석하고, 어떤 단일 검증 함수도 모델이 강해질수록 결국 부족해진다고 주장합니다."
 image: "![[verification-horizon-coevolution.png]]"
-buzz: 41
+buzz: 40
 ---
 
 > B. Wang, C. Zhang, D. Liu, J. Zhang, J. Chen, M. Chen, R. Fang, S. Zhang, X. Wang, Y. Jing, Z. Ma, Z. Cui, et al., "The Verification Horizon: No Silver Bullet for Coding Agent Rewards," arXiv:2606.26300, 2026.
 
 ## 저자
 
-[[Qwen]] 팀(Alibaba DAMO Academy)의 코딩 에이전트 훈련 그룹이 실무 경험을 논문으로 정리했습니다. 교신저자는 [[Qwen]] 팀 강화학습 리드 [[Dayiheng Liu]], 프로젝트 리더는 Xuwu Wang과 Zeyu Cui입니다.
+[[Qwen]] 팀(Alibaba DAMO Academy)의 코딩 에이전트 훈련 그룹이 실무 경험을 논문으로 정리했습니다. 교신저자는 [[Qwen]] 팀 강화학습 리드 [[류다이헝|Dayiheng Liu]], 프로젝트 리더는 Xuwu Wang과 Zeyu Cui입니다.
 
 이 팀이 코딩 에이전트를 훈련하면서 부딪힌 보상 신호 설계 문제를 직접 겪어왔다는 점이 중요합니다. 공개 벤치마크 숫자보다 실제 파이프라인에서의 에피소드가 핵심입니다. Brooks(1987)의 "은총알은 없다"는 경구를 제목에 걸었는데, 그 의미를 보상 함수에 대입한 것이 이 논문의 핵심 주장입니다.
 

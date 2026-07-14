@@ -6,7 +6,7 @@ tags:
   - 확산모델
 description: "베이징대학교 MSALab과 ByteDance가 만든 멀티모달 확산 언어 모델. 자기회귀가 영역을 하나씩 순차로 캡셔닝하는 한계를 깨고, 한 번의 디노이징으로 여러 영역을 동시에 설명합니다. 구조적 어텐션 마스킹으로 영역 간 간섭을 막으면서 최대 3.5배 빠른 추론을 보입니다."
 image: "![[perceptiondlm-overview.png]]"
-buzz: 43
+buzz: 41
 ---
 > Y. Sun, Y. Wang, J. Li, Y. Tian, et al., "PerceptionDLM: Parallel Region Perception with Multimodal Diffusion Language Models," arXiv:2606.19534, 2026.
 
@@ -16,7 +16,7 @@ buzz: 43
 
 [[베이징대학교]] MSALab과 [[ByteDance]]가 함께 만들었고, 일부 저자는 ByteDance 인턴십 기간에 작업했습니다. 공동 1저자는 [[Yueyi Sun]]과 Yuhao Wang입니다. Yueyi Sun은 SAM2와 LLaVA를 결합한 Sa2VA의 공저자로, 이미지·비디오의 밀집 그라운딩을 다뤄온 멀티모달 인식 연구자입니다.
 
-저자 명단에는 확산 모델 쪽에서 익숙한 이름들이 보입니다. [[Ling Yang]]은 확산 모델 대표 서베이를 공저하고 MMaDA·ReasonFlux 같은 확산-추론 작업을 이어온 연구자로 현재 [[프린스턴대학교]] 포스닥입니다. [[Jinbin Bai]]는 [[싱가포르국립대학교]] Show Lab에서 마스크드 생성 모델과 통합 멀티모달 생성을 연구하며 Muddit·Meissonic을 발표했습니다. 교신저자는 베이징대학교 MSALab을 이끄는 [[Yunhai Tong]] 교수입니다.
+저자 명단에는 확산 모델 쪽에서 익숙한 이름들이 보입니다. [[양링|Ling Yang]]은 확산 모델 대표 서베이를 공저하고 MMaDA·ReasonFlux 같은 확산-추론 작업을 이어온 연구자로 현재 [[프린스턴대학교]] 포스닥입니다. [[Jinbin Bai]]는 [[싱가포르국립대학교]] Show Lab에서 마스크드 생성 모델과 통합 멀티모달 생성을 연구하며 Muddit·Meissonic을 발표했습니다. 교신저자는 베이징대학교 MSALab을 이끄는 [[Yunhai Tong]] 교수입니다.
 
 확산 기반 생성을 깊게 다뤄온 팀이, 그 병렬성을 "인식" 태스크로 끌고 온 셈입니다. 생성 모델의 장점을 인식에 이식하는 시도라는 점에서 저자 구성이 자연스럽습니다.
 
