@@ -6,16 +6,16 @@ tags:
   - 오픈소스
 description: "AI 에이전트를 OS 1급 시민으로 다루는 AOSP 기반 오픈소스 에이전트 하네스. 기존 앱 중심 Android 대비 태스크 완료율 +21%, 토큰 비용 -52%, 실행 시간 -44% 달성."
 image: "![[aohp-overview.png]]"
-buzz: 37
+buzz: 35
 ---
 
 > S. Zhao, J. Liu, G. Liu, J. Yan, J. Ye, Y. Yang, H. Wen, S. Tian, Y. Yuan, Y. Chen, Y. Liu, J. Ren, Y.-Q. Zhang, C. Huang, Y. Guo, and Y. Li, "AOHP: An Open-Source OS-Level Agent Harness for Personalized, Efficient and Secure Interaction," arXiv:2606.23449, 2026.
 
 ## 저자
 
-칭화대와 베이징대 공동 팀입니다. 공동 1저자는 Shanhui Zhao, Jiacheng Liu, Guohong Liu 세 명이고, 교신 저자는 [[Yunxin Liu]]와 [[Yuanchun Li]]입니다.
+칭화대와 베이징대 공동 팀입니다. 공동 1저자는 Shanhui Zhao, Jiacheng Liu, Guohong Liu 세 명이고, 교신 저자는 [[류윈신|Yunxin Liu]]와 [[리위안춘|Yuanchun Li]]입니다.
 
-두 교신 저자는 모두 [[Ya-Qin Zhang]] 원장이 이끄는 칭화대 인공지능산업연구원(AIR) 소속입니다. [[Yuanchun Li]]는 DroidBot과 AutoDroid를 만든 모바일 에이전트 전문가로, 이번 논문은 그가 지난 수년간 쌓아온 모바일 자동화 연구의 연장선에 있습니다. [[Yunxin Liu]]는 에지·모바일 컴퓨팅 시스템 전문가로, 두 저자가 각자의 강점인 "에이전트 정책"과 "시스템 설계"를 합쳤다는 구도입니다.
+두 교신 저자는 모두 [[장야친|Ya-Qin Zhang]] 원장이 이끄는 칭화대 인공지능산업연구원(AIR) 소속입니다. [[리위안춘|Yuanchun Li]]는 DroidBot과 AutoDroid를 만든 모바일 에이전트 전문가로, 이번 논문은 그가 지난 수년간 쌓아온 모바일 자동화 연구의 연장선에 있습니다. [[류윈신|Yunxin Liu]]는 에지·모바일 컴퓨팅 시스템 전문가로, 두 저자가 각자의 강점인 "에이전트 정책"과 "시스템 설계"를 합쳤다는 구도입니다.
 
 ## 배경
 

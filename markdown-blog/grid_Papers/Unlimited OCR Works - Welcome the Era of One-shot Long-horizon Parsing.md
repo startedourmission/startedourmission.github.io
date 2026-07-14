@@ -6,14 +6,14 @@ tags:
   - 머신러닝
 description: "DeepSeek OCR 디코더의 모든 어텐션을 R-SWA로 교체해 KV 캐시를 상수로 유지. 단일 forward pass로 수십 페이지 문서를 파싱하고 OmniDocBench v1.6 SOTA 93.92% 달성."
 image: "![[unlimited-ocr-rswa.png]]"
-buzz: 67
+buzz: 84
 ---
 
 > Y. Yin, H. Liu, Q. Xie, et al., "Unlimited OCR Works: Welcome the Era of One-shot Long-horizon Parsing," arXiv:2606.23050, 2026.
 
 ## 저자
 
-바이두 내부 팀의 기술 보고서입니다. 핵심 기여자는 [[Youyang Yin]]과 프로젝트 리더 Huanhuan Liu, 그리고 기술 디렉터로 표기된 "YY"입니다. 논문이 바이두 소속으로만 나온 만큼, DeepSeek OCR(바이두 계열) 코드베이스에 익숙한 팀이 직접 이어받아 개선하는 구조입니다.
+바이두 내부 팀의 기술 보고서입니다. 핵심 기여자는 [[인유양|Youyang Yin]]과 프로젝트 리더 Huanhuan Liu, 그리고 기술 디렉터로 표기된 "YY"입니다. 논문이 바이두 소속으로만 나온 만큼, DeepSeek OCR(바이두 계열) 코드베이스에 익숙한 팀이 직접 이어받아 개선하는 구조입니다.
 
 ## 배경
 

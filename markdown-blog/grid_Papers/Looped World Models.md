@@ -16,7 +16,7 @@ buzz: 93
 
 ## 저자
 
-[[Hongyuan Lu]]와 Z.L. Victor Wei가 리딩 컨트리뷰터를 맡았습니다. Lu는 홍콩중문대(CUHK) 박사과정 학생이자 FaceMind Research Asia의 공동창업자로, 대형 언어 모델의 텍스트 빈도 법칙(Adam's Law)과 멀티링궐 추론을 연구해온 인물입니다. 시니어 저자 [[Wai Lam]]은 CUHK 시스템공학·공학경영학과 교수이자 CUHK Text Mining Group 책임자로, NLP·텍스트 마이닝 분야에서 오랜 이력을 가집니다. 30명 이상의 저자 목록은 FaceMind가 산학 협력 형태의 대규모 연구 조직임을 보여줍니다.
+[[루훙위안|Hongyuan Lu]]와 Z.L. Victor Wei가 리딩 컨트리뷰터를 맡았습니다. Lu는 홍콩중문대(CUHK) 박사과정 학생이자 FaceMind Research Asia의 공동창업자로, 대형 언어 모델의 텍스트 빈도 법칙(Adam's Law)과 멀티링궐 추론을 연구해온 인물입니다. 시니어 저자 [[람와이|Wai Lam]]은 CUHK 시스템공학·공학경영학과 교수이자 CUHK Text Mining Group 책임자로, NLP·텍스트 마이닝 분야에서 오랜 이력을 가집니다. 30명 이상의 저자 목록은 FaceMind가 산학 협력 형태의 대규모 연구 조직임을 보여줍니다.
 
 ## 배경
 

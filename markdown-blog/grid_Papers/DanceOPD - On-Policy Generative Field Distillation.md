@@ -7,7 +7,7 @@ tags:
   - 강화학습
 description: "ByteDance Seed와 NUS가 제안한 on-policy 생성 필드 증류 프레임워크. 하나의 flow-matching 학생 모델에 T2I, 로컬 편집, 글로벌 편집 능력을 충돌 없이 합성하는 세 가지 설계 원칙을 제시합니다."
 image: "![[danceopd-overview.png]]"
-buzz: 47
+buzz: 45
 ---
 
 > W. Zhou, X. Zhu, Z. Xu, B. Dong, L. Gong, Y. Liang, M. Chu, L. Qu, L. Kong, W. Liu, and T.-S. Chua, "DanceOPD: On-Policy Generative Field Distillation," arXiv:2606.27377, 2026.
@@ -18,9 +18,9 @@ ByteDance Seed와 NUS 연구팀이 6월 제안한 DanceOPD는 이 충돌을 "각
 
 ## 저자
 
-[[Wei Liu]]가 교신 저자이며, [[Tat-Seng Chua]]가 시니어 저자를 맡았습니다. Wei Zhou가 1저자로 ByteDance Seed에서 작업을 주도했습니다.
+[[류웨이|Wei Liu]]가 교신 저자이며, [[추아 탯셍|Tat-Seng Chua]]가 시니어 저자를 맡았습니다. Wei Zhou가 1저자로 ByteDance Seed에서 작업을 주도했습니다.
 
-[[Wei Liu]]는 ByteDance Seed Vision 팀의 연구과학자로, Seedream 4.0과 4.5의 편집 데이터 파이프라인 및 공동 훈련 알고리즘 설계를 이끌어온 연구자입니다. [[Tat-Seng Chua]]는 NUS NExT++ 연구소를 공동 설립한 싱가포르 AI 분야 석학으로, 멀티모달 기반 모델과 신뢰 가능한 AI를 오랜 시간 연구해 왔습니다. Seedream을 실제로 훈련한 팀과 멀티모달 분야 최고 연구자가 손을 잡은 형태입니다.
+[[류웨이|Wei Liu]]는 ByteDance Seed Vision 팀의 연구과학자로, Seedream 4.0과 4.5의 편집 데이터 파이프라인 및 공동 훈련 알고리즘 설계를 이끌어온 연구자입니다. [[추아 탯셍|Tat-Seng Chua]]는 NUS NExT++ 연구소를 공동 설립한 싱가포르 AI 분야 석학으로, 멀티모달 기반 모델과 신뢰 가능한 AI를 오랜 시간 연구해 왔습니다. Seedream을 실제로 훈련한 팀과 멀티모달 분야 최고 연구자가 손을 잡은 형태입니다.
 
 ## 배경
 

@@ -6,16 +6,16 @@ tags:
   - 에이전트
 description: "LLM 에이전트 메모리를 '얼마나 많은 히스토리가 들어가는가'가 아니라 '어느 레이어가 결정을 바꾸는가'로 측정하는 게임 테스트베드. Slay the Spire 2 위에서 5층 타입 메모리 계약을 구현하고 298개 궤적을 공개합니다."
 image: "![[agentic-sts-overview.png]]"
-buzz: 47
+buzz: 45
 ---
 
 > X. Cheng, Y. Jiang, J. Sun, Z. Li, C. Li, X. Cao, Y. Liu, F. Zhang, L. Jin, and K. Zhang, "AgenticSTS: A Bounded-Memory Testbed for Long-Horizon LLM Agents," arXiv:2607.02255, 2026.
 
 ## 저자
 
-1저자 Xiangchen Cheng은 Alaya Lab과 Shanghai Jiao Tong University 소속이며, 교신저자 [[Kaipeng Zhang]]은 Shanda AI Research Tokyo(Alaya Lab)의 수석연구원입니다. 공저자 다수가 Alaya Lab, 상하이교통대, Shanghai Innovation Institute, 난카이대, USTC에 분산돼 있습니다.
+1저자 Xiangchen Cheng은 Alaya Lab과 Shanghai Jiao Tong University 소속이며, 교신저자 [[장카이펑|Kaipeng Zhang]]은 Shanda AI Research Tokyo(Alaya Lab)의 수석연구원입니다. 공저자 다수가 Alaya Lab, 상하이교통대, Shanghai Innovation Institute, 난카이대, USTC에 분산돼 있습니다.
 
-Alaya Lab은 Shanda AI Research Tokyo 산하 게임 에이전트 연구 조직입니다. [[Kaipeng Zhang]]은 상하이 AI 연구소(2022-2025)에서 멀티모달 LLM을 연구했고, Shanda 이적 후에는 게임용 월드 모델(WildWorld, PackForcing) 구축에 주력하고 있습니다. AgenticSTS는 그 연장선에서, 게임 환경을 에이전트 메모리 측정 실험 공간으로 전환하는 시도입니다.
+Alaya Lab은 Shanda AI Research Tokyo 산하 게임 에이전트 연구 조직입니다. [[장카이펑|Kaipeng Zhang]]은 상하이 AI 연구소(2022-2025)에서 멀티모달 LLM을 연구했고, Shanda 이적 후에는 게임용 월드 모델(WildWorld, PackForcing) 구축에 주력하고 있습니다. AgenticSTS는 그 연장선에서, 게임 환경을 에이전트 메모리 측정 실험 공간으로 전환하는 시도입니다.
 
 ## 배경
 

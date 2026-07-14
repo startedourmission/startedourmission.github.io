@@ -7,14 +7,14 @@ tags:
   - 벤치마크
 description: "Frontis.AI 팀이 실제 기업 에이전트 세션 5,291건에서 852개 재현 가능 태스크를 추출하는 EnterpriseClawBench를 공개했습니다. 모델 단독이 아닌 하네스-모델 조합을 평가 단위로 삼으며, 최고 점수 0.663으로 기업 에이전트 벤치마크가 아직 포화와 거리가 멀다는 것을 보입니다."
 image: "![[enterprise-clawbench-overview.png]]"
-buzz: 46
+buzz: 44
 ---
 
 > J. Zhong, W. Wang, C. Jiang, K. Tian, Z. Yuan, J. Yang, D. Lei, and K. Zhang, "EnterpriseClawBench: Benchmarking Agents from Real Workplace Sessions," arXiv:2606.23654, 2026.
 
 ## 저자
 
-[[Kaiyan Zhang]]이 교신저자로 주도한 Frontis.AI(Horizon Research) 팀의 작업입니다. Jincheng Zhong, Weizhi Wang, Che Jiang이 코어 컨트리뷰터로 벤치마크 구축과 실험을 담당했습니다. 이 팀은 Frontis.AI라는 AI 스타트업 내부에서 실제 에이전트를 운영하면서 발생한 세션 로그를 연구 자원으로 전환한 특이한 위치에 있습니다. 사용자가 직접 에이전트를 운영하기 때문에 "기업 에이전트 평가가 어려운 이유"를 가장 가까이서 봐온 팀이라고 할 수 있습니다.
+[[장카이옌|Kaiyan Zhang]]이 교신저자로 주도한 Frontis.AI(Horizon Research) 팀의 작업입니다. Jincheng Zhong, Weizhi Wang, Che Jiang이 코어 컨트리뷰터로 벤치마크 구축과 실험을 담당했습니다. 이 팀은 Frontis.AI라는 AI 스타트업 내부에서 실제 에이전트를 운영하면서 발생한 세션 로그를 연구 자원으로 전환한 특이한 위치에 있습니다. 사용자가 직접 에이전트를 운영하기 때문에 "기업 에이전트 평가가 어려운 이유"를 가장 가까이서 봐온 팀이라고 할 수 있습니다.
 
 ## 배경
 

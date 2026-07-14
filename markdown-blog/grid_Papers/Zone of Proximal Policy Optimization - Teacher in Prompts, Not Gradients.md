@@ -6,14 +6,14 @@ tags:
   - 강화학습
 description: 교사를 그래디언트가 아닌 프롬프트 안에 가두는 소형 VLM 포스트 트레이닝 방법론 ZPPO. 지식 증류가 OOD 일반화를 훼손하는 반면 ZPPO는 0.8B 학생에서 VLM 벤치마크 +9.3pp를 달성하면서 동시에 훈련 외 도메인도 개선합니다.
 image: "![[zppo-overview.png]]"
-buzz: 68
+buzz: 66
 ---
 
 > B.-K. Lee, X. Lu, S. Diao, M. Kang, S. Muralidharan, K. Sapra, A. Tao, P. Molchanov, Y. Choi, Y.-C. F. Wang, and R. Hachiuma, "Zone of Proximal Policy Optimization: Teacher in Prompts, Not Gradients," arXiv:2606.18216, 2026.
 
 ## 저자
 
-[[Byung-Kwan Lee]]가 프로젝트 리드로 이 연구를 이끌었습니다. NVIDIA Research Taiwan을 중심으로 Ximing Lu, Shizhe Diao, Minki Kang, Saurav Muralidharan, Karan Sapra, Andrew Tao, Pavlo Molchanov, [[최예진|Yejin Choi]], Yu-Chiang Frank Wang, Ryo Hachiuma가 합류한 NVIDIA 11인 팀입니다. [[최예진|Yejin Choi]]는 자연어처리와 상식 추론 분야에서 MacArthur Fellow, Time100 AI 선정 이력을 가진 연구자로, 이번 논문에서는 소형 모델이 대형 교사의 지식을 더 효과적으로 흡수하도록 하는 방향의 연구에 함께했습니다.
+[[이병관|Byung-Kwan Lee]]가 프로젝트 리드로 이 연구를 이끌었습니다. NVIDIA Research Taiwan을 중심으로 Ximing Lu, Shizhe Diao, Minki Kang, Saurav Muralidharan, Karan Sapra, Andrew Tao, Pavlo Molchanov, [[최예진|Yejin Choi]], Yu-Chiang Frank Wang, Ryo Hachiuma가 합류한 NVIDIA 11인 팀입니다. [[최예진|Yejin Choi]]는 자연어처리와 상식 추론 분야에서 MacArthur Fellow, Time100 AI 선정 이력을 가진 연구자로, 이번 논문에서는 소형 모델이 대형 교사의 지식을 더 효과적으로 흡수하도록 하는 방향의 연구에 함께했습니다.
 
 ## 배경
 

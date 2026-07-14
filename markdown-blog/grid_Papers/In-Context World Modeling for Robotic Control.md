@@ -6,7 +6,7 @@ tags:
   - 머신러닝
 description: "VLA 모델이 새로운 카메라 시점에서 실패하는 원인을 시스템 식별 문제로 재정의하고, 랜덤 탐색 행동 몇 가지를 컨텍스트로 주입해 파라미터 업데이트 없이 적응하는 ICWM 프레임워크를 제안합니다."
 image: "![[icwm-overview.png]]"
-buzz: 44
+buzz: 43
 ---
 
 > S. Wang, J. Shi, S. Fei, Z. Fu, L. Ji, J. Gong, and X. Qiu, "In-Context World Modeling for Robotic Control," arXiv:2606.26025, 2026.
@@ -15,9 +15,9 @@ buzz: 44
 
 ## 저자
 
-[[Siyin Wang]]과 [[Junhao Shi]]가 공동 1저자로 이 연구를 이끌었습니다. 두 사람 모두 [[Xipeng Qiu]] 교수 지도 아래 Fudan University에서 박사과정 중이며, OpenMOSS 그룹의 구현 AI 연구 라인을 잇고 있습니다. 이 팀은 앞서 "World Action Models" 서베이(arXiv:2605.12090)를 통해 세계 모델과 행동 생성의 통합 가능성을 논했는데, 이 논문은 그 방향의 구체적 구현에 해당합니다.
+[[왕쓰인|Siyin Wang]]과 [[스쥔하오|Junhao Shi]]가 공동 1저자로 이 연구를 이끌었습니다. 두 사람 모두 [[추시펑|Xipeng Qiu]] 교수 지도 아래 Fudan University에서 박사과정 중이며, OpenMOSS 그룹의 구현 AI 연구 라인을 잇고 있습니다. 이 팀은 앞서 "World Action Models" 서베이(arXiv:2605.12090)를 통해 세계 모델과 행동 생성의 통합 가능성을 논했는데, 이 논문은 그 방향의 구체적 구현에 해당합니다.
 
-교신저자는 [[Jingjing Gong]]([[Shanghai Innovation Institute]] OpenMOSS 그룹)과 [[Xipeng Qiu]](Fudan University)가 공동으로 맡았습니다. Xipeng Qiu는 MOSS 오픈소스 LLM 개발과 FastNLP 툴킷으로 알려진 중국 NLP 분야의 대표적 교수입니다.
+교신저자는 [[궁징징|Jingjing Gong]]([[Shanghai Innovation Institute]] OpenMOSS 그룹)과 [[추시펑|Xipeng Qiu]](Fudan University)가 공동으로 맡았습니다. Xipeng Qiu는 MOSS 오픈소스 LLM 개발과 FastNLP 툴킷으로 알려진 중국 NLP 분야의 대표적 교수입니다.
 
 ## 배경
 

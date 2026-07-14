@@ -7,14 +7,14 @@ tags:
   - 머신러닝
 description: "Qwen 팀이 7개 에이전트 도메인을 단일 모델로 시뮬레이션하는 언어 세계 모델 Qwen-AgentWorld를 공개했습니다. 환경을 예측하는 세계 모델 훈련이 에이전트 강화학습의 새 축이 될 수 있음을 실험으로 보입니다."
 image: "![[qwen-agentworld-overview.png]]"
-buzz: 52
+buzz: 50
 ---
 
 > Qwen Team, "Qwen-AgentWorld: Language World Models for General Agents," arXiv:2606.24597, 2026.
 
 ## 저자
 
-이 논문은 [[Jingren Zhou]]가 이끄는 Alibaba Cloud 통의(Tongyi) 연구소의 팀 저술입니다. Core contributor로 Yuxin Zuo, Zikai Xiao, Li Sheng 등 17명이 이름을 올렸고 Fei Huang과 Jianhong Tu가 Project Lead를, [[Jingren Zhou]]가 시니어 저자로 참여했습니다. Tsinghua 대학의 Ning Ding이 외부 자문을 맡았습니다.
+이 논문은 [[저우징런|Jingren Zhou]]가 이끄는 Alibaba Cloud 통의(Tongyi) 연구소의 팀 저술입니다. Core contributor로 Yuxin Zuo, Zikai Xiao, Li Sheng 등 17명이 이름을 올렸고 Fei Huang과 Jianhong Tu가 Project Lead를, [[저우징런|Jingren Zhou]]가 시니어 저자로 참여했습니다. Tsinghua 대학의 Ning Ding이 외부 자문을 맡았습니다.
 
 이 팀은 Qwen3.5·Qwen3.6 시리즈를 낸 것과 같은 조직입니다. Qwen-AgentWorld는 기존 언어 모델 훈련의 연장선이 아니라, 에이전트 환경 시뮬레이션을 파운데이션 모델로 다룬다는 점에서 팀의 연구 방향을 새 전선에 올려놓는 작업입니다.
 

@@ -6,16 +6,16 @@ tags:
   - 확산모델
 description: "0.22B 파라미터로 11.9B짜리 FLUX.1-Fill-Dev와 맞먹는 이미지 인페인팅을 구현한 Moebius. 표현 병목을 깨기 위해 Local-λ Mix Interaction 블록과 잠재 공간 다중 입도 증류를 결합했습니다."
 image: "![[moebius-pipeline.png]]"
-buzz: 49
+buzz: 47
 ---
 
 > K. Duan, Z. Xu, W. Liu, X. Ruan, X. Chen, and X. Wang, "Moebius: 0.2B Lightweight Image Inpainting Framework with 10B-Level Performance," arXiv:2606.19195, 2026.
 
 ## 저자
 
-[[Kangsheng Duan]]과 [[Ziyang Xu]]가 공동 제1저자이며 [[Xinggang Wang]] 교수가 교신저자를 맡았습니다. 세 명 모두 화중과학기술대학교(HUST) Vision Lab 소속입니다. [[Xiaohu Ruan]]과 Xiaoxin Chen은 VIVO AI Lab에서 합류했습니다.
+[[돤캉성|Kangsheng Duan]]과 [[쉬쯔양|Ziyang Xu]]가 공동 제1저자이며 [[왕싱강|Xinggang Wang]] 교수가 교신저자를 맡았습니다. 세 명 모두 화중과학기술대학교(HUST) Vision Lab 소속입니다. [[Xiaohu Ruan]]과 Xiaoxin Chen은 VIVO AI Lab에서 합류했습니다.
 
-[[Ziyang Xu]]는 2025년 4월 선행 연구인 [[PixelHacker - Image Inpainting with Structural and Semantic Consistency|PixelHacker]]를 발표한 바 있으며, Moebius는 그 직계 후속작입니다. 즉, 교사 모델을 직접 개발한 팀이 학생 모델까지 만든 셈입니다. 이 점이 이 연구를 특별하게 합니다. 자신이 설계한 교사의 내부 구조를 속속들이 알고 있으므로, 어디를 얼마나 압축해도 되는지 판단하기 유리한 위치에 있었습니다.
+[[쉬쯔양|Ziyang Xu]]는 2025년 4월 선행 연구인 [[PixelHacker - Image Inpainting with Structural and Semantic Consistency|PixelHacker]]를 발표한 바 있으며, Moebius는 그 직계 후속작입니다. 즉, 교사 모델을 직접 개발한 팀이 학생 모델까지 만든 셈입니다. 이 점이 이 연구를 특별하게 합니다. 자신이 설계한 교사의 내부 구조를 속속들이 알고 있으므로, 어디를 얼마나 압축해도 되는지 판단하기 유리한 위치에 있었습니다.
 
 ## 배경
 

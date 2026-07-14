@@ -14,7 +14,7 @@ buzz: 72
 
 ## 저자
 
-[[Heng Ji]]와 [[딜렉 하카니튀르|Dilek Hakkani-Tür]]가 지도하는 UIUC BLENDER Lab·ConvAI Lab 합동 연구입니다. 1저자 Jiayu Liu는 HKUST 학부생으로 UIUC 교환 연구 인턴 중 이 논문을 냈습니다. Heng Ji는 정보 추출과 지식 증강 LLM으로 잘 알려진 연구자이고, Dilek Hakkani-Tür는 Amazon Alexa·Google·Microsoft Research를 거쳐 2024년 학계로 복귀한 대화형 AI 전문가입니다. 두 교수가 같은 랩 공간을 공유하며 에이전트 평가 연구를 진행하고 있다는 점이 이 벤치마크의 배경입니다.
+[[지헝|Heng Ji]]와 [[딜렉 하카니튀르|Dilek Hakkani-Tür]]가 지도하는 UIUC BLENDER Lab·ConvAI Lab 합동 연구입니다. 1저자 Jiayu Liu는 HKUST 학부생으로 UIUC 교환 연구 인턴 중 이 논문을 냈습니다. Heng Ji는 정보 추출과 지식 증강 LLM으로 잘 알려진 연구자이고, Dilek Hakkani-Tür는 Amazon Alexa·Google·Microsoft Research를 거쳐 2024년 학계로 복귀한 대화형 AI 전문가입니다. 두 교수가 같은 랩 공간을 공유하며 에이전트 평가 연구를 진행하고 있다는 점이 이 벤치마크의 배경입니다.
 
 ## 배경
 

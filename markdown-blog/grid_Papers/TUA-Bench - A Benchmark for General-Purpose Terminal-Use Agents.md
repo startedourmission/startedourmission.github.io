@@ -6,16 +6,16 @@ tags:
   - 벤치마크
 description: "Meta AI, Duke, Stanford 공동 연구팀이 터미널 환경에서 범용 에이전트를 평가하는 120개 태스크 벤치마크를 공개했습니다. 가장 강한 구성(Claude Code + Opus 4.8)도 65.8% 성공률에 그치며, Office와 Multimedia에서 공통적으로 막히는 패턴이 드러납니다."
 image: "![[tuabench-overview.png]]"
-buzz: 42
+buzz: 66
 ---
 
 > S. Chen, L. Wang, X. Yang, Z. Liu, et al., "TUA-Bench: A Benchmark for General-Purpose Terminal-Use Agents," arXiv:2606.28480, 2026.
 
 ## 저자
 
-[[Shoufa Chen]]과 [[Luyuan Wang]]이 공동 제1 저자로, 둘 다 Meta AI 소속입니다. Xuan Yang(Duke University)과 Yuanfeng Ji(Stanford University)가 외부에서 참여했고, 나머지 저자([[Belinda Zeng]] 포함)는 Meta AI 연구팀입니다. 총 10명으로 이뤄진 팀입니다.
+[[천서우파|Shoufa Chen]]과 [[왕루위안|Luyuan Wang]]이 공동 제1 저자로, 둘 다 Meta AI 소속입니다. Xuan Yang(Duke University)과 Yuanfeng Ji(Stanford University)가 외부에서 참여했고, 나머지 저자([[벨린다 쩡|Belinda Zeng]] 포함)는 Meta AI 연구팀입니다. 총 10명으로 이뤄진 팀입니다.
 
-[[Shoufa Chen]]은 HKU 출신으로 컴퓨터비전 분야 연구를 이어온 Meta AI 연구원입니다. [[Belinda Zeng]]은 에이전트 평가 방법론 분야에서 Meta 내에서 시니어 역할을 맡고 있습니다.
+[[천서우파|Shoufa Chen]]은 HKU 출신으로 컴퓨터비전 분야 연구를 이어온 Meta AI 연구원입니다. [[벨린다 쩡|Belinda Zeng]]은 에이전트 평가 방법론 분야에서 Meta 내에서 시니어 역할을 맡고 있습니다.
 
 이 팀이 벤치마크를 만든 배경에는 Meta에서 에이전트 시스템을 실제로 평가하려 했을 때 기존 도구가 부족하다는 직접적인 경험이 있었을 것으로 보입니다. 과학·공학 분야 태스크를 설계하는 데 생물학, 의학물리학, 건축공학, 기계공학 분야의 박사급 도메인 전문가를 외부에서 끌어들인 것이 이를 방증합니다.
 

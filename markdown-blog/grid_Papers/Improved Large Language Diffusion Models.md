@@ -7,14 +7,14 @@ tags:
   - NLP
 description: "자기회귀 없이 완전 양방향 어텐션으로 LLM을 처음부터 학습하는 마스크드 확산 언어 모델 iLLaDA — 12T 토큰 사전학습과 25B 지시문 미세조정으로 Base 성능에서 Qwen2.5 7B를 처음으로 따라잡습니다."
 image: "![[illada-sft-epoch-ablation.png]]"
-buzz: 41
+buzz: 64
 ---
 
 > S. Nie, Q. Min, S. Xu, Z. Huang, Y. Song, Y. Shan, Y. Lin, W. X. Zhao, C. Li, and J.-R. Wen, "Improved Large Language Diffusion Models," arXiv:2606.25331, 2026.
 
 ## 저자
 
-iLLaDA는 [[Chongxuan Li]]와 Ji-Rong Wen이 교신저자로 이끄는 중국인민대학교 고링 인공지능학원의 팀이 ByteDance Seed와 함께 만들었습니다. 제1저자 Shen Nie는 ByteDance Seed 인턴십 중 이 작업을 완성했고, [[Wayne Xin Zhao]] 교수도 저자 목록에 이름을 올렸습니다. 이 팀은 전작 LLaDA(Large Language Diffusion with mAsking, 2026 NeurIPS)를 발표했고, 이번 iLLaDA는 그 개선판입니다. "비-자기회귀 언어 모델이 GPT 계열을 따라잡을 수 있는가"라는 긴 호흡의 질문에 답하는 시리즈입니다.
+iLLaDA는 [[리충쉬안|Chongxuan Li]]와 Ji-Rong Wen이 교신저자로 이끄는 중국인민대학교 고링 인공지능학원의 팀이 ByteDance Seed와 함께 만들었습니다. 제1저자 Shen Nie는 ByteDance Seed 인턴십 중 이 작업을 완성했고, [[자오신|Wayne Xin Zhao]] 교수도 저자 목록에 이름을 올렸습니다. 이 팀은 전작 LLaDA(Large Language Diffusion with mAsking, 2026 NeurIPS)를 발표했고, 이번 iLLaDA는 그 개선판입니다. "비-자기회귀 언어 모델이 GPT 계열을 따라잡을 수 있는가"라는 긴 호흡의 질문에 답하는 시리즈입니다.
 
 ## 배경
 

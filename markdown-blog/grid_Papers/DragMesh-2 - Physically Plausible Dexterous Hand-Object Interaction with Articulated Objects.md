@@ -7,14 +7,14 @@ tags:
 description: 관절형 오브젝트(서랍, 문)의 가동 부위를 손-핸들 접촉만으로 움직이는 접촉 주도 프레임워크 DragMesh-2. PICA는 물리 신호를 PPO에 주입해 감쇠 4배 조건에서 State-only PPO 대비 두 배 이상의 성공률을 달성합니다.
 image: "![[dragmesh-2-architecture.png]]"
 citations: 0
-buzz: 44
+buzz: 42
 ---
 
 > T. Zhang, Y. Duan, Y. Li, Z. Zhang, and H. Tang, "DragMesh-2: Physically Plausible Dexterous Hand-Object Interaction with Articulated Objects," arXiv:2606.15133, 2026.
 
 ## 저자
 
-Tianshan Zhang, Yijia Duan, Yanjun Li 세 명이 공동 1저자로 참여했습니다. Zeyu Zhang이 프로젝트 리더를 맡았으며, 교신저자는 [[Hao Tang]]입니다. 전원 베이징대학교(PKU) 컴퓨터과학대학 소속입니다. Tang은 2024년 7월 PKU에 조교수로 부임해 Embodied and Generative Intelligence Lab을 이끌고 있습니다. 이번 논문은 같은 팀이 2025년 발표한 DragMesh 1의 문제의식을 물리 기반 로보틱스로 확장한 결과물입니다. DragMesh 1은 사용자의 드래그 인터랙션으로 관절 운동을 생성하는 객체 중심(object-centric) 방식이었고, 여기서 한 발 더 나아가 실제 손이 물체를 접촉해 움직이는 구조로 바꾸었습니다.
+Tianshan Zhang, Yijia Duan, Yanjun Li 세 명이 공동 1저자로 참여했습니다. Zeyu Zhang이 프로젝트 리더를 맡았으며, 교신저자는 [[탕하오|Hao Tang]]입니다. 전원 베이징대학교(PKU) 컴퓨터과학대학 소속입니다. Tang은 2024년 7월 PKU에 조교수로 부임해 Embodied and Generative Intelligence Lab을 이끌고 있습니다. 이번 논문은 같은 팀이 2025년 발표한 DragMesh 1의 문제의식을 물리 기반 로보틱스로 확장한 결과물입니다. DragMesh 1은 사용자의 드래그 인터랙션으로 관절 운동을 생성하는 객체 중심(object-centric) 방식이었고, 여기서 한 발 더 나아가 실제 손이 물체를 접촉해 움직이는 구조로 바꾸었습니다.
 
 ## 배경
 

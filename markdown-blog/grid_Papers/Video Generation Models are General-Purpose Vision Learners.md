@@ -14,9 +14,9 @@ buzz: 43
 
 ## 저자
 
-이 연구는 Google DeepMind의 인간 중심 비디오 인식 팀이 주도했습니다. 1저자 [[Letian Wang]]은 토론토대 박사과정생으로, Steven Waslander 교수 지도 아래 자율주행과 비전 로봇을 연구하다 DeepMind 인턴십에서 이 프로젝트를 이끌었습니다.
+이 연구는 Google DeepMind의 인간 중심 비디오 인식 팀이 주도했습니다. 1저자 [[왕러톈|Letian Wang]]은 토론토대 박사과정생으로, Steven Waslander 교수 지도 아래 자율주행과 비전 로봇을 연구하다 DeepMind 인턴십에서 이 프로젝트를 이끌었습니다.
 
-시니어 저자 측에는 ResNet과 MAE를 만든 [[Kaiming He]](MIT + DeepMind Distinguished Scientist), I3D와 Kinetics를 만든 [[Joao Carreira]], 그리고 교신저자인 [[Cristian Sminchisescu]](DeepMind + 룬드대)가 있습니다. Sminchisescu는 Carreira의 박사 지도교수이기도 해서, 사제지간이 함께 범용 비전 모델을 만든 셈입니다.
+시니어 저자 측에는 ResNet과 MAE를 만든 [[허카이밍|Kaiming He]](MIT + DeepMind Distinguished Scientist), I3D와 Kinetics를 만든 [[주앙 카헤이라|Joao Carreira]], 그리고 교신저자인 [[크리스티안 스민치세스쿠|Cristian Sminchisescu]](DeepMind + 룬드대)가 있습니다. Sminchisescu는 Carreira의 박사 지도교수이기도 해서, 사제지간이 함께 범용 비전 모델을 만든 셈입니다.
 
 팀의 출발점은 인간 특화 비디오 모델 THFM(2026)이었습니다. GenCeption은 그 후속으로, 인간이라는 특정 도메인을 넘어 비디오 생성 표현이 범용 비전 지식으로 기능할 수 있는지를 검증합니다.
 

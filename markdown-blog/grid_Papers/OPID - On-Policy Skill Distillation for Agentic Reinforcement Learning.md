@@ -7,14 +7,14 @@ tags:
   - LLM
 description: "청화대·절강대·홍콩중문대가 공동 제안한 에이전틱 RL 프레임워크. GRPO의 희박한 결과 보상을 보완하기 위해 완료된 온-폴리시 궤적에서 에피소드·스텝 두 계층의 스킬을 추출하고, 이를 token-level 자기 증류 신호로 변환합니다. 추론 시에는 외부 스킬 라이브러리가 필요 없습니다."
 image: "![[opid-overview.png]]"
-buzz: 42
+buzz: 41
 ---
 
 > S. Yang, J. Wu, Z. Lu, Y. Shen, F. Zhang, L. Feng, S. Zhang, H. Luo, Z. Lian, Z. Wen, and J. Tao, "OPID: On-Policy Skill Distillation for Agentic Reinforcement Learning," arXiv:2606.26790, 2026.
 
 ## 저자
 
-청화대학교(Tsinghua University) 자동화학과에서 [[Jinyang Wu]]가 프로젝트를 이끌었고, 시니어 저자는 [[Jianhua Tao]]가 맡았습니다. 두 1저자인 Shuo Yang과 [[Jinyang Wu]]는 SPARK, Maestro, SDAR 등 에이전틱 RL 훈련 관련 논문들을 연이어 발표해온 팀의 핵심입니다. Zhengxi Lu는 절강대(Zhejiang University) 소속으로, 이전에 SDAR 논문을 공동 집필했습니다. 여러 기관이 모인 협력 연구이지만, OPID의 핵심 설계는 청화대 그룹에서 나왔습니다.
+청화대학교(Tsinghua University) 자동화학과에서 [[우진양|Jinyang Wu]]가 프로젝트를 이끌었고, 시니어 저자는 [[타오젠화|Jianhua Tao]]가 맡았습니다. 두 1저자인 Shuo Yang과 [[우진양|Jinyang Wu]]는 SPARK, Maestro, SDAR 등 에이전틱 RL 훈련 관련 논문들을 연이어 발표해온 팀의 핵심입니다. Zhengxi Lu는 절강대(Zhejiang University) 소속으로, 이전에 SDAR 논문을 공동 집필했습니다. 여러 기관이 모인 협력 연구이지만, OPID의 핵심 설계는 청화대 그룹에서 나왔습니다.
 
 ## 배경
 

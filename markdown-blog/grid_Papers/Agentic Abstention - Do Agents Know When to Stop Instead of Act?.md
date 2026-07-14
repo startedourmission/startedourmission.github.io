@@ -7,14 +7,14 @@ tags:
   - LLM
 description: LLM 에이전트가 '지금 멈춰야 할 때'를 아는지 측정하는 첫 체계적 벤치마크. 웹·터미널·QA 3개 환경 28K 샘플로 평가한 결과, 대부분의 모델은 너무 늦게, 혹은 전혀 멈추지 않는다는 사실이 드러났습니다.
 image: "![[agentic-abstention-overview.png]]"
-buzz: 54
+buzz: 52
 ---
 
 > H. Luo, B. Wen, and L. L. Wang, "Agentic Abstention: Do Agents Know When to Stop Instead of Act?," arXiv:2606.28733, 2026.
 
 ## 저자
 
-[[Han Luo]]와 [[Bingbing Wen]]이 공동 1저자입니다. Han Luo는 University of Leeds·Southwest Jiaotong University 소속으로 LLM 심리사회적 안전 평가를 연구하다가 UW 방문 연구를 통해 이 프로젝트에 합류했습니다. Bingbing Wen은 UW iSchool 박사과정생으로, LLM abstention 서베이(TACL 2025)와 과학 QA abstention 분석(EMNLP 2024) 등 abstention 주제를 집중 연구해 왔습니다. 시니어 저자 [[Lucy Lu Wang]]은 UW iSchool 조교수 겸 Allen Institute for AI Research Scientist로, LARCH 랩을 이끌며 과학·의료 텍스트 접근성을 위한 NLP를 연구합니다.
+[[뤄한|Han Luo]]와 [[원빙빙|Bingbing Wen]]이 공동 1저자입니다. Han Luo는 University of Leeds·Southwest Jiaotong University 소속으로 LLM 심리사회적 안전 평가를 연구하다가 UW 방문 연구를 통해 이 프로젝트에 합류했습니다. Bingbing Wen은 UW iSchool 박사과정생으로, LLM abstention 서베이(TACL 2025)와 과학 QA abstention 분석(EMNLP 2024) 등 abstention 주제를 집중 연구해 왔습니다. 시니어 저자 [[루시 루 왕|Lucy Lu Wang]]은 UW iSchool 조교수 겸 Allen Institute for AI Research Scientist로, LARCH 랩을 이끌며 과학·의료 텍스트 접근성을 위한 NLP를 연구합니다.
 
 세 저자 모두 LLM이 '말할 수 없을 때 말하지 않는 능력'을 다져온 공동체에서 나왔습니다. 이번 논문은 그 주제를 단순 답변 거부에서 에이전트 행동 제어로 확장한 자연스러운 다음 단계입니다.
 

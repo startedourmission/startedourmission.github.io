@@ -6,16 +6,16 @@ tags:
   - 확산모델
 description: "청화대와 HKUST가 공동으로 제안한 스트리밍 비디오 편집 프레임워크. 3단계 확산 모델 증류와 AR-oriented Mask Cache를 조합해 InsV2V 대비 97.38배 지연을 단축하고, 12.66 FPS 실시간 편집을 달성합니다."
 image: "![[liveedit-overview.png]]"
-buzz: 48
+buzz: 46
 ---
 
 > X. Wang, C. Zhao, F. Zhan, and Y. Ma, "LiveEdit: Towards Real-Time Diffusion-Based Streaming Video Editing," arXiv:2606.26740, 2026.
 
 ## 저자
 
-[[Xinyu Wang]]과 [[Chongbo Zhao]]는 청화대학교(THU) 소속으로, [[Fangneng Zhan]]과 교신 저자 [[Yue Ma]]는 HKUST 소속입니다. 논문은 ECCV 2026에 채택됐습니다.
+[[왕신위|Xinyu Wang]]과 [[자오충보|Chongbo Zhao]]는 청화대학교(THU) 소속으로, [[잔팡넝|Fangneng Zhan]]과 교신 저자 [[마웨|Yue Ma]]는 HKUST 소속입니다. 논문은 ECCV 2026에 채택됐습니다.
 
-[[Yue Ma]]는 Qifeng Chen 교수 연구실의 HKUST 박사 과정생으로, Follow-Your-Pose(NeurIPS 2023) 등 "Follow Your" 시리즈를 통해 비디오 생성·제어 분야에서 꾸준히 성과를 내온 연구자입니다. [[Fangneng Zhan]]은 HKUST Division of Arts and Machine Creativity 조교수이며, NTU에서 박사를 마친 뒤 Max Planck Institute for Informatics에서 포스닥을 수행했습니다.
+[[마웨|Yue Ma]]는 Qifeng Chen 교수 연구실의 HKUST 박사 과정생으로, Follow-Your-Pose(NeurIPS 2023) 등 "Follow Your" 시리즈를 통해 비디오 생성·제어 분야에서 꾸준히 성과를 내온 연구자입니다. [[잔팡넝|Fangneng Zhan]]은 HKUST Division of Arts and Machine Creativity 조교수이며, NTU에서 박사를 마친 뒤 Max Planck Institute for Informatics에서 포스닥을 수행했습니다.
 
 두 팀이 이 논문에서 합류한 맥락은 분명합니다. 비디오 생성 모델의 스트리밍 추론 가속 쪽에서 축적된 기술(HKUST)과, 편집 모델 증류를 실제로 구현하는 공학(THU)이 만나 실시간 편집이라는 목표를 향한 것입니다.
 

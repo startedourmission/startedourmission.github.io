@@ -6,14 +6,14 @@ tags:
   - 확산모델
 description: 확산 LLM(dLLM)에 온폴리시 자기증류를 처음 적용한 d-OPSD. 모델이 스스로 완성한 미래 답변을 suffix로 조건화해 RLVR 대비 약 10% 최적화 스텝으로 동급 성능을 달성합니다.
 image: "![[learning-from-self-future-overview.png]]"
-buzz: 44
+buzz: 42
 ---
 
 > Y. Luo, Z. Chen, H. Wang, X. Hu, Y. Zhang, Z. Sha, and S. Liu, "Learning from the Self-future: On-policy Self-distillation for dLLMs," arXiv:2606.18195, 2026.
 
 ## 저자
 
-1저자는 칭화대학교의 Yifu Luo와 뮌헨 공과대학교(TU Munich)의 Zeyu Chen이 공동 담당했습니다. 지도교수 겸 교신저자는 ELLIS 튀빙겐과 막스 플랑크 지능 시스템 연구소에 재직 중인 [[Shiwei Liu]]입니다. 그는 희소성과 저랭크 근사를 통한 대형 모델 효율화 연구를 이끌어 왔으며, 이번 논문에서는 그 관심사를 dLLM 포스트 트레이닝으로 확장했습니다. 난양공대(NTU), 브리티시 컬럼비아 대학(UBC), UT 오스틴의 연구자들이 함께 참여한 다국적 협업 결과물입니다.
+1저자는 칭화대학교의 Yifu Luo와 뮌헨 공과대학교(TU Munich)의 Zeyu Chen이 공동 담당했습니다. 지도교수 겸 교신저자는 ELLIS 튀빙겐과 막스 플랑크 지능 시스템 연구소에 재직 중인 [[류스웨이|Shiwei Liu]]입니다. 그는 희소성과 저랭크 근사를 통한 대형 모델 효율화 연구를 이끌어 왔으며, 이번 논문에서는 그 관심사를 dLLM 포스트 트레이닝으로 확장했습니다. 난양공대(NTU), 브리티시 컬럼비아 대학(UBC), UT 오스틴의 연구자들이 함께 참여한 다국적 협업 결과물입니다.
 
 ## 배경
 

@@ -14,9 +14,9 @@ buzz: 43
 
 ## 저자
 
-상하이인공지능실험실(Shanghai AI Lab)이 이 연구의 주축입니다. 교신저자는 두 명입니다. 상하이AI랩 대형 모델 센터장 [[Kai Chen]]은 InternLM·InternVL·OpenMMLab 시리즈를 이끌어온 인물이고, 저장대 UIUC 연구소의 [[Gaoang Wang]]은 비디오 이해와 체화 지능을 연구합니다.
+상하이인공지능실험실(Shanghai AI Lab)이 이 연구의 주축입니다. 교신저자는 두 명입니다. 상하이AI랩 대형 모델 센터장 [[천카이|Kai Chen]]은 InternLM·InternVL·OpenMMLab 시리즈를 이끌어온 인물이고, 저장대 UIUC 연구소의 [[왕가오앙|Gaoang Wang]]은 비디오 이해와 체화 지능을 연구합니다.
 
-공동 제1저자 셋 중 [[Wenwei Zhang]]은 MMDetection을 장기간 리드하다가 Intern-S1/S2 포스트트레이닝으로 옮긴 연구자입니다. Yiming Zhang과 Zhonghan Zhao는 각각 USTC와 저장대 소속으로 이번 연구를 함께 주도했습니다. 전체 저자 16명 중 다수가 상하이AI랩 소속이며, InternLM 팀의 대규모 실험 인프라가 이 연구를 가능하게 했습니다.
+공동 제1저자 셋 중 [[장원웨이|Wenwei Zhang]]은 MMDetection을 장기간 리드하다가 Intern-S1/S2 포스트트레이닝으로 옮긴 연구자입니다. Yiming Zhang과 Zhonghan Zhao는 각각 USTC와 저장대 소속으로 이번 연구를 함께 주도했습니다. 전체 저자 16명 중 다수가 상하이AI랩 소속이며, InternLM 팀의 대규모 실험 인프라가 이 연구를 가능하게 했습니다.
 
 ## 배경
 

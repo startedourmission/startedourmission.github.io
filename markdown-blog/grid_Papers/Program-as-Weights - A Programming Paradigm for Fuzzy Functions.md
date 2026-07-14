@@ -6,14 +6,14 @@ tags:
   - 오픈소스
 description: "자연어로 명세한 함수를 경량 LoRA 어댑터로 컴파일해 로컬 실행하는 퍼지 함수 프로그래밍 패러다임. 0.6B 인터프리터가 Qwen3-32B를 메모리 50분의 1로 뛰어넘습니다."
 image: "![[program-as-weights-overview.png]]"
-buzz: 53
+buzz: 51
 ---
 
 > W. Zhang, L. Hotsko, W. Kim, P. Nie, S. Shieber, and Y. Deng, "Program-as-Weights: A Programming Paradigm for Fuzzy Functions," arXiv:2607.02512, 2026.
 
 ## 저자
 
-[[Yuntian Deng]]이 이끄는 University of Waterloo Reading to Learn Lab에서 나온 논문입니다. Wentao Zhang, Liliana Hotsko, Pengyu Nie가 워털루 소속이고, Woojeong Kim이 Cornell University에서, [[Stuart Shieber]]가 Harvard University에서 참여했습니다. Wentao Zhang, Liliana Hotsko, Woojeong Kim 세 명은 공동 1저자입니다.
+[[덩윈톈|Yuntian Deng]]이 이끄는 University of Waterloo Reading to Learn Lab에서 나온 논문입니다. Wentao Zhang, Liliana Hotsko, Pengyu Nie가 워털루 소속이고, Woojeong Kim이 Cornell University에서, [[스튜어트 시버|Stuart Shieber]]가 Harvard University에서 참여했습니다. Wentao Zhang, Liliana Hotsko, Woojeong Kim 세 명은 공동 1저자입니다.
 
 Yuntian Deng은 Im2LaTeX(이미지에서 LaTeX 수식을 생성하는 연구)와 WildChat(대규모 대화 데이터셋) 등을 개발한 NLP 연구자입니다. Im2LaTeX에서 이미지를 구조화된 코드로 변환하던 관심이, 이번에는 자연어 명세를 실행 가능한 신경망 어댑터로 변환하는 방향으로 이어졌다고 볼 수 있습니다. Stuart Shieber는 계산언어학 분야의 원로 교수로, 하버드 SEAS에 재직하며 NLP·AI 철학·계산생물학에 걸쳐 연구해왔습니다.
 

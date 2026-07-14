@@ -14,7 +14,7 @@ buzz: 43
 
 ## 저자
 
-이 논문은 Shiding Zhu(Zhejiang University), Yudi Qi(Tsinghua University Shenzhen), Yajie Wang(Independent)이 공동 1저자이며, [[Kai Zhang]](Tsinghua University Shenzhen)이 교신저자로 이끈 연구입니다. Zhejiang University, Tsinghua Shenzhen, Northwestern Polytechnical University, USTC, Shanghai Jiaotong University 등 5개 기관이 합류한 것은 경험 학습의 신뢰성 문제가 단일 연구실의 관심사를 넘어섰음을 보여줍니다. 멀티 에이전트 시스템과 경험 기반 자기진화를 함께 다루는 연구 흐름이 배경에 있습니다.
+이 논문은 Shiding Zhu(Zhejiang University), Yudi Qi(Tsinghua University Shenzhen), Yajie Wang(Independent)이 공동 1저자이며, [[장카이|Kai Zhang]](Tsinghua University Shenzhen)이 교신저자로 이끈 연구입니다. Zhejiang University, Tsinghua Shenzhen, Northwestern Polytechnical University, USTC, Shanghai Jiaotong University 등 5개 기관이 합류한 것은 경험 학습의 신뢰성 문제가 단일 연구실의 관심사를 넘어섰음을 보여줍니다. 멀티 에이전트 시스템과 경험 기반 자기진화를 함께 다루는 연구 흐름이 배경에 있습니다.
 
 ## 배경
 

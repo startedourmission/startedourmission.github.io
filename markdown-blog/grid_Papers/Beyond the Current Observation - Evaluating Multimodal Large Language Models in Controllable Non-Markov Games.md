@@ -6,16 +6,16 @@ tags:
   - AI평가
 description: "현재 화면만 봐서는 다음 수를 알 수 없는 상황에서 MLLM이 얼마나 잘 기억하고 행동하는지 측정합니다. Matching Pairs 카드 게임과 3D 미로 탐색으로 구성된 RNG-Bench의 결과는 솔직합니다."
 image: "![[rng-bench-overview.png]]"
-buzz: 39
+buzz: 38
 ---
 
 > S. Ding, X. Wei, X. Fang, H. Duan, D. Lin, J. Wang, and Y. Zang, "Beyond the Current Observation: Evaluating Multimodal Large Language Models in Controllable Non-Markov Games," arXiv:2606.19338, 2026.
 
 ## 저자
 
-Shengyuan Ding(복단대·상하이 혁신연구소), Xilin Wei(복단대), Xinyu Fang(절강대)이 공동 제1저자입니다. [[Haodong Duan]](홍콩중문대), [[린 다후아|Dahua Lin]](홍콩중문대·SAIL), Jiaqi Wang(상하이 혁신연구소), Yuhang Zang(SAIL)이 교신저자를 맡았습니다.
+Shengyuan Ding(복단대·상하이 혁신연구소), Xilin Wei(복단대), Xinyu Fang(절강대)이 공동 제1저자입니다. [[돤하오둥|Haodong Duan]](홍콩중문대), [[린 다후아|Dahua Lin]](홍콩중문대·SAIL), Jiaqi Wang(상하이 혁신연구소), Yuhang Zang(SAIL)이 교신저자를 맡았습니다.
 
-[[Haodong Duan]]은 MMBench와 VLMEvalKit 등 MLLM 평가 인프라를 개발해온 연구자이며, [[린 다후아|Dahua Lin]]은 그의 박사 지도 교수이자 SenseTime 공동 창업자입니다. RNG-Bench의 평가 하니스 역시 VLMEvalKit 위에 구축됐습니다.
+[[돤하오둥|Haodong Duan]]은 MMBench와 VLMEvalKit 등 MLLM 평가 인프라를 개발해온 연구자이며, [[린 다후아|Dahua Lin]]은 그의 박사 지도 교수이자 SenseTime 공동 창업자입니다. RNG-Bench의 평가 하니스 역시 VLMEvalKit 위에 구축됐습니다.
 
 ## 배경
 

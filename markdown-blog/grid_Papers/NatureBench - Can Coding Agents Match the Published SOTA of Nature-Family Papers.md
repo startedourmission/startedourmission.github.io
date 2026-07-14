@@ -7,16 +7,16 @@ tags:
   - LLM
 description: Nature 계열 학술지 논문 90편에서 추출한 과학 태스크 벤치마크. 최강 모델도 17.8%만 SOTA를 넘었고, 성공의 절반 가까이는 과학적 발견이 아닌 지도학습 문제 변환에 기댄 것으로 드러났습니다.
 image: "![[naturebench-overview.png]]"
-buzz: 44
+buzz: 42
 ---
 
 > Y. Wang, L. Cheng, Y. Zuo, S. Zeng, B. He, C. Jiang, J. Yang, Y. Wang, K. Zhao, W. Huang, K. Tian, Z. Yuan, J. Zhong, W. Wang, N. Ding, B. Zhou, and K. Zhang, "NatureBench: Can Coding Agents Match the Published SOTA of Nature-Family Papers?," arXiv:2606.24530, 2026.
 
 ## 저자
 
-[[Bowen Zhou]]([[Bowen Zhou|周伯文]])이 창업한 Frontis.AI와 그의 본직인 칭화대학교 전자공학과 팀이 주축입니다. 교신저자는 Frontis.AI의 [[Kaiyan Zhang]]과 칭화대 [[Ning Ding]], 그리고 [[Bowen Zhou]] 교수 본인. Horizon Research라는 이름으로도 함께 표기됩니다.
+[[저우보원|Bowen Zhou]]([[저우보원|周伯文]])이 창업한 Frontis.AI와 그의 본직인 칭화대학교 전자공학과 팀이 주축입니다. 교신저자는 Frontis.AI의 [[장카이옌|Kaiyan Zhang]]과 칭화대 [[딩닝|Ning Ding]], 그리고 [[저우보원|Bowen Zhou]] 교수 본인. Horizon Research라는 이름으로도 함께 표기됩니다.
 
-[[Bowen Zhou]]는 IBM Watson 수석과학자 출신으로, JD.com AI 연구소장을 거쳐 2022년 칭화대에 합류하면서 동시에 Frontis.AI를 창업한 인물입니다. [[Ning Ding]]은 THUNLP(칭화 자연어처리연구소)에서 LLM 정렬·지시 튜닝 연구를 이끌어 온 조교수입니다. 같은 팀이 직전에 발표한 [[EnterpriseClawBench - Benchmarking Agents from Real Workplace Sessions|EnterpriseClawBench]]에서도 실제 기업 세션을 기반으로 에이전트 평가 파이프라인을 구축했는데, NatureBench는 그 방향을 학술 과학 연구로 확장한 작업입니다.
+[[저우보원|Bowen Zhou]]는 IBM Watson 수석과학자 출신으로, JD.com AI 연구소장을 거쳐 2022년 칭화대에 합류하면서 동시에 Frontis.AI를 창업한 인물입니다. [[딩닝|Ning Ding]]은 THUNLP(칭화 자연어처리연구소)에서 LLM 정렬·지시 튜닝 연구를 이끌어 온 조교수입니다. 같은 팀이 직전에 발표한 [[EnterpriseClawBench - Benchmarking Agents from Real Workplace Sessions|EnterpriseClawBench]]에서도 실제 기업 세션을 기반으로 에이전트 평가 파이프라인을 구축했는데, NatureBench는 그 방향을 학술 과학 연구로 확장한 작업입니다.
 
 ## 배경
 

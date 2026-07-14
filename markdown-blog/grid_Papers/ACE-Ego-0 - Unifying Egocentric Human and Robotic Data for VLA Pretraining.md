@@ -7,14 +7,14 @@ tags:
   - 머신러닝
 description: "로봇 조작 데이터가 비싸고 편향된 문제를 인간 1인칭 영상 1,478시간으로 보완한 VLA 사전학습 프레임워크. 공간·구조·시간 세 축의 표현 통합과 신뢰도 가중 보조 손실로 RoboCasa, RoboTwin 2.0 모두에서 최고 성능을 달성했습니다."
 image: "![[ace-ego-0-overview.png]]"
-buzz: 42
+buzz: 40
 ---
 
 > H. Li, G. Zhao, Y. Liu, H. Hou, G. Ye, T. Fang, C. Liu, S. Huang, J. Liu, X. Wang, and H. Li, "ACE-Ego-0: Unifying Egocentric Human and Robotic Data for VLA Pretraining," arXiv:2606.17200, 2026.
 
 ## 저자
 
-[[Hongsheng Li]]가 교신저자를 맡은 CUHK MMLab과 ACE Robotics의 합동 연구입니다. 1저자 Hao Li, Ganlong Zhao, Yufei Liu, Haotian Hou 네 명이 동등 기여(equal contribution)로 이름을 올렸습니다. [[Siyuan Huang]]은 BIGAI 소속으로 프로젝트 리더를 담당했습니다. ACE Robotics라는 산업 조직이 CUHK 학계와 결합한 구조로, 실제 로봇 플랫폼(Galbot, ARX 바이매뉴얼)에 직접 배포까지 한 실험이 포함돼 있다는 점에서 배경이 보입니다.
+[[리훙성|Hongsheng Li]]가 교신저자를 맡은 CUHK MMLab과 ACE Robotics의 합동 연구입니다. 1저자 Hao Li, Ganlong Zhao, Yufei Liu, Haotian Hou 네 명이 동등 기여(equal contribution)로 이름을 올렸습니다. [[황쓰위안|Siyuan Huang]]은 BIGAI 소속으로 프로젝트 리더를 담당했습니다. ACE Robotics라는 산업 조직이 CUHK 학계와 결합한 구조로, 실제 로봇 플랫폼(Galbot, ARX 바이매뉴얼)에 직접 배포까지 한 실험이 포함돼 있다는 점에서 배경이 보입니다.
 
 ## 배경
 

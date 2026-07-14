@@ -8,14 +8,14 @@ tags:
 description: "Sina Weibo의 9인 연구팀이 3B 파라미터만으로 DeepSeek V3.2(671B), Kimi K2.5(1T) 수준의 수학 추론 성능을 달성한 방법. Spectrum-to-Signal Principle 기반 5단계 포스트트레이닝 레시피와, 검증 가능한 추론이 지식 저장보다 파라미터 효율이 높다는 Parametric Compression-Coverage Hypothesis를 제안합니다."
 image: "![[vibethinker-3b-overview.png]]"
 citations: 7
-buzz: 168
+buzz: 156
 ---
 
 > S. Xu, S. Liu, W. Wang, J. Min, Y. Dai, Z. Yin, Y. Chen, X. Zhou, and J. Zhang, "VibeThinker-3B: Exploring the Frontier of Verifiable Reasoning in Small Language Models," , 2026.
 
 ## 저자
        
-[[Sen Xu]]와 [[Junlin Zhang]]이 이끄는 Sina Weibo Inc. AI 팀 9명이 작성한 테크니컬 리포트입니다. Sina Weibo는 중국 최대 소셜 미디어 플랫폼으로, 순수 AI 연구소가 아닌 인터넷 기업에서 이 수준의 추론 연구를 내놓았다는 점이 눈에 띕니다.
+[[쉬썬|Sen Xu]]와 [[장쥔린|Junlin Zhang]]이 이끄는 Sina Weibo Inc. AI 팀 9명이 작성한 테크니컬 리포트입니다. Sina Weibo는 중국 최대 소셜 미디어 플랫폼으로, 순수 AI 연구소가 아닌 인터넷 기업에서 이 수준의 추론 연구를 내놓았다는 점이 눈에 띕니다.
 
 이 팀은 2025년 11월 [[VibeThinker-1.5B]] (arXiv:2511.06221)를 통해 처음으로 소형 모델 추론 가능성을 공개했습니다. 당시 1.5B 모델이 DeepSeek R1(400배 큰 모델)을 세 개 수학 벤치마크에서 초과하는 결과를 냈고, 훈련 비용이 7,800달러에 불과해 주목을 받았습니다. VibeThinker-3B는 그 직접 후속작으로, "1.5B가 추론을 할 수 있다는 걸 보였다면, 3B는 실제 1군 수준에 진입할 수 있는지를 묻는다"는 설계 의도로 출발합니다.
 

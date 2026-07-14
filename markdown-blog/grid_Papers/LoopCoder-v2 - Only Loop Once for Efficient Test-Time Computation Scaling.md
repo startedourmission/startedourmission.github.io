@@ -16,7 +16,7 @@ buzz: 54
 
 ## 저자
 
-1저자 Jian Yang은 북항공항천대학교(Beihang University) 소속으로, [[Wayne Xin Zhao]] 등 여러 기관의 연구자들과 공동 연구했습니다. 주력 실험 팀은 IQuest Research이며, Ming Zhou(Langboat)와 [[Wayne Xin Zhao]](중국인민대학교 고링 인공지능학원 교수)가 시니어 저자로 참여했습니다. [[Wayne Xin Zhao]]는 LLM 대형 서베이 논문으로 잘 알려진 NLP 연구자입니다.
+1저자 Jian Yang은 북항공항천대학교(Beihang University) 소속으로, [[자오신|Wayne Xin Zhao]] 등 여러 기관의 연구자들과 공동 연구했습니다. 주력 실험 팀은 IQuest Research이며, Ming Zhou(Langboat)와 [[자오신|Wayne Xin Zhao]](중국인민대학교 고링 인공지능학원 교수)가 시니어 저자로 참여했습니다. [[자오신|Wayne Xin Zhao]]는 LLM 대형 서베이 논문으로 잘 알려진 NLP 연구자입니다.
 
 ## 배경
 

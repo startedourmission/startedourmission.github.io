@@ -15,7 +15,7 @@ buzz: 0
 
 ## 저자
 
-캐나다 University of Manitoba에서 나온 연구입니다. 1저자 [[Baha Rababah]]는 Manitoba 컴퓨터공학과 Red River College Polytechnic에 걸쳐 있고, 시니어 저자 [[Carson K. Leung]]은 데이터 마이닝과 빅데이터 분석에서 450편이 넘는 논문을 낸 정교수입니다. 공저자 [[Cuneyt Gurcan Akcora]]는 University of Central Florida AI Institute 부교수로 그래프 러닝과 복잡 네트워크 데이터과학을 다룹니다. 모델의 표현 능력보다 가중치 분포의 통계적 구조를 파고드는 이 논문의 접근은, 데이터 분석과 네트워크 통계를 오래 다룬 이 조합의 색이 묻어나는 대목입니다.
+캐나다 University of Manitoba에서 나온 연구입니다. 1저자 [[바하 라바바|Baha Rababah]]는 Manitoba 컴퓨터공학과 Red River College Polytechnic에 걸쳐 있고, 시니어 저자 [[카슨 렁|Carson K. Leung]]은 데이터 마이닝과 빅데이터 분석에서 450편이 넘는 논문을 낸 정교수입니다. 공저자 [[지네이트 귀르잔 아크초라|Cuneyt Gurcan Akcora]]는 University of Central Florida AI Institute 부교수로 그래프 러닝과 복잡 네트워크 데이터과학을 다룹니다. 모델의 표현 능력보다 가중치 분포의 통계적 구조를 파고드는 이 논문의 접근은, 데이터 분석과 네트워크 통계를 오래 다룬 이 조합의 색이 묻어나는 대목입니다.
 
 ## 배경
 

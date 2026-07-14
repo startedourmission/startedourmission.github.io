@@ -7,16 +7,16 @@ tags:
   - 벤치마크
 description: "SJTU·Tsinghua·MemTensor 팀이 LLM 에이전트 메모리 시스템 12종을 데이터 관리 관점에서 체계적으로 비교했습니다. 단일 만능 구조는 없으며, 효과는 워크로드에 맞는 추상화 수준에 달려 있음을 9가지 발견으로 정리합니다."
 image: "![[agent-native-memory-overview.png]]"
-buzz: 78
+buzz: 76
 ---
 
 > W. Zhou, X. Zhou, S. Han, H. Xu, G. Li, Z. Li, F. Xiong, and F. Wu, "Are We Ready For An Agent-Native Memory System?," arXiv:2606.24775, 2026.
 
 ## 저자
 
-이 논문은 상하이 교통대학교(SJTU) 컴퓨터과학부의 [[Xuanhe Zhou]]가 교신저자로, [[Guoliang Li]] Tsinghua 교수 팀 및 에이전트 메모리 전문 스타트업 MemTensor(상하이)의 Zhiyu Li·Feiyu Xiong이 함께 썼습니다. Wei Zhou가 1저자로 전체 실험을 주도했습니다.
+이 논문은 상하이 교통대학교(SJTU) 컴퓨터과학부의 [[저우쉬안허|Xuanhe Zhou]]가 교신저자로, [[리궈량|Guoliang Li]] Tsinghua 교수 팀 및 에이전트 메모리 전문 스타트업 MemTensor(상하이)의 Zhiyu Li·Feiyu Xiong이 함께 썼습니다. Wei Zhou가 1저자로 전체 실험을 주도했습니다.
 
-[[Xuanhe Zhou]]는 SIGMOD 2025 Jim Gray Honorable Mention을 중국 본토 연구자 최초로 받은 AI4Data 연구자입니다. [[Guoliang Li]]는 ACM·IEEE Fellow로 데이터베이스와 LLM 결합 분야를 선도해 왔습니다. 두 팀이 데이터 관리 시스템의 관점에서 에이전트 메모리 문제를 다룬다는 것이 이 논문의 정체성입니다.
+[[저우쉬안허|Xuanhe Zhou]]는 SIGMOD 2025 Jim Gray Honorable Mention을 중국 본토 연구자 최초로 받은 AI4Data 연구자입니다. [[리궈량|Guoliang Li]]는 ACM·IEEE Fellow로 데이터베이스와 LLM 결합 분야를 선도해 왔습니다. 두 팀이 데이터 관리 시스템의 관점에서 에이전트 메모리 문제를 다룬다는 것이 이 논문의 정체성입니다.
 
 ## 배경
 

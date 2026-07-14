@@ -7,14 +7,14 @@ tags:
   - LLM
 description: "단일 Transformer로 오디오·영상·텍스트를 동시에 처리하는 실시간 풀-듀플렉스 대화 모델 — 캐스케이드 파이프라인 없이 모델 측 200ms 지연과 25fps 영상 출력을 달성합니다."
 image: "![[wan-streamer-v01-overview.png]]"
-buzz: 79
+buzz: 77
 ---
 
 > Wan Team, Alibaba Group, "Wan-Streamer v0.1: End-to-end Real-time Interactive Foundation Models," arXiv:2606.25041, 2026.
 
 ## 저자
 
-Wan-Streamer를 만든 팀은 Alibaba Group의 Wan Team입니다. 핵심 기여자로는 [[Lianghua Huang]], Zhi-Fan Wu, Wei Wang, Yupeng Shi, Mengyang Feng, Junjie He, Chen-Wei Xie, Yu Liu, [[Jingren Zhou]] 9명이 이름을 올렸습니다. 이 팀은 2025년 초 오픈 영상 생성 모델 Wan(arXiv:2503.20314)을 발표한 뒤, 그 단일-모델 철학을 실시간 인터랙션으로 확장하기 위해 Wan-Streamer를 이어 개발했습니다. 영상 생성, 음성 처리, 언어 모델 분야의 전문가가 한 팀에 모인 구성이 이 프로젝트를 가능하게 한 기반입니다.
+Wan-Streamer를 만든 팀은 Alibaba Group의 Wan Team입니다. 핵심 기여자로는 [[황량화|Lianghua Huang]], Zhi-Fan Wu, Wei Wang, Yupeng Shi, Mengyang Feng, Junjie He, Chen-Wei Xie, Yu Liu, [[저우징런|Jingren Zhou]] 9명이 이름을 올렸습니다. 이 팀은 2025년 초 오픈 영상 생성 모델 Wan(arXiv:2503.20314)을 발표한 뒤, 그 단일-모델 철학을 실시간 인터랙션으로 확장하기 위해 Wan-Streamer를 이어 개발했습니다. 영상 생성, 음성 처리, 언어 모델 분야의 전문가가 한 팀에 모인 구성이 이 프로젝트를 가능하게 한 기반입니다.
 
 ## 배경
 
