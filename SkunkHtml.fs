@@ -167,9 +167,10 @@
                 let urlFriendlyName = Url.toUrlFriendly folderName
                 $"""<li><a href="{urlFriendlyName}.html">{folderName}</a></li>""")
 
-        // Trends는 마크다운 글 목록이 아닌 별도 인터랙티브 페이지라 nav-main에 직접 추가
+        // Trends·인물 지도는 마크다운 글 목록이 아닌 별도 페이지라 nav-main에 직접 추가
         let trendsNavItem = """<li><a href="trends.html">Trends</a></li>"""
-        let mainItems = gridNavItems @ [trendsNavItem]
+        let roadmapNavItem = """<li><a href="roadmap.html">인물 지도</a></li>"""
+        let mainItems = gridNavItems @ [trendsNavItem; roadmapNavItem]
         let subItems = navFolderItems
 
         let mainHtml = mainItems |> String.concat "\n        "
@@ -721,6 +722,32 @@
 
         printfn "Processing Trends page ->"
         Disk.writeFile (Path.Combine(Config.outputDir, "trends.html")) trendsPageHtml
+
+    let createRoadmapPage (header: string) (footer: string) (navFolders: string array) (gridFolders: (string * Post list) list) =
+        let updatedHeader = buildNav header gridFolders navFolders
+
+        // 본문은 정적 HTML — 데이터는 assets/people-roadmap.json, 렌더는 scripts/people-roadmap.js
+        let content =
+            """
+        <section class="rm-section">
+            <h1 class="grid-title">인물 지도</h1>
+            <p class="rm-intro">사전에 정리한 인물 노트 가운데 주목도가 높은 연구자·창업자를 현재 소속(회사·연구기관)별로 묶었습니다. 이름을 누르면 해당 인물 노트로 이동합니다. 소속과 직함은 노트 본문 기준이며, 겸직인 경우 대표 소속 한 곳으로 배치했습니다.</p>
+            <p id="rm-asof" class="rm-asof"></p>
+
+            <div id="rm-root">
+                <p class="rm-status">인물 지도를 불러오는 중…</p>
+            </div>
+
+            <p class="rm-note">주목도(★)는 사전 노트의 star 값으로, 편집자가 매긴 상대 지표입니다. 소속은 특정 시점 기준이며 이직·창업으로 바뀔 수 있습니다.</p>
+        </section>
+
+        <script src="scripts/people-roadmap.js" defer></script>
+        """
+
+        let roadmapPageHtml = generateFinalHtml (headWithCanonical " - 인물 지도" "roadmap.html") updatedHeader footer content ""
+
+        printfn "Processing Roadmap page ->"
+        Disk.writeFile (Path.Combine(Config.outputDir, "roadmap.html")) roadmapPageHtml
 
     let createCanvasPage (header: string) (footer: string) (canvas: Canvas) (outputPath: string) (navFolders: string array) =
         // Canvas 데이터를 JSON으로 직렬화

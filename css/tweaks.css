@@ -636,3 +636,115 @@ table th[align="right"] {
     .hnt-gallery { grid-template-columns: 1fr; }
 }
 
+
+/* People roadmap (인물 지도) — 주목 연구자를 현재 소속별로 묶은 지도 */
+.rm-section {
+    margin: 1.5rem 0 2.5rem;
+}
+.rm-intro {
+    color: var(--color-text-secondary, #999);
+    line-height: 1.7;
+    margin-bottom: 0.4rem;
+}
+.rm-asof {
+    font-size: 0.8rem;
+    color: var(--color-text-secondary, #999);
+    margin-top: 0;
+}
+.rm-sector {
+    margin-top: 2.4rem;
+}
+.rm-sector-head {
+    display: flex;
+    align-items: baseline;
+    gap: 0.6rem;
+    border-bottom: 2px solid var(--color-accent);
+    padding-bottom: 0.35rem;
+    margin-bottom: 1.1rem;
+}
+.rm-sector-head h2 {
+    margin: 0;
+    font-size: 1.25rem;
+}
+.rm-sector-count {
+    font-size: 0.8rem;
+    color: var(--color-text-secondary, #999);
+}
+.rm-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
+    align-items: start;
+}
+.rm-card {
+    border: 1px solid var(--color-bg-secondary);
+    border-radius: var(--border-radius, 5px);
+    padding: 0.85rem 1rem 0.9rem;
+    background: var(--color-bg);
+}
+.rm-card-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.5rem;
+    margin-bottom: 0.6rem;
+}
+.rm-org {
+    font-weight: 700;
+    font-size: 1.02rem;
+    line-height: 1.3;
+}
+.rm-badge {
+    flex: 0 0 auto;
+    font-size: 0.72rem;
+    color: var(--color-bg);
+    background: var(--color-link);
+    border-radius: 999px;
+    padding: 0.05rem 0.5rem;
+}
+.rm-members {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.rm-member {
+    padding: 0.32rem 0;
+    border-top: 1px solid var(--color-accent);
+}
+.rm-member:first-child {
+    border-top: none;
+}
+.rm-member a {
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--color-link);
+}
+.rm-member a:hover {
+    text-decoration: underline;
+}
+.rm-tag {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--color-text-secondary, #999);
+    line-height: 1.45;
+    margin-top: 0.1rem;
+}
+.rm-star {
+    font-size: 0.72rem;
+    color: var(--color-text-secondary, #aaa);
+    margin-left: 0.35rem;
+    white-space: nowrap;
+}
+.rm-status {
+    color: var(--color-text-secondary, #999);
+    padding: 1rem 0;
+}
+.rm-note {
+    margin-top: 2rem;
+    font-size: 0.8rem;
+    color: var(--color-text-secondary, #999);
+    line-height: 1.6;
+}
+@media (max-width: 480px) {
+    .rm-grid { grid-template-columns: 1fr; }
+}

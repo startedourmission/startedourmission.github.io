@@ -1,0 +1,619 @@
+{
+  "generated": "2026-07-15",
+  "threshold": 32,
+  "total": 54,
+  "sectors": [
+    {
+      "key": "frontier",
+      "label": "프론티어 랩 · 빅테크",
+      "orgs": [
+        {
+          "org": "Google DeepMind",
+          "count": 4,
+          "members": [
+            {
+              "name": "데미스 하사비스",
+              "url": "1b576e78.html",
+              "tagline": "DeepMind CEO, 노벨 화학상",
+              "star": 118
+            },
+            {
+              "name": "존 점퍼",
+              "url": "c6381c36.html",
+              "tagline": "AlphaFold2 책임자, 노벨 화학상",
+              "star": 92
+            },
+            {
+              "name": "마르쿠스 후터",
+              "url": "86c5dff7.html",
+              "tagline": "AIXI 창시자",
+              "star": 74
+            },
+            {
+              "name": "셔빈 아미디",
+              "url": "6fa58f3e.html",
+              "tagline": "CME295 강의, CS229 치트시트",
+              "star": 50
+            }
+          ]
+        },
+        {
+          "org": "OpenAI",
+          "count": 4,
+          "members": [
+            {
+              "name": "샘 올트먼",
+              "url": "44a363b5.html",
+              "tagline": "OpenAI CEO",
+              "star": 92
+            },
+            {
+              "name": "노암 셰이저",
+              "url": "747035bb.html",
+              "tagline": "트랜스포머 공동 발명자",
+              "star": 74
+            },
+            {
+              "name": "루카시 카이저",
+              "url": "d029367f.html",
+              "tagline": "트랜스포머 공저, o1 리드",
+              "star": 74
+            },
+            {
+              "name": "김종욱",
+              "url": "82e7c8c1.html",
+              "tagline": "CLIP·Whisper 핵심 저자",
+              "star": 69
+            }
+          ]
+        },
+        {
+          "org": "Anthropic",
+          "count": 2,
+          "members": [
+            {
+              "name": "다리오 아모데이",
+              "url": "37762569.html",
+              "tagline": "Anthropic CEO",
+              "star": 92
+            },
+            {
+              "name": "안드레이 카파시",
+              "url": "b3e11220.html",
+              "tagline": "바이브 코딩 창안, Claude 사전학습",
+              "star": 60
+            }
+          ]
+        },
+        {
+          "org": "xAI",
+          "count": 1,
+          "members": [
+            {
+              "name": "일론 머스크",
+              "url": "3934353d.html",
+              "tagline": "Tesla·SpaceX·xAI 창업자",
+              "star": 64
+            }
+          ]
+        },
+        {
+          "org": "Google Research",
+          "count": 1,
+          "members": [
+            {
+              "name": "바하브 미로크니",
+              "url": "064beeef.html",
+              "tagline": "Gemini 데이터 총괄",
+              "star": 36
+            }
+          ]
+        },
+        {
+          "org": "Meta (FAIR)",
+          "count": 1,
+          "members": [
+            {
+              "name": "롭 퍼거스",
+              "url": "b1022ecc.html",
+              "tagline": "ZFNet, Meta FAIR 책임자",
+              "star": 36
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "company",
+      "label": "AI 기업 · 스타트업",
+      "orgs": [
+        {
+          "org": "Sakana AI",
+          "count": 3,
+          "members": [
+            {
+              "name": "리온 존스",
+              "url": "b6901633.html",
+              "tagline": "트랜스포머 공저, Sakana CTO",
+              "star": 50
+            },
+            {
+              "name": "이토 렌",
+              "url": "23937847.html",
+              "tagline": "전 외교관, Sakana COO",
+              "star": 32
+            },
+            {
+              "name": "데이비드 하",
+              "url": "710447b2.html",
+              "tagline": "전 Google Brain, Sakana CEO",
+              "star": 32
+            }
+          ]
+        },
+        {
+          "org": "Essential AI",
+          "count": 2,
+          "members": [
+            {
+              "name": "아시시 바스와니",
+              "url": "4b080681.html",
+              "tagline": "트랜스포머 1저자",
+              "star": 82
+            },
+            {
+              "name": "니키 파마르",
+              "url": "a8590f9c.html",
+              "tagline": "트랜스포머 공저",
+              "star": 50
+            }
+          ]
+        },
+        {
+          "org": "AMI Labs",
+          "count": 1,
+          "members": [
+            {
+              "name": "얀 르쿤",
+              "url": "bad9ef9e.html",
+              "tagline": "CNN의 아버지, 시드 10억 달러",
+              "star": 156
+            }
+          ]
+        },
+        {
+          "org": "SSI",
+          "count": 1,
+          "members": [
+            {
+              "name": "일리야 수츠케버",
+              "url": "d1b1da5b.html",
+              "tagline": "OpenAI 전 수석과학자",
+              "star": 130
+            }
+          ]
+        },
+        {
+          "org": "DeepLearning.AI · AI Fund",
+          "count": 1,
+          "members": [
+            {
+              "name": "앤드류 응",
+              "url": "8ca94afb.html",
+              "tagline": "AI 교육의 표준을 세운 인물",
+              "star": 109
+            }
+          ]
+        },
+        {
+          "org": "World Labs",
+          "count": 1,
+          "members": [
+            {
+              "name": "페이-페이 리",
+              "url": "9454ce91.html",
+              "tagline": "ImageNet 창시자, 공간지능",
+              "star": 92
+            }
+          ]
+        },
+        {
+          "org": "NEAR Foundation",
+          "count": 1,
+          "members": [
+            {
+              "name": "일리아 폴로수킨",
+              "url": "3c035652.html",
+              "tagline": "트랜스포머 공저, NEAR CEO",
+              "star": 82
+            }
+          ]
+        },
+        {
+          "org": "Cohere",
+          "count": 1,
+          "members": [
+            {
+              "name": "에이단 고메즈",
+              "url": "b3d0de32.html",
+              "tagline": "트랜스포머 최연소 저자, Cohere CEO",
+              "star": 82
+            }
+          ]
+        },
+        {
+          "org": "Inceptive",
+          "count": 1,
+          "members": [
+            {
+              "name": "야코프 우스코레이트",
+              "url": "f2cd9afa.html",
+              "tagline": "트랜스포머 공저, 생명과학 전향",
+              "star": 82
+            }
+          ]
+        },
+        {
+          "org": "CAIS",
+          "count": 1,
+          "members": [
+            {
+              "name": "댄 헨드릭스",
+              "url": "ce5de785.html",
+              "tagline": "MMLU·MATH 저자, AI 안전",
+              "star": 44
+            }
+          ]
+        },
+        {
+          "org": "LG AI Research · U Michigan",
+          "count": 1,
+          "members": [
+            {
+              "name": "이홍락",
+              "url": "a85a70e9.html",
+              "tagline": "비지도 표현학습 선구자",
+              "star": 36
+            }
+          ]
+        },
+        {
+          "org": "Skywork AI (Kunlun)",
+          "count": 1,
+          "members": [
+            {
+              "name": "옌수이청",
+              "url": "d6942642.html",
+              "tagline": "컴퓨터비전 대가",
+              "star": 36
+            }
+          ]
+        },
+        {
+          "org": "TwelveLabs",
+          "count": 1,
+          "members": [
+            {
+              "name": "이재성",
+              "url": "466b1ab5.html",
+              "tagline": "영상 이해 멀티모달 AI",
+              "star": 32
+            }
+          ]
+        },
+        {
+          "org": "Moloco",
+          "count": 1,
+          "members": [
+            {
+              "name": "안익진",
+              "url": "d4da8128.html",
+              "tagline": "ML 광고·커머스 플랫폼",
+              "star": 32
+            }
+          ]
+        },
+        {
+          "org": "Adaption Labs",
+          "count": 1,
+          "members": [
+            {
+              "name": "사라 후커",
+              "url": "2dc2fe29.html",
+              "tagline": "AI 효율성·공정성",
+              "star": 32
+            }
+          ]
+        },
+        {
+          "org": "Shanghai AI Lab",
+          "count": 1,
+          "members": [
+            {
+              "name": "허충후이",
+              "url": "09ea0dd2.html",
+              "tagline": "비전언어 데이터 엔지니어링",
+              "star": 32
+            }
+          ]
+        },
+        {
+          "org": "Moonshot AI",
+          "count": 1,
+          "members": [
+            {
+              "name": "양즈린",
+              "url": "6606e8be.html",
+              "tagline": "XLNet 1저자, Kimi 총괄",
+              "star": 32
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "hardware",
+      "label": "반도체 · 하드웨어",
+      "orgs": [
+        {
+          "org": "NVIDIA",
+          "count": 2,
+          "members": [
+            {
+              "name": "젠슨 황",
+              "url": "b5ad4d0e.html",
+              "tagline": "NVIDIA 창업자 겸 CEO",
+              "star": 92
+            },
+            {
+              "name": "산야 피들러",
+              "url": "1e7fd91b.html",
+              "tagline": "3D 비전·월드 모델",
+              "star": 44
+            }
+          ]
+        },
+        {
+          "org": "Modular AI (→Qualcomm)",
+          "count": 1,
+          "members": [
+            {
+              "name": "크리스 래트너",
+              "url": "706fa9d5.html",
+              "tagline": "LLVM·Swift·Mojo 창시자",
+              "star": 64
+            }
+          ]
+        },
+        {
+          "org": "FuriosaAI",
+          "count": 1,
+          "members": [
+            {
+              "name": "백준호",
+              "url": "fd49bd14.html",
+              "tagline": "AI 추론 가속기 RNGD",
+              "star": 32
+            }
+          ]
+        },
+        {
+          "org": "Tenstorrent",
+          "count": 1,
+          "members": [
+            {
+              "name": "짐 켈러",
+              "url": "a29a0b96.html",
+              "tagline": "AMD Zen·Apple 칩 설계자",
+              "star": 32
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "academia",
+      "label": "학계 · 연구기관",
+      "orgs": [
+        {
+          "org": "University of Toronto",
+          "count": 1,
+          "members": [
+            {
+              "name": "제프리 힌턴",
+              "url": "f0667c17.html",
+              "tagline": "딥러닝의 아버지, 노벨 물리학상",
+              "star": 226
+            }
+          ]
+        },
+        {
+          "org": "NYU · Genentech",
+          "count": 1,
+          "members": [
+            {
+              "name": "조경현",
+              "url": "0ca53e5b.html",
+              "tagline": "GRU·어텐션 공동개발",
+              "star": 116
+            }
+          ]
+        },
+        {
+          "org": "Mila (U Montréal)",
+          "count": 1,
+          "members": [
+            {
+              "name": "요슈아 벤지오",
+              "url": "a13061a2.html",
+              "tagline": "딥러닝 3대 거장",
+              "star": 108
+            }
+          ]
+        },
+        {
+          "org": "UC Berkeley",
+          "count": 1,
+          "members": [
+            {
+              "name": "피터 아베일",
+              "url": "1240c6ee.html",
+              "tagline": "강화학습 로보틱스",
+              "star": 93
+            }
+          ]
+        },
+        {
+          "org": "Tsinghua AIR",
+          "count": 1,
+          "members": [
+            {
+              "name": "장야친",
+              "url": "87a5c662.html",
+              "tagline": "칭화대 AIR 원장",
+              "star": 44
+            }
+          ]
+        },
+        {
+          "org": "KAIST · DeepAuto",
+          "count": 1,
+          "members": [
+            {
+              "name": "황성주",
+              "url": "a12198c9.html",
+              "tagline": "KAIST 석좌교수, DeepAuto CEO",
+              "star": 44
+            }
+          ]
+        },
+        {
+          "org": "독립 연구자 (Japan)",
+          "count": 1,
+          "members": [
+            {
+              "name": "쿠니히코 후쿠시마",
+              "url": "6a14cb8f.html",
+              "tagline": "Neocognitron 발명자",
+              "star": 44
+            }
+          ]
+        },
+        {
+          "org": "Northeastern University",
+          "count": 1,
+          "members": [
+            {
+              "name": "로널드 윌리엄스",
+              "url": "c64b922f.html",
+              "tagline": "역전파·REINFORCE 창시자",
+              "star": 44
+            }
+          ]
+        },
+        {
+          "org": "MIT · Google DeepMind",
+          "count": 1,
+          "members": [
+            {
+              "name": "허카이밍",
+              "url": "fd371ab6.html",
+              "tagline": "ResNet·MAE 저자",
+              "star": 36
+            }
+          ]
+        },
+        {
+          "org": "Stanford · NVIDIA",
+          "count": 1,
+          "members": [
+            {
+              "name": "최예진",
+              "url": "926b0dbb.html",
+              "tagline": "상식 추론, 맥아더 펠로우",
+              "star": 36
+            }
+          ]
+        },
+        {
+          "org": "CMU · All Hands AI",
+          "count": 1,
+          "members": [
+            {
+              "name": "그레이엄 뉴비그",
+              "url": "4acc318c.html",
+              "tagline": "코드 생성·다국어 NLP",
+              "star": 36
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "agile",
+      "label": "애자일 · 소프트웨어 방법론",
+      "orgs": [
+        {
+          "org": "애자일 (독립)",
+          "count": 1,
+          "members": [
+            {
+              "name": "론 제프리스",
+              "url": "af34e89d.html",
+              "tagline": "XP 공저, 애자일 선언 17인",
+              "star": 48
+            }
+          ]
+        },
+        {
+          "org": "Gusto",
+          "count": 1,
+          "members": [
+            {
+              "name": "켄트 벡",
+              "url": "6853b78a.html",
+              "tagline": "XP 창시자, TDD 대중화",
+              "star": 48
+            }
+          ]
+        },
+        {
+          "org": "Scrum Inc.",
+          "count": 1,
+          "members": [
+            {
+              "name": "제프 서덜랜드",
+              "url": "0da50509.html",
+              "tagline": "Scrum 공동 창시자",
+              "star": 32
+            }
+          ]
+        },
+        {
+          "org": "Scrum.org",
+          "count": 1,
+          "members": [
+            {
+              "name": "켄 슈와버",
+              "url": "f719acde.html",
+              "tagline": "Scrum 공동 창시자",
+              "star": 32
+            }
+          ]
+        },
+        {
+          "org": "Kanban University",
+          "count": 1,
+          "members": [
+            {
+              "name": "데이비드 앤더슨",
+              "url": "4a00d42f.html",
+              "tagline": "칸반 방법 체계화",
+              "star": 32
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
