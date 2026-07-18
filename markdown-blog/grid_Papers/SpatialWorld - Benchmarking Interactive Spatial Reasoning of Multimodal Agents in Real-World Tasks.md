@@ -8,7 +8,7 @@ tags:
 description: "멀티모달 에이전트가 실제 공간을 상호작용하며 이해하는 능력을 8개 시뮬레이터와 760개 과제로 측정한 SpatialWorld. 정적 VQA를 넘어 능동 탐색을 보게 했더니 최강 GPT-5조차 평균 성공률 17.4%에 그쳤고, 더 최신인 GPT-5.4는 조급하게 멈추는 바람에 오히려 뒤처졌습니다."
 image: "![[spatialworld-overview.png]]"
 citations: 0
-buzz: 36
+buzz: 34
 ---
 > H. Gao, H. Qu, J. Tang, Z. Huang, ..., N. Duan, and Y. Dong, "SpatialWorld: Benchmarking Interactive Spatial Reasoning of Multimodal Agents in Real-World Tasks," arXiv:2606.09669, 2026.
 

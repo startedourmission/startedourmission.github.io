@@ -7,7 +7,7 @@ tags:
   - LLM
 description: Nature 계열 학술지 논문 90편에서 추출한 과학 태스크 벤치마크. 최강 모델도 17.8%만 SOTA를 넘었고, 성공의 절반 가까이는 과학적 발견이 아닌 지도학습 문제 변환에 기댄 것으로 드러났습니다.
 image: "![[naturebench-overview.png]]"
-buzz: 42
+buzz: 66
 ---
 
 > Y. Wang, L. Cheng, Y. Zuo, S. Zeng, B. He, C. Jiang, J. Yang, Y. Wang, K. Zhao, W. Huang, K. Tian, Z. Yuan, J. Zhong, W. Wang, N. Ding, B. Zhou, and K. Zhang, "NatureBench: Can Coding Agents Match the Published SOTA of Nature-Family Papers?," arXiv:2606.24530, 2026.

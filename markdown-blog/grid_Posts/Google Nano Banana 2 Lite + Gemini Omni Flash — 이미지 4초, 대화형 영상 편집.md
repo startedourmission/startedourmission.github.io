@@ -2,7 +2,6 @@
 date: 2026-07-03
 tags:
   - 정보
-  - Headliner
   - 멀티모달
   - 도구
 description: "구글이 6월 30일 Nano Banana 2 Lite($0.034/장, 4초)와 Gemini Omni Flash(대화형 영상 편집, $0.10/초)를 동시 공개했습니다. Gemini API와 AI Studio에서 즉시 사용 가능합니다."

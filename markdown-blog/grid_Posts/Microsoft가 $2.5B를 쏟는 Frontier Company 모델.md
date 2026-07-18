@@ -2,7 +2,6 @@
 date: 2026-07-05
 tags:
   - 정보
-  - Headliner
   - LLM
   - 에이전트
   - SaaS

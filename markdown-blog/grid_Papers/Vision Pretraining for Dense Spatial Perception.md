@@ -5,8 +5,8 @@ tags:
   - 컴퓨터비전
   - 딥러닝
 description: 의미 불변성에 치우친 시각 사전학습이 조밀한 공간 정보를 잃는 문제를 경계 중심 자기지도학습으로 다룹니다. LingBot-Vision은 경계 토큰을 의도적으로 가리고 의미와 기하를 함께 복원해 깊이 추정과 분할 성능을 높입니다.
-buzz: 30
 image: "![[dense-spatial-pretraining.png]]"
+buzz: 41
 ---
 > Z. Fu, B. Tan, C. Sun, S. Liu, K. Zheng, Y. Xu, X. Zhu, Y. Shen, and N. Xue, "Vision Pretraining for Dense Spatial Perception," arXiv:2607.05247, 2026.
 

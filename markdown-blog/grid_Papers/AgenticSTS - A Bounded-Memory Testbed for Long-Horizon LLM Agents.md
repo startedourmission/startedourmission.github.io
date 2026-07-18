@@ -6,7 +6,7 @@ tags:
   - 에이전트
 description: "LLM 에이전트 메모리를 '얼마나 많은 히스토리가 들어가는가'가 아니라 '어느 레이어가 결정을 바꾸는가'로 측정하는 게임 테스트베드. Slay the Spire 2 위에서 5층 타입 메모리 계약을 구현하고 298개 궤적을 공개합니다."
 image: "![[agentic-sts-overview.png]]"
-buzz: 45
+buzz: 44
 ---
 
 > X. Cheng, Y. Jiang, J. Sun, Z. Li, C. Li, X. Cao, Y. Liu, F. Zhang, L. Jin, and K. Zhang, "AgenticSTS: A Bounded-Memory Testbed for Long-Horizon LLM Agents," arXiv:2607.02255, 2026.

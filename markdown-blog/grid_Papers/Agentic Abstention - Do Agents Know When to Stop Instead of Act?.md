@@ -7,7 +7,7 @@ tags:
   - LLM
 description: LLM 에이전트가 '지금 멈춰야 할 때'를 아는지 측정하는 첫 체계적 벤치마크. 웹·터미널·QA 3개 환경 28K 샘플로 평가한 결과, 대부분의 모델은 너무 늦게, 혹은 전혀 멈추지 않는다는 사실이 드러났습니다.
 image: "![[agentic-abstention-overview.png]]"
-buzz: 52
+buzz: 51
 ---
 
 > H. Luo, B. Wen, and L. L. Wang, "Agentic Abstention: Do Agents Know When to Stop Instead of Act?," arXiv:2606.28733, 2026.

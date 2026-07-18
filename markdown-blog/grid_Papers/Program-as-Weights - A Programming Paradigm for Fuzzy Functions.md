@@ -6,7 +6,7 @@ tags:
   - 오픈소스
 description: "자연어로 명세한 함수를 경량 LoRA 어댑터로 컴파일해 로컬 실행하는 퍼지 함수 프로그래밍 패러다임. 0.6B 인터프리터가 Qwen3-32B를 메모리 50분의 1로 뛰어넘습니다."
 image: "![[program-as-weights-overview.png]]"
-buzz: 51
+buzz: 50
 ---
 
 > W. Zhang, L. Hotsko, W. Kim, P. Nie, S. Shieber, and Y. Deng, "Program-as-Weights: A Programming Paradigm for Fuzzy Functions," arXiv:2607.02512, 2026.

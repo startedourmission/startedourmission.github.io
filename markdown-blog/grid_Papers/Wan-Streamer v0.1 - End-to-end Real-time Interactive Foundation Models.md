@@ -7,7 +7,7 @@ tags:
   - LLM
 description: "단일 Transformer로 오디오·영상·텍스트를 동시에 처리하는 실시간 풀-듀플렉스 대화 모델 — 캐스케이드 파이프라인 없이 모델 측 200ms 지연과 25fps 영상 출력을 달성합니다."
 image: "![[wan-streamer-v01-overview.png]]"
-buzz: 77
+buzz: 96
 ---
 
 > Wan Team, Alibaba Group, "Wan-Streamer v0.1: End-to-end Real-time Interactive Foundation Models," arXiv:2606.25041, 2026.

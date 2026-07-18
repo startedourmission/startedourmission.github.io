@@ -8,7 +8,7 @@ tags:
 description: "1.2B 파라미터로 고해상도 문서의 정확한 파싱을 달성한 MinerU2.5의 2단계 분리 아키텍처와 데이터 엔진을 분석합니다."
 image: "![[mineru2-5-overview.png]]"
 citations: 74
-buzz: 302
+buzz: 294
 ---
 
 > J. Niu, Z. Liu, Z. Gu, B. Wang, L. Ouyang, et al., "MinerU2.5: A Decoupled Vision-Language Model for Efficient High-Resolution Document Parsing," arXiv:2509.22186, 2025.

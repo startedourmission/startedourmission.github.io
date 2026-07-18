@@ -8,7 +8,7 @@ tags:
 description: 인터넷에는 사람을 위한 방법 안내가 넘쳐납니다. 위키하우, 게임 위키, 우분투 문서 같은 것들이죠. 문제는 이 가이드가 멀티모달이고 노이즈가 많고 사람이 실행한다고 가정한다는 점입니다. MMG2Skill은 이런 사람용 가이드를 에이전트가 실행할 수 있는 SKILL.md 절차로 증류하고, 실행 궤적의 진단으로 스스로 고쳐 나가는 폐루프 프레임워크입니다.
 image: "![[mmg2skill-overview.png]]"
 citations: 0
-buzz: 25
+buzz: 23
 ---
 
 > X. Che, J. Xiong, Y. Ge, X. Lei, et al., "MMG2Skill: Can Agents Distill In-the-Wild Guides into Self-Evolving Skills?," arXiv:2606.01993, 2026.

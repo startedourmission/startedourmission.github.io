@@ -2,6 +2,7 @@
 date: 2026-07-13
 tags:
   - 정보
+  - Headliner
   - LLM
 description: "OpenAI가 GPT-5.6 3종과 업무 에이전트 ChatGPT Work를 같은 날 냈습니다. 경쟁축이 모델 성능에서 업무 실행으로 옮겨간 발표입니다."
 image: "![[gpt-56-chatgpt-work.png]]"

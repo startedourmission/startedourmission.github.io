@@ -2,7 +2,6 @@
 date: 2026-07-02
 tags:
   - 정보
-  - Headliner
   - LLM
   - 에이전트
 description: "Anthropic이 Sonnet 5를 전면 출시 — SWE-bench Pro 63.2%, OSWorld 83.4% 등 Opus 4.8에 근접하는 에이전틱 성능을 Sonnet 가격에 제공하지만 에이전틱 작업 시 토큰 소모가 기존 대비 더 많아 '저렴한 에이전트'라는 말을 액면 그대로 받아들이기 어렵습니다."

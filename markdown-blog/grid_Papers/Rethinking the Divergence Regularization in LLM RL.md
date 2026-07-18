@@ -7,7 +7,7 @@ tags:
 description: PPO와 GRPO가 long-tail 어휘에서 흔들리는 이유를 파헤치고, hard mask 대신 smooth regularizer로 trust region을 구현한 DRPO를 소개합니다. 6가지 실험 설정에서 일관되게 안정적인 학습을 보여주었습니다.
 image: "![[drpo-gradient-weights.png]]"
 citations: 0
-buzz: 57
+buzz: 74
 ---
 
 > J. Yao, X. Zhou, P. Qi, W. S. Lee, L. Bo, and T. Pang, "Rethinking the Divergence Regularization in LLM RL," arXiv:2606.09821, 2026.

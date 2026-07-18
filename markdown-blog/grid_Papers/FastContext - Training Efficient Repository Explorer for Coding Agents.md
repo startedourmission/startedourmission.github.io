@@ -8,7 +8,7 @@ tags:
 description: "LLM 코딩 에이전트의 레포지토리 탐색이 전체 토큰의 절반을 소비하는 병목입니다. Microsoft와 SJTU 연구팀이 탐색 전용 서브에이전트 FastContext를 훈련해 SWE-bench에서 정확도를 높이면서 메인 에이전트 토큰을 최대 60% 절감했습니다."
 image: "![[fastcontext-architecture.png]]"
 citations: 0
-buzz: 45
+buzz: 42
 ---
 
 > S. Zhang, M. Wang, Y. Shi, Y. Wang, X. Gu, Y. Yao, R. Fu, and S. Fu, "FastContext: Training Efficient Repository Explorer for Coding Agents," arXiv:2606.14066, 2026.

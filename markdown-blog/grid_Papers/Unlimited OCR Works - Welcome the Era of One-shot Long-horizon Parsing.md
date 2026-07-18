@@ -6,7 +6,7 @@ tags:
   - 머신러닝
 description: "DeepSeek OCR 디코더의 모든 어텐션을 R-SWA로 교체해 KV 캐시를 상수로 유지. 단일 forward pass로 수십 페이지 문서를 파싱하고 OmniDocBench v1.6 SOTA 93.92% 달성."
 image: "![[unlimited-ocr-rswa.png]]"
-buzz: 84
+buzz: 98
 ---
 
 > Y. Yin, H. Liu, Q. Xie, et al., "Unlimited OCR Works: Welcome the Era of One-shot Long-horizon Parsing," arXiv:2606.23050, 2026.

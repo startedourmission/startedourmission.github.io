@@ -8,7 +8,7 @@ tags:
 description: SenseTime이 Apache 2.0으로 공개한 SenseNova-U1은 VAE도 vision encoder도 들어내고 픽셀과 단어를 한 트랜스포머 안에서 같이 학습합니다. dense 8B와 30B-A3B MoE 두 변종으로 understanding-only VLM 수준 인지에 X2I 생성을 32배 압축률로 동시에 수행하는, native unified multimodal의 first-principle 결정판입니다.
 image: "![[sensenova-u1-overview.png]]"
 citations: 2
-buzz: 142
+buzz: 146
 ---
 
 > H. Diao, P. Wu, H. Deng, J. Wang, et al., "SenseNova-U1: Unifying Multimodal Understanding and Generation with NEO-unify Architecture," arXiv:2605.12500, 2026.

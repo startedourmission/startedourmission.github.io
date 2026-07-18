@@ -6,7 +6,7 @@ aliases:
 image: "![[image-1.png]]"
 description: 멀티 에이전트 시스템에서 "어느 모델에게 넘길까"를 결정하는 라우팅은 단발성 판단이거나 RL로 학습해도 한 모델에 98% 쏠리는 붕괴를 보입니다. SkillOrchestra는 실행 경험에서 재사용 가능한 "스킬 핸드북"을 학습해 RL 오케스트레이터 대비 22.5%p 정확도 향상과 700배 학습 비용 절감을 달성합니다. 위스콘신-매디슨·Salesforce AI Research 공동 연구.
 citations: 10
-buzz: 129
+buzz: 117
 ---
 ![[image-1.png]]
 

@@ -2,6 +2,7 @@
 date: 2026-07-08
 tags:
   - 정보
+  - Headliner
   - 에이전트
   - AI평가
 description: "Anthropic이 과학 연구자들을 위해 공개한 Claude Science는 논문 탐색부터 실험 설계·데이터 분석까지 에이전트 방식으로 지원하는 AI 연구 워크벤치입니다."

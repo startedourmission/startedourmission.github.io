@@ -2,6 +2,7 @@
 date: 2026-07-08
 tags:
   - 정보
+  - Headliner
   - 반도체
   - LLM
 description: "Anthropic이 자체 AI 칩 개발을 위해 삼성전자와 2nm 파운드리 계약 협의에 들어갔습니다. 탐색 초기 단계이지만 AI 랩의 실리콘 자립 흐름이 다시 주목받고 있습니다."

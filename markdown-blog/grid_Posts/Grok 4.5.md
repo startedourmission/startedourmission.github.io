@@ -2,6 +2,7 @@
 date: 2026-07-14
 tags:
   - 정보
+  - Headliner
   - LLM
 description: "xAI가 Cursor와 협력해 출시한 Grok 4.5. 1.5조 파라미터 V9 MoE 아키텍처에 실제 개발자 세션 데이터로 훈련해, 코딩 에이전트 비용을 최대 4.2배 줄인다고 주장합니다."
 image: "![[grok-4-5.png]]"

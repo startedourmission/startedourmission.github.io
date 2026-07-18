@@ -7,7 +7,7 @@ tags:
   - 머신러닝
 description: "재훈련 없이 FLUX·Qwen-Image 같은 플로우 매칭 확산 모델을 10× 가속하는 MrFlow를 제안합니다. 초반 스텝은 저해상도 잠재 공간에서 처리하고, 픽셀 공간 GAN 슈퍼해상도를 거쳐 단 1스텝 고해상도 정제로 마무리하는 단계별 파이프라인입니다."
 image: "![[mrflow-pipeline.png]]"
-buzz: 41
+buzz: 38
 ---
 
 > X. Zheng, X. Liu, Y. Ding, W. Feng, J. Lin, J. Guo, and H. Qin, "Multi-Resolution Flow Matching: Training-Free Diffusion Acceleration via Staged Sampling," arXiv:2607.01642, 2026.

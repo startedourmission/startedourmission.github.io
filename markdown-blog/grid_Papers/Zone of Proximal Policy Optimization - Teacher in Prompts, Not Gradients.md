@@ -6,7 +6,7 @@ tags:
   - 강화학습
 description: 교사를 그래디언트가 아닌 프롬프트 안에 가두는 소형 VLM 포스트 트레이닝 방법론 ZPPO. 지식 증류가 OOD 일반화를 훼손하는 반면 ZPPO는 0.8B 학생에서 VLM 벤치마크 +9.3pp를 달성하면서 동시에 훈련 외 도메인도 개선합니다.
 image: "![[zppo-overview.png]]"
-buzz: 66
+buzz: 64
 ---
 
 > B.-K. Lee, X. Lu, S. Diao, M. Kang, S. Muralidharan, K. Sapra, A. Tao, P. Molchanov, Y. Choi, Y.-C. F. Wang, and R. Hachiuma, "Zone of Proximal Policy Optimization: Teacher in Prompts, Not Gradients," arXiv:2606.18216, 2026.

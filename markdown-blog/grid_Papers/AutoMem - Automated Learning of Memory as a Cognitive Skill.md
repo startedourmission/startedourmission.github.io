@@ -6,7 +6,7 @@ tags:
   - 에이전트
 description: "메모리 관리를 아키텍처에 박아넣는 고정 모듈이 아니라 학습 가능한 기술로 다룬 연구입니다. 파일 시스템 조작을 과제 행동과 동급의 행동으로 올리고, 메타 LLM이 궤적을 검토해 골격과 숙련을 함께 최적화합니다. 가중치를 건드리지 않고 메모리만 손봐도 Qwen2.5-32B의 장기 과제 성능이 두세 배 올랐습니다."
 image: "![[automem-overview.png]]"
-buzz: 34
+buzz: 57
 ---
 
 > S. Wu, H. Zhu, Y. Zhang, X. Wang, and S. Yeung-Levy, "AutoMem: Automated Learning of Memory as a Cognitive Skill," arXiv:2607.01224, 2026.

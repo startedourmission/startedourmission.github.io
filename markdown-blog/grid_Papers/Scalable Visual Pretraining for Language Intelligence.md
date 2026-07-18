@@ -7,7 +7,7 @@ tags:
   - 컴퓨터비전
 description: "PDF 페이지를 이미지 그대로 오토리그레시브 학습하면, 같은 코퍼스에서 텍스트만 학습한 것보다 과학 추론 성능이 일관되게 높아진다는 실증 연구."
 image: "![[scalable-vp-overview.png]]"
-buzz: 43
+buzz: 45
 ---
 
 > Y. Zhang, Z. Zhao, W. Zhang, H. Zhao, et al., "Scalable Visual Pretraining for Language Intelligence," arXiv:2607.09657, 2026.
