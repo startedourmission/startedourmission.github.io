@@ -40,11 +40,11 @@
     return R_MIN + t * (R_MAX - R_MIN);
   }
 
-  // 인물을 flat 배열로 펴고 섹터 메타를 붙인다.
-  function flatten(data) {
-    var people = [];
-    data.sectors.forEach(function (s, si) {
+  // 섹터별로 인물을 묶어 반환한다: [{key,label,color,people:[...]}].
+  function groupBySector(data) {
+    return data.sectors.map(function (s, si) {
       var color = sectorColor(s.key, si);
+      var people = [];
       s.orgs.forEach(function (o) {
         o.members.forEach(function (m) {
           people.push({
@@ -59,31 +59,34 @@
           });
         });
       });
+      return { key: s.key, label: s.label, color: color, people: people };
     });
-    return people;
   }
 
-  // 결정론적 원 패킹: 큰 원부터 아르키메데스 나선을 촘촘히 돌며 겹치지 않는
-  // 첫 자리에 놓는다. 라이브러리 없이 동작하고 매번 같은 배치를 만든다(랜덤 없음).
-  // 나선 위 표본 간 호 길이를 일정하게 유지해(각도 증분을 반경에 반비례) 빈틈을 남기지 않는다.
-  function packCircles(nodes, width, height) {
+  // 결정론적 원 패킹: 큰 원(items[i].r)부터 (cx,cy) 중심 아르키메데스 나선을 촘촘히 돌며
+  // 겹치지 않는 첫 자리에 놓고 n.x/n.y를 채운다. 라이브러리 없이 동작하고 매번 같은 배치(랜덤 없음).
+  // 나선 표본 간 호 길이를 일정하게 유지(각도 증분을 반경에 반비례)해 빈틈을 남기지 않는다.
+  // opts: {pad, b, stepArc, bound:{w,h,inset}} — bound가 있으면 그 사각형 안에만 배치.
+  function spiralPack(items, cx, cy, opts) {
+    opts = opts || {};
+    var PAD = opts.pad != null ? opts.pad : 3;
+    var B = opts.b != null ? opts.b : 1.6;
+    var STEP_ARC = opts.stepArc != null ? opts.stepArc : 4;
+    var bound = opts.bound || null;
     var placed = [];
-    var cx = width / 2, cy = height / 2;
-    var sorted = nodes.slice().sort(function (a, b) { return b.r - a.r; });
-    var PAD = 3;
-    var B = 1.6;        // 나선 촘촘함(작을수록 촘촘)
-    var STEP_ARC = 4;   // 표본 간 대략적인 호 길이(px)
-    var maxRad = Math.sqrt(width * width + height * height);
+    var sorted = items.slice().sort(function (a, b) { return b.r - a.r; });
     sorted.forEach(function (n) {
       var t = 0, done = false;
-      for (var i = 0; i < 200000; i++) {
+      for (var i = 0; i < 400000; i++) {
         var rad = B * t;
         var x = cx + rad * Math.cos(t);
         var y = cy + rad * Math.sin(t);
         var ok = true;
-        if (x - n.r < 4 || x + n.r > width - 4 || y - n.r < 4 || y + n.r > height - 4) {
-          ok = false;
-        } else {
+        if (bound) {
+          var ins = bound.inset || 0;
+          if (x - n.r < ins || x + n.r > bound.w - ins || y - n.r < ins || y + n.r > bound.h - ins) ok = false;
+        }
+        if (ok) {
           for (var j = 0; j < placed.length; j++) {
             var p = placed[j];
             var dx = x - p.x, dy = y - p.y, s = n.r + p.r + PAD;
@@ -92,11 +95,48 @@
         }
         if (ok) { n.x = x; n.y = y; placed.push(n); done = true; break; }
         t += STEP_ARC / Math.max(B * Math.sqrt(1 + t * t), 1);
-        if (rad > maxRad) break;
       }
       if (!done) { n.x = cx; n.y = cy; placed.push(n); }
     });
     return sorted;
+  }
+
+  // 섹터별 클러스터 레이아웃: (1) 각 섹터 인물을 로컬 중심(0,0) 기준 패킹해 클러스터 반경 R을
+  // 구하고, (2) 그 클러스터들을 다시 나선 패킹해 서로 안 겹치는 중심을 잡은 뒤, (3) 인물 좌표에
+  // 클러스터 중심 오프셋을 더한다. 같은 알고리즘을 두 레벨에 재사용 → 섹터가 공간적으로 뭉친다.
+  // 반환: {people, clusters, bbox:{minX,minY,maxX,maxY}}
+  function layoutClusters(sectorsData) {
+    var LABEL_GAP = 26;  // 섹터 라벨(위쪽 바깥)이 이웃 클러스터와 겹치지 않도록 확보할 세로 여백.
+    var clusters = sectorsData.map(function (s) {
+      var nodes = s.people.map(function (p) { return { ref: p, r: p.r }; });
+      spiralPack(nodes, 0, 0, { pad: 3, b: 1.5, stepArc: 3.5 });
+      var R = 0;
+      nodes.forEach(function (n) {
+        var d = Math.hypot(n.x, n.y) + n.r;
+        if (d > R) R = d;
+      });
+      // 패킹용 반경 r 은 라벨 여백을 포함(클러스터 간 간격 확보). 실제 헤일로 반경 R 은 그대로.
+      return { key: s.key, label: s.label, color: s.color, R: R, r: R + LABEL_GAP, nodes: nodes };
+    });
+
+    // 클러스터 원들을 나선 패킹(라벨 여백 포함 반경 기준).
+    spiralPack(clusters, 0, 0, { pad: 14, b: 3, stepArc: 4 });
+
+    // 인물 절대좌표 = 로컬 + 클러스터 중심.
+    var people = [];
+    var bbox = { minX: Infinity, minY: Infinity, maxX: -Infinity, maxY: -Infinity };
+    clusters.forEach(function (c) {
+      c.nodes.forEach(function (n) {
+        n.ref.x = n.x + c.x;
+        n.ref.y = n.y + c.y;
+        people.push(n.ref);
+      });
+      bbox.minX = Math.min(bbox.minX, c.x - c.R);
+      bbox.minY = Math.min(bbox.minY, c.y - c.R - 24);  // 위쪽 섹터 라벨 공간.
+      bbox.maxX = Math.max(bbox.maxX, c.x + c.R);
+      bbox.maxY = Math.max(bbox.maxY, c.y + c.R);
+    });
+    return { people: people, clusters: clusters, bbox: bbox };
   }
 
   function buildTooltip() {
@@ -191,44 +231,73 @@
     return label;
   }
 
-  function renderBubbleMap(data, people, tip) {
-    var W = 900, H = 620, PADV = 46;  // viewBox 여백 — 큰 원 라벨이 경계에 붙지 않게.
+  function renderBubbleMap(sectors, people, tip) {
     var minStar = Math.min.apply(null, people.map(function (p) { return p.star || 1; }));
     var maxStar = Math.max.apply(null, people.map(function (p) { return p.star; }));
     people.forEach(function (p) { p.r = radiusFor(p.star || minStar, minStar, maxStar); });
-    packCircles(people, W, H);
+
+    // 섹터별 클러스터 레이아웃(2단계 나선 패킹).
+    var layout = layoutClusters(sectors);
+    var clusters = layout.clusters;
+    var bb = layout.bbox;
+
+    // viewBox: bbox(섹터 라벨 공간 포함) + 여백.
+    var PAD = 24;
+    var vbX = bb.minX - PAD, vbY = bb.minY - PAD;
+    var vbW = (bb.maxX - bb.minX) + 2 * PAD;
+    var vbH = (bb.maxY - bb.minY) + 2 * PAD;
 
     var wrap = el("div", "rm-map-wrap");
     var s = svg("svg", {
       "class": "rm-map",
-      viewBox: (-PADV) + " " + (-PADV) + " " + (W + 2 * PADV) + " " + (H + 2 * PADV),
+      viewBox: vbX + " " + vbY + " " + vbW + " " + vbH,
       preserveAspectRatio: "xMidYMid meet",
       role: "img",
-      "aria-label": "주목 연구자 버블 맵"
+      "aria-label": "주목 연구자 섹터별 버블 맵"
     });
 
+    // 1) 클러스터 배경 헤일로(옅은 섹터 색 원)와 섹터 라벨.
+    var haloLayer = svg("g", { "class": "rm-halo-layer" });
+    clusters.forEach(function (c) {
+      haloLayer.appendChild(svg("circle", {
+        cx: c.x, cy: c.y, r: c.R + 10,
+        fill: c.color, "fill-opacity": "0.07",
+        stroke: c.color, "stroke-opacity": "0.28", "stroke-width": "1"
+      }));
+      // 섹터 라벨 — 클러스터 위쪽 가장자리 바깥.
+      var lab = svg("text", {
+        x: c.x, y: c.y - c.R - 12,
+        "class": "rm-cluster-label",
+        "text-anchor": "middle", fill: c.color
+      });
+      lab.textContent = c.label;
+      haloLayer.appendChild(lab);
+    });
+    s.appendChild(haloLayer);
+
+    // 2) 인물 원.
     people.forEach(function (p) {
       var a = svg("a", { href: p.url });
       a.setAttribute("tabindex", "0");
       var g = svg("g", { "class": "rm-bubble" });
 
-      var c = svg("circle", {
+      g.appendChild(svg("circle", {
         cx: p.x, cy: p.y, r: p.r,
-        fill: p.color, "fill-opacity": "0.82",
+        fill: p.color, "fill-opacity": "0.85",
         stroke: p.color, "stroke-width": "1.5"
-      });
-      g.appendChild(c);
-
+      }));
       g.appendChild(makeLabel(p));
 
-      // 인터랙션
       g.addEventListener("mouseenter", function (e) { showTip(tip, p, e); });
       g.addEventListener("mousemove", function (e) { moveTip(tip, e); });
       g.addEventListener("mouseleave", function () { tip.style.display = "none"; });
       a.addEventListener("focus", function () {
         var box = s.getBoundingClientRect();
-        var scale = box.width / W;
-        showTip(tip, p, { clientX: box.left + p.x * scale, clientY: box.top + p.y * scale });
+        var scale = box.width / vbW;
+        showTip(tip, p, {
+          clientX: box.left + (p.x - vbX) * scale,
+          clientY: box.top + (p.y - vbY) * scale
+        });
       });
       a.addEventListener("blur", function () { tip.style.display = "none"; });
 
@@ -288,13 +357,14 @@
         " · 주목도(★) " + data.threshold + " 이상 " + data.total + "명";
     }
 
-    var people = flatten(data);
+    var sectors = groupBySector(data);
+    var people = sectors.reduce(function (acc, s) { return acc.concat(s.people); }, []);
     var tip = buildTooltip();
 
     // 1) 레전드
     root.appendChild(renderLegend(data));
-    // 2) 버블 맵
-    root.appendChild(renderBubbleMap(data, people, tip));
+    // 2) 섹터별 클러스터 버블 맵
+    root.appendChild(renderBubbleMap(sectors, people, tip));
 
     // 3) 폴백 카드 목록 — 기본 접힘, 토글로 펼침.
     var details = el("details", "rm-list-toggle");

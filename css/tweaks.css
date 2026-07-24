@@ -794,6 +794,13 @@ table th[align="right"] {
     paint-order: stroke;
     letter-spacing: -0.01em;
 }
+.rm-halo-layer { pointer-events: none; }
+.rm-cluster-label {
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    opacity: 0.9;
+}
 
 /* 호버 툴팁 (body에 붙는 고정 요소) */
 .rm-tip {
