@@ -745,6 +745,105 @@ table th[align="right"] {
     color: var(--color-text-secondary, #999);
     line-height: 1.6;
 }
+
+/* --- 버블 맵 --- */
+.rm-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 1.1rem;
+    margin: 1.2rem 0 0.6rem;
+    font-size: 0.82rem;
+    color: var(--color-text-secondary, #999);
+}
+.rm-legend-item { display: inline-flex; align-items: center; }
+.rm-legend-dot {
+    display: inline-block;
+    width: 0.7rem; height: 0.7rem;
+    border-radius: 50%;
+    margin-right: 0.35rem;
+    flex: 0 0 auto;
+}
+.rm-map-wrap {
+    width: 100%;
+    margin: 0.2rem 0 0.6rem;
+    overflow-x: auto;
+}
+.rm-map {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 900px;
+    margin: 0 auto;
+    touch-action: pan-y;
+}
+.rm-bubble { cursor: pointer; transition: transform 0.12s ease; transform-box: fill-box; transform-origin: center; }
+.rm-bubble circle { transition: fill-opacity 0.12s ease, stroke-width 0.12s ease; }
+.rm-map a:hover .rm-bubble circle,
+.rm-map a:focus .rm-bubble circle {
+    fill-opacity: 1;
+    stroke-width: 2.5;
+}
+.rm-map a:hover .rm-bubble,
+.rm-map a:focus .rm-bubble { transform: scale(1.06); }
+.rm-map a { outline: none; }
+.rm-map a:focus .rm-bubble circle { stroke: var(--color-text, #fff); }
+.rm-bubble-label {
+    fill: #fff;
+    font-weight: 600;
+    pointer-events: none;
+    paint-order: stroke;
+    letter-spacing: -0.01em;
+}
+
+/* 호버 툴팁 (body에 붙는 고정 요소) */
+.rm-tip {
+    position: fixed;
+    z-index: 9999;
+    max-width: 260px;
+    padding: 0.55rem 0.7rem;
+    background: var(--color-bg, #1a1a1a);
+    border: 1px solid var(--color-accent, #444);
+    border-radius: 7px;
+    box-shadow: 0 6px 22px rgba(0, 0, 0, 0.35);
+    pointer-events: none;
+    font-size: 0.82rem;
+    line-height: 1.4;
+}
+.rm-tip-name { font-weight: 700; font-size: 0.92rem; margin-bottom: 0.15rem; }
+.rm-tip-org { color: var(--color-text-secondary, #aaa); display: flex; align-items: center; }
+.rm-tip-dot {
+    display: inline-block;
+    width: 0.6rem; height: 0.6rem;
+    border-radius: 50%;
+    margin-right: 0.3rem;
+    flex: 0 0 auto;
+}
+.rm-tip-tag { margin-top: 0.25rem; color: var(--color-text, #ddd); }
+.rm-tip-star { margin-top: 0.25rem; font-size: 0.76rem; color: var(--color-text-secondary, #999); }
+
+/* 폴백 목록 토글 */
+.rm-list-toggle {
+    margin-top: 1.6rem;
+    border-top: 1px solid var(--color-bg-secondary);
+    padding-top: 0.8rem;
+}
+.rm-list-toggle > summary {
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: var(--color-link);
+    list-style: revert;
+    user-select: none;
+}
+.rm-list-toggle > summary:hover { text-decoration: underline; }
+.rm-sector-dot {
+    display: inline-block;
+    width: 0.7rem; height: 0.7rem;
+    border-radius: 50%;
+    margin-right: 0.15rem;
+    flex: 0 0 auto;
+}
+
 @media (max-width: 480px) {
     .rm-grid { grid-template-columns: 1fr; }
+    .rm-map { min-width: 560px; }
 }

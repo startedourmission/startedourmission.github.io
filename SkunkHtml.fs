@@ -167,9 +167,9 @@
                 let urlFriendlyName = Url.toUrlFriendly folderName
                 $"""<li><a href="{urlFriendlyName}.html">{folderName}</a></li>""")
 
-        // Trends·인물 지도는 마크다운 글 목록이 아닌 별도 페이지라 nav-main에 직접 추가
+        // Trends·Maps(인물 지도)는 마크다운 글 목록이 아닌 별도 페이지라 nav-main에 직접 추가
         let trendsNavItem = """<li><a href="trends.html">Trends</a></li>"""
-        let roadmapNavItem = """<li><a href="roadmap.html">인물 지도</a></li>"""
+        let roadmapNavItem = """<li><a href="roadmap.html">Maps</a></li>"""
         let mainItems = gridNavItems @ [trendsNavItem; roadmapNavItem]
         let subItems = navFolderItems
 
@@ -730,21 +730,21 @@
         let content =
             """
         <section class="rm-section">
-            <h1 class="grid-title">인물 지도</h1>
-            <p class="rm-intro">사전에 정리한 인물 노트 가운데 주목도가 높은 연구자·창업자를 현재 소속(회사·연구기관)별로 묶었습니다. 이름을 누르면 해당 인물 노트로 이동합니다. 소속과 직함은 노트 본문 기준이며, 겸직인 경우 대표 소속 한 곳으로 배치했습니다.</p>
+            <h1 class="grid-title">Maps</h1>
+            <p class="rm-intro">사전에 정리한 인물 노트 가운데 주목도가 높은 연구자·창업자를 한 화면에 모았습니다. 원 하나가 인물이고, 원 크기는 주목도(★), 색은 섹터를 나타냅니다. 원에 커서를 올리면 소속·직함이 뜨고, 누르면 인물 노트로 이동합니다.</p>
             <p id="rm-asof" class="rm-asof"></p>
 
             <div id="rm-root">
-                <p class="rm-status">인물 지도를 불러오는 중…</p>
+                <p class="rm-status">Maps를 불러오는 중…</p>
             </div>
 
-            <p class="rm-note">주목도(★)는 사전 노트의 star 값으로, 편집자가 매긴 상대 지표입니다. 소속은 특정 시점 기준이며 이직·창업으로 바뀔 수 있습니다.</p>
+            <p class="rm-note">주목도(★)는 사전 노트의 star 값으로, 편집자가 매긴 상대 지표입니다. 소속과 직함은 노트 본문 기준이며, 겸직인 경우 대표 소속 한 곳으로 배치했습니다. 소속은 특정 시점 기준이라 이직·창업으로 바뀔 수 있습니다.</p>
         </section>
 
         <script src="scripts/people-roadmap.js" defer></script>
         """
 
-        let roadmapPageHtml = generateFinalHtml (headWithCanonical " - 인물 지도" "roadmap.html") updatedHeader footer content ""
+        let roadmapPageHtml = generateFinalHtml (headWithCanonical " - Maps" "roadmap.html") updatedHeader footer content ""
 
         printfn "Processing Roadmap page ->"
         Disk.writeFile (Path.Combine(Config.outputDir, "roadmap.html")) roadmapPageHtml

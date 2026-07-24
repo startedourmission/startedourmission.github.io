@@ -9,19 +9,13 @@
       "orgs": [
         {
           "org": "Google DeepMind",
-          "count": 4,
+          "count": 3,
           "members": [
             {
               "name": "데미스 하사비스",
               "url": "1b576e78.html",
               "tagline": "DeepMind CEO, 노벨 화학상",
               "star": 118
-            },
-            {
-              "name": "존 점퍼",
-              "url": "c6381c36.html",
-              "tagline": "AlphaFold2 책임자, 노벨 화학상",
-              "star": 92
             },
             {
               "name": "마르쿠스 후터",
@@ -69,12 +63,18 @@
         },
         {
           "org": "Anthropic",
-          "count": 2,
+          "count": 3,
           "members": [
             {
               "name": "다리오 아모데이",
               "url": "37762569.html",
               "tagline": "Anthropic CEO",
+              "star": 92
+            },
+            {
+              "name": "존 점퍼",
+              "url": "c6381c36.html",
+              "tagline": "AlphaFold2 책임자, 노벨 화학상, DeepMind서 이적",
               "star": 92
             },
             {
