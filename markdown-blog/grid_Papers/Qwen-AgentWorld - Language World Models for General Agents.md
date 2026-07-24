@@ -7,7 +7,7 @@ tags:
   - 머신러닝
 description: "Qwen 팀이 7개 에이전트 도메인을 단일 모델로 시뮬레이션하는 언어 세계 모델 Qwen-AgentWorld를 공개했습니다. 환경을 예측하는 세계 모델 훈련이 에이전트 강화학습의 새 축이 될 수 있음을 실험으로 보입니다."
 image: "![[qwen-agentworld-overview.png]]"
-buzz: 49
+buzz: 48
 ---
 
 > Qwen Team, "Qwen-AgentWorld: Language World Models for General Agents," arXiv:2606.24597, 2026.

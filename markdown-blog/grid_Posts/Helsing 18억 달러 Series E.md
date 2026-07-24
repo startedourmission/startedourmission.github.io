@@ -9,7 +9,7 @@ image: "![[helsing-series-e-thumb.png]]"
 
 > 이 글은 [Defense News](https://www.defensenews.com/global/europe/2026/07/13/helsing-raises-18-billion-in-europes-biggest-defense-startup-round/), [CNBC](https://www.cnbc.com/2026/07/13/helsing-fund-raise-defense-18-billion.html), [Tech.eu](https://tech.eu/2026/07/13/european-defence-ai-leader-helsing-secures-18b-series-e-at-18b-valuation/)의 2026년 7월 13일 보도를 바탕으로 작성했습니다.
 
-2026년 7월 13일, 뮌헨 기반 방산 AI 스타트업 Helsing이 Series E에서 18억 달러를 조달했습니다. 기업가치는 180억 달러. 유럽 방산 스타트업 사상 최대 규모의 단일 라운드입니다. 2025년 6월 기준 약 120억 유로였던 기업가치가 1년 만에 150% 올랐습니다.
+2026년 7월 13일, 뮌헨 기반 방산 AI 스타트업 Helsing이 Series E에서 18억 달러를 조달했습니다. 기업가치는 180억 달러. 유럽 방산 스타트업 사상 최대 규모의 단일 라운드입니다. 2025년 6월 약 120억 유로였던 기업가치가 1년 만에 180억 달러로 뛰었습니다.
 
 투자사는 Lightspeed Venture Partners, General Catalyst를 포함한 기존·신규 컨소시엄입니다. Helsing은 지분 구조를 "압도적으로 유럽 지배적(predominantly European-owned)"으로 유지했다고 강조했습니다. 이것 자체가 하나의 정치적 포지셔닝입니다.
 

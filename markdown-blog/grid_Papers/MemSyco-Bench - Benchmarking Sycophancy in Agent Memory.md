@@ -7,7 +7,7 @@ tags:
   - 벤치마크
 description: "에이전트 메모리 시스템이 저장된 사용자 기억에 무조건 동조하는 '메모리 아첨' 현상을 처음으로 체계화하고, 언제 기억을 무시·제약·활용해야 하는지 판단력을 평가하는 5-태스크 벤치마크 MemSyco-Bench를 제안합니다."
 image: "![[memsyco-bench-overview.png]]"
-buzz: 36
+buzz: 35
 ---
 
 > Zh. Xiang, Z. Chen, Y. Tang, Zh. Wei, R. Ning, Y. Lin, Q. Zhang, and J. Su, "MemSyco-Bench: Benchmarking Sycophancy in Agent Memory," arXiv:2607.01071, 2026.

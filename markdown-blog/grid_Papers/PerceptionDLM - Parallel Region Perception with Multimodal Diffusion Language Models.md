@@ -6,7 +6,7 @@ tags:
   - 확산모델
 description: "베이징대학교 MSALab과 ByteDance가 만든 멀티모달 확산 언어 모델. 자기회귀가 영역을 하나씩 순차로 캡셔닝하는 한계를 깨고, 한 번의 디노이징으로 여러 영역을 동시에 설명합니다. 구조적 어텐션 마스킹으로 영역 간 간섭을 막으면서 최대 3.5배 빠른 추론을 보입니다."
 image: "![[perceptiondlm-overview.png]]"
-buzz: 40
+buzz: 39
 ---
 > Y. Sun, Y. Wang, J. Li, Y. Tian, et al., "PerceptionDLM: Parallel Region Perception with Multimodal Diffusion Language Models," arXiv:2606.19534, 2026.
 

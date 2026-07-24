@@ -7,7 +7,7 @@ tags:
   - 멀티모달
 description: "비디오 생성 모델의 사전학습 표현을 활용해 깊이·법선·분할·포즈 등 다양한 비전 과제를 단일 피드포워드 모델로 처리하는 GenCeption을 제안한다. WAN 2.1 기반으로 V-JEPA·VideoMAE를 큰 폭으로 앞서며, 7x~500x 적은 데이터로 전문 모델에 준하는 성능을 냈다."
 image: "![[genception-overview.png]]"
-buzz: 48
+buzz: 49
 ---
 
 > L. Wang, C. Zhang, R. Kabra, J. Uijlings, S. Waslander, A. Zisserman, J. Carreira, K. He, M. Andriluka, E. G. Bazavan, A. Zanfir, and C. Sminchisescu, "Video Generation Models are General-Purpose Vision Learners," arXiv:2607.09024, 2026.
