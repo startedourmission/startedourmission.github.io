@@ -6,6 +6,7 @@ tags:
   - 강화학습
 description: "검증가능 보상 강화학습을 큰 모델에 매번 다시 돌리는 비용을 없애려는 연구입니다. 작은 모델에서 싸게 RL을 돌린 뒤 정책이 바뀐 방향만 뽑아 큰 학생 모델에 이식합니다. Qwen3-1.7B의 AIME 2024 정확도를 48.3%에서 58.3%로 올렸고, 8장짜리 A100에서 네 시간이면 끝납니다."
 image: "![[weak-to-strong-thumb.png]]"
+buzz: 102
 ---
 
 > S. Feng, H. Zhou, W.-Y. Ma, Y.-Q. Zhang, et al., "Weak-to-Strong Generalization via Direct On-Policy Distillation," arXiv:2607.05394, 2026.

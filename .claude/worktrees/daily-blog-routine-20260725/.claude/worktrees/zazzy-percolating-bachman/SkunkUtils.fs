@@ -1,0 +1,602 @@
+﻿module SkunkUtils
+
+type Post = {
+    Title: string
+    Url: string
+    SourcePath: string
+    ImageUrl: string option
+    Category: string
+    SubCategory: string option
+    Date: System.DateTime option
+    Summary: string option
+    Description: string option
+    Tags: string list
+    Buzz: int option
+}
+
+type CanvasNode = {
+    Id: string
+    Type: string
+    Text: string option
+    File: string option
+    X: int
+    Y: int
+    Width: int
+    Height: int
+}
+
+type CanvasEdge = {
+    Id: string
+    FromNode: string
+    ToNode: string
+    FromSide: string option
+    ToSide: string option
+}
+
+type Canvas = {
+    Title: string
+    Url: string
+    Nodes: CanvasNode list
+    Edges: CanvasEdge list
+}
+
+module Config =
+    open System.IO
+
+    let sourceDir = __SOURCE_DIRECTORY__
+
+    let markdownDir = Path.Combine(sourceDir, "markdown-blog")
+    let htmlDir = Path.Combine(sourceDir, "html")
+    let outputDir = Path.Combine(sourceDir, "skunk-html-output")
+
+    let cssDir = Path.Combine(sourceDir, "css")
+    let outputCssDir = Path.Combine(outputDir, "css")
+
+    let fontsDir = Path.Combine(sourceDir, "fonts")
+    let outputFontsDir = Path.Combine(outputDir, "fonts")
+
+    let imagesDir = Path.Combine(markdownDir, "_assets")
+    let outputImagesDir = Path.Combine(outputDir, "_assets")
+
+    let assetsDir = Path.Combine(sourceDir, "assets")
+    let outputAssetsDir = Path.Combine(outputDir, "assets")
+
+    let scriptsDir = Path.Combine(sourceDir, "scripts")
+    let outputScriptsDir = Path.Combine(outputDir, "scripts")
+
+    let frontPageMarkdownFileName = "index.md"
+    
+    // 인덱스 페이지에 표시하지 않을 특수 파일들
+    // moc.md / sub_index.md는 MOC 카테고리 페이지로 따로 렌더하므로 일반 글 목록·개별 페이지에서 제외
+    let specialFiles = [frontPageMarkdownFileName; "links.md"; "moc.md"; "sub_index.md"]
+
+    // MOC 폴더의 랜딩 페이지 파일명, 각 하위 폴더의 소목차 파일명
+    let mocFileName = "moc.md"
+    let subIndexFileName = "sub_index.md"
+
+    // 그리드 섹션 순서 설정
+    let gridSectionOrder = ["Posts"; "Papers"; "BookReview"; "Portfolio"]
+
+    // 내비게이션 섹션(nav-sub) 순서 설정
+    let navSectionOrder = ["Mastermind"; "Lectures Translate"; "Course"; "Dictionary"]
+
+    // RSS 피드 정보
+    let blogTitle = "startedourmission"
+    let blogDescription = "Papers, Books, and Projects that started our mission."
+    let blogBaseUrl = "https://startedourmission.github.io" // 실제 배포된 블로그의 URL로 변경해야 합니다.
+
+module Disk =
+    open System.IO
+
+    let readFile (path: string) =
+        path
+        |> File.Exists
+        |> function
+            | true -> File.ReadAllText(path)
+            | false -> ""
+
+    let writeFile (path: string) (content: string) =
+        File.WriteAllText(path, content)
+        printfn $"Generated: {Path.GetFileName path} -> {path}\n"
+
+    let copyFolderToOutput (sourceFolder: string) (destinationFolder: string) =
+        if not (Directory.Exists(sourceFolder)) then
+            printfn $"Source folder does not exist: {sourceFolder}"
+        else
+            if not (Directory.Exists(destinationFolder)) then
+                Directory.CreateDirectory(destinationFolder)
+                |> ignore
+
+            Directory.GetFiles(sourceFolder)
+            |> Array.iter (fun file ->
+                let fileName = Path.GetFileName(file)
+                let destFile = Path.Combine(destinationFolder, fileName)
+                printfn $"Copying: {fileName} -> {destFile}"
+                File.Copy(file, destFile, true))
+
+module Url =
+    open System.Text.RegularExpressions
+    open System.Security.Cryptography
+    open System.Text
+
+    let toUrlFriendly (input: string) =
+        input.ToLowerInvariant()
+        |> fun text -> Regex.Replace(text, @"[^\w\s]", "")
+        |> fun text -> Regex.Replace(text, @"\s+", "-")
+
+    let toHashId (input: string) =
+        use md5 = MD5.Create()
+        let bytes = Encoding.UTF8.GetBytes(input)
+        let hash = md5.ComputeHash(bytes)
+        hash |> Array.map (fun b -> b.ToString("x2")) |> String.concat "" |> fun s -> s.[..7]
+
+module Obsidian =
+    open System.Text.RegularExpressions
+    open System.IO
+
+    // 파일 경로에서 해당 파일의 _assets 접두사를 결정
+    // 루트 파일 → "_assets/", 하위 폴더 파일 → "{folder-url-friendly}/_assets/"
+    let getAssetsPrefix (markdownFilePath: string) =
+        let dir = Path.GetDirectoryName(markdownFilePath)
+        let parentDir = Path.GetDirectoryName(dir)
+        // markdownDir 바로 아래에 있으면 루트, 하위 폴더에 있으면 폴더명 사용
+        let folderName = Path.GetFileName(dir)
+        if folderName = Path.GetFileName(Config.markdownDir) then
+            "_assets/"
+        else
+            let urlFriendlyFolder = Url.toUrlFriendly folderName
+            $"{urlFriendlyFolder}/_assets/"
+
+    // Obsidian 링크를 HTML 링크로 변환하는 함수
+    let convertWikiLinks (markdownFilePath: string) (markdownContent: string) =
+        let assetsPrefix = getAssetsPrefix markdownFilePath
+        let wikiLinkPattern = @"(!?)\[\[(.*?)\]\]" // 이미지 링크(!)와 일반 링크를 모두 처리
+
+        let regex = Regex(wikiLinkPattern)
+
+        regex.Replace(markdownContent, fun m ->
+            let isImage = m.Groups.[1].Value = "!"
+            let linkContent = m.Groups.[2].Value
+
+            if isImage then
+                // 이미지 링크 처리 ![[image.png]] or ![[image.png|505x324]]
+                let imageName =
+                    if linkContent.Contains("|") then
+                        linkContent.Split('|').[0].Trim()
+                    else
+                        linkContent
+                // URL 인코딩 처리 (공백 등)
+                let encodedUrl = assetsPrefix + System.Uri.EscapeDataString(imageName)
+                $"<img src=\"{encodedUrl}\" alt=\"{imageName}\" class=\"embedded-image\" style=\"max-width: 600px; height: auto; display: block; margin: 1rem auto;\">"
+            else
+                // 페이지 링크 처리 [[Page Name]] or [[Page Name|Display Text]]
+                let linkText = linkContent
+                if linkText.Contains("|") then
+                    let parts = linkText.Split('|')
+                    let target = parts.[0].Trim()
+                    let displayText = parts.[1].Trim()
+                    let hashTarget = Url.toHashId target
+                    $"[{displayText}]({hashTarget}.html)"
+                else
+                    let hashTarget = Url.toHashId linkText
+                    $"[{linkText}]({hashTarget}.html)"
+        )
+        
+    // YAML 프론트매터에서 태그 추출
+    let extractTags (markdownContent: string) =
+        let frontMatterPattern = @"^\s*---\s*\n([\s\S]*?)\n\s*---\s*\n"
+        let frontMatterMatch = Regex.Match(markdownContent, frontMatterPattern)
+        
+        if frontMatterMatch.Success then
+            let yamlContent = frontMatterMatch.Groups.[1].Value
+            let tagPattern = @"tags:\s*\n((?:\s*-\s*[^\n]+\n?)*)"
+            let tagMatch = Regex.Match(yamlContent, tagPattern)
+            
+            if tagMatch.Success then
+                let tagLines = tagMatch.Groups.[1].Value
+                let individualTagPattern = @"-\s*([^\n]+)"
+                let tags = Regex.Matches(tagLines, individualTagPattern)
+                           |> Seq.cast<Match>
+                           |> Seq.map (fun m -> m.Groups.[1].Value.Trim())
+                           |> Seq.toList
+                tags
+            else
+                []
+        else
+            []
+
+    // 본문에서 페이지 위키링크 타겟 파일명만 추출 (이미지 ![[...]] 제외, 코드블록/인라인코드 제외)
+    let extractPageWikiLinks (markdownContent: string) =
+        // 프론트매터 제거
+        let frontMatterPattern = @"^\s*---\s*\n[\s\S]*?\n\s*---\s*\n"
+        let body = Regex.Replace(markdownContent, frontMatterPattern, "")
+        // 코드블록(```...```)과 인라인 코드(`...`) 제거
+        let withoutFences = Regex.Replace(body, @"```[\s\S]*?```", "")
+        let withoutInline = Regex.Replace(withoutFences, @"`[^`\n]*`", "")
+        // 이미지 위키링크(![[...]])는 매칭에서 제외하기 위해 선행 '!' 제외
+        let pattern = @"(?<!!)\[\[([^\]]+)\]\]"
+        Regex.Matches(withoutInline, pattern)
+        |> Seq.cast<Match>
+        |> Seq.map (fun m ->
+            let raw = m.Groups.[1].Value
+            // 파이프 표시 분리, 헤더앵커(#) 제거
+            let target =
+                if raw.Contains("|") then raw.Split('|').[0]
+                else raw
+            let cleaned =
+                if target.Contains("#") then target.Split('#').[0]
+                else target
+            cleaned.Trim())
+        |> Seq.filter (fun s -> s.Length > 0)
+        |> Seq.distinct
+        |> Seq.toList
+
+    // YAML 프론트매터에서 이미지 URL 추출
+    let extractImageUrl (markdownFilePath: string) (markdownContent: string) =
+        let assetsPrefix = getAssetsPrefix markdownFilePath
+        let frontMatterPattern = @"^\s*---\s*\n([\s\S]*?)\n\s*---\s*\n"
+        let frontMatterMatch = Regex.Match(markdownContent, frontMatterPattern)
+
+        if frontMatterMatch.Success then
+            let yamlContent = frontMatterMatch.Groups.[1].Value
+            let imagePattern = @"(?:^|\n)image:\s*([^\n\r]+)"
+            let imageMatch = Regex.Match(yamlContent, imagePattern)
+
+            if imageMatch.Success then
+                let imageValue = imageMatch.Groups.[1].Value.Trim()
+
+                // 옵시디언 이미지 링크 형식 ![[image.png]] 확인
+                let wikiImagePattern = @"!\[\[(.*?)\]\]"
+                let wikiMatch = Regex.Match(imageValue, wikiImagePattern)
+
+                if wikiMatch.Success then
+                    let imageName = wikiMatch.Groups.[1].Value.Trim()
+                    if System.String.IsNullOrEmpty(imageName) then
+                        None
+                    else
+                        Some (assetsPrefix + imageName)
+                else
+                    // 따옴표 제거
+                    let cleanValue = imageValue.Trim('"').Trim('\'')
+                    // 일반 경로에서 _assets/ 접두사가 있으면 폴더별 prefix로 교체
+                    if cleanValue.StartsWith("_assets/") then
+                        let imageName = cleanValue.Substring(8)
+                        Some (assetsPrefix + imageName)
+                    // 외부 URL은 그대로
+                    elif cleanValue.StartsWith("http://") || cleanValue.StartsWith("https://") then
+                        Some cleanValue
+                    // bare 파일명 (확장자가 이미지) → assetsPrefix 붙이기
+                    elif cleanValue.EndsWith(".png") || cleanValue.EndsWith(".jpg") || cleanValue.EndsWith(".jpeg") || cleanValue.EndsWith(".gif") || cleanValue.EndsWith(".webp") || cleanValue.EndsWith(".svg") then
+                        Some (assetsPrefix + cleanValue)
+                    else
+                        Some cleanValue
+            else
+                None
+        else
+            None
+
+    
+    // Obsidian 프로퍼티 영역 제거 (---로 둘러싸인 YAML 프론트매터)
+    let removeYamlFrontMatter (markdownContent: string) =
+        let frontMatterPattern = @"^\s*---\s*\n[\s\S]*?\n\s*---\s*\n"
+        Regex.Replace(markdownContent, frontMatterPattern, "")
+
+    // YAML 프론트매터에서 날짜 추출
+    let extractDate (markdownContent: string) (fileName: string) =
+        // 먼저 YAML 프론트매터에서 날짜를 찾아보기
+        let frontMatterPattern = @"^\s*---\s*\n([\s\S]*?)\n\s*---\s*\n"
+        let frontMatterMatch = Regex.Match(markdownContent, frontMatterPattern)
+        
+        if frontMatterMatch.Success then
+            let yamlContent = frontMatterMatch.Groups.[1].Value
+            let datePattern = @"date:\s*(.+)"
+            let dateMatch = Regex.Match(yamlContent, datePattern)
+            
+            if dateMatch.Success then
+                let dateStr = dateMatch.Groups.[1].Value.Trim()
+                match System.DateTime.TryParse(dateStr) with
+                | true, date -> Some date
+                | false, _ -> None
+            else
+                None
+        else
+            // YAML 프론트매터에 날짜가 없으면 파일명에서 추출 시도
+            let fileNameDatePattern = @"(\d{6})_"  // 250103_ 형태
+            let dateMatch = Regex.Match(fileName, fileNameDatePattern)
+            
+            if dateMatch.Success then
+                let dateStr = dateMatch.Groups.[1].Value
+                try
+                    let year = 2000 + int (dateStr.Substring(0, 2))
+                    let month = int (dateStr.Substring(2, 2))
+                    let day = int (dateStr.Substring(4, 2))
+                    Some (System.DateTime(year, month, day))
+                with
+                | _ -> None
+            else
+                None
+    
+    // YAML 프론트매터에서 description 추출 (RSS 전용)
+    let extractDescription (markdownContent: string) =
+        let frontMatterPattern = @"^\s*---\s*\n([\s\S]*?)\n\s*---\s*\n"
+        let frontMatterMatch = Regex.Match(markdownContent, frontMatterPattern)
+        
+        if frontMatterMatch.Success then
+            let yamlContent = frontMatterMatch.Groups.[1].Value
+            let descriptionPattern = @"description:\s*""([^""]*)""|description:\s*([^\n]+)"
+            let descriptionMatch = Regex.Match(yamlContent, descriptionPattern)
+            
+            if descriptionMatch.Success then
+                // 따옴표로 둘러싸인 경우 (Group 1) 또는 일반 텍스트 (Group 2)
+                let description = 
+                    if descriptionMatch.Groups.[1].Success then
+                        descriptionMatch.Groups.[1].Value.Trim()
+                    else
+                        descriptionMatch.Groups.[2].Value.Trim()
+                Some description
+            else
+                None
+        else
+            None
+    
+    // YAML 프론트매터에서 buzz 또는 star 숫자 필드 추출
+    let extractBuzz (markdownContent: string) =
+        let frontMatterPattern = @"^\s*---\s*\n([\s\S]*?)\n\s*---\s*\n"
+        let frontMatterMatch = Regex.Match(markdownContent, frontMatterPattern)
+        if frontMatterMatch.Success then
+            let yamlContent = frontMatterMatch.Groups.[1].Value
+            // buzz: 또는 star: 중 있는 것 사용
+            let pattern = @"(?:^|\n)(?:buzz|star):\s*(\d+)"
+            let m = Regex.Match(yamlContent, pattern)
+            if m.Success then
+                match System.Int32.TryParse(m.Groups.[1].Value.Trim()) with
+                | true, n -> Some n
+                | _ -> None
+            else None
+        else None
+
+    // 마크다운 내용에서 첫 번째 문단을 요약으로 추출
+    let extractSummary (markdownContent: string) =
+        // YAML 프론트매터 제거
+        let contentWithoutFrontMatter = removeYamlFrontMatter markdownContent
+        
+        // 첫 번째 헤딩 이후 첫 번째 문단 찾기
+        let lines = contentWithoutFrontMatter.Split([|'\n'|])
+        let mutable summary = ""
+        let mutable foundFirstHeading = false
+        let mutable foundSummary = false
+        
+        for line in lines do
+            let trimmedLine = (line: string).Trim()
+            if not foundSummary then
+                if trimmedLine.StartsWith("#") then
+                    foundFirstHeading <- true
+                elif foundFirstHeading && trimmedLine.Length > 0 && not (trimmedLine.StartsWith("#")) then
+                    summary <- trimmedLine
+                    foundSummary <- true
+                elif not foundFirstHeading && trimmedLine.Length > 0 && not (trimmedLine.StartsWith("#")) then
+                    summary <- trimmedLine
+                    foundSummary <- true
+        
+        if summary.Length > 150 then
+            Some (summary.Substring(0, 150) + "...")
+        elif summary.Length > 0 then
+            Some summary
+        else
+            None
+
+module CanvasParser =
+    open System.Text.RegularExpressions
+    open System.IO
+    
+    // JSON에서 문자열 값 추출 (개선된 파서)
+    let extractStringValue (json: string) (key: string) =
+        let pattern = $@"""{key}""\s*:\s*""((?:[^""\\]|\\.)*)"""
+        let match_ = Regex.Match(json, pattern)
+        if match_.Success then 
+            let value = match_.Groups.[1].Value
+            // JSON 이스케이프 문자 복원
+            let unescapedValue = 
+                value
+                    .Replace("\\\"", "\"")
+                    .Replace("\\\\", "\\")
+                    .Replace("\\n", "\n")
+                    .Replace("\\r", "\r")
+                    .Replace("\\t", "\t")
+            Some unescapedValue
+        else None
+    
+    // JSON에서 정수 값 추출
+    let extractIntValue (json: string) (key: string) =
+        let pattern = $@"""{key}""\s*:\s*(-?\d+)"
+        let match_ = Regex.Match(json, pattern)
+        if match_.Success then 
+            match System.Int32.TryParse(match_.Groups.[1].Value) with
+            | true, value -> Some value
+            | false, _ -> None
+        else None
+    
+    // 노드 파싱
+    let parseNode (nodeJson: string) =
+        let id = extractStringValue nodeJson "id" |> Option.defaultValue ""
+        let nodeType = extractStringValue nodeJson "type" |> Option.defaultValue "text"
+        let text = extractStringValue nodeJson "text"
+        let file = extractStringValue nodeJson "file"
+        let x = extractIntValue nodeJson "x" |> Option.defaultValue 0
+        let y = extractIntValue nodeJson "y" |> Option.defaultValue 0
+        let width = extractIntValue nodeJson "width" |> Option.defaultValue 250
+        let height = extractIntValue nodeJson "height" |> Option.defaultValue 60
+        
+        {
+            Id = id
+            Type = nodeType
+            Text = text
+            File = file
+            X = x
+            Y = y
+            Width = width
+            Height = height
+        }
+    
+    // 엣지 파싱
+    let parseEdge (edgeJson: string) =
+        let id = extractStringValue edgeJson "id" |> Option.defaultValue ""
+        let fromNode = extractStringValue edgeJson "fromNode" |> Option.defaultValue ""
+        let toNode = extractStringValue edgeJson "toNode" |> Option.defaultValue ""
+        let fromSide = extractStringValue edgeJson "fromSide"
+        let toSide = extractStringValue edgeJson "toSide"
+        
+        {
+            Id = id
+            FromNode = fromNode
+            ToNode = toNode
+            FromSide = fromSide
+            ToSide = toSide
+        }
+    
+    // JSON 배열 분할 (개선된 파서)
+    let splitJsonArray (jsonArray: string) =
+        let mutable level = 0
+        let mutable start = 0
+        let mutable results = []
+        let mutable inString = false
+        let mutable escaped = false
+        let chars = jsonArray.ToCharArray()
+        
+        for i = 0 to chars.Length - 1 do
+            let char = chars.[i]
+            
+            if inString then
+                if escaped then
+                    escaped <- false
+                elif char = '\\' then
+                    escaped <- true
+                elif char = '"' then
+                    inString <- false
+            else
+                match char with
+                | '"' -> inString <- true
+                | '{' -> level <- level + 1
+                | '}' -> 
+                    level <- level - 1
+                    if level = 0 then
+                        let item = jsonArray.Substring(start, i - start + 1).Trim()
+                        if item.Length > 0 then
+                            results <- item :: results
+                        start <- i + 1
+                | ',' when level = 0 -> 
+                    start <- i + 1
+                | _ -> ()
+        
+        List.rev results
+    
+    // Canvas 파일 파싱 (개선된 JSON 파서)
+    let parseCanvas (filePath: string) =
+        let fileName = Path.GetFileNameWithoutExtension(filePath)
+        let urlFriendlyName = Url.toUrlFriendly fileName
+        let content = File.ReadAllText(filePath)
+        
+        try
+            // System.Text.Json을 사용한 파싱
+            let jsonDocument = System.Text.Json.JsonDocument.Parse(content)
+            let root = jsonDocument.RootElement
+            
+            // nodes 배열 파싱
+            let nodes = 
+                let mutable prop = Unchecked.defaultof<System.Text.Json.JsonElement>
+                if root.TryGetProperty("nodes", &prop) then
+                    let nodesArray = root.GetProperty("nodes")
+                    nodesArray.EnumerateArray()
+                    |> Seq.map (fun nodeElement ->
+                        let getId () = 
+                            let mutable idProp = Unchecked.defaultof<System.Text.Json.JsonElement>
+                            if nodeElement.TryGetProperty("id", &idProp) then
+                                nodeElement.GetProperty("id").GetString()
+                            else ""
+                        let getType () = 
+                            let mutable typeProp = Unchecked.defaultof<System.Text.Json.JsonElement>
+                            if nodeElement.TryGetProperty("type", &typeProp) then
+                                nodeElement.GetProperty("type").GetString()
+                            else "text"
+                        let getText () = 
+                            let mutable textProp = Unchecked.defaultof<System.Text.Json.JsonElement>
+                            if nodeElement.TryGetProperty("text", &textProp) then
+                                Some (nodeElement.GetProperty("text").GetString())
+                            else None
+                        let getFile () = 
+                            let mutable fileProp = Unchecked.defaultof<System.Text.Json.JsonElement>
+                            if nodeElement.TryGetProperty("file", &fileProp) then
+                                Some (nodeElement.GetProperty("file").GetString())
+                            else None
+                        let getInt (prop: string) defaultValue =
+                            let mutable intProp = Unchecked.defaultof<System.Text.Json.JsonElement>
+                            if nodeElement.TryGetProperty(prop, &intProp) then
+                                nodeElement.GetProperty(prop: string).GetInt32()
+                            else defaultValue
+                        
+                        {
+                            Id = getId()
+                            Type = getType()
+                            Text = getText()
+                            File = getFile()
+                            X = getInt "x" 0
+                            Y = getInt "y" 0
+                            Width = getInt "width" 250
+                            Height = getInt "height" 60
+                        })
+                    |> Seq.toList
+                else []
+            
+            // edges 배열 파싱
+            let edges = 
+                let mutable edgesProp = Unchecked.defaultof<System.Text.Json.JsonElement>
+                if root.TryGetProperty("edges", &edgesProp) then
+                    let edgesArray = root.GetProperty("edges")
+                    edgesArray.EnumerateArray()
+                    |> Seq.map (fun edgeElement ->
+                        let getId () = 
+                            let mutable idProp = Unchecked.defaultof<System.Text.Json.JsonElement>
+                            if edgeElement.TryGetProperty("id", &idProp) then
+                                edgeElement.GetProperty("id").GetString()
+                            else ""
+                        let getFromNode () = 
+                            let mutable fromProp = Unchecked.defaultof<System.Text.Json.JsonElement>
+                            if edgeElement.TryGetProperty("fromNode", &fromProp) then
+                                edgeElement.GetProperty("fromNode").GetString()
+                            else ""
+                        let getToNode () = 
+                            let mutable toProp = Unchecked.defaultof<System.Text.Json.JsonElement>
+                            if edgeElement.TryGetProperty("toNode", &toProp) then
+                                edgeElement.GetProperty("toNode").GetString()
+                            else ""
+                        let getSide (prop: string) =
+                            let mutable sideProp = Unchecked.defaultof<System.Text.Json.JsonElement>
+                            if edgeElement.TryGetProperty(prop, &sideProp) then
+                                Some (edgeElement.GetProperty(prop: string).GetString())
+                            else None
+                        
+                        {
+                            Id = getId()
+                            FromNode = getFromNode()
+                            ToNode = getToNode()
+                            FromSide = getSide "fromSide"
+                            ToSide = getSide "toSide"
+                        })
+                    |> Seq.toList
+                else []
+            
+            {
+                Title = fileName
+                Url = urlFriendlyName + ".html"
+                Nodes = nodes
+                Edges = edges
+            }
+        with
+        | ex ->
+            printfn $"Error parsing canvas file {fileName}: {ex.Message}"
+            {
+                Title = fileName
+                Url = urlFriendlyName + ".html"
+                Nodes = []
+                Edges = []
+            }

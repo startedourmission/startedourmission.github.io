@@ -2,6 +2,7 @@
 date: 2026-07-18
 tags:
   - 정보
+  - Headliner
   - LLM
 description: "Moonshot AI가 7월 16일 공개한 2.8조 파라미터 MoE 모델 Kimi K3를 분석합니다. 16개 활성 전문가 구조, 1M 컨텍스트, 오픈웨이트 공개 계획, 그리고 DeepSeek 이후 중국 오픈웨이트 AI의 현재 위치를 짚어봅니다."
 image: "![[kimi-k3-thumb.png]]"

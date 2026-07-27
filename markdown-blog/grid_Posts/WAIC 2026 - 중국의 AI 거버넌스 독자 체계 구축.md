@@ -2,6 +2,7 @@
 date: 2026-07-18
 tags:
   - 잡담
+  - Headliner
   - AI평가
 description: "중국이 7월 17일 개막한 WAIC 2026에서 29개국이 서명한 세계인공지능협력기구(WAICO)를 출범시켰습니다. AI 거버넌스의 무게중심을 서방 중심 틀에서 끌어오려는 전략적 움직임입니다."
 image: "![[waic-2026-thumb.png]]"

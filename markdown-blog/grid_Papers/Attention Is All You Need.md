@@ -10,7 +10,7 @@ description: "'Attention Is All You Need'는 RNN을 버리고 셀프 어텐션�
 image: "![[transformer_1.png]]"
 arxiv: 1706.03762
 citations: 181100
-buzz: 539
+buzz: 537
 ---
 
 > A. Vaswani, N. Shazeer, N. Parmar, J. Uszkoreit, L. Jones, A. N. Gomez, L. Kaiser, and I. Polosukhin, "Attention Is All You Need," presented at the 31st Conference on Neural Information Processing Systems (NIPS 2017), Long Beach, CA, USA, 2017.

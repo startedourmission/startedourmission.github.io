@@ -2,6 +2,7 @@
 date: 2026-07-16
 tags:
   - 잡담
+  - Headliner
   - LLM
 description: "삼성 헬스가 AI 학습용 데이터 사용에 동의하지 않으면 건강 데이터를 삭제하겠다는 팝업을 띄워 논란이 됐습니다. 삼성이 해명을 냈지만, 이 사태는 헬스케어 데이터와 AI 학습 동의의 경계가 얼마나 불명확한지를 잘 보여줍니다."
 image: "![[samsung-health-ai-consent-thumb.png]]"
