@@ -409,6 +409,3 @@ FodyWeavers.xsd
 
 # Skunk HTML output
 [Ss]kunk-html-output/
-
-# Claude Code 격리 worktree (저장소 안에 중첩 사본이 커밋되는 것 방지)
-.claude/worktrees/
