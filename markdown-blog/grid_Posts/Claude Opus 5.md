@@ -2,6 +2,7 @@
 date: 2026-07-28
 tags:
   - 정보
+  - Headliner
   - LLM
   - AI평가
 description: "Anthropic이 두 달 새 네 번째 Claude 5 계열 모델을 내놓았습니다. 단가는 Opus 4.8과 같게 두고, low/medium/high 노력 토글로 요청마다 계산량을 사용자가 정하게 했습니다."

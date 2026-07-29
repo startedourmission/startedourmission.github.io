@@ -2,6 +2,7 @@
 date: 2026-07-28
 tags:
   - 정보
+  - Headliner
   - GPU
   - 반도체
 description: "NVIDIA가 SB Energy가 짓는 10GW 오하이오 캠퍼스의 리스와 건설 금융에 약 2,500억 달러 보증을 검토 중입니다. 칩 조달 금융 3,500억 달러는 별도 협상입니다."

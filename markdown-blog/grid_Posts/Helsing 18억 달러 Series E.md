@@ -2,7 +2,6 @@
 date: 2026-07-18
 tags:
   - 정보
-  - Headliner
   - AI평가
 description: "유럽 최대 방산 AI 스타트업 Helsing이 Series E로 18억 달러를 조달하며 기업가치 180억 달러를 달성했습니다. 우크라이나 전쟁 이후 유럽 재무장 흐름이 만들어낸 투자 규모입니다."
 image: "![[helsing-series-e-thumb.png]]"

@@ -2,6 +2,7 @@
 date: 2026-07-28
 tags:
   - 논문
+  - Headliner
   - 영상처리
   - 확산모델
   - GPU

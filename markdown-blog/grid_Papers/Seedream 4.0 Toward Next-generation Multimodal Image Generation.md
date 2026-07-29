@@ -2,7 +2,6 @@
 date: 2025-12-04
 tags:
   - 논문
-  - Headliner
   - LLM
   - 영상처리
   - 멀티모달
