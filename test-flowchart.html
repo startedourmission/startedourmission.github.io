@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architecture Flowchart Test</title>
+    <style>
+        :root {
+            --color-bg: #fff;
+            --color-text: #000;
+            --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+        body {
+            font-family: var(--font-family);
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: var(--color-bg);
+            color: var(--color-text);
+        }
+        h1 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+        h2 { font-size: 1.2rem; color: #555; margin-top: 2rem; }
+        p { line-height: 1.6; color: #444; }
+        .demo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .demo-item {
+            border: 1px solid #eee;
+            border-radius: 8px;
+            padding: 1rem;
+        }
+        .demo-item h3 {
+            font-size: 0.9rem;
+            color: #888;
+            margin: 0 0 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Interactive Architecture Flowchart — 프로토타입</h1>
+    <p>각 레이어에 마우스를 올리면 상세 정보가 표시됩니다. 파란 점이 데이터 흐름을 나타냅니다.</p>
+
+    <h2>AlexNet (2012)</h2>
+    <div class="arch-flow" data-arch="alexnet"></div>
+
+    <h2>전체 프리셋 목록</h2>
+    <div class="demo-grid">
+        <div class="demo-item">
+            <h3>Boltzmann Machine (1985)</h3>
+            <div class="arch-flow" data-arch="boltzmann"></div>
+        </div>
+        <div class="demo-item">
+            <h3>Deep Belief Net (2006)</h3>
+            <div class="arch-flow" data-arch="dbn"></div>
+        </div>
+        <div class="demo-item">
+            <h3>Autoencoder (2006)</h3>
+            <div class="arch-flow" data-arch="autoencoder"></div>
+        </div>
+        <div class="demo-item">
+            <h3>Contrastive Divergence (2002)</h3>
+            <div class="arch-flow" data-arch="contrastive_divergence"></div>
+        </div>
+        <div class="demo-item">
+            <h3>Helmholtz Machine (1995)</h3>
+            <div class="arch-flow" data-arch="helmholtz"></div>
+        </div>
+        <div class="demo-item">
+            <h3>Wake-Sleep (1995)</h3>
+            <div class="arch-flow" data-arch="wakesleep"></div>
+        </div>
+        <div class="demo-item">
+            <h3>Dropout (2014)</h3>
+            <div class="arch-flow" data-arch="dropout"></div>
+        </div>
+        <div class="demo-item">
+            <h3>Knowledge Distillation (2015)</h3>
+            <div class="arch-flow" data-arch="distillation"></div>
+        </div>
+        <div class="demo-item">
+            <h3>t-SNE (2008)</h3>
+            <div class="arch-flow" data-arch="tsne"></div>
+        </div>
+        <div class="demo-item">
+            <h3>Capsule Network (2017)</h3>
+            <div class="arch-flow" data-arch="capsule"></div>
+        </div>
+        <div class="demo-item">
+            <h3>SimCLR (2020)</h3>
+            <div class="arch-flow" data-arch="simclr"></div>
+        </div>
+        <div class="demo-item">
+            <h3>BYOL (2020)</h3>
+            <div class="arch-flow" data-arch="byol"></div>
+        </div>
+        <div class="demo-item">
+            <h3>Forward-Forward (2022)</h3>
+            <div class="arch-flow" data-arch="forwardforward"></div>
+        </div>
+        <div class="demo-item">
+            <h3>Layer Normalization (2016)</h3>
+            <div class="arch-flow" data-arch="layernorm"></div>
+        </div>
+        <div class="demo-item">
+            <h3>ReLU RBM (2010)</h3>
+            <div class="arch-flow" data-arch="rbm_relu"></div>
+        </div>
+        <div class="demo-item">
+            <h3>Transforming Auto-encoders (2011)</h3>
+            <div class="arch-flow" data-arch="transformer_ae"></div>
+        </div>
+    </div>
+
+    <script src="scripts/arch-flowchart.js"></script>
+</body>
+</html>
