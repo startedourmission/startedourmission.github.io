@@ -729,6 +729,12 @@ table th[align="right"] {
     line-height: 1.45;
     margin-top: 0.1rem;
 }
+.rm-also {
+    display: block;
+    font-size: 0.74rem;
+    color: var(--color-text-secondary, #888);
+    margin-top: 0.05rem;
+}
 .rm-star {
     font-size: 0.72rem;
     color: var(--color-text-secondary, #aaa);
@@ -795,11 +801,19 @@ table th[align="right"] {
     letter-spacing: -0.01em;
 }
 .rm-halo-layer { pointer-events: none; }
-.rm-cluster-label {
-    font-size: 15px;
+/* 섹터(조직의 종류) 이름표 — 영역 위쪽 바깥 */
+.rm-sector-label {
+    font-size: 16px;
     font-weight: 700;
     letter-spacing: -0.01em;
-    opacity: 0.9;
+    opacity: 0.92;
+}
+/* 조직 이름표 — 조직 원 아래쪽 바깥. 지도의 실제 구분 단위라 항상 보이게 둔다. */
+.rm-org-label {
+    font-size: 10.5px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    opacity: 0.95;
 }
 
 /* 호버 툴팁 (body에 붙는 고정 요소) */
@@ -825,6 +839,7 @@ table th[align="right"] {
     margin-right: 0.3rem;
     flex: 0 0 auto;
 }
+.rm-tip-also { margin-top: 0.15rem; font-size: 0.76rem; color: var(--color-text-secondary, #999); }
 .rm-tip-tag { margin-top: 0.25rem; color: var(--color-text, #ddd); }
 .rm-tip-star { margin-top: 0.25rem; font-size: 0.76rem; color: var(--color-text-secondary, #999); }
 
