@@ -7,7 +7,7 @@ tags:
   - LLM
 description: "ServiceNow AI가 COLM 2026에서 발표한 긴 문서 시각 이해 벤치마크입니다. 문서 길이, 레이아웃, 모달리티, 질문 유형을 독립 축으로 통제한 합성 문서 200개와 질문 1,788개로 프런티어 VLM 8종을 평가해, 기존 벤치마크가 드러내지 못한 실패 모드 세 가지를 분리해냈습니다."
 image: "![[synthdocbench-benchmark-landscape.png]]"
-buzz: 45
+buzz: 44
 ---
 
 > A. Verma, K. Mahajan, A. K. Saha, S. Radhakrishna, S. Davasam, V. Yadav, and S. Rajeswar, "SynthDocBench: Controlled Benchmark for Long-Context Visual Document Understanding," arXiv:2607.10400, 2026.

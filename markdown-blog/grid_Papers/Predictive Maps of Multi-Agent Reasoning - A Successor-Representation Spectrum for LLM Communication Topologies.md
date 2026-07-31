@@ -9,7 +9,7 @@ tags:
 description: 멀티에이전트 LLM 시스템의 chain·star·mesh 토폴로지를 추론을 돌리기 전에 단 세 개의 고윳값으로 진단하자는 제안. successor representation을 통신 그래프에 얹어 drift·consensus·robustness를 closed-form으로 풉니다.
 image: "![[predictive-maps-multi-agent-overview.png]]"
 citations: 0
-buzz: 15
+buzz: 0
 ---
 > E. D. J. Park and D. Alharthi, "Predictive Maps of Multi-Agent Reasoning: A Successor-Representation Spectrum for LLM Communication Topologies," arXiv:2605.11453, 2026.
 
