@@ -2,6 +2,7 @@
 date: 2025-09-17
 tags:
   - 논문
+  - Headliner
 aliases:
   - 언어 모델 환각은 왜 생기는가
 image: "![[Hallucinate_1.png]]"
