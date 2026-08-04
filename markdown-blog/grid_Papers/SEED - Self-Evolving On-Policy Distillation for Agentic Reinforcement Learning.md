@@ -7,7 +7,7 @@ tags:
   - LLM
 description: 완성된 트래젝토리에서 힌드사이트 스킬을 추출해 정책 모델에 다시 증류하는 자기진화 프레임워크. 기존 결과 기반 RL의 희소 보상 문제를 토큰 수준 밀집 감독으로 해결합니다.
 image: "![[seed-self-evolving-overview.png]]"
-buzz: 48
+buzz: 111
 ---
 
 > J. Wu, S. Yang, Z. Lu, F. Zhang, Y. Shen, L. Feng, H. Luo, Z. Lian, S. Zhang, Z. Wen, and J. Tao, "SEED: Self-Evolving On-Policy Distillation for Agentic Reinforcement Learning," arXiv:2607.14777, 2026.

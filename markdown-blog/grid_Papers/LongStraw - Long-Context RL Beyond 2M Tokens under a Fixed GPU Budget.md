@@ -7,7 +7,7 @@ tags:
   - 추론
 description: "GPU 수를 늘리지 않고 2M 토큰을 넘어서는 GRPO 훈련을 가능하게 하는 실행 스택. '프롬프트는 한 번, 응답은 하나씩'이라는 단순한 원칙으로 라이브 autograd 그래프를 $P+R$에서 $R$로 줄입니다."
 image: "![[longstraw-execution-path.png]]"
-buzz: 56
+buzz: 54
 ---
 
 > C. Zhou, K. Liu, Y. Zhou, Q. Qiao, et al., "LongStraw: Long-Context RL Beyond 2M Tokens under a Fixed GPU Budget," arXiv:2607.14952, 2026.
