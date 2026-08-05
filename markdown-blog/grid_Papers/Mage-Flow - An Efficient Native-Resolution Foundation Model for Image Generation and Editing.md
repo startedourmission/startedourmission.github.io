@@ -7,7 +7,7 @@ tags:
   - 컴퓨터비전
 description: "Microsoft가 공개한 4B 규모 이미지 생성·편집 스택입니다. 백본을 키우는 대신 토크나이저와 학습 시스템을 함께 설계해, A100 한 장에서 1024² 이미지를 0.59초에 만들면서 GenEval 최고점을 기록했습니다."
 image: "![[mage-flow-overview.png]]"
-buzz: 73
+buzz: 72
 ---
 
 > X. Zhang, P. Zhang, S. Zheng, J. Guo, et al., "Mage-Flow: An Efficient Native-Resolution Foundation Model for Image Generation and Editing," arXiv:2607.19064, 2026.
