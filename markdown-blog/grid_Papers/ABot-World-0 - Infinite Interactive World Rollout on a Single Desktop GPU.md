@@ -7,7 +7,7 @@ tags:
   - GPU
 description: "알리바바 AMAP CV Lab이 키보드 입력으로 조작하는 액션 조건부 영상 월드 모델을 RTX 5090 한 장에서 720P 16FPS로 돌렸습니다. 양방향 교사를 인과 학생으로 점진 증류한 뒤 LongForcing으로 장기 롤아웃 드리프트를 잡고, VAE 디코더 경량화와 저비트 추론을 묶어 피크 VRAM을 19.3GiB 아래로 눌렀습니다."
 image: "![[abot-world-0-overview.png]]"
-buzz: 63
+buzz: 61
 ---
 
 > F. Jiang, Z. Sun, M. Wang, Z. Zhu, et al., "ABot-World-0: Infinite Interactive World Rollout on a Single Desktop GPU," arXiv:2607.19191, 2026.
