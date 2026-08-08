@@ -10,6 +10,7 @@ tags:
   - 에이전트
 last_active: 2026
 papers:
+  - Recursive Synthesis for Long-Horizon Terminal Tasks
   - Long-Horizon-Terminal-Bench - Testing the Limits of Agents on Long-Horizon Terminal Tasks with Dense Reward-Based Grading
 star: 0
 ---
