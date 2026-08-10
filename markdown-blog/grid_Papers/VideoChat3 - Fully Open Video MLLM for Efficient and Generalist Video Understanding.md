@@ -6,7 +6,7 @@ tags:
   - 영상처리
 description: "4B 파라미터로 장시간 비디오·실시간 스트리밍을 동시에 다루는 완전 공개 Video MLLM. I3D-ViT의 16배 시공간 압축과 Silence/Standby/Response 상태 토큰으로 같은 크기 오픈소스 모델을 대부분 벤치마크에서 압도합니다."
 image: "![[videochat3-fully-open-video-mllm-overview.png]]"
-buzz: 50
+buzz: 49
 ---
 
 > X. Li, Y. Zhu, X. Zeng, Y. Dong, H. Wu, Z. Zhang, et al., "VideoChat3: Fully Open Video MLLM for Efficient and Generalist Video Understanding," arXiv:2607.14935, 2026.
