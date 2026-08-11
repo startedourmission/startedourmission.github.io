@@ -7,7 +7,7 @@ tags:
   - 오픈소스
 description: "1.6조 파라미터 MoE 모델을 NVIDIA가 아닌 Ascend NPU에서 전체 파라미터 후속학습한 기록입니다. MFU를 11.67%에서 34.22%로 끌어올린 과정과, 그 인프라 위에서 운영과학 특화 모델을 만든 결과를 함께 담았습니다."
 image: "![[slai-t-rex-overview.png]]"
-buzz: 45
+buzz: 43
 ---
 
 > AI Training Platform Team, Shenzhen Loop Area Institute, "SLAI T-Rex: Full-Parameter Post-training of the DeepSeek-V4 Family on Ascend SuperPOD," arXiv:2607.20145, 2026.

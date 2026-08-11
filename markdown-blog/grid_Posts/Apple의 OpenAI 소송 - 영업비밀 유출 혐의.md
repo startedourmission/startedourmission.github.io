@@ -2,7 +2,6 @@
 date: 2026-07-19
 tags:
   - 정보
-  - Headliner
   - LLM
 description: "Apple이 OpenAI를 상대로 영업비밀 침해 소송을 제기했습니다. 전직 Apple 직원이 OpenAI로 이직하면서 내부 AI 하드웨어 기술을 유출했다는 혐의로, 두 회사의 파트너십이 균열을 맞이했습니다."
 image: "![[apple-openai-lawsuit-thumb.png]]"
