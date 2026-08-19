@@ -7,7 +7,7 @@ tags:
   - 머신러닝
 description: "Alibaba AMAP CV Lab이 설계한 로봇 운영체제 레이어. VLM 지각과 VLA 행동 사이에 빠진 심의적 계층을 채우는 에이전트 하네스와 평생 학습 멀티모달 그래프 메모리를 함께 제안합니다."
 image: "![[abot-agentos-overview.png]]"
-buzz: 42
+buzz: 40
 ---
 
 > J. Tian, S. Liu, Y. Xu, J. Lu, Y. Qian, T. Zhang, F. Wang, X. Li, W. Zhang, S. Su, et al., "ABot-AgentOS: A General Robotic Agent OS with Lifelong Multi-modal Memory," arXiv:2607.10350, 2026.

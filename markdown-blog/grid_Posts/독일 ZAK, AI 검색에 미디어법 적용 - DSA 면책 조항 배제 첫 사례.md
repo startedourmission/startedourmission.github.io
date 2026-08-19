@@ -2,7 +2,6 @@
 date: 2026-07-20
 tags:
   - 정보
-  - Headliner
   - AI평가
   - LLM
 description: "독일 방송면허감독위원회(ZAK)가 Google AI Overviews와 Perplexity를 미디어 사업자로 판정했습니다. AI가 생성한 요약물을 '콘텐츠 생산'으로 보고 DSA 면책 조항을 배제한 세계 첫 사례입니다."

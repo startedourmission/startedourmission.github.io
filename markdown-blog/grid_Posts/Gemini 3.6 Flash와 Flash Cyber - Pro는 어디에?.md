@@ -2,7 +2,6 @@
 date: 2026-07-25
 tags:
   - 정보
-  - Headliner
   - LLM
   - 도구
 description: "Google이 2026년 7월 21일 Gemini 3.6 Flash, 3.5 Flash-Lite, 3.5 Flash Cyber를 한꺼번에 내놨습니다. 기다리던 3.5 Pro는 없었고, 보안 전용 모델은 공개하지 않았습니다."

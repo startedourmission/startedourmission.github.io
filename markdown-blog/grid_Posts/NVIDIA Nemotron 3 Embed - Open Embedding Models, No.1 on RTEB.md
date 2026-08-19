@@ -2,7 +2,6 @@
 date: 2026-07-20
 tags:
   - 정보
-  - Headliner
   - 오픈소스
   - 머신러닝
   - GPU

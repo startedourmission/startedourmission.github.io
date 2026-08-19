@@ -2,7 +2,6 @@
 date: 2026-07-20
 tags:
   - 잡담
-  - Headliner
   - 에이전트
   - AI평가
 description: "HuggingFace 프로덕션 인프라에 자율 AI 에이전트 스웜이 17,000+ 행동으로 침투했습니다. 공격자도 AI 에이전트를 썼고, 방어자도 AI 에이전트를 썼습니다."
