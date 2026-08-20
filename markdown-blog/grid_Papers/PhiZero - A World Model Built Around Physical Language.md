@@ -7,7 +7,7 @@ tags:
   - 멀티모달
 description: 미래를 픽셀로 바로 예측하는 대신, 월드 상태 전이를 256개 이산 심볼로 압축한 physical language로 먼저 추론하고 그다음 영상으로 렌더링하는 월드 모델입니다. 인터넷 영상에서 자기지도로 이 표현을 학습하고, 외형과 분리돼 있어 사람 동작을 휴머노이드로 제로샷 전이하는 것까지 같은 인터페이스로 처리합니다.
 image: "![[phizero-overview.png]]"
-buzz: 52
+buzz: 51
 ---
 
 > S. Shang, Y. Wang, R. Gao, X. Chen, T. Tan, L. Fan, and Z. Zhang, "PhiZero: A World Model Built Around Physical Language," arXiv:2607.28624, 2026.

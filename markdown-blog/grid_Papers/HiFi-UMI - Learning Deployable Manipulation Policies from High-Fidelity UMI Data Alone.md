@@ -6,7 +6,7 @@ tags:
   - 에이전트
 description: 로봇 없이 사람이 손에 쥐고 모은 조작 데이터만으로 사후학습을 끝내고, 실기 로봇에 그대로 올려도 텔레오퍼레이션과 대등하다는 것을 세 가지 백본에서 실기 롤아웃 960회로 보인 논문입니다. 핵심은 규모가 아니라 3mm 궤적 정밀도라는 데이터 충실도입니다.
 image: "![[hifi-umi-overview.png]]"
-buzz: 56
+buzz: 49
 ---
 
 > Y. Wei, J. Ma, J. Wang, W. Zhou, et al., "HiFi-UMI: Learning Deployable Manipulation Policies from High-Fidelity UMI Data Alone," arXiv:2607.25895, 2026.

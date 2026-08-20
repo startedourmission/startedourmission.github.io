@@ -7,7 +7,7 @@ tags:
   - 추론
 description: 월드 모델이 물리 상태만 예측하고 믿음·욕구·의도·감정 같은 심적 변수를 빼먹는다는 지적. 물리와 심적 상태를 하나의 결합 상태로 두고 대상별 부분 관측을 렌더링해 후보 행동의 결과를 양쪽 채널에서 동시에 시뮬레이션하는 프레임워크와, 학습 없이 완전히 들여다볼 수 있는 구현체 MENTIS
 image: "![[mental-world-modeling-overview.png]]"
-buzz: 46
+buzz: 47
 ---
 
 > H. Fei and Y. Zhao, "Mental World Modeling," arXiv:2607.27201, 2026.

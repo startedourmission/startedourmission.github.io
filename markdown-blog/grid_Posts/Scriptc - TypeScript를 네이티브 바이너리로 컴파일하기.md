@@ -2,7 +2,6 @@
 date: 2026-07-28
 tags:
   - 정보
-  - Headliner
   - 오픈소스
   - 도구
 description: "Vercel Labs가 TypeScript를 Node나 V8 없이 단독 네이티브 실행파일로 만드는 컴파일러를 공개했습니다. tsc로 타입체크한 뒤 IR을 거쳐 C와 LLVM으로 내리고, 참조계수 런타임과 이벤트 루프를 직접 구현했습니다."

@@ -4,7 +4,6 @@ tags:
   - 정보
   - 파이썬
   - 도구
-  - Headliner
 description: PyTorch 코어 개발자 Edward Z. Yang이 PyTorch의 역할을 실행 가능한 명세로 재정의합니다. 컴파일러가 고수준 코드를 알아서 최적화하는 대신 커널 DSL이 성능을 맡고, PyTorch는 그 정확성을 검증하는 참조 구현으로 남는 이원 구조입니다.
 ---
 
