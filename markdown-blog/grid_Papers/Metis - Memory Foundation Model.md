@@ -7,7 +7,7 @@ tags:
   - 에이전트
 description: 에이전트 메모리를 RAG 같은 외부 모듈로 붙이는 대신 백본 안에 지속적으로 진화하는 메모리 상태를 심은 첫 프로토타입입니다. 온라인 갱신에 그래디언트가 필요 없고 forward 한 번이면 끝나며, 추론 시 학습된 가중치는 전부 동결됩니다.
 image: "![[metis-overview.png]]"
-buzz: 84
+buzz: 83
 ---
 
 > Z. Zhang, Z. Guo, Y. Sun, X. Zhang, et al., "Metis: Memory Foundation Model," arXiv:2607.26760, 2026.
