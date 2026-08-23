@@ -7,7 +7,7 @@ tags:
   - 딥러닝
 description: "5초 창으로만 학습한 자기회귀 영상 모델이 240초까지 인물과 배경을 유지하게 만드는 학습 전략입니다. 자기가 만든 과거를 어떤 KV 메모리로 적어 둘지에 아무도 감독 신호를 주지 않았다는 진단에서 출발합니다."
 image: "![[self-gradient-forcing-overview.png]]"
-buzz: 57
+buzz: 56
 ---
 
 > J. Zhuang, S. Zhang, Y. Bian, Y. Li, et al., "Self Gradient Forcing: Native Long Video Extrapolation," arXiv:2607.20368, 2026.
