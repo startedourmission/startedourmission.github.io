@@ -6,7 +6,7 @@ tags:
   - 영상처리
 description: CFG를 쓰는 확산 모델을 on-policy로 증류할 때, 합성된 예측만 맞추면 양의 분기 오차와 음의 분기 오차가 서로 상쇄돼 학습 목적이 분기 수준에서 결정되지 않습니다. 교사가 학생에게 없는 정보를 음의 분기에 쥐고 있을 때 이 모호성이 실제 실패로 이어지며, 저자들은 이를 Negative Branch Asymmetry라 부르고 합성 이전 단계에서 감독하는 PDM을 제안합니다.
 image: "![[cfg-opd-overview.png]]"
-buzz: 41
+buzz: 66
 ---
 
 > B. Li, H. Wang, H. Xiong, F. Wu, et al., "Rethinking Classifier-Free Guidance in On-Policy Diffusion Distillation," arXiv:2607.24731, 2026.
