@@ -7,7 +7,7 @@ tags:
   - 강화학습
 description: 촉각을 관측 컨텍스트에 하나 더 얹는 대신, 다가올 액션 청크가 만들어낼 접촉 변화를 예측하는 잠재 토큰으로 바꿔 액션 전문가에 직접 물린 VTLA 파운데이션 모델. 실기기 NeoReal 9개 태스크 전승, 20개 시뮬 태스크 평균 63.8% 대 44.0%
 image: "![[n0-vtla-overview.png]]"
-buzz: 105
+buzz: 104
 ---
 
 > NeoteAI Team and Fudan TEAI Team, "$N_0$-VTLA: Scaling Vision-Tactile-Language-Action Model with Latent Tactile Tokens," arXiv:2607.23782, 2026.

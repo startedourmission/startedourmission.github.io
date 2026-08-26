@@ -7,7 +7,7 @@ tags:
   - 멀티모달
 description: "화면을 보고 앱을 직접 조작하는 모바일 에이전트에 '기억'과 '기술'을 이식한 연구. Kimi-K2.6 기반으로 MobileWorld 공개 리더보드 1위(64.1%)를 달성했으며, 기억과 기술은 모델 계열을 넘어 이전될 수 있음을 실험으로 보였습니다."
 image: "![[knowact-guiclaw-overview.png]]"
-buzz: 43
+buzz: 38
 ---
 
 > Y. Li, J. Li, B. Hu, M. Zhang, et al., "KnowAct-GUIClaw: Know Deeply, Act Perfectly, Personal GUI Assistant with Self-Evolving Memory and Skill," arXiv:2607.12625, 2026.

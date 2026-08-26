@@ -7,7 +7,7 @@ tags:
   - 에이전트
 description: 재귀적 자기개선을 담론 대신 실행 가능한 테스트베드로 내려서 잰 작업입니다. Draft·Improve·Debug·Crossover 네 개 연산자를 학습과 추론에서 같은 어휘로 쓰게 만들어, 35B 모델의 MLE-Bench Lite 메달 평균을 39.39%에서 71.21%로 올렸습니다.
 image: "![[frontis-ma1-overview.png]]"
-buzz: 99
+buzz: 98
 ---
 
 > J. Yang, C. Jiang, Y. Fu, T. Luo, et al., "Frontis-MA1: Training an AI4AI Model towards Recursive Self-Improvement in Machine Learning Engineering," arXiv:2607.28568, 2026.

@@ -6,7 +6,7 @@ tags:
   - 에이전트
 description: 창작 에이전트의 메모리를 벡터 스토어가 아니라 사용자가 보는 캔버스 그 자체에 두자는 제안입니다. 프롬프트, 참조 이미지, 초안, 버림받은 후보, 버전 관계, 피드백을 전부 타입이 붙은 캔버스 노드로 표현하고, 에이전트는 프로토콜 브리지를 통해서만 그 캔버스를 읽고 씁니다. 에이전트가 무엇을 기억하는지가 화면에 남아 있는 것과 같아지는 설계입니다.
 image: "![[jarvishub-overview.png]]"
-buzz: 46
+buzz: 45
 ---
 
 > Y. Lin, Z. Lin, Z. Xing, B. Li, et al., "JarvisHub: An Open Harness for Canvas-Native Multimodal Creative Agents," arXiv:2607.23588, 2026.

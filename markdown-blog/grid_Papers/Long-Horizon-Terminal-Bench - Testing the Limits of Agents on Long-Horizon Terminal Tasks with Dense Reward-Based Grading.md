@@ -7,7 +7,7 @@ tags:
   - LLM
 description: AI 에이전트가 얼마나 긴 작업을 완주할 수 있는지 측정하는 벤치마크. 46개 장기 터미널 태스크를 밀집 보상(dense reward)으로 채점해 "성공/실패" 이분법이 놓치는 중간 진행 상황까지 측정합니다.
 image: "![[lhtb-overview.png]]"
-buzz: 123
+buzz: 145
 ---
 
 > Z. Li, Z. Li, Y. Shi, R. Wang, J. Yang, Z. Liu, X. Wu, A. Li, Y. Yu, N. Liu, L. Sun, H. Mi, and L. Liang, "Long-Horizon-Terminal-Bench: Testing the Limits of Agents on Long-Horizon Terminal Tasks with Dense Reward-Based Grading," arXiv:2607.08964, 2026.
