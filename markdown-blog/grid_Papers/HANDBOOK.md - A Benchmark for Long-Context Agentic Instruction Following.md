@@ -7,7 +7,7 @@ tags:
   - AI평가
 description: 20~124쪽짜리 사내 규정집을 컨텍스트에 넣어두면 에이전트가 그 규정을 따를까. 65개 회사 환경과 824개 결정론적 채점 기준으로 재보니 최고 구성이 36.2%, 프런티어 대부분이 25% 미만이었습니다. 실패는 네 가지 모양으로 반복됩니다.
 image: "![[handbook-md-strict-vs-n1.png]]"
-buzz: 15
+buzz: 0
 ---
 
 > L. Panavas, S. Minus, B. Monton, D. Ray, S. Garre, S. Mehta, and E. Chen, "HANDBOOK.md: A Benchmark for Long-Context Agentic Instruction Following," arXiv:2607.25398, 2026.

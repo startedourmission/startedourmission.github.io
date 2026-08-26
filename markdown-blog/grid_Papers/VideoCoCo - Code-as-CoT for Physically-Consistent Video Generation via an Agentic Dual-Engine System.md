@@ -7,7 +7,7 @@ tags:
   - 확산모델
 description: 영상 생성 모델이 물리를 틀리는 이유는 압축된 프롬프트에서 시공간 전개를 암묵적으로 복원해야 하기 때문입니다. VideoCoCo는 그 전개를 실행 가능한 Blender 코드로 먼저 써놓고, 렌더링된 초안을 조건으로 영상을 입힙니다. PhyGenBench 0.475에서 0.558, VBench-2.0 52.18%에서 77.88%.
 image: "![[videococo-overview.png]]"
-buzz: 102
+buzz: 103
 ---
 
 > H. Li, T. Ren, X. Ma, C. Qing, et al., "VideoCoCo: Code-as-CoT for Physically-Consistent Video Generation via an Agentic Dual-Engine System," arXiv:2607.27380, 2026.
