@@ -2,6 +2,7 @@
 date: 2026-08-24
 tags:
   - 정보
+  - Headliner
   - LLM
   - 멀티모달
   - 벤치마크

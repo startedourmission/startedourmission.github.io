@@ -7,7 +7,7 @@ tags:
   - 벤치마크
 description: GUI 조작과 셸 명령을 하나의 액션 공간에 넣고 한 턴에 여러 액션을 묶어 내보내는 27B 파운데이션 GUI 에이전트입니다. 100대 넘는 실제 안드로이드 단말 위에서 학습과 평가를 돌려 MobileWorld-Real 92.2%를 기록했고, 컴퓨터 태스크에서는 액션의 40~55%가 CLI로 나갑니다.
 image: "![[qwen-ui-agent-overview.png]]"
-buzz: 105
+buzz: 104
 ---
 
 > H. Zhou, P. Tong, X. Zhang, Q. Kong, et al., "Qwen-UI-Agent Technical Report: Toward Next-Generation Real-World Centric Foundation GUI Agents," arXiv:2607.28227, 2026.
