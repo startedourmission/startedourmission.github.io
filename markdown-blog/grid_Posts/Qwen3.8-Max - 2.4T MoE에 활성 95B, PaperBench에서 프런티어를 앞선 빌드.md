@@ -2,7 +2,6 @@
 date: 2026-08-04
 tags:
   - 정보
-  - Headliner
   - LLM
   - 벤치마크
   - 에이전트

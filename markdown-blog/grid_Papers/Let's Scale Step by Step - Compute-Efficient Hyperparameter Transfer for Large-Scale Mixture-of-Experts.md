@@ -6,7 +6,7 @@ tags:
   - 머신러닝
 description: 총 155B 활성 17B 모델을 10조 토큰 학습하면서 학습률을 한 번도 스윕하지 않았습니다. 폭 방향은 μP로 옮기고 토큰 방향은 회귀로 외삽해 학습률을 미리 찍었습니다. 스케일링 법칙이 성능 예측이 아니라 하이퍼파라미터 예측에 쓰이는 흐름과, 저자들이 그 예측을 끝내 직접 검증하지 못한 이유를 봅니다.
 image: "![[lets-scale-step-by-step-overview.png]]"
-buzz: 43
+buzz: 42
 ---
 
 > N. Kim, H. Lee, Y. Bak, J. Park, and B. Kim, "Let's Scale Step by Step: Compute-Efficient Hyperparameter Transfer for Large-Scale Mixture-of-Experts," arXiv:2608.20061, 2026.

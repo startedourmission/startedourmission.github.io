@@ -7,7 +7,7 @@ tags:
   - 벤치마크
 description: 스킬이 에이전트를 돕는 이유의 65.7%는 절차를 붙잡아 주는 것이고, 없는 지식을 넣어 주는 것은 4.5%에 그칩니다. 스킬 풀이 5개에서 100개로 늘면 실제 사용 정밀도가 29.6%에서 3.3%로 무너지는데, 정작 과제 성공률은 거의 변하지 않습니다.
 image: "![[demystifying-agent-skills-overview.png]]"
-buzz: 56
+buzz: 55
 ---
 
 > Z. Jiang, F. Huang, H. Xing, X. Wu, Y. Gao, R. Cao, M. Wang, S. Liu, and Y. Li, "Demystifying Agent Skills: Why They Work-Until They Don't," arXiv:2608.14036, 2026.
