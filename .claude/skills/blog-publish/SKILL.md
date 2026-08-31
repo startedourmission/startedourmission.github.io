@@ -210,23 +210,30 @@ Codex가 생성한 파일이 실제로 존재하는지 확인한 뒤, 마크다�
 
 이 글이 아니면(태그가 `잡담`이어도 파일명이 이 패턴이 아니면) 이 단계를 건너뜁니다.
 
-### 8단계 — RSS 생성물 검증 (로컬 빌드, 푸시 전 최종 게이트)
+### 8단계 — RSS 검증 (소스 스캔, 빌드 없음)
 
-**메모리 교훈: RSS 오류는 소스를 눈으로 추측해서 잡는 게 아니라, 실제 생성된 rss.xml을 파서로 검증해서 잡는다.** 과거 LaTeX·코드스팬을 원인으로 지목한 "해결"이 두 번 다 오답이었고, 진짜 원인은 heading 속 보이지 않는 U+0008이었습니다. 게이트 1(2단계 소스 스캔)이 이걸 이미 잡지만, 빌드 로직이 바뀌거나 예상 못 한 경로가 생길 수 있으니 **푸시 전에 실제 피드를 한 번 생성해서 검증**합니다.
+**메모리 교훈: RSS 오류는 소스를 눈으로 추측해서 잡지 않는다.** 과거 LaTeX·코드스팬을 원인으로
+지목한 "해결"이 두 번 다 오답이었고, 진짜 원인은 heading 속 보이지 않는 U+0008이었습니다.
 
-파일을 목적지로 옮긴(7단계) 뒤 아직 커밋 전인 이 시점에, 로컬 빌드로 피드를 생성하고 `rss_check.py`로 검증합니다. 빌드·검증은 `dangerouslyDisableSandbox`로 실행합니다.
+**로컬 빌드는 하지 않습니다 (2026-08-31).** 빌드가 `<title>`/`<description>`/`<content:encoded>`를
+전부 CDATA로 감싸므로 XML을 깨뜨릴 수 있는 벡터는 C0 제어문자 하나뿐이고, 그건 소스에서 잡힙니다.
+빌드는 GitHub Actions가 합니다.
 
 ```bash
-export PATH="$HOME/.dotnet:$PATH"
-cd "$BLOG" && dotnet run --project skunk-html.fsproj   # → skunk-html-output/rss*.xml 생성 (gitignore)
-python3 "$VAULT/tools/rss_check.py" "$BLOG/skunk-html-output"
+python3 "$VAULT/tools/rss_check.py" --source "markdown-blog/<목적지>/<파일명>.md"
 ```
 
-- `status: "valid"` — 모든 피드(`rss.xml`, `rss-posts.xml`, `rss-grid-posts.xml`, `rss-grid-papers.xml`)가 strict 파싱·불법문자 스캔 통과. 9단계로 진행합니다.
-- `status: "invalid"` — **푸시를 차단합니다.** 출력의 `line:col`과 불법문자 codepoint로 방금 옮긴 소스 파일의 해당 위치를 찾아 제거하고(제어문자는 눈에 안 보이니 위치로 역산), 다시 빌드·검증합니다. 통과 전까지 커밋·푸시하지 않습니다.
-- 빌드 자체가 실패하면(F# 컴파일 오류 등) 그 원인부터 해결합니다. GitHub Actions도 같은 이유로 막히기 때문입니다.
+- `status: "valid"` — 9단계로 진행합니다.
+- `status: "invalid"` — **푸시를 차단합니다.** 출력의 codepoint 위치로 제어문자를 찾아 제거하고 다시 검사합니다.
 
-빌드가 무거워 부담되면, 게이트 1이 현재 생성기(CDATA 기반)에 대해 불법 제어문자라는 유일한 벡터를 이미 완전히 커버하므로, 콘텐츠만 추가하는 게시에서는 사용자 동의 하에 이 단계를 건너뛸 수 있습니다. 다만 F# 생성기(`SkunkHtml.fs` 등)가 바뀌었을 때는 반드시 돌립니다.
+> ⚠️ **`SkunkHtml.fs`·`SkunkUtils.fs`·`Program.fs`를 고쳤을 때는 반드시 로컬 빌드를 돌립니다.**
+> 소스 스캔은 "현재 생성기가 CDATA를 쓴다"는 전제 위에 서 있어서, 생성기가 바뀌면 전제가 깨집니다.
+> ```bash
+> export PATH="$HOME/.dotnet:$PATH"
+> cd "$VAULT" && dotnet run --project skunk-html.fsproj
+> python3 tools/rss_check.py skunk-html-output
+> rm -rf skunk-html-output   # 6.1GB — 확인 끝나면 지웁니다
+> ```
 
 ### 9단계 — Git push
 
@@ -243,10 +250,21 @@ git push
 **푸시 후 라이브 재확인(선택, 권장):** GitHub Actions 빌드 완료 후 라이브 피드를 캐시 우회로 받아 한 번 더 검증하면 "고쳐졌다"를 확정할 수 있습니다.
 
 ```bash
-gh run watch   # 빌드 완료 대기
+gh run watch --exit-status   # Actions 빌드·배포 완료까지 대기. 실패하면 0이 아닌 코드로 끝난다
 curl -s "https://startedourmission.github.io/rss.xml?nocache=$(date +%s)" -o /tmp/live-rss.xml
 python3 "$VAULT/tools/rss_check.py" /tmp/live-rss.xml
 ```
+
+### 9.5단계 — Actions 결과 확인 (필수)
+
+**푸시가 성공해도 배포는 실패할 수 있습니다.** 그때 사이트는 이전 버전을 계속 서비스하므로
+겉으로는 멀쩡해 보이고 **갱신만 조용히 멈춥니다.** 이 볼트에서 크게 당한 사고가 전부 이 패턴이었습니다.
+
+```bash
+gh run watch --exit-status || echo "❌ Actions 배포 실패 — 사이트가 갱신되지 않았습니다"
+```
+
+실패하면 그 사실을 **완료 보고와 cron 로그 맨 위에 크게 남깁니다.** 조용히 넘어가지 않습니다.
 
 ### 10단계 — (삭제됨)
 

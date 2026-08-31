@@ -104,7 +104,11 @@ image: "![[이미지.png]]"
 
 - `dotnet run --project skunk-html.fsproj` (로컬 dotnet: `~/.dotnet/dotnet`)
 - URL = 파일명 MD5 앞 8자리(`Url.toHashId`) · `[[파일명]]` → `해시.html` · `![[파일.png]]` → `폴더/_assets/파일.png`
-- 산출물 `skunk-html-output/`은 gitignore. Actions가 새 체크아웃에서 빌드한다.
+- **로컬 빌드는 평소에 하지 않는다.** 빌드는 Actions 담당이고 `skunk-html-output/`(6.1GB)은 gitignore다.
+  게시 전 RSS 게이트는 `python3 tools/rss_check.py --source <파일>` 로 빌드 없이 건다.
+  **단 `SkunkHtml.fs`·`SkunkUtils.fs`·`Program.fs`를 고쳤으면 반드시 로컬 빌드로 확인하고, 끝나면 산출물을 지운다.**
+- 푸시 뒤 `gh run watch --exit-status` 로 배포 결과를 확인한다. 빌드가 실패해도 사이트는
+  이전 버전을 계속 서비스하므로 **갱신이 조용히 멈춘다.**
 
 ## 폴더
 
