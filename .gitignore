@@ -434,3 +434,7 @@ cron-health.md
 # 임시 산출물
 imagegen-test-*.png
 tmp_*.py
+
+# 옵시디언 플러그인·테마 바이너리 — community-plugins.json 만 있으면 재설치된다
+.obsidian/plugins/
+.obsidian/themes/
