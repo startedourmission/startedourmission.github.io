@@ -1,0 +1,153 @@
+views:
+  - type: table
+    name: 전체
+    filters:
+      and:
+        - file.inFolder("markdown-blog/")
+        - ready != false
+    order:
+      - date
+      - buzz
+      - file.name
+      - tags
+      - description
+      - image
+    sort:
+      - property: date
+        direction: DESC
+      - property: buzz
+        direction: DESC
+    columnSize:
+      note.date: 111
+      note.buzz: 35
+      file.name: 382
+      note.tags: 246
+      note.description: 611
+      note.image: 134
+  - type: table
+    name: 포스트
+    filters:
+      and:
+        - file.inFolder("markdown-blog/grid_Posts")
+        - ready != false
+        - and:
+            - "!file.tags.isEmpty()"
+    order:
+      - date
+      - file.name
+      - tags
+      - description
+      - image
+    sort:
+      - property: date
+        direction: DESC
+      - property: image
+        direction: ASC
+    columnSize:
+      note.date: 111
+      file.name: 266
+      note.tags: 305
+      note.description: 420
+      note.image: 134
+  - type: table
+    name: 논문
+    filters:
+      and:
+        - file.inFolder("markdown-blog/grid_Papers")
+        - ready != false
+    order:
+      - date
+      - buzz
+      - file.name
+      - tags
+      - description
+      - image
+    sort:
+      - property: date
+        direction: DESC
+      - property: buzz
+        direction: DESC
+    columnSize:
+      note.date: 111
+      note.buzz: 46
+      note.tags: 109
+      note.image: 134
+  - type: table
+    name: 드래프트
+    filters:
+      and:
+        - file.inFolder("raw")
+    order:
+      - date
+      - file.name
+      - tags
+      - description
+      - image
+    sort:
+      - property: date
+        direction: DESC
+    columnSize:
+      note.tags: 280
+  - type: table
+    name: 헤드라이너
+    filters:
+      and:
+        - file.inFolder("markdown-blog/")
+        - ready != false
+        - file.hasTag("Headliner")
+    order:
+      - date
+      - file.name
+      - tags
+      - description
+      - image
+    sort:
+      - property: date
+        direction: DESC
+    columnSize:
+      note.date: 111
+      note.tags: 280
+      note.image: 134
+  - type: table
+    name: 딕셔너리
+    filters:
+      and:
+        - file.inFolder("markdown-blog/Dictionary")
+        - ready != false
+    order:
+      - date
+      - file.name
+      - tags
+      - description
+      - image
+    sort:
+      - property: date
+        direction: DESC
+    columnSize:
+      note.date: 111
+      note.tags: 280
+      note.image: 134
+  - type: table
+    name: 인물
+    filters:
+      and:
+        - file.inFolder("markdown-blog/Dictionary")
+        - ready != false
+        - file.hasTag("인물")
+    order:
+      - star
+      - file.name
+      - tags
+      - description
+      - image
+    sort:
+      - property: star
+        direction: DESC
+      - property: date
+        direction: DESC
+    columnSize:
+      note.star: 49
+      file.name: 170
+      note.tags: 476
+      note.description: 420
+      note.image: 134

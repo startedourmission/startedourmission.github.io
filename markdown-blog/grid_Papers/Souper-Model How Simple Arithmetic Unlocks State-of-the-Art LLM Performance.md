@@ -59,7 +59,7 @@ buzz: 58
 ### 2. 카테고리 간 상관관계 분석
 
 논문의 가장 중요한 발견은 Figure 1의 상관계수 히트맵에 담겨있습니다. Berkeley Function Calling Leaderboard 데이터를 분석하면, 모델 성능의 상관관계가 매우 이질적임을 알 수 있습니다.
-![[블로그/markdown-blog/grid_Papers/_assets/1-souper.png]]
+![[markdown-blog/grid_Papers/_assets/1-souper.png]]
 
 예를 들어:
 
@@ -127,7 +127,7 @@ BFCL뿐 아니라 다른 벤치마크에서도 검증했습니다:
 
 논문은 SoCE가 **모델 일관성 향상**에 기여한다고 주장합니다. Souping 이후 모델들의 카테고리별 성능이 더 높은 상관관계를 보인다는 것입니다.
 
-![[블로그/markdown-blog/grid_Papers/_assets/2-souper.png]]
+![[markdown-blog/grid_Papers/_assets/2-souper.png]]
 
 Figure 2를 보면 명확합니다. Souping 전에는 히트맵에 검정색(음의 상관관계)과 밝은 색(양의 상관관계)이 섞여있습니다. 하지만 Souping 이후에는 대부분 짙은 초록색(높은 양의 상관관계)으로 변합니다. 이는 Souped 모델이 모든 카테고리에서 더 균형잡힌 성능을 내놓는다는 의미입니다.
 
@@ -147,7 +147,7 @@ $$\phi_i = \frac{1}{n!} \sum_{\pi \in \Pi} [v(\text{pred}(a_i, \pi) \cup {a_i}) 
 
 이는 SoCE의 선택이 단순한 경험적 최적화가 아니라 이론적 근거가 있음을 입증합니다.
 
-![[블로그/markdown-blog/grid_Papers/_assets/1-3-Souper.png]]
+![[markdown-blog/grid_Papers/_assets/1-3-Souper.png]]
 
 ### 7. 한계와 현실적 고찰
 

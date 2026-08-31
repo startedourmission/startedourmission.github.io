@@ -17,7 +17,7 @@ buzz: 90
 > Z. Chen, J. Chen, S. Ö. Arık, M. Sra, T. Pfister and J. Yoon, "CoDA: Agentic Systems for Collaborative Data Visualization", arXiv:2510.03194, 2025.
 
 
-![[블로그/markdown-blog/grid_Papers/_assets/1-coda1.png]]
+![[markdown-blog/grid_Papers/_assets/1-coda1.png]]
 ## 요약
 
 **아키텍처**: 다중 에이전트 시스템 (Query Analyzer, Data Processor, VizMapping Agent, Search Agent, Design Explorer, Code Generator, Debug Agent, Visual Evaluator)
@@ -75,7 +75,7 @@ CoDA는 시각화를 단일 단계 프로세스가 아닌 협업 문제 해결 �
 
 #### CoDA 아키텍처
 
-![[블로그/markdown-blog/grid_Papers/_assets/1-coda2.png]]
+![[markdown-blog/grid_Papers/_assets/1-coda2.png]]
 
 CoDA는 자연어 쿼리와 데이터 파일을 입력받아 정제된 시각화를 생성하는 8개의 전문화된 에이전트로 구성됩니다:
 

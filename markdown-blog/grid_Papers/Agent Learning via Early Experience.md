@@ -12,7 +12,7 @@ buzz: 184
 ---
 언어 에이전트가 자신의 경험을 통해 스스로 학습하고 발전하는 것, 이는 오랫동안 인공지능 분야의 목표였습니다. 하지만 실제 환경에서는 보상 신호가 명확하지 않거나, 멀티턴 태스크처럼 긴 시퀀스가 필요한 경우가 많아 강화학습을 적용하기 어려웠죠. 그래서 대부분의 현재 에이전트들은 전문가 데이터를 활용한 지도학습에 의존하고 있습니다.
 
-![[블로그/markdown-blog/grid_Papers/_assets/1-EarlyExperience.png]]
+![[markdown-blog/grid_Papers/_assets/1-EarlyExperience.png]]
 
 > K. Zhang, X. Chen, B. Liu, T. Xue, Z. Liao, Z. Liu, X. Wang, Y. Ning, Z. Chen, X. Fu, J. Xie, Y. Sun, B. Gou, Q. Qi, Z. Meng, J. Yang, N. Zhang, X. Li, A. Shah, D. Huynh, H. Li, Z. Yang, S. Cao, L. Jang, S. Zhou, J. Zhu, H. Sun, J. Weston, Y. Su and Y. Wu, "Agent Learning via Early Experience", arXiv preprint arXiv:2510.08558, 2025.
 

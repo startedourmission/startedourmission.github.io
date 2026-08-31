@@ -18,7 +18,7 @@ description: AI 과학자 Kosmos를 소개합니다. 데이터와 연구 목표�
 **발표:** 2025년 11월 (arXiv)
 
 > L. Mitchener, A. Yiu, B. Chang et al., "Kosmos: An AI Scientist for Autonomous Discovery," _arXiv_, vol. 2511.02824, Nov. 2025.
-![[블로그/markdown-blog/grid_Papers/_assets/1-Kosmos.png]]
+![[markdown-blog/grid_Papers/_assets/1-Kosmos.png]]
 
 Kosmos는 이 문제를 풉니다. 구조화된 **세계 모델(world model)** 이라는 일종의 중앙 허브를 둡니다. 데이터 분석 에이전트와 문헌 검색 에이전트가 모두 여기에 정보를 저장하고 꺼냅니다. 그래서 시스템이 최대 12시간 동안 200번 이상 반복하면서도 일관성을 유지할 수 있습니다. 실제로 독립적인 과학자 평가에서 Kosmos 보고서 통계의 79.4%가 정확하다고 판단되었고, 실제 협력 연구팀은 이것이 자신들의 6개월 작업과 맞먹는다고 평가했습니다. 더 흥미로운 것은 단순히 기존 발견을 재현하는 데 그치지 않는다는 점입니다. 신경노화의 메커니즘 같은 인간 연구자가 놓쳤던 새로운 발견까지 만들어냈습니다.
 

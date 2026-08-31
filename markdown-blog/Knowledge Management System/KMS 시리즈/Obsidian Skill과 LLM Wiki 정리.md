@@ -150,4 +150,4 @@ CLAUDE.md   ← 스키마: 규칙·워크플로 정의
 ### vault 내부 관련 자료
 - `HubVault/_Inbox/Archive/바로바로_클로드/바로72 초고 - LLM 위키 구축하기.md` — 책 챕터 초고
 - `HubVault/Claude/기획편집 유용 스킬 정리.md` — skills.sh 에코시스템 분류
-- `AutoVault/블로그/markdown-blog/grid_Posts/Claude와 옵시디언으로 만드는 자동 지식 볼트.md` — 이미 게시된 글
+- `AutoVault/markdown-blog/grid_Posts/Claude와 옵시디언으로 만드는 자동 지식 볼트.md` — 이미 게시된 글

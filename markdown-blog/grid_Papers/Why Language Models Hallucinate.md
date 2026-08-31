@@ -16,7 +16,7 @@ buzz: 256
 
 머리말에 논문을 관통하는 환각의 핵심 원인이 있습니다: *"불확실할 때 "모르겠다"고 하는 대신 그럴듯한 답을 지어내는 것"*
 
-![[블로그/markdown-blog/grid_Papers/_assets/Hallucinate_1.png|1036x169]]
+![[markdown-blog/grid_Papers/_assets/Hallucinate_1.png|1036x169]]
 # 요약
 
 이 연구는 언어모델의 환각 현상을 통계적 관점에서 체계적으로 분석합니다. 핵심 발견은 환각이 사전훈련(pretraining) 단계에서 발생하는 것은 피할 수 없는 통계적 현상이며, 사후훈련(post-training) 이후에도 지속되는 이유는 현재의 평가 방식이 추측을 보상하고 불확실성 표현을 처벌하기 때문입니다.

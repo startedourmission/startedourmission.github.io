@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Dictionary 인물 노트 → 블로그/assets/people-roadmap.json 생성.
+"""Dictionary 인물 노트 → assets/people-roadmap.json 생성.
 
 Maps 페이지(roadmap.html)는 인물을 "조직 단위"로 묶어 보여준다.
 - 조직(org)   = 실제 소속 한 곳. OpenAI, MIT, Shanghai AI Lab 처럼 구체적으로.

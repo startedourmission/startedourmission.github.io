@@ -24,7 +24,7 @@ Depth Anything 3는 한 장의 이미지든 여러 장의 영상이든, 카메�
 > H. Lin, S. Chen, J. H. Liew, D. Y. Chen, Z. Li, G. Shi, J. Feng, and B. Kang, "Depth Anything 3: Recovering the visual space from any views," arXiv preprint arXiv:2511.10647, 2025.
 
 
-![[블로그/markdown-blog/grid_Papers/_assets/1-DepthAnything3.png]]
+![[markdown-blog/grid_Papers/_assets/1-DepthAnything3.png]]
 
 ---
 

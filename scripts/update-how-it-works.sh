@@ -2,7 +2,7 @@
 # Update statistics in HOW THIS BLOG WORKS.md
 # Called by Claude Code hook after git push
 
-BLOG="/Users/chajinwoo/Library/Mobile Documents/iCloud~md~obsidian/Documents/AutoVault/블로그/markdown-blog"
+BLOG="/Users/chajinwoo/Vaults/AutoVault/markdown-blog"
 FILE="$BLOG/HOW THIS BLOG WORKS.md"
 
 if [ ! -f "$FILE" ]; then

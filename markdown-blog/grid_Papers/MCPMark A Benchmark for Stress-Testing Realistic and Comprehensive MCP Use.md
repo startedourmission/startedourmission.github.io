@@ -16,7 +16,7 @@ buzz: 149
 
 MCP(Model Context Protocol)는 LLM이 외부 시스템과 상호작용하는 방식을 표준화한 프로토콜입니다. 하지만 기존 MCP 벤치마크들은 단순한 읽기 작업이나 얕은 상호작용에 집중되어 있어, 실제 업무 환경의 복잡성을 제대로 평가하지 못하고 있습니다. MCPMark는 이러한 한계를 극복하기 위해 제안된 벤치마크로, 실제 업무 시나리오를 반영한 127개의 고품질 태스크를 통해 LLM의 MCP 활용 능력을 종합적으로 평가합니다.
 
-![[블로그/markdown-blog/grid_Papers/_assets/1-mcpmark.png]]
+![[markdown-blog/grid_Papers/_assets/1-mcpmark.png]]
 
 # 요약
 
@@ -195,7 +195,7 @@ pass@4에서 pass^4로의 급격한 하락은 다회차 도구 사용에서 모�
 - 비용이 비슷해도 성능은 크게 다름
 - 높은 비용만으로는 더 나은 결과를 보장하지 않음
 
-![[블로그/markdown-blog/grid_Papers/_assets/2-mcpmark.png]]
+![[markdown-blog/grid_Papers/_assets/2-mcpmark.png]]
 
 ## 추론 모드와 노력
 

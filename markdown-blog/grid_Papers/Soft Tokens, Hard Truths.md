@@ -26,7 +26,7 @@ buzz: 114
 
 **훈련 방법**: RLOO(Reinforce with Leave-One-Out baseline)를 사용한 강화학습 방식을 채택했습니다.
 
-![[블로그/markdown-blog/grid_Papers/_assets/1-SoftTokens_HardTruths.png|371x396]]
+![[markdown-blog/grid_Papers/_assets/1-SoftTokens_HardTruths.png|371x396]]
 
 ## 논문 상세
 

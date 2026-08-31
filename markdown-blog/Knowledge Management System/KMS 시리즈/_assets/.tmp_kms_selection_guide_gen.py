@@ -8,7 +8,7 @@ HEIGHT = 630
 BG = "white"
 FG = "black"
 OUTPUT = Path(
-    "/Users/chajinwoo/Library/Mobile Documents/iCloud~md~obsidian/Documents/AutoVault/블로그/markdown-blog/Knowledge Management System/_assets/kms-selection-guide.png"
+    "/Users/chajinwoo/Vaults/AutoVault/markdown-blog/Knowledge Management System/_assets/kms-selection-guide.png"
 )
 
 

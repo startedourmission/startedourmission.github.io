@@ -17,7 +17,7 @@ Microsoft Research는 이 문제를 생성적 적대 신경망(GAN)의 프레임
 
 > T. Ye, L. Dong, Z. Chi, X. Wu, S. Huang and F. Wei, "Black-Box On-Policy Distillation of Large Language Models", arXiv preprint arXiv:2511.10643, 2025.
 
-![[블로그/markdown-blog/grid_Papers/_assets/1-Black-BoX.png|744x286]]
+![[markdown-blog/grid_Papers/_assets/1-Black-BoX.png|744x286]]
 ## 요약
 
 **아키텍처**

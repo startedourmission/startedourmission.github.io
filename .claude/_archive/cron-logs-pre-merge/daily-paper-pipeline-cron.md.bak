@@ -1,0 +1,1642 @@
+## 2026-08-04 04:39:22 KST
+
+```
+✅ daily-paper-pipeline 결과 (2026-08-04) — 헤드리스 자동 모드
+
+헤드리스 가드
+- 오늘 날짜 확인: blog-topic-finder-cron.md 최신 섹션 `## 2026-08-04 04:09:53 KST` = 오늘. 통과.
+- 중복 skip: 후보 7편의 핵심 키워드(VTLA / RLSVR / Mental World Modeling / Acutus / Qwen3.8 / SQLite / meat proxy)를 raw/drafts + 블로그/markdown-blog 전체 grep. 주제 수준 중복 0건. 전부 처리.
+- AskUserQuestion 미호출.
+
+논문 브랜치 (3/3)
+- N0-VTLA - Scaling Vision-Tactile-Language-Action Model with Latent Tactile Tokens
+  → raw/drafts/N0-VTLA - Scaling Vision-Tactile-Language-Action Model with Latent Tactile Tokens.md
+    arXiv 2607.23782 | Zotero H4ISVH78 | PDF 4.9MB 29p | buzz 71
+    figure 3장: n0-vtla-overview / n0-vtla-alter / n0-vtla-counterfactual (grid_Papers/_assets)
+    Dictionary 신규 4: 친이란, 루순린, 우쭈쉬안, 자샤오쑹
+- From RLVR to RLSVR - Task Transformation Induces Self-Verifiable Rewards for Open-Ended LLM Self-Improvement
+  → raw/drafts/From RLVR to RLSVR - Task Transformation Induces Self-Verifiable Rewards for Open-Ended LLM Self-Improvement.md
+    arXiv 2607.23802 | Zotero HJFI5I3N | PDF 9.0MB 31p | buzz 49 | COLM 2026 채택
+    figure 2장: rlsvr-overview / rlsvr-task-instances
+    Dictionary 신규 4: 왕친쓰, 우칭윈, 천이란, 자오한둥
+- Mental World Modeling
+  → raw/drafts/Mental World Modeling.md
+    arXiv 2607.27201 | Zotero NPEW7TUA | PDF 5.6MB 40p | buzz 46
+    figure 3장: mental-world-modeling-overview / -mentis / -ladder
+    Dictionary 신규 2: 페이하오, 자오이란
+
+정보·잡담 브랜치 (4/4, blog-draft)
+- 고기 프록시가 되지 마라 - AI 답변을 그대로 옮기는 사람이 상대에게 떠넘기는 비용 (잡담)
+  → raw/drafts/고기 프록시가 되지 마라 - AI 답변을 그대로 옮기는 사람이 상대에게 떠넘기는 비용.md
+    썸네일 meat-proxy-thumb.png (Codex 위임)
+- Qwen3.8-Max - 2.4T MoE에 활성 95B, PaperBench에서 프런티어를 앞선 빌드 (정보)
+  → raw/drafts/Qwen3.8-Max - 2.4T MoE에 활성 95B, PaperBench에서 프런티어를 앞선 빌드.md
+    썸네일 qwen3-8-max-thumb.png (Codex 위임)
+- SQLite 크리티컬 CVE 여섯 건은 전부 조작이었다 - LLM이 만든 취약점 보고서가 CVE 체계를 통과한 방법 (정보)
+  → raw/drafts/SQLite 크리티컬 CVE 여섯 건은 전부 조작이었다 - LLM이 만든 취약점 보고서가 CVE 체계를 통과한 방법.md
+    썸네일 sqlite-fake-cve-thumb.png (Codex 위임)
+- Acutus Wire - OpenAI 슈퍼PAC 자금이 닿은 AI 생성 뉴스 사이트가 AI 안전 진영을 때리는 구조 (정보)
+  → raw/drafts/Acutus Wire - OpenAI 슈퍼PAC 자금이 닿은 AI 생성 뉴스 사이트가 AI 안전 진영을 때리는 구조.md
+    썸네일 acutus-wire-thumb.png (Codex 위임)
+
+Dictionary 신규 개념 노트 7건 (위키링크 해소용)
+- VLA, RLVR, DINOv2, PaliGemma, JEPA, AutoGen, HuggingFace
+
+검증
+- tools/validate.py: 7편 전부 status=valid
+- 반말 어미(~한다/~이다/~된다) 0건, 구어체(~예요/~대요) 0건, em/en dash 0건, 본문 H1 0건
+- Headliner 태그 미부여, 태그 5개 이하 준수
+
+수동 필요
+- 없음
+
+skip
+- 없음
+
+주의사항
+- Codex 썸네일 4장 중 acutus-wire-thumb.png는 샌드박스 제한으로 raw/drafts/에 생성돼 grid_Posts/_assets/로 수동 이동. 생성 스크립트 잔여물(generate_*.py, 중복 png)은 raw/drafts/에서 삭제 완료.
+- Qwen3.8-Max 글에서 [[Claude Opus 4.8]] [[GPT-5.6 Sol]] 위키링크는 Dictionary 항목이 없고 근거 자료가 부족해 평문으로 되돌림. 항목 생성 후 다시 링크하는 편이 안전.
+- N0-VTLA는 Figure 9 막대값과 본문 서술이 Cardboard Box Folding SFT에서 어긋남(그림 20% vs 본문 "15점 앞섬"). 프리프린트라 그림을 정본으로 잡고 본문에 불일치를 명시.
+- SQLite 썸네일의 CVE ID는 예시용 가상값(CVE-2024-000x). 실제 ID(2026-51302 등)와 다르므로 게시 전 교체 검토 권장.
+
+다음 단계: raw/drafts/ 에서 검토 후 /blog-publish
+```
+
+---
+
+## 2026-08-03 04:33:07 KST
+
+```
+✅ daily-paper-pipeline 결과 (2026-08-03) 헤드리스 자동 모드
+
+헤드리스 가드
+- 오늘 날짜 확인: 최신 섹션 `## 2026-08-03 04:08:29 KST` = 오늘 → 통과
+- 중복 skip 검사: session-portability / Chrome / Seedance / HANDBOOK / MI355X / Lean 커널 / soundness / VideoCoCo 키워드로 raw/drafts + 블로그/markdown-blog 전체 grep. 히트는 전부 다른 글 본문 내 언급이고 해당 주제 전용 파일은 없음 → skip 0건
+- AskUserQuestion 미호출
+
+논문 (2/2) — Zotero 저장 + arXiv PDF 직접 다운로드 + blog-paper-review
+- HANDBOOK.md - A Benchmark for Long-Context Agentic Instruction Following (2607.25398)
+  → raw/drafts/HANDBOOK.md - A Benchmark for Long-Context Agentic Instruction Following.md
+  Zotero I76GTIER · PDF 300KB · buzz 0 (HF 미등재)
+  figure 3장: handbook-md-strict-vs-n1.png (frontmatter) / handbook-md-dataset-stats.png / handbook-md-cost-tokens.png
+  Dictionary 신규 4건: 리우다스 파나바스(star 0) · 에드윈 첸(star 32) · 브래들리 몬튼(star 12) · Surge AI(company)
+- VideoCoCo - Code-as-CoT for Physically-Consistent Video Generation via an Agentic Dual-Engine System (2607.27380)
+  → raw/drafts/VideoCoCo - Code-as-CoT for Physically-Consistent Video Generation via an Agentic Dual-Engine System.md
+  Zotero KCP8TB6S · PDF 6.8MB · buzz 64
+  figure 3장: videococo-overview.png (frontmatter) / videococo-qualitative.png / videococo-cot-paradigms.png
+  Dictionary 신규 2건: 왕핑안(Pheng-Ann Heng, star 12) · 리하오둥 (CUHK)(star 0)
+
+정보·잡담 (5/5) — blog-draft, 본문 전체 작성 + Codex 썸네일
+- 가져갈 수 없는 세션 - 추론 API가 대화를 봉인하는 여섯 가지 방법 (잡담)
+  → raw/drafts/가져갈 수 없는 세션 - 추론 API가 대화를 봉인하는 여섯 가지 방법.md
+- Chrome이 두 해치 버그를 한 분기에 고친 방법 - 발견·비평·수정·테스트 에이전트 분업 (정보)
+  → raw/drafts/Chrome이 두 해치 버그를 한 분기에 고친 방법 - 발견·비평·수정·테스트 에이전트 분업.md
+- Seedance 2.5 - 한 번에 30초, 레퍼런스 50개를 받는 오디오·비디오 합동 생성 (정보)
+  → raw/drafts/Seedance 2.5 - 한 번에 30초, 레퍼런스 50개를 받는 오디오·비디오 합동 생성.md
+- MI355X가 B300보다 달러당 빠른 이유 - 2.8T Kimi K3를 한 노드에 올린다는 것 (정보)
+  → raw/drafts/MI355X가 B300보다 달러당 빠른 이유 - 2.8T Kimi K3를 한 노드에 올린다는 것.md
+- Lean 커널 건전성 버그 #14576 - AI가 낸 콜라츠 반증이 통과한 한 시간 (정보)
+  → raw/drafts/Lean 커널 건전성 버그 #14576 - AI가 낸 콜라츠 반증이 통과한 한 시간.md
+  썸네일 5장 전부 codex:codex-rescue 위임 생성 → grid_Posts/_assets/<제목>-thumb.png, 각 드래프트 frontmatter image 필드 연결 완료
+
+수동 필요: 없음
+skip: 없음
+실패: 없음
+
+메모
+- Zotero 스토리지가 여전히 300/300MB라 --no-pdf로 메타데이터만 저장하고 PDF는 arXiv에서 직접 받았습니다. 두 건 모두 정상.
+- HANDBOOK.md는 HF Daily Papers 미등재라 buzz 0입니다. 선정 근거는 HN 325pt/211댓글이었고 frontmatter에도 buzz 0으로 명기했습니다.
+- Lean 커널 버그 글과 기존 드래프트 `Astra의 열 개 증명`이 정면으로 맞물립니다. 게시 시 두 편을 앞뒤로 붙이거나 Astra 글에 반론 섹션으로 흡수하는 편이 낫습니다. 두 글 모두 그 연결을 본문에 적어뒀습니다.
+- Seedance 2.5 글에서 VideoCoCo를 교사 편집기(Seedance 2.0) 맥락으로 상호 참조했습니다. 같은 날 드래프트 두 편이 서로를 가리킵니다.
+
+다음 단계: raw/drafts/ 에서 검토 후 /blog-publish
+```
+
+---
+
+## 2026-08-02 04:35:53 KST
+
+```
+✅ daily-paper-pipeline 결과 (2026-08-02) 헤드리스 자동 모드
+
+헤드리스 가드
+- 게이트1 오늘 날짜: blog-topic-finder-cron.md 최신 섹션 `## 2026-08-02 04:07:49 KST` = 오늘. 통과
+- 게이트2 중복 skip: 후보 7건 키워드(AskChem / PhiZero / Gemini Robotics / yc-software qm / Astra / AI Aesthetic / sqliteai WASTE)를 raw/drafts/ + 블로그/markdown-blog/ 전체에 grep -ril. 실질 중복 0건
+  - `Gemini Robotics` 히트 1건은 Dictionary/피에르 세르마네.md 의 스침 언급, `Astra` 히트는 Mastra·가상환경 등 부분문자열 오탐. 둘 다 중복 아님으로 판정
+- AskUserQuestion 미호출
+
+논문 브랜치 (2/2)
+- AskChem - Claim-Centered Infrastructure for Chemistry Literature Synthesis
+  → raw/drafts/AskChem - Claim-Centered Infrastructure for Chemistry Literature Synthesis.md
+  Zotero XFJBFFCD · arXiv 2607.28618 · PDF 736KB · buzz 290
+  figure 2장: grid_Papers/_assets/askchem-overview.png (Fig2 파이프라인), askchem-data-quality.png (Fig3)
+  Dictionary 신규 3건: 옌빙(star 0) · 스테파노 마르티니아니(star 12) · 그레고리 울프(star 0). 조경현은 기존 노트 재사용
+  숫자 검수: "전문 클레임 66%"는 클레임 기준이고 논문 기준으로는 30%(4.4만/14.7만)뿐이라는 불일치를 본문에 명시. DOI 지표도 §3의 100%(출처 접지)와 Fig3의 99.9%(CrossRef 검증)가 다른 것을 재는 지표임을 본문에 적음
+
+- PhiZero - A World Model Built Around Physical Language
+  → raw/drafts/PhiZero - A World Model Built Around Physical Language.md
+  Zotero JB276AC4 · arXiv 2607.28624 · PDF 14MB · buzz 155
+  figure 2장: grid_Papers/_assets/phizero-overview.png (Fig2 파이프라인), phizero-transfer.png (Fig8 제로샷 전이)
+  Dictionary 신규 4건: 탄톄뉴(star 44) · 장자오샹(star 12) · 판웨(star 0) · 왕위치(star 0)
+  수식은 전부 LaTeX($$ 인수분해식, Q-Former, FSQ, flow matching, 자기회귀 교차엔트로피$$). 결과는 표 6장으로 정리
+
+정보 브랜치 (5/5)
+- Gemini Robotics 2 - 상체 조작을 넘어 전신 지능으로 → raw/drafts/Gemini Robotics 2 - 상체 조작을 넘어 전신 지능으로.md
+- qm - 조직 단위로 굴리는 멀티플레이어 에이전트 하네스 → raw/drafts/qm - 조직 단위로 굴리는 멀티플레이어 에이전트 하네스.md
+- Astra의 열 개 증명 - AI 수학 결과에 Lean 인증서를 붙인다는 것 → raw/drafts/Astra의 열 개 증명 - AI 수학 결과에 Lean 인증서를 붙인다는 것.md
+- AI 미학은 미적 선택이 아니라 추론 특성의 누출이다 → raw/drafts/AI 미학은 미적 선택이 아니라 추론 특성의 누출이다.md (원 후보 The AI Aesthetic, STYLE.md 카피성 제목 금지에 맞춰 개념형으로 변경)
+- MoE 익스퍼트를 디스크로 내리기 - WASTE와 TurboFieldfare → raw/drafts/MoE 익스퍼트를 디스크로 내리기 - WASTE와 TurboFieldfare.md (topic-finder가 지적한 어제 TurboFieldfare 중복을 한 편으로 병합)
+
+썸네일
+- Codex 서브에이전트 위임으로 5장 생성 후 sips로 1200x630 정규화 (생성 원본 1730x909)
+- grid_Posts/_assets/ 에 <제목>-thumb.png 5장, 각 드래프트 frontmatter image 필드 연결 완료
+
+검수
+- 반말(~한다/~된다/~이다/~있다/~없다) 0건, 구어체(~예요/~죠/~대요) 0건, 이모지 0건, H1 0건, Headliner 0건
+- em/en dash: 초기 5건 검출 → 전부 교체 (PhiZero 표 미측정 표기 1건, qm 불릿 4건)
+
+수동 필요: 없음
+skip: 없음
+
+다음 단계: raw/drafts/ 에서 검토 후 /blog-publish
+```
+
+---
+
+## 2026-08-01 04:40:57 KST
+
+```
+✅ daily-paper-pipeline 결과 (2026-08-01) — 헤드리스 자동 모드
+
+헤드리스 가드
+- 오늘 날짜 확인: blog-topic-finder-cron.md 최신 섹션 `2026-08-01 04:13:15 KST` = 오늘. 통과
+- 중복 skip 검사: 7개 후보 키워드(Qwen-UI-Agent / V4-Flash / TurboFieldfare / Metis / 유니콘 / Frontis / GutCheck)를 raw/drafts + 블로그/markdown-blog 전체에 grep -ril.
+  V4-Flash·Frontis는 기존 글 본문 안 지나가는 언급만 잡혀 제목 단위 중복 아님으로 판정. skip 0건, 7편 전부 처리.
+- AskUserQuestion 호출 0회.
+
+논문 브랜치 (3/3)
+- Qwen-UI-Agent Technical Report - Toward Next-Generation Real-World Centric Foundation GUI Agents
+  → raw/drafts/Qwen-UI-Agent Technical Report - Toward Next-Generation Real-World Centric Foundation GUI Agents.md
+  Zotero J4NXMNR6 | arXiv 2607.28227 | PDF 31MB/56p | buzz 255
+  Dictionary 신규 5: 스티븐 호이(star 36), 왕웨, 저우한장, 퉁판룽, 쿵취위
+  Figure 3장: qwen-ui-agent-overview / -real-device-runtime / -data-flywheel
+  숫자 검수: 도입부가 "여섯 가지 전환" 나열 후 다음 문단에서 "이 다섯 가지 전환"이라 씀. 본문 목록(6개)이 정본이라고 글에 명시
+
+- Metis - Memory Foundation Model
+  → raw/drafts/Metis - Memory Foundation Model.md
+  Zotero UERMRM86 | arXiv 2607.26760 | PDF 2.9MB/42p | buzz 213
+  Dictionary 신규 3: 장쩌위, 리즈위, 천쉬(star 12). 기존 추아 탯셍 재사용(중복 생성 안 함)
+  Figure 2장: metis-overview / metis-architecture
+
+- Frontis-MA1 - Training an AI4AI Model towards Recursive Self-Improvement in Machine Learning Engineering
+  → raw/drafts/Frontis-MA1 - Training an AI4AI Model towards Recursive Self-Improvement in Machine Learning Engineering.md
+  Zotero 9EK5FP43 | arXiv 2607.28568 | PDF 1.8MB/61p | buzz 121
+  Dictionary 신규 2: 장처, 양쥔린. 기존 저우보원·장카이옌·딩닝에 papers 항목 추가 후 calc_star 재계산
+  Figure 2장: frontis-ma1-overview / frontis-ma1-workflow
+
+정보·잡담 브랜치 (4/4, blog-draft)
+- DeepSeek-V4-Flash-0731 → raw/drafts/DeepSeek-V4-Flash-0731 - 아키텍처를 그대로 두고 재학습만으로 자사 Pro를 앞선 빌드.md (정보)
+  배경 조사에서 확인: 9개 벤치 전부 DeepSeek 자체 하네스, 제3자 검증 없음. Flash 284B-A13B vs Pro 1.6T-A49B. 본문에 검증 부재 명시
+- TurboFieldfare → raw/drafts/TurboFieldfare - Gemma 4 26B를 Mac 2GB RAM에서 돌리는 SSD 익스퍼트 스트리밍.md (정보)
+- AI 유니콘 논문 미발표 → raw/drafts/AI 유니콘은 논문을 쓰지 않는다.md (정보)
+- 24시간 사업 실험 → raw/drafts/에이전트에게 24시간 사업을 맡긴 실험.md (잡담)
+  팩트 교정: HN 제목의 "$447"은 토큰 비용 포함 수치. 실제 사업 지출 $99.50, 잔고 $350 → $250.50, 매출 $0, 사용자 61 → 66.
+  또 지시문에 "미집행 자본은 값이 없다" 조항이 있어 자본 소진은 실패가 아니라 지시 준수. 둘 다 본문에 반영
+
+썸네일
+- 정보·잡담 4편은 Codex 서브에이전트(codex:codex-rescue)에 위임해 grid_Posts/_assets/에 1200x630 4장 생성, 각 초안 frontmatter image 필드 연결
+- 주의: Codex가 Pillow로 그렸음. "썸네일은 Codex로, Pillow 로컬 생성 금지" 규칙과 어긋나므로 사람 확인 필요
+
+skip: 없음
+수동 필요: 없음
+실패: 없음
+
+산출물 요약
+- raw/drafts/ 신규 7편 (논문 3, 정보 3, 잡담 1)
+- Dictionary 신규 10편, 기존 3편 papers 갱신
+- grid_Papers/_assets/ 신규 7장, grid_Posts/_assets/ 신규 4장
+
+다음 단계: raw/drafts/ 에서 검토 후 /blog-publish
+```
+
+---
+
+## 2026-07-31 04:40:47 KST
+
+```
+✅ daily-paper-pipeline 결과 (2026-07-31) — 헤드리스 자동 모드
+
+헤드리스 가드:
+- 오늘 날짜 확인 통과 (blog-topic-finder-cron.md 최신 섹션 = 2026-07-31 04:11:26 KST, 오늘)
+- 키워드 중복 skip 검사: 후보 5건 중 1건 skip
+  · TurboVLA / 2607.27205 → 미존재, 통과
+  · CoRT / 2607.25659 → arXiv ID 미존재, 통과 (문자열 "CoRT"는 기존 글 내부 부분일치만 발생, 오탐)
+  · DecoEvo / 2607.25675 → 미존재, 통과
+  · Pacing the Frontier → "Pacing"·"페이싱" 미존재. "감속"이 `AI 2040 - 초지능 감속 협정`(2026-07-10)에 걸렸으나
+    해당 글은 AI Futures Project의 AI 2040 Plan A 시나리오로 별개 사건. 통과
+  · 허깅페이스 침해 전문가 반론 → SKIP (기존 게시글 `HuggingFace AI-Agent-Driven Breach`와 동일 사건)
+- AskUserQuestion 미호출 (헤드리스 규약 준수)
+
+논문 (3/3):
+- TurboVLA - Real-Time Vision-Language-Action Model at 32 Hz on an RTX 4090 with <1 GB VRAM
+  → raw/drafts/TurboVLA - Real-Time Vision-Language-Action Model at 32 Hz on an RTX 4090 with <1 GB VRAM.md
+    (Zotero PETHAZIJ, arXiv 2607.27205, buzz 118, 16p 전문 3패스 독파)
+    figure 3장: turbovla-overview / turbovla-architecture / turbovla-realworld
+    Dictionary 신규 5건: 셰헝이, 야오천페이, 량딩캉, 바이샹, 딩한
+- CoRT - Counterfactual Replay for Token-Level Rubric-Guided Policy Optimization
+  → raw/drafts/CoRT - Counterfactual Replay for Token-Level Rubric-Guided Policy Optimization.md
+    (Zotero TR7RA3WH, arXiv 2607.25659, buzz 73, 12p 전문 + 부록 독파)
+    figure 2장: cort-overview / cort-replay
+    Dictionary 신규 4건: 장보원, 허쥔웨이, 린룽이, 궈란저
+- DecoEvo - Score-Decoupled Co-Evolution of Solver and Rubric-Generator Skills in Text Space
+  → raw/drafts/DecoEvo - Score-Decoupled Co-Evolution of Solver and Rubric-Generator Skills in Text Space.md
+    (Zotero 5JECPUB9, arXiv 2607.25675, buzz 54, 13p 전문 독파)
+    figure 2장: decoevo-paradigms / decoevo-overview
+    Dictionary 신규 3건: 천장왕, 완하이, 자오시빈
+
+정보 (1/1):
+- Pacing the Frontier - AI를 만드는 1,100명이 정부에 감속 장치를 만들어 달라고 한 이유
+  → raw/drafts/Pacing the Frontier - AI를 만드는 1,100명이 정부에 감속 장치를 만들어 달라고 한 이유.md
+    (blog-draft 본문 전체 작성, 썸네일 pacing-the-frontier-thumb.png Codex 위임 생성 1200x630)
+    Dictionary 신규 4건: 잭 클라크, 야쿠프 파호츠키, 자오성자, 안카 드라간
+
+skip (1):
+- 시끄럽고 빨랐지만 막을 수 있었다 - 허깅페이스 침해를 두고 갈라진 보안 전문가들
+  사유: 기존 게시글 `HuggingFace AI-Agent-Driven Breach - AI 에이전트가 AI 인프라를 공격하다`(2026-07-20)와
+  같은 사건. 다만 기존 글은 HuggingFace 공식 공개(07-16) 기반 침입 경로 서술이고, 07-30에 나온
+  OpenAI 귀속 논란·전문가 반론·17,600행동/4.5일 수치는 포함돼 있지 않음. 후속 글 또는 기존 글 보강으로
+  사람이 판단할 대상. 헤드리스에서는 자동 처리하지 않음.
+
+수동 필요: 없음
+
+검수 결과 (4편 전부):
+- 어미 존댓말 일관 (~입니다/~합니다), 반말·구어체 0건
+- em/en dash 0건, 이탤릭 0건, 본문 H1 0건, Headliner 태그 0건
+- 프론트매터 date/tags(5개 이하)/description/image 전부 존재, 참조 이미지 파일 실재 확인
+- 논문 3편 모두 frontmatter buzz + citation 한 줄 포함, aliases 미사용
+
+주의 1: TurboVLA 파일명에 `<` 문자가 들어감 (arXiv 원제 "with <1 GB VRAM" 그대로). 파일명 규칙상
+        콜론만 치환하므로 유지했음. 빌드에서 post.Title이 HTML로 이스케이프 없이 삽입되지만
+        `<` 뒤가 숫자라 브라우저가 태그로 파싱하지 않음. RSS는 CDATA라 무해. 게시 후 카드 렌더 육안 확인 권장.
+주의 2: 썸네일 생성 시 Codex가 _assets/에 남긴 generate_pacing_frontier_thumb.py 는 제거함.
+        (기존에 있던 create_nemotron_twotower_thumb.py 는 내가 만든 것이 아니라 손대지 않음)
+
+다음 단계: raw/drafts/ 에서 검토 후 /blog-publish
+```
+
+---
+
+## 2026-07-30 04:37:36 KST
+
+```
+✅ daily-paper-pipeline 결과 (2026-07-30) — 헤드리스 자동 모드
+
+헤드리스 가드:
+- 오늘 날짜 확인 통과 (blog-topic-finder-cron.md 최신 섹션 = 2026-07-30 04:06:53 KST)
+- 키워드 중복 skip 검사 통과 (HiFi-UMI / Hubble / RARG / Shieldstral / AI 웜 / 오픈웨이트 입장 전부 미존재)
+- AskUserQuestion 미호출
+
+논문 (3/3) — Zotero 저장 → arXiv PDF 다운로드 → blog-paper-review:
+- HiFi-UMI - Learning Deployable Manipulation Policies from High-Fidelity UMI Data Alone
+  → raw/drafts/HiFi-UMI - Learning Deployable Manipulation Policies from High-Fidelity UMI Data Alone.md
+  (arXiv 2607.25895, Zotero 6R4SCR5U, buzz 56)
+  figure 3장: hifi-umi-overview.png / hifi-umi-capture-device.png / hifi-umi-scaling.png
+  Dictionary 신규 6건: 웨이위텅, 마진밍, 쭤위선, 저우웨이타오, 리밍레이, Simple AI
+- A New Role for Relevance - Guiding Corpus Interaction in Agentic Search
+  → raw/drafts/A New Role for Relevance - Guiding Corpus Interaction in Agentic Search.md
+  (arXiv 2607.24223, Zotero 3WF3UIGU, buzz 51)
+  figure 3장: rarg-overview.png / rarg-frontier.png / rarg-hit-heatmap.png
+  Dictionary 신규 6건: 모위, 리장난, 저우제, 리위칭, Tencent, WeChat AI
+- Shieldstral
+  → raw/drafts/Shieldstral.md
+  (arXiv 2607.25857, Zotero WMIB8T2T, buzz 28)
+  figure 2장: shieldstral-overview.png / shieldstral-contrastive-pair.png
+  Dictionary 신규 4건: 기욤 랑플, 자다 피스틸리, 피에르 스톡, Hugging Face
+  ※ 논문에 소속 명시 없음. 기반 모델(Ministral-3B-Base-2512, Mistral-3 계열)과 저자진으로 Mistral AI 확정해 본문에 근거 명시
+
+정보 (3/3) — blog-draft:
+- Anthropic의 오픈웨이트 입장 → raw/drafts/Anthropic의 오픈웨이트 입장.md
+- Hubble - 에이전트와 같이 쓰는 마크다운 노트 앱 → raw/drafts/Hubble - 에이전트와 같이 쓰는 마크다운 노트 앱.md
+- 문서로 전파되는 AI 웜 - Copilot for Word → raw/drafts/문서로 전파되는 AI 웜 - Copilot for Word.md
+  Dictionary 신규 1건: 프롬프트 인젝션
+
+skip: 없음
+
+⚠️ 부분 실패 — 정보 글 3편 썸네일 미생성:
+- blog-draft 6단계(썸네일 → Codex 위임)에서 Codex 호출이 "Operation not permitted"로 실패.
+- 서브에이전트가 로컬 Pillow로 폴백 생성했으나, 볼트 규칙(썸네일 생성은 Codex 위임, 로컬 생성 도입 금지)에
+  어긋나고 결과물 품질도 낮아(도형 겹침, 판독 불가) 3장 전부 삭제함.
+- 따라서 정보 글 3편은 프론트매터에 `image` 필드가 없습니다. 게시하면 빌드가 기본 아바타로 폴백합니다.
+- 조치 필요: Codex 실행 권한 복구 후 아래 3개 썸네일 재생성
+    블로그/markdown-blog/grid_Posts/_assets/Anthropic의 오픈웨이트 입장-thumb.png
+    블로그/markdown-blog/grid_Posts/_assets/Hubble - 에이전트와 같이 쓰는 마크다운 노트 앱-thumb.png
+    블로그/markdown-blog/grid_Posts/_assets/문서로 전파되는 AI 웜 - Copilot for Word-thumb.png
+  논문 글 3편은 PDF에서 추출한 실제 figure를 쓰므로 영향 없습니다.
+
+다음 단계: raw/drafts/ 에서 검토 후 /blog-publish
+```
+
+---
+
+## 2026-07-29 04:27:47 KST
+
+```
+✅ daily-paper-pipeline 결과 (2026-07-29) — 헤드리스 자동 모드
+
+헤드리스 가드:
+- 오늘 날짜 확인 통과 (blog-topic-finder-cron.md 최신 섹션 = 2026-07-29 04:08:21 KST)
+- 키워드 중복 검사 통과 — 6개 후보 전부 신규
+  검사 키워드: JarvisHub / Classifier-Free Guidance + Negative Branch Asymmetry / NAVER + Brookfield + AI 팩토리 /
+  Fermisense + intelligence ownership + 카탈로그 리뷰 / Reference Language + ezyang / Matthew Saltz + 오픈 모델
+  ("Classifier-Free Guidance", "NAVER", "오픈 모델"은 일반 용어라 본문 히트가 있었으나 동일 주제 글 아님 → 통과)
+- AskUserQuestion 미호출 (헤드리스 규칙 준수)
+
+논문 브랜치 (2/2):
+- JarvisHub - An Open Harness for Canvas-Native Multimodal Creative Agents
+  → raw/drafts/JarvisHub - An Open Harness for Canvas-Native Multimodal Creative Agents.md
+  Zotero 4K7V4AWP | arXiv 2607.23588 | PDF 15p 3패스 정독 | buzz 101
+  figure 2장: grid_Papers/_assets/jarvishub-overview.png (frontmatter), jarvishub-comparison.png (본문)
+  Dictionary 신규 3건: 린윈룽(Yunlong Lin), 싱자오후(Zhaohu Xing), 웨샹위(Xiangyu Yue) / 기존 갱신 1건: 팡톈위(papers·last_active)
+- Rethinking Classifier-Free Guidance in On-Policy Diffusion Distillation
+  → raw/drafts/Rethinking Classifier-Free Guidance in On-Policy Diffusion Distillation.md
+  Zotero SVE3AEZC | arXiv 2607.24731 | PDF 22p 3패스 정독 | buzz 61
+  figure 2장: grid_Papers/_assets/cfg-opd-overview.png (frontmatter), cfg-opd-branch-error.png (본문)
+  Dictionary 신규 2건: 리빈난(Bingnan Li), 류자밍(Jiaming Liu)
+
+정보·잡담 브랜치 (4/4):
+- 한국 AI 인프라 - NAVER·NVIDIA·Brookfield 200MW 확장 → raw/drafts/한국 AI 인프라 - NAVER·NVIDIA·Brookfield 200MW 확장.md (정보/GPU/반도체)
+- $500짜리 9B 파인튜닝이 프런티어 모델을 이겼다 → raw/drafts/$500짜리 9B 파인튜닝이 프런티어 모델을 이겼다.md (정보/LLM/머신러닝)
+- PyTorch - A Reference Language → raw/drafts/PyTorch - A Reference Language.md (정보/파이썬/도구)
+- 오픈 모델을 쓰니 생각보다 기분이 좋았다 → raw/drafts/오픈 모델을 쓰니 생각보다 기분이 좋았다.md (잡담/LLM/오픈소스)
+
+⚠️ 부분 실패 (1건):
+- 정보·잡담 4편의 썸네일 생성 실패. Codex 서브에이전트가 `failed to load configuration: Operation not permitted (os error 1)`로
+  기동하지 못했습니다. 메모리 정책(feedback_thumbnail_codex: Pillow 등 로컬 생성 도입 금지)에 따라 대체 생성을 하지 않고 건너뛰었습니다.
+  → 4편 프론트매터에 image 필드 없음. 이 상태로 게시하면 카드·OG가 기본 아바타(notion_avatar.png)로 폴백됩니다.
+  → 조치 필요: Codex CLI 전체 디스크 접근 권한을 확인하거나, 게시 전 수동으로 썸네일을 넣어 주세요.
+  → 논문 2편은 PDF figure를 추출해 넣었으므로 영향 없습니다.
+
+배경 조사 중 정정한 사실 (topic-finder 로그 대비):
+- NAVER 각 세종 확장은 "2027년 10만 GPU"가 아니라 **현재 55MW → 2028년 200MW, 장기 1GW**입니다.
+  10만 GPU 환산치는 업계 보도에만 있고 공식 발표문에는 없어 본문에서 확정 수치로 쓰지 않았습니다.
+  자금 구조: NVIDIA가 NAVER Corp에 $10억 투자, Brookfield가 AI 인프라에 최대 $90억, 나머지 NAVER 부담.
+- Matthew Saltz는 임의의 매니지드 엔드포인트가 아니라 **본인 근무처인 Modal**의 엔드포인트에 Kimi K3를 올리고 opencode를 붙였습니다.
+- Fermisense 절대 수치 확보: 태스크 학습 9B 87.3% / 최고 프런티어 76.9% / 학습 전 베이스 64.2%.
+  HN 댓글의 비판(train-test 분할 미명시, 자체 제작 벤치마크, ABO 합성 데이터, 하이퍼파라미터 탐색 비용 미포함)을 본문에 반영했습니다.
+
+품질 게이트:
+- 논문 2편: 반말·구어체 0건, 한국어 연산자 표기 0건(수식 전부 LaTeX), em/en dash 0건, H1 0건
+- 정보·잡담 4편: em/en dash 0건, H1 0건, 이모지 0건, Headliner 0건
+- 드래프트 전체 제어문자(U+0008 등) 0건
+
+skip: 없음 (6개 후보 전량 처리)
+
+다음 단계: raw/drafts/ 에서 검토 후 /blog-publish
+현재 raw/drafts/ 총 15편 (기존 9편 + 오늘 6편)
+```
+
+---
+
+## 2026-07-28 06:49:49 KST
+
+```
+✅ daily-paper-pipeline 결과 (2026-07-28) — 헤드리스 자동 모드
+
+헤드리스 가드
+- 오늘 날짜 확인: blog-topic-finder-cron.md 최신 섹션 `## 2026-07-28 06:24:17 KST` = 오늘 ✓
+- 중복 skip 검사: 후보 6건 키워드(ABot-World / 2607.19191 / Opus 5 / Scriptc / 백스톱·오하이오 / 희귀본·파쇄 / Molt / 2607.21653)를 raw/drafts/ + 블로그/markdown-blog/ 전체 grep -ril
+  → skip 대상 없음. "오하이오" 1건 히트(grid_Posts/FERC, AI 데이터센터 전력망...)는 PJM 관할 주 목록의 우연 일치로 확인, 별건 판정
+- AskUserQuestion 미호출 ✓
+
+논문 (2/2) — Zotero 저장 → arXiv PDF 다운로드 → blog-paper-review
+- ABot-World-0 - Infinite Interactive World Rollout on a Single Desktop GPU
+  → raw/drafts/ABot-World-0 - Infinite Interactive World Rollout on a Single Desktop GPU.md
+  Zotero V5F48TJK | arXiv 2607.19191 | PDF 33p 16.7MB | buzz 299
+  figure 3장: grid_Papers/_assets/abot-world-0-{overview,training-pipeline,architecture}.png
+  Dictionary 신규 5건: 장판(Fan Jiang), 쉬무, 궈닝, 쉬팅빙, 판훙위
+- Molt - A Scalable PyTorch-Native Training Framework for Agentic Reinforcement Learning
+  → raw/drafts/Molt - A Scalable PyTorch-Native Training Framework for Agentic Reinforcement Learning.md
+  Zotero BRCUIGND | arXiv 2607.21653 | PDF 15p 1.8MB | buzz 21
+  figure 1장: grid_Papers/_assets/molt-overview.png
+  Dictionary 신규 3건: 후젠, 둥이, 파블로 몰차노프 | 기존 갱신 1건: 얀 카우츠(papers에 Molt 추가)
+
+정보·잡담 (4/4) — blog-draft
+- Claude Opus 5 → raw/drafts/Claude Opus 5 - 노력 토글과 요청 단위 가격표.md
+  (제목 조정: topic-finder의 "Fable 5 절반 가격에 13개 벤치 중 8개를 앞선 Opus 세대교체"는 STYLE.md의 카피성 제목 금지에 걸려 개념형으로 변경)
+- Scriptc → raw/drafts/Scriptc - TypeScript를 네이티브 바이너리로 컴파일하기.md
+- NVIDIA 백스톱 → raw/drafts/NVIDIA의 OpenAI 오하이오 데이터센터 백스톱.md
+- 희귀본 파쇄 → raw/drafts/AI 회사들이 희귀본을 파쇄하고 있다.md
+  썸네일 4장 Codex 위임 생성 완료 (grid_Posts/_assets/*-thumb.png, 각 1200×630)
+
+skip: 없음
+수동 필요: 없음
+
+주의·확인 요청
+1. Dictionary 파일명 충돌 — Fan Jiang(AMAP CV Lab)의 한글 표기 `장판`이 기존 `장판.md`(Fan Zhang, CUHK 박사과정)와 겹칩니다.
+   임시로 `장판(Fan Jiang).md`로 분리하고 본문은 `[[장판(Fan Jiang)|장판]]`으로 링크했습니다.
+   Zhang과 Jiang을 둘 다 `장`으로 음차하는 한 같은 충돌이 계속 납니다. 표기 표준 결정 필요.
+2. 썸네일 생성 방식 — Codex 서브에이전트에 위임했으나 Codex가 이미지 모델이 아닌 Pillow 스크립트로 그렸습니다.
+   결과물 품질은 기존 블로그 썸네일(검은 선 + 흰 배경)과 일관되어 그대로 뒀습니다. 의도와 다르면 재생성 필요.
+3. 볼트 파일명 NFC/NFD 혼재로 `ls | grep 한글`이 기존 노트를 놓칩니다.
+   중복 검사에 unicodedata.normalize('NFC') 대조를 써야 안전합니다. (장판.md를 처음에 놓친 원인)
+
+다음 단계: raw/drafts/ 에서 검토 후 /blog-publish
+현재 raw/drafts/ 대기: 12편 (07-25분 6편 + 오늘 6편)
+```
+
+---
+
+## 2026-07-25 17:47:55 KST
+
+```
+✅ daily-paper-pipeline 결과 (2026-07-25, 헤드리스 자동 모드)
+
+헤드리스 가드:
+- 오늘 날짜 확인: 통과 (topic-finder 최신 섹션 2026-07-25)
+- 중복 skip: 없음 (arXiv ID 3건 전부 신규, 키워드 검색 결과 동일 주제 게시글 없음)
+  · "T-Rex" / "Ascend" / "Flash-Lite" 키워드가 기존 글에 걸렸으나 전부 무관한 문맥으로 확인 후 통과
+- AskUserQuestion 미호출
+
+논문 (3/3):
+
+- Mage-Flow - An Efficient Native-Resolution Foundation Model for Image Generation and Editing
+  → raw/drafts/Mage-Flow - An Efficient Native-Resolution Foundation Model for Image Generation and Editing.md
+  Zotero W4ZAZV4T | arXiv:2607.19064 | buzz 64
+  figure 2장: mage-flow-overview.png (Fig.5 아키텍처), mage-flow-tradeoff.png (Fig.4 품질-속도-메모리)
+  Dictionary 신규 4건: 장신제, 선이페이, 리빈, 루옌
+
+- SLAI T-Rex - Full-Parameter Post-training of the DeepSeek-V4 Family on Ascend SuperPOD
+  → raw/drafts/SLAI T-Rex - Full-Parameter Post-training of the DeepSeek-V4 Family on Ascend SuperPOD.md
+  Zotero JACCH4RX | arXiv:2607.20145 | buzz 56
+  figure 2장: slai-t-rex-overview.png (Fig.1 MFU 단계·OR 순위), slai-t-rex-latency.png (Fig.2 지연 분해)
+  Dictionary 신규 1건: 선전허타오학원 (type: company — 개인 저자 없이 기관 명의 보고서)
+
+- Self Gradient Forcing - Native Long Video Extrapolation
+  → raw/drafts/Self Gradient Forcing - Native Long Video Extrapolation.md
+  Zotero 3P4CNGTM | arXiv:2607.20368 | buzz 30
+  figure 2장: self-gradient-forcing-overview.png (Fig.1 240초 비교), self-gradient-forcing-two-pass.png (Fig.2 2패스 구조)
+  Dictionary 신규 1건: 좡쥔하오 / 기존 재사용: 두안난 (EN-KR 중복 생성 방지 규칙 적용)
+
+정보·잡담 (3/3):
+
+- AI Kill Switch Act - DHS에 모델 종료 권한을 주는 법안
+  → raw/drafts/AI Kill Switch Act - DHS에 모델 종료 권한을 주는 법안.md (정보 / AI평가, LLM)
+
+- Gemini 3.6 Flash와 Flash Cyber - Pro 없이 나온 3종
+  → raw/drafts/Gemini 3.6 Flash와 Flash Cyber - Pro 없이 나온 3종.md (정보 / LLM, 도구)
+
+- 소프트웨어 공장이 실패하는 이유
+  → raw/drafts/소프트웨어 공장이 실패하는 이유.md (잡담 / 에이전트, 도구)
+  STYLE.md 단일 출처 규칙 적용 (상단 인용구 + 하단 관점 표기)
+
+skip: 없음
+
+검증:
+- tools/validate.py: 6/6 valid
+- 반말·구어체 어미, em/en dash, 이탤릭, 본문 H1: 전부 0건
+- 논문 3편 전부 frontmatter image + 본문 figure + citation 한 줄 + buzz 필드 포함
+- PDF는 3편 모두 전문(59·73·26쪽) 텍스트 추출 후 작성, 요약본 미사용
+
+주의 (사람 확인 필요):
+1. Dictionary 신규 노트 6건과 논문 figure 6장은 git worktree 브랜치
+   worktree-daily-blog-routine-20260725 에 있습니다. 백그라운드 격리 가드 때문에
+   블로그 저장소 직접 쓰기가 막혀 PR로 올렸습니다. 머지해야 드래프트의 이미지 링크가 삽니다.
+   (mage-flow-overview.png, mage-flow-tradeoff.png 2장은 가드 발동 전에 복사돼
+    로컬 working tree에도 이미 있습니다.)
+2. 신규 인물 노트는 CLAUDE.md 2026-07 규칙대로 type: person만 쓰고 '인물' 태그를 넣지
+   않았습니다. 그런데 tools/check_person_tags.py 는 이걸 불일치로 잡습니다.
+   규칙과 점검 스크립트가 어긋나 있어 blog-check 리포트에 계속 뜹니다. 한쪽을 맞춰야 합니다.
+
+다음 단계: raw/drafts/ 에서 검토 후 /blog-publish
+```
+
+---
+
+## 2026-07-20 04:38:15 KST
+
+```
+✅ daily-paper-pipeline 결과 (2026-07-20, 헤드리스 자동 모드)
+
+헤드리스 가드:
+- 오늘 날짜 확인: 통과 (2026-07-20)
+- 중복 skip: 없음 (5개 후보 전부 신규)
+
+논문 (2/2):
+
+- LongStraw - Long-Context RL Beyond 2M Tokens under a Fixed GPU Budget (arXiv:2607.11462, buzz 175)
+  → raw/drafts/LongStraw - Long-Context RL Beyond 2M Tokens under a Fixed GPU Budget.md
+  Zotero: 저장 완료 (--no-pdf). PDF: /tmp/arxiv_2607.11462.pdf
+  Dictionary: 앤드루 천.md (star:56, 신규), 마샤오텅.md (star:24, 신규)
+  Figure: longstraw-execution-path.png (grid_Papers/_assets/, Figure 1 crop)
+  핵심: GPRO + trajectory-segment sampling, 2048K 컨텍스트 RL, MF 1단계 80.7 → 91.9%, MAB 48 → 61%
+
+- KnowAct-GUIClaw - Know Deeply, Act Perfectly, Personal GUI Assistant with Self-Evolving Memory and Skill (arXiv:2607.12625, buzz 55)
+  → raw/drafts/KnowAct-GUIClaw - Know Deeply, Act Perfectly, Personal GUI Assistant with Self-Evolving Memory and Skill.md
+  Zotero: 저장 완료 (--no-pdf). PDF: /tmp/arxiv_2607.12625.pdf
+  Dictionary: 리윈신.md (star:0, 신규), 후바오톈.md (star:12, 신규)
+  Figure: knowact-guiclaw-overview.png (grid_Papers/_assets/, Figure 2 crop)
+  핵심: Know-Route-Act-Reflect 4단계 루프, 블랙보드 정보 전달, MobileWorld 64.1% (#1)
+
+정보 (3/3):
+
+- HuggingFace AI-Agent-Driven Breach - AI 에이전트가 AI 인프라를 공격하다
+  → raw/drafts/HuggingFace AI-Agent-Driven Breach - AI 에이전트가 AI 인프라를 공격하다.md (blog-draft)
+  태그: 잡담, 에이전트, AI평가
+  RCE loader + template injection, 17,000+ agent actions, GLM 5.2 방어 분석
+  썸네일: ✅ grid_Posts/_assets/huggingface-breach-thumb.png
+
+- NVIDIA Nemotron 3 Embed - Open Embedding Models, #1 on RTEB
+  → raw/drafts/NVIDIA Nemotron 3 Embed - Open Embedding Models, #1 on RTEB.md (blog-draft)
+  태그: 정보, 오픈소스, 머신러닝, GPU
+  8B BF16 / 1B BF16 / 1B NVFP4, RTEB #1 (78.46 NDCG@10, 34 languages), OpenMDW-1.1
+  썸네일: ✅ grid_Posts/_assets/nemotron-3-embed-thumb.png
+
+- 독일 ZAK, AI 검색에 미디어법 적용 - DSA 면책 조항 배제 첫 사례
+  → raw/drafts/독일 ZAK, AI 검색에 미디어법 적용 - DSA 면책 조항 배제 첫 사례.md (blog-draft)
+  태그: 정보, AI평가, LLM
+  ZAK 2026-07-15 결정, Google AI Overviews + Perplexity → 미디어 사업자 판정
+  DSA 제6조 면책 배제 (AI 합성 = 콘텐츠 생산), 정확성·투명성·다원성 의무
+  썸네일: ✅ grid_Posts/_assets/germany-zak-ai-ruling-thumb.png
+
+skip: 없음
+
+다음 단계: raw/drafts/ 에서 검토 후 /blog-publish
+```
+
+---
+
+## 2026-07-19 05:45:00 KST
+
+```
+✅ daily-paper-pipeline 결과 (2026-07-19, 헤드리스 자동 모드)
+
+논문 (2/2):
+- SEED: Self-Evolving On-Policy Distillation for Agentic Reinforcement Learning
+  → raw/drafts/SEED - Self-Evolving On-Policy Distillation for Agentic Reinforcement Learning.md
+  Zotero: DT9QG79A, arXiv: 2607.14777, buzz: 79
+  Dictionary: 양슈오.md(신규), 루정시.md(신규), 우진양.md·타오젠화.md(업데이트)
+  Figure: seed-self-evolving-overview.png, seed-self-evolving-results.png
+
+- Long-Horizon-Terminal-Bench: Testing the Limits of Agents on Long-Horizon Terminal Tasks with Dense Reward-Based Grading
+  → raw/drafts/Long-Horizon-Terminal-Bench - Testing the Limits of Agents on Long-Horizon Terminal Tasks with Dense Reward-Based Grading.md
+  Zotero: SRRASTM9, arXiv: 2607.08964, buzz: 50
+  Dictionary: 리쭝샤.md(신규), 리량(Leowei).md(신규)
+  Figure: lhtb-overview.png, lhtb-task-distribution.png, lhtb-leaderboard.png
+
+정보 (2/2):
+- Orca: 병렬 코딩 에이전트 ADE
+  → raw/drafts/Orca - 병렬 코딩 에이전트 ADE.md (blog-draft)
+  stablyai/orca, MIT 오픈소스, YC W22, 21,702★
+
+- Apple의 OpenAI 소송 - 영업비밀 유출 혐의
+  → raw/drafts/Apple의 OpenAI 소송 - 영업비밀 유출 혐의.md (blog-draft)
+  TechCrunch July 13, 2026 보도 기반
+
+skip:
+- 없음 (모델릴리스: Kimi K3·Inkling 이미 drafts 존재로 topic-finder에서 제외됨)
+
+다음 단계: raw/drafts/ 에서 검토 후 /blog-publish
+```
+
+---
+
+## 2026-07-16 05:30:00 KST
+
+```
+✅ daily-paper-pipeline 결과 (2026-07-16, 헤드리스 자동 모드)
+
+헤드리스 가드:
+- 오늘 날짜 확인: 통과 (2026-07-16)
+- 중복 skip: 없음 (5개 후보 전부 신규)
+
+논문 (1/1):
+
+- SynthDocBench - Controlled Benchmark for Long-Context Visual Document Understanding (arXiv:2607.10400, buzz 48)
+  → raw/drafts/SynthDocBench - Controlled Benchmark for Long-Context Visual Document Understanding.md
+  Zotero: GCDGWC3F (--no-pdf). PDF: /tmp/arxiv_2607.10400.pdf
+  Dictionary: 사이 라제스와르.md (Staff Research Scientist ServiceNow + Mila 겸임교수, star 계산 예정)
+             아비기야 베르마.md (공동 1저자·교신저자)
+             키야티 마하잔.md (공동 1저자)
+  Figure 2장: synthdocbench-benchmark-landscape.png(frontmatter), synthdocbench-generation-pipeline.png(본문)
+  200 문서 1788 QA, 프런티어 VLM 8종 비교, 실패모드 3개(난이도/위치편향/차트픽셀디코딩)
+
+정보 (3/3):
+
+- Nemotron-Labs-TwoTower: AR 컨텍스트와 확산 디노이저를 분리해 2.42배 빠른 LLM
+  → raw/drafts/Nemotron-Labs-TwoTower: AR 컨텍스트와 확산 디노이저를 분리해 2.42배 빠른 LLM.md
+  tags: 정보, LLM, 오픈소스 | 모델릴리스/화 슬롯
+  arXiv 2606.26493, 모델 가중치 2026-07-10 공개
+  썸네일: ✅ grid_Posts/_assets/nemotron-twotower-thumb.png
+
+- GitHub Copilot AI 보안 리뷰 + 에이전틱 자동수정 퍼블릭 프리뷰
+  → raw/drafts/GitHub Copilot AI 보안 리뷰 + 에이전틱 자동수정 퍼블릭 프리뷰.md
+  tags: 정보, 도구, LLM | 툴오픈소스/수 슬롯
+  /security-review 명령, 에이전틱 autofix, CodeQL 2.26.0 AI 프롬프트 인젝션 SAST (JS/TS 최초)
+  썸네일: ✅ grid_Posts/_assets/github-copilot-security-thumb.png
+
+- OpenAI 연구원 마일스 왕, AI 신약 발굴 스타트업 2조에 창업
+  → raw/drafts/OpenAI 연구원 마일스 왕, AI 신약 발굴 스타트업 2조에 창업.md
+  tags: 정보, LLM | 산업비즈니스/목 슬롯
+  $200M 조달 / $2B 기업가치 협상 중, Lightspeed 리드, 실패 약물 재목적화 포커스
+  썸네일: ✅ grid_Posts/_assets/miles-wang-drug-discovery-thumb.png
+
+잡담 (1/1):
+
+- 삼성 헬스, AI 학습 동의 거부하면 데이터 삭제한다는 팝업 논란
+  → raw/drafts/삼성 헬스, AI 학습 동의 거부하면 데이터 삭제한다는 팝업 논란.md
+  tags: 잡담, LLM | 잡담에세이/금 슬롯
+  Samsung Health AI 학습 동의 팝업 → 해명(AI 데이터와 서비스 데이터 분리됨) → 불명확 문구 개선 예정
+  썸네일: ✅ grid_Posts/_assets/samsung-health-ai-consent-thumb.png
+
+다음 단계: raw/drafts/ 에서 검토 후 /blog-publish
+```
+
+---
+
+## 2026-07-15 05:40:00 KST
+
+```
+✅ daily-paper-pipeline 결과 (2026-07-15, 헤드리스 자동 모드)
+
+헤드리스 가드:
+- 오늘 날짜 확인: 통과 (2026-07-15)
+- 중복 skip: 없음 (5개 후보 전부 신규)
+
+논문 (1/1):
+
+- Think Through a Bottleneck - Hourglass Reasoning for Rigorous Induction (arXiv:2607.11696, buzz 0)
+  → raw/drafts/Think Through a Bottleneck - Hourglass Reasoning for Rigorous Induction.md
+  Zotero: BXV7FUQ3 (--no-pdf). PDF: /tmp/arxiv_2607.11696.pdf
+  Dictionary: 블로그/markdown-blog/Dictionary/주환.md (인물, Huan Zhu, 베이징대)
+  Figure 2장: hourglass-reasoning-pipeline.png(frontmatter), hourglass-reasoning-comparison.png(본문)
+  4-stage API-isolated pipeline (φ,T bottleneck), ARC-AGI-2 +14pt p@5, ChipBench Verilog 31→58%
+
+정보 (3/3):
+
+- OpenCut - 오픈소스 CapCut 대안 (툴·오픈소스/수)
+  → raw/drafts/OpenCut - 오픈소스 CapCut 대안.md
+  분류: 정보 | 태그: 오픈소스, 도구 | blog-draft 완성
+  GitHub 68,838★, MIT, Rust WASM 코어, 플러그인 우선 아키텍처, MCP 헤드리스 계획
+
+- Lyzr SivaClaw - AI 에이전트가 직접 주도한 $100M 시리즈B (산업·비즈니스/목)
+  → raw/drafts/Lyzr SivaClaw - AI 에이전트가 직접 주도한 $100M 시리즈B.md
+  분류: 정보 | 태그: 에이전트, SaaS | blog-draft 완성
+  SivaClaw가 130명 투자자 대응·메모 작성, 밸류에이션 $500M, 분기 250% 성장
+
+- Mistral Robostral Navigate - 단일 카메라로 로봇을 자율 항법하는 8B 모델 (모델릴리스/화)
+  → raw/drafts/Mistral Robostral Navigate - 단일 카메라로 로봇을 자율 항법하는 8B 모델.md
+  분류: 정보 | 태그: LLM, 에이전트 | blog-draft 완성
+  R2R-CE 76.6% (다중 센서 최고 대비 +4.5pt), 시뮬레이션 40만 궤적, prefix-caching 22배 절감
+
+잡담 (1/1):
+
+- Ask HN - AI 생성 글에 플래그를 달아야 할까 (잡담·에세이/금)
+  → raw/drafts/Ask HN - AI 생성 글에 플래그를 달아야 할까.md
+  분류: 잡담 | 태그: AI평가 | blog-draft 완성
+  dang 정책 재확인, 플래그 역설(무-플래그=인증), 탐지 false positive, 자정 한계
+
+skip: 없음
+
+다음 단계: raw/drafts/ 에서 검토 후 /blog-publish
+```
+
+---
+
+## 2026-07-07 04:35:25 KST
+
+```
+✅ daily-paper-pipeline 결과 (2026-07-07, 헤드리스 자동 모드)
+
+헤드리스 가드:
+- 오늘 날짜 확인: 통과 (2026-07-07)
+- 중복 skip: 없음 (5개 후보 전부 신규)
+
+논문 (3/3):
+
+- AgenticSTS - A Bounded-Memory Testbed for Long-Horizon LLM Agents (arXiv:2607.02255, buzz 46)
+  → raw/drafts/AgenticSTS - A Bounded-Memory Testbed for Long-Horizon LLM Agents.md
+  Zotero: 완료 (--no-pdf). PDF: /tmp/arxiv_2607.02255.pdf
+  Figure 2장: agentic-sts-overview.png(frontmatter), agentic-sts-memory-layers.png(본문)
+  5-레이어 bounded memory contract, Slay the Spire 2 테스트베드, 3/10→6/10 승률
+
+- Embodied.cpp - A Portable Inference Runtime of Embodied AI Models on Heterogeneous Robots (arXiv:2607.02501, buzz 41)
+  → raw/drafts/Embodied.cpp - A Portable Inference Runtime of Embodied AI Models on Heterogeneous Robots.md
+  Zotero: 992ZAWGV (--no-pdf). PDF: /tmp/arxiv_2607.02501.pdf
+  Figure 1장: embodied-cpp-overview.png(frontmatter)
+  5-레이어 C++ 추론 런타임, HY-VLA 100%/pi0.5 91% 성공률, Q4_K 312→88 MiB
+
+- OrbitQuant - Data-Agnostic Quantization for Image and Video Diffusion Transformers (arXiv:2607.02461, buzz 34)
+  → raw/drafts/OrbitQuant - Data-Agnostic Quantization for Image and Video Diffusion Transformers.md
+  Zotero: H79KJ4R5 (--no-pdf). PDF: /tmp/arxiv_2607.02461.pdf
+  Figure 2장: orbitquant-qualitative.png(frontmatter), orbitquant-overview.png(본문)
+  RPBH 캘리브레이션 없는 DiT PTQ, W2A4 유일 생성 가능, GenEval SOTA
+
+정보 (1/1):
+
+- Venice AI, $65M Series A로 유니콘 등극
+  → raw/drafts/Venice AI, $65M Series A로 유니콘 등극.md
+  분류: 정보 | 태그: SaaS, LLM, 오픈소스 | blog-draft 완성
+  Dragonfly 주도, ARR $70M, 3M 사용자, 프라이버시 퍼스트 비즈니스 모델
+
+잡담 (1/1):
+
+- Fable 5가 돌아왔다
+  → raw/drafts/Fable 5가 돌아왔다.md
+  분류: 잡담 | 태그: LLM, AI평가 | blog-draft 완성
+  수출 통제 19일 만에 복귀, 준수 체계 서명, 프런티어 AI 거버넌스 첫 선례
+
+skip: 없음
+
+참고:
+- 썸네일(Venice AI, Fable 5): 헤드리스 모드에서 Codex 위임 생략. 게시 전 /blog-publish 단계에서 생성 필요.
+
+다음 단계: raw/drafts/ 에서 5편 검토 후 /blog-publish
+```
+
+---
+
+## 2026-07-06 05:30:00 KST
+
+```
+✅ daily-paper-pipeline 결과 (2026-07-06, 헤드리스 자동 모드)
+
+헤드리스 가드:
+- 오늘 날짜 확인: 통과 (2026-07-06)
+- 중복 skip: 없음 (5개 후보 전부 신규)
+
+논문 (1/1):
+
+- Orca - The World is in Your Mind (arXiv:2606.30534, buzz 63)
+  → raw/drafts/Orca - The World is in Your Mind.md
+  Zotero: 저장 완료 (--no-pdf). PDF: /tmp/arxiv_2606.30534.pdf
+  Dictionary: Yuheng Ji (star 0), Tiejun Huang (star 12), Zhongyuan Wang (star 24), Pengwei Wang (star 0) 신규 생성
+  Figure 2장: orca-overview.png(frontmatter), orca-encoder.png(본문)
+
+정보 (3/3):
+
+- Claude Science — Anthropic의 과학 연구 전용 워크벤치
+  → raw/drafts/Claude Science — Anthropic의 과학 연구 전용 워크벤치.md
+  분류: 정보 | 태그: LLM, 도구, 에이전트 | blog-draft 완성
+
+- Seed2.0 - ByteDance의 실세계 복잡도를 위한 모델 시리즈
+  → raw/drafts/Seed2.0 - ByteDance의 실세계 복잡도를 위한 모델 시리즈.md
+  분류: 정보 | 태그: LLM, 멀티모달 | blog-draft 완성
+
+- Cloudflare AI 크롤러 통제 - Search, Agent, Training을 나눠서 막는다
+  → raw/drafts/Cloudflare AI 크롤러 통제 - Search, Agent, Training을 나눠서 막는다.md
+  분류: 정보 | 태그: 도구, LLM | blog-draft 완성
+
+잡담 (1/1):
+
+- Anthropic vs DoD - 자율무기 거부의 대가
+  → raw/drafts/Anthropic vs DoD - 자율무기 거부의 대가.md
+  분류: 잡담 | 태그: LLM | blog-draft 완성
+
+skip: 없음
+
+다음 단계: raw/drafts/ 에서 5편 검토 후 /blog-publish
+```
+
+---
+
+## 2026-07-05 05:30:00 KST
+
+```
+✅ daily-paper-pipeline 결과 (2026-07-05, 헤드리스 자동 모드)
+
+헤드리스 가드:
+- 오늘 날짜 확인: 통과 (2026-07-05)
+- 중복 skip: 없음 (5개 후보 전부 신규)
+
+논문 (3/3):
+
+- MemSyco-Bench (arXiv:2607.01071, buzz 36)
+  → raw/drafts/MemSyco-Bench - Benchmarking Sycophancy in Agent Memory.md
+  Zotero: 저장 완료 (--no-pdf). PDF: /tmp/arxiv_2607.01071.pdf
+  Dictionary: Zhishang Xiang (star 0), Zerui Chen (star 0), Qinggang Zhang (star 12), Jinsong Su (star 12) 신규 생성
+  Figure 2장: memsyco-bench-overview.png(frontmatter), memsyco-bench-error-analysis.png
+
+- Multi-Resolution Flow Matching (arXiv:2607.01642, buzz 38)
+  → raw/drafts/Multi-Resolution Flow Matching - Training-Free Diffusion Acceleration via Staged Sampling.md
+  Zotero: 저장 완료 (--no-pdf). PDF: /tmp/arxiv_2607.01642.pdf
+  Dictionary: Xianglong Liu (star 12) 신규 생성
+  Figure 1장: mrflow-pipeline.png(frontmatter)
+
+- ELDR (arXiv:2607.00466, buzz 37)
+  → raw/drafts/ELDR - Expert-Locality-Aware Decode Routing for PD-Disaggregated MoE Serving.md
+  Zotero: 저장 완료 (--no-pdf). PDF: /tmp/arxiv_2607.00466.pdf
+  Dictionary: Youngjin Kwon (star 12) 신규 생성
+  Figure 1장: eldr-architecture.png(frontmatter)
+
+정보 (2/2):
+
+- Microsoft가 $2.5B를 쏟는 Frontier Company 모델
+  → raw/drafts/Microsoft가 $2.5B를 쏟는 Frontier Company 모델.md
+  분류: 정보 | 태그: LLM, 에이전트, SaaS | blog-draft 완성
+
+- OpenAI가 미국 정부에 5% 지분을 내놓겠다는 제안
+  → raw/drafts/OpenAI가 미국 정부에 5% 지분을 내놓겠다는 제안.md
+  분류: 잡담 | 태그: LLM, AI평가 | blog-draft 완성
+
+skip: 없음
+
+다음 단계: raw/drafts/ 에서 5편 검토 후 /blog-publish
+```
+
+---
+
+## 2026-07-04 05:30:00 KST
+
+```
+✅ daily-paper-pipeline 결과 (2026-07-04, 헤드리스 자동 모드)
+
+논문 (3/3):
+- Program-as-Weights (arXiv:2607.02512, buzz 48)
+  → raw/drafts/Program-as-Weights - A Programming Paradigm for Fuzzy Functions.md
+  Zotero: 3-A 완료. Dictionary: Yuntian Deng, Stuart Shieber 신규 생성. Figure: program-as-weights-overview.png, program-as-weights-lora-arch.png
+- AgenticSTS (arXiv:2607.02255, buzz 39)
+  → raw/drafts/AgenticSTS - A Bounded-Memory Testbed for Long-Horizon LLM Agents.md
+  Zotero: 3-A 완료. Dictionary: Kaipeng Zhang 신규 생성. Figure: agentists-overview.png
+- EvoPolicyGym (arXiv:2607.02440, buzz 39)
+  → raw/drafts/EvoPolicyGym - Evaluating Autonomous Policy Evolution in Interactive Environments.md
+  Zotero: 3-A 완료. Dictionary: Yu Cheng, Yang Yang 신규 생성. Figure: evopolicygym-overview.png
+
+정보 (0):
+- 해당 없음 (논문 3편으로 슬롯 충족)
+
+skip:
+- HiRA (arXiv:2507.02652) — 2025-07-04 제출, 7일 창 밖 (2026년 7일 창은 2026-06-28~2026-07-04)
+- MemAgent (arXiv:2507.02259) — 동일, 2025년 arXiv ID
+
+다음 단계: raw/drafts/ 에서 3편 검토 후 /blog-publish
+```
+
+---
+
+## 2026-07-03 05:30:00 KST
+
+```
+✅ daily-paper-pipeline 결과 (2026-07-03, 헤드리스 자동 모드)
+
+논문 (0):
+- 해당 없음 (7일 이내 새 논문 후보 없음. 전날(7/1) 크론에서 Agentic Abstention·Scaling the Horizon 이미 제안됨)
+
+정보 (3/3):
+- Google Nano Banana 2 Lite + Gemini Omni Flash — 이미지 4초, 대화형 영상 편집
+  → raw/drafts/Google Nano Banana 2 Lite + Gemini Omni Flash — 이미지 4초, 대화형 영상 편집.md
+  분류: 정보 | 태그: 멀티모달, 도구 | 썸네일: 생성 완료
+
+- Together AI $800M 시리즈C - $8.3B 밸류, 오픈소스 AI 추론 인프라 역대 최대 라운드
+  → raw/drafts/Together AI $800M 시리즈C - $8.3B 밸류, 오픈소스 AI 추론 인프라 역대 최대 라운드.md
+  분류: 정보 | 태그: LLM, 오픈소스 | 썸네일: 생성 중
+
+- 로컬 LLM이 실무 도구가 된 이유
+  → raw/drafts/로컬 LLM이 실무 도구가 된 이유.md
+  분류: 잡담 | 태그: LLM, 오픈소스 | 썸네일: 생성 중
+
+skip:
+- 없음 (중복 해당 없음)
+
+다음 단계: raw/drafts/ 에서 검토 후 /blog-publish
+```
+
+---
+
+## 2026-07-01 05:30:00 KST
+
+```
+✅ daily-paper-pipeline 결과 (2026-07-01, 헤드리스 자동 모드)
+
+논문 (2/2):
+- Agentic Abstention - Do Agents Know When to Stop Instead of Act?
+  → raw/drafts/Agentic Abstention - Do Agents Know When to Stop Instead of Act?.md
+  Zotero: (저장됨) | buzz: 55
+  Dictionary: Han Luo (신규, star 0), Bingbing Wen (신규, star 0), Lucy Lu Wang (신규, star 12)
+
+- Scaling the Horizon, Not the Parameters - Reaching Trillion-Parameter Performance with a 35B Agent
+  → raw/drafts/Scaling the Horizon, Not the Parameters - Reaching Trillion-Parameter Performance with a 35B Agent.md
+  Zotero: 86DEN6H8 | buzz: 48
+  Dictionary: 없음 (팀 논문, 개인 저자 없음)
+
+정보 (2/2):
+- RAISE US - AI 기업들이 $500M을 내놓은 날, AI는 87,714개 일자리를 없앴다
+  → raw/drafts/RAISE US - AI 기업들이 $500M을 내놓은 날, AI는 87,714개 일자리를 없앴다.md
+  (blog-draft, 정보 브랜치)
+
+- Google DeepMind 인재 대탈출 - 노벨상 수상자 포함 5명이 Anthropic·OpenAI로
+  → raw/drafts/Google DeepMind 인재 대탈출 - 노벨상 수상자 포함 5명이 Anthropic·OpenAI로.md
+  (blog-draft, 정보 브랜치)
+
+skip: 없음
+
+다음 단계: raw/drafts/ 에서 검토 후 /blog-publish
+```
+
+---
+
+## 2026-06-30 05:30:00 KST
+
+```
+✅ daily-paper-pipeline 결과 (2026-06-30, 헤드리스 자동 모드)
+
+논문 (3/3):
+- Wan-Streamer v0.1 - End-to-end Real-time Interactive Foundation Models
+  → raw/drafts/Wan-Streamer v0.1 - End-to-end Real-time Interactive Foundation Models.md
+  Zotero: (이전 세션 저장됨) | buzz: 53
+  Dictionary: Lianghua Huang (신규, star 0), Jingren Zhou (papers 업데이트)
+  Figure 2장 추출: wan-streamer-v01-overview.png, wan-streamer-v01-thinker-performer.png
+
+- Escaping the Self-Confirmation Trap - An Execute-Distill-Verify Paradigm for Agentic Experience Learning
+  → raw/drafts/Escaping the Self-Confirmation Trap - An Execute-Distill-Verify Paradigm for Agentic Experience Learning.md
+  Zotero: UNWCV4RV | buzz: 46
+  Dictionary: Kai Zhang (신규, star 0)
+  Figure 2장 추출: edv-self-confirmation-trap-comparison.png, edv-execute-distill-verify-detail.png
+
+- Improved Large Language Diffusion Models
+  → raw/drafts/Improved Large Language Diffusion Models.md
+  Zotero: ET9T2QKQ | buzz: 43
+  Dictionary: Chongxuan Li (신규, star 12), Wayne Xin Zhao (papers 업데이트)
+  Figure 1장 추출: illada-sft-epoch-ablation.png
+
+skip: 없음 (중복 없음)
+
+다음 단계: raw/drafts/ 에서 검토 후 /blog-publish
+```
+
+---
+
+## 2026-06-29 05:30:00 KST
+
+```
+✅ daily-paper-pipeline 결과 (2026-06-29, 헤드리스 자동 모드)
+
+논문 (2/2):
+- In-Context World Modeling for Robotic Control → raw/drafts/In-Context World Modeling for Robotic Control.md (buzz: 49)
+  Dictionary: Siyin Wang, Junhao Shi, Jingjing Gong, Xipeng Qiu (star 계산 완료)
+  Figure 3장 추출 (icwm-overview.png, icwm-pipeline.png, icwm-qualitative.png)
+
+- JetSpec - Breaking the Scaling Ceiling of Speculative Decoding with Parallel Tree Drafting
+  → raw/drafts/JetSpec - Breaking the Scaling Ceiling of Speculative Decoding with Parallel Tree Drafting.md (buzz: 40)
+  Dictionary: Lanxiang Hu (star 0), Hao Zhang (star 12), Tajana Rosing (star 12)
+  Figure 2장 추출 (jetspec-results.png, jetspec-overview.png)
+
+정보 (2/2):
+- GPT-5.6 Sol/Terra/Luna 출시 분석 → raw/drafts/GPT-5.6 Sol Terra Luna 출시 분석.md
+- Baseten $1.5B 시리즈 F → raw/drafts/Baseten 1.5B 시리즈 F 펀딩 분석.md
+
+skip: 없음
+
+다음 단계: raw/drafts/ 에서 검토 후 /blog-publish
+```
+
+---
+
+## 2026-06-28 04:03:16 KST
+
+```
+✅ daily-paper-pipeline 결과 (2026-06-28, 헤드리스 자동 모드)
+
+논문 (2/2):
+- DanceOPD (arXiv:2506.13707) → raw/drafts/DanceOPD - On-Policy Generative Field Distillation.md
+  Dictionary: Tat-Seng Chua, Wei Liu 생성 / buzz: 64
+- OPID (arXiv:2606.26790) → raw/drafts/OPID - On-Policy Skill Distillation for Agentic Reinforcement Learning.md
+  Dictionary: Jinyang Wu, Jianhua Tao 생성 / buzz: 43
+
+정보 (2/3):
+- Gemini 2.5 Pro Deep Think → raw/drafts/Gemini 2.5 Pro Deep Think - GPQA Diamond 82.4%.md (blog-draft)
+- SpaceX와 Reflection AI의 6조 3천억 딜 → raw/drafts/SpaceX와 Reflection AI의 6조 3천억 딜.md (blog-draft)
+  Dictionary: Reflection AI 생성
+
+잡담 (1/1):
+- AI Is Slowing Down 논쟁 → raw/drafts/AI Is Slowing Down - 성장 둔화 논쟁.md (blog-draft)
+
+skip: 없음
+
+다음 단계: raw/drafts/ 에서 검토 후 /blog-publish
+```
+
+---
+
+## 2026-06-27 04:29:21 KST
+
+```
+✅ daily-paper-pipeline 결과 (2026-06-27, 헤드리스 자동 모드)
+
+논문 (2/2):
+- NatureBench - Can Coding Agents Match the Published SOTA of Nature-Family Papers → raw/drafts/NatureBench - Can Coding Agents Match the Published SOTA of Nature-Family Papers.md (Zotero arXiv:2606.24530, buzz: 56)
+- The Verification Horizon - No Silver Bullet for Coding Agent Rewards → raw/drafts/The Verification Horizon - No Silver Bullet for Coding Agent Rewards.md (Zotero arXiv:2606.26300, buzz: 30)
+
+정보 (2/2):
+- GPT-5.5-Cyber - OpenAI의 사이버보안 특화 추론 모델 → raw/drafts/GPT-5.5-Cyber - OpenAI의 사이버보안 특화 추론 모델.md (blog-draft)
+- OpenAI와 Broadcom의 Jalapeño 칩 협력 → raw/drafts/OpenAI와 Broadcom의 Jalapeño 칩 협력.md (blog-draft)
+
+skip (1):
+- Claude Fable 5 — 전날 이미 초안 생성됨 (중복 skip)
+
+Dictionary 신규:
+- 블로그/markdown-blog/Dictionary/Kaiyan Zhang.md — NatureBench 추가
+- 블로그/markdown-blog/Dictionary/Ning Ding.md — 신규 생성 (NatureBench 교신저자)
+- 블로그/markdown-blog/Dictionary/Bowen Zhou.md — 신규 생성 (칭화대 석좌교수)
+- 블로그/markdown-blog/Dictionary/Dayiheng Liu.md — 신규 생성 (Qwen RL 리드)
+
+다음 단계: raw/drafts/에서 검토 후 /blog-publish
+```
+
+---
+
+## 2026-06-26 04:44:20 KST
+
+```
+✅ daily-paper-pipeline 결과 (2026-06-26, 헤드리스 자동 모드)
+
+논문 (3/3):
+- Qwen-AgentWorld (arXiv 2606.24597) → raw/drafts/Qwen-AgentWorld - Language World Models for General Agents.md (buzz: 108)
+  Dictionary: 블로그/markdown-blog/Dictionary/Jingren Zhou.md (star: 24)
+  Images: grid_Papers/_assets/qwen-agentworld-overview.png, qwen-agentworld-pipeline.png
+- Are We Ready For An Agent-Native Memory System? (arXiv 2606.24775) → raw/drafts/Are We Ready For An Agent-Native Memory System.md (buzz: 86)
+  Dictionary: Xuanhe Zhou.md (star: 12), Guoliang Li.md (star: 12)
+  Images: grid_Papers/_assets/agent-native-memory-overview.png, agent-native-memory-results.png
+- EnterpriseClawBench (arXiv 2606.23654) → raw/drafts/EnterpriseClawBench - Benchmarking Agents from Real Workplace Sessions.md (buzz: 75)
+  Dictionary: Kaiyan Zhang.md (star: 0)
+  Images: grid_Papers/_assets/enterprise-clawbench-overview.png, enterprise-clawbench-leaderboard.png
+
+정보 (2/2):
+- Qualcomm, Modular 인수 → raw/drafts/Qualcomm, Modular 약 4조 원에 인수 - CUDA 대안 베팅.md (blog-draft)
+  Dictionary: Chris Lattner.md (star: 64)
+- WaPo AI 정치 편향 실험 → raw/drafts/AI 챗봇은 정치적으로 편향돼 있는가 - WaPo 대규모 실험.md (blog-draft)
+
+skip: 없음
+
+다음 단계: raw/drafts/ 에서 검토 후 /blog-publish
+```
+
+---
+
+## 2026-06-25 05:30:00 KST
+
+```
+✅ daily-paper-pipeline 결과 (2026-06-25, 헤드리스 자동 모드)
+
+입력 섹션: blog-topic-finder-cron.md 2026-06-25 04:30:00 KST 섹션 (4개 후보)
+
+헤드리스 가드:
+- 오늘 날짜 확인: 통과 (2026-06-25)
+- 중복 skip: Claude Fable 5 크레딧 전환 — raw/drafts/에서 "크레딧" 키워드 파일 발견(Claude Fable 5 - Anthropic이 Mythos를 공개한 날.md) → SKIP
+
+논문 (2/2):
+- AOHP (arXiv 2606.23449) → raw/drafts/AOHP - An Open-Source OS-Level Agent Harness for Personalized, Efficient and Secure Interaction.md
+  Zotero EHFZXD59 저장됨 (PDF 미첨부 - 스토리지 413 초과, arXiv 직접 다운로드로 대체)
+  buzz: 25 (HF=25, cite=0)
+  Dictionary 신규: Yunxin Liu.md (star:8), Yuanchun Li.md (star:8), Ya-Qin Zhang.md (star:44)
+  이미지: grid_Papers/_assets/aohp-overview.png(frontmatter), aohp-architecture.png
+
+- Unlimited OCR Works (arXiv 2606.23050) → raw/drafts/Unlimited OCR Works - Welcome the Era of One-shot Long-horizon Parsing.md
+  Zotero B8ZB8QQD 저장됨 (PDF 미첨부 - 스토리지 413 초과, arXiv 직접 다운로드로 대체)
+  buzz: 23 (HF=23, cite=0)
+  Dictionary 신규: Youyang Yin.md (star:0)
+  이미지: grid_Papers/_assets/unlimited-ocr-rswa.png(frontmatter), unlimited-ocr-architecture.png
+
+정보 (1/1):
+- OpenAI Daybreak → raw/drafts/OpenAI Daybreak - GPT-5.5-Cyber 전체 공개와 Patch the Planet.md (blog-draft)
+  태그: 정보, AI평가, 에이전트
+
+skip (1):
+- Claude Fable 5 크레딧 전환 — 키워드 중복 (Claude Fable 5 관련 기존 초안 발견)
+
+다음 단계: raw/drafts/ 에서 검토 후 /blog-publish
+```
+
+---
+
+## 2026-06-24 05:00:00 KST
+
+```
+✅ daily-paper-pipeline 결과 (2026-06-24, 헤드리스 자동 모드)
+
+논문 (2/2):
+- PlanBench-XL → raw/drafts/PlanBench-XL - Evaluating Long-Horizon Planning of LLM Tool-Use Agents in Large-Scale Tool Ecosystems.md (Zotero 4APDT7B2, buzz 81)
+  Dictionary: Heng Ji.md (star:12), Dilek Hakkani-Tür.md (star:12)
+  Figures: planbench-xl-overview.png, planbench-xl-blocking.png
+- ACE-Ego-0 → raw/drafts/ACE-Ego-0 - Unifying Egocentric Human and Robotic Data for VLA Pretraining.md (Zotero JI35VGBU, buzz 45)
+  Dictionary: Hongsheng Li.md (star:12), Siyuan Huang.md (star:0)
+  Figures: ace-ego-0-overview.png, ace-ego-0-pipeline.png
+
+정보 (1/2):
+- ChatGPT 시장점유율, 역사상 처음으로 50% 아래로 → raw/drafts/ChatGPT 시장점유율, 역사상 처음으로 50% 아래로.md (blog-draft)
+
+잡담 (1/1):
+- The Economist AI 모델 수출통제 표지 → raw/drafts/The Economist AI 모델 수출통제 표지 -- '소프트웨어가 아니라 무기 시스템'.md (blog-draft)
+
+skip (1):
+- NVIDIA Physical AI Open Data (SkillSpector로 이미 커버된 동일 발표, 키워드 중복 확인)
+
+다음 단계: raw/drafts/ 에서 검토 후 /blog-publish
+```
+
+---
+
+## 2026-06-22 04:41:32 KST
+
+```
+✅ daily-paper-pipeline 결과 (2026-06-22, 헤드리스 자동 모드)
+
+논문 (3/3):
+- Learning from the Self-future (arXiv 2606.18195, d-OPSD)
+  → raw/drafts/Learning from the Self-future - On-policy Self-distillation for dLLMs.md
+  Dictionary: Shiwei Liu (star 14)
+  figures: learning-from-self-future-overview.png, learning-from-self-future-results.png
+
+- DragMesh-2 (arXiv 2606.15133)
+  → raw/drafts/DragMesh-2 - Physically Plausible Dexterous Hand-Object Interaction with Articulated Objects.md
+  Dictionary: Hao Tang (star 8)
+  figures: dragmesh-2-architecture.png, dragmesh-2-results.png
+
+- ZPPO (arXiv 2606.18216)
+  → raw/drafts/Zone of Proximal Policy Optimization - Teacher in Prompts, Not Gradients.md
+  Dictionary: Yejin Choi (star 26), Byung-Kwan Lee (star 6)
+  figures: zppo-overview.png, zppo-failure-modes.png
+
+정보 (1/1):
+- FERC AI 데이터센터 전력망 입증 명령
+  → raw/drafts/FERC, AI 데이터센터 전력망 우선순위 문제로 6개 전력 계통운영자에 입증 명령.md
+
+skip: 없음
+
+다음 단계: raw/drafts/ 에서 검토 후 /blog-publish
+```
+
+---
+
+## 2026-06-20 04:27:20 KST
+
+```
+✅ daily-paper-pipeline 결과 (2026-06-20, 헤드리스 자동 모드)
+
+입력 섹션: blog-topic-finder-cron.md 2026-06-20 04:11:12 KST 섹션 (5개 후보)
+
+헤드리스 가드:
+- 오늘 날짜 확인: 통과 (2026-06-20)
+- 중복 skip: 없음 (5개 전부 신규)
+
+논문 (2/2):
+- Moebius 2606.19195 → raw/drafts/Moebius - 0.2B Lightweight Image Inpainting Framework with 10B-Level Performance.md (Zotero 2CPJ7ICT)
+  LλMI 블록 + 다중 입도 증류, buzz=53, Dictionary: Ziyang Xu / Kangsheng Duan / Xinggang Wang
+- RNG-Bench 2606.19338 → raw/drafts/Beyond the Current Observation - Evaluating Multimodal Large Language Models in Controllable Non-Markov Games.md (Zotero D88PUM4E)
+  비마르코프 게임 MLLM 벤치마크, buzz=43, Dictionary: Haodong Duan / Dahua Lin
+
+정보 (3/3):
+- G7 Évian AI 서밋 → raw/drafts/G7 Évian AI 서밋 결과 정리.md (blog-draft)
+- 존 점퍼 → Anthropic → raw/drafts/존 점퍼가 Anthropic에 합류합니다.md (blog-draft)
+- Fable 5 수출 통제 → raw/drafts/Fable 5 수출 통제 사태 정리.md (blog-draft)
+
+skip: 없음
+
+다음 단계: raw/drafts/ 에서 검토 후 /blog-publish
+```
+
+---
+
+## 2026-06-19 06:34:42 KST
+
+```
+✅ daily-paper-pipeline 결과 (2026-06-19, 2차 실행)
+
+입력 섹션: blog-topic-finder-cron.md 2026-06-19 06:34:42 KST 섹션
+
+헤드리스 가드:
+- 오늘 날짜 확인: 통과 (2026-06-19)
+- 중복 skip: OpenAI 재무제표 → "OpenAI, SEC에 기밀 S-1 제출.md" 유사 주제 감지 → skip
+
+논문 (1/1):
+- GameCraft-Bench: Can Agents Build Playable Games End-to-End in a Real Game Engine?
+  → Zotero AXIN8XWM 저장 완료
+  → PDF /tmp/arxiv_2606.17861.pdf (6.2MB)
+  → raw/drafts/GameCraft-Bench - Can Agents Build Playable Games End-to-End in a Real Game Engine?.md
+  → Dictionary/Benyou Wang.md, Dictionary/Rongsheng Wang.md 생성
+  → grid_Papers/_assets/gamecraft-bench-overview.png, gamecraft-bench-teaser.png 저장
+  buzz: 43 (HF=41, cite=0)
+
+정보 (1/1):
+- Kimi K2.7-Code: Moonshot AI의 최신 코딩 특화 모델
+  → raw/drafts/Kimi K2.7-Code - Moonshot AI의 최신 코딩 특화 모델.md (blog-draft)
+
+skip (1):
+- OpenAI FY2025 재무제표 → "OpenAI, SEC에 기밀 S-1 제출.md"와 동일 주제군 감지
+
+다음 단계: raw/drafts/ 에서 검토 후 /blog-publish
+```
+
+---
+
+## 2026-06-19 04:02:17 KST
+
+```
+✅ daily-paper-pipeline 결과 (2026-06-19)
+
+헤드리스 가드: 오늘(2026-06-19) 날짜 확인 ✅ / 중복 skip 적용 ✅
+
+논문 (1/1):
+- VibeThinker-3B: Exploring the Frontier of Verifiable Reasoning in Small Language Models (arXiv 2606.16140)
+  → raw/drafts/VibeThinker-3B - Exploring the Frontier of Verifiable Reasoning in Small Language Models.md
+  → Zotero: XZTZSHJG (메타데이터만, PDF quota 초과로 첨부 생략)
+  → Dictionary: Sen Xu.md, Junlin Zhang.md 생성
+  → Assets: vibethinker-3b-overview.png, vibethinker-3b-pipeline.png
+
+정보 (3/3):
+- Grok Imagine Video 1.5 - Image-to-Video Arena 1위, Sora 대비 86% 저렴
+  → raw/drafts/Grok Imagine Video 1.5 - Image-to-Video Arena 1위, Sora 대비 86% 저렴.md (blog-draft)
+- Ponytail - AI 코딩 에이전트에 YAGNI 최소주의 심기
+  → raw/drafts/Ponytail - AI 코딩 에이전트에 YAGNI 최소주의 심기.md (blog-draft)
+- Agentjacking - MCP 주입으로 AI 코딩 에이전트 원격 코드 실행
+  → raw/drafts/Agentjacking - MCP 주입으로 AI 코딩 에이전트 원격 코드 실행.md (blog-draft)
+
+skip (1):
+- SpaceX/Cursor 인수 — "Cursor Compile 2026 총정리.md"에 이미 커버됨 (중복 skip)
+
+수동 필요:
+- Zotero 저장 용량 300/300MB 초과. PDF 첨부 413 실패. arXiv PDF 직접 다운로드로 우회.
+  해결: Zotero 저장 용량 확보 필요 (오래된 첨부 삭제 또는 용량 업그레이드)
+```
+
+---
+
+## 2026-06-18 04:39:31 KST
+
+```
+✅ daily-paper-pipeline 결과 (2026-06-18)
+
+헤드리스 가드: 오늘(2026-06-18) 날짜 확인 ✅ / 중복 없음 ✅
+
+논문 (2/2):
+
+1. SpatialClaw - Rethinking Action Interface for Agentic Spatial Reasoning (arXiv 2606.13673)
+   → raw/drafts/SpatialClaw - Rethinking Action Interface for Agentic Spatial Reasoning.md
+   Zotero EGS8FI38 저장됨 (PDF 미첨부 - 저장소 413 초과, arXiv 직접 다운로드로 대체)
+   buzz: 97
+   Dictionary 신규: Seokju Cho.md, Min-Hung Chen.md, Sifei Liu.md, Abhishek Badki.md, Seungryong Kim.md
+   이미지: grid_Papers/_assets/spatialclaw-interfaces.png(frontmatter), spatialclaw-loop.png, spatialclaw-benchmarks.png
+
+2. FastContext - Training Efficient Repository Explorer for Coding Agents (arXiv 2606.14066)
+   → raw/drafts/FastContext - Training Efficient Repository Explorer for Coding Agents.md
+   Zotero S7CCX75M 저장됨 (PDF 미첨부 - 저장소 413 초과, arXiv 직접 다운로드로 대체)
+   buzz: 81
+   Dictionary 신규: Maoquan Wang.md, Shengyu Fu.md, Shaoqiu Zhang.md
+   이미지: grid_Papers/_assets/fastcontext-architecture.png(frontmatter), fastcontext-overview.png
+
+정보 (2/2):
+
+3. GLM-5.2 - Zhipu의 744B MoE 오픈웨이트 모델 공개
+   → raw/drafts/GLM-5.2 - Zhipu의 744B MoE 오픈웨이트 모델 공개.md (blog-draft)
+   태그: 정보, LLM, 오픈소스
+
+4. OpenAI Deployment Simulation - 실사용 대화 재생으로 출시 전 모델 행동 예측
+   → raw/drafts/OpenAI Deployment Simulation - 실사용 대화 재생으로 출시 전 모델 행동 예측.md (blog-draft)
+   태그: 정보, LLM, AI평가
+
+수동 필요:
+- Zotero 저장소 302.8/300MB 꽉 참(413). 두 논문 모두 PDF 미첨부 상태.
+  향후 스토리지 정리 후 재첨부 필요.
+
+skip: 없음
+
+다음 단계: raw/drafts/ 에서 검토 후 /blog-publish
+```
+
+---
+
+## 2026-06-17 05:30:00 KST
+
+```
+✅ daily-paper-pipeline 결과 (2026-06-17)
+
+헤드리스 가드: 오늘(2026-06-17) 날짜 확인 ✅ / 중복 없음 ✅
+
+논문 (3/3):
+
+1. DreamX-World 1.0 (arXiv 2606.16993)
+   → raw/drafts/DreamX-World 1.0 - A General-Purpose Interactive World Model.md
+   Zotero 저장됨 (PDF 미첨부 - 저장소 413 초과, arXiv 직접 다운로드로 대체)
+   Dictionary 신규/갱신: Xiangxiang Chu.md(갱신), Jiachen Lei.md(신규), Jiashu Zhu.md(신규)
+   이미지: grid_Papers/_assets/dreamx-world-teaser.png, dreamx-world-overview.png
+
+2. HYDRA-X (arXiv 2606.13289)
+   → raw/drafts/HYDRA-X - Native Unified Multimodal Models with Holistic Visual Tokenizers.md
+   Zotero 저장됨 (PDF 미첨부 - 저장소 413 초과, arXiv 직접 다운로드로 대체)
+   Dictionary 신규: Xuerui Qiu.md, Limin Wang.md, Guozhen Zhang.md
+   이미지: grid_Papers/_assets/hydra-x-teaser.png, hydra-x-architecture.png
+
+3. Memento (arXiv 2606.14667)
+   → raw/drafts/Memento - Reconstruct to Remember for Consistent Long Video Generation.md
+   Zotero 저장됨 (PDF 미첨부 - 저장소 413 초과, arXiv 직접 다운로드로 대체)
+   Dictionary 신규: Xuan Wei.md, Zhenyu Zhang.md, Qingqi Hong.md
+   이미지: grid_Papers/_assets/memento-teaser.png, memento-framework.png
+
+수동 필요:
+- Zotero 저장 300MB 꽉 참(413). 세 편 모두 PDF 미첨부 상태.
+  향후 스토리지 정리 후 재첨부 필요.
+
+skip: 없음
+
+다음 단계: raw/drafts/ 에서 검토 후 /blog-publish
+```
+
+---
+
+## 2026-06-16 05:30:44 KST
+
+```
+✅ daily-paper-pipeline 결과 (2026-06-16)
+
+헤드리스 가드: 오늘(2026-06-16) 날짜 확인 ✅ / 중복 없음 ✅
+
+논문 (1/1):
+- Agents' Last Exam (arXiv 2606.05405) → raw/drafts/Agents' Last Exam.md
+  Zotero QXK8XR94 저장됨 (PDF 미첨부 - 저장소 413 초과)
+  arXiv에서 PDF 직접 다운로드 → blog-paper-review 완료
+  Dictionary 신규: Dawn Song.md, Yiyou Sun.md
+  이미지: grid_Papers/_assets/agents-last-exam-positioning.png, agents-last-exam-analysis.png
+
+정보 (4/4):
+- MiniMax M3 오픈웨이트 공개 → raw/drafts/MiniMax M3 오픈웨이트 공개.md (blog-draft)
+- Orchestra-o1 옴니모달 에이전트 프레임워크 → raw/drafts/Orchestra-o1 옴니모달 에이전트 프레임워크.md (arXiv 없음 → 정보 브랜치)
+- Visa, ChatGPT에 결제망 통합 → raw/drafts/Visa, ChatGPT에 결제망 통합.md (blog-draft)
+- jqwik 반AI 선언 - 오픈소스 개발자의 프롬프트 주입 저항 → raw/drafts/jqwik 반AI 선언 - 오픈소스 개발자의 프롬프트 주입 저항.md (blog-draft)
+
+수동 필요:
+- Zotero 저장 300MB 꽉 참(413). ALE PDF는 arXiv에서 직접 읽어 처리했으나
+  향후 Zotero PDF 첨부가 필요하면 스토리지 정리 후 재시도 필요.
+
+skip: 없음
+
+다음 단계: raw/drafts/ 에서 검토 후 /blog-publish
+```
+
+---
+
+## 2026-06-13 12:08:21 KST
+
+```
+✅ daily-paper-pipeline 결과 (2026-06-13)
+
+헤드리스 자동 모드 — 처리된 항목:
+
+논문 브랜치 (arXiv ID 없음으로 정보 브랜치로 변경):
+- DRPO - Direct Reinforcement Preference Optimization
+  → 정보 브랜치로 처리 (arXiv ID 미포함)
+  → blog-draft 스켈레톤 생성: raw/drafts/DRPO-Direct-Reinforcement-Preference-Optimization.md
+
+- MinerU2.5 - Document Parsing VLM
+  → 정보 브랜치로 처리 (arXiv ID 미포함)
+  → blog-draft 스켈레톤 생성: raw/drafts/MinerU2.5-Document-Parsing-Vision-Language-Model.md
+
+정보 브랜치 (5편):
+- GPT-5.5 and Gemini 3.x June 2026 Update
+  → blog-draft 스켈레톤: raw/drafts/GPT-5.5-and-Gemini-3.x-June-2026-Update.md
+
+- OpenClaw - Personal AI Assistant Platform Viral Growth
+  → blog-draft 스켈레톤: raw/drafts/OpenClaw-Personal-AI-Assistant-Platform-Viral-Growth.md
+
+- Anthropic Series H Funding - $965B Valuation Surge
+  → blog-draft 스켈레톤: raw/drafts/Anthropic-Series-H-Funding-Valuation-Surge.md
+
+- OpenAI Acquires Hiro Finance
+  → blog-draft 스켈레톤: raw/drafts/OpenAI-Acquires-Hiro-Finance.md
+
+- The Agentic Era - AI Agents Restructuring Software
+  → blog-draft 스켈레톤: raw/drafts/The-Agentic-Era-AI-Agents-Restructuring-Software.md
+
+---
+
+✨ 처리 완료: 7/7 항목
+
+드래프트 생성됨: 7편
+- 종류별: 정보 7편
+- 상태: blog-draft 스켈레톤 완성, raw/drafts/ 저장됨
+
+⚠️ 주의:
+- 원본 topic-finder에서 arXiv ID가 생략되어 모든 후보가 정보 브랜치(blog-draft)로 처리됨
+- 종류=논문으로 표시된 항목도 arXiv ID가 없으면 정보 브랜치 처리가 맞음
+- 향후 topic-finder는 논문 항목에 "arXiv: https://arxiv.org/abs/XXXX" 형식으로 arXiv ID를 포함할 것
+
+다음 단계:
+1. raw/drafts/ 에서 각 스켈레톤 검토
+2. 실제 본문 작성 및 프론트매터 보강
+3. 게시 준비 완료 후 /blog-publish 실행
+```
+
+---
+
+## 2026-06-13 04:30:00 KST
+
+```
+✅ daily-paper-pipeline 결과 (2026-06-13)
+
+처리 대상: 7건 중 5건 (중복 제외)
+- ✅ DRPO 
+- ✅ MinerU2.5 
+- ✗ DeepSeek V4.1 Flash (중복: 게시됨)
+- ✗ OpenClaw (중복: 게시됨)
+- ✅ OpenAI Acquires Hiro Finance
+- ✅ Chapter Raises $100M Series E
+- ✅ The AI Agent Funding Bubble
+
+정보 (5/5):
+- DRPO - Direct Reinforcement Preference Optimization → raw/drafts/ (blog-draft 스켈레톤)
+- MinerU2.5 - Document Parsing Vision-Language Model → raw/drafts/ (blog-draft 스켈레톤)
+- OpenAI Acquires Hiro Finance → raw/drafts/ (blog-draft 스켈레톤)
+- Chapter Raises $100M Series E → raw/drafts/ (blog-draft 스켈레톤)
+- The AI Agent Funding Bubble → raw/drafts/ (blog-draft 스켈레톤)
+
+중복 제외 (2/7):
+- DeepSeek V4.1 Flash: 게시됨 (bl​로그/markdown-blog/grid_Posts/DeepSeek V4 출시 임박.md)
+- OpenClaw: 게시됨 (블로그/markdown-blog/grid_Papers/OpenClaw-RL - Train Any Agent Simply by Talking.md)
+
+다음 단계: raw/drafts/에서 검토 후 /blog-publish
+```
+
+---
+
+
+## 2026-06-11 05:54:50 KST
+
+```
+✅ daily-paper-pipeline 결과 (2026-06-11 헤드리스 자동 모드)
+
+대상 섹션: blog-topic-finder-cron.md 최신 2026-06-11 섹션 (오늘 날짜 확인 통과). 후보 5편 — 논문 표기 2편(실제 arXiv ID 없음) + 정보 3편. 모든 후보가 arXiv ID 부재로 정보 브랜치(blog-draft)로 라우팅. 중복 skip 대상 없음.
+
+논문 브랜치 (0/0):
+- (해당 없음)
+
+정보 브랜치 (5/5):
+1. Microsoft Launches Seven New MAI Models Suite
+   → raw/drafts/Microsoft Launches Seven New MAI Models Suite.md (blog-draft 스켈레톤)
+   · 태그: 정보, LLM, 멀티모달, 음성
+   · 설명: 코딩, 이미지, 음성, 음성인식을 전문화한 7개 엔터프라이즈 AI 모델 제품군
+
+2. VibeVoice: Long-Form Multi-Speaker Speech Synthesis with Next-Token Diffusion
+   → raw/drafts/VibeVoice.md (blog-draft 스켈레톤)
+   · 논문 표기이나 arXiv ID 부재 → 정보 브랜치 라우팅
+   · 태그: 정보, 음성, 확산모델
+   · 설명: 다중 스피커 음성 합성을 고효율로 처리하는 차세대 토큰 확산 모델
+
+3. SkillOpt: A Systematic Text-Space Optimizer for Agent Skills
+   → raw/drafts/SkillOpt.md (blog-draft 스켈레톤)
+   · 논문 표기이나 arXiv ID 부재 → 정보 브랜치 라우팅
+   · 태그: 정보, 에이전트, 강화학습
+   · 설명: 강화학습 기반 에이전트 스킬 최적화로 배포 오버헤드 제거
+
+4. OpenClaw: Personal AI Assistant Going Viral
+   → raw/drafts/OpenClaw.md (blog-draft 스켈레톤)
+   · 태그: 정보, 오픈소스, AI에이전트
+   · 설명: 로컬 기반 개인 AI 어시스턴트로 50+ 통합 지원, 210k+ 깃허브 스타 돌파
+
+5. AI Agent Frameworks Dominating 2026 Open Source
+   → raw/drafts/AI Agent Frameworks Dominating 2026 Open Source.md (blog-draft 스켈레톤)
+   · 태그: 정보, AI에이전트, 오픈소스
+   · 설명: 단일 모델에서 협업 에이전트 팀으로: 2026년 AI 아키텍처 패러다임 전환
+
+주의: blog-draft는 프론트매터 + 스켈레톤만 생성. 사용자는 raw/drafts/에서 각 파일을 열어 본문을 작성해야 함.
+
+다음 단계: raw/drafts/ 에서 검토 후 /blog-publish
+```
+
+---
+
+## 2026-06-09 04:30:37 KST
+
+```
+✅ daily-paper-pipeline 결과 (2026-06-09) · 헤드리스 자동 모드
+
+대상 섹션: blog-topic-finder-cron.md 최신 2026-06-09 섹션 (오늘 날짜 확인 통과). 후보 3편 — 논문 2편(arXiv ID 확보) + 정보 1편. 중복 skip 대상 없음(3편 모두 drafts·게시 폴더에 기존 파일 없음. "Agent Memory" 문자열이 기존 LongMemEval-V2 파일과 부분 일치했으나 다른 논문이라 skip 아님).
+
+논문 (2/2):
+- Agent Memory - Characterization and System Implications of Stateful Long-Horizon Workloads
+  → raw/drafts/Agent Memory - Characterization and System Implications of Stateful Long-Horizon Workloads.md
+  (Zotero 65U4IQ6E · PDF 첨부됨 · fulltext 인덱싱 확인 ~13K토큰 · blog-paper-review 본문 완성)
+  · 저자 Dictionary 5건 생성: Yasmine Omri, Thierry Tambe, Alex Pentland, Tsachy Weissman, Marian Verhelst
+  · figure 2장: agent-memory-energy.png(frontmatter, Fig4 정답당 에너지), agent-memory-frontier.png(본문, Fig7 프런티어)
+  · 수치 검수: 본문은 정답당 에너지 격차를 "47배 이상"이라 적으나 표·그림4 수치로는 약 45배(BM25 4.1kJ vs Letta 185.9kJ), MIRIX도 본문 197kJ vs 표 144.6kJ 불일치 → 본문에 표/그림이 정본임을 명시
+- Generative Criticality in Large Language Model Temperature Scaling
+  → raw/drafts/Generative Criticality in Large Language Model Temperature Scaling.md
+  (Zotero H56HR842 · PDF 중복dedup · MCP fulltext 호출은 타임아웃 → PDF 직접 pdftotext로 전문 확보 · blog-paper-review 본문 완성)
+  · 저자 Dictionary 3건 생성: Huajian Ruan, Xingyu Guo, Lingxiao Wang
+  · figure 3장: gencrit-susceptibility.png(frontmatter, Fig1), gencrit-order-parameter.png(본문, Fig4), gencrit-intrinsic-dim.png(본문, Fig5)
+  · 수치 검수: T_c는 시퀀스 길이에 따라 이동(200/400/500토큰 → 1.405/1.343/1.289), γ≈0.1은 고정값 맞춤, T=0 TwoNN 맞춤 불량(R²<0) → 회고에 명시. 비평형·보편성 미확인 한계도 본문 반영
+
+정보 (1/1):
+- Apple WWDC 2026 - Gemini가 들어온 Siri와 iOS 27 Extensions
+  → raw/drafts/Apple WWDC 2026 - Gemini가 들어온 Siri와 iOS 27 Extensions.md
+  (blog-draft 스켈레톤 · 프론트매터 + H2 섹션 골격 6개. 본문은 검토 후 작성 예정. Headliner 미부여)
+
+skip: 없음
+
+다음 단계: raw/drafts/ 에서 검토 후 /blog-publish. 논문 2편은 본문 완성 상태라 바로 게시 가능, 정보 1편(Apple WWDC)은 스켈레톤이라 본문 보강 필요.
+```
+
+---
+
+## 2026-06-08 04:33:12 KST
+
+```
+✅ daily-paper-pipeline 결과 (2026-06-08) · 헤드리스 자동 모드
+
+대상 섹션: blog-topic-finder-cron.md 최신 2026-06-08 섹션 (오늘 날짜 확인). 후보 4편 전원 종류=논문 + arXiv ID 확보 → 전부 논문 브랜치. 중복 skip 대상 없음(4편 모두 drafts·게시 폴더에 기존 파일 없음).
+
+논문 (4/4 드래프트 생성):
+1. The Self-Correction Illusion - LLMs Correct Others but Not Themselves
+   → raw/drafts/The Self-Correction Illusion - LLMs Correct Others but Not Themselves.md
+   (Zotero 6TVN5GMX · PDF 첨부 · fulltext 55.5K자 인덱싱 확인)
+   Dictionary 3건: Kuan-Yen Chen, Fang-Yi Su, Jung-Hsien Chiang · figure 2장(overview, role-lift)
+2. Autoregressive Diffusion World Models for Off-Policy Evaluation of LLM Agents (ADWM)
+   → raw/drafts/Autoregressive Diffusion World Models for Off-Policy Evaluation of LLM Agents.md
+   (Zotero WRMZKA86 · PDF 첨부)
+   Dictionary 4건: Kaixuan Liu, Guojun Xiong, Weinan Zhang, Shengpu Tang · figure 2장(architecture, paradigms)
+3. MARDoc - A Memory-Aware Refinement Agent Framework for Multimodal Long Document QA
+   → raw/drafts/MARDoc - A Memory-Aware Refinement Agent Framework for Multimodal Long Document QA.md
+   (Zotero HFB56BXK · PDF dedup)
+   Dictionary 2건: Kaifeng Chen, Qiyao Peng · figure 2장(overview, framework)
+4. ReasoningFlow - Discourse Structures for Understanding LLM Reasoning Traces
+   → raw/drafts/ReasoningFlow - Discourse Structures for Understanding LLM Reasoning Traces.md
+   (Zotero JF8TZ8N6 · PDF 미첨부 → arXiv에서 직접 다운로드해 전문 작성)
+   Dictionary 3건: Jinu Lee, Julia Hockenmaier, Dilek Hakkani-Tür · figure 2장(overview, behaviors)
+
+정보 (0/0): 해당 후보 없음 (이번 섹션은 전부 논문).
+
+수동 필요/주의:
+- Zotero 스토리지 쿼터 초과(300.9 > 300 MB). 그래서 4번 ReasoningFlow의 PDF가 Zotero에 첨부되지 못했고(upload auth failed 413: File would exceed quota), 본 파이프라인이 arXiv pdf를 직접 받아 전문으로 작성함. 향후 자동 저장 안정성을 위해 Zotero 스토리지 정리 또는 용량 증설 권장.
+
+skip: 없음.
+
+다음 단계: raw/drafts/ 4편 검토 후 /blog-publish. (Headliner 태그는 부여하지 않음 - 사용자만 부여)
+```
+
+---
+
+## 2026-06-07 04:29:50 KST
+
+```
+✅ daily-paper-pipeline 결과 (2026-06-07) — 헤드리스 자동 모드
+
+가드: 최신 topic-finder 섹션 = 2026-06-07 (오늘) ✓ · 중복 skip 검사 = 5건 모두 신규(raw/drafts·블로그 폴더에 동명 파일 없음).
+
+논문 (3/3):
+- Audio Interaction Model → raw/drafts/Audio Interaction Model.md
+  (Zotero W3HKP6GB · 풀 페이퍼리뷰. PDF 31p 직접 정독, Dictionary 5인 신규(Zhifei Xie·Dongchao Yang·Shuicheng Yan·Chunyan Miao·Deheng Ye), figure 2장)
+- The Deterministic Horizon → raw/drafts/The Deterministic Horizon - When Extended Reasoning Fails and Tool Delegation Becomes Necessary.md
+  (Zotero 34AUD7K4 · 풀 페이퍼리뷰. PDF 51p 정독, Dictionary 3인 신규(Dongxin Guo·Siu Ming Yiu·Jikun Wu), figure 1장)
+- Quantized Reasoning Models Think They Need to Think Longer, but They Do Not → raw/drafts/Quantized Reasoning Models Think They Need to Think Longer, but They Do Not.md
+  (Zotero G554H32X · 풀 페이퍼리뷰. PDF 22p 정독, Dictionary 3인 신규(Sanae Lotfi·Zechun Liu·Polina Kirichenko), figure 1장)
+
+정보 (2/2):
+- OpenAI Dreaming V3 → raw/drafts/OpenAI Dreaming V3 - ChatGPT 메모리를 백그라운드에서 합성하는 새 아키텍처.md (blog-draft 스켈레톤)
+- NVIDIA Nemotron 3 Ultra → raw/drafts/NVIDIA Nemotron 3 Ultra - 550B 오픈 MoE 추론 모델.md (blog-draft 스켈레톤)
+
+수동 필요: 없음
+skip (이미 존재): 없음
+
+비고:
+- 논문 3편 모두 Zotero 저장 성공(arxiv-to-zotero add.py). Audio Interaction Model은 Zotero MCP fulltext가 로컬 PDF 경로 404(헤드리스 FDA 제약)였으나, ~/Zotero/storage에서 PDF를 직접 Read하여 전문 기반으로 작성. 나머지 2편은 MCP fulltext 정상 인덱싱.
+- 헤드리스 자동 모드: 2단계 동의 게이트 스킵, AskUserQuestion 미호출.
+- The Deterministic Horizon은 Zotero 메타데이터상 제출 2026-05-29(arXiv 2606.00376, 6월 공시)로 7일 창 경계선. topic-finder가 후보로 올려 파이프라인은 규정대로 처리.
+- 신규 figure 4장은 블로그/markdown-blog/grid_Papers/_assets/ 에 저장(audio-interaction-overview·audio-interaction-soundflow·deterministic-horizon-decay·quantized-reasoning-overthink).
+
+다음 단계: raw/drafts/ 에서 검토 후 /blog-publish
+```
+
+---
+
+## 2026-06-06 19:10:51 KST
+
+```
+✅ daily-paper-pipeline 결과 (2026-06-06) — 헤드리스 자동 모드
+
+대상 섹션: blog-topic-finder-cron.md 최신 (## 2026-06-06, 오늘) — 헤드리스 가드 통과(최신 섹션 날짜 = 오늘 ✓). 적격 후보 3건, 중복 skip 없음.
+
+논문 (1/2):
+- Cosmos 3: Omnimodal World Models for Physical AI → raw/drafts/Cosmos 3 - Omnimodal World Models for Physical AI.md (Zotero 4ECTUSQC)
+  · 3-A Zotero 저장 성공(PDF dedup), 3-B fulltext 인덱싱 확인(~9K토큰), 3-C blog-paper-review 본문 완성.
+  · 그림 2장 grid_Papers/_assets/ 저장: cosmos-3-overview.png(frontmatter), cosmos-3-mot.png(본문 MoT 구조).
+  · Dictionary 신규 4건: Ming-Yu Liu, Sanja Fidler, Jan Kautz, Jim Fan.
+
+정보 (1/1):
+- Holo3.1: Fast & Local Computer Use Agents → raw/drafts/Holo3.1 - Fast and Local Computer Use Agents.md (blog-draft 스켈레톤)
+
+수동 필요 (1/2):
+- KVarN: Variance-Normalized KV-Cache Quantization Mitigates Error Accumulation in Reasoning Tasks (arXiv 2606.03458)
+  3-A Zotero 저장 실패 — arxiv-to-zotero/add.py가 arXiv API 429를 4회, read timeout 1회로 5회 연속 실패(75s·95s·180s 쿨다운 재시도 포함). Zotero 미저장 → fulltext 확보 불가로 페이퍼리뷰 보류.
+  조치: arXiv 레이트리밋 해제 후 `python3 .claude/skills/arxiv-to-zotero/add.py 2606.03458` 재시도 → 성공 시 blog-paper-review 직접 호출.
+
+skip: 없음 (오늘 후보 중 이미 존재하는 초안/게시글 없음)
+
+다음 단계: raw/drafts/ 에서 Cosmos 3 / Holo3.1 검토 후 /blog-publish. KVarN은 레이트리밋 해제 후 재처리.
+```
+
+---
+
+## 2026-06-03 00:00:00 KST (seed)
+
+```
+daily-paper-pipeline 크론 로그 시작. 매일 05:30 launchd가 /daily-paper-pipeline을 헤드리스 자동 모드로 호출하고, 그 결과 리포트가 이 줄 위에 최신순으로 prepend됩니다.
+```
+
+---

@@ -1,0 +1,52 @@
+views:
+  - type: table
+    name: 초안
+    filters:
+      and:
+        - file.inFolder("markdown-blog")
+        - ready == false
+    order:
+      - ready
+      - date
+      - file.name
+      - description
+      - file.folder
+      - tags
+    sort:
+      - property: date
+        direction: DESC
+    columnSize:
+      note.description: 586
+  - type: table
+    name: 게시 대기
+    filters:
+      and:
+        - file.inFolder("markdown-blog")
+        - ready == true
+    order:
+      - ready
+      - date
+      - file.name
+      - description
+      - file.folder
+      - tags
+    sort:
+      - property: date
+        direction: DESC
+    columnSize:
+      note.description: 586
+  - type: table
+    name: 클리핑
+    filters:
+      and:
+        - file.inFolder("Clippings")
+        - '!file.inFolder("Clippings/Archive")'
+        - '!file.inFolder("Clippings/_Archive_drafts")'
+    order:
+      - date
+      - file.name
+      - description
+      - tags
+    sort:
+      - property: date
+        direction: DESC

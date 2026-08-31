@@ -1,0 +1,13 @@
+{
+  "eval_id": 0,
+  "eval_name": "standard-invocation",
+  "prompt": "이번 주 주간 리포트 만들어줘",
+  "assertions": [
+    "frontmatter에 date, tags(주간리포트), week, description 모두 포함",
+    "상단에 > [!summary] 한 주 요약 콜아웃 + 편수 명시",
+    "월~금 5개 요일·테마 섹션이 모두 존재 (없는 요일은 '게시 없음')",
+    "각 글에 [분류] 라벨과 [[위키링크]] 제목이 함께 붙음",
+    "본문에 em/en dash(— 또는 –) 없음",
+    "파일명 또는 week 필드가 ISO 주차(YYYY-Www) 형식"
+  ]
+}

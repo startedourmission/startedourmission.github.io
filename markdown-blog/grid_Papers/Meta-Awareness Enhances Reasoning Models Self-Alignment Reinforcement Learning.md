@@ -18,7 +18,7 @@ buzz: 33
 
 대형 언어 모델의 추론 능력을 향상시키기 위해 강화학습을 적용하는 연구가 활발히 진행되고 있습니다. 하지만 현재의 추론 모델들은 "어떻게 생각해야 하는지"를 스스로 인지하는 메타 인지(meta-awareness) 능력이 부족합니다. 이 논문은 모델이 예측한 메타 정보와 실제 추론 과정 사이의 정렬(alignment)을 통해 메타 인지 능력을 향상시키는 MASA(Meta-Awareness via Self-Alignment) 프레임워크를 제안합니다.
 
-![[블로그/markdown-blog/grid_Papers/_assets/1-Masa.png]]
+![[markdown-blog/grid_Papers/_assets/1-Masa.png]]
 
 ## 요약
 
@@ -64,7 +64,7 @@ buzz: 33
 
 GRPO는 작업 $q$에 대해 $G$개의 응답 롤아웃을 생성하고, 각 응답에 정답과의 일치 여부에 따라 보상 $r_i$를 할당합니다. 정책 최적화는 다음 목적 함수를 최소화합니다:
 
-![[블로그/markdown-blog/grid_Papers/_assets/2-Masa.png|549x104]]
+![[markdown-blog/grid_Papers/_assets/2-Masa.png|549x104]]
 
 여기서 $\Gamma_{i,t}(\theta) = \frac{\pi_\theta(o_{i,t}|q, o_{i,<t})}{\pi_{\theta_{old}}(o_{i,t}|q, o_{i,<t})}$는 중요도 샘플링 비율입니다.
 

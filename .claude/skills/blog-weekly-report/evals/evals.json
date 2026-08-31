@@ -1,0 +1,21 @@
+{
+  "skill_name": "blog-weekly-report",
+  "evals": [
+    {
+      "id": 0,
+      "name": "standard-invocation",
+      "prompt": "이번 주 주간 리포트 만들어줘",
+      "expected_output": "이번 주(이번 ISO 주 월~오늘) 블로그 게시글을 요일별 5테마 섹션으로 요약한 마크다운 노트. frontmatter(date/tags:주간리포트/week/description) + 상단 요약 콜아웃 + 월~금 섹션(글 없으면 '게시 없음') + 주말 섹션. 각 글은 [분류] [[제목]] + 태그 + 2~3문장 한국어 요약.",
+      "files": [],
+      "assertions": []
+    },
+    {
+      "id": 1,
+      "name": "casual-paraphrase",
+      "prompt": "이번 주 블로그에 올라온 글들 결산해서 한눈에 보게 정리해줘",
+      "expected_output": "표준 호출과 동일한 형식의 주간 리포트 노트. '주간 리포트'라는 단어를 직접 안 써도 트리거되어 같은 구조 산출.",
+      "files": [],
+      "assertions": []
+    }
+  ]
+}

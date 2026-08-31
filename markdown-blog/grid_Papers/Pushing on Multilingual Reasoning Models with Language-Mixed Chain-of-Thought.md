@@ -15,7 +15,7 @@ buzz: 74
 
 > G. Son, D. Yang, H. L. Patel, A. Agarwal, H. Ko, C. Lim, S. Panda, M. Kim, N. Drolia, D. Choi, K.-H. Lee and Y. Yu, "Pushing on Multilingual Reasoning Models with Language-Mixed Chain-of-Thought", arXiv preprint arXiv:2510.04230, 2025.
 
-![[블로그/markdown-blog/grid_Papers/_assets/1-koreason.png]]
+![[markdown-blog/grid_Papers/_assets/1-koreason.png]]
 
 기존 접근법들은 크게 두 가지 문제에 직면했습니다. 첫째, 영어 데이터를 단순 번역하면 번역 오류가 누적되고 문화적 맥락이 손실됩니다. 둘째, 목표 언어로만 학습하면 추론 능력이 크게 떨어집니다. 이 연구는 Language-Mixed CoT라는 새로운 방식을 제안하여 이 문제를 해결합니다.
 

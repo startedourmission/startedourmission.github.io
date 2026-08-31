@@ -1,0 +1,7 @@
+2026-06-09	2	grid_Papers/Generative Criticality in Large Language Model Temperature Scaling.md
+2026-06-09	2	grid_Papers/Agent Memory - Characterization and System Implications of Stateful Long-Horizon Workloads.md
+2026-06-08	1	grid_Papers/The Self-Correction Illusion - LLMs Correct Others but Not Themselves.md
+2026-06-08	1	grid_Papers/ReasoningFlow - Discourse Structures for Understanding LLM Reasoning Traces.md
+2026-06-08	1	grid_Papers/MARDoc - A Memory-Aware Refinement Agent Framework for Multimodal Long Document QA.md
+2026-06-08	1	grid_Papers/Holo3.1 - Fast and Local Computer Use Agents.md
+2026-06-08	1	grid_Papers/Autoregressive Diffusion World Models for Off-Policy Evaluation of LLM Agents.md

@@ -19,7 +19,7 @@ buzz: 74
   **논문**: https://arxiv.org/abs/2509.26507 
 
 이번에 소개할 Dragon Hatchling(BDH)은 이 두 세계를 잇는 다리를 제공합니다. BDH는 $n$개의 뉴런이 국소적으로 상호작용하는 그래프 기반 시스템으로 설계되었지만, GPU에서 효율적으로 학습 가능하며, 놀랍게도 GPT-2와 동등한 성능을 보입니다. 더 흥미로운 점은 BDH가 생물학적으로 그럴듯하다는 것입니다. 헤비안 학습(Hebbian learning)을 사용하고, 스파이킹 뉴런으로 구현 가능하며, attention 메커니즘이 시냅스 가소성으로 자연스럽게 설명됩니다.
-![[블로그/markdown-blog/grid_Papers/_assets/1-DragonHatchling.png|454x479]]
+![[markdown-blog/grid_Papers/_assets/1-DragonHatchling.png|454x479]]
 
 ## 요약
 

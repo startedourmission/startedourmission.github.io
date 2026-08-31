@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "zotero": {
+      "type": "stdio",
+      "command": "/Users/chajinwoo/.local/bin/zotero-mcp",
+      "args": [],
+      "env": {}
+    }
+  }
+}

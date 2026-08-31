@@ -344,6 +344,22 @@ module Obsidian =
             None
     
     // YAML 프론트매터에서 buzz 또는 star 숫자 필드 추출
+    // 프론트매터의 `ready: false` 가 명시된 글은 게시하지 않는다 (초안).
+    // 필드가 없으면 게시한다 — 기존 글 전부가 여기 해당하고,
+    // 실수로 필드를 빠뜨렸을 때 "조용히 사라짐"이 아니라 "그냥 올라감"으로 실패하게 하려는 것.
+    let isUnpublished (markdownContent: string) =
+        let frontMatterPattern = @"^\s*---\s*\n([\s\S]*?)\n\s*---\s*\n"
+        let frontMatterMatch = Regex.Match(markdownContent, frontMatterPattern)
+
+        if frontMatterMatch.Success then
+            let yamlContent = frontMatterMatch.Groups.[1].Value
+            let readyMatch = Regex.Match(yamlContent, @"(?m)^\s*ready:\s*(\S+)")
+            if readyMatch.Success then
+                let v = readyMatch.Groups.[1].Value.Trim().Trim('"').ToLowerInvariant()
+                v = "false" || v = "no" || v = "off"
+            else false
+        else false
+
     let extractBuzz (markdownContent: string) =
         let frontMatterPattern = @"^\s*---\s*\n([\s\S]*?)\n\s*---\s*\n"
         let frontMatterMatch = Regex.Match(markdownContent, frontMatterPattern)

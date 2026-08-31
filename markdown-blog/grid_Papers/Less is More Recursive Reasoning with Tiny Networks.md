@@ -24,7 +24,7 @@ LLM이 잘 못하는 문제가 몇 가지 있습니다. 바로 스도쿠나 미�
 **아키텍처**: 단일 2-layer 네트워크로 구성된 재귀적 추론 모델
 
 모델 구조가 정말 단순하네요. 이런 간단한 네트워크로 어떻게 내로라하는 추론 모델의 성능을 따라잡을 수 있었던 것인지 알아보겠습니다. 
-![[블로그/markdown-blog/grid_Papers/_assets/1-rtn1.png]]
+![[markdown-blog/grid_Papers/_assets/1-rtn1.png]]
 
 **주요 특징**:
 

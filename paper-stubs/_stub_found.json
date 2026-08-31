@@ -1,0 +1,219 @@
+[
+  {
+    "name": "공 루이하오",
+    "title": "QDrop: Randomly Dropping Quantization for Extremely Low-bit Post-Training Quantization",
+    "arxiv_id": "2203.05740",
+    "found": true,
+    "note": "제목 정확히 일치, arXiv 2203.05740 (ICLR 2022). 저자에 Ruihao Gong(공 루이하오) 포함 확인."
+  },
+  {
+    "name": "니우준보",
+    "title": "MinerU2.5: A Decoupled Vision-Language Model for Efficient High-Resolution Document Parsing",
+    "arxiv_id": "2509.22186",
+    "found": true,
+    "note": "arxiv.org/abs/2509.22186에서 제목 정확히 일치 확인 (HuggingFace, ADS 등 다중 출처 교차검증)"
+  },
+  {
+    "name": "둥리",
+    "title": "Unified Language Model Pre-training for Natural Language Understanding and Generation",
+    "arxiv_id": "1905.03197",
+    "found": true,
+    "note": "제목 정확히 일치, 제1저자 Li Dong(둥리) 확인. arxiv.org/abs/1905.03197 (NeurIPS 2019 UniLM)."
+  },
+  {
+    "name": "둥인펑",
+    "title": "Boosting Adversarial Attacks with Momentum",
+    "arxiv_id": "1710.06081",
+    "found": true,
+    "note": "제목 정확히 일치. Yinpeng Dong(둥인펑) 외 저자, Tsinghua/Intel Labs China, CVPR 2018. arxiv.org/abs/1710.06081에서 ID 확인."
+  },
+  {
+    "name": "류둥루이",
+    "title": "REEF: Representation Encoding Fingerprints for Large Language Models",
+    "arxiv_id": "2410.14273",
+    "found": true,
+    "note": "제목 정확 일치. arxiv.org/abs/2410.14273, AI45Lab(Shanghai AI Lab) 발표 논문으로 Dongrui Liu(류둥루이) 연구 분야(LLM IP 보호)와 일치."
+  },
+  {
+    "name": "류저춘",
+    "title": "SpinQuant: LLM quantization with learned rotations",
+    "arxiv_id": "2405.16406",
+    "found": true,
+    "note": "arxiv.org/abs/2405.16406 제목 정확 일치. 제1저자 Zechun Liu(류저춘) 확인."
+  },
+  {
+    "name": "류카이쉬안",
+    "title": "Revisiting Multi-Agent World Modeling from a Diffusion-Inspired Perspective",
+    "arxiv_id": "2505.20922",
+    "found": true,
+    "note": "arxiv.org/abs/2505.20922에서 제목 정확 일치 확인. 저자에 Xinran Li(류카이쉬안 추정) 포함. v2(2025-10) NeurIPS 2025 채택."
+  },
+  {
+    "name": "미카엘 마티외",
+    "title": "Fast Training of Convolutional Networks through FFTs",
+    "arxiv_id": "1312.5851",
+    "found": true,
+    "note": "제목 정확히 일치. 저자 Michael Mathieu, Mikael Henaff, Yann LeCun (NYU). ICLR 2014. arxiv.org/abs/1312.5851"
+  },
+  {
+    "name": "사나에 로트피",
+    "title": "Bayesian Model Selection, the Marginal Likelihood, and Generalization",
+    "arxiv_id": "2202.11678",
+    "found": true,
+    "note": "제목 정확히 일치. 1저자 Sanae Lotfi, ICML 2022. arXiv abs/2202.11678 확인."
+  },
+  {
+    "name": "샤오밍 슝",
+    "title": "Dynamic Coattention Networks For Question Answering",
+    "arxiv_id": "1611.01604",
+    "found": true,
+    "note": "arxiv.org/abs/1611.01604, 제목 정확히 일치, 저자 Caiming Xiong 외. ICLR 2017."
+  },
+  {
+    "name": "샹 장",
+    "title": "Character-level Convolutional Networks for Text Classification",
+    "arxiv_id": "1509.01626",
+    "found": true,
+    "note": "arXiv abs/1509.01626, 저자 Xiang Zhang(샹 장) 외, 제목 정확히 일치 (NeurIPS 2015)"
+  },
+  {
+    "name": "쉬이룽",
+    "title": "ALiiCE: Evaluating Positional Fine-grained Citation Generation",
+    "arxiv_id": "2406.13375",
+    "found": true,
+    "note": "제목 정확히 일치. arxiv.org/abs/2406.13375, NAACL 2025 Main, GitHub ylXuu/ALiiCE로 교차 확인."
+  },
+  {
+    "name": "싱위 궈",
+    "title": "Partonic collinear structure by quantum computing",
+    "arxiv_id": "2106.03865",
+    "found": true,
+    "note": "제목 정확 일치, 저자 목록에 Xingyu Guo 포함 (QuNu Collaboration). Phys. Rev. D 105, L111502 게재."
+  },
+  {
+    "name": "쑹신하오",
+    "title": "HLL: Can Agents Cross Humanity's Last Line of Verification?",
+    "arxiv_id": "2606.02449",
+    "found": true,
+    "note": "arxiv.org/abs/2606.02449에서 제목 정확 일치 확인. 제1저자 Xinhao Song(쑹신하오) 일치."
+  },
+  {
+    "name": "아카리 아사이",
+    "title": "Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection",
+    "arxiv_id": "2310.11511",
+    "found": true,
+    "note": "arxiv.org/abs/2310.11511 제목 정확 일치, 저자 Akari Asai 확인(GitHub AkariAsai/self-rag)"
+  },
+  {
+    "name": "알리 베루즈",
+    "title": "Titans: Learning to Memorize at Test Time",
+    "arxiv_id": "2501.00663",
+    "found": true,
+    "note": "제목·저자 정확히 일치. arxiv.org/abs/2501.00663, 1저자 Ali Behrouz (Google Research)."
+  },
+  {
+    "name": "야스민 오므리",
+    "title": "Agent Memory: Characterization and System Implications of Stateful Long-Horizon Workloads",
+    "arxiv_id": "2606.06448",
+    "found": true,
+    "note": "arXiv 초록 페이지에서 제목 정확 일치, 제1저자 Yasmine Omri 확인됨."
+  },
+  {
+    "name": "양 레이",
+    "title": "Scaling Spatial Intelligence with Multimodal Foundation Models",
+    "arxiv_id": "2511.13719",
+    "found": true,
+    "note": "arXiv 제목이 입력과 정확히 일치. SenseNova-SI 논문(2025년 11월 제출). arxiv.org/abs/2511.13719, HuggingFace papers에서도 동일 ID 확인됨."
+  },
+  {
+    "name": "에단 파크스",
+    "title": "Predictive Maps of Multi-Agent Reasoning: A Successor-Representation Spectrum for LLM Communication Topologies",
+    "arxiv_id": "2605.11453",
+    "found": true,
+    "note": "제목·저자(Ethan David James Park) 정확히 일치. arxiv.org/abs/2605.11453에서 확인."
+  },
+  {
+    "name": "왕마오취안",
+    "title": "FastContext: Training Efficient Repository Explorer for Coding Agents",
+    "arxiv_id": "2606.14066",
+    "found": true,
+    "note": "arXiv abs 페이지, HuggingFace papers, HyperAI, GitHub(microsoft/fastcontext) 모두 동일 ID와 정확히 일치하는 제목 확인."
+  },
+  {
+    "name": "우지쿤",
+    "title": "The Deterministic Horizon: When Extended Reasoning Fails and Tool Delegation Becomes Necessary",
+    "arxiv_id": "2606.00376",
+    "found": true,
+    "note": "arxiv.org/abs/2606.00376에서 제목 정확 일치 확인. 저자에 Jikun Wu(우지쿤) 포함(Dongxin Guo, Jikun Wu, Siu Ming Yiu). 유사 제목 2605.23024(Impossibility Results...)와 구분됨."
+  },
+  {
+    "name": "장민",
+    "title": "MetaForge: A Self-Evolving Multimodal Agent that Retrieves, Adapts, and Forges Tools On Demand",
+    "arxiv_id": "2606.01801",
+    "found": true,
+    "note": "WebSearch 최상위 결과의 제목이 입력 제목과 정확히 일치. arxiv.org/abs/2606.01801에서 ID 추출."
+  },
+  {
+    "name": "장샤오치우",
+    "title": "FastContext: Training Efficient Repository Explorer for Coding Agents",
+    "arxiv_id": "2606.14066",
+    "found": true,
+    "note": "제목 정확히 일치, arXiv abs 페이지에서 ID 확인. 제1저자 Shaoqiu Zhang(장샤오치우)와 일치."
+  },
+  {
+    "name": "천관옌",
+    "title": "The Self-Correction Illusion: LLMs Correct Others but Not Themselves",
+    "arxiv_id": "2606.05976",
+    "found": true,
+    "note": "제목 정확히 일치. 제1저자 Kuan-Yen Chen(천관옌). arXiv abs 페이지에서 ID·저자 확인 완료."
+  },
+  {
+    "name": "치우쯔한",
+    "title": "Gated Attention for Large Language Models: Non-linearity, Sparsity, and Attention-Sink-Free",
+    "arxiv_id": "2505.06708",
+    "found": true,
+    "note": "제목 정확 일치. 제1저자 Zihan Qiu(치우쯔한), GitHub qiuzh20로 인물 일치 확인. NeurIPS 2025."
+  },
+  {
+    "name": "탕성푸",
+    "title": "Leveraging Factored Action Spaces for Efficient Offline Reinforcement Learning in Healthcare",
+    "arxiv_id": "2305.01738",
+    "found": true,
+    "note": "arxiv.org/abs/2305.01738 제목 정확 일치, 1저자 Shengpu Tang(탕성푸) 확인. NeurIPS 2022 게재 논문."
+  },
+  {
+    "name": "토마시 미콜로프",
+    "title": "Efficient Estimation of Word Representations in Vector Space",
+    "arxiv_id": "1301.3781",
+    "found": true,
+    "note": "arXiv 1301.3781, Mikolov et al. 2013 (Word2Vec) 제목 정확히 일치 확인."
+  },
+  {
+    "name": "펑치야오",
+    "title": "MARDoc: A Memory-Aware Refinement Agent Framework for Multimodal Long Document QA",
+    "arxiv_id": "2606.05749",
+    "found": true,
+    "note": "arxiv.org/abs/2606.05749의 제목이 입력 제목과 정확히 일치함"
+  },
+  {
+    "name": "폴리나 키리첸코",
+    "title": "Last Layer Re-Training is Sufficient for Robustness to Spurious Correlations",
+    "arxiv_id": "2204.02937",
+    "found": true,
+    "note": "제목·저자(Polina Kirichenko 1저자) 정확히 일치. 유사 제목의 다른 논문(2308.00473)은 배제함."
+  },
+  {
+    "name": "피에르 세르마네",
+    "title": "OverFeat: Integrated Recognition, Localization and Detection using Convolutional Networks",
+    "arxiv_id": "1312.6229",
+    "found": true,
+    "note": "제목 정확히 일치, 제1저자 Pierre Sermanet 확인 (공저: David Eigen, Xiang Zhang, Michael Mathieu, Rob Fergus, Yann LeCun), 2013년 게재"
+  },
+  {
+    "name": "천카이펑",
+    "title": "MARDoc: A Memory-Aware Refinement Agent Framework for Multimodal Long Document QA",
+    "arxiv_id": "2606.05749",
+    "found": true,
+    "note": "제목·저자 모두 일치(arxiv.org/abs/2606.05749, 제1저자 Kaifeng Chen)."
+  }
+]

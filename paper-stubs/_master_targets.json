@@ -1,0 +1,64 @@
+[
+  {
+    "name": "얀 르쿤",
+    "candidates": [
+      "Backpropagation Applied to Handwritten Zip Code Recognition",
+      "Gradient-Based Learning Applied to Document Recognition",
+      "Signature Verification Using a Siamese Time Delay Neural Network"
+    ]
+  },
+  {
+    "name": "데미스 하사비스",
+    "candidates": [
+      "Episodic Memory in Realistic Environments",
+      "Human-level Control Through Deep Reinforcement Learning",
+      "Mastering the Game of Go with Deep Neural Networks and Tree Search"
+    ]
+  },
+  {
+    "name": "요슈아 벤지오",
+    "candidates": [
+      "A Neural Probabilistic Language Model",
+      "Learning Long-Term Dependencies with Gradient Descent is Difficult",
+      "Greedy Layer-Wise Training of Deep Networks"
+    ]
+  },
+  {
+    "name": "마르쿠스 후터",
+    "candidates": [
+      "Universal Artificial Intelligence: Sequential Decisions Based on Algorithmic Probability",
+      "Universal Intelligence: A Definition of Machine Intelligence",
+      "AIXI: A Formal Theory of Universal Artificial Intelligence"
+    ]
+  },
+  {
+    "name": "피터 아베일",
+    "candidates": [
+      "Apprenticeship Learning via Inverse Reinforcement Learning",
+      "An Application of Reinforcement Learning to Aerobatic Helicopter Flight",
+      "Learning to Search Efficiently in High Dimensions"
+    ]
+  },
+  {
+    "name": "일리야 수츠케버",
+    "candidates": [
+      "ImageNet Classification with Deep Convolutional Neural Networks",
+      "Sequence to Sequence Learning with Neural Networks",
+      "Intriguing Properties of Neural Networks"
+    ]
+  },
+  {
+    "name": "존 점퍼",
+    "candidates": [
+      "Highly accurate protein structure prediction with AlphaFold"
+    ]
+  },
+  {
+    "name": "안드레이 카파시",
+    "candidates": [
+      "Large-Scale Video Classification with Convolutional Neural Networks",
+      "Deep Fragment Embeddings for Bidirectional Image Sentence Mapping",
+      "Deep Visual-Semantic Alignments for Generating Image Descriptions"
+    ]
+  }
+]

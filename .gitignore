@@ -11,7 +11,6 @@
 *.sln.docstates
 
 .omc/
-CLAUDE.md
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
@@ -412,3 +411,26 @@ FodyWeavers.xsd
 
 # Claude Code 격리 worktree (저장소 안에 중첩 사본이 커밋되는 것 방지)
 .claude/worktrees/
+
+# ─── 볼트 통합 (2026-08-31) ───
+# 자격증명 — 절대 커밋 금지. 공개 레포다.
+.env
+.env.*
+.s2_api_key
+
+# Obsidian 로컬 상태 (기기별로 다름)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/graph.json
+.trash/
+.omc/
+
+# cron 로그는 ~/Library/Logs/blog-daily-routine/ 으로 뺐다
+blog-*-cron.md
+daily-paper-pipeline-cron.md
+cron-health.md
+*.bak-*
+
+# 임시 산출물
+imagegen-test-*.png
+tmp_*.py

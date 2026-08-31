@@ -18,7 +18,7 @@ buzz: 121
 
 **핵심 아이디어**: EPIC(Efficient MLLMs via Progressive Consistency Distillation)은 점진적 학습 전략을 통해 시각 토큰 압축의 어려움을 해결합니다.
 
-![[블로그/markdown-blog/grid_Papers/_assets/1-em1.png]]
+![[markdown-blog/grid_Papers/_assets/1-em1.png]]
 
 **주요 구성 요소**:
 

@@ -1,0 +1,37 @@
+formulas:
+  무제: ""
+views:
+  - type: table
+    name: 제프리힌튼
+    filters:
+      and:
+        - file.inFolder("markdown-blog/Mastermind/Geoffrey Hinton")
+        - ready != false
+        - '!file.inFolder("markdown-blog/Mastermind/Geoffrey Hinton/_assets")'
+    order:
+      - date
+      - file.name
+      - aliases
+      - description
+      - image
+      - tags
+    sort:
+      - property: date
+        direction: ASC
+  - type: table
+    name: 얀르쿤
+    filters:
+      and:
+        - file.inFolder("markdown-blog/Mastermind/Yann LeCun")
+        - ready != false
+        - '!file.inFolder("markdown-blog/Mastermind/Yann LeCun/_assets")'
+    order:
+      - date
+      - file.name
+      - aliases
+      - description
+      - image
+      - tags
+    sort:
+      - property: date
+        direction: ASC

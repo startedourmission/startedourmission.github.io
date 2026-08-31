@@ -16,7 +16,7 @@ LG AI Research가 공개한 EXAONE 4.0은 언어모델 설계에서 새로운 �
 
 > LG AI Research, "EXAONE 4.0: Unified Large Language Models Integrating Non-reasoning and Reasoning Modes," arXiv preprint arXiv:2507.11407, 2025.
 
-![[블로그/markdown-blog/grid_Papers/_assets/exaone_1.png|794x374]]
+![[markdown-blog/grid_Papers/_assets/exaone_1.png|794x374]]
 # 요약
 
 ## 1. 모델 아키텍처

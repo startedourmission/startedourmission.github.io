@@ -36,7 +36,7 @@ AutoVault/
 
 1. `raw/drafts/`에 마크다운 초안을 작성합니다
 2. 프론트매터를 검증합니다 (태그 규칙, description, image)
-3. `블로그/markdown-blog/`로 이동합니다
+3. `markdown-blog/`로 이동합니다
 4. `git add → commit → push`합니다
 5. GitHub Actions가 F# 빌드를 실행하고 GitHub Pages에 배포합니다
 

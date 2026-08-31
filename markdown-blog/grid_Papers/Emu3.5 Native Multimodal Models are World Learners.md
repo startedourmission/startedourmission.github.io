@@ -12,7 +12,7 @@ citations: 88
 buzz: 214
 ---
 
-![[블로그/markdown-blog/grid_Papers/_assets/1-Emu.png]]
+![[markdown-blog/grid_Papers/_assets/1-Emu.png]]
 
 > Y. Cui, H. Chen, H. Deng, X. Huang, et al., "Emu3.5: Native Multimodal Models are World Learners," arXiv:2510.26583, 2025.
 

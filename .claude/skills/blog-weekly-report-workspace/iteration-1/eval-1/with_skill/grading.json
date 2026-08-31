@@ -1,0 +1,36 @@
+{
+  "expectations": [
+    {
+      "text": "frontmatter에 date·tags(주간리포트)·week·description 모두 포함",
+      "passed": true,
+      "evidence": "frontmatter 키 date, tags:주간리포트, week, description"
+    },
+    {
+      "text": "상단 > [!summary] 한 주 요약 콜아웃 존재",
+      "passed": true,
+      "evidence": "콜아웃 발견"
+    },
+    {
+      "text": "월~금 5개 요일·테마 섹션 모두 존재",
+      "passed": true,
+      "evidence": "5/5 요일 섹션: 월요일, 화요일, 수요일, 목요일, 금요일"
+    },
+    {
+      "text": "각 글에 [분류] 라벨 + [[위키링크]] 제목",
+      "passed": true,
+      "evidence": "위키링크 있음, 분류라벨 있음"
+    },
+    {
+      "text": "본문에 em/en dash 없음",
+      "passed": true,
+      "evidence": "dash 없음"
+    },
+    {
+      "text": "파일명/week 필드가 ISO 주차(YYYY-Www)",
+      "passed": true,
+      "evidence": "ISO 주차 표기 있음"
+    }
+  ],
+  "passed": 6,
+  "total": 6
+}

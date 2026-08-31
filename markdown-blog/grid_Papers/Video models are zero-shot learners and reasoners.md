@@ -25,7 +25,7 @@ buzz: 237
 
 이 연구는 비디오 모델이 범용 시각 이해 능력으로 발전할 수 있는 가능성을 탐구합니다. 연구진은 62개의 정성적 평가와 7개의 정량적 평가를 통해 총 18,384개의 비디오를 분석했습니다.
 
-![[블로그/markdown-blog/grid_Papers/_assets/1-Video models are zero-shot learners and reasoners.png|710x247]]
+![[markdown-blog/grid_Papers/_assets/1-Video models are zero-shot learners and reasoners.png|710x247]]
 
 **주요 아키텍처**: Google의 Veo 3 비디오 생성 모델을 사용했으며, 이는 16:9 해상도, 720p, 24 FPS로 8초 분량의 비디오를 생성합니다.
 

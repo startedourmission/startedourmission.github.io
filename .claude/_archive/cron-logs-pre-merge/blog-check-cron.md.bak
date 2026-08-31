@@ -1,0 +1,3102 @@
+## 2026-08-04 04:03:35 KST
+
+```
+### 오늘 할 일
+
+| # | 액션 | 대상 | 사유 |
+|---|------|------|------|
+| 1 | 📝 초안화 | `LLM Wiki 적용 지도 - 카파시 원안부터 도메인 판단 시스템까지` | Clippings 미커버 (프론트매터 완비, 게시만 남음) |
+| 2 | 📝 초안화 | `llm 위키 총 정리` | Clippings 미커버 |
+| 3 | 📝 초안화 | `The 10-Step Second Brain: Point Claude at an Obsidian Vault...` | Clippings 미커버 |
+| 4 | 📝 초안화 | `How to build second Ai-Brain With Claude and Obsidian` | Clippings 미커버 |
+| 5 | 📝 초안화 | `Build a memory system that survives across sessions with Fable 5` | Clippings 미커버 |
+| 6 | 📝 초안화 | `The Future of AI Agents with Andrew Ng \| Interrupt 26` | Clippings 미커버 (2026-06-22, 43일 경과) |
+| 7 | 🔗 링크 수정 | `[[A100]]` 외 145건 | 본문(Posts/Papers)에서 깨짐 |
+| 8 | 🔗 링크 수정 | `[[MinerU2.5]]` (11곳) 외 | Dictionary 항목 없음, 참조 최다 |
+| 9 | 🔗 링크 추가 | `[[LLM]]` (113건) 외 113개 항목 | 최근 30일 게시글에 평문 등장 |
+| 10 | 🔀 병합 검토 | `Tencent.md` ↔ `텐센트.md` | 이름 충돌 3건 (tencent / 腾讯 / 텐센트) |
+| 11 | 🔀 병합 검토 | `헹 평안.md` ↔ `왕핑안.md` | 이름 충돌 신규 (phengannheng) |
+| 12 | 🔀 병합 검토 | `젠슨 황.md` ↔ `황차오.md`, `스쥔하오.md` ↔ `왕쓰인.md` | 본문 유사도 0.67 / 0.72 |
+
+### 상세
+
+**클리핑** (`raw/Clippings/`) — 최상위 6건, 전부 미커버
+- ⏳ `LLM Wiki 적용 지도 - 카파시 원안부터 도메인 판단 시스템까지` — 미커버, 추천: 초안화
+- ⏳ `llm 위키 총 정리` — 미커버, 추천: 초안화
+- ⏳ `The 10-Step Second Brain Point Claude at an Obsidian Vault and Never Re-Explain Yourself Again` — 미커버, 추천: 초안화
+- ⏳ `How to build second Ai-Brain With Claude and Obsidian` — 미커버, 추천: 초안화
+- ⏳ `Build a memory system that survives across sessions with Fable 5 write, consolidate, recall, apply` — 미커버 (기존 Fable 5 글 5편은 주제가 다름), 추천: 초안화
+- ⏳ `The Future of AI Agents with Andrew Ng  Interrupt 26` — 미커버, 추천: 초안화
+
+> 6건 중 4건이 LLM Wiki / Obsidian 세컨드 브레인 계열로 주제가 겹칩니다. 개별 글보다 한 편으로 묶는 편이 낫습니다. 3일 연속 동일 목록이라 손대지 않으면 계속 남습니다.
+
+**방치된 초안** (`raw/drafts/`, 7일+)
+- 없음 (drafts 31건 전부 2026-07-29 이후)
+
+**끊어진 위키 링크**
+- 본문(Posts/Papers) 146건 (어제와 동일, 신규·해소 없음):
+- [[A100]] ← Mooncake.md, NVIDIA Dynamo.md
+- [[AI Kill Switch Act - DHS에 모델 종료 권한을 주는 법안]] ← Gemini 3.6 Flash와 Flash Cyber - Pro는 어디에?.md
+- [[AIXI]] ← From AGI to ASI.md
+- [[AMD]] ← Megakernels.md
+- [[Alex Karp]] ← 팔란티어 Foundry 구현 가이드.md
+- [[Ansor]] ← LMCache.md
+- [[Artificial Hivemind]] ← 2025. 10. 이달의 인물 - Dan Hendrycks, Yejin Choi, Chao Huang.md
+- [[Berkeley]] ← LMCache.md
+- [[Blackwell]] ← Megakernels.md
+- [[ByteDance]] ← PerceptionDLM - Parallel Region Perception with Multimodal Diffusion Language Models.md
+- [[CLIP]] ← WRING - 회전 기반 디바이어싱으로 두더지 잡기 딜레마 풀기.md
+- [[CPython]] ← NVIDIA Dynamo.md
+- [[CUDA]] ← Megakernels.md
+- [[CUDA 그래프]] ← LMCache.md
+- [[CUDA 스트림]] ← LMCache.md, Mooncake.md
+- [[CUDA 커널]] ← NVIDIA Dynamo.md
+- [[ChatEval]] ← Predictive Maps of Multi-Agent Reasoning - A Successor-Representation Spectrum for LLM Communication Topologies.md
+- [[Chatbot Arena]] ← Grok Imagine Video 1.5 - Image-to-Video Arena 1위, Sora 대비 86% 저렴.md
+- [[Colossus]] ← Composer와 Grok.md
+- [[Cross-Entropy Loss]] ← Speculative Decoding and MTP.md
+- [[DeepSeek V3]] ← GLM-5.2 - Zhipu의 744B MoE 오픈웨이트 모델 공개.md
+- [[Depth Anything 3]] ← World-R1 - Reinforcing 3D Constraints for Text-to-Video Generation.md
+- [[Diffusion 모델]] ← World-R1 - Reinforcing 3D Constraints for Text-to-Video Generation.md
+- [[Docker]] ← 오픈클로와 개인 에이전트의 현재.md
+- [[Dynamic Batching]] ← Prefill-Decode Disaggregation.md
+- [[Ethan Bloch]] ← OpenAI Acquires Hiro Finance.md
+- [[FSDP]] ← NVIDIA Dynamo.md
+- [[FX]] ← NVIDIA Dynamo.md
+- [[Fable 5]] ← Claude Sonnet 5.md
+- [[FlashAttention]] ← Megakernels.md
+- [[FlexGen]] ← Speculative Decoding and MTP.md
+- [[Flow-GRPO]] ← World-R1 - Reinforcing 3D Constraints for Text-to-Video Generation.md
+- [[GEditBench]] ← DanceOPD - On-Policy Generative Field Distillation.md
+- [[GPT-2]] ← NVIDIA Dynamo.md
+- [[GPT-4]] ← Mooncake.md
+- [[GPT-5]] ← Anthropic의 81,000명 인터뷰 연구가 말하는 것.md
+- [[GenEval]] ← DanceOPD - On-Policy Generative Field Distillation.md
+- [[Ghostty]] ← Ghostty, GitHub을 떠나다.md
+- [[H100]] ← Megakernels.md, NVIDIA Dynamo.md
+- [[H200]] ← LMCache.md
+- [[HBM]] ← Mooncake.md
+- [[Hiro Finance]] ← OpenAI Acquires Hiro Finance.md
+- [[Hope]] ← Nested Learning - The Illusion of Deep Learning Architectures.md
+- [[Hopper]] ← Megakernels.md
+- [[HuggingFace]] ← NVIDIA Dynamo.md
+- [[Improving Factuality and Reasoning in Language Models through Multiagent Debate]] ← Predictive Maps of Multi-Agent Reasoning - A Successor-Representation Spectrum for LLM Communication Topologies.md
+- [[JD.COM]] ← Self Gradient Forcing - Native Long Video Extrapolation.md
+- [[JIT 컴파일러]] ← NVIDIA Dynamo.md
+- [[Jiarui Yao]] ← Rethinking the Divergence Regularization in LLM RL.md
+- [[Jinsong Su]] ← MemSyco-Bench - Benchmarking Sycophancy in Agent Memory.md
+- [[KAUST]] ← GateMem - Benchmarking Memory Governance in Multi-Principal Shared-Memory Agents.md
+- [[KV 캐시]] ← LMCache.md, Mooncake.md
+- [[Kubernetes]] ← 오픈클로와 개인 에이전트의 현재.md
+- [[LLaDA]] ← Learning from the Self-future - On-policy Self-distillation for dLLMs.md, PerceptionDLM - Parallel Region Perception with Multimodal Diffusion Language Models.md
+- [[LMDeploy]] ← Mooncake.md, Prefill-Decode Disaggregation.md
+- [[Legg-Hutter 점수]] ← From AGI to ASI.md
+- [[Lei Li (HKU)]] ← Video2GUI - Synthesizing Large-Scale Interaction Trajectories for Generalized GUI Agent Pretraining.md
+- [[Liefeng Bo]] ← Rethinking the Divergence Regularization in LLM RL.md
+- [[Llama 2]] ← Mooncake.md
+- [[Llama 2 70B]] ← Speculative Decoding and MTP.md
+- [[Llama 3]] ← Speculative Decoding and MTP.md
+- [[MCP(Model Context Protocol)]] ← Claude가 크리에이티브 툴에 들어온다.md
+- [[Megatron]] ← LMCache.md
+- [[Mixtral]] ← Speculative Decoding and MTP.md
+- [[MoE]] ← Megakernels.md
+- [[NVIDIA [[NVIDIA B200]] ← Llama 4 Scout.md
+- [[Nested Learning]] ← Nested Learning - The Illusion of Deep Learning Architectures.md
+- [[ONNX]] ← NVIDIA Dynamo.md
+- [[Ollama]] ← Megakernels.md
+- [[OmniGAIA]] ← Orchestra-o1 - Omnimodal Agent Orchestration.md
+- [[OpenCLIP]] ← WRING - 회전 기반 디바이어싱으로 두더지 잡기 딜레마 풀기.md
+- [[OpenClaw]] ← 오픈클로와 개인 에이전트의 현재.md
+- [[Paged Attention]] ← Megakernels.md, Mooncake.md
+- [[Peter Steinberger]] ← 오픈클로와 개인 에이전트의 현재.md
+- [[Phi-2]] ← Speculative Decoding and MTP.md
+- [[PixelHacker - Image Inpainting with Structural and Semantic Consistency]] ← Moebius - 0.2B Lightweight Image Inpainting Framework with 10B-Level Performance.md
+- [[PyTorch]] ← LMCache.md, Megakernels.md
+- [[Python 컨트롤 플로우]] ← NVIDIA Dynamo.md
+- [[Qingchuan Li]] ← EvoArena - Tracking Memory Evolution for Robust LLM Agents in Dynamic Environments.md
+- [[Qinggang Zhang]] ← MemSyco-Bench - Benchmarking Sycophancy in Agent Memory.md
+- [[Qwen2.5-Coder-3B]] ← VibeThinker-3B - Exploring the Frontier of Verifiable Reasoning in Small Language Models.md
+- [[Qwen3-VL]] ← World-R1 - Reinforcing 3D Constraints for Text-to-Video Generation.md
+- [[RAG-Anything]] ← 2025. 10. 이달의 인물 - Dan Hendrycks, Yejin Choi, Chao Huang.md
+- [[Ray]] ← LMCache.md, Mooncake.md
+- [[ResNet]] ← NVIDIA Dynamo.md
+- [[SGLang]] ← Mooncake.md, Prefill-Decode Disaggregation.md
+- [[SLA]] ← LMCache.md
+- [[Self Forcing]] ← Self Gradient Forcing - Native Long Video Extrapolation.md
+- [[Speakeasy]] ← Anthropic이 Stainless를 인수했습니다.md
+- [[Speculative Decoding]] ← Speculative Decoding and MTP.md
+- [[Starship]] ← SpaceX 상장 완료, 역대 최대 IPO 기록.md
+- [[StepFun]] ← Self Gradient Forcing - Native Long Video Extrapolation.md
+- [[TaintDroid]] ← AOHP - An Open-Source OS-Level Agent Harness for Personalized, Efficient and Secure Interaction.md
+- [[Teacher Forcing]] ← Self Gradient Forcing - Native Long Video Extrapolation.md
+- [[Tensor Parallel]] ← NVIDIA Dynamo.md
+- [[TensorFlow]] ← NVIDIA Dynamo.md
+- [[TensorRT]] ← NVIDIA Dynamo.md
+- [[TensorRT-LLM]] ← Speculative Decoding and MTP.md
+- [[The Deterministic Horizon]] ← The Deterministic Horizon - When Extended Reasoning Fails and Tool Delegation Becomes Necessary.md
+- [[TinyLlama]] ← Speculative Decoding and MTP.md
+- [[Tongxu Luo]] ← GameCraft-Bench - Can Agents Build Playable Games End-to-End in a Real Game Engine?.md
+- [[TorchScript]] ← NVIDIA Dynamo.md
+- [[Triton]] ← Megakernels.md, NVIDIA Dynamo.md
+- [[Vagrant]] ← Ghostty, GitHub을 떠나다.md
+- [[VibeThinker-1.5B]] ← VibeThinker-3B - Exploring the Frontier of Verifiable Reasoning in Small Language Models.md
+- [[Vision Transformer]] ← NVIDIA Dynamo.md
+- [[Wan 2.1]] ← World-R1 - Reinforcing 3D Constraints for Text-to-Video Generation.md
+- [[Wee Sun Lee]] ← Rethinking the Divergence Regularization in LLM RL.md
+- [[Xianglong Liu]] ← Multi-Resolution Flow Matching - Training-Free Diffusion Acceleration via Staged Sampling.md
+- [[Xiangxin Zhou]] ← Rethinking the Divergence Regularization in LLM RL.md
+- [[Xiaohu Ruan]] ← Moebius - 0.2B Lightweight Image Inpainting Framework with 10B-Level Performance.md
+- [[Youngjin Kwon]] ← ELDR - Expert-Locality-Aware Decode Routing for PD-Disaggregated MoE Serving.md
+- [[Zerui Chen]] ← MemSyco-Bench - Benchmarking Sycophancy in Agent Memory.md
+- [[Zhishang Xiang]] ← MemSyco-Bench - Benchmarking Sycophancy in Agent Memory.md
+- [[Zihao Yue]] ← Video2GUI - Synthesizing Large-Scale Interaction Trajectories for Generalized GUI Agent Pretraining.md
+- [[cuBLAS]] ← NVIDIA Dynamo.md
+- [[llama.cpp]] ← AI가 해커와 비용.md
+- [[lost in the middle]] ← Recursive Multi-Agent Systems.md
+- [[vLLM]] ← LMCache.md, Mooncake.md
+- [[가속기]] ← Prefill-Decode Disaggregation.md
+- [[간접 프롬프트 인젝션(Indirect Prompt Injection)]] ← Recursive Multi-Agent Systems.md
+- [[금융]] ← Mooncake.md
+- [[다음 토큰 예측]] ← Speculative Decoding and MTP.md
+- [[다중 GPU]] ← Prefill-Decode Disaggregation.md
+- [[동적 shape]] ← NVIDIA Dynamo.md
+- [[두더지 잡기 딜레마]] ← WRING - 회전 기반 디바이어싱으로 두더지 잡기 딜레마 풀기.md
+- [[런타임 가드]] ← NVIDIA Dynamo.md
+- [[레이턴시]] ← Prefill-Decode Disaggregation.md
+- [[메모리]] ← Mooncake.md, Prefill-Decode Disaggregation.md
+- [[메모리 단편화]] ← Mooncake.md
+- [[반복]] ← NVIDIA Dynamo.md
+- [[배치 처리]] ← Megakernels.md, Speculative Decoding and MTP.md
+- [[법률]] ← Mooncake.md
+- [[스택 트레이스]] ← NVIDIA Dynamo.md
+- [[어텐션]] ← Megakernels.md, Prefill-Decode Disaggregation.md
+- [[연산 강도]] ← Prefill-Decode Disaggregation.md
+- [[우스터공과대학교]] ← WRING - 회전 기반 디바이어싱으로 두더지 잡기 딜레마 풀기.md
+- [[의료]] ← Mooncake.md
+- [[지린대학교]] ← GateMem - Benchmarking Memory Governance in Multi-Principal Shared-Memory Agents.md
+- [[추론 요청]] ← Prefill-Decode Disaggregation.md
+- [[캐시]] ← Prefill-Decode Disaggregation.md
+- [[커널 융합]] ← NVIDIA Dynamo.md
+- [[컨트롤 플로우]] ← NVIDIA Dynamo.md
+- [[패턴]] ← Mooncake.md
+- [[프린스턴대학교]] ← PerceptionDLM - Parallel Region Perception with Multimodal Diffusion Language Models.md
+- [[혼합 정밀도]] ← Prefill-Decode Disaggregation.md
+- Dictionary 709건 (상위 25, 참조 많은 순):
+  [[MinerU2.5]] (11곳), [[A New Role for Relevance - Guiding Corpus Interaction in Agentic Search]] (6곳), [[HiFi-UMI - Learning Deployable Manipulation Policies from High-Fidelity UMI Data Alone]] (6곳), [[OmniDocBench]] (5곳), [[중국과학원]] (5곳), [[SenseNova-U1]] (4곳), [[CUHK MMLab]] (4곳), [[Molt - A Scalable PyTorch-Native Training Framework for Agentic Reinforcement Learning]] (4곳), [[Ocean-OCR]] (4곳), [[샤먼대학교]] (3곳), [[ByteDance]] (3곳), [[AskChem - Claim-Centered Infrastructure for Chemistry Literature Synthesis]] (3곳), [[BrainChip]] (3곳), [[HUST Vision Lab]] (3곳), [[PhiZero - A World Model Built Around Physical Language]] (3곳), [[GenCeption]] (3곳), [[워싱턴 대학교]] (3곳), [[Shieldstral]] (3곳), [[블라디미르 바프닉]] (2곳), [[서게이 레빈]] (2곳), [[BrainChip Inc.]] (2곳), [[TensorFlow]] (2곳), [[NEAR Protocol]] (2곳), [[카네기멜론대학교]] (2곳), [[MIT CSAIL]] (2곳) ... 외 684건
+
+**링크 추천 (최근 30일)** — 총 1,122건, 고유 항목 114개, 대상 항목 상위 20
+- [[LLM]] (113건), [[GPT]] (85), [[Qwen]] (83), [[Gemini]] (51), [[Claude]] (38), [[DeepSeek]] (37), [[증류]] (34), [[임베딩]] (32), [[파인튜닝]] (25), [[Google]] (25), [[Kimi]] (24), [[GRPO]] (24), [[OpenAI]] (23), [[Meta]] (22), [[GLM]] (21), [[NVIDIA]] (19), [[Llama]] (19), [[GSM8K]] (18), [[GPT-4o]] (17), [[양자화]] (16)
+
+**중복 노트 후보** (스캔 760개, 어제 대비 +6)
+- [이름 충돌] `헹 평안.md` ↔ `왕핑안.md` (phengannheng) — 신규
+- [이름 충돌] `Tencent.md` ↔ `텐센트.md` (tencent / 腾讯 / 텐센트 세 표기 모두 충돌)
+- [본문 유사 0.67] `젠슨 황.md` ↔ `황차오.md`
+- [본문 유사 0.72] `스쥔하오.md` ↔ `왕쓰인.md`
+
+**인물 노트 type/태그 불일치**
+- 없음 ✓ (스캔 760개)
+
+**buzz 업데이트** [부분 갱신: 30일 이내 + buzz 미설정]
+- 대상 26편 | 갱신 5편 | 변동 없음 6편 | API 실패 15편(다음 실행 재시도)
+- Headliner 변동 없음
+- 갱신된 글: Weak-to-Strong Generalization via Direct On-Policy Distillation (128, -1), Mage-Flow (73, -2), Multi-Resolution Flow Matching (57, -1), VideoChat3 (52, -2), KnowAct-GUIClaw (45, -1)
+- 논문 상위 3: Attention Is All You Need (537), You Only Look Once (469), Recursive Multi-Agent Systems (448)
+
+**트렌드 데이터**
+- 갱신 완료 — `블로그/assets/trends-data.json` (다음 push 때 라이브 반영)
+```
+
+---
+
+## 2026-08-03 04:00:11 KST
+
+```
+### 오늘 할 일
+
+| # | 액션 | 대상 | 사유 |
+|---|------|------|------|
+| 1 | 📝 초안화 | `LLM Wiki 적용 지도 - 카파시 원안부터 도메인 판단 시스템까지` | Clippings 미커버 (프론트매터 완비, 게시만 남음) |
+| 2 | 📝 초안화 | `llm 위키 총 정리` | Clippings 미커버 |
+| 3 | 📝 초안화 | `The 10-Step Second Brain: Point Claude at an Obsidian Vault...` | Clippings 미커버 |
+| 4 | 📝 초안화 | `How to build second Ai-Brain With Claude and Obsidian` | Clippings 미커버 |
+| 5 | 📝 초안화 | `Build a memory system that survives across sessions with Fable 5` | Clippings 미커버 |
+| 6 | 📝 초안화 | `The Future of AI Agents with Andrew Ng \| Interrupt 26` | Clippings 미커버 |
+| 7 | 🔗 링크 수정 | `[[A100]]` 외 145건 | 본문(Posts/Papers)에서 깨짐 |
+| 8 | 🔗 링크 수정 | `[[MinerU2.5]]` (11곳) 외 | Dictionary 항목 없음, 참조 최다 |
+| 9 | 🔗 링크 추가 | `[[LLM]]` (113건) 외 113개 항목 | 최근 30일 게시글에 평문 등장 |
+| 10 | 🔀 병합 검토 | `Tencent.md` ↔ `텐센트.md` | 이름 충돌 3건 (tencent / 腾讯 / 텐센트) |
+| 11 | 🔀 병합 검토 | `젠슨 황.md` ↔ `황차오.md`, `스쥔하오.md` ↔ `왕쓰인.md` | 본문 유사도 0.67 / 0.72 |
+
+### 상세
+
+**클리핑** (`raw/Clippings/`) — 최상위 6건, 전부 미커버
+- ⏳ `LLM Wiki 적용 지도 - 카파시 원안부터 도메인 판단 시스템까지` — 미커버, 추천: 초안화
+- ⏳ `llm 위키 총 정리` — 미커버, 추천: 초안화
+- ⏳ `The 10-Step Second Brain Point Claude at an Obsidian Vault and Never Re-Explain Yourself Again` — 미커버, 추천: 초안화
+- ⏳ `How to build second Ai-Brain With Claude and Obsidian` — 미커버, 추천: 초안화
+- ⏳ `Build a memory system that survives across sessions with Fable 5 write, consolidate, recall, apply` — 미커버 (기존 Fable 5 글 5편은 주제가 다름), 추천: 초안화
+- ⏳ `The Future of AI Agents with Andrew Ng  Interrupt 26` — 미커버, 추천: 초안화
+
+**방치된 초안** (`raw/drafts/`, 7일+)
+- 없음 (drafts 31건 전부 2026-07-29 이후)
+
+**끊어진 위키 링크**
+- 본문(Posts/Papers) 146건:
+- [[A100]]  ← Mooncake.md, NVIDIA Dynamo.md
+- [[AI Kill Switch Act - DHS에 모델 종료 권한을 주는 법안]]  ← Gemini 3.6 Flash와 Flash Cyber - Pro는 어디에?.md
+- [[AIXI]]  ← From AGI to ASI.md
+- [[AMD]]  ← Megakernels.md
+- [[Alex Karp]]  ← 팔란티어 Foundry 구현 가이드.md
+- [[Ansor]]  ← LMCache.md
+- [[Artificial Hivemind]]  ← 2025. 10. 이달의 인물 - Dan Hendrycks, Yejin Choi, Chao Huang.md
+- [[Berkeley]]  ← LMCache.md
+- [[Blackwell]]  ← Megakernels.md
+- [[ByteDance]]  ← PerceptionDLM - Parallel Region Perception with Multimodal Diffusion Language Models.md
+- [[CLIP]]  ← WRING - 회전 기반 디바이어싱으로 두더지 잡기 딜레마 풀기.md
+- [[CPython]]  ← NVIDIA Dynamo.md
+- [[CUDA]]  ← Megakernels.md
+- [[CUDA 그래프]]  ← LMCache.md
+- [[CUDA 스트림]]  ← LMCache.md, Mooncake.md
+- [[CUDA 커널]]  ← NVIDIA Dynamo.md
+- [[ChatEval]]  ← Predictive Maps of Multi-Agent Reasoning - A Successor-Representation Spectrum for LLM Communication Topologies.md
+- [[Chatbot Arena]]  ← Grok Imagine Video 1.5 - Image-to-Video Arena 1위, Sora 대비 86% 저렴.md
+- [[Colossus]]  ← Composer와 Grok.md
+- [[Cross-Entropy Loss]]  ← Speculative Decoding and MTP.md
+- [[DeepSeek V3]]  ← GLM-5.2 - Zhipu의 744B MoE 오픈웨이트 모델 공개.md
+- [[Depth Anything 3]]  ← World-R1 - Reinforcing 3D Constraints for Text-to-Video Generation.md
+- [[Diffusion 모델]]  ← World-R1 - Reinforcing 3D Constraints for Text-to-Video Generation.md
+- [[Docker]]  ← 오픈클로와 개인 에이전트의 현재.md
+- [[Dynamic Batching]]  ← Prefill-Decode Disaggregation.md
+- [[Ethan Bloch]]  ← OpenAI Acquires Hiro Finance.md
+- [[FSDP]]  ← NVIDIA Dynamo.md
+- [[FX]]  ← NVIDIA Dynamo.md
+- [[Fable 5]]  ← Claude Sonnet 5.md
+- [[FlashAttention]]  ← Megakernels.md
+- [[FlexGen]]  ← Speculative Decoding and MTP.md
+- [[Flow-GRPO]]  ← World-R1 - Reinforcing 3D Constraints for Text-to-Video Generation.md
+- [[GEditBench]]  ← DanceOPD - On-Policy Generative Field Distillation.md
+- [[GPT-2]]  ← NVIDIA Dynamo.md
+- [[GPT-4]]  ← Mooncake.md
+- [[GPT-5]]  ← Anthropic의 81,000명 인터뷰 연구가 말하는 것.md
+- [[GenEval]]  ← DanceOPD - On-Policy Generative Field Distillation.md
+- [[Ghostty]]  ← Ghostty, GitHub을 떠나다.md
+- [[H100]]  ← Megakernels.md, NVIDIA Dynamo.md
+- [[H200]]  ← LMCache.md
+- [[HBM]]  ← Mooncake.md
+- [[Hiro Finance]]  ← OpenAI Acquires Hiro Finance.md
+- [[Hope]]  ← Nested Learning - The Illusion of Deep Learning Architectures.md
+- [[Hopper]]  ← Megakernels.md
+- [[HuggingFace]]  ← NVIDIA Dynamo.md
+- [[Improving Factuality and Reasoning in Language Models through Multiagent Debate]]  ← Predictive Maps of Multi-Agent Reasoning - A Successor-Representation Spectrum for LLM Communication Topologies.md
+- [[JD.COM]]  ← Self Gradient Forcing - Native Long Video Extrapolation.md
+- [[JIT 컴파일러]]  ← NVIDIA Dynamo.md
+- [[Jiarui Yao]]  ← Rethinking the Divergence Regularization in LLM RL.md
+- [[Jinsong Su]]  ← MemSyco-Bench - Benchmarking Sycophancy in Agent Memory.md
+- [[KAUST]]  ← GateMem - Benchmarking Memory Governance in Multi-Principal Shared-Memory Agents.md
+- [[KV 캐시]]  ← LMCache.md, Mooncake.md
+- [[Kubernetes]]  ← 오픈클로와 개인 에이전트의 현재.md
+- [[LLaDA]]  ← Learning from the Self-future - On-policy Self-distillation for dLLMs.md, PerceptionDLM - Parallel Region Perception with Multimodal Diffusion Language Models.md
+- [[LMDeploy]]  ← Mooncake.md, Prefill-Decode Disaggregation.md
+- [[Legg-Hutter 점수]]  ← From AGI to ASI.md
+- [[Lei Li (HKU)]]  ← Video2GUI - Synthesizing Large-Scale Interaction Trajectories for Generalized GUI Agent Pretraining.md
+- [[Liefeng Bo]]  ← Rethinking the Divergence Regularization in LLM RL.md
+- [[Llama 2]]  ← Mooncake.md
+- [[Llama 2 70B]]  ← Speculative Decoding and MTP.md
+- [[Llama 3]]  ← Speculative Decoding and MTP.md
+- [[MCP(Model Context Protocol)]]  ← Claude가 크리에이티브 툴에 들어온다.md
+- [[Megatron]]  ← LMCache.md
+- [[Mixtral]]  ← Speculative Decoding and MTP.md
+- [[MoE]]  ← Megakernels.md
+- [[NVIDIA [[NVIDIA B200]]  ← Llama 4 Scout.md
+- [[Nested Learning]]  ← Nested Learning - The Illusion of Deep Learning Architectures.md
+- [[ONNX]]  ← NVIDIA Dynamo.md
+- [[Ollama]]  ← Megakernels.md
+- [[OmniGAIA]]  ← Orchestra-o1 - Omnimodal Agent Orchestration.md
+- [[OpenCLIP]]  ← WRING - 회전 기반 디바이어싱으로 두더지 잡기 딜레마 풀기.md
+- [[OpenClaw]]  ← 오픈클로와 개인 에이전트의 현재.md
+- [[Paged Attention]]  ← Megakernels.md, Mooncake.md
+- [[Peter Steinberger]]  ← 오픈클로와 개인 에이전트의 현재.md
+- [[Phi-2]]  ← Speculative Decoding and MTP.md
+- [[PixelHacker - Image Inpainting with Structural and Semantic Consistency]]  ← Moebius - 0.2B Lightweight Image Inpainting Framework with 10B-Level Performance.md
+- [[PyTorch]]  ← LMCache.md, Megakernels.md
+- [[Python 컨트롤 플로우]]  ← NVIDIA Dynamo.md
+- [[Qingchuan Li]]  ← EvoArena - Tracking Memory Evolution for Robust LLM Agents in Dynamic Environments.md
+- [[Qinggang Zhang]]  ← MemSyco-Bench - Benchmarking Sycophancy in Agent Memory.md
+- [[Qwen2.5-Coder-3B]]  ← VibeThinker-3B - Exploring the Frontier of Verifiable Reasoning in Small Language Models.md
+- [[Qwen3-VL]]  ← World-R1 - Reinforcing 3D Constraints for Text-to-Video Generation.md
+- [[RAG-Anything]]  ← 2025. 10. 이달의 인물 - Dan Hendrycks, Yejin Choi, Chao Huang.md
+- [[Ray]]  ← LMCache.md, Mooncake.md
+- [[ResNet]]  ← NVIDIA Dynamo.md
+- [[SGLang]]  ← Mooncake.md, Prefill-Decode Disaggregation.md
+- [[SLA]]  ← LMCache.md
+- [[Self Forcing]]  ← Self Gradient Forcing - Native Long Video Extrapolation.md
+- [[Speakeasy]]  ← Anthropic이 Stainless를 인수했습니다.md
+- [[Speculative Decoding]]  ← Speculative Decoding and MTP.md
+- [[Starship]]  ← SpaceX 상장 완료, 역대 최대 IPO 기록.md
+- [[StepFun]]  ← Self Gradient Forcing - Native Long Video Extrapolation.md
+- [[TaintDroid]]  ← AOHP - An Open-Source OS-Level Agent Harness for Personalized, Efficient and Secure Interaction.md
+- [[Teacher Forcing]]  ← Self Gradient Forcing - Native Long Video Extrapolation.md
+- [[Tensor Parallel]]  ← NVIDIA Dynamo.md
+- [[TensorFlow]]  ← NVIDIA Dynamo.md
+- [[TensorRT]]  ← NVIDIA Dynamo.md
+- [[TensorRT-LLM]]  ← Speculative Decoding and MTP.md
+- [[The Deterministic Horizon]]  ← The Deterministic Horizon - When Extended Reasoning Fails and Tool Delegation Becomes Necessary.md
+- [[TinyLlama]]  ← Speculative Decoding and MTP.md
+- [[Tongxu Luo]]  ← GameCraft-Bench - Can Agents Build Playable Games End-to-End in a Real Game Engine?.md
+- [[TorchScript]]  ← NVIDIA Dynamo.md
+- [[Triton]]  ← Megakernels.md, NVIDIA Dynamo.md
+- [[Vagrant]]  ← Ghostty, GitHub을 떠나다.md
+- [[VibeThinker-1.5B]]  ← VibeThinker-3B - Exploring the Frontier of Verifiable Reasoning in Small Language Models.md
+- [[Vision Transformer]]  ← NVIDIA Dynamo.md
+- [[Wan 2.1]]  ← World-R1 - Reinforcing 3D Constraints for Text-to-Video Generation.md
+- [[Wee Sun Lee]]  ← Rethinking the Divergence Regularization in LLM RL.md
+- [[Xianglong Liu]]  ← Multi-Resolution Flow Matching - Training-Free Diffusion Acceleration via Staged Sampling.md
+- [[Xiangxin Zhou]]  ← Rethinking the Divergence Regularization in LLM RL.md
+- [[Xiaohu Ruan]]  ← Moebius - 0.2B Lightweight Image Inpainting Framework with 10B-Level Performance.md
+- [[Youngjin Kwon]]  ← ELDR - Expert-Locality-Aware Decode Routing for PD-Disaggregated MoE Serving.md
+- [[Zerui Chen]]  ← MemSyco-Bench - Benchmarking Sycophancy in Agent Memory.md
+- [[Zhishang Xiang]]  ← MemSyco-Bench - Benchmarking Sycophancy in Agent Memory.md
+- [[Zihao Yue]]  ← Video2GUI - Synthesizing Large-Scale Interaction Trajectories for Generalized GUI Agent Pretraining.md
+- [[cuBLAS]]  ← NVIDIA Dynamo.md
+- [[llama.cpp]]  ← AI가 해커와 비용.md
+- [[lost in the middle]]  ← Recursive Multi-Agent Systems.md
+- [[vLLM]]  ← LMCache.md, Mooncake.md
+- [[가속기]]  ← Prefill-Decode Disaggregation.md
+- [[간접 프롬프트 인젝션(Indirect Prompt Injection)]]  ← Recursive Multi-Agent Systems.md
+- [[금융]]  ← Mooncake.md
+- [[다음 토큰 예측]]  ← Speculative Decoding and MTP.md
+- [[다중 GPU]]  ← Prefill-Decode Disaggregation.md
+- [[동적 shape]]  ← NVIDIA Dynamo.md
+- [[두더지 잡기 딜레마]]  ← WRING - 회전 기반 디바이어싱으로 두더지 잡기 딜레마 풀기.md
+- [[런타임 가드]]  ← NVIDIA Dynamo.md
+- [[레이턴시]]  ← Prefill-Decode Disaggregation.md
+- [[메모리]]  ← Mooncake.md, Prefill-Decode Disaggregation.md
+- [[메모리 단편화]]  ← Mooncake.md
+- [[반복]]  ← NVIDIA Dynamo.md
+- [[배치 처리]]  ← Megakernels.md, Speculative Decoding and MTP.md
+- [[법률]]  ← Mooncake.md
+- [[스택 트레이스]]  ← NVIDIA Dynamo.md
+- [[어텐션]]  ← Megakernels.md, Prefill-Decode Disaggregation.md
+- [[연산 강도]]  ← Prefill-Decode Disaggregation.md
+- [[우스터공과대학교]]  ← WRING - 회전 기반 디바이어싱으로 두더지 잡기 딜레마 풀기.md
+- [[의료]]  ← Mooncake.md
+- [[지린대학교]]  ← GateMem - Benchmarking Memory Governance in Multi-Principal Shared-Memory Agents.md
+- [[추론 요청]]  ← Prefill-Decode Disaggregation.md
+- [[캐시]]  ← Prefill-Decode Disaggregation.md
+- [[커널 융합]]  ← NVIDIA Dynamo.md
+- [[컨트롤 플로우]]  ← NVIDIA Dynamo.md
+- [[패턴]]  ← Mooncake.md
+- [[프린스턴대학교]]  ← PerceptionDLM - Parallel Region Perception with Multimodal Diffusion Language Models.md
+- [[혼합 정밀도]]  ← Prefill-Decode Disaggregation.md
+- Dictionary 709건 (상위 25, 참조 많은 순):
+  [[MinerU2.5]] (11곳), [[A New Role for Relevance - Guiding Corpus Interaction in Agentic Search]] (6곳), [[HiFi-UMI - Learning Deployable Manipulation Policies from High-Fidelity UMI Data Alone]] (6곳), [[OmniDocBench]] (5곳), [[중국과학원]] (5곳), [[CUHK MMLab]] (4곳), [[SenseNova-U1]] (4곳), [[Molt - A Scalable PyTorch-Native Training Framework for Agentic Reinforcement Learning]] (4곳), [[Ocean-OCR]] (4곳), [[ByteDance]] (3곳), [[샤먼대학교]] (3곳), [[AskChem - Claim-Centered Infrastructure for Chemistry Literature Synthesis]] (3곳), [[BrainChip]] (3곳), [[HUST Vision Lab]] (3곳), [[PhiZero - A World Model Built Around Physical Language]] (3곳), [[GenCeption]] (3곳), [[워싱턴 대학교]] (3곳), [[Shieldstral]] (3곳), [[블라디미르 바프닉]] (2곳), [[서게이 레빈]] (2곳), [[BrainChip Inc.]] (2곳), [[TensorFlow]] (2곳), [[NEAR Protocol]] (2곳), [[카네기멜론대학교]] (2곳), [[MIT CSAIL]] (2곳) ... 외 684건
+
+**링크 추천 (최근 30일)** — 총 1,122건, 고유 항목 114개, 대상 항목 상위 20
+- [[LLM]] (113건), [[GPT]] (85), [[Qwen]] (83), [[Gemini]] (51), [[Claude]] (38), [[DeepSeek]] (37), [[증류]] (34), [[임베딩]] (32), [[파인튜닝]] (25), [[Google]] (25), [[Kimi]] (24), [[GRPO]] (24), [[OpenAI]] (23), [[Meta]] (22), [[GLM]] (21), [[NVIDIA]] (19), [[Llama]] (19), [[GSM8K]] (18), [[GPT-4o]] (17), [[양자화]] (16)
+
+**중복 노트 후보** (스캔 754개, 어제 대비 +17)
+- [이름 충돌] `Tencent.md` ↔ `텐센트.md` (tencent / 腾讯 / 텐센트 세 표기 모두 충돌)
+- [본문 유사 0.67] `젠슨 황.md` ↔ `황차오.md`
+- [본문 유사 0.72] `스쥔하오.md` ↔ `왕쓰인.md`
+
+**인물 노트 type/태그 불일치**
+- 없음 ✓ (스캔 754개)
+
+**buzz 업데이트** [부분 갱신: 30일 이내 + buzz 미설정]
+- 대상 28편 | 갱신 10편 | 변동 없음 5편 | API 실패 13편(다음 실행 재시도)
+- Headliner 변동: ✚ [논문] Why Language Models Hallucinate (buzz 248, #10) / ✖ [논문] ABot-World-0 (buzz 63, #71로 하락)
+- 논문 상위 3: Attention Is All You Need (537), You Only Look Once (469), Recursive Multi-Agent Systems (448)
+
+**트렌드 데이터**
+- 갱신 완료 — `블로그/assets/trends-data.json` (다음 push 때 라이브 반영)
+```
+
+---
+
+## 2026-08-02 04:00:08 KST
+
+```
+### 오늘 할 일
+
+| # | 액션 | 대상 | 사유 |
+|---|------|------|------|
+| 1 | 📝 초안화 | `LLM Wiki 적용 지도 - 카파시 원안부터 도메인 판단 시스템까지` | Clippings 미커버 (프론트매터 완비, 게시만 남음) |
+| 2 | 📝 초안화 | `llm 위키 총 정리` | Clippings 미커버 |
+| 3 | 📝 초안화 | `The 10-Step Second Brain: Point Claude at an Obsidian Vault...` | Clippings 미커버 |
+| 4 | 📝 초안화 | `How to build second Ai-Brain With Claude and Obsidian` | Clippings 미커버 |
+| 5 | 📝 초안화 | `Build a memory system that survives across sessions with Fable 5` | Clippings 미커버 |
+| 6 | 📝 초안화 | `The Future of AI Agents with Andrew Ng \| Interrupt 26` | Clippings 미커버 |
+| 7 | 🔗 링크 수정 | `[[A100]]` 외 145건 | 본문(Posts/Papers)에서 깨짐 |
+| 8 | 🔗 링크 수정 | `[[MinerU2.5]]` (11곳) 외 | Dictionary 항목 없음, 참조 최다 |
+| 9 | 🔗 링크 추가 | `[[AMAP CV Lab]]` 외 약 1,160건 | 최근 30일 글에 평문 등장 |
+| 10 | 🔀 병합 검토 | `Tencent.md` ↔ `텐센트.md` | 이름 충돌 중복 노트 |
+
+### 상세
+
+**클리핑** (`raw/Clippings/`)
+- ⏳ `LLM Wiki 적용 지도 - 카파시 원안부터 도메인 판단 시스템까지` — 미커버, 추천: 게시 (date/tags/description 이미 완비, grid_Posts 대상)
+- ⏳ `llm 위키 총 정리` — 미커버, 추천: 초안화 (프론트매터 없음, 리서치 노트 형태)
+- ⏳ `The 10-Step Second Brain: Point Claude at an Obsidian Vault and Never Re-Explain Yourself Again` — 미커버, 추천: 초안화
+- ⏳ `How to build second Ai-Brain With Claude and Obsidian` — 미커버, 추천: 초안화
+- ⏳ `Build a memory system that survives across sessions with Fable 5: write, consolidate, recall, apply` — 미커버, 추천: 초안화
+- ⏳ `The Future of AI Agents with Andrew Ng | Interrupt 26` — 미커버, 추천: 초안화
+
+> 위 5건은 모두 LLM Wiki / Obsidian 세컨드 브레인 계열로 주제가 겹칩니다. 개별 글보다 한 편으로 묶는 편이 낫습니다.
+
+**방치된 초안** (`raw/drafts/`, 7일+)
+- 없음
+
+**끊어진 위키 링크**
+- 본문(Posts/Papers): 146건. 예: `[[A100]]` ← Mooncake.md, NVIDIA Dynamo.md / `[[CUDA]]` ← Megakernels.md / `[[FlashAttention]]` ← Megakernels.md / `[[Chatbot Arena]]` ← Grok Imagine Video 1.5.md / `[[DeepSeek V3]]` ← GLM-5.2.md
+- Dictionary: 707건. 참조 많은 상위 항목 — `[[MinerU2.5]]` (11곳), `[[A New Role for Relevance - Guiding Corpus Interaction in Agentic Search]]` (6곳), `[[HiFi-UMI - Learning Deployable Manipulation Policies from High-Fidelity UMI Data Alone]]` (6곳), `[[OmniDocBench]]` (5곳), `[[CUHK MMLab]]` (4곳), `[[SenseNova-U1]]` (4곳), `[[Molt - A Scalable PyTorch-Native Training Framework for Agentic Reinforcement Learning]]` (4곳), `[[Ocean-OCR]]` (4곳), `[[ByteDance]]` (3곳), `[[샤먼대학교]]` (3곳), `[[BrainChip]]` (3곳), `[[HUST Vision Lab]]` (3곳), `[[GenCeption]]` (3곳), `[[워싱턴 대학교]]` (3곳), `[[Shieldstral]]` (3곳)
+
+**링크 추천 (최근 30일)**
+- 약 1,160건. 예: `[[AMAP CV Lab]]` ← ABot-AgentOS.md, `[[ARC-AGI-2]]` ← Less is More Recursive Reasoning with Tiny Networks.md, `[[ARC]]` ← A Definition of AGI.md / Claude Opus 5.md
+
+**중복 노트 후보**
+- `Dictionary/Tencent.md` ↔ `Dictionary/텐센트.md` (이름 충돌: tencent / 腾讯 / 텐센트)
+- `Dictionary/젠슨 황.md` ↔ `Dictionary/황차오.md` (본문 유사 jaccard=0.67 — 별개 인물일 가능성 높음, 템플릿 유사로 추정)
+- `Dictionary/스쥔하오.md` ↔ `Dictionary/왕쓰인.md` (본문 유사 jaccard=0.72 — 동일)
+
+**인물 노트 type/태그 불일치**
+- 없음 (스캔 747개)
+
+**buzz 업데이트** [부분 갱신: 30일 이내 + buzz 미설정]
+- 대상 28편 / 갱신 4편 / 변동 없음 5편 / API 실패 19편 (다음 실행 재시도)
+- Headliner 변동 없음
+- 논문 buzz 1위: Attention Is All You Need (537), 2위 YOLO (469), 3위 Recursive Multi-Agent Systems (448)
+
+**트렌드 데이터**
+- `블로그/assets/trends-data.json` 갱신 완료 (다음 push 때 라이브 반영)
+```
+
+---
+
+## 2026-08-01 04:07:00 KST
+
+```
+### 오늘 할 일
+
+| # | 액션 | 대상 | 사유 |
+|---|------|------|------|
+| 1 | 📝 초안화 | `LLM Wiki 적용 지도 - 카파시 원안부터 도메인 판단 시스템까지` + `llm 위키 총 정리` | Clippings 미커버 (같은 주제 2건, 한 편으로 통합 권장) |
+| 2 | 📝 초안화 | `How to build second Ai-Brain With Claude and Obsidian` + `The 10-Step Second Brain Point Claude at an Obsidian Vault and Never Re-Explain Yourself Again` | Clippings 미커버 (같은 주제 2건, 한 편으로 통합 권장) |
+| 3 | 📝 초안화 | `Build a memory system that survives across sessions with Fable 5 write, consolidate, recall, apply` | Clippings 미커버 |
+| 4 | 📝 초안화 | `The Future of AI Agents with Andrew Ng  Interrupt 26` | Clippings 미커버 (2026-06-22 클립, 40일 방치. Archive 이동 검토) |
+| 5 | 🔗 링크 수정 | `[[NVIDIA [[NVIDIA B200]]` ← `Llama 4 Scout.md` | 위키링크 문법 깨짐 (여는 괄호 중첩). 단순 오타라 즉시 고칠 수 있는 유일 항목. 3일째 미해결 |
+| 6 | 🔗 링크 수정 | 본문 끊어진 링크 146건 (`[[A100]]`, `[[CUDA]]`, `[[KV 캐시]]` 등) | Posts/Papers 본문에서 깨짐 (독자 404 노출, 최우선). 발생원 상위: NVIDIA Dynamo 25, Mooncake 17, Megakernels 13, Prefill-Decode Disaggregation 12 |
+| 7 | 🔗 링크 수정 | `[[MinerU2.5]]` (11곳), `[[A New Role for Relevance]]` (6곳), `[[HiFi-UMI]]` (6곳) 등 | Dictionary 내부 707건, 참조 많은 순 점진 정리 |
+| 8 | 🔗 링크 추가 | `[[LLM]]` (114곳), `[[GPT]]` (88곳), `[[Qwen]]` (82곳) 등 총 1,147건 (고유 114개) | 최근 30일 게시글 본문에 평문 등장, 링크 없음 |
+| 9 | 🔀 병합 검토 | `Tencent.md` ↔ `텐센트.md` | 이름 충돌 3건 (tencent / 텐센트 / 腾讯 별칭 겹침). 2일째 미해결 |
+| 10 | 🔀 병합 검토 | `젠슨 황.md` ↔ `황차오.md`, `스쥔하오.md` ↔ `왕쓰인.md` | 본문 유사도 높음 (jaccard 0.67 / 0.72) |
+
+### 상세
+
+**클리핑** (`raw/Clippings/`) — 최상위 6건, 전부 미커버
+- ⏳ `LLM Wiki 적용 지도 - 카파시 원안부터 도메인 판단 시스템까지` — 미커버, 추천: 초안화
+- ⏳ `llm 위키 총 정리` — 미커버, 위 항목과 동일 주제
+- ⏳ `How to build second Ai-Brain With Claude and Obsidian` — 미커버 (07-13 클립, 19일), 추천: 초안화
+- ⏳ `The 10-Step Second Brain Point Claude at an Obsidian Vault and Never Re-Explain Yourself Again` — 미커버 (07-13), 위 항목과 동일 주제
+- ⏳ `Build a memory system that survives across sessions with Fable 5 write, consolidate, recall, apply` — 미커버 (07-13), 추천: 초안화
+- ⏳ `The Future of AI Agents with Andrew Ng  Interrupt 26` — 미커버, 40일 방치, 추천: Archive 이동 (시의성 소멸)
+- 주의: 6건 모두 12일째 ⏳ 고정. 게시글 검색 결과 Claude·에이전트 볼트 연동 각도는 여전히 비어 있음 (`옵시디언 그래프 뷰는 정말 SNS용일까?` 정도가 인접)
+
+**방치된 초안** (`raw/drafts/`, 7일+)
+- 없음 (현재 17편, 2026-07-29 ~ 07-31 작성, 최대 경과 3일)
+
+**끊어진 위키 링크**
+- 본문(Posts/Papers): 146건 (어제와 동일, 해소 0건)
+    [[A100]] ← Mooncake.md, NVIDIA Dynamo.md
+    [[AI Kill Switch Act - DHS에 모델 종료 권한을 주는 법안]] ← Gemini 3.6 Flash와 Flash Cyber - Pro는 어디에?.md
+    [[AIXI]] ← From AGI to ASI.md
+    [[AMD]] ← Megakernels.md
+    [[Alex Karp]] ← 팔란티어 Foundry 구현 가이드.md
+    [[Ansor]] ← LMCache.md
+    [[Artificial Hivemind]] ← 2025. 10. 이달의 인물 - Dan Hendrycks, Yejin Choi, Chao Huang.md
+    [[Berkeley]] ← LMCache.md
+    [[Blackwell]] ← Megakernels.md
+    [[ByteDance]] ← PerceptionDLM - Parallel Region Perception with Multimodal Diffusion Language Models.md
+    [[CLIP]] ← WRING - 회전 기반 디바이어싱으로 두더지 잡기 딜레마 풀기.md
+    [[CPython]] ← NVIDIA Dynamo.md
+    [[CUDA]] ← Megakernels.md
+    [[CUDA 그래프]] ← LMCache.md
+    [[CUDA 스트림]] ← LMCache.md, Mooncake.md
+    [[CUDA 커널]] ← NVIDIA Dynamo.md
+    [[ChatEval]] ← Predictive Maps of Multi-Agent Reasoning - A Successor-Representation Spectrum for LLM Communication Topologies.md
+    [[Chatbot Arena]] ← Grok Imagine Video 1.5 - Image-to-Video Arena 1위, Sora 대비 86% 저렴.md
+    [[Colossus]] ← Composer와 Grok.md
+    [[Cross-Entropy Loss]] ← Speculative Decoding and MTP.md
+    [[DeepSeek V3]] ← GLM-5.2 - Zhipu의 744B MoE 오픈웨이트 모델 공개.md
+    [[Depth Anything 3]] ← World-R1 - Reinforcing 3D Constraints for Text-to-Video Generation.md
+    [[Diffusion 모델]] ← World-R1 - Reinforcing 3D Constraints for Text-to-Video Generation.md
+    [[Docker]] ← 오픈클로와 개인 에이전트의 현재.md
+    [[Dynamic Batching]] ← Prefill-Decode Disaggregation.md
+    [[Ethan Bloch]] ← OpenAI Acquires Hiro Finance.md
+    [[FSDP]] ← NVIDIA Dynamo.md
+    [[FX]] ← NVIDIA Dynamo.md
+    [[Fable 5]] ← Claude Sonnet 5.md
+    [[FlashAttention]] ← Megakernels.md
+    [[FlexGen]] ← Speculative Decoding and MTP.md
+    [[Flow-GRPO]] ← World-R1 - Reinforcing 3D Constraints for Text-to-Video Generation.md
+    [[GEditBench]] ← DanceOPD - On-Policy Generative Field Distillation.md
+    [[GPT-2]] ← NVIDIA Dynamo.md
+    [[GPT-4]] ← Mooncake.md
+    [[GPT-5]] ← Anthropic의 81,000명 인터뷰 연구가 말하는 것.md
+    [[GenEval]] ← DanceOPD - On-Policy Generative Field Distillation.md
+    [[Ghostty]] ← Ghostty, GitHub을 떠나다.md
+    [[H100]] ← Megakernels.md, NVIDIA Dynamo.md
+    [[H200]] ← LMCache.md
+    [[HBM]] ← Mooncake.md
+    [[Hiro Finance]] ← OpenAI Acquires Hiro Finance.md
+    [[Hope]] ← Nested Learning - The Illusion of Deep Learning Architectures.md
+    [[Hopper]] ← Megakernels.md
+    [[HuggingFace]] ← NVIDIA Dynamo.md
+    [[Improving Factuality and Reasoning in Language Models through Multiagent Debate]] ← Predictive Maps of Multi-Agent Reasoning - A Successor-Representation Spectrum for LLM Communication Topologies.md
+    [[JD.COM]] ← Self Gradient Forcing - Native Long Video Extrapolation.md
+    [[JIT 컴파일러]] ← NVIDIA Dynamo.md
+    [[Jiarui Yao]] ← Rethinking the Divergence Regularization in LLM RL.md
+    [[Jinsong Su]] ← MemSyco-Bench - Benchmarking Sycophancy in Agent Memory.md
+    [[KAUST]] ← GateMem - Benchmarking Memory Governance in Multi-Principal Shared-Memory Agents.md
+    [[KV 캐시]] ← LMCache.md, Mooncake.md
+    [[Kubernetes]] ← 오픈클로와 개인 에이전트의 현재.md
+    [[LLaDA]] ← Learning from the Self-future - On-policy Self-distillation for dLLMs.md, PerceptionDLM - Parallel Region Perception with Multimodal Diffusion Language Models.md
+    [[LMDeploy]] ← Mooncake.md, Prefill-Decode Disaggregation.md
+    [[Legg-Hutter 점수]] ← From AGI to ASI.md
+    [[Lei Li (HKU)]] ← Video2GUI - Synthesizing Large-Scale Interaction Trajectories for Generalized GUI Agent Pretraining.md
+    [[Liefeng Bo]] ← Rethinking the Divergence Regularization in LLM RL.md
+    [[Llama 2]] ← Mooncake.md
+    [[Llama 2 70B]] ← Speculative Decoding and MTP.md
+    [[Llama 3]] ← Speculative Decoding and MTP.md
+    [[MCP(Model Context Protocol)]] ← Claude가 크리에이티브 툴에 들어온다.md
+    [[Megatron]] ← LMCache.md
+    [[Mixtral]] ← Speculative Decoding and MTP.md
+    [[MoE]] ← Megakernels.md
+    [[NVIDIA [[NVIDIA B200]] ← Llama 4 Scout.md   ← 문법 깨짐, 즉시 수정 가능
+    [[Nested Learning]] ← Nested Learning - The Illusion of Deep Learning Architectures.md
+    [[ONNX]] ← NVIDIA Dynamo.md
+    [[Ollama]] ← Megakernels.md
+    [[OmniGAIA]] ← Orchestra-o1 - Omnimodal Agent Orchestration.md
+    [[OpenCLIP]] ← WRING - 회전 기반 디바이어싱으로 두더지 잡기 딜레마 풀기.md
+    [[OpenClaw]] ← 오픈클로와 개인 에이전트의 현재.md
+    [[Paged Attention]] ← Megakernels.md, Mooncake.md
+    [[Peter Steinberger]] ← 오픈클로와 개인 에이전트의 현재.md
+    [[Phi-2]] ← Speculative Decoding and MTP.md
+    [[PixelHacker - Image Inpainting with Structural and Semantic Consistency]] ← Moebius - 0.2B Lightweight Image Inpainting Framework with 10B-Level Performance.md
+    [[PyTorch]] ← LMCache.md, Megakernels.md
+    [[Python 컨트롤 플로우]] ← NVIDIA Dynamo.md
+    [[Qingchuan Li]] ← EvoArena - Tracking Memory Evolution for Robust LLM Agents in Dynamic Environments.md
+    [[Qinggang Zhang]] ← MemSyco-Bench - Benchmarking Sycophancy in Agent Memory.md
+    [[Qwen2.5-Coder-3B]] ← VibeThinker-3B - Exploring the Frontier of Verifiable Reasoning in Small Language Models.md
+    [[Qwen3-VL]] ← World-R1 - Reinforcing 3D Constraints for Text-to-Video Generation.md
+    [[RAG-Anything]] ← 2025. 10. 이달의 인물 - Dan Hendrycks, Yejin Choi, Chao Huang.md
+    [[Ray]] ← LMCache.md, Mooncake.md
+    [[ResNet]] ← NVIDIA Dynamo.md
+    [[SGLang]] ← Mooncake.md, Prefill-Decode Disaggregation.md
+    [[SLA]] ← LMCache.md
+    [[Self Forcing]] ← Self Gradient Forcing - Native Long Video Extrapolation.md
+    [[Speakeasy]] ← Anthropic이 Stainless를 인수했습니다.md
+    [[Speculative Decoding]] ← Speculative Decoding and MTP.md
+    [[Starship]] ← SpaceX 상장 완료, 역대 최대 IPO 기록.md
+    [[StepFun]] ← Self Gradient Forcing - Native Long Video Extrapolation.md
+    [[TaintDroid]] ← AOHP - An Open-Source OS-Level Agent Harness for Personalized, Efficient and Secure Interaction.md
+    [[Teacher Forcing]] ← Self Gradient Forcing - Native Long Video Extrapolation.md
+    [[Tensor Parallel]] ← NVIDIA Dynamo.md
+    [[TensorFlow]] ← NVIDIA Dynamo.md
+    [[TensorRT]] ← NVIDIA Dynamo.md
+    [[TensorRT-LLM]] ← Speculative Decoding and MTP.md
+    [[The Deterministic Horizon]] ← The Deterministic Horizon - When Extended Reasoning Fails and Tool Delegation Becomes Necessary.md
+    [[TinyLlama]] ← Speculative Decoding and MTP.md
+    [[Tongxu Luo]] ← GameCraft-Bench - Can Agents Build Playable Games End-to-End in a Real Game Engine?.md
+    [[TorchScript]] ← NVIDIA Dynamo.md
+    [[Triton]] ← Megakernels.md, NVIDIA Dynamo.md
+    [[Vagrant]] ← Ghostty, GitHub을 떠나다.md
+    [[VibeThinker-1.5B]] ← VibeThinker-3B - Exploring the Frontier of Verifiable Reasoning in Small Language Models.md
+    [[Vision Transformer]] ← NVIDIA Dynamo.md
+    [[Wan 2.1]] ← World-R1 - Reinforcing 3D Constraints for Text-to-Video Generation.md
+    [[Wee Sun Lee]] ← Rethinking the Divergence Regularization in LLM RL.md
+    [[Xianglong Liu]] ← Multi-Resolution Flow Matching - Training-Free Diffusion Acceleration via Staged Sampling.md
+    [[Xiangxin Zhou]] ← Rethinking the Divergence Regularization in LLM RL.md
+    [[Xiaohu Ruan]] ← Moebius - 0.2B Lightweight Image Inpainting Framework with 10B-Level Performance.md
+    [[Youngjin Kwon]] ← ELDR - Expert-Locality-Aware Decode Routing for PD-Disaggregated MoE Serving.md
+    [[Zerui Chen]] ← MemSyco-Bench - Benchmarking Sycophancy in Agent Memory.md
+    [[Zhishang Xiang]] ← MemSyco-Bench - Benchmarking Sycophancy in Agent Memory.md
+    [[Zihao Yue]] ← Video2GUI - Synthesizing Large-Scale Interaction Trajectories for Generalized GUI Agent Pretraining.md
+    [[cuBLAS]] ← NVIDIA Dynamo.md
+    [[llama.cpp]] ← AI가 해커와 비용.md
+    [[lost in the middle]] ← Recursive Multi-Agent Systems.md
+    [[vLLM]] ← LMCache.md, Mooncake.md
+    [[가속기]] ← Prefill-Decode Disaggregation.md
+    [[간접 프롬프트 인젝션(Indirect Prompt Injection)]] ← Recursive Multi-Agent Systems.md
+    [[금융]] ← Mooncake.md
+    [[다음 토큰 예측]] ← Speculative Decoding and MTP.md
+    [[다중 GPU]] ← Prefill-Decode Disaggregation.md
+    [[동적 shape]] ← NVIDIA Dynamo.md
+    [[두더지 잡기 딜레마]] ← WRING - 회전 기반 디바이어싱으로 두더지 잡기 딜레마 풀기.md
+    [[런타임 가드]] ← NVIDIA Dynamo.md
+    [[레이턴시]] ← Prefill-Decode Disaggregation.md
+    [[메모리]] ← Mooncake.md, Prefill-Decode Disaggregation.md
+    [[메모리 단편화]] ← Mooncake.md
+    [[반복]] ← NVIDIA Dynamo.md
+    [[배치 처리]] ← Megakernels.md, Speculative Decoding and MTP.md
+    [[법률]] ← Mooncake.md
+    [[스택 트레이스]] ← NVIDIA Dynamo.md
+    [[어텐션]] ← Megakernels.md, Prefill-Decode Disaggregation.md
+    [[연산 강도]] ← Prefill-Decode Disaggregation.md
+    [[우스터공과대학교]] ← WRING - 회전 기반 디바이어싱으로 두더지 잡기 딜레마 풀기.md
+    [[의료]] ← Mooncake.md
+    [[지린대학교]] ← GateMem - Benchmarking Memory Governance in Multi-Principal Shared-Memory Agents.md
+    [[추론 요청]] ← Prefill-Decode Disaggregation.md
+    [[캐시]] ← Prefill-Decode Disaggregation.md
+    [[커널 융합]] ← NVIDIA Dynamo.md
+    [[컨트롤 플로우]] ← NVIDIA Dynamo.md
+    [[패턴]] ← Mooncake.md
+    [[프린스턴대학교]] ← PerceptionDLM - Parallel Region Perception with Multimodal Diffusion Language Models.md
+    [[혼합 정밀도]] ← Prefill-Decode Disaggregation.md
+- Dictionary: 707건 (어제 708건에서 -1), 참조 많은 상위 25
+    [[MinerU2.5]] (11곳), [[A New Role for Relevance - Guiding Corpus Interaction in Agentic Search]] (6곳),
+    [[HiFi-UMI - Learning Deployable Manipulation Policies from High-Fidelity UMI Data Alone]] (6곳),
+    [[OmniDocBench]] (5곳), [[CUHK MMLab]] (4곳), [[SenseNova-U1]] (4곳),
+    [[Molt - A Scalable PyTorch-Native Training Framework for Agentic Reinforcement Learning]] (4곳),
+    [[Ocean-OCR]] (4곳), [[샤먼대학교]] (3곳), [[ByteDance]] (3곳), [[BrainChip]] (3곳),
+    [[HUST Vision Lab]] (3곳), [[GenCeption]] (3곳), [[워싱턴 대학교]] (3곳), [[Shieldstral]] (3곳),
+    [[블라디미르 바프닉]] (2곳), [[서게이 레빈]] (2곳), [[BrainChip Inc.]] (2곳), [[NEAR Protocol]] (2곳),
+    [[TensorFlow]] (2곳), [[카네기멜론대학교]] (2곳), [[MIT CSAIL]] (2곳), [[GPT-3]] (2곳),
+    [[Claude Opus]] (2곳), [[IBM]] (2곳)
+    주: `[[A New Role for Relevance]]`, `[[HiFi-UMI]]`, `[[Shieldstral]]` 는 이미 `raw/drafts/` 에 초안이 있음. 게시하면 자동 해소
+
+**링크 추천 (최근 30일)** — 총 1,147건, 고유 항목 114개, 대상 항목 상위 20
+    [[LLM]] 114곳, [[GPT]] 88곳, [[Qwen]] 82곳, [[Gemini]] 52곳, [[DeepSeek]] 38곳,
+    [[Claude]] 37곳, [[증류]] 33곳, [[임베딩]] 32곳, [[Google]] 29곳, [[OpenAI]] 28곳,
+    [[파인튜닝]] 25곳, [[Kimi]] 24곳, [[GRPO]] 24곳, [[Meta]] 23곳, [[GLM]] 21곳,
+    [[Llama]] 19곳, [[NVIDIA]] 18곳, [[GPT-4o]] 18곳, [[GSM8K]] 17곳, [[Yi]] 16곳
+
+**중복 노트 후보** (스캔 737개, 어제 721개에서 +16)
+- `Dictionary/Tencent.md` ↔ `Dictionary/텐센트.md` (이름 충돌 3건: tencent / 텐센트 / 腾讯). 2일째 미해결 — 어느 표기를 표준으로 둘지 결정 필요
+- `Dictionary/젠슨 황.md` ↔ `Dictionary/황차오.md` (본문 유사, jaccard=0.67)
+- `Dictionary/스쥔하오.md` ↔ `Dictionary/왕쓰인.md` (본문 유사, jaccard=0.72)
+
+**인물 노트 type/태그 불일치**
+- 없음 ✓ (스캔 737개)
+
+**buzz 업데이트** (전체 갱신)
+- 대상 157편 | 갱신 92편 | 변동 없음 36편 | API 실패 29편 (다음 실행 재시도)
+- Headliner 변동 없음 (1위 Attention Is All You Need buzz 537 유지)
+- 최대 상승: SenseNova-U1 - Unifying Multimodal Understanding and Generation buzz 150 (+73),
+  On the Scaling of PEFT - Towards Million Personal Models buzz 91 (+44),
+  Quantized Reasoning Models Think They Need to Think Longer buzz 27 (+27, 신규 집계)
+- 최대 하락: Predictive Maps of Multi-Agent Reasoning buzz 0 (-15), Self-Manager buzz 15 (-12)
+
+**트렌드 데이터**
+- `블로그/assets/trends-data.json` 갱신 완료 (다음 push 때 라이브 반영)
+```
+
+---
+
+## 2026-07-31 04:04:45 KST
+
+```
+### 오늘 할 일
+
+| # | 액션 | 대상 | 사유 |
+|---|------|------|------|
+| 1 | 📝 초안화 | `LLM Wiki 적용 지도 - 카파시 원안부터 도메인 판단 시스템까지` + `llm 위키 총 정리` | Clippings 미커버 (같은 주제 2건, 한 편으로 통합 권장) |
+| 2 | 📝 초안화 | `How to build second Ai-Brain With Claude and Obsidian` + `The 10-Step Second Brain Point Claude at an Obsidian Vault and Never Re-Explain Yourself Again` | Clippings 미커버 (같은 주제 2건, 한 편으로 통합 권장) |
+| 3 | 📝 초안화 | `Build a memory system that survives across sessions with Fable 5 write, consolidate, recall, apply` | Clippings 미커버 |
+| 4 | 📝 초안화 | `The Future of AI Agents with Andrew Ng  Interrupt 26` | Clippings 미커버 (2026-06-22 클립, 39일 방치. Archive 이동 검토) |
+| 5 | 🔗 링크 수정 | `[[NVIDIA [[NVIDIA B200]]` ← `Llama 4 Scout.md` | 위키링크 문법 깨짐 (여는 괄호 중첩). 단순 오타라 즉시 고칠 수 있는 유일 항목 |
+| 6 | 🔗 링크 수정 | 본문 끊어진 링크 146건 (`[[A100]]`, `[[CUDA]]`, `[[KV 캐시]]` 등) | Posts/Papers 본문에서 깨짐 (독자 404 노출, 최우선). 발생원 상위: NVIDIA Dynamo 25, Mooncake 17, Megakernels 13 |
+| 7 | 🔗 링크 수정 | `[[MinerU2.5]]` (11곳), `[[A New Role for Relevance]]` (6곳), `[[HiFi-UMI]]` (6곳) 등 | Dictionary 내부 708건, 참조 많은 순 점진 정리 |
+| 8 | 🔗 링크 추가 | `[[LLM]]` (114곳), `[[GPT]]` (88곳), `[[Qwen]]` (82곳) 등 총 1,146건 (고유 114개) | 최근 30일 게시글 본문에 평문 등장, 링크 없음 |
+| 9 | 🔀 병합 검토 | `Tencent.md` ↔ `텐센트.md` | 이름 충돌 3건 (tencent / 텐센트 / 腾讯 별칭 겹침). 신규 발생 |
+| 10 | 🔀 병합 검토 | `젠슨 황.md` ↔ `황차오.md`, `스쥔하오.md` ↔ `왕쓰인.md` | 본문 유사도 높음 (jaccard 0.67 / 0.72) |
+
+### 상세
+
+**클리핑** (`raw/Clippings/`) — 최상위 6건, 전부 미커버
+- ⏳ `LLM Wiki 적용 지도 - 카파시 원안부터 도메인 판단 시스템까지` — 미커버, 추천: 초안화
+- ⏳ `llm 위키 총 정리` — 미커버, 위 항목과 동일 주제
+- ⏳ `How to build second Ai-Brain With Claude and Obsidian` — 미커버, 추천: 초안화
+- ⏳ `The 10-Step Second Brain Point Claude at an Obsidian Vault and Never Re-Explain Yourself Again` — 미커버, 위 항목과 동일 주제
+- ⏳ `Build a memory system that survives across sessions with Fable 5 write, consolidate, recall, apply` — 미커버, 추천: 초안화
+- ⏳ `The Future of AI Agents with Andrew Ng  Interrupt 26` — 미커버, 39일 방치, 추천: Archive 이동 (시의성 소멸)
+- 주의: 6건 모두 07-20 이후 11일째 ⏳ 고정. 기존 게시글 중 겹치는 것은 `옵시디언과 함께한 2년`, `메모를 사랑하는 당신을 위해, 옵시디언 웹 클리퍼` 정도이고 Claude·에이전트 연동 각도는 비어 있음
+
+**방치된 초안** (`raw/drafts/`, 7일+)
+- 없음 (현재 13편, 2026-07-29 ~ 07-30 작성, 최대 경과 2일)
+
+**끊어진 위키 링크**
+- 본문(Posts/Papers): 146건
+    [[A100]] ← Mooncake.md, NVIDIA Dynamo.md
+    [[AI Kill Switch Act - DHS에 모델 종료 권한을 주는 법안]] ← Gemini 3.6 Flash와 Flash Cyber - Pro는 어디에?.md
+    [[AIXI]] ← From AGI to ASI.md
+    [[AMD]] ← Megakernels.md
+    [[Alex Karp]] ← 팔란티어 Foundry 구현 가이드.md
+    [[Ansor]] ← LMCache.md
+    [[Artificial Hivemind]] ← 2025. 10. 이달의 인물 - Dan Hendrycks, Yejin Choi, Chao Huang.md
+    [[Berkeley]] ← LMCache.md
+    [[Blackwell]] ← Megakernels.md
+    [[ByteDance]] ← PerceptionDLM - Parallel Region Perception with Multimodal Diffusion Language Models.md
+    [[CLIP]] ← WRING - 회전 기반 디바이어싱으로 두더지 잡기 딜레마 풀기.md
+    [[CPython]] ← NVIDIA Dynamo.md
+    [[CUDA]] ← Megakernels.md
+    [[CUDA 그래프]] ← LMCache.md
+    [[CUDA 스트림]] ← LMCache.md, Mooncake.md
+    [[CUDA 커널]] ← NVIDIA Dynamo.md
+    [[ChatEval]] ← Predictive Maps of Multi-Agent Reasoning - A Successor-Representation Spectrum for LLM Communication Topologies.md
+    [[Chatbot Arena]] ← Grok Imagine Video 1.5 - Image-to-Video Arena 1위, Sora 대비 86% 저렴.md
+    [[Colossus]] ← Composer와 Grok.md
+    [[Cross-Entropy Loss]] ← Speculative Decoding and MTP.md
+    [[DeepSeek V3]] ← GLM-5.2 - Zhipu의 744B MoE 오픈웨이트 모델 공개.md
+    [[Depth Anything 3]] ← World-R1 - Reinforcing 3D Constraints for Text-to-Video Generation.md
+    [[Diffusion 모델]] ← World-R1 - Reinforcing 3D Constraints for Text-to-Video Generation.md
+    [[Docker]] ← 오픈클로와 개인 에이전트의 현재.md
+    [[Dynamic Batching]] ← Prefill-Decode Disaggregation.md
+    [[Ethan Bloch]] ← OpenAI Acquires Hiro Finance.md
+    [[FSDP]] ← NVIDIA Dynamo.md
+    [[FX]] ← NVIDIA Dynamo.md
+    [[Fable 5]] ← Claude Sonnet 5.md
+    [[FlashAttention]] ← Megakernels.md
+    [[FlexGen]] ← Speculative Decoding and MTP.md
+    [[Flow-GRPO]] ← World-R1 - Reinforcing 3D Constraints for Text-to-Video Generation.md
+    [[GEditBench]] ← DanceOPD - On-Policy Generative Field Distillation.md
+    [[GPT-2]] ← NVIDIA Dynamo.md
+    [[GPT-4]] ← Mooncake.md
+    [[GPT-5]] ← Anthropic의 81,000명 인터뷰 연구가 말하는 것.md
+    [[GenEval]] ← DanceOPD - On-Policy Generative Field Distillation.md
+    [[Ghostty]] ← Ghostty, GitHub을 떠나다.md
+    [[H100]] ← Megakernels.md, NVIDIA Dynamo.md
+    [[H200]] ← LMCache.md
+    [[HBM]] ← Mooncake.md
+    [[Hiro Finance]] ← OpenAI Acquires Hiro Finance.md
+    [[Hope]] ← Nested Learning - The Illusion of Deep Learning Architectures.md
+    [[Hopper]] ← Megakernels.md
+    [[HuggingFace]] ← NVIDIA Dynamo.md
+    [[Improving Factuality and Reasoning in Language Models through Multiagent Debate]] ← Predictive Maps of Multi-Agent Reasoning - A Successor-Representation Spectrum for LLM Communication Topologies.md
+    [[JD.COM]] ← Self Gradient Forcing - Native Long Video Extrapolation.md
+    [[JIT 컴파일러]] ← NVIDIA Dynamo.md
+    [[Jiarui Yao]] ← Rethinking the Divergence Regularization in LLM RL.md
+    [[Jinsong Su]] ← MemSyco-Bench - Benchmarking Sycophancy in Agent Memory.md
+    [[KAUST]] ← GateMem - Benchmarking Memory Governance in Multi-Principal Shared-Memory Agents.md
+    [[KV 캐시]] ← LMCache.md, Mooncake.md
+    [[Kubernetes]] ← 오픈클로와 개인 에이전트의 현재.md
+    [[LLaDA]] ← Learning from the Self-future - On-policy Self-distillation for dLLMs.md, PerceptionDLM - Parallel Region Perception with Multimodal Diffusion Language Models.md
+    [[LMDeploy]] ← Mooncake.md, Prefill-Decode Disaggregation.md
+    [[Legg-Hutter 점수]] ← From AGI to ASI.md
+    [[Lei Li (HKU)]] ← Video2GUI - Synthesizing Large-Scale Interaction Trajectories for Generalized GUI Agent Pretraining.md
+    [[Liefeng Bo]] ← Rethinking the Divergence Regularization in LLM RL.md
+    [[Llama 2]] ← Mooncake.md
+    [[Llama 2 70B]] ← Speculative Decoding and MTP.md
+    [[Llama 3]] ← Speculative Decoding and MTP.md
+    [[MCP(Model Context Protocol)]] ← Claude가 크리에이티브 툴에 들어온다.md
+    [[Megatron]] ← LMCache.md
+    [[Mixtral]] ← Speculative Decoding and MTP.md
+    [[MoE]] ← Megakernels.md
+    [[NVIDIA [[NVIDIA B200]] ← Llama 4 Scout.md   (문법 깨짐: 여는 괄호 중첩)
+    [[Nested Learning]] ← Nested Learning - The Illusion of Deep Learning Architectures.md
+    [[ONNX]] ← NVIDIA Dynamo.md
+    [[Ollama]] ← Megakernels.md
+    [[OmniGAIA]] ← Orchestra-o1 - Omnimodal Agent Orchestration.md
+    [[OpenCLIP]] ← WRING - 회전 기반 디바이어싱으로 두더지 잡기 딜레마 풀기.md
+    [[OpenClaw]] ← 오픈클로와 개인 에이전트의 현재.md
+    [[Paged Attention]] ← Megakernels.md, Mooncake.md
+    [[Peter Steinberger]] ← 오픈클로와 개인 에이전트의 현재.md
+    [[Phi-2]] ← Speculative Decoding and MTP.md
+    [[PixelHacker - Image Inpainting with Structural and Semantic Consistency]] ← Moebius - 0.2B Lightweight Image Inpainting Framework with 10B-Level Performance.md
+    [[PyTorch]] ← LMCache.md, Megakernels.md
+    [[Python 컨트롤 플로우]] ← NVIDIA Dynamo.md
+    [[Qingchuan Li]] ← EvoArena - Tracking Memory Evolution for Robust LLM Agents in Dynamic Environments.md
+    [[Qinggang Zhang]] ← MemSyco-Bench - Benchmarking Sycophancy in Agent Memory.md
+    [[Qwen2.5-Coder-3B]] ← VibeThinker-3B - Exploring the Frontier of Verifiable Reasoning in Small Language Models.md
+    [[Qwen3-VL]] ← World-R1 - Reinforcing 3D Constraints for Text-to-Video Generation.md
+    [[RAG-Anything]] ← 2025. 10. 이달의 인물 - Dan Hendrycks, Yejin Choi, Chao Huang.md
+    [[Ray]] ← LMCache.md, Mooncake.md
+    [[ResNet]] ← NVIDIA Dynamo.md
+    [[SGLang]] ← Mooncake.md, Prefill-Decode Disaggregation.md
+    [[SLA]] ← LMCache.md
+    [[Self Forcing]] ← Self Gradient Forcing - Native Long Video Extrapolation.md
+    [[Speakeasy]] ← Anthropic이 Stainless를 인수했습니다.md
+    [[Speculative Decoding]] ← Speculative Decoding and MTP.md
+    [[Starship]] ← SpaceX 상장 완료, 역대 최대 IPO 기록.md
+    [[StepFun]] ← Self Gradient Forcing - Native Long Video Extrapolation.md
+    [[TaintDroid]] ← AOHP - An Open-Source OS-Level Agent Harness for Personalized, Efficient and Secure Interaction.md
+    [[Teacher Forcing]] ← Self Gradient Forcing - Native Long Video Extrapolation.md
+    [[Tensor Parallel]] ← NVIDIA Dynamo.md
+    [[TensorFlow]] ← NVIDIA Dynamo.md
+    [[TensorRT]] ← NVIDIA Dynamo.md
+    [[TensorRT-LLM]] ← Speculative Decoding and MTP.md
+    [[The Deterministic Horizon]] ← The Deterministic Horizon - When Extended Reasoning Fails and Tool Delegation Becomes Necessary.md
+    [[TinyLlama]] ← Speculative Decoding and MTP.md
+    [[Tongxu Luo]] ← GameCraft-Bench - Can Agents Build Playable Games End-to-End in a Real Game Engine?.md
+    [[TorchScript]] ← NVIDIA Dynamo.md
+    [[Triton]] ← Megakernels.md, NVIDIA Dynamo.md
+    [[Vagrant]] ← Ghostty, GitHub을 떠나다.md
+    [[VibeThinker-1.5B]] ← VibeThinker-3B - Exploring the Frontier of Verifiable Reasoning in Small Language Models.md
+    [[Vision Transformer]] ← NVIDIA Dynamo.md
+    [[Wan 2.1]] ← World-R1 - Reinforcing 3D Constraints for Text-to-Video Generation.md
+    [[Wee Sun Lee]] ← Rethinking the Divergence Regularization in LLM RL.md
+    [[Xianglong Liu]] ← Multi-Resolution Flow Matching - Training-Free Diffusion Acceleration via Staged Sampling.md
+    [[Xiangxin Zhou]] ← Rethinking the Divergence Regularization in LLM RL.md
+    [[Xiaohu Ruan]] ← Moebius - 0.2B Lightweight Image Inpainting Framework with 10B-Level Performance.md
+    [[Youngjin Kwon]] ← ELDR - Expert-Locality-Aware Decode Routing for PD-Disaggregated MoE Serving.md
+    [[Zerui Chen]] ← MemSyco-Bench - Benchmarking Sycophancy in Agent Memory.md
+    [[Zhishang Xiang]] ← MemSyco-Bench - Benchmarking Sycophancy in Agent Memory.md
+    [[Zihao Yue]] ← Video2GUI - Synthesizing Large-Scale Interaction Trajectories for Generalized GUI Agent Pretraining.md
+    [[cuBLAS]] ← NVIDIA Dynamo.md
+    [[llama.cpp]] ← AI가 해커와 비용.md
+    [[lost in the middle]] ← Recursive Multi-Agent Systems.md
+    [[vLLM]] ← LMCache.md, Mooncake.md
+    [[가속기]] ← Prefill-Decode Disaggregation.md
+    [[간접 프롬프트 인젝션(Indirect Prompt Injection)]] ← Recursive Multi-Agent Systems.md
+    [[금융]] ← Mooncake.md
+    [[다음 토큰 예측]] ← Speculative Decoding and MTP.md
+    [[다중 GPU]] ← Prefill-Decode Disaggregation.md
+    [[동적 shape]] ← NVIDIA Dynamo.md
+    [[두더지 잡기 딜레마]] ← WRING - 회전 기반 디바이어싱으로 두더지 잡기 딜레마 풀기.md
+    [[런타임 가드]] ← NVIDIA Dynamo.md
+    [[레이턴시]] ← Prefill-Decode Disaggregation.md
+    [[메모리]] ← Mooncake.md, Prefill-Decode Disaggregation.md
+    [[메모리 단편화]] ← Mooncake.md
+    [[반복]] ← NVIDIA Dynamo.md
+    [[배치 처리]] ← Megakernels.md, Speculative Decoding and MTP.md
+    [[법률]] ← Mooncake.md
+    [[스택 트레이스]] ← NVIDIA Dynamo.md
+    [[어텐션]] ← Megakernels.md, Prefill-Decode Disaggregation.md
+    [[연산 강도]] ← Prefill-Decode Disaggregation.md
+    [[우스터공과대학교]] ← WRING - 회전 기반 디바이어싱으로 두더지 잡기 딜레마 풀기.md
+    [[의료]] ← Mooncake.md
+    [[지린대학교]] ← GateMem - Benchmarking Memory Governance in Multi-Principal Shared-Memory Agents.md
+    [[추론 요청]] ← Prefill-Decode Disaggregation.md
+    [[캐시]] ← Prefill-Decode Disaggregation.md
+    [[커널 융합]] ← NVIDIA Dynamo.md
+    [[컨트롤 플로우]] ← NVIDIA Dynamo.md
+    [[패턴]] ← Mooncake.md
+    [[프린스턴대학교]] ← PerceptionDLM - Parallel Region Perception with Multimodal Diffusion Language Models.md
+    [[혼합 정밀도]] ← Prefill-Decode Disaggregation.md
+- Dictionary: 708건 (어제 705건에서 +3), 참조 많은 상위 25
+    [[MinerU2.5]] (11곳), [[A New Role for Relevance - Guiding Corpus Interaction in Agentic Search]] (6곳),
+    [[HiFi-UMI - Learning Deployable Manipulation Policies from High-Fidelity UMI Data Alone]] (6곳),
+    [[OmniDocBench]] (5곳), [[SenseNova-U1]] (4곳), [[CUHK MMLab]] (4곳),
+    [[Molt - A Scalable PyTorch-Native Training Framework for Agentic Reinforcement Learning]] (4곳),
+    [[Ocean-OCR]] (4곳), [[ByteDance]] (3곳), [[샤먼대학교]] (3곳), [[BrainChip]] (3곳),
+    [[HUST Vision Lab]] (3곳), [[GenCeption]] (3곳), [[워싱턴 대학교]] (3곳), [[Shieldstral]] (3곳),
+    [[블라디미르 바프닉]] (2곳), [[서게이 레빈]] (2곳), [[BrainChip Inc.]] (2곳), [[TensorFlow]] (2곳),
+    [[NEAR Protocol]] (2곳), [[카네기멜론대학교]] (2곳), [[MIT CSAIL]] (2곳), [[GPT-3]] (2곳),
+    [[Claude Opus]] (2곳), [[IBM]] (2곳)
+    주: `[[A New Role for Relevance]]`, `[[HiFi-UMI]]`, `[[Shieldstral]]` 는 이미 `raw/drafts/` 에 초안이 있음. 게시하면 자동 해소
+
+**링크 추천 (최근 30일)** — 총 1,146건, 고유 항목 114개, 대상 항목 상위 20
+    [[LLM]] 114곳, [[GPT]] 88곳, [[Qwen]] 82곳, [[Gemini]] 52곳, [[DeepSeek]] 38곳,
+    [[Claude]] 37곳, [[증류]] 33곳, [[임베딩]] 32곳, [[Google]] 29곳, [[OpenAI]] 28곳,
+    [[파인튜닝]] 25곳, [[Kimi]] 24곳, [[GRPO]] 24곳, [[Meta]] 23곳, [[GLM]] 21곳,
+    [[Llama]] 19곳, [[NVIDIA]] 18곳, [[GPT-4o]] 18곳, [[GSM8K]] 17곳, [[Yi]] 16곳
+
+**중복 노트 후보** (스캔 721개)
+- `Dictionary/Tencent.md` ↔ `Dictionary/텐센트.md` (이름 충돌 3건: tencent / 텐센트 / 腾讯). 신규 발생 — 어느 표기를 표준으로 둘지 결정 필요
+- `Dictionary/젠슨 황.md` ↔ `Dictionary/황차오.md` (본문 유사, jaccard=0.67)
+- `Dictionary/스쥔하오.md` ↔ `Dictionary/왕쓰인.md` (본문 유사, jaccard=0.72)
+
+**인물 노트 type/태그 불일치**
+- 없음 ✓ (스캔 721개)
+
+**buzz 업데이트** (부분 갱신: 30일 이내 + buzz 미설정)
+- 대상 32편 | 갱신 9편 | 변동 없음 9편 | API 실패 14편 (다음 실행 재시도)
+- Headliner 변동 없음
+- 최대 상승: Weak-to-Strong Generalization via Direct On-Policy Distillation buzz 131 (+14)
+
+**트렌드 데이터**
+- `블로그/assets/trends-data.json` 갱신 완료 (다음 push 때 라이브 반영)
+```
+
+---
+
+## 2026-07-30 04:03:24 KST
+
+```
+### 오늘 할 일
+
+| # | 액션 | 대상 | 사유 |
+|---|------|------|------|
+| 1 | 📝 초안화 | `LLM Wiki 적용 지도 - 카파시 원안부터 도메인 판단 시스템까지` + `llm 위키 총 정리` | Clippings 미커버 (같은 주제 2건, 한 편으로 통합 권장) |
+| 2 | 📝 초안화 | `How to build second Ai-Brain With Claude and Obsidian` + `The 10-Step Second Brain Point Claude at an Obsidian Vault and Never Re-Explain Yourself Again` | Clippings 미커버 (같은 주제 2건, 한 편으로 통합 권장) |
+| 3 | 📝 초안화 | `Build a memory system that survives across sessions with Fable 5 write, consolidate, recall, apply` | Clippings 미커버 (기존 Fable 5 글들은 모델 공개·수출통제·마이그레이션 주제라 미겹침) |
+| 4 | 📝 초안화 | `The Future of AI Agents with Andrew Ng  Interrupt 26` | Clippings 미커버 |
+| 5 | 🔗 링크 수정 | `[[A100]]`, `[[CUDA]]`, `[[FlashAttention]]` 등 본문 146건 | Posts/Papers 본문에서 깨짐 (독자 404 노출, 최우선) |
+| 6 | 🔗 링크 수정 | `[[MinerU2.5]]` (11곳), `[[OmniDocBench]]` (5곳), `[[CUHK MMLab]]` (4곳) 등 | Dictionary 내부 705건, 참조 많은 순 점진 정리 |
+| 7 | 🔗 링크 추가 | `[[LLM]]` (117곳), `[[GPT]]` (92곳), `[[Qwen]]` (82곳) 등 총 1170건 | 최근 30일 게시글 본문에 평문 등장, 링크 없음 |
+| 8 | 🔀 병합 검토 | `젠슨 황.md` ↔ `황차오.md`, `스쥔하오.md` ↔ `왕쓰인.md` | 본문 유사도 높음 (jaccard 0.67 / 0.72) |
+
+### 상세
+
+**클리핑** (`raw/Clippings/`)
+- ⏳ `LLM Wiki 적용 지도 - 카파시 원안부터 도메인 판단 시스템까지` — 미커버, 추천: 초안화
+- ⏳ `llm 위키 총 정리` — 미커버, 위 항목과 동일 주제
+- ⏳ `How to build second Ai-Brain With Claude and Obsidian` — 미커버, 추천: 초안화
+- ⏳ `The 10-Step Second Brain Point Claude at an Obsidian Vault and Never Re-Explain Yourself Again` — 미커버, 위 항목과 동일 주제
+- ⏳ `Build a memory system that survives across sessions with Fable 5 write, consolidate, recall, apply` — 미커버, 추천: 초안화
+- ⏳ `The Future of AI Agents with Andrew Ng  Interrupt 26` — 미커버, 추천: 초안화
+
+**방치된 초안** (`raw/drafts/`, 7일+)
+- 없음 (현재 7편 모두 2026-07-29 작성, 경과 1일)
+
+**끊어진 위키 링크**
+- 본문(Posts/Papers): 146건
+    [[A100]] ← Mooncake.md, NVIDIA Dynamo.md
+    [[AI Kill Switch Act - DHS에 모델 종료 권한을 주는 법안]] ← Gemini 3.6 Flash와 Flash Cyber - Pro는 어디에?.md
+    [[AIXI]] ← From AGI to ASI.md
+    [[AMD]] ← Megakernels.md
+    [[Alex Karp]] ← 팔란티어 Foundry 구현 가이드.md
+    [[Ansor]] ← LMCache.md
+    [[Artificial Hivemind]] ← 2025. 10. 이달의 인물 - Dan Hendrycks, Yejin Choi, Chao Huang.md
+    [[Berkeley]] ← LMCache.md
+    [[Blackwell]] ← Megakernels.md
+    [[ByteDance]] ← PerceptionDLM - Parallel Region Perception with Multimodal Diffusion Language Models.md
+    [[CLIP]] ← WRING - 회전 기반 디바이어싱으로 두더지 잡기 딜레마 풀기.md
+    [[CPython]] ← NVIDIA Dynamo.md
+    [[CUDA]] ← Megakernels.md
+    [[CUDA 그래프]] ← LMCache.md
+    [[CUDA 스트림]] ← LMCache.md, Mooncake.md
+    [[CUDA 커널]] ← NVIDIA Dynamo.md
+    [[ChatEval]] ← Predictive Maps of Multi-Agent Reasoning - A Successor-Representation Spectrum for LLM Communication Topologies.md
+    [[Chatbot Arena]] ← Grok Imagine Video 1.5 - Image-to-Video Arena 1위, Sora 대비 86% 저렴.md
+    [[Colossus]] ← Composer와 Grok.md
+    [[Cross-Entropy Loss]] ← Speculative Decoding and MTP.md
+    [[DeepSeek V3]] ← GLM-5.2 - Zhipu의 744B MoE 오픈웨이트 모델 공개.md
+    [[Depth Anything 3]] ← World-R1 - Reinforcing 3D Constraints for Text-to-Video Generation.md
+    [[Diffusion 모델]] ← World-R1 - Reinforcing 3D Constraints for Text-to-Video Generation.md
+    [[Docker]] ← 오픈클로와 개인 에이전트의 현재.md
+    [[Dynamic Batching]] ← Prefill-Decode Disaggregation.md
+    [[Ethan Bloch]] ← OpenAI Acquires Hiro Finance.md
+    [[FSDP]] ← NVIDIA Dynamo.md
+    [[FX]] ← NVIDIA Dynamo.md
+    [[Fable 5]] ← Claude Sonnet 5.md
+    [[FlashAttention]] ← Megakernels.md
+    [[FlexGen]] ← Speculative Decoding and MTP.md
+    [[Flow-GRPO]] ← World-R1 - Reinforcing 3D Constraints for Text-to-Video Generation.md
+    ... 외 114건 (전체 목록은 blog-check.sh 재실행으로 확인)
+- Dictionary: 705건 (상위 25, 참조 많은 순)
+    [[MinerU2.5]] (11곳), [[OmniDocBench]] (5곳), [[CUHK MMLab]] (4곳), [[SenseNova-U1]] (4곳),
+    [[Molt - A Scalable PyTorch-Native Training Framework for Agentic Reinforcement Learning]] (4곳),
+    [[Ocean-OCR]] (4곳), [[샤먼대학교]] (3곳), [[ByteDance]] (3곳), [[BrainChip]] (3곳),
+    [[HUST Vision Lab]] (3곳), [[GenCeption]] (3곳), [[워싱턴 대학교]] (3곳), [[블라디미르 바프닉]] (2곳),
+    [[서게이 레빈]] (2곳), [[BrainChip Inc.]] (2곳), [[NEAR Protocol]] (2곳), [[TensorFlow]] (2곳),
+    [[카네기멜론대학교]] (2곳), [[MIT CSAIL]] (2곳), [[GPT-3]] (2곳), [[Claude Opus]] (2곳),
+    [[IBM]] (2곳), [[워드 커닝햄]] (2곳), [[Amazon AGI]] (2곳), [[화난사범대학교]] (2곳)
+    ... 외 680건
+
+**링크 추천 (최근 30일)** — 총 1170건, 대상 항목 상위 20
+    [[LLM]] 117곳, [[GPT]] 92곳, [[Qwen]] 82곳, [[Gemini]] 54곳, [[Claude]] 39곳,
+    [[DeepSeek]] 38곳, [[증류]] 33곳, [[임베딩]] 33곳, [[OpenAI]] 31곳, [[Google]] 30곳,
+    [[파인튜닝]] 26곳, [[Meta]] 25곳, [[Kimi]] 24곳, [[GRPO]] 24곳, [[GLM]] 21곳,
+    [[NVIDIA]] 19곳, [[Llama]] 19곳, [[GPT-4o]] 19곳, [[GSM8K]] 17곳, [[Yi]] 16곳
+
+**중복 노트 후보**
+- `Dictionary/젠슨 황.md` ↔ `Dictionary/황차오.md` (본문 유사, jaccard=0.67)
+- `Dictionary/스쥔하오.md` ↔ `Dictionary/왕쓰인.md` (본문 유사, jaccard=0.72)
+
+**인물 노트 type/태그 불일치**
+- 없음 ✓ (스캔 704개)
+
+**buzz 업데이트** (부분 갱신: 30일 이내 + buzz 미설정)
+- 대상 35편 | 갱신 10편 | 변동 없음 9편 | API 실패 16편 (다음 실행 재시도)
+- Headliner 변동: 논문 ✚ ABot-World-0 / ✖ Seedream 4.0, 포스트 ✚ 5편(Scriptc, NVIDIA 백스톱, Claude Opus 5, AI 회사 서적 파쇄, Gemini 3.6 Flash) / ✖ 5편
+
+**트렌드 데이터**
+- `블로그/assets/trends-data.json` 갱신 완료 (다음 push 때 라이브 반영)
+```
+
+---
+
+## 2026-07-29 04:03:48 KST
+
+```
+### 오늘 할 일
+
+| # | 액션 | 대상 | 사유 |
+|---|------|------|------|
+| 1 | 📝 초안화 | `The Future of AI Agents with Andrew Ng - Interrupt 26` | Clippings 미커버 (37일 방치) |
+| 2 | 📝 초안화 | `LLM Wiki 적용 지도 - 카파시 원안부터 도메인 판단 시스템까지` | Clippings 미커버 (16일 방치) |
+| 3 | 📝 초안화 | `The 10-Step Second Brain Point Claude at an Obsidian Vault` | Clippings 미커버 (16일 방치) |
+| 4 | 📝 초안화 | `How to build second Ai-Brain With Claude and Obsidian` | Clippings 미커버 (16일 방치) |
+| 5 | 📝 초안화 | `Build a memory system that survives across sessions with Fable 5` | Clippings 미커버 (16일 방치) |
+| 6 | 📝 초안화 | `llm 위키 총 정리` | Clippings 미커버 (15일 방치) |
+| 7 | 🔗 링크 수정 | 본문 끊어진 링크 141건 | Posts/Papers에서 깨진 위키링크 (발생원 상위: NVIDIA Dynamo 25, Mooncake 17, Megakernels 13) |
+| 8 | 🔗 링크 추가 | 최근 30일 게시글 1,146건 (고유 111개) | Dictionary 항목이 본문 평문으로 등장 ([[LLM]] 117, [[GPT]] 90, [[Qwen]] 81 등) |
+| 9 | 🔀 병합 검토 | `젠슨 황.md` ↔ `황차오.md` | jaccard=0.67 본문 유사 |
+| 10 | 🔀 병합 검토 | `스쥔하오.md` ↔ `왕쓰인.md` | jaccard=0.72 본문 유사 |
+
+### 상세
+
+**클리핑** (`raw/Clippings/`) — 최상위 6건, 전부 미커버
+- ⏳ `The Future of AI Agents with Andrew Ng - Interrupt 26` (2026-06-17 발행 / 2026-06-22 클립) — 37일 방치, 추천: Archive 이동 (시의성 소멸)
+- ⏳ `LLM Wiki 적용 지도 - 카파시 원안부터 도메인 판단 시스템까지` (2026-07-13) — 미커버, 추천: 초안화
+- ⏳ `The 10-Step Second Brain Point Claude at an Obsidian Vault and Never Re-Explain Yourself Again` (2026-06-24 발행 / 2026-07-13 클립) — 미커버, 추천: 초안화
+- ⏳ `How to build second Ai-Brain With Claude and Obsidian` (2026-06-27 발행 / 2026-07-13 클립) — 미커버, 추천: 초안화
+- ⏳ `Build a memory system that survives across sessions with Fable 5 write, consolidate, recall, apply` (2026-07-11 발행 / 2026-07-13 클립) — 미커버, 추천: 초안화 (인접 논문 글 존재: Agent Memory, AutoMem, Are We Ready For An Agent-Native Memory System)
+- ⏳ `llm 위키 총 정리` (2026-07-14) — 미커버, 추천: 1번 클리핑과 묶어 한 편으로 초안화
+- 주의: 6건 모두 07-20·07-25·07-28 점검에서도 동일하게 ⏳ — 9일째 진척 없음. Obsidian·세컨드브레인 계열 4건은 주제가 겹치므로 개별 초안화보다 한 편으로 묶는 편이 현실적
+
+**방치된 초안** (`raw/drafts/`, 7일+)
+- 없음 (현재 9편, 최고 경과 4일)
+- 대기 중: 07-25자 4편 (Gemini 3.6 Flash와 Flash Cyber, Mage-Flow, SLAI T-Rex, Self Gradient Forcing), 07-27자 2편, 07-28자 3편 (ABot-World-0, AI 회사가 희귀한 서적을 파쇄하고 있다, Claude Opus 5, NVIDIA의 OpenAI 오하이오 데이터센터 백스톱, Scriptc)
+
+**끊어진 위키 링크**
+- 본문(Posts/Papers): 141건 (07-28과 동일 건수)
+  발생원 집중: NVIDIA Dynamo.md 25건, Mooncake.md 17건, Megakernels.md 13건, Prefill-Decode Disaggregation.md 12건, Speculative Decoding and MTP.md 11건, LMCache.md 11건 — 인프라·서빙 계열 6편이 전체의 63%
+  대표 대상: [[A100]], [[AMD]], [[Blackwell]], [[CUDA]], [[CUDA 그래프]], [[CUDA 스트림]], [[CUDA 커널]], [[FlashAttention]], [[FSDP]], [[혼합 정밀도]], [[컨트롤 플로우]], [[Dynamic Batching]], [[AIXI]], [[CLIP]], [[GPT-2]], [[GPT-4]], [[DeepSeek V3]], [[Depth Anything 3]], [[Chatbot Arena]], [[Docker]] 외
+  판단: 07-28과 목록 변화 없음. 서빙·커널 용어 Dictionary 항목을 한 번에 묶어 만들면 141건 중 대다수가 해소됨
+- Dictionary: 707건 (07-28 대비 +2). 상위 25: [[MinerU2.5]] 11곳, [[ABot-World-0]] 5곳, [[OmniDocBench]] 5곳, [[Mage-Flow]] 4곳, [[SenseNova-U1]] 4곳, [[Molt]] 4곳, [[Ocean-OCR]] 4곳, [[BrainChip]]·[[CUHK MMLab]]·[[HUST Vision Lab]]·[[GenCeption]]·[[워싱턴 대학교]] 각 3곳
+  표기 흔들림 여전: [[BrainChip]] ↔ [[BrainChip Inc.]] — 항목 생성 전 표기 표준부터 결정 필요
+  신규 유입: [[ABot-World-0]], [[Mage-Flow]], [[Molt]]은 오늘 drafts에 있는 논문과 겹침. 게시 시 자동 해소 가능성
+
+**링크 추천 (최근 30일)**
+- 총 1,146건 / 고유 항목 111개
+- 고빈도: [[LLM]] 117, [[GPT]] 90, [[Qwen]] 81, [[Gemini]] 53, [[Claude]] 39, [[DeepSeek]] 37, [[OpenAI]] 33, [[임베딩]] 31, [[Google]] 31, [[증류]] 30, [[Meta]] 26, [[파인튜닝]] 24, [[GRPO]] 24, [[Kimi]] 23, [[GLM]] 20, [[NVIDIA]] 19, [[Llama]] 19, [[GPT-4o]] 19
+- 판단: 07-28과 사실상 동일. 상위는 일반명사·브랜드명이라 전량 링크는 과잉. [[GRPO]], [[임베딩]], [[증류]], [[파인튜닝]] 같은 기술 용어 위주 선별 링크 권장
+
+**중복 노트 후보** (Dictionary 697개 스캔)
+- `젠슨 황.md` ↔ `황차오.md` (jaccard=0.67 — 본문 유사)
+- `스쥔하오.md` ↔ `왕쓰인.md` (jaccard=0.72 — 본문 유사)
+- 4회 연속 동일 후보. 동일인이 아니라 인물 노트 템플릿 문장이 겹쳐 유사도가 뜬 것 — 병합 대신 본문 차별화 권장
+
+**인물 노트 type/태그 불일치** (Dictionary 697개 스캔)
+- 없음 ✓ (2회 연속 클린)
+
+**buzz 업데이트** [부분 갱신: 30일 이내 + buzz 미설정]
+- 대상 33편 | 갱신 11편 | 변동 없음 15편 | API 실패 7편 (다음 실행 재시도)
+- 급등: Scaling the Horizon, Not the Parameters (+25, buzz 69), Long-Horizon-Terminal-Bench (+21, buzz 94), Weak-to-Strong Generalization via Direct On-Policy Distillation (+17, buzz 118)
+- 급락: EvoPolicyGym (-2, buzz 38), TUA-Bench (-3, buzz 61), 나머지는 -1 수준의 자연 감쇠
+- Headliner 변동 없음. 논문 1위 Attention Is All You Need (buzz 537), 2위 YOLO (470), 3위 Recursive Multi-Agent Systems (449)
+- 포스트 최신 10편: 독일 ZAK / NVIDIA Nemotron 3 Embed / HuggingFace AI-Agent-Driven Breach (07-20) 외 — 9일째 신규 포스트 없음. drafts 9편 게시 대기 중
+
+**트렌드 데이터**
+- `블로그/assets/trends-data.json` 갱신 완료 (다음 push 때 라이브 반영, 자동 커밋 없음)
+```
+
+---
+
+## 2026-07-28 06:16:02 KST
+
+```
+### 오늘 할 일
+
+| # | 액션 | 대상 | 사유 |
+|---|------|------|------|
+| 1 | 📝 초안화 | `LLM Wiki 적용 지도 - 카파시 원안부터 도메인 판단 시스템까지` | Clippings 미커버 (15일 방치) |
+| 2 | 📝 초안화 | `The 10-Step Second Brain Point Claude at an Obsidian Vault` | Clippings 미커버 (15일 방치) |
+| 3 | 📝 초안화 | `How to build second Ai-Brain With Claude and Obsidian` | Clippings 미커버 (15일 방치) |
+| 4 | 📝 초안화 | `Build a memory system that survives across sessions with Fable 5` | Clippings 미커버 (15일 방치) |
+| 5 | 📝 초안화 | `llm 위키 총 정리` | Clippings 미커버 (14일 방치) |
+| 6 | 📝 초안화 | `The Future of AI Agents with Andrew Ng - Interrupt 26` | Clippings 미커버 (36일 방치) |
+| 7 | 🔗 링크 수정 | 본문 끊어진 링크 141건 | Posts/Papers에서 깨진 위키링크 (발생원 상위: NVIDIA Dynamo 25, Mooncake 17, Megakernels 13) |
+| 8 | 🔗 링크 추가 | 최근 30일 게시글 1,146건 (고유 110개) | Dictionary 항목이 본문 평문으로 등장 ([[LLM]] 117, [[GPT]] 90, [[Qwen]] 81 등) |
+| 9 | 🔀 병합 검토 | `젠슨 황.md` ↔ `황차오.md` | jaccard=0.67 본문 유사 |
+| 10 | 🔀 병합 검토 | `스쥔하오.md` ↔ `왕쓰인.md` | jaccard=0.72 본문 유사 |
+
+### 상세
+
+**클리핑** (`raw/Clippings/`) — 최상위 6건, 전부 미커버
+- ⏳ `LLM Wiki 적용 지도 - 카파시 원안부터 도메인 판단 시스템까지` (2026-07-13) — 미커버, 추천: 초안화
+- ⏳ `The 10-Step Second Brain Point Claude at an Obsidian Vault and Never Re-Explain Yourself Again` (2026-07-13) — 미커버, 추천: 초안화
+- ⏳ `How to build second Ai-Brain With Claude and Obsidian` (2026-06-27 발행 / 2026-07-13 클립) — 미커버, 추천: 초안화
+- ⏳ `Build a memory system that survives across sessions with Fable 5 write, consolidate, recall, apply` (2026-07-11 발행 / 2026-07-13 클립) — 미커버, 추천: 초안화 (인접 논문 글 존재: Agent Memory, AutoMem, Are We Ready For An Agent-Native Memory System)
+- ⏳ `llm 위키 총 정리` (2026-07-14) — 미커버, 추천: 1번 클리핑과 묶어 한 편으로 초안화
+- ⏳ `The Future of AI Agents with Andrew Ng - Interrupt 26` (2026-06-22) — 36일 방치, 추천: 초안화 또는 Archive 이동
+- 주의: 6건 모두 07-20·07-25 점검에서도 동일하게 ⏳ — 8일째 진척 없음. 특히 Andrew Ng 건은 영상 발행 후 40일 넘어 시의성 소멸, Archive 판단 권장
+
+**방치된 초안** (`raw/drafts/`, 7일+)
+- 없음 (현재 6편 모두 date: 2026-07-25 — 3일 경과, 방치 기준 미달)
+- 대기 중: AI Kill Switch Act, Gemini 3.6 Flash와 Flash Cyber, Mage-Flow, SLAI T-Rex, Self Gradient Forcing, 소프트웨어 공장이 실패하는 이유
+
+**끊어진 위키 링크**
+- 본문(Posts/Papers): 141건
+  발생원 집중: NVIDIA Dynamo.md 25건, Mooncake.md 17건, Megakernels.md 13건, Prefill-Decode Disaggregation.md 12건, Speculative Decoding and MTP.md 11건, LMCache.md 11건 — 인프라·서빙 계열 6편이 전체의 63%
+  대표 대상: [[A100]], [[AMD]], [[Blackwell]], [[CUDA]], [[FlashAttention]], [[CUDA 그래프]], [[CUDA 스트림]], [[FSDP]], [[혼합 정밀도]], [[컨트롤 플로우]], [[AIXI]], [[CLIP]], [[GPT-2]], [[GPT-4]], [[DeepSeek V3]], [[Depth Anything 3]], [[Chatbot Arena]], [[Docker]] 외
+  판단: 서빙·커널 용어 Dictionary 항목을 한 번에 묶어 만들면 141건 중 대다수가 해소됨
+- Dictionary: 705건 (07-25 대비 +3). 상위 25: [[MinerU2.5]] 11곳, [[OmniDocBench]] 5곳, [[Mage-Flow]] 4곳, [[SenseNova-U1]] 4곳, [[Ocean-OCR]] 4곳, [[BrainChip]]·[[CUHK MMLab]]·[[HUST Vision Lab]]·[[GenCeption]]·[[워싱턴 대학교]] 각 3곳
+  표기 흔들림 감지: [[BrainChip]] ↔ [[BrainChip Inc.]], [[워싱턴 대학교]] ↔ [[워싱턴 대학교(University of Washington)]] — 항목 생성 전에 표기 표준부터 정해야 중복 생성 방지
+
+**링크 추천 (최근 30일)**
+- 총 1,146건 / 고유 항목 110개
+- 고빈도: [[LLM]] 117, [[GPT]] 90, [[Qwen]] 81, [[Gemini]] 53, [[Claude]] 39, [[DeepSeek]] 37, [[OpenAI]] 33, [[임베딩]] 31, [[Google]] 31, [[증류]] 30, [[Meta]] 26, [[파인튜닝]] 24, [[GRPO]] 24, [[Kimi]] 23, [[GLM]] 20, [[NVIDIA]] 19
+- 판단: 07-25와 동일. 상위는 일반명사·브랜드명이라 전량 링크는 과잉. [[GRPO]], [[임베딩]], [[증류]], [[파인튜닝]] 같은 기술 용어 위주 선별 링크 권장
+
+**중복 노트 후보** (Dictionary 689개 스캔)
+- `젠슨 황.md` ↔ `황차오.md` (jaccard=0.67 — 본문 유사)
+- `스쥔하오.md` ↔ `왕쓰인.md` (jaccard=0.72 — 본문 유사)
+- 3회 연속 동일 후보. 동일인이 아니라 인물 노트 템플릿 문장이 겹쳐 유사도가 뜬 것으로 보임 — 병합 대신 본문 차별화 권장
+
+**인물 노트 type/태그 불일치** (Dictionary 689개 스캔)
+- 없음 ✓ (07-25에 지적된 11건 전부 해소됨)
+
+**buzz 업데이트** [부분 갱신: 30일 이내 + buzz 미설정]
+- 대상 35편 | 갱신 27편 | 변동 없음 4편 | API 실패 4편 (다음 실행 재시도)
+- 급등: Long-Horizon-Terminal-Bench (+23, buzz 73), OPID (+11, buzz 95), Program-as-Weights (+3, buzz 52)
+- 급락: KnowAct-GUIClaw (-7, buzz 48), JetSpec (-4, buzz 89), Video Generation Models are General-Purpose Vision Learners (-3, buzz 46)
+- Headliner 변동 없음. 논문 1위 Attention Is All You Need (buzz 537), 2위 YOLO (470), 3위 Recursive Multi-Agent Systems (449)
+- 포스트 최신 10편: 독일 ZAK / NVIDIA Nemotron 3 Embed / HuggingFace AI-Agent-Driven Breach (07-20) 외
+
+**트렌드 데이터**
+- `블로그/assets/trends-data.json` 갱신 완료 (다음 push 때 라이브 반영, 자동 커밋 없음)
+```
+
+---
+
+## 2026-07-25 17:25:29 KST
+
+```
+### 오늘 할 일
+
+| # | 액션 | 대상 | 사유 |
+|---|------|------|------|
+| 1 | 📝 초안화 | `LLM Wiki 적용 지도 - 카파시 원안부터 도메인 판단 시스템까지` | Clippings 미커버 (12일 방치) |
+| 2 | 📝 초안화 | `The 10-Step Second Brain Point Claude at an Obsidian Vault` | Clippings 미커버 (12일 방치) |
+| 3 | 📝 초안화 | `How to build second Ai-Brain With Claude and Obsidian` | Clippings 미커버 (12일 방치) |
+| 4 | 📝 초안화 | `Build a memory system that survives across sessions with Fable 5` | Clippings 미커버 (12일 방치) |
+| 5 | 📝 초안화 | `llm 위키 총 정리` | Clippings 미커버 (11일 방치) |
+| 6 | 📝 초안화 | `The Future of AI Agents with Andrew Ng - Interrupt 26` | Clippings 미커버 (33일 방치) |
+| 7 | 🔗 링크 수정 | 본문 끊어진 링크 141건 | Posts/Papers에서 깨진 위키링크 (상위: [[A100]], [[AIXI]], [[AMD]], [[vLLM]], [[KV 캐시]] 등) |
+| 8 | 🔗 링크 추가 | 최근 30일 게시글 1,165건 (고유 111개) | Dictionary 항목이 본문 평문으로 등장 ([[LLM]] 119, [[GPT]] 91, [[Qwen]] 82 등) |
+| 9 | 🔀 병합 검토 | `젠슨 황.md` ↔ `황차오.md` | jaccard=0.67 본문 유사 |
+| 10 | 🔀 병합 검토 | `스쥔하오.md` ↔ `왕쓰인.md` | jaccard=0.72 본문 유사 |
+| 11 | 🏷️ 태그 정합 | 인물 노트 11개 | type:person인데 '인물' 태그 없음 (다니엘 에크, 미라 무라티, 페이-페이 리 등) |
+
+### 상세
+
+**클리핑** (`raw/Clippings/`) — 최상위 6건, 전부 미커버
+- ⏳ `LLM Wiki 적용 지도 - 카파시 원안부터 도메인 판단 시스템까지` (2026-07-13) — 미커버, 추천: 초안화
+- ⏳ `The 10-Step Second Brain Point Claude at an Obsidian Vault and Never Re-Explain Yourself Again` (2026-07-13) — 미커버, 추천: 초안화
+- ⏳ `How to build second Ai-Brain With Claude and Obsidian` (2026-07-13) — 미커버, 추천: 초안화
+- ⏳ `Build a memory system that survives across sessions with Fable 5 write, consolidate, recall, apply` (2026-07-13) — 미커버, 추천: 초안화 (유사 논문 글 있음: Agent Memory, AutoMem, Are We Ready For An Agent-Native Memory System)
+- ⏳ `llm 위키 총 정리` (2026-07-14) — 미커버, 추천: 초안화 (KMS 시리즈와 주제 중복 검토 필요)
+- ⏳ `The Future of AI Agents with Andrew Ng - Interrupt 26` (2026-06-22) — 미커버, 33일 방치, 추천: 초안화 또는 Archive 이동
+- 주의: 6건 모두 2026-07-20 점검에서도 동일하게 ⏳ — 5일째 진척 없음
+
+**방치된 초안** (`raw/drafts/`, 7일+)
+- 없음 (`raw/drafts/` 비어 있음 — 07-24 게시로 전량 소진)
+
+**끊어진 위키 링크**
+- 본문(Posts/Papers): 141건
+  상위: [[A100]] (Mooncake.md, NVIDIA Dynamo.md), [[AIXI]] (From AGI to ASI.md), [[AMD]]·[[Blackwell]]·[[CUDA]]·[[FlashAttention]]·[[Hopper]]·[[MoE]] (Megakernels.md), [[KV 캐시]]·[[vLLM]]·[[Ray]] (LMCache.md, Mooncake.md), [[SGLang]]·[[LMDeploy]] (Mooncake.md, Prefill-Decode Disaggregation.md) 외 129건
+  집중 발생원: NVIDIA Dynamo.md, Megakernels.md, Mooncake.md, LMCache.md, Prefill-Decode Disaggregation.md, Speculative Decoding and MTP.md — 인프라·서빙 계열 글이 Dictionary 미생성 용어를 대량 링크
+  구조 오류 1건: [[NVIDIA [[NVIDIA B200]] ← Llama 4 Scout.md (중첩 대괄호)
+- Dictionary: 702건 (상위 25: [[MinerU2.5]] 11곳, [[OmniDocBench]] 5곳, [[SenseNova-U1]] 4곳, [[Ocean-OCR]] 4곳, [[BrainChip]]·[[CUHK MMLab]]·[[HUST Vision Lab]]·[[GenCeption]]·[[워싱턴 대학교]] 각 3곳)
+
+**링크 추천 (최근 30일)**
+- 총 1,165건 / 고유 항목 111개
+- 고빈도: [[LLM]] 119, [[GPT]] 91, [[Qwen]] 82, [[Gemini]] 54, [[Claude]] 41, [[DeepSeek]] 37, [[OpenAI]] 34, [[Google]] 32, [[임베딩]] 31, [[증류]] 30, [[Meta]] 28, [[GRPO]] 24, [[파인튜닝]] 24, [[Kimi]] 23, [[GLM]] 20
+- 판단: 상위 항목은 일반명사·브랜드명이라 전량 링크는 과잉. [[GRPO]], [[임베딩]], [[증류]], [[파인튜닝]], [[GSM8K]], [[MMLU]] 같은 기술 용어 위주로 선별 링크 권장
+
+**중복 노트 후보** (Dictionary 683개 스캔)
+- `젠슨 황.md` ↔ `황차오.md` (jaccard=0.67 — 본문 유사)
+- `스쥔하오.md` ↔ `왕쓰인.md` (jaccard=0.72 — 본문 유사)
+- 둘 다 동일인 여부는 사람 확인 필요 (자동 병합 안 함)
+
+**인물 노트 type/태그 불일치** (Dictionary 683개 스캔)
+- type:person인데 '인물' 태그 없음 (11개): 다니엘 에크, 미라 무라티, 바하 라바바, 세레나 융-레비, 우성광, 인밍양, 장위후이, 지네이트 귀르잔 아크초라, 추저동, 카슨 렁, 페이-페이 리
+- 07-20과 동일 목록 — 미처리
+
+**buzz 업데이트** [전체 갱신]
+- 대상 153편 | 갱신 111편 | 변동 없음 20편 | API 실패 22편 (다음 실행 재시도)
+- 급등: Cosmos 3 (+154, buzz 222), Agents' Last Exam (+63, buzz 117), OmniDirector (+45, buzz 114), World Action Models (+39, buzz 189)
+- 급락: LongStraw (-116, buzz 59), SenseNova-U1 (-69, buzz 77), VideoChat3 (-51, buzz 56), On the Scaling of PEFT (-52, buzz 47)
+- 신규: Weak-to-Strong Generalization via Direct On-Policy Distillation (102), Jet-Long (34)
+- Headliner 변동: 논문 ✚ Seedream 4.0 (#10) / ✖ Why Language Models Hallucinate, 포스트 최신 10편 전면 교체
+- 현재 1위: Attention Is All You Need (buzz 537)
+
+**트렌드 데이터**
+- `블로그/assets/trends-data.json` 갱신 완료 (다음 push 때 라이브 반영, 자동 커밋 없음)
+```
+
+---
+
+## 2026-07-20 04:03:00 KST
+
+```
+### 오늘 할 일
+
+| # | 액션 | 대상 | 사유 |
+|---|------|------|------|
+| 1 | 📝 초안화 | `LLM Wiki 적용 지도 - 카파시 원안부터 도메인 판단 시스템까지` | Clippings 미커버 |
+| 2 | 📝 초안화 | `The 10-Step Second Brain Point Claude at an Obsidian Vault` | Clippings 미커버 |
+| 3 | 📝 초안화 | `The Future of AI Agents with Andrew Ng - Interrupt 26` | Clippings 미커버 |
+| 4 | 📝 초안화 | `Build a memory system that survives across sessions with Fable 5` | Clippings 미커버 |
+| 5 | 📝 초안화 | `llm 위키 총 정리` | Clippings 미커버 |
+| 6 | 📝 초안화 | `How to build second Ai-Brain With Claude and Obsidian` | Clippings 미커버 |
+| 7 | 🔗 링크 수정 | 본문 끊어진 링크 141건 | Posts/Papers에서 깨진 위키링크 (상위: [[A100]], [[AIXI]], [[AMD]] 등) |
+| 8 | 🔀 병합 검토 | `젠슨 황.md` ↔ `황차오.md` | jaccard=0.67 본문 유사 |
+| 9 | 🔀 병합 검토 | `스쥔하오.md` ↔ `왕쓰인.md` | jaccard=0.72 본문 유사 |
+| 10 | 🏷️ 태그 정합 | 인물 노트 11개 | type:person인데 '인물' 태그 없음 (다니엘 에크, 미라 무라티, 페이-페이 리 등) |
+
+### 상세
+
+**클리핑** (`raw/Clippings/`)
+- ⏳ `LLM Wiki 적용 지도 - 카파시 원안부터 도메인 판단 시스템까지` — 미커버, 추천: 초안화
+- ⏳ `The 10-Step Second Brain Point Claude at an Obsidian Vault and Never Re-Explain Yourself Again` — 미커버, 추천: 초안화
+- ⏳ `The Future of AI Agents with Andrew Ng - Interrupt 26` — 미커버, 추천: 초안화
+- ⏳ `Build a memory system that survives across sessions with Fable 5 write, consolidate, recall, apply` — 미커버, 추천: 초안화 (유사 논문 글 있음: Agent Memory, Are We Ready For Agent-Native Memory)
+- ⏳ `llm 위키 총 정리` — 미커버, 추천: 초안화
+- ⏳ `How to build second Ai-Brain With Claude and Obsidian` — 미커버, 추천: 초안화
+
+**방치된 초안** (`raw/drafts/`, 7일+)
+- 없음 (가장 오래된 초안: 2026-07-15, 5일 경과)
+
+**끊어진 위키 링크**
+- 본문(Posts/Papers): 141건
+  상위: [[A100]] (Mooncake.md, NVIDIA Dynamo.md), [[AIXI]] (From AGI to ASI.md), [[AMD]] (Megakernels.md), [[FlashAttention]] (Megakernels.md), [[KV 캐시]] (LMCache.md, Mooncake.md), [[vLLM]] (LMCache.md, Mooncake.md) 외 135건
+- Dictionary: 705건 (상위 25: [[MinerU2.5]] 11곳, [[OmniDocBench]] 5곳, [[SenseNova-U1]] 4곳 등)
+
+**링크 추천 (최근 30일)**
+- 고빈도 추천: [[GPT]] (100건+), [[LLM]] (100건+), [[Claude]] (40건+), [[DeepSeek]] (30건+), [[Qwen]] (70건+), [[Gemini]] (40건+) 등 다수 — Dictionary 항목화 우선 권장
+
+**중복 노트 후보**
+- `젠슨 황.md` ↔ `황차오.md` (jaccard=0.67 — 본문 유사)
+- `스쥔하오.md` ↔ `왕쓰인.md` (jaccard=0.72 — 본문 유사)
+
+**인물 노트 type/태그 불일치**
+- type:person인데 '인물' 태그 없음 (11개): 다니엘 에크, 미라 무라티, 바하 라바바, 세레나 융-레비, 우성광, 인밍양, 장위후이, 지네이트 귀르잔 아크초라, 추저동, 카슨 렁, 페이-페이 리
+
+**buzz 업데이트**
+- 42편 대상, 15편 갱신 (-1씩 자연 감소), 8편 API 실패
+- 현재 Headliner 1위: Attention Is All You Need (buzz: 539)
+- trends-data.json 갱신 완료 (2026-07-20 04:03)
+```
+
+---
+
+## 2026-07-19 04:04:15 KST
+
+```
+### 오늘 할 일
+
+| # | 액션 | 대상 | 사유 |
+|---|------|------|------|
+| 1 | 📝 초안화 | `The Future of AI Agents with Andrew Ng  Interrupt 26` | Clippings 26일 경과 |
+| 2 | 📝 초안화 | `Build a memory system that survives across sessions with Fable 5` | Clippings 미커버 (5일) |
+| 3 | 📝 초안화 | `How to build second Ai-Brain With Claude and Obsidian` | Clippings 미커버 (5일) |
+| 4 | 📝 초안화 | `LLM Wiki 적용 지도 - 카파시 원안부터 도메인 판단 시스템까지` | Clippings 미커버 (5일) |
+| 5 | 📝 초안화 | `The 10-Step Second Brain Point Claude at an Obsidian Vault` | Clippings 미커버 (5일) |
+| 6 | 📝 초안화 | `llm 위키 총 정리` | Clippings 미커버 (4일) |
+| 7 | 🔗 링크 수정 | `[[A100]]` | Mooncake.md, NVIDIA Dynamo.md에서 깨짐 (본문 141건 중 대표) |
+| 8 | 🔗 링크 수정 | `[[KV 캐시]]` | LMCache.md, Mooncake.md에서 깨짐 |
+| 9 | 🔗 링크 수정 | `[[SGLang]]` | Mooncake.md, Prefill-Decode Disaggregation.md에서 깨짐 |
+| 10 | 🔗 링크 수정 | `[[vLLM]]` | LMCache.md, Mooncake.md에서 깨짐 |
+| 11 | 🔀 병합 검토 | `젠슨 황.md` ↔ `황차오.md` | 본문 유사 (jaccard=0.67) |
+| 12 | 🔀 병합 검토 | `스쥔하오.md` ↔ `왕쓰인.md` | 본문 유사 (jaccard=0.72) |
+| 13 | 🏷️ 태그 정합 | `다니엘 에크.md`, `미라 무라티.md`, `인밍양.md`, `추저동.md` 외 7개 | type:person인데 인물 태그 없음 (11개) |
+
+### 상세
+
+**클리핑** (`raw/Clippings/`)
+- ⏳ `The Future of AI Agents with Andrew Ng  Interrupt 26` — 미커버, 추천: 초안화 (2026-06-22, 26일 경과)
+- ⏳ `Build a memory system that survives across sessions with Fable 5 write, consolidate, recall, apply` — 미커버, 추천: 초안화 (5일 경과)
+- ⏳ `How to build second Ai-Brain With Claude and Obsidian` — 미커버, 추천: 초안화 (5일 경과)
+- ⏳ `LLM Wiki 적용 지도 - 카파시 원안부터 도메인 판단 시스템까지` — 미커버, 추천: 초안화 (5일 경과)
+- ⏳ `The 10-Step Second Brain Point Claude at an Obsidian Vault and Never Re-Explain Yourself Again` — 미커버, 추천: 초안화 (5일 경과)
+- ⏳ `llm 위키 총 정리` — 미커버, 추천: 초안화 (4일 경과)
+
+**방치된 초안** (`raw/drafts/`, 7일+)
+없음
+
+**끊어진 위키 링크**
+- 본문(Posts/Papers): 141건
+  - `[[A100]]` ← Mooncake.md, NVIDIA Dynamo.md
+  - `[[KV 캐시]]` ← LMCache.md, Mooncake.md
+  - `[[SGLang]]` ← Mooncake.md, Prefill-Decode Disaggregation.md
+  - `[[vLLM]]` ← LMCache.md, Mooncake.md
+  - `[[PyTorch]]` ← LMCache.md, Megakernels.md
+  - `[[Ray]]` ← LMCache.md, Mooncake.md
+  - `[[FlashAttention]]` ← Megakernels.md
+  - `[[Paged Attention]]` ← Megakernels.md, Mooncake.md
+  - `[[Triton]]` ← Megakernels.md, NVIDIA Dynamo.md
+  - `[[LMDeploy]]` ← Mooncake.md, Prefill-Decode Disaggregation.md
+  - (외 131건)
+- Dictionary: 705건 — 상위 25 (`[[MinerU2.5]]` 11곳, `[[OmniDocBench]]` 5곳, `[[SenseNova-U1]]` 4곳, `[[Ocean-OCR]]` 4곳, `[[BrainChip]]` 3곳, `[[CUHK MMLab]]` 3곳 ...)
+
+**링크 추천 (최근 30일)**
+매우 다수 — `[[GPT]]`, `[[LLM]]`, `[[Claude]]`, `[[Qwen]]`, `[[DeepSeek]]`, `[[Gemini]]`, `[[OpenAI]]`, `[[Google]]`, `[[GRPO]]` 등 수백 건 게시글에서 평문 등장. Dictionary 항목 생성 후 일괄 링크 추가 검토 권장.
+
+**중복 노트 후보**
+- `젠슨 황.md` ↔ `황차오.md` (본문 유사, jaccard=0.67)
+- `스쥔하오.md` ↔ `왕쓰인.md` (본문 유사, jaccard=0.72)
+
+**인물 노트 type/태그 불일치**
+type:person인데 '인물' 태그 없음 — 11개:
+- `다니엘 에크.md`, `미라 무라티.md`, `바하 라바바.md`, `세레나 융-레비.md`, `우성광.md`, `인밍양.md`, `장위후이.md`, `지네이트 귀르잔 아크초라.md`, `추저동.md`, `카슨 렁.md`, `페이-페이 리.md`
+
+**buzz 업데이트**
+대상 44편 | 갱신 15편 | 변동없음 20편 | API 실패 9편
+주요 변동: Video Generation Models +1, 나머지 소폭 하락
+Headliner 포스트 신규 #10: `Microsoft가 $2.5B를 쏟는 Frontier Company 모델.md`
+Headliner 논문 #1: Attention Is All You Need (buzz 539)
+Headliner 포스트 #1: Grok 4.5 (2026-07-14)
+
+**트렌드 데이터 (HN Trends)**
+갱신 헤더 출력됨 (블로그/assets/trends-data.json, 다음 push 때 라이브 반영)
+```
+
+---
+
+## 2026-07-16 05:00:00 KST
+
+```
+### 오늘 할 일
+
+| # | 액션 | 대상 | 사유 |
+|---|------|------|------|
+| 1 | 📝 초안화 | `Build a memory system...Fable 5` | Clippings 미커버 |
+| 2 | 📝 초안화 | `How to build second Ai-Brain With Claude and Obsidian` | Clippings 미커버 |
+| 3 | 📝 초안화 | `LLM Wiki 적용 지도 - 카파시 원안부터 도메인 판단 시스템까지` | Clippings 미커버 |
+| 4 | 📝 초안화 | `The 10-Step Second Brain...Obsidian Vault` | Clippings 미커버 |
+| 5 | 📝 초안화 | `The Future of AI Agents with Andrew Ng` | Clippings 미커버 (24일 경과) |
+| 6 | 📝 초안화 | `llm 위키 총 정리` | Clippings 미커버 |
+| 7 | 🔗 링크 수정 | `[[A100]]` | Mooncake.md, NVIDIA Dynamo.md에서 깨짐 |
+| 8 | 🔗 링크 수정 | `[[KV 캐시]]` | LMCache.md, Mooncake.md에서 깨짐 |
+| 9 | 🔗 링크 수정 | `[[SGLang]]` | Mooncake.md, Prefill-Decode Disaggregation.md에서 깨짐 |
+| 10 | 🔗 링크 수정 | `[[vLLM]]` | LMCache.md, Mooncake.md에서 깨짐 |
+| 11 | 🔀 병합 검토 | `젠슨 황.md` ↔ `황차오.md` | 본문 유사 (jaccard=0.67) |
+| 12 | 🔀 병합 검토 | `스쥔하오.md` ↔ `왕쓰인.md` | 본문 유사 (jaccard=0.72) |
+| 13 | 🏷️ 태그 정합 | `바하 라바바.md` | type:person인데 인물 태그 없음 |
+| 14 | 🏷️ 태그 정합 | `세레나 융-레비.md` | type:person인데 인물 태그 없음 |
+| 15 | 🏷️ 태그 정합 | `우성광.md`, `장위후이.md`, `지네이트 귀르잔 아크초라.md`, `카슨 렁.md`, `페이-페이 리.md` | type:person인데 인물 태그 없음 |
+
+### 상세
+
+**클리핑** (`raw/Clippings/`)
+- ⏳ `Build a memory system that survives across sessions with Fable 5` — 미커버, 추천: 초안화 (2026-07-13)
+- ⏳ `How to build second Ai-Brain With Claude and Obsidian` — 미커버, 추천: 초안화 (2026-07-13)
+- ⏳ `LLM Wiki 적용 지도 - 카파시 원안부터 도메인 판단 시스템까지` — 미커버, 추천: 초안화 (2026-07-13)
+- ⏳ `The 10-Step Second Brain Point Claude at an Obsidian Vault and Never Re-Explain Yourself Again` — 미커버, 추천: 초안화 (2026-07-13)
+- ⏳ `The Future of AI Agents with Andrew Ng Interrupt 26` — 미커버, 추천: 초안화 (2026-06-22, 24일 경과)
+- ⏳ `llm 위키 총 정리` — 미커버, 추천: 초안화 (2026-07-14)
+
+**방치된 초안** (`raw/drafts/`, 7일+)
+없음
+
+**끊어진 위키 링크**
+- 본문(Posts/Papers): 142건
+  - `[[A100]]` ← Mooncake.md, NVIDIA Dynamo.md
+  - `[[KV 캐시]]` ← LMCache.md, Mooncake.md
+  - `[[SGLang]]` ← Mooncake.md, Prefill-Decode Disaggregation.md
+  - `[[vLLM]]` ← LMCache.md, Mooncake.md
+  - `[[CUDA 스트림]]` ← LMCache.md, Mooncake.md
+  - `[[PyTorch]]` ← LMCache.md, Megakernels.md
+  - `[[Ray]]` ← LMCache.md, Mooncake.md
+  - `[[FlashAttention]]` ← Megakernels.md
+  - `[[MoE]]` ← Megakernels.md
+  - `[[LMDeploy]]` ← Mooncake.md, Prefill-Decode Disaggregation.md
+  - (외 132건)
+- Dictionary: 700건 — 상위 25 (`[[MinerU2.5]]` 11곳, `[[OmniDocBench]]` 5곳, `[[SenseNova-U1]]` 4곳, `[[Ocean-OCR]]` 4곳, ...)
+
+**링크 추천 (최근 30일)**
+매우 많음 — `[[GPT]]`, `[[LLM]]`, `[[Qwen]]`, `[[DeepSeek]]`, `[[Claude]]`, `[[Gemini]]` 등 공통 Dictionary 항목이 수백 건의 게시글에 평문으로 등장. Dictionary 항목 생성 후 일괄 링크 추가 검토 권장.
+
+**중복 노트 후보**
+- `젠슨 황.md` ↔ `황차오.md` (본문 유사, jaccard=0.67)
+- `스쥔하오.md` ↔ `왕쓰인.md` (본문 유사, jaccard=0.72)
+
+**인물 노트 type/태그 불일치**
+type:person인데 '인물' 태그 없음 (Obsidian 인물 뷰 누락) — 7개:
+- `바하 라바바.md`, `세레나 융-레비.md`, `우성광.md`, `장위후이.md`, `지네이트 귀르잔 아크초라.md`, `카슨 렁.md`, `페이-페이 리.md`
+```
+
+---
+
+## 2026-07-15 05:00:00 KST
+
+```
+### 오늘 할 일
+
+| # | 액션 | 대상 | 사유 |
+|---|------|------|------|
+| 1 | 📝 초안화 | `LLM Wiki 적용 지도 - 카파시 원안부터 도메인 판단 시스템까지.md` | Clippings에 본문 완성 — 게시 가능 수준 |
+| 2 | 📝 초안화 | `llm 위키 총 정리.md` | Clippings 미처리, 위 클리핑과 동일 주제 묶음 |
+| 3 | 📝 초안화 | `The Future of AI Agents with Andrew Ng Interrupt 26.md` | Clippings 미처리 YouTube 클립 |
+| 4 | 📝 초안화 | `Build a memory system that survives across sessions with Fable 5.md` | Clippings 미처리 Twitter 클립 |
+| 5 | 📝 초안화 | `How to build second Ai-Brain With Claude and Obsidian.md` | Clippings 미처리 Twitter 클립 |
+| 6 | 📝 초안화 | `The 10-Step Second Brain Point Claude at an Obsidian Vault.md` | Clippings 미처리 Twitter 클립 |
+| 7 | 🔗 링크 수정 | `[[A100]]`, `[[vLLM]]`, `[[KV 캐시]]` 외 139개 | Posts/Papers 본문 끊어진 링크 142건 |
+| 8 | 🔀 병합 검토 | `젠슨 황.md` ↔ `황차오.md` | 본문 유사 jaccard=0.67 |
+| 9 | 🔀 병합 검토 | `스쥔하오.md` ↔ `왕쓰인.md` | 본문 유사 jaccard=0.72 |
+| 10 | 🏷️ 태그 정합 | `바하 라바바.md`, `세레나 융-레비.md`, `우성광.md`, `장위후이.md`, `지네이트 귀르잔 아크초라.md`, `카슨 렁.md`, `페이-페이 리.md` | type:person인데 인물 태그 없음 7개 |
+
+### 상세
+
+**클리핑** (`raw/Clippings/`)
+- ⏳ `LLM Wiki 적용 지도 - 카파시 원안부터 도메인 판단 시스템까지.md` — 본문·프론트매터 완성, drafts로 이동 후 게시 가능
+- ⏳ `llm 위키 총 정리.md` — 카파시 LLM Wiki 정리 노트, 위 클리핑과 동일 주제
+- ⏳ `The Future of AI Agents with Andrew Ng  Interrupt 26.md` — YouTube LangChain 영상 클립
+- ⏳ `Build a memory system that survives across sessions with Fable 5 write, consolidate, recall, apply.md` — Twitter 클립
+- ⏳ `How to build second Ai-Brain With Claude and Obsidian.md` — Twitter 클립
+- ⏳ `The 10-Step Second Brain Point Claude at an Obsidian Vault and Never Re-Explain Yourself Again.md` — Twitter 클립
+
+**방치된 초안** (`raw/drafts/`, 7일+)
+- 없음
+
+**끊어진 위키 링크**
+- 본문(Posts/Papers): 142건 — `[[A100]]` (Mooncake, NVIDIA Dynamo), `[[vLLM]]` (LMCache, Mooncake), `[[KV 캐시]]` (LMCache, Mooncake), `[[SGLang]]` (Mooncake, Prefill-Decode Disaggregation) 등
+- Dictionary: 700건 (상위 25개) — `[[MinerU2.5]]` (11곳), `[[OmniDocBench]]` (5곳), `[[SenseNova-U1]]` (4곳), `[[Ocean-OCR]]` (4곳), `[[BrainChip]]` (3곳) 등
+
+**링크 추천 (최근 30일)**
+- 링크 추천 항목 매우 다수 (GPT, LLM, Claude, Gemini, DeepSeek, GRPO, Qwen, OpenAI 등 공통 개체 미연결) — Dictionary 항목화로 점진 정리 권장
+
+**중복 노트 후보**
+- `젠슨 황.md` ↔ `황차오.md` (본문 유사 jaccard=0.67)
+- `스쥔하오.md` ↔ `왕쓰인.md` (본문 유사 jaccard=0.72)
+
+**인물 노트 type/태그 불일치**
+- `바하 라바바.md`, `세레나 융-레비.md`, `우성광.md`, `장위후이.md`, `지네이트 귀르잔 아크초라.md`, `카슨 렁.md`, `페이-페이 리.md` — type:person인데 인물 태그 없음 7개
+```
+
+---
+
+## 2026-07-13 17:47:16 KST
+
+```
+### 오늘 할 일
+
+1. 📝 초안화: `The 10-Step Second Brain Point Claude at an Obsidian Vault and Never Re-Explain Yourself Again.md`, `The Future of AI Agents with Andrew Ng  Interrupt 26.md` — `raw/Clippings/` 미처리 2건
+2. 🔗 링크 수정: Posts/Papers 본문 끊어진 위키 링크 142건 — `Mooncake 2.md`, `LMCache.md`, `NVIDIA Dynamo.md`, `Megakernels.md` 쪽 반복 참조 우선
+3. 🏷️ 태그 정합: `Baha Rababah.md` 외 6개 — `type: person`인데 `인물` 태그 없음
+4. 🔀 병합 검토: Dictionary 중복 후보 11건 — 한/영 인물명 중복 5쌍 + 본문 유사 2쌍
+
+### 상세
+
+**클리핑** (`raw/Clippings/`)
+- ⏳ `The 10-Step Second Brain Point Claude at an Obsidian Vault and Never Re-Explain Yourself Again.md` — 미처리 파일로 남아 있음. 추천: 옵시디언/세컨드브레인 실전 초안화
+- ⏳ `The Future of AI Agents with Andrew Ng  Interrupt 26.md` — 미처리 파일로 남아 있음. 추천: Andrew Ng 에이전트 관점 요약 초안화
+
+**방치된 초안** (`raw/drafts/`, 7일+)
+- 없음
+
+**끊어진 위키 링크**
+- 본문(Posts/Papers): 142건
+  - `[[A100]]` ← Mooncake 2.md, Mooncake.md
+  - `[[CUDA 스트림]]` ← LMCache.md, Mooncake 2.md
+  - `[[GPT-4]]` ← Mooncake 2.md, Mooncake.md
+  - `[[H100]]` ← Megakernels.md, NVIDIA Dynamo.md
+  - `[[KV 캐시]]` ← LMCache.md, Mooncake 2.md
+  - `[[LLaDA]]` ← Learning from the Self-future - On-policy Self-distillation for dLLMs.md, PerceptionDLM - Parallel Region Perception with Multimodal Diffusion Language Models.md
+  - `[[Mooncake 2.md]]` 계열 참조에서 `[[HBM]]`, `[[LMDeploy]]`, `[[Paged Attention]]`, `[[SGLang]]`, `[[vLLM]]` 반복
+  - `[[Speakeasy]]` ← Anthropic이 Stainless를 인수했습니다.md
+  - `[[NVIDIA [[NVIDIA B200]]` ← Llama 4 Scout.md — 링크 문법 자체가 깨진 것으로 보임
+  - ... 외 133건 (`python3 tools/check_broken_links.py --dict-limit 25` 전체 출력 기준)
+- Dictionary: 699건, 상위 25개
+  - `[[MinerU2.5]]` (11곳)
+  - `[[OmniDocBench]]` (5곳)
+  - `[[SenseNova-U1]]` (4곳), `[[Ocean-OCR]]` (4곳)
+  - `[[CUHK MMLab]]` (3곳), `[[BrainChip]]` (3곳), `[[워싱턴 대학교]]` (3곳), `[[HUST Vision Lab]]` (3곳)
+  - ... 외 674건
+
+**중복 노트 후보**
+- `Dayiheng Liu.md` ↔ `류다이헝.md` — 이름 충돌: `dayihengliu`, `刘大一恒`
+- `Dilek Hakkani-Tür.md` ↔ `딜렉 하카니튀르.md` — 이름 충돌: `dilekhakkanitur` / `dilekhakkanitür`
+- `Ling Yang.md` ↔ `양링.md` — 이름 충돌: `lingyang`, `양링`
+- `Shuicheng Yan.md` ↔ `옌수이청.md` — 이름 충돌: `shuichengyan`, `옌수이청`
+- `Yang Yang.md` ↔ `양양.md` — 이름 충돌: `yangyang`
+- `Junhao Shi.md` ↔ `Siyin Wang.md` — 본문 유사 `jaccard=0.71`
+- `젠슨 황.md` ↔ `황차오.md` — 본문 유사 `jaccard=0.67`
+
+**인물 노트 type/태그 불일치**
+- `Baha Rababah.md`
+- `Carson K. Leung.md`
+- `Cuneyt Gurcan Akcora.md`
+- `Serena Yeung-Levy.md`
+- `Shengguang Wu.md`
+- `Yuhui Zhang.md`
+- `페이-페이 리.md`
+
+**실행한 체크**
+- `python3 tools/check_broken_links.py --dict-limit 25` — 본문 링크 142건, Dictionary 링크 699건
+- `python3 tools/find_dupes.py --body` — 중복 후보 11건
+- `python3 tools/check_person_tags.py` — 태그 불일치 7건
+- `find raw/Clippings -maxdepth 1 -type f -name '*.md' -print | sort` — 미처리 클리핑 2건
+- `find raw/drafts -maxdepth 1 -type f -name '*.md' -mtime +7 -print | sort` — 7일+ 초안 없음
+```
+
+---
+
+## 2026-07-07 04:04:22 KST
+
+```
+### 오늘 할 일
+
+| # | 액션 | 대상 | 사유 |
+|---|------|------|------|
+| 1 | 📝 초안화 | `The Future of AI Agents with Andrew Ng \| Interrupt 26` | Clippings 미처리 (2026-06-22 클리핑) |
+| 2 | 🔗 링크 수정 | Posts/Papers 141건 | 게시글 끊어진 위키 링크 |
+| 3 | 🔀 병합 검토 | `Dayiheng Liu.md` ↔ `류다이헝.md` 외 4쌍 | 영문/한국어 인물명 중복 |
+
+### 상세
+
+**클리핑** (`raw/Clippings/`)
+- ⏳ `The Future of AI Agents with Andrew Ng | Interrupt 26` — 미처리, LangChain Interrupt 26 Andrew Ng 강연 클리핑 (2026-06-22). Posts/Papers에 해당 내용 없음. 추천: 정보 초안화
+
+**방치된 초안** (`raw/drafts/`, 7일+)
+- 없음
+
+**끊어진 위키 링크**
+- 본문(Posts/Papers): 141건
+  - `[[A100]]` ← Mooncake.md, NVIDIA Dynamo.md
+  - `[[AIXI]]` ← From AGI to ASI.md
+  - `[[AMD]]` ← Megakernels.md
+  - `[[CUDA]]` ← Megakernels.md
+  - `[[CUDA 스트림]]` ← LMCache.md, Mooncake.md
+  - `[[Fable 5]]` ← Claude Sonnet 5.md
+  - `[[FlashAttention]]` ← Megakernels.md
+  - `[[GPT-4]]` ← Mooncake.md
+  - `[[GPT-5]]` ← Anthropic의 81,000명 인터뷰 연구가 말하는 것.md
+  - `[[H100]]` ← Megakernels.md, NVIDIA Dynamo.md
+  - `[[KV 캐시]]` ← LMCache.md, Mooncake.md
+  - `[[LLaDA]]` ← Learning from the Self-future.md, PerceptionDLM.md
+  - `[[MCP(Model Context Protocol)]]` ← Claude가 크리에이티브 툴에 들어온다.md
+  - `[[PyTorch]]` ← LMCache.md, Megakernels.md
+  - `[[SGLang]]` ← Mooncake.md, Prefill-Decode Disaggregation.md
+  - `[[Speculative Decoding]]` ← Speculative Decoding and MTP.md
+  - `[[Triton]]` ← Megakernels.md, NVIDIA Dynamo.md
+  - `[[vLLM]]` ← LMCache.md, Mooncake.md
+  - ... 외 123건 (check_broken_links.py 전체 목록 참조)
+- Dictionary: 700건, 상위 25개
+  - `[[MinerU2.5]]` (11곳)
+  - `[[OmniDocBench]]` (5곳)
+  - `[[SenseNova-U1]]` (4곳)
+  - `[[Ocean-OCR]]` (4곳)
+  - `[[CUHK MMLab]]` (3곳), `[[BrainChip]]` (3곳), `[[워싱턴 대학교]]` (3곳)
+  - ... 외 675건
+
+**링크 추천 (최근 30일)**
+- `[[ARC-AGI-2]]` ← Less is More Recursive Reasoning with Tiny Networks.md, Meta Muse Spark.md
+- `[[ARC]]` ← A Definition of AGI.md 외 6곳
+- `[[AlphaFold]]` ← From AGI to ASI.md 외 2곳
+- `[[Amazon]]` ← Agentic Abstention.md 외 12곳
+- `[[Anthropic]]` ← 2026. 04. 이달의 인물.md 외 다수
+- ... 총 1350+건 (Dictionary 646개 항목 기준)
+
+**중복 노트 후보**
+- `Dayiheng Liu.md` ↔ `류다이헝.md` (이름 충돌: dayihengliu / 刘大一恒)
+- `Dilek Hakkani-Tür.md` ↔ `딜렉 하카니튀르.md` (이름 충돌: dilekhakkanitur)
+- `Ling Yang.md` ↔ `양링.md` (이름 충돌: lingyang)
+- `Shuicheng Yan.md` ↔ `옌수이청.md` (이름 충돌: shuichengyan)
+- `Yang Yang.md` ↔ `양양.md` (이름 충돌: yangyang)
+  총 5쌍 (영문/한국어 인물명 이중 등재), 어느 쪽을 표준으로 할지 사람이 결정 필요
+
+**인물 노트 type/태그 불일치**
+- 없음 ✓
+```
+
+---
+
+## 2026-07-06 04:01:00 KST
+
+```
+### 오늘 할 일
+
+| # | 액션 | 대상 | 사유 |
+|---|------|------|------|
+| 1 | 📝 초안화 | `The Future of AI Agents with Andrew Ng \| Interrupt 26.md` | Clippings 미커버 (2026-06-22 클리핑) |
+| 2 | 🔗 링크 수정 | 본문(Posts/Papers) 135건 | 게시글 끊어진 위키 링크 |
+| 3 | 🔀 병합 검토 | `Dayiheng Liu.md` ↔ `류다이헝.md` 외 4쌍 | 한/영 이름 중복 노트 (이름 충돌 9건 + 본문 유사 2건) |
+| 4 | 🏷️ 태그 정합 | `Xianglong Liu.md`, `Youngjin Kwon.md` | type:person인데 인물 태그 없음 |
+
+### 상세
+
+**클리핑** (`raw/Clippings/`)
+- ⏳ `The Future of AI Agents with Andrew Ng | Interrupt 26.md` — 미커버, 추천: 초안화
+  (Andrew Ng × Harrison Chase 대담, Interrupt 26 컨퍼런스, 2026-06-22 클리핑)
+
+**방치된 초안** (`raw/drafts/`, 7일+)
+- 없음 (현재 초안 7건 모두 3일 이내)
+
+**끊어진 위키 링크**
+- 본문(Posts/Papers): 135건 — 주요 항목: [[A100]], [[FlashAttention]], [[KV 캐시]], [[vLLM]], [[SGLang]], [[Paged Attention]], [[PyTorch]] 등
+- Dictionary: 700건 (상위 25건)
+  - [[MinerU2.5]] (11곳), [[OmniDocBench]] (5곳), [[SenseNova-U1]] (4곳), [[Ocean-OCR]] (4곳), [[CUHK MMLab]] (3곳), [[BrainChip]] (3곳), [[워싱턴 대학교]] (3곳) 외
+
+**링크 추천 (최근 30일)** — 다수 (상위 대표)
+- [[ARC]], [[AlphaFold]], [[Amazon]], [[Anthropic]], [[BERT]], [[BrowseComp]], [[ChatGPT]], [[Claude]], [[Claude Code]], [[Claude Fable 5]], [[DeepSeek]], [[Gemini]], [[Google]], [[GPT]], [[GRPO]], [[GSM8K]] 등 다수 게시글에서 평문 등장
+
+**중복 노트 후보** (11건)
+- [이름 충돌 — 한/영 쌍] `Dayiheng Liu.md` ↔ `류다이헝.md`
+- [이름 충돌 — 한/영 쌍] `Dilek Hakkani-Tür.md` ↔ `딜렉 하카니튀르.md`
+- [이름 충돌 — 한/영 쌍] `Ling Yang.md` ↔ `양링.md`
+- [이름 충돌 — 한/영 쌍] `Shuicheng Yan.md` ↔ `옌수이청.md`
+- [이름 충돌 — 한/영 쌍] `Yang Yang.md` ↔ `양양.md`
+- [본문 유사 jaccard=0.71] `Junhao Shi.md` ↔ `Siyin Wang.md`
+- [본문 유사 jaccard=0.67] `젠슨 황.md` ↔ `황차오.md`
+
+**인물 노트 type/태그 불일치** (2건)
+- `Xianglong Liu.md` — type:person인데 인물 태그 없음
+- `Youngjin Kwon.md` — type:person인데 인물 태그 없음
+
+**buzz 업데이트** — 67편 대상, 22편 갱신, 7편 API 실패
+- 상승: OmniDirector (+51), ABot-Earth 0.5 (+30), ReasoningFlow (+17)
+- 하락: Rethinking the Divergence (-24), Do Transformers Need Three Projections (-18)
+- 현재 Headliner 논문 1위: Attention Is All You Need (buzz 539)
+- 현재 Headliner 포스트 1위: Together AI $800M 시리즈C (2026-07-03)
+
+**트렌드 데이터 갱신** — 헤더만 출력됨 (갱신 실패 또는 변동 없음, 기존 파일 유지)
+```
+
+---
+
+## 2026-07-05 04:01:00 KST
+
+```
+### 오늘 할 일
+
+| # | 액션 | 대상 | 사유 |
+|---|------|------|------|
+| 1 | 📝 초안화 | `The Future of AI Agents with Andrew Ng \| Interrupt 26` | Clippings 미커버 (2026-06-22) |
+| 2 | 🔗 링크 수정 | `[[A100]]`, `[[CUDA]]`, `[[FlashAttention]]` 외 132건 | Posts/Papers 본문 끊어진 링크 135건 |
+| 3 | 🔀 병합 검토 | `Dayiheng Liu` ↔ `류다이헝` 외 4쌍 | Dictionary 동일 인물 한/영 중복 노트 9건 |
+
+### 상세
+
+**클리핑** (`raw/Clippings/`)
+- ⏳ `The Future of AI Agents with Andrew Ng | Interrupt 26` — 미커버 (2026-06-22), 추천: 초안화
+
+**방치된 초안** (`raw/drafts/`, 7일+)
+- 없음
+
+**끊어진 위키 링크**
+- 본문(Posts/Papers): 135건
+  `[[A100]]` ← Mooncake.md, NVIDIA Dynamo.md
+  `[[CUDA]]` ← Megakernels.md
+  `[[FlashAttention]]` ← Megakernels.md
+  `[[KV 캐시]]` ← LMCache.md, Mooncake.md
+  `[[PyTorch]]` ← LMCache.md, Megakernels.md
+  `[[H100]]` ← Megakernels.md, NVIDIA Dynamo.md
+  `[[GPT-4]]` ← Mooncake.md
+  `[[MoE]]` ← Megakernels.md
+  `[[Paged Attention]]` ← Megakernels.md, Mooncake.md
+  `[[FSDP]]` ← NVIDIA Dynamo.md
+  ... 외 125건
+- Dictionary: 700건 (상위 25)
+  `[[MinerU2.5]]` (11곳), `[[OmniDocBench]]` (5곳), `[[SenseNova-U1]]` (4곳), `[[Ocean-OCR]]` (4곳), `[[CUHK MMLab]]` (3곳), `[[BrainChip]]` (3곳), `[[워싱턴 대학교]]` (3곳), `[[HUST Vision Lab]]` (3곳), `[[블라디미르 바프닉]]` (2곳), `[[상하이 인공지능 연구소]]` (2곳), `[[서게이 레빈]]` (2곳), `[[BrainChip Inc.]]` (2곳), `[[NEAR Protocol]]` (2곳), `[[TensorFlow]]` (2곳), `[[카네기멜론대학교]]` (2곳), `[[MIT CSAIL]]` (2곳), `[[GPT-3]]` (2곳), `[[Claude Opus]]` (2곳), `[[IBM]]` (2곳), `[[워드 커닝햄]]` (2곳), `[[Amazon AGI]]` (2곳), `[[화난사범대학교]]` (2곳), `[[워싱턴 대학교(University of Washington)]]` (2곳), `[[워털루 대학교]]` (2곳), `[[옥스퍼드대학교]]` (2곳) ... 외 675건
+
+**링크 추천 (최근 30일)**
+- 없음
+
+**중복 노트 후보**
+- `Dayiheng Liu` ↔ `류다이헝` (이름 충돌: dayihengliu / 刘大一恒)
+- `Dilek Hakkani-Tür` ↔ `딜렉 하카니튀르` (이름 충돌)
+- `Ling Yang` ↔ `양링` (이름 충돌)
+- `Shuicheng Yan` ↔ `옌수이청` (이름 충돌)
+- `Yang Yang` ↔ `양양` (이름 충돌)
+
+**인물 노트 type/태그 불일치**
+- 없음
+```
+
+---
+
+## 2026-07-04 04:01:00 KST
+
+```
+### 오늘 할 일
+
+| # | 액션 | 대상 | 사유 |
+|---|------|------|------|
+| 1 | 📝 초안화 | `The Future of AI Agents with Andrew Ng \| Interrupt 26` | Clippings 미커버 (2026-06-22) |
+| 2 | 🔗 링크 수정 | `[[A100]]`, `[[CUDA]]`, `[[FlashAttention]]` 외 132건 | Posts/Papers 본문 끊어진 링크 135건 |
+| 3 | 🔀 병합 검토 | `Dayiheng Liu` ↔ `류다이헝` 외 4쌍 | Dictionary 동일 인물 한/영 중복 노트 |
+
+### 상세
+
+**클리핑** (`raw/Clippings/`)
+- ⏳ `The Future of AI Agents with Andrew Ng | Interrupt 26` — 미커버, Andrew Ng × LangChain Interrupt 26 유튜브 대담. 추천: 잡담 초안화
+
+**방치된 초안** (`raw/drafts/`, 7일+)
+- 없음 (현재 3개 초안 모두 2026-07-03 생성 — 1일 경과)
+
+**끊어진 위키 링크**
+- 본문(Posts/Papers): 135건
+  - `[[A100]]` ← Mooncake.md, NVIDIA Dynamo.md
+  - `[[CUDA]]` ← Megakernels.md
+  - `[[FlashAttention]]` ← Megakernels.md
+  - `[[GPT-4]]` ← Mooncake.md
+  - `[[KV 캐시]]` ← LMCache.md, Mooncake.md
+  - `[[vLLM]]` ← LMCache.md, Mooncake.md
+  - `[[MCP(Model Context Protocol)]]` ← Claude가 크리에이티브 툴에 들어온다.md
+  - `[[Fable 5]]` ← Claude Sonnet 5.md
+  - ... 외 127건
+- Dictionary: 700건 (상위 25 — `[[MinerU2.5]]`(11곳), `[[OmniDocBench]]`(5곳), `[[SenseNova-U1]]`(4곳) 순)
+
+**링크 추천 (최근 30일)**
+- 매우 다수 — `[[GPT]]`, `[[LLM]]`, `[[Claude]]`, `[[Qwen]]`, `[[Gemini]]`, `[[DeepSeek]]`, `[[GRPO]]` 등이 수십 건 게시글에서 평문 등장, Dictionary 항목 있으나 링크 미처리
+
+**중복 노트 후보**
+- `Dayiheng Liu.md` ↔ `류다이헝.md` (이름 충돌 — 동일 인물 한/영)
+- `Dilek Hakkani-Tür.md` ↔ `딜렉 하카니튀르.md` (이름 충돌 — 동일 인물 한/영)
+- `Ling Yang.md` ↔ `양링.md` (이름 충돌 — 동일 인물 한/영)
+- `Shuicheng Yan.md` ↔ `옌수이청.md` (이름 충돌 — 동일 인물 한/영)
+- `Junhao Shi.md` ↔ `Siyin Wang.md` (본문 유사 jaccard=0.71)
+- `젠슨 황.md` ↔ `황차오.md` (본문 유사 jaccard=0.67)
+
+**인물 노트 type/태그 불일치**
+- 없음
+
+**buzz 갱신 결과**
+- 대상 68편 | 갱신 22편 | 변동없음 25편 | API 실패 21편
+- 주요 변동: OmniDirector +51, Cosmos 3 -136, ABot-Earth -31, On the Scaling of PEFT -51
+- Headliner 변동 없음
+- Headliner 논문 1위: Attention Is All You Need (buzz 539)
+- Headliner 포스트 최신: Claude Sonnet 5 (2026-07-02)
+
+**트렌드 데이터 (HN Trends)**
+- 갱신 완료 — 블로그/assets/trends-data.json (다음 push 때 라이브 반영)
+```
+
+---
+
+## 2026-07-03 04:00:00 KST
+
+```
+### 오늘 할 일
+
+| # | 액션 | 대상 | 사유 |
+|---|------|------|------|
+| 1 | 📝 초안화 | `The Future of AI Agents with Andrew Ng \| Interrupt 26` | Clippings 미커버, 생성 11일 경과 |
+| 2 | 🔗 링크 수정 | 본문(Posts/Papers) 135건 | 게시글 위키링크 404 노출 위험 — 상위: [[A100]], [[CUDA]], [[KV 캐시]], [[SGLang]], [[vLLM]] 등 |
+| 3 | 🔀 병합 검토 | `Dayiheng Liu` ↔ `류다이헝` 외 3쌍 | 동일 인물 한/영 이름 중복 노트 |
+
+### 상세
+
+**클리핑** (`raw/Clippings/`)
+- ⏳ `The Future of AI Agents with Andrew Ng | Interrupt 26` (2026-06-22 생성, 11일 경과) — Andrew Ng × LangChain Interrupt 26 fireside chat. 코딩 에이전트 진화·PM 병목·기업 AI 변환 주제. 추천: 잡담 초안화
+
+**방치된 초안** (`raw/drafts/`, 7일+)
+- 없음
+
+**끊어진 위키 링크**
+- 본문(Posts/Papers): 135건
+  - [[A100]] ← Mooncake.md, NVIDIA Dynamo.md
+  - [[CUDA]] ← Megakernels.md
+  - [[CUDA 그래프]] ← LMCache.md
+  - [[CUDA 스트림]] ← LMCache.md, Mooncake.md
+  - [[KV 캐시]] ← LMCache.md, Mooncake.md
+  - [[SGLang]] ← Mooncake.md, Prefill-Decode Disaggregation.md
+  - [[vLLM]] ← LMCache.md, Mooncake.md
+  - [[FlashAttention]] ← Megakernels.md
+  - [[Paged Attention]] ← Megakernels.md, Mooncake.md
+  - [[PyTorch]] ← LMCache.md, Megakernels.md
+  - [[Triton]] ← Megakernels.md, NVIDIA Dynamo.md
+  - [[GPT-5]] ← Anthropic의 81,000명 인터뷰 연구가 말하는 것.md
+  - [[Fable 5]] ← Claude Sonnet 5.md
+  - [[Speculative Decoding]] ← Speculative Decoding and MTP.md
+  - (외 121건 생략 — blog-check.sh 출력 참조)
+- Dictionary: 700건 (상위 25, 참조 많은 순)
+  - [[MinerU2.5]] (11곳), [[OmniDocBench]] (5곳), [[SenseNova-U1]] (4곳), [[Ocean-OCR]] (4곳), [[CUHK MMLab]] (3곳), [[BrainChip]] (3곳), [[워싱턴 대학교]] (3곳), [[HUST Vision Lab]] (3곳) 외 675건
+
+**링크 추천 (최근 30일)**
+- Dictionary 항목이 본문 평문으로 등장하는 게시글 다수 감지. 주요 항목:
+  - [[GPT]] — 50+ 게시글에서 평문 등장
+  - [[Claude]] — 40+ 게시글
+  - [[DeepSeek]] — 30+ 게시글
+  - [[GRPO]] — 17 게시글
+  - [[임베딩]], [[증류]], [[파인튜닝]], [[양자화]] — 각 20+ 게시글
+  - [[Anthropic]], [[ChatGPT]], [[Claude Code]], [[Claude Sonnet 4.6]] — 다수
+  - (전체 목록은 blog-check.sh 출력 참조)
+
+**중복 노트 후보**
+- [이름 충돌] `Dayiheng Liu.md` ↔ `류다이헝.md` (dayihengliu / 刘大一恒 키 중복)
+- [이름 충돌] `Dilek Hakkani-Tür.md` ↔ `딜렉 하카니튀르.md`
+- [이름 충돌] `Ling Yang.md` ↔ `양링.md`
+- [이름 충돌] `Shuicheng Yan.md` ↔ `옌수이청.md`
+- [본문 유사] jaccard=0.71 — `Junhao Shi.md` ↔ `Siyin Wang.md`
+- [본문 유사] jaccard=0.67 — `젠슨 황.md` ↔ `황차오.md`
+
+**인물 노트 type/태그 불일치**
+- 없음 ✓
+
+**buzz 업데이트 (30일 이내 + buzz 미설정)**
+- 대상 68편 | 갱신 26편 | 변동 없음 34편 | API 실패 8편
+- 주요 변동: On the Scaling of PEFT (+50, buzz:106), From AGI to ASI (+24, buzz:61), OmniDirector (-52, buzz:75), DreamX-World 1.0 (-48, buzz:48)
+- Headliner 포스트 갱신: Claude Sonnet 5 / California × Anthropic / RAISE US / Google DeepMind 인재 대탈출 / Speculative Decoding and MTP 등 상위 10 변경
+```
+
+---
+
+## 2026-07-01 04:00:00 KST
+
+```
+### 오늘 할 일
+
+| # | 액션 | 대상 | 사유 |
+|---|------|------|------|
+| 1 | 📝 초안화 | `The Future of AI Agents with Andrew Ng \| Interrupt 26` | Clippings 미커버 |
+| 2 | 🔗 링크 수정 | `[[AIXI]]` | `From AGI to ASI.md`에서 깨짐 |
+| 3 | 🔗 링크 수정 | `[[Alex Karp]]` | `팔란티어 Foundry 구현 가이드.md`에서 깨짐 |
+| 4 | 🔗 링크 수정 | `[[Ghostty]]` | `Ghostty, GitHub을 떠나다.md`에서 깨짐 |
+| 5 | 🔗 링크 추가 | `[[LLM]]` | 120개 게시글에서 평문 등장 |
+| 6 | 🔗 링크 추가 | `[[GPT]]` | 107개 게시글에서 평문 등장 |
+| 7 | 🔗 링크 추가 | `[[Qwen]]` | 57개 게시글에서 평문 등장 |
+| 8 | 🔀 병합 검토 | `Dayiheng Liu.md` ↔ `류다이헝.md` | 이름 충돌 (dayihengliu) |
+| 9 | 🔀 병합 검토 | `Dilek Hakkani-Tür.md` ↔ `딜렉 하카니튀르.md` | 이름 충돌 |
+| 10 | 🔀 병합 검토 | `Junhao Shi.md` ↔ `Siyin Wang.md` | 본문 유사 (jaccard=0.71) |
+
+### 상세
+
+**클리핑** (`raw/Clippings/`)
+- ⏳ `The Future of AI Agents with Andrew Ng | Interrupt 26` — 미커버, 추천: 초안화
+
+**방치된 초안** (`raw/drafts/`, 7일+)
+- 없음
+
+**끊어진 위키 링크**
+- 본문(Posts/Papers): 59건
+  - `[[AIXI]]` ← From AGI to ASI.md
+  - `[[Alex Karp]]` ← 팔란티어 Foundry 구현 가이드.md
+  - `[[Ghostty]]` ← Ghostty, GitHub을 떠나다.md
+  - `[[GPT-5]]` ← Anthropic의 81,000명 인터뷰 연구가 말하는 것.md
+  - `[[LLaDA]]` ← Learning from the Self-future.md, PerceptionDLM.md
+  - `[[MCP(Model Context Protocol)]]` ← Claude가 크리에이티브 툴에 들어온다.md
+  - `[[OpenClaw]]` ← 오픈클로와 개인 에이전트의 현재.md
+  - ... 외 52건
+- Dictionary: 701건 (상위 25, 참조 많은 순):
+  - `[[MinerU2.5]]` (11곳), `[[OmniDocBench]]` (5곳), `[[SenseNova-U1]]` (4곳), `[[Ocean-OCR]]` (4곳), `[[CUHK MMLab]]` (3곳), `[[BrainChip]]` (3곳), `[[워싱턴 대학교]]` (3곳), ... 외 676건
+
+**링크 추천 (최근 30일)** — 총 1,273건
+- `[[LLM]]` — 120개 파일에서 평문 등장
+- `[[GPT]]` — 107개 파일에서 평문 등장
+- `[[Qwen]]` — 57개 파일에서 평문 등장
+- `[[Gemini]]` — 57개 파일에서 평문 등장
+- `[[Claude]]` — 51개 파일에서 평문 등장
+- `[[OpenAI]]` — 44개 파일에서 평문 등장
+- `[[Google]]` — 41개 파일에서 평문 등장
+- `[[임베딩]]` — 37개 파일에서 평문 등장
+- `[[DeepSeek]]` — 33개 파일에서 평문 등장
+- `[[파인튜닝]]` — 31개 파일에서 평문 등장
+
+**중복 노트 후보** — 10건
+- `Dayiheng Liu.md` ↔ `류다이헝.md` (이름 충돌: dayihengliu, 刘大一恒)
+- `Dilek Hakkani-Tür.md` ↔ `딜렉 하카니튀르.md` (이름 충돌)
+- `Ling Yang.md` ↔ `양링.md` (이름 충돌)
+- `Shuicheng Yan.md` ↔ `옌수이청.md` (이름 충돌)
+- `Junhao Shi.md` ↔ `Siyin Wang.md` (본문 유사 jaccard=0.71)
+- `젠슨 황.md` ↔ `황차오.md` (본문 유사 jaccard=0.67)
+
+**인물 노트 type/태그 불일치**
+- 없음
+
+**buzz 업데이트** — 61편 대상, 27편 갱신, 33편 변동 없음, 1편 API 실패
+- 주요 변동: Cosmos 3 +132, Looped World Models +31, SpatialClaw +20, PlanBench-XL +27, DreamX-World 1.0 +27
+- Headliner 논문 #1: Attention Is All You Need (buzz 539)
+- Headliner 포스트 최신: GPT-5.6 Sol Terra Luna 출시 분석 (2026-06-29)
+```
+
+---
+
+## 2026-06-30 06:30:00 KST
+
+```
+### 오늘 할 일
+
+| # | 액션 | 대상 | 사유 |
+|---|------|------|------|
+| 1 | 📝 초안화 | `The Future of AI Agents with Andrew Ng \| Interrupt 26` | Clippings 미커버 |
+| 2 | 🔗 링크 수정 | `[[Ghostty]]` | `Ghostty, GitHub을 떠나다.md`에서 깨짐 |
+| 3 | 🔗 링크 수정 | `[[GPT-5]]` | `Anthropic의 81,000명 인터뷰 연구가 말하는 것.md`에서 깨짐 |
+| 4 | 🔗 링크 수정 | `[[MCP(Model Context Protocol)]]` | `Claude가 크리에이티브 툴에 들어온다.md`에서 깨짐 |
+| 5 | 🔗 링크 수정 | `[[LLaDA]]` | `Learning from the Self-future...`, `PerceptionDLM...`에서 깨짐 |
+| 6 | 🔗 링크 추가 | `[[Claude Fable 5]]` | `Claude Fable 5 - Anthropic의 첫 Mythos급...` 등 3곳 평문 등장 |
+| 7 | 🔗 링크 추가 | `[[Mythos]]` | `Claude Fable 5...`, `Fable 5 수출 통제...` 등 7곳 평문 등장 |
+| 8 | 🔀 병합 검토 | `Dayiheng Liu.md` ↔ `류다이헝.md` | 이름 충돌 (한영 중복) |
+| 9 | 🔀 병합 검토 | `Ling Yang.md` ↔ `양링.md` | 이름 충돌 (한영 중복) |
+| 10 | 🔀 병합 검토 | `Dilek Hakkani-Tür.md` ↔ `딜렉 하카니튀르.md` | 이름 충돌 (한영 중복) |
+| 11 | 🔀 병합 검토 | `Junhao Shi.md` ↔ `Siyin Wang.md` | 본문 유사도 0.71 |
+
+### 상세
+
+**클리핑** (`raw/Clippings/`)
+- ⏳ `The Future of AI Agents with Andrew Ng | Interrupt 26` — 미커버, 추천: 초안화
+
+**방치된 초안** (`raw/drafts/`, 7일+)
+- 없음 (LMCache, Megakernels, Mooncake, NVIDIA Dynamo, Prefill-Decode Disaggregation, Speculative Decoding and MTP — 모두 어제 작성, 1일)
+
+**끊어진 위키 링크**
+- 본문(Posts/Papers): 59건
+  - `[[AIXI]]` ← From AGI to ASI.md
+  - `[[Ghostty]]` ← Ghostty, GitHub을 떠나다.md
+  - `[[GPT-5]]` ← Anthropic의 81,000명 인터뷰 연구가 말하는 것.md
+  - `[[MCP(Model Context Protocol)]]` ← Claude가 크리에이티브 툴에 들어온다.md
+  - `[[LLaDA]]` ← Learning from the Self-future..., PerceptionDLM...
+  - `[[ChatEval]]` ← Predictive Maps of Multi-Agent Reasoning...
+  - `[[Colossus]]` ← Composer와 Grok.md
+  - `[[OpenClaw]]` ← 오픈클로와 개인 에이전트의 현재.md
+  - `[[Speakeasy]]` ← Anthropic이 Stainless를 인수했습니다.md
+  - ... 외 50건
+- Dictionary: 700건 (상위 25, 참조 많은 순)
+  - `[[MinerU2.5]]` (11곳), `[[OmniDocBench]]` (5곳), `[[SenseNova-U1]]` (4곳), `[[Ocean-OCR]]` (4곳), `[[CUHK MMLab]]` (3곳), `[[BrainChip]]` (3곳), `[[워싱턴 대학교]]` (3곳), `[[HUST Vision Lab]]` (3곳) 등
+
+**링크 추천 (최근 30일)**
+- `[[Claude Fable 5]]` ← Claude Fable 5 - Anthropic의 첫 Mythos급 공개 모델.md 등 3곳
+- `[[Mythos]]` ← Claude Fable 5..., Fable 5 수출 통제..., Claude Opus 4.8에서 Fable 5로... 등 7곳
+- `[[Claude Managed Agents]]` ← Claude Managed Agents.md
+- `[[Claude Sonnet 4.6]]` ← FastContext..., Holo3.1..., Meta Muse Spark..., NatureBench... 등 5곳
+- `[[Meta Superintelligence Labs]]` ← Meta Muse Spark.md, Think in Strokes... 등 2곳
+- (전체 수백 건 중 주요 항목만 표기)
+
+**중복 노트 후보**
+- `Dayiheng Liu.md` ↔ `류다이헝.md` (이름 충돌: dayihengliu, 刘大一恒)
+- `Dilek Hakkani-Tür.md` ↔ `딜렉 하카니튀르.md` (이름 충돌)
+- `Ling Yang.md` ↔ `양링.md` (이름 충돌)
+- `Shuicheng Yan.md` ↔ `옌수이청.md` (이름 충돌)
+- `Junhao Shi.md` ↔ `Siyin Wang.md` (본문 유사 jaccard=0.71)
+- `젠슨 황.md` ↔ `황차오.md` (본문 유사 jaccard=0.67)
+
+**인물 노트 type/태그 불일치**
+- 없음 ✓
+
+**buzz 업데이트**
+- 논문 buzz 상위: Attention Is All You Need (539), YOLO (470), Recursive Multi-Agent Systems (451)
+- 포스트 Headliner 최신: GPT-5.6 Sol Terra Luna 출시 분석 (2026-06-29), Baseten 1.5B (2026-06-29)
+- API 실패 3편 (다음 실행 재시도)
+- 트렌드 데이터(HN Trends) 갱신 완료
+```
+
+---
+
+## 2026-06-29 04:08:00 KST
+
+```
+### 오늘 할 일
+
+| # | 액션 | 대상 | 사유 |
+|---|------|------|------|
+| 1 | 📝 초안화 | `The Future of AI Agents with Andrew Ng \| Interrupt 26` | Clippings 미커버 (클리핑 6월 22일) |
+| 2 | 🔗 링크 수정 | `[[AIXI]]` 외 58건 | Posts/Papers에서 깨짐 (총 59건) |
+| 3 | 🔗 링크 추가 | `[[LLM]]`, `[[GPT]]`, `[[Anthropic]]` 외 다수 | 30일 최신글 평문 등장, 링크 없음 |
+| 4 | 🔀 병합 검토 | `Dayiheng Liu.md` ↔ `류다이헝.md` 외 4쌍 | 영문/한국어 동일 인물 중복, `젠슨 황` ↔ `황차오` 유사 |
+
+### 상세
+
+**클리핑** (`raw/Clippings/`)
+- ⏳ `The Future of AI Agents with Andrew Ng | Interrupt 26` — 미커버, 추천: 초안화 (클리핑 2026-06-22)
+
+**방치된 초안** (`raw/drafts/`, 7일+)
+- 없음
+
+**끊어진 위키 링크**
+- 본문(Posts/Papers): 59건 — `[[AIXI]]` ← From AGI to ASI.md, `[[Alex Karp]]` ← 팔란티어 Foundry, `[[ByteDance]]`, `[[CLIP]]`, `[[ChatEval]]`, `[[Chatbot Arena]]`, `[[Colossus]]`, `[[DeepSeek V3]]`, `[[Depth Anything 3]]`, `[[Diffusion 모델]]`, `[[Docker]]`, `[[Ethan Bloch]]`, `[[Flow-GRPO]]`, `[[GPT-5]]`, `[[Ghostty]]`, `[[Hiro Finance]]`, `[[LLaDA]]`, `[[MCP(Model Context Protocol)]]`, `[[OpenClaw]]`, `[[Wan 2.1]]` 외 39건
+- Dictionary: 699건 (상위 25) — `[[MinerU2.5]]` (11곳), `[[OmniDocBench]]` (5곳), `[[SenseNova-U1]]` (4곳), `[[Ocean-OCR]]` (4곳), `[[CUHK MMLab]]` (3곳), `[[BrainChip]]` (3곳), `[[워싱턴 대학교]]` (3곳) 외
+
+**링크 추천 (최근 30일)**
+- `[[LLM]]`, `[[GPT]]`, `[[Anthropic]]`, `[[Claude]]`, `[[Claude Code]]`, `[[DeepSeek]]`, `[[Gemini]]`, `[[OpenAI]]`, `[[Qwen]]`, `[[GRPO]]`, `[[Google]]`, `[[Meta]]`, `[[Llama]]`, `[[GSM8K]]` 등 — 다수 게시글에서 평문 등장, 링크 없음
+
+**중복 노트 후보**
+- `Dayiheng Liu.md` ↔ `류다이헝.md` (이름 충돌: dayihengliu, 刘大一恒)
+- `Dilek Hakkani-Tür.md` ↔ `딜렉 하카니튀르.md` (이름 충돌 2건)
+- `Ling Yang.md` ↔ `양링.md` (이름 충돌: lingyang, 양링)
+- `Shuicheng Yan.md` ↔ `옌수이청.md` (이름 충돌: shuichengyan, 옌수이청)
+- `젠슨 황.md` ↔ `황차오.md` (본문 유사도 jaccard=0.67)
+
+**인물 노트 type/태그 불일치**
+- 없음
+
+**buzz 업데이트** (30일 이내 대상 59편, 11편 갱신)
+- buzz 308(-1) MinerU2.5 / buzz 292(-1) Gated Attention for LLMs / buzz 272(-1) Recursive Language Models 외 8편 소폭 하락
+- Headliner 변동: +SpaceX와 Reflection AI의 6조 3천억 딜, +Gemini 2.5 Pro Deep Think / -NatureBench, -NVIDIA SkillSpector, -존 점퍼가 Anthropic에 합류합니다 외
+- API 실패 21편 (다음 실행에 재시도)
+```
+
+---
+
+## 2026-06-28 04:03:16 KST
+
+```
+### 오늘 할 일
+
+| # | 액션 | 대상 | 사유 |
+|---|------|------|------|
+| 1 | 📝 초안화 | `The Future of AI Agents with Andrew Ng \| Interrupt 26` | Clippings 미커버 |
+| 2 | 🔗 링크 수정 | `[[AIXI]]` 외 56건 | Posts/Papers에서 깨짐 |
+| 3 | 🔗 링크 추가 | `[[LLM]]` 외 다수 | 30일 최신글 평문 등장, 링크 없음 |
+| 4 | 🔀 병합 검토 | `Dilek Hakkani-Tür.md` ↔ `딜렉 하카니튀르.md` 외 | 이름 충돌 8건 + 유사도 1건 |
+
+### 상세
+
+**클리핑** (`raw/Clippings/`)
+- ⏳ `The Future of AI Agents with Andrew Ng | Interrupt 26.md` — 미커버, 추천: 초안화
+
+**방치된 초안** (`raw/drafts/`, 7일+)
+- 없음 (현재 초안 4개, 모두 1일 경과: GPT-5.5-Cyber, NatureBench, OpenAI×Broadcom Jalapeño, The Verification Horizon)
+
+**끊어진 위키 링크**
+- 본문(Posts/Papers): 57건
+  - `[[AIXI]]` ← From AGI to ASI.md
+  - `[[Alex Karp]]` ← 팔란티어 Foundry 구현 가이드.md
+  - `[[ByteDance]]` ← PerceptionDLM.md
+  - `[[CLIP]]` ← WRING.md
+  - `[[ChatEval]]` ← Predictive Maps of Multi-Agent Reasoning.md
+  - `[[Chatbot Arena]]` ← Grok Imagine Video 1.5.md
+  - `[[GPT-5]]` ← Anthropic의 81,000명 인터뷰 연구가 말하는 것.md
+  - `[[Ghostty]]` ← Ghostty, GitHub을 떠나다.md
+  - `[[MCP(Model Context Protocol)]]` ← Claude가 크리에이티브 툴에 들어온다.md
+  - `[[두더지 잡기 딜레마]]` ← WRING.md
+  - (외 47건)
+- Dictionary: 699건 끊어진 링크 (상위 25, 참조 많은 순)
+  - `[[MinerU2.5]]` (11곳), `[[OmniDocBench]]` (5곳), `[[SenseNova-U1]]` (4곳), `[[Ocean-OCR]]` (4곳), `[[CUHK MMLab]]` (3곳) 외 694건
+
+**링크 추천 (최근 30일)**
+- `[[LLM]]`, `[[GPT]]`, `[[Claude]]`, `[[Qwen]]`, `[[DeepSeek]]`, `[[Google]]`, `[[OpenAI]]`, `[[Gemini]]`, `[[GRPO]]`, `[[Meta]]` 등 다수 항목이 최신글에 평문 등장, 링크 없음
+
+**중복 노트 후보**
+- `Dayiheng Liu.md` ↔ `류다이헝.md` (이름 충돌)
+- `Dilek Hakkani-Tür.md` ↔ `딜렉 하카니튀르.md` (이름 충돌)
+- `Ling Yang.md` ↔ `양링.md` (이름 충돌)
+- `Shuicheng Yan.md` ↔ `옌수이청.md` (이름 충돌)
+- `젠슨 황.md` ↔ `황차오.md` (본문 유사 jaccard=0.67)
+
+**인물 노트 type/태그 불일치**
+- 없음 ✓
+
+**buzz 업데이트 (30일 이내 + buzz 미설정)**
+- 대상 55편 | 갱신 8편 | 변동 없음 30편 | API 실패 17편
+- 갱신: MinerU2.5 (309), Gated Attention (293), Recursive Language Models (273), RAG-Anything (191), VibeThinker-3B (168) 외 3편
+- Headliner 변동 없음
+```
+
+---
+
+## 2026-06-27 04:02:36 KST
+
+```
+### 오늘 할 일
+
+| # | 액션 | 대상 | 사유 |
+|---|------|------|------|
+| 1 | 📝 초안화 | `The Future of AI Agents with Andrew Ng \| Interrupt 26` | Clippings 미커버 |
+| 2 | 🔗 링크 수정 | `[[AIXI]]` 외 56건 | Posts/Papers에서 깨짐 |
+| 3 | 🔀 병합 검토 | `Dilek Hakkani-Tür.md` ↔ `딜렉 하카니튀르.md` 외 | 이름 충돌 7건 |
+
+### 상세
+
+**클리핑** (`raw/Clippings/`)
+- ⏳ `The Future of AI Agents with Andrew Ng | Interrupt 26` — 미커버, 추천: 초안화
+  - 출처: YouTube (LangChain Interrupt 26), Andrew Ng × Harrison Chase 대담, 2026-06-17
+  - 주요 내용: 코딩 에이전트 발전 속도, 제품 관리 병목, 기업 AI 전환, 데이터 아키텍처 재설계
+
+**방치된 초안** (`raw/drafts/`, 7일+)
+- 없음
+
+**끊어진 위키 링크**
+- 본문(Posts/Papers) 57건:
+  - `[[AIXI]]` ← `From AGI to ASI.md`
+  - `[[Alex Karp]]` ← `팔란티어 Foundry 구현 가이드.md`
+  - `[[ByteDance]]` ← `PerceptionDLM - Parallel Region Perception with Multimodal Diffusion Language Models.md`
+  - `[[CLIP]]` ← `WRING - 회전 기반 디바이어싱으로 두더지 잡기 딜레마 풀기.md`
+  - `[[GPT-5]]` ← `Anthropic의 81,000명 인터뷰 연구가 말하는 것.md`
+  - `[[Ghostty]]` ← `Ghostty, GitHub을 떠나다.md`
+  - `[[MCP(Model Context Protocol)]]` ← `Claude가 크리에이티브 툴에 들어온다.md`
+  - `[[OpenClaw]]` ← `오픈클로와 개인 에이전트의 현재.md`
+  - `[[Starship]]` ← `SpaceX 상장 완료, 역대 최대 IPO 기록.md`
+  - ... 외 48건
+- Dictionary 끊어진 링크 699건 (상위 25):
+  - `[[MinerU2.5]]` (11곳), `[[OmniDocBench]]` (5곳), `[[SenseNova-U1]]` (4곳), `[[Ocean-OCR]]` (4곳)
+  - `[[CUHK MMLab]]` (3곳), `[[BrainChip]]` (3곳), `[[워싱턴 대학교]]` (3곳), `[[HUST Vision Lab]]` (3곳)
+  - ... 외 674건
+
+**링크 추천 (최근 30일)**
+- `[[LLM]]`, `[[GPT]]`, `[[Gemini]]`, `[[Claude]]`, `[[DeepSeek]]`, `[[Qwen]]`, `[[OpenAI]]`, `[[Google]]` 등 빈도 높은 Dictionary 항목이 수백 건 평문으로 등장 (링크 없음)
+- 고빈도 상위: `[[LLM]]` (60+곳), `[[GPT]]` (50+곳), `[[Gemini]]` (40+곳), `[[DeepSeek]]` (30+곳)
+
+**중복 노트 후보**
+- `Dilek Hakkani-Tür.md` ↔ `딜렉 하카니튀르.md` (이름 충돌 × 2)
+- `Ling Yang.md` ↔ `양링.md` (이름 충돌 × 2)
+- `Shuicheng Yan.md` ↔ `옌수이청.md` (이름 충돌 × 2)
+- `젠슨 황.md` ↔ `황차오.md` (본문 유사 jaccard=0.67)
+
+**인물 노트 type/태그 불일치**
+- 없음 ✓
+
+**buzz 업데이트**
+- 대상 55편 | 갱신 12편 | 변동 없음 26편 | API 실패 17편
+- Headliner 변동: 포스트 신규 추가 `Qualcomm, Modular 약 4조 원에 인수`, `AI 챗봇은 정치적으로 편향돼 있는가` / 탈락 `Fable 5 수출 통제 사태 정리`, `루프, 오케스트레이션, 동적 워크플로`
+```
+
+---
+
+## 2026-06-26 04:02:39 KST
+
+```
+### 오늘 할 일
+
+| # | 액션 | 대상 | 사유 |
+|---|------|------|------|
+| 1 | 📝 초안화 | `The Future of AI Agents with Andrew Ng \| Interrupt 26` | Clippings 미커버 (4일 경과) |
+| 2 | 🔗 링크 수정 | `[[AIXI]]` | `From AGI to ASI.md`에서 깨짐 (외 56건, 상세 참조) |
+| 3 | 🔗 링크 수정 | `[[Chatbot Arena]]` | `Grok Imagine Video 1.5...md`에서 깨짐 |
+| 4 | 🔗 링크 수정 | `[[GPT-5]]` | `Anthropic의 81,000명 인터뷰 연구가 말하는 것.md`에서 깨짐 |
+| 5 | 🔗 링크 수정 | `[[Ghostty]]` | `Ghostty, GitHub을 떠나다.md`에서 깨짐 |
+| 6 | 🔗 링크 추가 | `[[ARC-AGI-2]]` | `Less is More...` 외 2개 파일에서 평문 등장 |
+| 7 | 🔗 링크 추가 | `[[Claude Fable 5]]` | `Claude Fable 5...` 외 2개 파일에서 평문 등장 |
+| 8 | 🔀 병합 검토 | `Ling Yang.md` ↔ `양링.md` | 이름 충돌 (동일 인물 이중 등재) |
+| 9 | 🔀 병합 검토 | `Shuicheng Yan.md` ↔ `옌수이청.md` | 이름 충돌 (동일 인물 이중 등재) |
+| 10 | 🔀 병합 검토 | `Dilek Hakkani-Tür.md` ↔ `딜렉 하카니튀르.md` | 이름 충돌 (동일 인물 이중 등재) |
+| 11 | 🔀 병합 검토 | `젠슨 황.md` ↔ `황차오.md` | 본문 유사도 높음 (jaccard=0.67) |
+
+### 상세
+
+**클리핑** (`raw/Clippings/`)
+- ⏳ `The Future of AI Agents with Andrew Ng | Interrupt 26` — 미커버, 추천: 초안화 (YouTube 영상, LangChain Interrupt 26 컨퍼런스 Andrew Ng 강연, 2026-06-22 생성)
+
+**방치된 초안** (`raw/drafts/`, 7일+)
+- 없음
+
+**끊어진 위키 링크**
+- 본문(Posts/Papers): 57건
+    [[AIXI]] ← From AGI to ASI.md
+    [[Alex Karp]] ← 팔란티어 Foundry 구현 가이드.md
+    [[Artificial Hivemind]] ← 2025. 10. 이달의 인물 - Dan Hendrycks, Yejin Choi, Chao Huang.md
+    [[ByteDance]] ← PerceptionDLM - Parallel Region Perception...md
+    [[CLIP]] ← WRING - 회전 기반 디바이어싱...md
+    [[ChatEval]] ← Predictive Maps of Multi-Agent Reasoning...md
+    [[Chatbot Arena]] ← Grok Imagine Video 1.5 - Image-to-Video Arena 1위...md
+    [[Colossus]] ← Composer와 Grok.md
+    [[DeepSeek V3]] ← GLM-5.2 - Zhipu의 744B MoE 오픈웨이트 모델 공개.md
+    [[Depth Anything 3]] ← World-R1 - Reinforcing 3D Constraints...md
+    [[Diffusion 모델]] ← World-R1 - Reinforcing 3D Constraints...md
+    [[Docker]] ← 오픈클로와 개인 에이전트의 현재.md
+    [[Ethan Bloch]] ← OpenAI Acquires Hiro Finance.md
+    [[Flow-GRPO]] ← World-R1 - Reinforcing 3D Constraints...md
+    [[GPT-5]] ← Anthropic의 81,000명 인터뷰 연구가 말하는 것.md
+    [[Ghostty]] ← Ghostty, GitHub을 떠나다.md
+    [[Hiro Finance]] ← OpenAI Acquires Hiro Finance.md
+    [[Hope]] ← Nested Learning - The Illusion of Deep Learning Architectures.md
+    [[Improving Factuality and Reasoning in Language Models through Multiagent Debate]] ← Predictive Maps of Multi-Agent Reasoning...md
+    [[Jiarui Yao]] ← Rethinking the Divergence Regularization in LLM RL.md
+    [[KAUST]] ← GateMem - Benchmarking Memory Governance...md
+    [[Kubernetes]] ← 오픈클로와 개인 에이전트의 현재.md
+    [[LLaDA]] ← Learning from the Self-future...md, PerceptionDLM...md
+    [[Legg-Hutter 점수]] ← From AGI to ASI.md
+    [[Lei Li (HKU)]] ← Video2GUI - Synthesizing Large-Scale Interaction Trajectories...md
+    [[Liefeng Bo]] ← Rethinking the Divergence Regularization in LLM RL.md
+    [[MCP(Model Context Protocol)]] ← Claude가 크리에이티브 툴에 들어온다.md
+    [[NVIDIA B200]] ← Llama 4 Scout.md
+    [[Nested Learning]] ← Nested Learning - The Illusion of Deep Learning Architectures.md
+    [[OmniGAIA]] ← Orchestra-o1 - Omnimodal Agent Orchestration.md
+    [[OpenCLIP]] ← WRING - 회전 기반 디바이어싱...md
+    [[OpenClaw]] ← 오픈클로와 개인 에이전트의 현재.md
+    [[Peter Steinberger]] ← 오픈클로와 개인 에이전트의 현재.md
+    [[PixelHacker - Image Inpainting with Structural and Semantic Consistency]] ← Moebius - 0.2B...md
+    [[Qingchuan Li]] ← EvoArena...md
+    [[Qwen2.5-Coder-3B]] ← VibeThinker-3B...md
+    [[Qwen3-VL]] ← World-R1 - Reinforcing 3D Constraints...md
+    [[RAG-Anything]] ← 2025. 10. 이달의 인물...md
+    [[Speakeasy]] ← Anthropic이 Stainless를 인수했습니다.md
+    [[Starship]] ← SpaceX 상장 완료, 역대 최대 IPO 기록.md
+    [[TaintDroid]] ← AOHP - An Open-Source OS-Level Agent Harness...md
+    [[The Deterministic Horizon]] ← The Deterministic Horizon - When Extended Reasoning Fails...md
+    [[Tongxu Luo]] ← GameCraft-Bench...md
+    [[Vagrant]] ← Ghostty, GitHub을 떠나다.md
+    [[VibeThinker-1.5B]] ← VibeThinker-3B...md
+    [[Wan 2.1]] ← World-R1 - Reinforcing 3D Constraints...md
+    [[Wee Sun Lee]] ← Rethinking the Divergence Regularization in LLM RL.md
+    [[Xiangxin Zhou]] ← Rethinking the Divergence Regularization in LLM RL.md
+    [[Xiaohu Ruan]] ← Moebius - 0.2B...md
+    [[Zihao Yue]] ← Video2GUI...md
+    [[llama.cpp]] ← AI가 해커와 비용.md
+    [[lost in the middle]] ← Recursive Multi-Agent Systems.md
+    [[간접 프롬프트 인젝션(Indirect Prompt Injection)]] ← Recursive Multi-Agent Systems.md
+    [[두더지 잡기 딜레마]] ← WRING - 회전 기반 디바이어싱...md
+    [[우스터공과대학교]] ← WRING - 회전 기반 디바이어싱...md
+    [[지린대학교]] ← GateMem...md
+    [[프린스턴대학교]] ← PerceptionDLM...md
+- Dictionary: 699건 (상위 25, 참조 많은 순)
+    [[MinerU2.5]] (11곳)
+    [[OmniDocBench]] (5곳)
+    [[SenseNova-U1]] (4곳)
+    [[Ocean-OCR]] (4곳)
+    [[CUHK MMLab]] (3곳)
+    [[BrainChip]] (3곳)
+    [[워싱턴 대학교]] (3곳)
+    [[HUST Vision Lab]] (3곳)
+    [[블라디미르 바프닉]] (2곳)
+    [[상하이 인공지능 연구소]] (2곳)
+    [[서게이 레빈]] (2곳)
+    [[BrainChip Inc.]] (2곳)
+    [[NEAR Protocol]] (2곳)
+    [[TensorFlow]] (2곳)
+    [[카네기멜론대학교]] (2곳)
+    [[MIT CSAIL]] (2곳)
+    [[GPT-3]] (2곳)
+    [[Claude Opus]] (2곳)
+    [[IBM]] (2곳)
+    [[워드 커닝햄]] (2곳)
+    [[Amazon AGI]] (2곳)
+    [[화난사범대학교]] (2곳)
+    [[워싱턴 대학교(University of Washington)]] (2곳)
+    [[워털루 대학교]] (2곳)
+    [[옥스퍼드대학교]] (2곳)
+    ... 외 674건
+
+**링크 추천 (최근 30일)**
+- [[ARC-AGI-2]] ← Less is More Recursive Reasoning with Tiny Networks.md, Meta Muse Spark.md, ARC...
+- [[ARC]] ← A Definition of AGI.md, ReasoningFlow...md, Soft Tokens Hard Truths.md 외
+- [[Claude Fable 5]] ← Claude Fable 5 - Anthropic의 첫 Mythos급 공개 모델.md 외 2건
+- [[Claude Managed Agents]] ← Claude Managed Agents.md
+- [[Claude Sonnet 4.6]] ← FastContext...md, Holo3.1...md, Meta Muse Spark.md
+- [[Mythos]] ← Claude Fable 5...md 외 6건
+- [[GRPO]] ← 20개 이상 파일
+- [[Muse Spark]] ← Meta Muse Spark.md
+- [[SWE-bench]] ← Advisor Strategy.md, Agents' Last Exam.md 외 8건
+- [[Meta Superintelligence Labs]] ← Meta Muse Spark.md, Think in Strokes...md
+- [[MCP]] ← AI 에이전트 많이 만든다고 AX가 아니다.md 외 10건
+- [[OSWorld]] ← Agents' Last Exam.md 외 5건
+
+**중복 노트 후보**
+- `Dilek Hakkani-Tür.md` ↔ `딜렉 하카니튀르.md` (이름 충돌 — 동일 인물 이중 등재)
+- `Ling Yang.md` ↔ `양링.md` (이름 충돌 — 동일 인물 이중 등재)
+- `Shuicheng Yan.md` ↔ `옌수이청.md` (이름 충돌 — 동일 인물 이중 등재)
+- `젠슨 황.md` ↔ `황차오.md` (본문 유사도 높음, jaccard=0.67)
+
+**인물 노트 type/태그 불일치**
+- 없음
+
+**buzz 업데이트**
+- 갱신 7편, 변동 없음 31편, API 실패 14편 (다음 실행 재시도)
+- buzz 변경: Recursive Language Models (275, -1), RAG-Anything (192, -1), VibeThinker-3B (169, -1), ABot-Earth 0.5 (66, -1), On the Scaling of PEFT (58, -1), MiniMax Sparse Attention (53, -1), Rethinking the Divergence Regularization (37, -1)
+- Headliner 포스트 진입: ChatGPT 시장점유율 역사상 처음으로 50% 아래로 (#1), Mastra npm 공급망 공격 (#2)
+- Headliner 포스트 탈락: 노암 셰이저가 OpenAI로 갔다 (#11 탈락), 같은 모델인데 왜 성능이 변할까 (#12 탈락)
+```
+
+---
+
+## 2026-06-24 05:00:00 KST
+
+```
+### 오늘 할 일
+
+| # | 액션 | 대상 | 사유 |
+|---|------|------|------|
+| 1 | 📝 초안화 | `The Future of AI Agents with Andrew Ng \| Interrupt 26` | Clippings 미커버 |
+| 2 | 🔀 병합 검토 | `Ling Yang.md` ↔ `양링.md` | 이름 충돌 (동일 인물 이중 등재) |
+| 3 | 🔀 병합 검토 | `Shuicheng Yan.md` ↔ `옌수이청.md` | 이름 충돌 (동일 인물 이중 등재) |
+| 4 | 🔀 병합 검토 | `젠슨 황.md` ↔ `황차오.md` | 본문 유사도 높음 (jaccard=0.67) |
+
+### 상세
+
+**클리핑** (`raw/Clippings/`)
+- ⏳ `The Future of AI Agents with Andrew Ng | Interrupt 26` — 미커버, 추천: 초안화 (YouTube 영상, LangChain Interrupt 26)
+
+**방치된 초안** (`raw/drafts/`, 7일+)
+- 없음 (현재 초안 4개 모두 오늘 생성)
+
+**끊어진 위키 링크**
+- 없음
+
+**링크 추천 (최근 30일)** (상위 항목 발췌)
+- [[Claude]], [[GPT]], [[LLM]], [[Gemini]], [[Qwen]], [[DeepSeek]], [[OpenAI]] 등 Dictionary 항목이 다수 포스트에 평문 등장 — 필요 시 링크 삽입 검토
+
+**중복 노트 후보**
+- `Ling Yang.md` ↔ `양링.md` (이름 충돌 — 영문/한국어 중복)
+- `Shuicheng Yan.md` ↔ `옌수이청.md` (이름 충돌 — 영문/한국어 중복)
+- `젠슨 황.md` ↔ `황차오.md` (본문 유사도 jaccard=0.67 — 내용 확인 후 분리/병합 결정)
+
+**인물 노트 type/태그 불일치**
+- 없음
+```
+
+---
+
+## 2026-06-22 05:00:00 KST
+
+```
+### 오늘 할 일
+
+| # | 액션 | 대상 | 사유 |
+|---|------|------|------|
+| 1 | 📝 초안화 | `Your Agent Harness Should Repair Itself` | Clippings 미커버 |
+| 2 | 📝 초안화 | `The Stanford STORM Method: How to Make Claude Research Like a PhD in Minutes` | Clippings 미커버 |
+| 3 | 📝 초안화 | `Loop Engineering` 계열 4개 클리핑 | Clippings 미커버 (루프·오케스트레이션 기게시글 참고) |
+
+### 상세
+
+**클리핑** (`raw/Clippings/`)
+- ⏳ `Your Agent Harness Should Repair Itself` — 미커버, 추천: 초안화
+- ⏳ `The Stanford STORM Method: How to Make Claude Research Like a PhD in Minutes` — 미커버, 추천: 초안화
+- ⏳ `Loop engineering: the 14-step roadmap from prompter to loop designer.` — 미커버 (기존 "루프, 오케스트레이션, 동적 워크플로" 2026-06-19 참고)
+- ⏳ `Loops: What Every AI Engineer Needs to Know in 2026` — 미커버 (루프 관련 중복 가능)
+- ⏳ `Loop Engineering.` (addyosmani) — 미커버
+- ⏳ Loop Engineering orange book — 미커버
+- ✅ `링크드인.md` → `grid_Posts/같은 모델인데 왜 성능이 변할까.md` (게시 완료 2026-06-19)
+
+**방치된 초안** (`raw/drafts/`, 7일+)
+없음
+
+**끊어진 위키 링크**
+없음
+
+**링크 추천 (최근 30일, 주요 항목 발췌)**
+- `[[ARC-AGI-2]]` ← Less is More Recursive Reasoning with Tiny Networks.md, Meta Muse Spark.md
+- `[[Anthropic]]` ← 다수 (Claude Fable 5, Cursor Compile 2026 등)
+- `[[Claude Code]]` ← Dive into Claude Code, Recursive Multi-Agent Systems 등
+- `[[DeepSeek]]` ← ReasoningFlow, Rethinking the Divergence Regularization 등
+- `[[Gemini]]` ← Apple WWDC 2026, Emu3.5, Gemma 4 등
+- `[[GRPO]]` ← Rethinking Divergence Regularization, Training-Free GRPO 등
+- `[[LLM]]` ← 수십 편 (거의 전 게시글)
+- `[[MCP]]` ← Dive into Claude Code, Hermes Agent 등
+- `[[OpenAI]]` ← OpenAI Dreaming V3, SEC S-1 제출 등
+- `[[Qwen]]` ← 다수 (30편 이상)
+- `[[Transformer]]` ← Gemma 4, Kimi k2.5 등
+(총 80+ Dictionary 항목이 평문 등장 중)
+
+**buzz 업데이트**
+- 갱신: 3편 / 변동 없음: 4편 / API 실패: 30편 (다음 실행 재시도)
+- 변동: MinerU2.5 - Document Parsing Vision-Language Model.md → Headliner 논문 #10 신규 진입
+- 탈락: ABot-Earth 0.5 - Generative 3D Earth Model.md (buzz 71, #54)
+```
+
+---
+
+## 2026-06-20 05:00:00 KST
+
+```
+### 오늘 할 일
+
+| # | 액션 | 대상 | 사유 |
+|---|------|------|------|
+| 1 | 🔗 링크 추가 | `[[LLM]]` | 93편 게시글에서 평문 등장 |
+| 2 | 🔗 링크 추가 | `[[Qwen]]` | 64편 게시글에서 평문 등장 |
+| 3 | 🔗 링크 추가 | `[[Gemini]]` | 47편 게시글에서 평문 등장 |
+| 4 | 🔗 링크 추가 | `[[Claude]]` | 40편 게시글에서 평문 등장 |
+| 5 | 🔗 링크 추가 | `[[OpenAI]]` | 31편 게시글에서 평문 등장 |
+| 6 | 🔗 링크 추가 | `[[DeepSeek]]` | 23편 게시글에서 평문 등장 |
+
+### 상세
+
+**클리핑** (`raw/Clippings/`)
+- ✅ `Loop Engineering.` → `블로그/grid_Posts/루프, 오케스트레이션, 동적 워크플로.md` (게시 완료)
+- ✅ `Loop engineering: the 14-step roadmap from prompter to loop designer.` → `블로그/grid_Posts/루프, 오케스트레이션, 동적 워크플로.md` (게시 완료)
+- ✅ `Loops: What Every AI Engineer Needs to Know in 2026` → `블로그/grid_Posts/루프, 오케스트레이션, 동적 워크플로.md` (게시 완료)
+- ✅ `Your Agent Harness Should Repair Itself` → `블로그/grid_Posts/하네스 엔지니어링(Harness Engineering).md` (게시 완료)
+- ✅ `alchaincyf/loop-engineering-orange-book` → `블로그/grid_Posts/루프, 오케스트레이션, 동적 워크플로.md` (게시 완료)
+- ✅ `링크드인.md` → `블로그/grid_Posts/같은 모델인데 왜 성능이 변할까.md` (게시 완료)
+
+**방치된 초안** (`raw/drafts/`, 7일+)
+- 없음 (6개 모두 2026-06-19 작성, 1일 경과)
+
+**끊어진 위키 링크**
+- 없음
+
+**링크 추천 (최근 30일)**
+- `[[LLM]]` ← 93편 게시글에서 평문 등장, 링크 없음
+- `[[Qwen]]` ← 64편 게시글에서 평문 등장, 링크 없음
+- `[[Gemini]]` ← 47편 게시글에서 평문 등장, 링크 없음
+- `[[Claude]]` ← 40편 게시글에서 평문 등장, 링크 없음
+- `[[OpenAI]]` ← 31편 게시글에서 평문 등장, 링크 없음
+- `[[DeepSeek]]` ← 23편 게시글에서 평문 등장, 링크 없음
+- (기타 수십 개 항목 — buzz 스크립트 전체 목록 참고)
+
+**buzz 업데이트**
+- SpatialClaw: buzz 53 (-44) | 갱신 1편, API 실패 39편
+- Headliner 포스트 진입: 루프,오케스트레이션,동적 워크플로 / 노암 셰이저가 OpenAI로 갔다 / 같은 모델인데 왜 성능이 변할까
+- Headliner 포스트 이탈: SpaceX 상장 완료 / Anthropic의 81,000명 인터뷰 연구 / OpenAI SEC S-1 제출
+```
+
+---
+
+## 2026-06-19 06:34:42 KST
+
+```
+### 오늘 할 일
+
+| # | 액션 | 대상 | 사유 |
+|---|------|------|------|
+| 1 | 🔗 링크 추가 | `[[LLM]]` | 88편 게시글에서 평문 등장 |
+| 2 | 🔗 링크 추가 | `[[Qwen]]` | 63편 게시글에서 평문 등장 |
+| 3 | 🔗 링크 추가 | `[[Gemini]]` | 43편 게시글에서 평문 등장 |
+| 4 | 🔗 링크 추가 | `[[Claude]]` | 39편 게시글에서 평문 등장 |
+| 5 | 🔗 링크 추가 | `[[임베딩]]` | 31편 게시글에서 평문 등장 |
+
+### 상세
+
+**클리핑** (`raw/Clippings/`)
+없음 (전부 Archive 이동 완료)
+
+**방치된 초안** (`raw/drafts/`, 7일+)
+없음
+
+오늘 생성된 초안 (미방치, 0일):
+- `Agentjacking - MCP 주입으로 AI 코딩 에이전트 원격 코드 실행.md`
+- `Grok Imagine Video 1.5 - Image-to-Video Arena 1위, Sora 대비 86% 저렴.md`
+- `Ponytail - AI 코딩 에이전트에 YAGNI 최소주의 심기.md`
+- `VibeThinker-3B - Exploring the Frontier of Verifiable Reasoning in Small Language Models.md`
+
+**끊어진 위키 링크**
+없음
+
+**링크 추천 (최근 30일, 상위 10개 항목)**
+- `[[LLM]]` ← 88편 (A Survey of Data Agents, AI 에이전트 많이 만든다고 AX가 아니다, Agent Memory 외 다수)
+- `[[Qwen]]` ← 63편 (Agent Learning via Early Experience, Audio Interaction Model 외 다수)
+- `[[Gemini]]` ← 43편 (2025. 11. 이달의 인물, AI가 해커와 비용 외 다수)
+- `[[Claude]]` ← 39편 (2026. 02. 이달의 인물, AI 팀이 30일 안에 망하는 이유 외 다수)
+- `[[임베딩]]` ← 31편 (2025. 10. 이달의 인물, AI 에이전트 많이 만든다고 AX가 아니다 외 다수)
+- `[[OpenAI]]` ← 30편 (AI 에이전트 많이 만든다고 AX가 아니다, AI가 해커와 비용 외 다수)
+- `[[파인튜닝]]` ← 22편 (2026. 04. 이달의 인물, Agent Learning via Early Experience 외 다수)
+- `[[DeepSeek]]` ← 23편 (Artificial Hivemind, Context Engineering 2.0 외 다수)
+- `[[GPT-4o]]` ← 19편 (2026. 02. 이달의 인물, 2026. 05. 이달의 인물 외 다수)
+- `[[GRPO]]` ← 19편 (2026. 05. 이달의 인물, Agent Learning via Early Experience 외 다수)
+
+**buzz 업데이트**
+대상: 41편 | 갱신: 1편 | 변동 없음: 2편 | API 실패: 38편
+- buzz +1: `Cosmos 3 - Omnimodal World Models for Physical AI.md` (85)
+
+현재 Headliner (논문 buzz 상위 5):
+1. buzz 516 - Less is More Recursive Reasoning with Tiny Networks
+2. buzz 467 - ABot-Earth 0.5 - Generative 3D Earth Model
+3. buzz 460 - DINOv3
+4. buzz 433 - Prefix-Tuning Optimizing Continuous Prompts for Generation
+5. buzz 384 - Why Language Models Hallucinate
+
+현재 Headliner (포스트 최신 5):
+1. 2026-06-18 OpenAI Deployment Simulation - 실사용 대화 재생으로 출시 전 모델 행동 예측
+2. 2026-06-18 GLM-5.2 - Zhipu의 744B MoE 오픈웨이트 모델 공개
+3. 2026-06-18 Cursor Compile 2026 총정리
+4. 2026-06-18 Composer와 Grok
+5. 2026-06-16 jqwik의 반AI 선언
+```
+
+---
+
+## 2026-06-19 04:02:17 KST
+
+```
+### 오늘 할 일
+
+| # | 액션 | 대상 | 사유 |
+|---|------|------|------|
+| 1 | 🔗 링크 추가 | `[[LLM]]` | 87편 게시글에서 평문 등장 |
+| 2 | 🔗 링크 추가 | `[[Qwen]]` | 62편 게시글에서 평문 등장 |
+| 3 | 🔗 링크 추가 | `[[Gemini]]` | 46편 게시글에서 평문 등장 |
+| 4 | 🔗 링크 추가 | `[[Claude]]` | 39편 게시글에서 평문 등장 |
+| 5 | 🔗 링크 추가 | `[[임베딩]]` | 30편 게시글에서 평문 등장 |
+| 6 | 🔗 링크 추가 | `[[OpenAI]]` | 30편 게시글에서 평문 등장 |
+| 7 | 🔗 링크 추가 | `[[DeepSeek]]` | 23편 게시글에서 평문 등장 |
+| 8 | 🔗 링크 추가 | `[[Llama]]` | 20편 게시글에서 평문 등장 |
+| 9 | 🔗 링크 추가 | `[[GPT-4o]]` | 19편 게시글에서 평문 등장 |
+| 10 | 🔗 링크 추가 | `[[GRPO]]` | 19편 게시글에서 평문 등장 |
+
+### 상세
+
+**클리핑** (`raw/Clippings/`)
+- 없음 (Archive만 존재)
+
+**방치된 초안** (`raw/drafts/`, 7일+)
+- 없음
+
+**끊어진 위키 링크**
+- 없음
+
+**링크 추천 (최근 30일)** — 상위 10개 (전체 목록 생략)
+- `[[LLM]]` ← 87편 게시글에서 평문 등장
+- `[[Qwen]]` ← 62편 게시글에서 평문 등장
+- `[[Gemini]]` ← 46편 게시글에서 평문 등장
+- `[[Claude]]` ← 39편 게시글에서 평문 등장
+- `[[임베딩]]` ← 30편 게시글에서 평문 등장
+- `[[OpenAI]]` ← 30편 게시글에서 평문 등장
+- `[[DeepSeek]]` ← 23편 게시글에서 평문 등장
+- `[[Llama]]` ← 20편 게시글에서 평문 등장
+- `[[GPT-4o]]` ← 19편 게시글에서 평문 등장
+- `[[GRPO]]` ← 19편 게시글에서 평문 등장
+
+**buzz 업데이트**
+- 대상: 40편 | 갱신: 1편 | 변동 없음: 4편 | API 실패: 35편
+- 변경: SpatialWorld buzz 44 (+1)
+- Headliner 신규 진입 [포스트]: OpenAI Deployment Simulation, GLM-5.2, Cursor Compile 2026 총정리, Composer와 Grok
+- Headliner 이탈 [포스트]: Mistral 3조 원 라운드, AI 의존의 역설, 오픈클로와 개인 에이전트의 현재
+
+**현재 Headliner — 논문 buzz 상위 3**
+- #1 buzz:516 Less is More Recursive Reasoning with Tiny Networks
+- #2 buzz:467 ABot-Earth 0.5
+- #3 buzz:460 DINOv3
+```
+
+---
+
+## 2026-06-18 04:03:08 KST
+
+```
+### 오늘 할 일
+
+| # | 액션 | 대상 | 사유 |
+|---|------|------|------|
+| 1 | 🔗 링크 추가 | `[[LLM]]` | 84편 게시글에서 평문 등장 |
+| 2 | 🔗 링크 추가 | `[[Qwen]]` | 61편 게시글에서 평문 등장 |
+| 3 | 🔗 링크 추가 | `[[Gemini]]` | 45편 게시글에서 평문 등장 |
+| 4 | 🔗 링크 추가 | `[[Claude]]` | 37편 게시글에서 평문 등장 |
+| 5 | 🔗 링크 추가 | `[[임베딩]]` | 31편 게시글에서 평문 등장 |
+| 6 | 🔗 링크 추가 | `[[OpenAI]]` | 28편 게시글에서 평문 등장 |
+| 7 | 🔗 링크 추가 | `[[DeepSeek]]` | 23편 게시글에서 평문 등장 |
+| 8 | 🔗 링크 추가 | `[[Llama]]` | 20편 게시글에서 평문 등장 |
+| 9 | 🔗 링크 추가 | `[[파인튜닝]]` | 20편 게시글에서 평문 등장 |
+| 10 | 🔗 링크 추가 | `[[증류]]` | 19편 게시글에서 평문 등장 |
+
+### 상세
+
+**클리핑** (`raw/Clippings/`)
+- 없음 (파일 없음 — Archive만 존재)
+
+**방치된 초안** (`raw/drafts/`, 7일+)
+- 없음
+
+**끊어진 위키 링크**
+- 없음
+
+**링크 추천 (최근 30일)**
+- `[[LLM]]` ← 84편 게시글에서 평문 등장
+- `[[Qwen]]` ← 61편 게시글에서 평문 등장
+- `[[Gemini]]` ← 45편 게시글에서 평문 등장
+- `[[Claude]]` ← 37편 게시글에서 평문 등장
+- `[[임베딩]]` ← 31편 게시글에서 평문 등장
+- `[[OpenAI]]` ← 28편 게시글에서 평문 등장
+- `[[DeepSeek]]` ← 23편 게시글에서 평문 등장
+- `[[Llama]]` ← 20편 게시글에서 평문 등장
+- `[[파인튜닝]]` ← 20편 게시글에서 평문 등장
+- `[[증류]]` ← 19편 게시글에서 평문 등장
+(외 다수)
+
+**buzz 업데이트 결과**
+- 대상: 38편 | 갱신: 3편 | 변동 없음: 3편 | API 실패: 32편
+- 변경: On the Scaling of PEFT (buzz 63, -165), DreamX-World 1.0 (buzz 53, -25), From AGI to ASI (buzz 40, +12)
+- Headliner 논문 #1: Less is More Recursive Reasoning with Tiny Networks (buzz 516)
+- Headliner 포스트 #1: jqwik의 반AI 선언 (2026-06-16)
+```
+
+---
+
+## 2026-06-17 04:00:31 KST
+
+```
+### 오늘 할 일
+
+| # | 액션 | 대상 | 사유 |
+|---|------|------|------|
+| 1 | 🔗 링크 추가 | `[[LLM]]` | 70+ 편 게시글에서 평문 등장 |
+| 2 | 🔗 링크 추가 | `[[Qwen]]` | 60+ 편 게시글에서 평문 등장 |
+| 3 | 🔗 링크 추가 | `[[Claude]]` | 50+ 편 게시글에서 평문 등장 |
+| 4 | 🔗 링크 추가 | `[[Gemini]]` | 40+ 편 게시글에서 평문 등장 |
+| 5 | 🔗 링크 추가 | `[[OpenAI]]` | 30+ 편 게시글에서 평문 등장 |
+| 6 | 🔗 링크 추가 | `[[DeepSeek]]` | 15+ 편 게시글에서 평문 등장 |
+
+### 상세
+
+**클리핑** (`raw/Clippings/`)
+- 없음 (파일 없음)
+
+**방치된 초안** (`raw/drafts/`, 7일+)
+- 없음 (`From AGI to ASI.md`는 2026-06-16 작성, 1일 경과 — 미해당)
+
+**끊어진 위키 링크**
+- 없음
+
+**링크 추천 (최근 30일) — 상위 빈도순**
+총 700+ 건 (Dictionary 항목이 본문 평문으로 등장하나 위키링크 미설정). 상위:
+- `[[LLM]]` — 70+ 편 (A Survey of Data Agents, AI 에이전트 많이 만든다고 AX가 아니다 외 다수)
+- `[[Qwen]]` — 60+ 편 (Agent Learning via Early Experience, Apple WWDC 2026 외 다수)
+- `[[Claude]]` — 50+ 편 (2026. 02. 이달의 인물 - Yang Zhilin, AI 팀이 30일 안에 망하는 이유 외 다수)
+- `[[Gemini]]` — 40+ 편 (2025. 11. 이달의 인물, AI가 해커와 비용 외 다수)
+- `[[OpenAI]]` — 30+ 편 (AI 에이전트 많이 만든다고 AX가 아니다 외 다수)
+- `[[DeepSeek]]` — 15+ 편 (Artificial Hivemind, Context Engineering 2.0 외 다수)
+- `[[임베딩]]`, `[[파인튜닝]]`, `[[증류]]`, `[[GRPO]]`, `[[RAG]]`, `[[Llama]]`, `[[MCP]]`, `[[GSM8K]]` 등 다수
+
+**buzz 업데이트**
+- 34편 대상, 1편 변경: `MiniMax Sparse Attention.md` (buzz: 57, -73)
+- API 실패 29편 (다음 실행 재시도)
+- Headliner 변동:
+  - ✚ [논문] #2  buzz:467  ABot-Earth 0.5 - Generative 3D Earth Model.md
+  - ✚ [포스트] #2  OpenAI 2026년 6월 악의적 AI 사용 보고서.md
+  - ✖ [논문] #11  buzz:322  MinerU2.5 - Document Parsing Vision-Language Model.md
+  - ✖ [포스트] #11  OpenAI Acquires Hiro Finance.md
+```
+
+---
+
+## 2026-06-16 04:00:12 KST
+
+```
+### 오늘 할 일
+
+| # | 액션 | 대상 | 사유 |
+|---|------|------|------|
+| 1 | 📝 초안화 | `Do Transformers Need Three Projections Systematic Study of QKV Variants.md` | Clippings 미커버 |
+| 2 | 📝 초안화 | `Designing loops with Fable 5.md` | Clippings 미커버 |
+
+### 상세
+
+**클리핑** (`raw/Clippings/`)
+- ⏳ `Do Transformers Need Three Projections? Systematic Study of QKV Variants` — 미커버, 추천: 초안화 (arXiv 2606.04032, clipped 2026-06-11)
+- ⏳ `Designing loops with Fable 5` — 미커버, 추천: 초안화 (X/@RLanceMartin, clipped 2026-06-10)
+
+**방치된 초안** (`raw/drafts/`, 7일+)
+없음
+
+**끊어진 위키 링크**
+없음
+```
+
+---
+
+## 2026-06-13 12:08:21 KST
+
+```
+### 오늘 할 일
+
+**오늘 할 일 없음** ✅
+
+### 상세
+
+**클리핑** (`raw/Clippings/`)
+- 없음
+
+**방치된 초안** (`raw/drafts/`, 7일+)
+- 없음
+
+**끊어진 위키 링크**
+- 없음
+```
+
+---
+
+## 2026-06-13 04:00:00 KST
+
+```
+### 오늘 할 일
+
+오늘 할 일 없음 ✅
+
+### 상세
+
+**클리핑** (`raw/Clippings/`)
+- ✅ `Do Transformers Need Three Projections? Systematic Study of QKV Variants` → `블로그/.../Do Transformers Need Three Projections - Systematic Study of QKV Variants.md` (게시 완료)
+- ✅ `Designing loops with Fable 5` → `블로그/.../Fable 5에서 루프 설계하기.md` (게시 완료)
+
+**방치된 초안** (`raw/drafts/`, 7일+)
+- 없음
+
+**끊어진 위키 링크**
+- 없음
+```
+
+---
+
+
+## 2026-06-11 05:54:50 KST
+
+```
+====== 끊어진 위키 링크 ======
+
+====== 방치된 초안 (7일 이상) ======
+
+====== 완료 ======
+```
+
+---
+
+## 2026-06-09 04:02:41 KST
+
+```
+### 오늘 할 일
+
+| # | 액션 | 대상 | 사유 |
+|---|------|------|------|
+| 1 | 📝 초안화 | `Your Obsidian Vault Is Probably Wasting Your Intelligence` | Clippings 미커버 |
+| 2 | 📝 초안화 | `30 Obsidian Workflows, Plugins, and Setups That Most Users Don't Know` | Clippings 미커버 (플러그인·워크플로 정리) |
+
+(📤 게시 대상 없음 · 🔗 링크 수정 없음)
+
+참고: 클리핑 9건이 모두 Obsidian/PKM 주제이며 블로그에 이미 옵시디언 관련 글이 다수 게시되어 있어 주제 중복도가 높음. 신규 초안화 우선순위는 낮음.
+
+### 상세
+
+**클리핑** (`raw/Clippings/`, 모두 2026-06-05 클립)
+- ⏳ `Your Obsidian Vault Is Probably Wasting Your Intelligence` — 미커버, 추천: 초안화
+- ⏳ `30 Obsidian Workflows, Plugins, and Setups That Most Users Don't Know` — 미커버 (플러그인 모음)
+- ⏳ `Delete 90% of Your Obsidian Notes. The Vault Gets Smarter When You Do.` — 미커버 (볼트 가지치기)
+- ⏳ `obsidian-pkm-vaultawesome-obsidian-vault Awesome list of obsidian vaults` — 미커버 (목록형, 글 소재로는 약함)
+- ⏳ `Cómo organizar tu bóveda de Obsidian (curso completo)` — 미커버, 단 `옵시디언을 구조화하는 세 가지 방법`과 주제 겹침
+- 🔁 `How to Build an AI Second Brain With Claude and Obsidian (Full Course)` — `Claude와 옵시디언으로 만드는 자동 지식 볼트`와 주제 중복 (사실상 커버)
+- 🔁 `How to Build an AI Second Brain With Claude and Obsidian (Full Course) 1` — 위 항목 중복 클립
+- 🔁 `How to Build an Obsidian Knowledge Vault That Gets Smarter Every Day Without You Doing Anything` — `자동 지식 볼트`류와 중복
+- 🔁 `I Replaced My Entire Research Stack With Obsidian and Claude` — Claude+Obsidian 워크플로와 중복
+
+**방치된 초안** (`raw/drafts/`, 7일+)
+- 없음 (drafts 비어 있음)
+
+**끊어진 위키 링크**
+- 없음
+```
+
+---
+
+## 2026-06-08 04:02:27 KST
+
+```
+### 오늘 할 일
+
+| # | 액션 | 대상 | 사유 |
+|---|------|------|------|
+| 1 | 📝 초안화 | `Delete 90% of Your Obsidian Notes` | Clippings 미커버 (볼트 가지치기 관점) |
+| 2 | 📝 초안화 | `30 Obsidian Workflows, Plugins, and Setups That Most Users Don't Know` | Clippings 미커버 (플러그인·워크플로 정리) |
+
+(📤 게시 대상 없음 · 🔗 링크 수정 없음)
+
+### 상세
+
+**클리핑** (`raw/Clippings/`)
+- ⏳ `Delete 90% of Your Obsidian Notes. The Vault Gets Smarter When You Do.` — 미커버, 추천: 초안화 (노트 90% 삭제 = 큐레이션 논제, 기존 글과 각도 다름)
+- ⏳ `30 Obsidian Workflows, Plugins, and Setups That Most Users Don't Know` — 미커버, 추천: 초안화 (커뮤니티 플러그인 100+ AI 플러그인 정리)
+- ⏳ `Cómo organizar tu bóveda de Obsidian (curso completo)` — 미커버이나 스페인어 원문 + 「옵시디언을 구조화하는 세 가지 방법」과 주제 중복, 우선순위 낮음
+- ⏳ `obsidian-pkm-vault/awesome-obsidian-vault` — GitHub awesome 리스트(레퍼런스성), 단독 포스트 후보로는 약함
+- ✅(주제 커버) `How to Build an AI Second Brain With Claude and Obsidian (Full Course)` — 「Claude와 옵시디언으로 만드는 자동 지식 볼트」가 동일 논제 커버
+- ✅(주제 커버) `How to Build an AI Second Brain With Claude and Obsidian (Full Course) 1` — 위 클리핑의 중복본
+- ✅(주제 커버) `How to Build an Obsidian Knowledge Vault That Gets Smarter Every Day Without You Doing Anything` — 자동 지식 볼트 논제, 기존 글 커버
+- ✅(주제 커버) `I Replaced My Entire Research Stack With Obsidian and Claude. Here Is the Full System.` — Claude+Obsidian 리서치 스택, 기존 글 커버
+- ✅(주제 커버) `Your Obsidian Vault Is Probably Wasting Your Intelligence` — CLAUDE.md + 일일 합성 second brain 논제, 기존 글 커버
+
+**방치된 초안** (`raw/drafts/`, 7일+)
+- 없음 (drafts 13건 모두 3일 이내, 최오래 awesome-architecture 2026-06-05 갱신)
+
+**끊어진 위키 링크**
+- 없음
+```
+
+---
+
+## 2026-06-07 04:01:39 KST
+
+```
+### 오늘 할 일
+
+| # | 액션 | 대상 | 사유 |
+|---|------|------|------|
+| 1 | 📝 초안화 | `Obsidian PKM 클리핑 통합 정리 1편` | Clippings 9건 모두 옵시디언/세컨드브레인 튜토리얼 — 개별 초안 대신 1편 통합 추천 |
+
+(7일 이상 방치 초안 없음 · 끊어진 위키 링크 없음 → 게시·링크수정 액션 없음)
+
+### 상세
+
+**클리핑** (`raw/Clippings/`) — 9건 전부 Obsidian/PKM 주제, 블로그에 이미 옵시디언 글 7편+ 존재
+- ✅ `How to Build an AI Second Brain With Claude and Obsidian (Full Course)` → `블로그/.../Claude와 옵시디언으로 만드는 자동 지식 볼트.md` (게시 완료)
+- ✅ `How to Build an AI Second Brain With Claude and Obsidian (Full Course) 1` → 위 클리핑의 중복본 (게시 완료)
+- ✅ `How to Build an Obsidian Knowledge Vault That Gets Smarter Every Day Without You Doing Anything` → `자동 지식 볼트` / `하네스 옵시디언 LLM 위키` 로 커버
+- ⏳ `30 Obsidian Workflows, Plugins, and Setups That Most Users Don't Know` — 미커버 (워크플로·플러그인 리스티클)
+- ⏳ `Delete 90% of Your Obsidian Notes. The Vault Gets Smarter When You Do.` — 미커버 (노트 가지치기 관점)
+- ⏳ `Your Obsidian Vault Is Probably Wasting Your Intelligence` — 미커버 (볼트 활용론)
+- ⏳ `I Replaced My Entire Research Stack With Obsidian and Claude. Here Is the Full System.` — 미커버 (리서치 스택)
+- ⏳ `Cómo organizar tu bóveda de Obsidian para encontrar siempre lo que necesitas (curso completo)` — 미커버 (스페인어, 저우선)
+- ⏳ `obsidian-pkm-vaultawesome-obsidian-vault Awesome list of obsidian vaults` — 미커버 (볼트 리소스 목록, 저우선)
+- 권장: 위 ⏳ 6건은 동일 주제 클러스터 → 개별 초안화보다 "옵시디언 PKM 워크플로 모음" 1편으로 통합하거나 보류
+
+**방치된 초안** (`raw/drafts/`, 7일+)
+- 없음 (현재 초안 7건 모두 6/4~6/6 생성, 최신)
+
+**끊어진 위키 링크**
+- 없음
+```
+
+---
+
+## 2026-06-06 18:56:01 KST
+
+```
+### 오늘 할 일
+
+| # | 액션 | 대상 | 사유 |
+|---|------|------|------|
+| 1 | 📝 초안화 | `30 Obsidian Workflows, Plugins, and Setups That Most Users Don't Know` | Clippings 미커버 (워크플로·플러그인 리스티클) |
+| 2 | 📝 초안화 | `Delete 90% of Your Obsidian Notes. The Vault Gets Smarter When You Do.` | Clippings 미커버 (노트 가지치기 관점) |
+| 3 | 📝 초안화 | `obsidian-pkm-vault Awesome list of obsidian vaults` | Clippings 미커버 (볼트 리소스 모음) |
+
+### 상세
+
+**클리핑** (`raw/Clippings/`)
+- ⏳ `30 Obsidian Workflows, Plugins, and Setups That Most Users Don't Know` — 미커버, 추천: 초안화
+- ✅ `Cómo organizar tu bóveda de Obsidian para encontrar siempre lo que necesitas` → `블로그/.../옵시디언을 구조화하는 세 가지 방법.md` (게시 완료, 볼트 구조화 주제)
+- ⏳ `Delete 90% of Your Obsidian Notes. The Vault Gets Smarter When You Do.` — 미커버, 추천: 초안화
+- ✅ `How to Build an AI Second Brain With Claude and Obsidian (Full Course) 1` → `블로그/.../Claude와 옵시디언으로 만드는 자동 지식 볼트.md` (게시 완료)
+- ✅ `How to Build an AI Second Brain With Claude and Obsidian (Full Course)` → `블로그/.../Claude와 옵시디언으로 만드는 자동 지식 볼트.md` (게시 완료)
+- ✅ `How to Build an Obsidian Knowledge Vault That Gets Smarter Every Day Without You Doing Anything` → `블로그/.../Claude와 옵시디언으로 만드는 자동 지식 볼트.md` (게시 완료, 자동 지식 볼트 주제)
+- ✅ `I Replaced My Entire Research Stack With Obsidian and Claude. Here Is the Full System.` → `블로그/.../Claude와 옵시디언으로 만드는 자동 지식 볼트.md` (게시 완료)
+- ✅ `Your Obsidian Vault Is Probably Wasting Your Intelligence` → `블로그/.../옵시디언과 함께한 2년.md` (게시 완료, 볼트 활용 주제)
+- ⏳ `obsidian-pkm-vault Awesome list of obsidian vaults` — 미커버, 추천: 초안화
+
+**방치된 초안** (`raw/drafts/`, 7일+)
+- 없음
+
+**끊어진 위키 링크**
+- 없음
+```
+
+---
+
+## 2026-06-02 04:01:29 KST
+
+```
+### 오늘 할 일
+
+| # | 액션 | 대상 | 사유 |
+|---|------|------|------|
+| 1 | 📝 초안화 | `Stop Installing Plugins on Claude Code - The Ultimate Guide` | Clippings 미커버 |
+| 2 | 📝 초안화 | `[바이브 코딩 입문 강의] 7강. MCP로 클로드 코드의 한계 넘어서기(완강)` | Clippings 미커버 |
+| 3 | 📝 초안화 | `10년 적자였던 브랜드를 멱살 잡고 끌어올린 비결ㅣ지식인초대석 EP.55 (노희영 고문 1부)` | Clippings 미커버 (AI/기술 주제와 거리, 낮은 우선순위) |
+
+### 상세
+
+**클리핑** (`raw/Clippings/`)
+- ✅ `Composer 2.5 소개` → `블로그/markdown-blog/grid_Posts/Composer 2.5.md` (게시 완료)
+- ⏳ `Stop Installing Plugins on Claude Code - The Ultimate Guide` (미커버, 추천: 초안화)
+- ⏳ `[바이브 코딩 입문 강의] 7강. MCP로 클로드 코드의 한계 넘어서기(완강)` (미커버, 추천: 초안화)
+- ⏳ `10년 적자였던 브랜드를 멱살 잡고 끌어올린 비결ㅣ지식인초대석 EP.55 (노희영 고문 1부)` (미커버, AI/기술 블로그 주제와 거리가 있어 낮은 우선순위)
+
+**방치된 초안** (`raw/drafts/`, 7일+)
+- 없음
+
+**끊어진 위키 링크**
+- 없음
+```
+
+---
+
+## 2026-06-01 22:43:24 KST
+
+```
+### 오늘 할 일
+
+| # | 액션 | 대상 | 사유 |
+|---|------|------|------|
+| 1 | 📝 초안화 | `Stop Installing Plugins on Claude Code - The Ultimate Guide` | Clippings 미커버 |
+| 2 | 📝 초안화 | `[바이브 코딩 입문 강의] 7강. MCP로 클로드 코드의 한계 넘어서기(완강)` | Clippings 미커버 |
+| 3 | 📝 초안화 | `10년 적자였던 브랜드를 멱살 잡고 끌어올린 비결ㅣ지식인초대석 EP.55 (노희영 고문 1부)` | Clippings 미커버 (AI/기술 주제와 거리, 낮은 우선순위) |
+
+### 상세
+
+**클리핑** (`raw/Clippings/`)
+- ✅ `Composer 2.5 소개` → `블로그/markdown-blog/grid_Posts/Composer 2.5.md` (게시 완료)
+- ⏳ `Stop Installing Plugins on Claude Code - The Ultimate Guide` (미커버, 추천: 초안화)
+- ⏳ `[바이브 코딩 입문 강의] 7강. MCP로 클로드 코드의 한계 넘어서기(완강)` (미커버, 추천: 초안화)
+- ⏳ `10년 적자였던 브랜드를 멱살 잡고 끌어올린 비결ㅣ지식인초대석 EP.55 (노희영 고문 1부)` (미커버, AI/기술 블로그 주제와 거리가 있어 낮은 우선순위)
+
+**방치된 초안** (`raw/drafts/`, 7일+)
+- 없음 (최신 초안 5/26~5/27 작성, 임계 미만)
+
+**끊어진 위키 링크**
+- 없음
+```
+
+---
+
+## 2026-05-25 04:08:42 KST
+
+
+## 2026-05-24 04:00:00 KST
+
+```
+API Error: The socket connection was closed unexpectedly. For more information, pass `verbose: true` in the second argument to fetch()
+```
+
+---
+
+## 2026-05-22 04:00:00 KST
+
+```
+블로그 점검 완료. `raw/블로그점검.md` 맨 위에 2026-05-22 섹션을 prepend했습니다.
+
+- **클리핑**: `$VAULT/Clippings/` 신규 0건, 5/14 자 2건 그대로 유지 (ProgramBench 게시 완료, Google Threat Intel + TurboQuant는 5/15 초안 7일 미게시). 미커버 클리핑 없어 신규 제안 없음.
+- **끊어진 위키 링크**: 없음.
+- **방치된 초안 (7일+)**: 스크립트는 `> 7일` 임계라 공식 0건이지만, 5/15 작성 2건이 오늘 **정확히 7일 경과** — 내일 자동으로 방치 카테고리에 진입합니다. 게시 우선.
+```
+
+---
+
+## 2026-05-21 04:00:00 KST
+
+```
+블로그 점검 완료. 결과는 `raw/블로그점검.md` 2026-05-21 섹션에 기록했습니다.
+
+**요약:**
+- **클리핑 → 포스트 제안**: 없음. 5/14 자 2건 모두 처리 중(ProgramBench 게시 완료, Google Threat+TurboQuant 묶음 드래프트 대기)
+- **끊어진 위키 링크**: 없음
+- **방치된 초안 (7일+)**: 없음 (단, 5/15 작성 2건이 6일 경과로 임박)
+
+신규 클리핑보다 `raw/drafts/` 3건 게시가 우선입니다.
+```
+
+---
+
+## 2026-05-20 04:00:00 KST
+
+```
+블로그 점검 완료(2026-05-20).
+
+- **클리핑 → 포스트 제안**: 미커버 클리핑 0건. `Clippings/`의 5/14 자 2건 그대로(ProgramBench 게시 완료, Threat Intel+TurboQuant 묶음은 5/15 작성 초안 미게시).
+- **끊어진 위키 링크**: 없음
+- **방치된 초안 (7일+)**: 없음. `raw/drafts/` 3건(어제 2건 → 신규 `Anthropic이 Stainless를 인수했습니다.md` 5/19 추가). 가장 오래된 5/15 작성 2건이 5일 경과, 7일 임계까지 2일 남음.
+
+결과는 `raw/블로그점검.md` 맨 위에 prepend 했습니다.
+```
+
+---
+
+## 2026-05-19 04:00:00 KST
+
+```
+점검 완료. `raw/블로그점검.md` 맨 위에 2026-05-19 섹션을 prepend 했습니다.
+
+**오늘 요약**
+- **클리핑 → 포스트 제안**: 신규 클리핑 0건. 기존 2건 중 ProgramBench는 게시 완료(`grid_Papers/`로 이동 확인), Google Threat Intel + TurboQuant 묶음은 아직 `raw/drafts/`에 미게시 상태로 남음.
+- **끊어진 위키 링크**: 없음
+- **방치된 초안 (7+일)**: 없음
+- **변동 포인트**: 어제(5/18) 12건이던 `raw/drafts/`가 오늘 **2건**으로 줄어듦 — 약 10건이 하루 새 게시됨. 남은 초안 2건(모두 5/15 작성, 4일 경과)의 게시가 다음 우선순위.
+```
+
+---
+
+## 2026-05-18 04:00:00 KST
+
+```
+블로그 점검 완료 (2026-05-18).
+
+- **클리핑 → 포스트 제안**: 신규 없음. Clippings 폴더는 2026-05-14자 2건 그대로이고 둘 다 5월 15일 초안화 완료. 제안 없음.
+- **끊어진 위키 링크**: 없음.
+- **방치된 초안 (7일+)**: 없음. `raw/drafts/` 12건 중 최장 4일 경과 (5월 14일 작성 3건).
+- 어제 대비: 5월 17일 작성 신규 초안 1건(`온톨로지와 Knowledge Graph, Graph RAG는 어떻게 다른가.md`) 추가, 게시·신규 클리핑은 0건. 기존 초안 게시가 계속 우선.
+
+결과는 `raw/블로그점검.md` 최상단에 prepend 완료.
+```
+
+---
+
+## 2026-05-17 04:00:01 KST
+
+```
+블로그 점검 완료 — `raw/블로그점검.md` 맨 위에 2026-05-17 섹션 추가했습니다.
+
+**오늘 결과**
+- 클리핑: 신규 0건, 기존 2건 모두 이미 5월 15일 초안화됨 → 신규 제안 없음
+- 끊어진 위키 링크: 없음
+- 방치된 초안 (7일+): 없음 (가장 오래된 게 3일 경과)
+- `raw/drafts/` 11건 적체 — 신규 클리핑보다 **초안 게시가 계속 우선**
+```
+
+---
+
+## 2026-05-16 04:00:00 KST
+
+```
+블로그 점검 2026-05-16 완료. `raw/블로그점검.md` 맨 위에 오늘 섹션 prepend.
+
+**결과 요약:**
+- **끊긴 위키 링크**: 없음
+- **방치된 초안 (7일+)**: 없음 (가장 오래된 것도 2일)
+- **클리핑 → 포스트 제안**: 신규 제안 없음. 어제 제안한 2건(ProgramBench / Google Threat Intel + TurboQuant)이 모두 `raw/drafts/`에 초안화 완료됨. 신규 클리핑도 없음.
+
+지금은 `raw/drafts/` 11건이 적체된 상태라(5/14 3건, 5/15 8건), 신규 글감 발굴보다 **기존 초안 게시**가 우선입니다.
+```
+
+---
+
+## 2026-05-15 04:00:00 KST
+
+```
+점검 완료. `raw/블로그점검.md` 맨 위에 2026-05-15 섹션을 추가했습니다.
+
+**요약**
+- **끊어진 위키 링크**: 없음
+- **방치된 초안(7일+)**: 없음 (drafts 5건 모두 5/14 작성, 1일 경과)
+- **클리핑 → 포스트 제안 2건** (둘 다 미커버 신규):
+  1. **ProgramBench** — Meta FAIR+Stanford+Harvard. 컴파일 바이너리만 주고 코드베이스 재구성 시키는 벤치마크. 9개 모델 모두 0% 완전 해결, Claude Opus 4.7도 3% 태스크에서만 95% pass. → `grid_Papers/`
+  2. **Google Threat Intel + TurboQuant 묶음** — AI를 활용한 취약점 자동 발견 보고서와 KV cache 6× 압축 아키텍처를 같은 날 발표. *AI 공격 자동화 vs AI 비용 자동화* 양날의 검 프레임. → `grid_Posts/` (단, 영상 전사가 "Interphase"로 잘못 표기 — 게시 전 원본 명칭 재확인 필요)
+- 어제 이월 6건(Obsidian Community / TanStack / Teaching Claude why / Karpathy+Rowboat / 프롬프팅 101 / 옛 그림 영상화)은 `raw/Clippings/Archive/`로 이동되며 점검 대상에서 빠짐 — 게시·초안 없이 아카이브된 상태라는 사실은 본문에 기록했습니다.
+```
+
+---
+
+## 2026-05-14 04:00:00 KST
+
+```
+블로그 점검 완료. 결과 요약:
+
+**오늘 점검 (2026-05-14)**
+- **새 클리핑 1건**: "The future of Obsidian plugins" — Obsidian Community 디렉터리/개발자 대시보드/플러그인 안전성 스코어카드 공개. AutoVault 도구 직접 영향, 기존 글에 없는 각도.
+- **전일 이월 변동**: `Obsidian Skill과 LLM Wiki 정리` 초안이 어제 작성됨 → Karpathy LLM Wiki 부분 흡수, 다만 Rowboat 자체는 미커버. `팔란티어 Foundry 구현 가이드` 초안 신규(점검 대상 외).
+- **이월 미게시**: TanStack npm 침해, Teaching Claude why, Karpathy/Rowboat(부분), Prompting 101, 씨름 AI 영상화.
+- **끊어진 위키 링크**: 없음
+- **방치된 초안 (7일+)**: 없음 (모두 1일 이내)
+
+`raw/블로그점검.md` 맨 위에 prepend 완료. 참고로 `.claude/skills/blog-check/blog-check.sh`의 `VAULT` 경로가 `/Users/chajinwoo/...`로 잘못 적혀 있어 헤드리스 실행 시 빈 결과만 나옵니다 — `/Users/cha/...`로 고치면 다음 자동 실행도 정상 작동합니다.
+```
+
+---
+
+## 2026-05-13 04:00:00 KST
+
+```
+블로그 점검 완료. 결과를 `raw/블로그점검.md` 맨 위에 2026-05-13 섹션으로 누적했습니다.
+
+**오늘 요약**
+- **신규 1건**: TanStack npm 공급망 침해(Shai-Hulud mini) — 5월 12일 클리핑 2건 입수. AI 도구 설정 파일 후킹 메커니즘으로 기존 보안 글과 차별, 시의성 높음.
+- **상태 변경 2건**: 어제까지 이월되던 "Running an AI-native engineering org"와 "Agent View in Claude Code"는 `raw/drafts/`에 초안 작성이 시작되어 제안 대상에서 제외.
+- **이월 4건**: Teaching Claude why, Karpathy 세컨드 브레인, 프롬프팅 101, 씨름 AI 영상화.
+- **끊어진 위키 링크**: 없음.
+- **방치된 초안(7일+)**: 없음 (옵시디언 그래프 뷰 초안 5일 경과).
+
+**참고**: `.claude/skills/blog-check/blog-check.sh`의 `VAULT` 경로가 `/Users/chajinwoo/...`로 잘못 박혀 있어 스크립트만 돌리면 빈 결과가 나옵니다. 오늘은 올바른 경로로 수동 점검해 메웠지만, 이 줄을 `/Users/cha/...`로 고쳐두는 것을 권장합니다.
+```
+
+---
+
+## 2026-05-12 04:00:00 KST
+
+```
+블로그 점검 2026-05-12 완료. `raw/블로그점검.md` 상단에 오늘 섹션을 prepend했습니다.
+
+**오늘의 결과 요약:**
+- **포스트 제안**: 신규 1건(`Running an AI-native engineering org` — Fiona Fung의 Claude Code 디렉터 회고, 채널의 *AI-네이티브 일하기* 시리즈 톱 포스트감), 전일 이월 4건(Teaching Claude why, Karpathy/Rowboat, Prompting 101, 홍도행 씨름).
+- **제외**: `La Guía…`(기존 글 커버), `마이그레이션 가이드`(공식 docs 발췌라 자체 가치 약함, Opus 4.7 출시 분석은 이미 게시).
+- **끊어진 위키 링크**: 없음.
+- **방치 초안**: 없음(`옵시디언 그래프 뷰…` 4일 경과로 임계치 미만).
+
+참고로 스킬의 `blog-check.sh`는 `/Users/chajinwoo/...` 경로로 하드코딩돼 있어 헤드리스 실행 시 모든 점검이 빈 결과를 반환합니다(실제 홈은 `/Users/cha`). 수동으로 올바른 경로로 재실행해 검증했습니다.
+```
+
+---
+
+## 2026-05-11 04:00:02 KST
+
+```
+블로그 점검 완료. 결과는 `raw/블로그점검.md` 맨 위에 2026-05-11 섹션으로 prepend.
+
+**오늘의 요약:**
+- **신규 클리핑 1건**: `Teaching Claude why.md` (Anthropic 정렬 연구, 5/8 게시) — 강력 추천. 블랙메일 96% → 0% 수치와 "행동보다 이유를 가르쳐라" 메시지가 유튜브 환승까지 가능.
+- **이월 제안 3건**: Karpathy/Rowboat, 프롬프팅 101, 홍도행 씨름 — 어제 제안 후 미게시 상태라 우선순위 유지.
+- **끊어진 위키 링크**: 없음
+- **방치된 초안 (7일+)**: 없음 (`옵시디언 그래프 뷰…` 1건은 5/8 작성, 아직 3일차)
+```
+
+---
+
+## 2026-05-10 04:00:00 KST
+
+```
+블로그 점검 완료. `raw/블로그점검-2026-05-10.md`에 저장했습니다.
+
+- **클리핑 → 포스트 제안 3건**: Karpathy/Rowboat 세컨드 브레인, 홍도행 "씨름" AI 영상화, Anthropic Prompting 101 정리
+- **중복 1건 제외**: 스페인어 토큰 절감 가이드는 기존 `Claude Code 에이전트 토큰 소비 줄이는 완전 가이드`와 겹침
+- **끊긴 위키 링크 / 방치 초안**: 모두 없음
+```
+
+---
+
+## 2026-05-09 10:48:39 KST
+
+```
+점검 완료. `raw/블로그점검-2026-05-09.md`에 결과 저장했습니다.
+
+- **클리핑 제안 1건**: @browomo X 게시물 — 솔로 트레이더 옵시디언 Second Brain (N8N 파이프라인 6개 / 월 120달러 / 월 3만 달러). 워크플로우 레시피 + 비용 분석 톤으로 `grid_Posts/` 후보.
+- **Zotero**: 이번 세션에 zotero MCP가 로드되지 않아 스킵. 다음 점검 때 연결 상태 확인 필요.
+- **끊긴 링크**: 0
+- **방치 초안**: 0 (`옵시디언 그래프 뷰는 정말 SNS용일까?.md`은 7일 미만)
+```
+
+---

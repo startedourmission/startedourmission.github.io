@@ -19,7 +19,22 @@ let main argv =
     let footer = Disk.readFile (Path.Combine(Config.htmlDir, "footer.html"))
 
     // frontPage를 제외한 모든 마크다운 파일을 블로그 글로 처리 (하위 폴더 포함)
-    let allMarkdownFiles = Directory.GetFiles(Config.markdownDir, "*.md", SearchOption.AllDirectories)
+    let allMarkdownFilesRaw = Directory.GetFiles(Config.markdownDir, "*.md", SearchOption.AllDirectories)
+
+    // `ready: false` 인 초안은 빌드 대상에서 통째로 뺀다.
+    // 여기 한 곳만 걸러도 목록·개별 페이지·RSS·사이트맵·llms.txt에서 동시에 빠진다
+    // (allPosts 가 indexListFiles 에서 파생되고, 그 셋이 전부 allPosts 를 받으므로).
+    let unpublishedFiles =
+        allMarkdownFilesRaw
+        |> Array.filter (fun f -> Obsidian.isUnpublished (File.ReadAllText(f)))
+
+    let allMarkdownFiles =
+        allMarkdownFilesRaw
+        |> Array.filter (fun f -> not (Array.contains f unpublishedFiles))
+
+    if unpublishedFiles.Length > 0 then
+        printfn $"Drafts skipped (ready: false): {unpublishedFiles.Length}"
+        unpublishedFiles |> Array.iter (fun f -> printfn $"  - {Path.GetFileName(f)}")
     
     // 모든 Canvas 파일 찾기
     let allCanvasFiles = Directory.GetFiles(Config.markdownDir, "*.canvas", SearchOption.AllDirectories)

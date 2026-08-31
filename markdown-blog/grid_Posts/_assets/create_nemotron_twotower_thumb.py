@@ -4,8 +4,8 @@ from PIL import Image, ImageDraw, ImageFont
 
 
 OUTPUT = Path(
-    "/Users/chajinwoo/Library/Mobile Documents/iCloud~md~obsidian/Documents/AutoVault/"
-    "블로그/markdown-blog/grid_Posts/_assets/nemotron-twotower-thumb.png"
+    "/Users/chajinwoo/Vaults/AutoVault/"
+    "markdown-blog/grid_Posts/_assets/nemotron-twotower-thumb.png"
 )
 WIDTH, HEIGHT = 1200, 630
 BLACK, WHITE = "#000000", "#FFFFFF"

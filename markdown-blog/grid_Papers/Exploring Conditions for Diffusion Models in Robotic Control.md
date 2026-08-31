@@ -11,7 +11,7 @@ buzz: 4
 
 > Shin et al., "Exploring Conditions for Diffusion Models in Robotic Control", arXiv:2510.15510, 2025
 
-![[블로그/markdown-blog/grid_Papers/_assets/1-Exploring.png]]
+![[markdown-blog/grid_Papers/_assets/1-Exploring.png]]
 
 
 

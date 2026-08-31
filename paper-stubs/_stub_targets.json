@@ -1,0 +1,274 @@
+[
+  {
+    "name": "공 루이하오",
+    "titles": [
+      "QDrop: Randomly Dropping Quantization for Extremely Low-bit Post-Training Quantization",
+      "LLMC: Benchmarking Large Language Model Quantization with a Versatile Compression Toolkit"
+    ]
+  },
+  {
+    "name": "니우준보",
+    "titles": [
+      "MinerU2.5: A Decoupled Vision-Language Model for Efficient High-Resolution Document Parsing",
+      "MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale"
+    ]
+  },
+  {
+    "name": "둥리",
+    "titles": [
+      "Unified Language Model Pre-training for Natural Language Understanding and Generation",
+      "UniLMv2: Pseudo-Masked Language Models for Unified Language Model Pre-Training"
+    ]
+  },
+  {
+    "name": "둥인펑",
+    "titles": [
+      "Boosting Adversarial Attacks with Momentum",
+      "Evading Defenses to Transferable Adversarial Examples by Translation-Invariant Attacks"
+    ]
+  },
+  {
+    "name": "래리 재클",
+    "titles": [
+      "Handwritten digit recognition with a back-propagation network",
+      "Handwritten digit recognition: Applications of neural network chips and automatic learning"
+    ]
+  },
+  {
+    "name": "레옹 보투",
+    "titles": [
+      "Gradient-Based Learning Applied to Document Recognition",
+      "Large-Scale Machine Learning with Stochastic Gradient Descent"
+    ]
+  },
+  {
+    "name": "류둥루이",
+    "titles": [
+      "REEF: Representation Encoding Fingerprints for Large Language Models",
+      "Demystifying Reasoning Dynamics with Mutual Information: Thinking Tokens are Information Peaks in LLM Reasoning"
+    ]
+  },
+  {
+    "name": "류저춘",
+    "titles": [
+      "SpinQuant: LLM Quantization with Learned Rotations",
+      "LLM-QAT: Data-Free Quantization Aware Training for Large Language Models"
+    ]
+  },
+  {
+    "name": "류카이쉬안",
+    "titles": [
+      "Revisiting Multi-Agent World Modeling from a Diffusion-Inspired Perspective"
+    ]
+  },
+  {
+    "name": "마르카우렐리오 란차토",
+    "titles": [
+      "Efficient Learning of Sparse Representations with an Energy-Based Model",
+      "Building High-Level Features Using Large Scale Unsupervised Learning"
+    ]
+  },
+  {
+    "name": "미카엘 마티외",
+    "titles": [
+      "Fast Training of Convolutional Networks through FFTs",
+      "OverFeat: Integrated Recognition, Localization and Detection using Convolutional Networks"
+    ]
+  },
+  {
+    "name": "사나에 로트피",
+    "titles": [
+      "Bayesian Model Selection, the Marginal Likelihood, and Generalization",
+      "Unlocking Deterministic Robustness Certification on ImageNet"
+    ]
+  },
+  {
+    "name": "샤오밍 슝",
+    "titles": [
+      "Dynamic Coattention Networks for Question Answering",
+      "BLIP: Bootstrapping Language-Image Pre-training for Unified Vision-Language Understanding and Generation"
+    ]
+  },
+  {
+    "name": "샹 장",
+    "titles": [
+      "OverFeat: Integrated Recognition, Localization and Detection using Convolutional Networks",
+      "Character-level Convolutional Networks for Text Classification"
+    ]
+  },
+  {
+    "name": "쉬이룽",
+    "titles": [
+      "ALiiCE: Evaluating Positional Fine-grained Citation Generation",
+      "Training a Utility-based Retriever Through Shared Context Attribution for Retrieval-Augmented Language Models"
+    ]
+  },
+  {
+    "name": "싱위 궈",
+    "titles": [
+      "Partonic collinear structure by quantum computing",
+      "Variational thermal quantum simulation of the lattice Schwinger model"
+    ]
+  },
+  {
+    "name": "쑹신하오",
+    "titles": [
+      "HLL: Can Agents Cross Humanity's Last Line of Verification?"
+    ]
+  },
+  {
+    "name": "아카리 아사이",
+    "titles": [
+      "Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection",
+      "Pangea: A Fully Open Multilingual Multimodal LLM for 39 Languages"
+    ]
+  },
+  {
+    "name": "알리 베루즈",
+    "titles": [
+      "Titans: Learning to Memorize at Test Time",
+      "Nested Learning: The Illusion of Deep Learning Architectures"
+    ]
+  },
+  {
+    "name": "야스민 오므리",
+    "titles": [
+      "Agent Memory: Characterization and System Implications of Stateful Long-Horizon Workloads"
+    ]
+  },
+  {
+    "name": "양 레이",
+    "titles": [
+      "\"Scaling Spatial Intelligence with Multimodal Foundation Models\"",
+      "\"Holistic Evaluation of Multimodal LLMs on Spatial Intelligence\""
+    ]
+  },
+  {
+    "name": "에단 파크스",
+    "titles": [
+      "Predictive Maps of Multi-Agent Reasoning"
+    ]
+  },
+  {
+    "name": "왕마오취안",
+    "titles": [
+      "FastContext: Training Efficient Repository Explorer for Coding Agents"
+    ]
+  },
+  {
+    "name": "우지쿤",
+    "titles": [
+      "The Deterministic Horizon: When Extended Reasoning Fails and Tool Delegation Becomes Necessary"
+    ]
+  },
+  {
+    "name": "장민",
+    "titles": [
+      "MetaForge: A Self-Evolving Multimodal Agent that Retrieves, Adapts, and Forges Tools On Demand -- 교신저자",
+      "Generative Multi-Agent Collaboration in Embodied AI: A Systematic Review"
+    ]
+  },
+  {
+    "name": "장샤오치우",
+    "titles": [
+      "FastContext: Training Efficient Repository Explorer for Coding Agents"
+    ]
+  },
+  {
+    "name": "천관옌",
+    "titles": [
+      "The Self-Correction Illusion"
+    ]
+  },
+  {
+    "name": "치우쯔한",
+    "titles": [
+      "Gated Attention for Large Language Models: Non-linearity, Sparsity, and Attention-Sink-Free",
+      "Demons in the Detail: On Implementing Load Balancing Loss for Specialized Mixture-of-Experts Models"
+    ]
+  },
+  {
+    "name": "카미유 쿠프리",
+    "titles": [
+      "Power Watersheds: A Unifying Graph-Based Optimization Framework",
+      "Learning Hierarchical Features for Scene Labeling"
+    ]
+  },
+  {
+    "name": "캐서린 아넷",
+    "titles": [
+      "LilMoo 힌디어 모델 및 데이터셋",
+      "LilTii 벵골어 모델 및 데이터셋"
+    ]
+  },
+  {
+    "name": "클레망 파라베",
+    "titles": [
+      "NeuFlow: A Runtime Reconfigurable Dataflow Processor for Vision",
+      "Learning Hierarchical Features for Scene Labeling"
+    ]
+  },
+  {
+    "name": "탕성푸",
+    "titles": [
+      "Leveraging Factored Action Spaces for Efficient Offline Reinforcement Learning in Healthcare",
+      "Off by a beat: the effects of temporal misalignment in reinforcement learning for sepsis treatment"
+    ]
+  },
+  {
+    "name": "토마시 미콜로프",
+    "titles": [
+      "Efficient Estimation of Word Representations in Vector Space",
+      "Distributed Representations of Words and Phrases and their Compositionality"
+    ]
+  },
+  {
+    "name": "팀 게네바인",
+    "titles": [
+      "\"From AGI to ASI\"",
+      "\"Algorithmic Compression via Pretrained Neural Networks\""
+    ]
+  },
+  {
+    "name": "패트릭 하프너",
+    "titles": [
+      "\"Gradient-Based Learning Applied to Document Recognition\"",
+      "\"Support Vector Machines for Histogram-Based Image Classification\""
+    ]
+  },
+  {
+    "name": "펑치야오",
+    "titles": [
+      "MARDoc: A Memory-Aware Refinement Agent Framework for Multimodal Long Document QA",
+      "FRONTIER-RevRec: A Large-scale Dataset for Reviewer Recommendation"
+    ]
+  },
+  {
+    "name": "폴리나 키리첸코",
+    "titles": [
+      "\"Last Layer Re-Training is Sufficient for Robustness to Spurious Correlations\"",
+      "\"AbstentionBench: Reasoning LLMs Fail on Unanswerable Questions\""
+    ]
+  },
+  {
+    "name": "푸제 황",
+    "titles": [
+      "Learning Methods for Generic Object Recognition with Invariance to Pose and Lighting",
+      "Large-Scale Learning with SVM and Convolutional Nets for Generic Object Categorization"
+    ]
+  },
+  {
+    "name": "피에르 세르마네",
+    "titles": [
+      "\"OverFeat: Integrated Recognition, Localization and Detection using Convolutional Networks\"",
+      "\"Time-Contrastive Networks: Self-Supervised Learning from Video\""
+    ]
+  },
+  {
+    "name": "후아젠 루안",
+    "titles": [
+      "\"Generative Criticality in Large Language Model Temperature Scaling\"",
+      "핵물리·양자물질 분야 관련 화난사범대학교 그룹 내 연구 논문들"
+    ]
+  }
+]

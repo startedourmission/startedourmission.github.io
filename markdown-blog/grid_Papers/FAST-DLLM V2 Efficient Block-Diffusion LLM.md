@@ -25,7 +25,7 @@ buzz: 212
 
 **아키텍처**: 블록 확산 언어 모델(Block Diffusion LLM) 구조를 기반으로 하며, Qwen 2.5-Instruct 모델(1.5B, 7B)을 파인튜닝하여 구현됩니다.
 
-![[블로그/markdown-blog/grid_Papers/_assets/1-FAST-DLLM.png]]
+![[markdown-blog/grid_Papers/_assets/1-FAST-DLLM.png]]
 
 **핵심 메커니즘**:
 

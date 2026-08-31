@@ -1,0 +1,158 @@
+## 2026-07-02 04:30:00 KST
+
+```
+| # | 테마(요일) | 제목 | 종류 | 태그 | 한줄 설명 | 근거 |
+|---|-----------|------|------|------|-----------|------|
+| 1 | 모델릴리스(화) | Claude Sonnet 5 | 정보 | LLM, 에이전트 | Anthropic이 Sonnet 5를 전면 출시 — SWE-bench Pro 63.2%, OSWorld 83.4% 등 Opus 4.8에 근접하는 에이전틱 성능을 Sonnet 가격에 제공하지만 에이전틱 작업 시 토큰 소모가 기존 대비 3배 | 2026-06-30 Anthropic 공식 출시, TechCrunch·Engadget 동시 보도 |
+| 2 | 논문(월) | LiveEdit: Towards Real-Time Diffusion-Based Streaming Video Editing | 논문 | 확산모델, 컴퓨터비전, 영상처리 | 양방향 Diffusion 모델의 편집 능력을 단방향 스트리밍 에디터로 3단계 증류 전이 — 실시간 프레임별 편집 + AR 마스크 캐시로 일관성 유지 | arXiv 2026-06-26 (2606.26740), HF 75 upvotes, ECCV 2026 채택, buzz 50 |
+| 3 | 논문(월) | TUA-Bench: A Benchmark for General-Purpose Terminal-Use Agents | 논문 | 에이전트, 벤치마크, LLM | 웹브라우저·CLI·IDE·코드실행 등 터미널 환경에서 범용 에이전트를 종합 평가하는 벤치마크 — 상위 모델도 어려운 태스크에서 낮은 성공률 | arXiv 2026-06-30 (2606.28480), HF 44 upvotes, buzz 44 |
+| 4 | 산업·비즈니스(목) | California × Anthropic — 미국 최대 주정부 Claude 도입 | 정보 | LLM, 에이전트 | Newsom 주지사, 캘리포니아 전 주정부 기관에 Claude 50% 할인 도입 발표 — DMV 고객서비스, Medicaid, 사이버보안(Claude Security + Claude Code)까지 전 분야 확산 | 2026-06-29 gov.ca.gov 공식 발표, TechCrunch·Decrypt 보도 |
+
+### 상세
+
+#### 1. Claude Sonnet 5
+- arXiv: 없음 (모델 릴리스)
+- 기관: Anthropic
+- 주목도: 2026-06-30 출시 · Free/Pro 기본 모델 전환 · TechCrunch·MacRumors·Engadget 동시 보도
+- 핵심: SWE-bench Pro 63.2% (Opus 4.8: 69.2%), OSWorld-Verified 81.2% (Opus 4.8: 83.4%), Terminal-Bench 2.1에서는 80.4%로 Opus 4.8(74.6%)을 앞지름. 가격은 입력 $2/M · 출력 $10/M (8월까지 프로모션). 아이러니: 에이전틱 작업 시 출력 토큰 소모량이 Sonnet 4.6 대비 40% 많고, 지식 작업 턴 수는 3배. "저렴한 에이전트" vs "실질 비용 상승"의 긴장이 쓸 만한 앵글.
+- 글로 풀 포인트: Sonnet 5의 벤치마크 수치와 실제 에이전틱 비용(토큰 × 턴 수)을 함께 분석 — 프로모션 가격 끝난 뒤에도 Sonnet이 진짜 Opus 대체제인지 판별하는 프레임 제시. Anthropic의 모델 계층(Sonnet/Opus) 전략도 다룸.
+
+#### 2. LiveEdit: Towards Real-Time Diffusion-Based Streaming Video Editing
+- arXiv: https://arxiv.org/abs/2606.26740
+- 기관: Tsinghua University + HKUST
+- 주목도: HF 75 upvotes · ECCV 2026 채택 · buzz 50 · 2026-06-26 제출
+- 핵심: 양방향 Diffusion Foundation 모델 → 단방향 스트리밍 에디터로의 3단계 증류 파이프라인. AR-oriented 마스크 캐시가 프레임 간 연산 재사용으로 지연 시간 단축. 텍스트 지시만으로 실시간 영상 편집.
+- 글로 풀 포인트: "왜 스트리밍 영상 편집이 어려운가" — 배경 일관성 + 저지연의 상충을 어떻게 푸는지. 증류 파이프라인의 3단계 구조를 그림과 함께 설명. 실시간 편집이 열어줄 응용(라이브 방송 편집, 실시간 필터 교체 등)도 언급.
+
+#### 3. TUA-Bench: A Benchmark for General-Purpose Terminal-Use Agents
+- arXiv: https://arxiv.org/abs/2606.28480
+- 기관: 확인 필요
+- 주목도: HF 44 upvotes · buzz 44 · 2026-06-30 제출
+- 핵심: 터미널(CLI, 브라우저, IDE, 코드 실행 환경 등)에서 범용 에이전트의 능력을 종합 평가. OSWorld 2.0(2606.29537, HF 17)보다 높은 buzz. 실제 워크플로우 기반 태스크로 구성.
+- 글로 풀 포인트: 왜 "터미널 범용 에이전트"가 어려운가 — 환경 다양성·비결정성·장기 의존성을 다루는 방식 설명. 상위 모델 성능 비교 표와 함께 "에이전트가 아직 어디서 막히는가" 정리.
+
+#### 4. California × Anthropic — 미국 최대 주정부 Claude 도입
+- arXiv: 없음 (정책/산업 뉴스)
+- 기관: 캘리포니아 주정부 + Anthropic
+- 주목도: 2026-06-29 공식 발표 · TechCrunch·Decrypt·PYMNTS 다수 보도 · "미국 최초 규모" 수식
+- 핵심: 캘리포니아 전 주정부 기관에 Claude 50% 할인 + 무료 워크포스 교육 + Anthropic 개발자 지원. DMV 고객서비스 대기시간 단축, Medicaid 내부 워크플로우, CDT·CalOES 사이버보안(Claude Code로 취약점 스캔·패치)까지 전방위 적용.
+- 글로 풀 포인트: 주정부 규모 AI 도입의 의미 — 민간과 다른 "안전성·책임·확장성" 기준을 Anthropic이 어떻게 충족했는지. 다른 주·연방정부 도입의 촉매가 될 수 있는 이유. 프라이버시·보안 우려도 간단히 언급.
+
+### Sources
+- [Anthropic launches Claude Sonnet 5 | TechCrunch](https://techcrunch.com/2026/06/30/anthropic-launches-claude-sonnet-5-as-a-cheaper-way-to-run-agents/)
+- [Claude Sonnet 5: strong agentic performance at a higher cost per task | Artificial Analysis](https://artificialanalysis.ai/articles/claude-sonnet-5-agentic-cost)
+- [LiveEdit arXiv:2606.26740](https://arxiv.org/abs/2606.26740)
+- [TUA-Bench arXiv:2606.28480](https://arxiv.org/abs/2606.28480)
+- [Governor Newsom + Anthropic 발표 | gov.ca.gov](https://www.gov.ca.gov/2026/06/29/governor-newsom-announces-a-first-of-its-kind-partnership-providing-anthropic-tools-to-state-agencies-and-improving-services-for-californians/)
+- [California strikes deal with Anthropic | TechCrunch](https://techcrunch.com/2026/06/29/anthropic-and-gov-newsom-forge-deal-allowing-california-government-to-use-claude-at-half-price/)
+```
+
+---
+
+## 2026-06-25 04:30:00 KST
+
+```
+| # | 테마(요일) | 제목 | 종류 | 태그 | 한줄 설명 | 근거 |
+|---|-----------|------|------|------|-----------|------|
+| 1 | 논문(월) | AOHP: An Open-Source OS-Level Agent Harness for Personalized, Efficient and Secure Interaction | 논문 | 에이전트, LLM, 오픈소스 | AI 에이전트를 OS 1급 시민으로 설계한 AOSP 기반 에이전트 하네스 — 태스크 완료율 향상 + 비용 절감 + 샌드박스 보안 | arXiv 2026-06-22, HF 25 upvotes, buzz 38 |
+| 2 | 논문(월) | Unlimited OCR Works: Welcome the Era of One-shot Long-horizon Parsing | 논문 | LLM, 오픈소스, 머신러닝 | Reference Sliding Window Attention으로 수십 페이지 문서를 단일 forward pass로 파싱 — KV 캐시 상수 유지 | arXiv 2026-06-22, HF 23 upvotes, buzz 37 |
+| 3 | 산업·비즈니스(목) | OpenAI Daybreak: GPT-5.5-Cyber 전체 공개 + Patch the Planet | 정보 | AI평가, 에이전트, LLM | OpenAI가 GPT-5.5-Cyber(CyberGym 85.6%)와 Codex Security + IBM 파트너십으로 취약점 탐지→자동 패치 파이프라인 구축 | 2026-06-22, TechHackerNews·ChannelInsider 다수 보도 |
+| 4 | 잡담·에세이(금) | Claude Fable 5 크레딧 전환 — Anthropic의 용량 제약이 말하는 것 | 정보 | LLM, AI평가 | 6월 23일부로 Fable 5가 구독 무료 범위에서 제외 — 입력 $10/M·출력 $50/M, Anthropic이 용량 우선순위를 어떻게 매기는지 | 2026-06-23 Anthropic 공지, 커뮤니티 활발한 반응 |
+
+### 상세
+
+#### 1. AOHP: An Open-Source OS-Level Agent Harness for Personalized, Efficient and Secure Interaction
+- arXiv: https://arxiv.org/abs/2606.23449
+- 기관: Tsinghua University / AIR (Institute for AI Industry Research), 외 16인
+- 주목도: HF 25 upvotes · buzz 38 · 2026-06-22 제출
+- 핵심: 현재 OS는 앱 중심으로 설계되어 AI 에이전트 실행 시 오버헤드·보안 리스크가 발생함. AOHP는 AOSP 위에서 에이전트를 1급 OS 엔티티로 취급하는 오픈소스 하네스로, Personalized UI(사용자별 컨텍스트 적응 인터페이스), Efficient Execution(에이전트 친화적 런타임 환경), Secure Interaction(컨테이너 격리 샌드박스)의 세 축으로 구성. 태스크 완료율 +18%, 실행 비용 절감 확인.
+- 글로 풀 포인트: AI 에이전트가 기존 앱 모델과 어떻게 충돌하는지, OS가 에이전트를 1급 시민으로 대우하면 무엇이 달라지는지, AOHP의 세 레이어(개인화·효율·보안) 구조 설명.
+
+#### 2. Unlimited OCR Works: Welcome the Era of One-shot Long-horizon Parsing
+- arXiv: https://arxiv.org/abs/2606.23050
+- 기관: Baidu Inc.
+- 주목도: HF 23 upvotes · buzz 37 · 2026-06-22 제출
+- 핵심: 표준 SWA(Sliding Window Attention)는 OCR에서 visual token을 잃고, full attention은 긴 문서에서 KV 캐시가 폭증. R-SWA(Reference Sliding Window Attention)는 reference token(visual)을 상태 전이에서 제외해 KV 캐시를 상수로 유지하면서 visual fidelity를 보존. 32K max length 내에서 수십 페이지를 단일 forward pass로 처리 가능. GitHub: github.com/baidu/Unlimited-OCR.
+- 글로 풀 포인트: 기존 문서 파싱의 multi-pass 비효율, R-SWA가 어떻게 KV 캐시 문제를 푸는지, "One-shot long-horizon parsing" 패러다임이 기업 문서 처리에 주는 의미.
+
+#### 3. OpenAI Daybreak: GPT-5.5-Cyber 전체 공개 + Patch the Planet
+- URL: https://openai.com/index/daybreak-securing-the-world/
+- 주목도: 2026-06-22 발표 · IBM 파트너십 · ChannelInsider·InfoSecurity Magazine·HackerNews 다수 보도
+- 핵심: GPT-5.5-Cyber 전체 버전 출시(CyberGym 85.6%, 대규모 코드베이스 심층 분석 후 패치 작성·검증 가능), Codex Security(3,000만 커밋·30,000+ 코드베이스 스캔 완료), Patch the Planet(Trail of Bits+HackerOne, cURL·Go·Python·Sigstore 등 30개 오픈소스 참여), IBM과 엔터프라이즈 사이버 방어 협력.
+- 글로 풀 포인트: AI 보안 도구가 취약점 발견에서 패치 자동화까지 어떻게 파이프라인화되는지, CyberGym 지표의 의미, Patch the Planet의 오픈소스 생태계 함의.
+
+#### 4. Claude Fable 5 크레딧 전환 — Anthropic의 용량 제약이 말하는 것
+- URL: https://www.anthropic.com (공지)
+- 주목도: 2026-06-23 적용 · 커뮤니티 반응 다수(Reddit r/ClaudeAI, HN 스레드)
+- 핵심: 6월 9일 출시 후 13일간 구독 무료 제공되던 Fable 5가 6월 23일부터 usage credit 차감 방식으로 전환. API 단가 입력 $10/M·출력 $50/M — Opus 4.8의 2배. Anthropic은 "용량 결정이며 구독 복원 의사 있음"을 명시. 사용 패턴 데이터를 바탕으로 가장 무거운 workload에 우선 공급하는 전략으로 해석됨.
+- 글로 풀 포인트: 프런티어 모델 용량 배분의 경제학, Fable 5의 무게(~8배 토큰 소비)가 일반 구독과 왜 충돌하는지, 앞으로 Mythos급 모델이 표준화되면 어떤 구독 모델이 올지.
+
+### Notes
+- 툴·오픈소스 슬롯: 이번 주(6/19-25) 7일 창 내 전용 새 툴 launch 미발견 (Bumblebee 5/22, NVIDIA SkillSpector 이미 게시). AOHP가 오픈소스 하네스 성격이므로 논문+오픈소스 두 역할 겸함.
+- 모델 릴리스 슬롯: Gemini 3.5 Pro는 아직 GA 전(6/23 기준 Limited Preview). ChatGPT 시장점유율·GateMem·PerceptionDLM 등 June 23-24 초안 이미 drafts에 있어 제외.
+- 잡담·에세이 슬롯: Fable 5 크레딧 전환이 커뮤니티 논의를 가장 많이 끌어내고 있어 4번에 배치.
+
+### Sources
+- [AOHP (arXiv)](https://arxiv.org/abs/2606.23449)
+- [Unlimited OCR (arXiv)](https://arxiv.org/abs/2606.23050)
+- [OpenAI Daybreak](https://openai.com/index/daybreak-securing-the-world/)
+- [Claude Fable 5 Pricing - Future Stack Reviews](https://future-stack-reviews.com/claude-fable-5-pricing/)
+- [OpenAI Expands Daybreak (ChannelInsider)](https://www.channelinsider.com/news-and-trends/openai-daybreak-cyber-program-security-tools/)
+- [HuggingFace Papers Trending](https://huggingface.co/papers/trending)
+```
+
+---
+
+## 2026-06-21 04:30:00 KST
+
+```
+| # | 테마(요일) | 제목 | 종류 | 태그 | 한줄 설명 | 근거 |
+|---|-----------|------|------|------|-----------|------|
+| 1 | 논문(월) | Looped World Models | 논문 | LLM, 에이전트, 머신러닝 | 파라미터 공유 루프드 트랜스포머로 기존 대비 100배 파라미터 효율의 세계 모델을 구현 | arXiv 2026-06-16, HF 244 upvotes |
+| 2 | 논문(월) | LoopCoder-v2: Only Loop Once for Efficient Test-Time Computation Scaling | 논문 | LLM, 추론, 오픈소스 | 루프 횟수 2회로 SWE-bench Verified 43→64.4, 코드 에이전트 테스트타임 컴퓨팅 확장 | arXiv 2026-06-17, HF 191 upvotes |
+| 3 | 툴·오픈소스(수) | NVIDIA SkillSpector | 정보 | 에이전트, 오픈소스, AI평가 | AI 에이전트 스킬(MCP 포함)의 보안 취약점 64개 패턴 탐지 스캐너, 야생 스킬 26.1% 취약 | GitHub 2026-06-16, ~5.5k★ |
+| 4 | 산업·비즈니스(목) | Qualcomm, Tenstorrent 인수 협상 ($8~10B) | 정보 | 반도체, 에이전트 | 짐 켈러의 RISC-V 기반 AI 칩 스타트업 Tenstorrent를 최대 $10B에 인수 추진 | 로이터 2026-06-16, 복수 언론 확인 |
+
+### 상세
+
+#### 1. Looped World Models
+- arXiv: https://arxiv.org/abs/2606.18208
+- 기관: FaceMind Research Asia (30+ 저자)
+- 주목도: HF 244 upvotes · buzz 63 · 2026-06-16 제출
+- 핵심: 파라미터를 공유하는 단일 트랜스포머 블록을 반복 적용해 환경 상태를 반복 정제하는 세계 모델. 수축 보장 메커니즘으로 잠재 표현의 안정성 확보, 예측 복잡도에 따라 루프 횟수를 자동 조절하는 조기 종료 전략 채용. LoopWM-DD 변형은 액션 전개를 잠재 공간에서만 수행하고 마지막 스텝에 디코딩 지연.
+- 글로 풀 포인트: 기존 세계 모델의 깊이 vs 배포 비용 트레이드오프를 루프 아키텍처로 어떻게 푸는지, "잠재 깊이"라는 새 스케일링 축의 의미, LoopWM-DD의 지연 디코딩 패러다임 설명.
+
+#### 2. LoopCoder-v2: Only Loop Once for Efficient Test-Time Computation Scaling
+- arXiv: https://arxiv.org/abs/2606.18023
+- 기관: Multilingual-Multimodal-NLP 연구팀
+- 주목도: HF 191 upvotes · buzz 61 · 2026-06-17 제출
+- 핵심: Parallel Loop Transformer(PLT) 기반 7B 코드 모델. 공유 블록 반복으로 테스트타임 컴퓨팅 확장, 크로스루프 포지션 오프셋(CLP)과 공유-KV 게이트드 슬라이딩 윈도우 어텐션으로 KV 캐시 비용 절감. 2-루프 변형이 SWE-bench Verified 43.0→64.4, Multi-SWE 14.0→31.0 달성. 3번째 루프부터는 효과 감소.
+- 글로 풀 포인트: 루프 횟수와 테스트타임 컴퓨팅의 관계, PLT가 기존 순차 루프 대비 지연시간·메모리를 줄이는 방식, "왜 두 번만 돌면 충분한가"의 해석.
+
+#### 3. NVIDIA SkillSpector
+- URL: https://github.com/nvidia/skillspector (v2.0.0)
+- 주목도: ~5.5k GitHub stars · 2026-06-16 공개 · 기술 미디어 다수 보도
+- 핵심: Claude Code·Codex CLI·Gemini CLI 등이 실행하는 AI 에이전트 스킬(MCP 확장 포함) 보안 스캐너. 64개 취약점 패턴·16개 카테고리 탐지, 빠른 정적 분석 + 선택적 LLM 시맨틱 분석 2단계. 야생 스킬 26.1% 취약, 5.2%는 악의적 의도 의심. JSON·Markdown·SARIF 출력.
+- 글로 풀 포인트: AI 에이전트 스킬이 새 공격 표면이 된 이유, SkillSpector가 탐지하는 주요 패턴(프롬프트 인젝션·공급망 공격 등), 실제 스캔 예시.
+
+#### 4. Qualcomm, Tenstorrent 인수 협상 ($8~10B)
+- URL: https://finance.yahoo.com/technology/ai/articles/qualcomm-talks-acquire-ai-chip-230401789.html
+- 주목도: 로이터 독점 보도 2026-06-16, 구루포커스·이고르스랩 등 확산
+- 핵심: Qualcomm이 짐 켈러(Jim Keller) 창업 AI 칩 스타트업 Tenstorrent를 $8~10B에 인수 협상 중. Tenstorrent는 RISC-V 기반 AI 칩 설계, 데이터센터 추론·엣지 양쪽 타깃. 인수 시 Qualcomm의 데이터센터 AI 칩 경쟁력 강화 기대, 가격 연동 구조 협상 중.
+- 글로 풀 포인트: Tenstorrent가 NVIDIA/AMD와 어디서 다른지, 짐 켈러의 칩 설계 철학이 Qualcomm에 주는 의미, RISC-V 오픈 아키텍처가 AI 칩 생태계에 미치는 파급.
+
+### Notes
+- 모델 릴리스 슬롯: Kimi K2.7-Code(초안)·Grok Imagine Video 1.5(초안)·Moebius(초안) 등 주요 릴리스가 이미 drafts 에 있어 제외
+- 잡담·에세이 슬롯: 이번 주 7일 창 내 buzz 있는 에세이/오피니언 후보 미발견 — 슬롯 공백
+
+### Sources
+- [Looped World Models (arXiv)](https://arxiv.org/abs/2606.18208)
+- [LoopCoder-v2 (HF Papers)](https://huggingface.co/papers/2606.18023)
+- [NVIDIA SkillSpector (GitHub)](https://github.com/nvidia/skillspector)
+- [Qualcomm-Tenstorrent (Yahoo Finance)](https://finance.yahoo.com/technology/ai/articles/qualcomm-talks-acquire-ai-chip-230401789.html)
+- [GitHub Trending Weekly 2026-06-17](https://www.shareuhack.com/en/posts/github-trending-weekly-2026-06-17)
+- [NVIDIA SkillSpector (AIToolly)](https://aitoolly.com/ai-news/article/2026-06-16-nvidia-skillspector-a-dedicated-security-scanner-for-ai-agent-skills-and-vulnerability-detection)
+```
+
+---
+

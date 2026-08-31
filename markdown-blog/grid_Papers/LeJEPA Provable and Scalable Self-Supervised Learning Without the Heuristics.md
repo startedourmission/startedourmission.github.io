@@ -13,7 +13,7 @@ buzz: 231
 ---
 
 
-![[블로그/markdown-blog/grid_Papers/_assets/1-LeJEPA.png]]
+![[markdown-blog/grid_Papers/_assets/1-LeJEPA.png]]
 
 **주요 성과:**
 

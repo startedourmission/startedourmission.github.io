@@ -14,7 +14,7 @@ buzz: 323
 
 >O. Siméoni et al., "DINOv3," arXiv preprint arXiv:2508.10104, 2025.
 
-![[블로그/markdown-blog/grid_Papers/_assets/DINO_1.png|1143x373]]
+![[markdown-blog/grid_Papers/_assets/DINO_1.png|1143x373]]
 
 # 요약
 

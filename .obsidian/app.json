@@ -1,0 +1,7 @@
+{
+  "alwaysUpdateLinks": true,
+  "attachmentFolderPath": "./_assets",
+  "promptDelete": false,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "raw"
+}
