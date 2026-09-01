@@ -29,11 +29,12 @@ views:
     filters:
       and:
         - file.inFolder("markdown-blog/grid_Posts")
-        - ready != false
+        - ready != true
         - and:
             - "!file.tags.isEmpty()"
     order:
       - date
+      - ready
       - file.name
       - tags
       - description
@@ -45,6 +46,7 @@ views:
         direction: ASC
     columnSize:
       note.date: 111
+      note.ready: 22
       file.name: 266
       note.tags: 305
       note.description: 420
