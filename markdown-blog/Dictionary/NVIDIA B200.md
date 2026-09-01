@@ -1,4 +1,5 @@
 ---
+ready: true
 type: hardware
 description: "NVIDIA Blackwell 아키텍처, H100 대비 훈련 2.5배 GPU"
 tags:

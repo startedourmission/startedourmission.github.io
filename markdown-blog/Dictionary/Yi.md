@@ -1,4 +1,5 @@
 ---
+ready: true
 type: ai-model
 description: "01.AI의 LLM 시리즈, 카이푸 리(李开复)가 창업한 중국 모델 가족"
 tags:

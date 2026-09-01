@@ -1,6 +1,7 @@
 ---
 type: product
 date: 2026-05-18
+ready: true
 tags:
   - 오픈소스
 description: "AWS가 제공하는 완전 관리형 그래프 데이터베이스. Property Graph와 RDF를 모두 지원해 Cypher·Gremlin·SPARQL을 모두 쓸 수 있습니다."

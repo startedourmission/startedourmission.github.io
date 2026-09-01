@@ -1,4 +1,5 @@
 ---
+ready: true
 type: ai-model
 description: "Meta가 2026년 4월 공개한 첫 사유 AI 모델, Llama 라인업을 대체하는 Meta Superintelligence Labs의 첫 결과물"
 tags:

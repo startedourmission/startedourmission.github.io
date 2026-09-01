@@ -1,4 +1,5 @@
 ---
+ready: true
 type: company
 description: 캐나다 토론토의 AI 프로세서 기업. RISC-V 기반 유연한 AI 가속기를 만들며 IP 라이선싱 모델을 병행.
 tags:

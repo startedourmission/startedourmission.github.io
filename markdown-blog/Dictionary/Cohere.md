@@ -1,4 +1,5 @@
 ---
+ready: true
 type: company
 description: "기업용 LLM에 특화한 캐나다 AI 기업, 트랜스포머 공저자가 창업"
 tags:

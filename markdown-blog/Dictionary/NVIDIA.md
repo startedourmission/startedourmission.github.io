@@ -1,4 +1,5 @@
 ---
+ready: true
 type: company
 description: "GPU와 AI 가속기 시장을 주도하는 미국 반도체 기업"
 tags:

@@ -1,5 +1,6 @@
 ---
 date: 2025-10-26
+ready: true
 tags:
   - 정보
   - 파이썬

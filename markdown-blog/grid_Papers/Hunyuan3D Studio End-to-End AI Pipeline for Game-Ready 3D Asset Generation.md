@@ -1,5 +1,6 @@
 ---
 date: 2025-09-16
+ready: true
 tags:
   - 논문
   - LLM

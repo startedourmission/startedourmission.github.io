@@ -7,6 +7,7 @@ author:
 series: "CS230 딥러닝 강의 (2025 가을)"
 chapter: 8
 date: 2026-04-06
+ready: true
 tags:
   - cs230
   - LLM

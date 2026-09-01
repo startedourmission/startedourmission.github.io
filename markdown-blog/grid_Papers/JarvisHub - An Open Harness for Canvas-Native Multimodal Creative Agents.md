@@ -1,5 +1,6 @@
 ---
 date: 2026-07-29
+ready: true
 tags:
   - 논문
   - 멀티모달

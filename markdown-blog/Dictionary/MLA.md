@@ -1,4 +1,5 @@
 ---
+ready: true
 type: concept
 description: "KV 캐시를 저차원 잠재 공간으로 압축하는 어텐션 변형. DeepSeek-V2에서 제안됐고 대형 MoE의 사실상 표준 어텐션이 됐다"
 tags:

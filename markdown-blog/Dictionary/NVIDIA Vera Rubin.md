@@ -1,4 +1,5 @@
 ---
+ready: true
 type: hardware
 description: "NVIDIA 차세대 칩, HBM4 288GB, 2026 하반기 예정"
 tags:

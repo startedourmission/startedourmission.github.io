@@ -1,4 +1,5 @@
 ---
+ready: true
 type: hardware
 description: "Groq Language Processing Unit, 초저지연 추론 특화"
 tags:

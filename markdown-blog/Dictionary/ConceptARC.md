@@ -1,4 +1,5 @@
 ---
+ready: true
 type: benchmark
 description: ARC 유사 과제를 16개 개념 계열로 묶은 벤치마크. 총점 하나에 가려지는 능력 프로파일을 개념 단위로 드러냅니다
 tags:

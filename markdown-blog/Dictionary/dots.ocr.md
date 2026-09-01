@@ -1,4 +1,5 @@
 ---
+ready: true
 type: tool
 description: 멀티언어 OCR 및 문서 파싱 플랫폼, 다국어 지원 강화
 tags:

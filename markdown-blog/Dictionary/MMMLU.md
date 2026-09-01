@@ -1,4 +1,5 @@
 ---
+ready: true
 type: benchmark
 description: "57과목을 14개 비영어 언어로 확장한 시험. Mythos 92.67%가 Opus 4.6(91.1%)를 앞서지만 상위권 격차는 1~2%p뿐이다"
 tags:

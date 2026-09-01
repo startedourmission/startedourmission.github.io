@@ -1,6 +1,7 @@
 ---
 type: concept
 date: 2026-08-11
+ready: true
 tags:
   - AI평가
 description: "이미지·영상·문서 파일에 출처와 수정 이력을 암호서명으로 실어나르는 개방 표준. Coalition for Content Provenance and Authenticity가 만들었고, 소비자 대상 이름은 Content Credentials입니다."

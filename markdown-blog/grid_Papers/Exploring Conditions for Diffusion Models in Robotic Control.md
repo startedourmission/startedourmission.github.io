@@ -1,5 +1,6 @@
 ---
 date: 2025-11-03
+ready: true
 tags:
   - 논문
 aliases:

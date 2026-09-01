@@ -1,6 +1,7 @@
 ---
 type: product
 date: 2026-05-18
+ready: true
 tags:
   - 정보
 description: "양방향 링크와 블록 단위 참조를 처음 대중화한 PKM 도구. 2020년 디지털 PKM 붐의 시작점이었습니다."

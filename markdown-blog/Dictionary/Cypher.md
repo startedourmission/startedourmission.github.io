@@ -1,6 +1,7 @@
 ---
 type: concept
 date: 2026-05-18
+ready: true
 tags:
   - 오픈소스
 description: "Neo4j가 만든 그래프 쿼리 언어. ASCII 아트 형태로 노드와 관계를 표현해 가독성이 높고, 현재는 openCypher·GQL 표준의 기반이 됩니다."

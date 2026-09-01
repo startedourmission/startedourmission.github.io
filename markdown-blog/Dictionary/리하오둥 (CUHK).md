@@ -1,4 +1,5 @@
 ---
+ready: true
 type: person
 description: "홍콩중문대학교 소속 연구자. 실행 가능한 Blender 코드를 영상 생성의 사고 사슬로 쓰는 VideoCoCo의 1저자이자 프로젝트 리더"
 tags:

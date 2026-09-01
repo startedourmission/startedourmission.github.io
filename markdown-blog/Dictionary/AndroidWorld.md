@@ -1,4 +1,5 @@
 ---
+ready: true
 type: benchmark
 description: "2024년 구글이 공개(arXiv:2405.14573, ICLR 2025)한 20개 앱 116개 태스크 환경으로, adb로 기기 상태를 직접 검사해 성공 여부를 판정한다"
 tags:

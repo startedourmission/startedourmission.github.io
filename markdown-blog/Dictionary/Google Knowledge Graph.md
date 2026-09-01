@@ -1,6 +1,7 @@
 ---
 type: product
 date: 2026-05-18
+ready: true
 tags:
   - LLM
 description: "구글이 2012년 도입한 대규모 Knowledge Graph. 검색 결과 우측 정보 패널과 음성 어시스턴트 답변의 기반입니다."

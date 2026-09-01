@@ -1,4 +1,5 @@
 ---
+ready: true
 type: tool
 description: Anthropic의 공식 터미널·IDE 기반 코딩 에이전트, Claude 모델을 셸과 코드 컨텍스트에 연결하는 CLI
 tags:

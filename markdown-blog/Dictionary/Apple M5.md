@@ -1,4 +1,5 @@
 ---
+ready: true
 type: hardware
 description: "Apple Silicon M5, 온디바이스 AI 추론, M4 대비 4배"
 tags:

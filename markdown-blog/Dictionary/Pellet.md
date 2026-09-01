@@ -1,6 +1,7 @@
 ---
 type: tool
 date: 2026-05-18
+ready: true
 tags:
   - 오픈소스
 description: "Clark & Parsia가 개발한 자바 기반 OWL DL 추론기. 산업 적용 사례가 많고 SWRL 규칙도 지원합니다."

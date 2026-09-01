@@ -1,4 +1,5 @@
 ---
+ready: true
 type: ai-model
 description: "중국 DeepSeek의 LLM 시리즈, 효율적 학습과 R1 추론 모델로 주목받음"
 tags:

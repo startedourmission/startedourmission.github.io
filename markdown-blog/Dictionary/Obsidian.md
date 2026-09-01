@@ -1,6 +1,7 @@
 ---
 type: tool
 date: 2026-05-18
+ready: true
 tags:
   - 정보
 description: "로컬 마크다운 파일 기반의 PKM 도구. 위키링크·그래프 뷰·플러그인 생태계로 Second Brain 구현의 대표 도구가 됐습니다."

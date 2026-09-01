@@ -1,4 +1,5 @@
 ---
+ready: true
 type: reference
 description: "머신러닝 분야 최대 규모의 국제 학회"
 tags:

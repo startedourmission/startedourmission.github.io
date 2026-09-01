@@ -1,4 +1,5 @@
 ---
+ready: true
 type: reference
 description: "2012년 ImageNet을 압도하며 딥러닝 시대를 연 합성곱 신경망"
 tags:

@@ -1,4 +1,5 @@
 ---
+ready: true
 type: tool
 description: "Anthropic의 팀 협업·자동화 워크스페이스, Claude 모델을 위키·문서·플러그인 워크플로우와 묶는 진입점"
 tags:

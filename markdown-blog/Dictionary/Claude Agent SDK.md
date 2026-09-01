@@ -1,4 +1,5 @@
 ---
+ready: true
 type: tool
 description: Anthropic의 공식 에이전트 SDK, Python·TypeScript로 Claude 기반 자동화·에이전트를 만들 때 쓰는 라이브러리
 tags:

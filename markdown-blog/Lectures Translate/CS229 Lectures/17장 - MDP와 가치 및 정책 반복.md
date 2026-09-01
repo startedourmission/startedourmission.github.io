@@ -7,6 +7,7 @@ author:
 series: "CS229 머신러닝 강의 (2018 가을)"
 chapter: 17
 date: 2026-03-28
+ready: true
 tags:
   - cs229
   - 머신러닝

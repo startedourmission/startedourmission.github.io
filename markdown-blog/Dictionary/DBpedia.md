@@ -1,6 +1,7 @@
 ---
 type: product
 date: 2026-05-18
+ready: true
 tags:
   - 오픈소스
 description: "위키피디아 인포박스에서 구조화 데이터를 자동 추출해 만든 Knowledge Graph. 시맨틱 웹 초기의 대표 프로젝트입니다."

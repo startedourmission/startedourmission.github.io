@@ -1,5 +1,6 @@
 ---
 date: 2026-05-06
+ready: true
 tags:
   - 정보
   - 딥러닝

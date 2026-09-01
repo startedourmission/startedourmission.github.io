@@ -1,5 +1,6 @@
 ---
 date: 2025-11-10
+ready: true
 tags:
   - 논문
   - 딥러닝

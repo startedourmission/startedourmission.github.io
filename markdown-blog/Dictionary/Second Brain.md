@@ -1,6 +1,7 @@
 ---
 type: concept
 date: 2026-05-18
+ready: true
 tags:
   - 정보
 description: "Tiago Forte가 대중화한 개인 지식 관리 방법론. 외부 도구에 생각·메모·아이디어를 축적해 두 번째 두뇌로 활용하는 접근입니다."

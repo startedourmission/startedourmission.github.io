@@ -1,6 +1,7 @@
 ---
 type: concept
 date: 2026-05-18
+ready: true
 tags:
   - LLM
 description: "실세계 개체와 관계에 의미를 입힌 그래프 형태의 지식 표현. 구글·위키데이터가 대표 사례이며, LLM 시대에 Graph RAG의 기반으로 다시 주목받고 있습니다."

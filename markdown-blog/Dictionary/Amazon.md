@@ -1,5 +1,6 @@
 ---
 date: 2026-06-15
+ready: true
 tags:
   - 회사
   - 전자상거래

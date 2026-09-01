@@ -1,4 +1,5 @@
 ---
+ready: true
 type: company
 description: "Tencent 산하 WeChat의 AI 연구조직. Pattern Recognition Center를 중심으로 NLP·기계번역·대화·검색 연구를 냅니다"
 tags:

@@ -1,5 +1,6 @@
 ---
 date: 2026-06-10
+ready: true
 tags:
   - 도구
   - 에이전트

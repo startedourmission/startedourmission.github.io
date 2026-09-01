@@ -1,5 +1,6 @@
 ---
 date: 2026-05-15
+ready: true
 tags:
   - 정보
   - AI평가

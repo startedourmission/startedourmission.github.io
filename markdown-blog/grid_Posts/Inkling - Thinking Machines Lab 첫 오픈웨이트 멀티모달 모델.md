@@ -1,5 +1,6 @@
 ---
 date: 2026-07-17
+ready: true
 tags:
   - 정보
   - LLM

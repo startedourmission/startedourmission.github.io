@@ -1,6 +1,7 @@
 ---
 type: concept
 date: 2026-05-18
+ready: true
 tags:
   - 오픈소스
 description: "Apache TinkerPop 프로젝트의 그래프 순회 언어. 함수형 체이닝 스타일로 그래프를 단계별로 탐색합니다."

@@ -1,4 +1,5 @@
 ---
+ready: true
 type: hardware
 description: "Microsoft 커스텀 AI 칩, TSMC 3nm, 216GB HBM3e"
 tags:

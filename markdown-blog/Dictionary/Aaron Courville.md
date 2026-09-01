@@ -1,4 +1,5 @@
 ---
+ready: true
 type: person
 description: 몬트리올 대학교 교수, Mila 공동 디렉터. Deep Learning 교과서 공저자.
 tags:

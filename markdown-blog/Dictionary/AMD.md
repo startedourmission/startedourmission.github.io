@@ -1,4 +1,5 @@
 ---
+ready: true
 type: company
 description: 미국 반도체 기업. EPYC CPU와 Instinct 가속기, ROCm 소프트웨어로 NVIDIA의 AI 데이터센터 점유율에 도전.
 tags:

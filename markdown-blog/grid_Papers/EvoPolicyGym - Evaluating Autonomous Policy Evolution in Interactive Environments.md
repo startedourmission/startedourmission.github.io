@@ -1,5 +1,6 @@
 ---
 date: 2026-07-04
+ready: true
 tags:
   - 논문
   - 강화학습

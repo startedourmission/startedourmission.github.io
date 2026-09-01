@@ -1,4 +1,5 @@
 ---
+ready: true
 type: tool
 description: 여러 LLM 에이전트가 대화하며 과제를 푸는 오픈소스 멀티에이전트 프레임워크. 현재는 AG2로 이어졌습니다
 tags:

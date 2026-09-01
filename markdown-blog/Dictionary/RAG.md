@@ -1,6 +1,7 @@
 ---
 type: concept
 date: 2026-04-10
+ready: true
 tags:
   - LLM
 aliases: Retrieval-Augmented Generation, 검색 증강 생성

@@ -1,4 +1,5 @@
 ---
+ready: true
 type: product
 description: "여러 프런티어 모델을 동적으로 지휘하는 Sakana AI의 멀티에이전트 오케스트레이션 시스템"
 tags:

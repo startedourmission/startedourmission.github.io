@@ -1,5 +1,6 @@
 ---
 date: 2026-03-13
+ready: true
 tags:
   - 논문
   - 베스트논문

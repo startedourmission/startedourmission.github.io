@@ -1,4 +1,5 @@
 ---
+ready: true
 type: reference
 description: "미국 매사추세츠의 세계 최정상 공과대학"
 tags:

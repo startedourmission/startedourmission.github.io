@@ -1,4 +1,5 @@
 ---
+ready: true
 type: benchmark
 description: "2020년 공개된 57과목 15900문항 지식 시험. 2026년 Gemini 3.1 Pro 94.3%로 상위권이 노이즈 수준까지 좁아져 outdated 취급을 받는다"
 tags:

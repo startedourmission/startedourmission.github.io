@@ -1,4 +1,5 @@
 ---
+ready: true
 type: hardware
 description: "웨이퍼 스케일 AI 칩, 4조 트랜지스터, 접시 크기"
 tags:

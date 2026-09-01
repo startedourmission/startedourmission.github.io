@@ -1,6 +1,7 @@
 ---
 type: product
 date: 2026-05-18
+ready: true
 tags:
   - 정보
 description: "블록 기반 협업 노트·문서·DB 도구. PKM과 팀 협업의 경계에 있으며 위키링크와 데이터베이스를 결합한 독자 모델을 갖습니다."

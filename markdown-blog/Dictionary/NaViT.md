@@ -1,4 +1,5 @@
 ---
+ready: true
 type: model
 description: Google Research의 동적 해상도 네이티브 비전 트랜스포머
 tags:

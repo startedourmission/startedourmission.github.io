@@ -1,4 +1,5 @@
 ---
+ready: true
 type: tool
 description: "SMB·중견 기업용 CRM·마케팅 자동화 SaaS, Claude for Small Business의 주력 커넥터로 캠페인·파이프라인 데이터 소스 역할"
 tags:

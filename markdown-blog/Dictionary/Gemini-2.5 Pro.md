@@ -1,4 +1,5 @@
 ---
+ready: true
 type: model
 description: Google DeepMind의 멀티모달 대규모 언어 모델, 장문맥·추론 강화
 tags:

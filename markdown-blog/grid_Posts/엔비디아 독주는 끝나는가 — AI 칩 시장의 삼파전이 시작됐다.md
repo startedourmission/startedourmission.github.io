@@ -1,5 +1,6 @@
 ---
 date: 2026-04-06
+ready: true
 tags:
   - 정보
 

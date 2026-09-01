@@ -1,4 +1,5 @@
 ---
+ready: true
 type: company
 description: "구글의 딥러닝 연구 조직, 2023년 DeepMind와 통합"
 tags:

@@ -1,6 +1,7 @@
 ---
 type: company
 date: 2026-05-08
+ready: true
 tags:
   - LLM
 aliases:

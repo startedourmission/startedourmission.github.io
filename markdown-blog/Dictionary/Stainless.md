@@ -1,6 +1,7 @@
 ---
 type: company
 date: 2026-05-19
+ready: true
 tags:
   - 정보
 description: "OpenAPI 스펙에서 다국어 SDK를 자동 생성해 주는 개발자 도구 회사. 2022년 Alex Rattray가 창업했고 2026년 5월 Anthropic에 인수되었습니다."

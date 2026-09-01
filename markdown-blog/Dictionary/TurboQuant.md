@@ -1,4 +1,5 @@
 ---
+ready: true
 type: ai-model
 description: "Google Research의 KV cache 6× 압축 알고리즘, ICLR 2026 발표, 학습 없이 3-bit 양자화에 정확도 손실 zero"
 tags:

@@ -1,4 +1,5 @@
 ---
+ready: true
 type: company
 description: 모델 가중치를 트랜지스터에 직접 배선하는 모델 전용 추론 칩 스타트업. 2026년 8월 AMD에 인수.
 tags:

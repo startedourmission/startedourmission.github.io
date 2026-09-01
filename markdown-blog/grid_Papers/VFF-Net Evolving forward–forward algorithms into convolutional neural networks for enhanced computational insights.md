@@ -2,6 +2,7 @@
 aliases:
   - VFF-Net: Evolving forward–forward algorithms into convolutional neural networks for enhanced computational insights
 date: 2025-10-20
+ready: true
 tags:
   - 논문
   - LLM

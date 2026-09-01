@@ -1,4 +1,5 @@
 ---
+ready: true
 type: company
 description: "Elon Musk가 2023년 설립한 미국 AI 기업, Grok 시리즈와 Colossus 클러스터 운영"
 tags:

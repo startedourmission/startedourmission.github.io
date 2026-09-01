@@ -1,5 +1,6 @@
 ---
 date: 2025-10-30
+ready: true
 tags:
   - 논문
   - 데이터분석

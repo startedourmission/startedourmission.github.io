@@ -1,6 +1,7 @@
 ---
 type: tool
 date: 2026-08-28
+ready: true
 tags:
   - 도구
   - 오픈소스

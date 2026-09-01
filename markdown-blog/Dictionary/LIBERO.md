@@ -1,5 +1,6 @@
 ---
 date: 2026-06-29
+ready: true
 tags:
   - 머신러닝
 type: benchmark

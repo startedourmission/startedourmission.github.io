@@ -1,4 +1,5 @@
 ---
+ready: true
 type: product
 description: "Palantir Foundry 위에 얹는 AI 운영 평면. LLM·에이전트·평가·자동화를 온톨로지·액션과 묶어 운영"
 tags:

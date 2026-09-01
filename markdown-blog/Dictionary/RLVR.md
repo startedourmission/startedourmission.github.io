@@ -1,4 +1,5 @@
 ---
+ready: true
 type: concept
 description: Reinforcement Learning with Verifiable Rewards. 정답을 결정론적으로 확인할 수 있는 영역에서 검증자 신호로 정책을 최적화하는 학습 패러다임
 tags:

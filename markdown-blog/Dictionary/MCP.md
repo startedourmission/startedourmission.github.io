@@ -1,6 +1,7 @@
 ---
 type: concept
 date: 2026-05-07
+ready: true
 tags:
   - LLM
   - 에이전트

@@ -1,6 +1,7 @@
 ---
 type: tool
 date: 2026-05-18
+ready: true
 tags:
   - 정보
   - 오픈소스

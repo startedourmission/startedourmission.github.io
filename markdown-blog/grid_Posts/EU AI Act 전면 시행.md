@@ -1,5 +1,6 @@
 ---
 date: 2026-04-11
+ready: true
 tags:
   - 정보
 description: "EU AI Act 전면 시행 — 2026년 3월부터 적용된 세계 최초 포괄적 AI 규제법. 투명성, 안전성, 위험 분류 요구사항과 OpenAI/Anthropic/Google의 대응."

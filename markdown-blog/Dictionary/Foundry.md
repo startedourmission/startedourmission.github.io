@@ -1,4 +1,5 @@
 ---
+ready: true
 type: product
 description: "데이터 통합·온톨로지·앱 빌딩·AI 운영을 하나의 거버넌스 평면에 묶은 팔란티어의 엔터프라이즈 운영 OS"
 tags:

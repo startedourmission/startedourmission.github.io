@@ -1,5 +1,6 @@
 ---
 date: 2026-04-09
+ready: true
 tags:
   - 정보
 description: Anthropic이 발표한 Claude Managed Agents 퍼블릭 베타. 에이전트 인프라를 통째로 맡기고, 프로토타입에서 프로덕션까지 수일 만에 가능하게 합니다.

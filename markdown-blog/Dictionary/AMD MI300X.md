@@ -1,4 +1,5 @@
 ---
+ready: true
 type: hardware
 description: "AMD CDNA-3 AI 가속기, 192GB HBM3"
 tags:

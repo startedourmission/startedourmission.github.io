@@ -1,4 +1,5 @@
 ---
+ready: true
 type: company
 description: "로봇 조작 데이터 생산 시스템 HiFi-UMI와 2,000시간 공개 데이터셋 HiFi-UMI-2K를 낸 로봇 학습 조직"
 tags:

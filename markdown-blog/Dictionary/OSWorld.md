@@ -1,4 +1,5 @@
 ---
+ready: true
 type: benchmark
 description: "실제 Ubuntu VM에서 GUI를 조작하는 시험. Mythos 79.6%가 인간 기준선 72.4%를 넘어선 드문 사례다"
 tags:

@@ -1,5 +1,6 @@
 ---
 date: 2026-08-22
+ready: true
 tags:
   - 논문
   - 에이전트

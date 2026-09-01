@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1788250648878-x8ef09n5o",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788250648998-0bye9yg",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1788250648871-7ptt3ej",
+      "timestamp": 1788250648871,
+      "rawDisplayText": "ㅎㅇ",
+      "canonicalText": "ㅎㅇ",
+      "images": [],
+      "contentDigest": "ff1b35867eecd2eb5dcce4fcdb339cfaf83dbd2e528a42c491073da393aff1a1",
+      "providerUserMessageId": "60b312c6-8a7d-4b5b-9c48-638387f77b22",
+      "providerAssistantMessageId": "b978b473-1baa-42ca-9d68-bcdefc663799"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788250701273-jmblwdb",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1788250701264-5er101d",
+      "timestamp": 1788250701264,
+      "rawDisplayText": "지금 블로그 게시물 중 올라가있는건 다 레디 체크해",
+      "canonicalText": "지금 블로그 게시물 중 올라가있는건 다 레디 체크해",
+      "images": [],
+      "contentDigest": "6d3d9dd020229d17e75bc515197a651e65309e14edfdb56cc373b2f206d0bbf8",
+      "providerUserMessageId": "f4570341-a560-47a9-b132-a9d3129a9e80",
+      "providerAssistantMessageId": "aa56bd46-361c-4a58-8d98-b632a8d10128"
+    }
+  ]
+}

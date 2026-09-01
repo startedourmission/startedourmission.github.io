@@ -1,6 +1,7 @@
 ---
 type: concept
 date: 2026-05-18
+ready: true
 tags:
   - 정보
 description: "Personal Knowledge Management. 개인이 정보를 수집·정리·연결·재사용하는 체계와 도구 전반. Second Brain·Zettelkasten 등이 대표 접근법입니다."

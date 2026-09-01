@@ -1,6 +1,7 @@
 ---
 type: concept
 date: 2026-04-10
+ready: true
 tags:
   - 머신러닝
 aliases: 주성분 분석, Principal Component Analysis

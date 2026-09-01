@@ -1,4 +1,5 @@
 ---
+ready: true
 type: company
 description: "독일 아우크스부르크의 산업용 로봇 기업. 2016년 중국 Midea에 인수됐고, 오렌지색 로봇 팔로 자동차 생산 라인에서 널리 쓰입니다"
 tags:

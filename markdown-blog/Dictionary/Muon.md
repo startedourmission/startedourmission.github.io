@@ -1,4 +1,5 @@
 ---
+ready: true
 type: tool
 description: "행렬형 파라미터의 업데이트를 직교화해 적용하는 옵티마이저. AdamW보다 빠르게 수렴해 2025년 이후 대규모 사전학습에서 채택이 늘었다"
 tags:

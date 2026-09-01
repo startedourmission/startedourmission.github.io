@@ -1,6 +1,7 @@
 ---
 type: tool
 date: 2026-05-18
+ready: true
 tags:
   - LLM
   - 오픈소스

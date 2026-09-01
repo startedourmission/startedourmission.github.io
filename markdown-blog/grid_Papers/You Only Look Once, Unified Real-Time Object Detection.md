@@ -1,5 +1,6 @@
 ---
 date: 2025-09-02
+ready: true
 tags:
   - 논문
   - Headliner

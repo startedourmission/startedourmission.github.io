@@ -1,4 +1,5 @@
 ---
+ready: true
 type: concept
 description: 회전 위치 임베딩(RoPE)의 1차원 변형, 선형 토큰 시퀀스 위치 인코딩
 tags:

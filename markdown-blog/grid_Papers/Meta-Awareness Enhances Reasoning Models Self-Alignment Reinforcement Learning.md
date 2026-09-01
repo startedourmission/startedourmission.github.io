@@ -2,6 +2,7 @@
 aliases:
   - Meta-Awareness Enhances Reasoning Models: Self-Alignment Reinforcement Learning
 date: 2025-10-13
+ready: true
 tags:
   - 논문
   - LLM

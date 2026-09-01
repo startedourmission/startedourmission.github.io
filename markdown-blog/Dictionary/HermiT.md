@@ -1,6 +1,7 @@
 ---
 type: tool
 date: 2026-05-18
+ready: true
 tags:
   - 오픈소스
 description: "옥스퍼드 대학교가 개발한 OWL 2 DL 추론기. 하이퍼태블로(hypertableau) 알고리즘 기반으로 대규모 온톨로지에서도 빠릅니다."

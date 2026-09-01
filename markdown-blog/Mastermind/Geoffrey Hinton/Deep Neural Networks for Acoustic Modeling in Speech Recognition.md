@@ -1,5 +1,6 @@
 ---
 date: 2026-04-11
+ready: true
 tags:
   - 논문
   - 제프리힌턴

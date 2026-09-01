@@ -1,4 +1,5 @@
 ---
+ready: true
 type: tool
 description: "전 세계 1위 전자서명 SaaS, 계약·문서 워크플로우의 표준 도구이자 Claude for Small Business의 부가 커넥터"
 tags:

@@ -1,4 +1,5 @@
 ---
+ready: true
 type: tool
 description: "Codeium이 개발한 AI 에디터, Cascade 에이전트 모드로 Cursor와 경쟁"
 tags:

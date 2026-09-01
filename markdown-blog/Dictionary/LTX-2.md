@@ -1,4 +1,5 @@
 ---
+ready: true
 type: ai-model
 description: Lightricks가 공개한 19B 파라미터 규모의 joint audio-video foundation model. asymmetric dual-stream(비디오·오디오) 구조에 bidirectional cross-attention으로 modality imbalance를 처리. OmniNFT의 backbone으로 사용됨.
 tags:

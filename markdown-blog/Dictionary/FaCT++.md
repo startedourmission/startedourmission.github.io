@@ -1,6 +1,7 @@
 ---
 type: tool
 date: 2026-05-18
+ready: true
 tags:
   - 오픈소스
 description: "맨체스터 대학교가 개발한 C++ 기반 OWL DL 추론기. C++로 작성되어 자바 기반 추론기보다 빠른 경우가 많습니다."

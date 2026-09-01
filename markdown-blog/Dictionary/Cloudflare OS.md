@@ -1,4 +1,5 @@
 ---
+ready: true
 type: product
 description: Cloudflare Workers 위에 올린 오픈소스 에이전트 워크스페이스. 문서나 앱 인스턴스마다 별도 샌드박스(Gadget)를 띄우고, 외부 시스템 접근은 게이트키퍼 Worker가 중개합니다. 2026년 8월 5일 Apache 2.0으로 공개됐습니다.
 tags:

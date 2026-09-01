@@ -1,4 +1,5 @@
 ---
+ready: true
 type: benchmark
 description: "89개 터미널 복합 과제 평가. Mythos가 수정·연장 기회를 받으면 82%에서 92.1%까지 오르며 자체 교정력을 드러냈다"
 tags:

@@ -1,6 +1,7 @@
 ---
 type: concept
 date: 2026-05-18
+ready: true
 tags:
   - 오픈소스
 description: "RDF 데이터를 위한 W3C 표준 쿼리 언어. SQL과 비슷한 문법으로 트리플 패턴을 매칭해 시맨틱 웹·온톨로지 생태계의 사실상 표준입니다."

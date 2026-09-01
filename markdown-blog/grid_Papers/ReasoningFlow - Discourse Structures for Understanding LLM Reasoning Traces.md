@@ -1,5 +1,6 @@
 ---
 date: 2026-06-08
+ready: true
 tags:
   - 논문
   - 추론

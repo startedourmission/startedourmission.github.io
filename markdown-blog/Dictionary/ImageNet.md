@@ -1,4 +1,5 @@
 ---
+ready: true
 type: benchmark
 description: "2012년 AlexNet이 top-5 오류율을 전년도 26.2%에서 15.3%로 낮추며 딥러닝 시대를 연 이미지 인식 챌린지"
 tags:

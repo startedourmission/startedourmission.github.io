@@ -1,4 +1,5 @@
 ---
+ready: true
 type: company
 description: "Facebook·Instagram·WhatsApp·Threads·Quest의 모회사, Llama 오픈소스 노선을 끝내고 Muse Spark로 사유 AI 경쟁에 본격 진입"
 tags:

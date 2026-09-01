@@ -1,5 +1,6 @@
 ---
 date: 2026-04-20
+ready: true
 tags:
   - 정보
 description: "서드파티 AI 도구의 OAuth 앱이 뚫리면서 Vercel 내부 시스템까지 번진 사고. 무엇이 노출됐고, 우리는 무엇을 해야 할까요."

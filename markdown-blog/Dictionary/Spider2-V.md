@@ -1,4 +1,5 @@
 ---
+ready: true
 type: dataset
 description: 비전 기반 SQL 질문응답 벤치마크, 텍스트-이미지-테이블 결합
 tags:

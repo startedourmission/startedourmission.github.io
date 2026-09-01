@@ -1,4 +1,5 @@
 ---
+ready: true
 type: ai-model
 description: "ByteDance(틱톡 모회사)가 개발하는 LLM 시리즈, 중국 내 최대 사용자 챗봇"
 tags:

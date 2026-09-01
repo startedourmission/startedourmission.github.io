@@ -1,4 +1,5 @@
 ---
+ready: true
 type: tool
 description: "Anysphere의 AI 코드 에디터, 바이브 코딩 시대의 대표 IDE"
 tags:

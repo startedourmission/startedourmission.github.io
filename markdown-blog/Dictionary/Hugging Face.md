@@ -1,4 +1,5 @@
 ---
+ready: true
 type: company
 description: "모델·데이터셋·데모를 공유하는 오픈소스 AI 허브. transformers 라이브러리와 Daily Papers로 사실상의 AI 연구 유통 인프라가 됐습니다"
 tags:

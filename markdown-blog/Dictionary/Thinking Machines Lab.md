@@ -1,4 +1,5 @@
 ---
+ready: true
 type: company
 description: "OpenAI 전 CTO Mira Murati가 2025년 설립한 AI 연구소, LLM 추론 비결정성 규명으로 알려짐"
 tags:

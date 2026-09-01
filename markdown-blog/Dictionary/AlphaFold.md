@@ -1,4 +1,5 @@
 ---
+ready: true
 type: ai-model
 description: 단백질 3D 구조를 아미노산 서열만으로 예측하는 Google DeepMind의 AI, 2024년 노벨 화학상의 근거
 tags:

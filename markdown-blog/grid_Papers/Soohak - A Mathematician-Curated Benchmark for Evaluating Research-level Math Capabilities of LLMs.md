@@ -1,5 +1,6 @@
 ---
 date: 2026-05-13
+ready: true
 tags:
   - 논문
   - 벤치마크

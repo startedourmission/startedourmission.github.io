@@ -1,4 +1,5 @@
 ---
+ready: true
 type: reference
 description: "스위스의 세계적 공과대학"
 tags:

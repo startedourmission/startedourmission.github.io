@@ -1,4 +1,5 @@
 ---
+ready: true
 type: ai-model
 description: "Tencent의 자체 LLM 시리즈, MoE 기반 대규모 모델로 텐센트 제품군에 통합"
 tags:

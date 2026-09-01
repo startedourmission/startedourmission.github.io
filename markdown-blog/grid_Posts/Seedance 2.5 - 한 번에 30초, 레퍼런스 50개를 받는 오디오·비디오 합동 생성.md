@@ -1,5 +1,6 @@
 ---
 date: 2026-08-03
+ready: true
 tags:
   - 정보
   - 멀티모달

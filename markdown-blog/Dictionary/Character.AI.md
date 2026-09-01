@@ -1,4 +1,5 @@
 ---
+ready: true
 type: reference
 description: Noam Shazeer와 Daniel De Freitas가 2021년 창업한 대화형 캐릭터 챗봇 서비스
 tags:

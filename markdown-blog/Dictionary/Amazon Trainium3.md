@@ -1,4 +1,5 @@
 ---
+ready: true
 type: hardware
 description: "AWS 커스텀 AI 칩, 128GB HBM3e, UltraServer 144칩"
 tags:

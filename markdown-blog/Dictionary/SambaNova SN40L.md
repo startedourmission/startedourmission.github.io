@@ -1,4 +1,5 @@
 ---
+ready: true
 type: hardware
 description: "SambaNova Reconfigurable Dataflow Unit, 엔터프라이즈 추론"
 tags:

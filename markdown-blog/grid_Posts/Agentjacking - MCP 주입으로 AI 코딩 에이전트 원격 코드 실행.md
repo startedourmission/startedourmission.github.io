@@ -1,5 +1,6 @@
 ---
 date: 2026-06-19
+ready: true
 tags:
   - 정보
   - 에이전트

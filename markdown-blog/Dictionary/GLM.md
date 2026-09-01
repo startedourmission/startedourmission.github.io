@@ -1,4 +1,5 @@
 ---
+ready: true
 type: ai-model
 description: "Zhipu AI(智谱)의 LLM 시리즈, 칭화대 스핀오프가 개발하는 중국 모델"
 tags:

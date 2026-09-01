@@ -1,4 +1,5 @@
 ---
+ready: true
 type: benchmark
 description: "PDF·XLSX·PPTX 파일을 그대로 입력받아 학문적 지식이 아닌 실제 오피스 업무 처리력을 재는 평가"
 tags:

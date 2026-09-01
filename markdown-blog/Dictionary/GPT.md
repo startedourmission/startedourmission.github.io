@@ -1,4 +1,5 @@
 ---
+ready: true
 type: ai-model
 description: "OpenAI의 생성형 사전학습 트랜스포머 언어 모델 시리즈"
 tags:

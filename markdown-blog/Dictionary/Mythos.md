@@ -1,6 +1,7 @@
 ---
 type: ai-model
 date: 2026-06-10
+ready: true
 tags:
   - LLM
 description: "Anthropic의 Mythos급 AI 모델 시리즈. 고급 사이버보안 능력으로 일반 공개가 제한되며, 일반용 버전은 Claude Fable로 제공된다."

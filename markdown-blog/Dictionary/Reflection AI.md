@@ -1,6 +1,7 @@
 ---
 type: company
 date: 2026-06-28
+ready: true
 description: 전 Google DeepMind 연구자 Misha Laskin과 Ioannis Antonoglou가 2024년 공동 창업한 미국 오픈소스 프런티어 AI 연구소. DeepSeek에 대항하는 미국의 오픈 AI 허브를 표방하며 기업가치 250억 달러에 이릅니다.
 tags:
   - LLM

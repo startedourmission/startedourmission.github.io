@@ -1,4 +1,5 @@
 ---
+ready: true
 type: company
 description: "검색·광고에서 출발해 AI 연구를 선도하는 미국 빅테크, 알파벳 자회사"
 tags:

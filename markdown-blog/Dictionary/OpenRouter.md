@@ -1,4 +1,5 @@
 ---
+ready: true
 type: product
 description: 여러 LLM 제공자를 하나의 API로 묶어 라우팅하는 게이트웨이. 2026년 8월 Stripe가 70억 달러 이상에 인수
 tags:

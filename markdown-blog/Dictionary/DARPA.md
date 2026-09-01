@@ -1,4 +1,5 @@
 ---
+ready: true
 type: company
 description: "미국 국방고등연구계획국, 인터넷·자율주행 등 첨단 기술의 산실"
 tags:

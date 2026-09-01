@@ -1,4 +1,5 @@
 ---
+ready: true
 type: hardware
 description: "H100 후속, 141GB HBM3e 추론 최적화 GPU"
 tags:

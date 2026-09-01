@@ -1,4 +1,5 @@
 ---
+ready: true
 type: company
 description: 파리에 본사를 둔 AI 에이전트 스타트업. Runner H와 Holo 컴퓨터 유즈 VLM 라인업을 만든다
 tags:

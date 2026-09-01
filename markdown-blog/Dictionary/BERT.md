@@ -1,4 +1,5 @@
 ---
+ready: true
 type: ai-model
 description: "양방향 트랜스포머 인코더로 NLP 전반을 끌어올린 구글의 사전학습 언어 모델"
 tags:

@@ -1,4 +1,5 @@
 ---
+ready: true
 type: benchmark
 description: "2023년 공개 MMMU(11500문항)의 강화판. 선택지 10개와 Vision-only 모드로 순수 텍스트 단서를 걷어냈다"
 tags:

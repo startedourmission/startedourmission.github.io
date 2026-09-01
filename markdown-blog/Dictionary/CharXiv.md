@@ -1,4 +1,5 @@
 ---
+ready: true
 type: benchmark
 description: "1,000문항 차트 이해 평가에서 Mythos는 도구 없이 86.1%, 도구 사용 시 93.2%를 기록해 Opus 4.6(61.5%/78.9%)을 크게 앞섰다"
 tags:

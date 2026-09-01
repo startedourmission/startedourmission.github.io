@@ -1,4 +1,5 @@
 ---
+ready: true
 type: reference
 description: "미국 캘리포니아 로스앤젤레스의 명문 공립대"
 tags:

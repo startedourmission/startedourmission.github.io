@@ -5,6 +5,7 @@ original_author: "Fiona Fung (Director of Engineering, Claude Code)"
 translator: "Claude"
 published: 2026-05-09
 date: 2026-05-13
+ready: true
 tags:
   - 정보
 description: "에이전트 코딩이 개인 도구를 넘어 조직 전체의 기본값이 되면, 어려운 건 도구가 아니라 프로세스다. Claude Code 엔지니어링 디렉터 Fiona Fung이 Anthropic에서 무엇이 깨졌고(리뷰, 오너십, 채용), 계속 출시하기 위해 어떤 규범을 다시 썼는지 풀어놓는다."

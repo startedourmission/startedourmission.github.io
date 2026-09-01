@@ -1,4 +1,5 @@
 ---
+ready: true
 type: benchmark
 description: "2016년 스탠퍼드 공개, 2.0은 15만 문항 규모. 2018년 BERT가 사람 상한을 넘기며 이후 LLM엔 완전 포화됐다"
 tags:

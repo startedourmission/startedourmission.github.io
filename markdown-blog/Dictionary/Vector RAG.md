@@ -1,6 +1,7 @@
 ---
 type: concept
 date: 2026-05-18
+ready: true
 tags:
   - LLM
 description: "임베딩 벡터 유사도로 문서를 검색해 LLM에 컨텍스트로 넘기는 가장 일반적인 RAG 형태. 단순하고 빠르지만 다단계 관계 질문에 약합니다."

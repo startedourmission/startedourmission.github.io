@@ -1,4 +1,5 @@
 ---
+ready: true
 type: company
 description: mindlab.ltd 소속 AI 연구 집단. LoRA 기반 퍼스널 모델 인프라 MinT와 PEFT 스케일링 프레임워크를 개발.
 tags:

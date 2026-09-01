@@ -1,4 +1,5 @@
 ---
+ready: true
 type: company
 description: "도쿄에 본사를 둔 일본 AI 기업, 진화·집단지능 기반 AI 연구로 알려짐"
 tags:

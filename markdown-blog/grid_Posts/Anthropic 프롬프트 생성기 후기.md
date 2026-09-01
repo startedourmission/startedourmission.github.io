@@ -1,5 +1,6 @@
 ---
 date: 2025-06-30
+ready: true
 tags:
   - 잡담
 aliases:

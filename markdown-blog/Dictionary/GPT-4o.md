@@ -1,4 +1,5 @@
 ---
+ready: true
 type: model
 description: OpenAI의 멀티모달 대규모 언어 모델, 텍스트·이미지·음성 이해 능력 제공
 tags:

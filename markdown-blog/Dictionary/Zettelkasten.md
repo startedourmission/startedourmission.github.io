@@ -1,6 +1,7 @@
 ---
 type: concept
 date: 2026-05-18
+ready: true
 tags:
   - 정보
 description: "Niklas Luhmann이 평생 사용한 종이 카드 기반 노트 시스템. 고유 번호와 상호 참조로 노트를 연결하는 구조가 디지털 PKM의 원형이 됐습니다."

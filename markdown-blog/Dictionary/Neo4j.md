@@ -1,6 +1,7 @@
 ---
 type: tool
 date: 2026-05-18
+ready: true
 tags:
   - 오픈소스
 description: "관계를 일급 시민으로 다루는 대표 그래프 데이터베이스. Cypher 쿼리 언어와 함께 사용되며 Knowledge Graph·Graph RAG 구현의 사실상 표준입니다."

@@ -1,4 +1,5 @@
 ---
+ready: true
 type: benchmark
 description: "2019년 공개 당시 인간 95.6%, GPT-2 48%였던 상식 추론 시험. 2022년 이후 LLM이 95%를 넘기며 포화됐다"
 tags:

@@ -1,6 +1,7 @@
 ---
 type: concept
 date: 2026-05-18
+ready: true
 tags:
   - LLM
 description: "문서에서 추출한 엔티티·관계로 그래프를 구성한 뒤, LLM이 그래프 기반 검색으로 답변하게 만드는 RAG 변종. Microsoft GraphRAG가 2024년 대중화시켰습니다."

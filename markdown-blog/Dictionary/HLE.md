@@ -1,4 +1,5 @@
 ---
+ready: true
 type: benchmark
 description: "2500문항 초고난도 시험. Mythos가 도구 사용 시 64.7%로 Opus 4.6(53.1%)를 앞섰지만 65%를 못 넘겼다"
 tags:

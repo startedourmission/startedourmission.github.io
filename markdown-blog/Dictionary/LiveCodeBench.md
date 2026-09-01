@@ -1,4 +1,5 @@
 ---
+ready: true
 type: benchmark
 description: "2024년 공개. 모델 출시 이후 나온 코딩 컨테스트 문제만 골라 써서 훈련 데이터 오염을 구조적으로 차단한다"
 tags:

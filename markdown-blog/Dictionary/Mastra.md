@@ -1,4 +1,5 @@
 ---
+ready: true
 type: tool
 description: JavaScript·TypeScript용 오픈소스 AI 에이전트 프레임워크. 워크플로·메모리·RAG·도구 호출을 묶어 에이전트를 만든다. 2026년 6월 npm 공급망 공격 표적
 tags:

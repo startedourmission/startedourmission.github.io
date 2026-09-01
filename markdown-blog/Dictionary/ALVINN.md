@@ -1,6 +1,7 @@
 ---
 type: ai-model
 date: 2026-04-10
+ready: true
 tags:
   - 머신러닝
   - 컴퓨터비전

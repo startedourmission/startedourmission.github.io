@@ -1,4 +1,5 @@
 ---
+ready: true
 type: person
 description: 알리바바 AMAP CV Lab의 Foundation Model 팀을 이끄는 연구원으로 ABot-World-0 1저자이며 영상 생성·월드 모델·임바디드 AI를 연구
 tags:

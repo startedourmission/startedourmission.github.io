@@ -1,4 +1,5 @@
 ---
+ready: true
 type: concept
 description: Group Relative Policy Optimization. 가치 함수 없이 그룹 내 상대 보상으로 정책을 갱신하는 강화학습 기법
 tags:

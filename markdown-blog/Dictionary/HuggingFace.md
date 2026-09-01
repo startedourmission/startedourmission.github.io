@@ -1,4 +1,5 @@
 ---
+ready: true
 type: company
 description: 모델·데이터셋·데모를 공유하는 머신러닝 허브이자 transformers 등 오픈소스 라이브러리를 만드는 회사
 tags:

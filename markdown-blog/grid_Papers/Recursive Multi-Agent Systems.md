@@ -1,5 +1,6 @@
 ---
 date: 2026-04-30
+ready: true
 tags:
   - 정보
   - Headliner

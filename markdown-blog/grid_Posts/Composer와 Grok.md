@@ -1,5 +1,6 @@
 ---
 date: 2026-06-18
+ready: true
 tags:
   - 정보
   - 도구

@@ -1,4 +1,5 @@
 ---
+ready: true
 type: company
 description: "홍콩중문대 출신이 창업한 중국 컴퓨터비전 AI 기업, 상탕테크놀로지"
 tags:

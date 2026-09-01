@@ -1,4 +1,5 @@
 ---
+ready: true
 type: ai-model
 description: "Anthropic의 대화형 AI, 안전성과 길이 추론에 강점을 둔 LLM 시리즈"
 tags:

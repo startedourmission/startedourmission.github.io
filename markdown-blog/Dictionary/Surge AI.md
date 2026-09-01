@@ -1,4 +1,5 @@
 ---
+ready: true
 type: company
 description: "RLHF용 인간 피드백과 강화학습 환경을 프런티어 랩에 공급하는 미국 데이터 회사. 외부 투자 없이 매출 10억 달러를 넘겼다"
 tags:

@@ -1,4 +1,5 @@
 ---
+ready: true
 type: hardware
 description: "NVIDIA Hopper 아키텍처 AI 훈련/추론 표준 GPU"
 tags:

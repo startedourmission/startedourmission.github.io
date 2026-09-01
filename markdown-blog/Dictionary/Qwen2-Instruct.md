@@ -1,4 +1,5 @@
 ---
+ready: true
 type: model
 description: Alibaba Qwen 시리즈의 경량 언어 모델, 명령어 튜닝 버전
 tags:

@@ -1,4 +1,5 @@
 ---
+ready: true
 type: tool
 description: "Next.js 개발사이자 프런트엔드 배포 플랫폼, AI 시대 풀스택 인프라로 확장"
 tags:

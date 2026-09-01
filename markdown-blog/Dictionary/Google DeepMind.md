@@ -1,4 +1,5 @@
 ---
+ready: true
 type: company
 description: "Google과 DeepMind가 합쳐진 AI 연구 조직, Gemini 시리즈 개발 주체"
 tags:

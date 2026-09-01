@@ -1,5 +1,6 @@
 ---
 date: 2026-06-27
+ready: true
 tags:
   - 정보
   - 반도체

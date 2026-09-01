@@ -1,5 +1,6 @@
 ---
 date: 2026-07-18
+ready: true
 tags:
   - 잡담
   - AI평가

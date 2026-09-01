@@ -1,4 +1,5 @@
 ---
+ready: true
 type: ai-model
 description: "카카오가 만드는 한국어·영어 이중언어 모델 시리즈. 2.1B부터 155B MoE까지 확장됐고 상당수가 오픈웨이트로 공개됐다"
 tags:

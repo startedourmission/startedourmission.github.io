@@ -1,4 +1,5 @@
 ---
+ready: true
 type: concept
 description: Joint-Embedding Predictive Architecture. 원 감각 신호를 재구성하는 대신 학습된 잠재 공간에서 예측하는 자기지도 학습 원리
 tags:

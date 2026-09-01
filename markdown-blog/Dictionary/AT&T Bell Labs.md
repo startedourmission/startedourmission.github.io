@@ -1,4 +1,5 @@
 ---
+ready: true
 type: reference
 description: "트랜지스터·정보이론을 낳은 전설적 산업 연구소"
 tags:

@@ -1,4 +1,5 @@
 ---
+ready: true
 type: reference
 description: "미국 캘리포니아의 명문 공립 연구중심대학"
 tags:

@@ -1,4 +1,5 @@
 ---
+ready: true
 type: benchmark
 description: "256K~1M 토큰 컨텍스트 내 BFS 탐색 과제에서 Mythos는 80.0%를 기록해 Opus 4.6(38.7%)과 GPT-5.4(21.4%)를 큰 폭으로 앞섰다"
 tags:

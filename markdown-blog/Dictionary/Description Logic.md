@@ -1,6 +1,7 @@
 ---
 type: concept
 date: 2026-05-18
+ready: true
 tags:
   - LLM
 description: "1차 술어 논리의 결정가능한 부분집합. 온톨로지의 형식 기반이자 OWL DL의 수학적 토대입니다."

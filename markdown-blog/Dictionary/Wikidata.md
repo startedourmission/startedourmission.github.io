@@ -1,6 +1,7 @@
 ---
 type: product
 date: 2026-05-18
+ready: true
 tags:
   - 오픈소스
 description: "위키미디어 재단이 운영하는 공개 협업 Knowledge Graph. 1억 개 이상의 항목을 담고 있으며 SPARQL로 누구나 쿼리 가능합니다."

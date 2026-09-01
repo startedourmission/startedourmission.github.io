@@ -1,4 +1,5 @@
 ---
+ready: true
 type: benchmark
 description: "2021년 OpenAI가 Codex 논문과 함께 공개한 164문항 코딩 시험. 2026년 GPT-5.4가 93.1%로 상단을 압축시켰다"
 tags:

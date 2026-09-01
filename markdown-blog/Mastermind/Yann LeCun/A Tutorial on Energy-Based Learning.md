@@ -1,5 +1,6 @@
 ---
 date: 2026-05-26
+ready: true
 tags:
   - 논문
   - 얀르쿤

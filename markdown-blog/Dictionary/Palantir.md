@@ -1,4 +1,5 @@
 ---
+ready: true
 type: company
 description: "정부·방산·대기업을 대상으로 데이터·AI 운영 플랫폼을 만드는 미국 기업. Gotham·Foundry·AIP 3대 제품 라인"
 tags:

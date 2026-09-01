@@ -1,5 +1,6 @@
 ---
 date: 2025-10-22
+ready: true
 tags:
   - 논문
   - 컴퓨터비전

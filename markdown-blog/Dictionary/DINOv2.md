@@ -1,4 +1,5 @@
 ---
+ready: true
 type: ai-model
 description: Meta AI가 공개한 자기지도 시각 표현 학습 모델. 라벨 없이 학습한 특징을 다운스트림 과제에 얼린 채로 재사용할 수 있습니다
 tags:

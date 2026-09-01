@@ -1,5 +1,6 @@
 ---
 date: 2026-06-15
+ready: true
 tags:
   - 회사
   - 자동차

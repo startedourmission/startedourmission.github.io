@@ -1,4 +1,5 @@
 ---
+ready: true
 type: tool
 description: 중국발 멀티모달 문서 파싱 플랫폼, 다양한 크기의 특화 모델 제공
 tags:

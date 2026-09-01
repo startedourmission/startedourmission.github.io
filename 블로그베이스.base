@@ -29,7 +29,7 @@ views:
     filters:
       and:
         - file.inFolder("markdown-blog/grid_Posts")
-        - ready != true
+        - ready == false
         - and:
             - "!file.tags.isEmpty()"
     order:

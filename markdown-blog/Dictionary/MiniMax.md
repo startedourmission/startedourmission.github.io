@@ -1,4 +1,5 @@
 ---
+ready: true
 type: company
 description: 2021년 설립된 중국 AI 스타트업. MiniMax-Text-01, M1, M2, M3 등 대형 멀티모달 언어 모델과 1M 토큰 장문 컨텍스트 기술로 알려져 있습니다.
 tags:

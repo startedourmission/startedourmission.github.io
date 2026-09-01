@@ -1,4 +1,5 @@
 ---
+ready: true
 type: reference
 description: "전기·전자·컴퓨터 분야 세계 최대 기술자 단체이자 학술지·학회 운영 기관"
 tags:

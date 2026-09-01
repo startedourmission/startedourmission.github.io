@@ -1,5 +1,6 @@
 ---
 date: 2026-04-25
+ready: true
 tags:
   - 정보
 description: "Claude Code 만든 Boris가 직접 발표한 30분짜리 실용 가이드. Q&A부터 시작해 ClaudeMD, 키 바인딩, SDK 병렬 워크플로우까지. 11개월 지나도 통하는 패턴들."

@@ -1,5 +1,6 @@
 ---
 date: 2026-04-29
+ready: true
 tags:
   - 정보
 description: "Anthropic이 Blender, Adobe, Ableton 등 크리에이티브 툴과의 공식 커넥터를 출시하며 전문 창작 환경으로 Claude를 확장합니다."

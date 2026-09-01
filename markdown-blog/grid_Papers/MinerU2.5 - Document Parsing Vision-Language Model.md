@@ -1,5 +1,6 @@
 ---
 date: 2026-06-14
+ready: true
 tags:
   - 논문
   - Headliner

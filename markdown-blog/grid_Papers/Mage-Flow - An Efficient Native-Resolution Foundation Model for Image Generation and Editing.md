@@ -1,5 +1,6 @@
 ---
 date: 2026-07-25
+ready: true
 tags:
   - 논문
   - 확산모델

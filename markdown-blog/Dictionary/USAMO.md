@@ -1,4 +1,5 @@
 ---
+ready: true
 type: benchmark
 description: "미국 수학 올림피아드 증명 문제 시험. Mythos 97.6%와 Opus 4.6 42.3%가 55.3%p 격차를 벌리며 세대차를 드러냈다"
 tags:

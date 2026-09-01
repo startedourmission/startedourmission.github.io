@@ -1,4 +1,5 @@
 ---
+ready: true
 type: benchmark
 description: "GitHub 이슈를 실제로 해결시켜 채점. Mythos가 Verified 93.9%를 기록했고 2026년 6월 Fable 5는 Pro에서 최초로 80%대를 넘었다"
 tags:

@@ -1,5 +1,6 @@
 ---
 date: 2026-07-20
+ready: true
 tags:
   - 잡담
   - 에이전트

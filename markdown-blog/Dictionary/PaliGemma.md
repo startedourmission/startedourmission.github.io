@@ -1,4 +1,5 @@
 ---
+ready: true
 type: ai-model
 description: 구글이 공개한 3B 규모 오픈 비전-언어 모델. 전이(transfer)를 목표로 설계돼 로봇 정책 백본으로 자주 쓰입니다
 tags:

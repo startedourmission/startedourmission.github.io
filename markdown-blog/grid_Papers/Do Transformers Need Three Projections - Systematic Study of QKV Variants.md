@@ -1,5 +1,6 @@
 ---
 date: 2026-06-11
+ready: true
 tags:
   - 논문
   - 트랜스포머

@@ -2,6 +2,7 @@
 aliases:
   - 공유는 배려다 : 집단적 RL 경험 공유를 통한 효율적인 LM 후훈련
 date: 2025-09-18
+ready: true
 tags:
   - 논문
 image: "![[SharingisCaring_1.png]]"

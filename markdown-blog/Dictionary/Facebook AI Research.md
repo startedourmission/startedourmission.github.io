@@ -1,4 +1,5 @@
 ---
+ready: true
 type: company
 description: "메타의 AI 연구 조직 FAIR, 얀 르쿤이 이끌어 온 오픈 연구의 거점"
 tags:

@@ -1,4 +1,5 @@
 ---
+ready: true
 type: benchmark
 description: Alibaba AMAP CV Lab이 제안한 실행 가능 구현체 AI 벤치마크. UnrealZoo(Unreal Engine 5) 기반 16개 씬, 4단계 난이도, 200개 이상 태스크로 장기 멀티태스크 에이전트를 평가합니다.
 tags:

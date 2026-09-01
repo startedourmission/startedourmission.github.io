@@ -1,4 +1,5 @@
 ---
+ready: true
 type: concept
 description: "공장·발전소·정수장의 설비를 제어하는 산업용 컨트롤러. IEC 61131-3 언어로 프로그래밍하며, 텍스트 언어가 Structured Text(ST)입니다"
 tags:

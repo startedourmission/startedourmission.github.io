@@ -1,4 +1,5 @@
 ---
+ready: true
 type: model
 description: 음성 입출력 기반 멀티모달 상호작용 모델, 실시간 음성 대화
 tags:

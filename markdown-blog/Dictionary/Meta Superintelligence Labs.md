@@ -1,4 +1,5 @@
 ---
+ready: true
 type: tool
 description: "2025년 Mark Zuckerberg가 Meta 내부에 신설한 AI 연구 조직, Alexandr Wang이 이끌며 Muse Spark가 첫 결과물"
 tags:

@@ -1,4 +1,5 @@
 ---
+ready: true
 type: benchmark
 description: "GUI와 CLI를 같은 워크플로 안에서 오가야 풀리는 114개 장기 실행 과제. 하이브리드 인터페이스 컴퓨터 유즈 에이전트를 재는 벤치마크"
 tags:

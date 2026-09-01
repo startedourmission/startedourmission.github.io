@@ -1,4 +1,5 @@
 ---
+ready: true
 type: company
 description: "페이-페이 리가 2024년 공동창업한 공간 지능 스타트업, 3D 월드 모델 Marble 개발"
 tags:

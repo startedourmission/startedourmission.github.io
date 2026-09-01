@@ -1,4 +1,5 @@
 ---
+ready: true
 type: concept
 description: Vision-Language-Action. 카메라 뷰와 자연어 지시를 받아 로봇 액션을 직접 출력하는 정책 모델 계열
 tags:

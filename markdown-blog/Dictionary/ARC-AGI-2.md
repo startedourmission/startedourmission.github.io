@@ -1,4 +1,5 @@
 ---
+ready: true
 type: benchmark
 description: "2026년 Gemini 3.1 Pro가 77.1%로 1세대 대비 점수를 2배 이상 끌어올렸지만, 인간 기준 95%+와는 여전히 격차가 크다"
 tags:

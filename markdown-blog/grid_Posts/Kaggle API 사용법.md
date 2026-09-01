@@ -1,5 +1,6 @@
 ---
 date: 2025-04-05
+ready: true
 tags:
   - 정보
   - 머신러닝

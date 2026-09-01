@@ -1,5 +1,6 @@
 ---
 date: 2026-08-03
+ready: true
 tags:
   - 논문
   - 영상처리

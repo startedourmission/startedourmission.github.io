@@ -1,4 +1,5 @@
 ---
+ready: true
 type: reference
 description: "대전에 위치한 한국 최고의 이공계 특화 연구대학"
 tags:

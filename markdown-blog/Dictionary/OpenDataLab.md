@@ -1,4 +1,5 @@
 ---
+ready: true
 type: organization
 description: 상하이 인공지능 실험실, 문서 이해와 고효율 모델 연구의 중심 기관
 tags:

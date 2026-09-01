@@ -12,6 +12,7 @@ tags:
   - book
   - MOC
 date: 2026-04-14
+ready: true
 ---
 
 # CME295 트랜스포머와 LLM 강의 (2025 가을)

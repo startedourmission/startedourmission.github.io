@@ -1,4 +1,5 @@
 ---
+ready: true
 type: company
 description: 쾌수(Kuaishou) 소속 Kling 비디오 생성 모델 팀. 영상 생성 연구 및 상용 모델 개발.
 tags:

@@ -1,4 +1,5 @@
 ---
+ready: true
 type: benchmark
 description: "2019년 공개된 약 12,000문항의 5지선다 상식 벤치마크로, 2022년 이후 프론티어 모델이 90%를 돌파해 지금은 변별력을 잃었다"
 tags:

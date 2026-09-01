@@ -1,4 +1,5 @@
 ---
+ready: true
 type: model
 description: Alibaba Qwen2.5 시리즈의 대규모 멀티모달 비전-언어 모델
 tags:

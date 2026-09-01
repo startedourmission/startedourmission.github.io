@@ -1,4 +1,5 @@
 ---
+ready: true
 type: company
 description: "WeChat과 QQ를 운영하는 중국 최대 인터넷 기업. Hunyuan 모델 계열과 WeChat AI 연구조직을 통해 AI 연구를 진행합니다"
 tags:

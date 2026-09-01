@@ -1,4 +1,5 @@
 ---
+ready: true
 type: concept
 description: Pathway가 2025년 9월 공개한 포스트 트랜스포머 아키텍처. 고차원 양의 활성값, 저랭크 통신, 순환 연상 상태로 트랜스포머와 뇌 모델 사이를 잇습니다
 tags:

@@ -1,4 +1,5 @@
 ---
+ready: true
 type: company
 description: "윈도우·애저·OpenAI 파트너십으로 AI 시장에 깊이 관여하는 미국 빅테크"
 tags:

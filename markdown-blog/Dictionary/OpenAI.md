@@ -1,4 +1,5 @@
 ---
+ready: true
 type: company
 description: "ChatGPT와 GPT 시리즈를 만든 미국 AI 기업, 현 LLM 시장의 선두주자"
 tags:

@@ -1,4 +1,5 @@
 ---
+ready: true
 type: company
 description: "스탠퍼드의 인간 중심 AI 연구소"
 tags:

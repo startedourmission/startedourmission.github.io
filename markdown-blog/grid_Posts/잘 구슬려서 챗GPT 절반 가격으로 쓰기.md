@@ -1,5 +1,6 @@
 ---
 date: 2025-12-11
+ready: true
 tags:
   - 정보
 aliases:

@@ -1,4 +1,5 @@
 ---
+ready: true
 type: hardware
 description: High Bandwidth Memory. DRAM 다이를 수직으로 쌓아 인터포저로 프로세서에 붙이는 고대역폭 메모리. AI 가속기의 표준 부품.
 tags:
