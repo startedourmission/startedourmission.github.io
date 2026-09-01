@@ -27,7 +27,7 @@ import sys
 import unicodedata
 
 VAULT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DICT = os.path.join(VAULT, "블로그", "markdown-blog", "Dictionary")
+DICT = os.path.join(VAULT, "markdown-blog", "Dictionary")
 
 
 def parse_fm(text):

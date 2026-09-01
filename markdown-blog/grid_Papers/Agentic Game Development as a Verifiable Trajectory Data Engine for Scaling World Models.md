@@ -8,7 +8,7 @@ tags:
   - 멀티모달
 description: 월드 모델을 키우는 병목이 데이터나 연산이 아니라 보상 채널이라고 보는 논문입니다. 코드에는 컴파일러가, 수학에는 정답 대조가 있었는데 공간 생성에는 없었습니다. 저자들은 그 자리를 게임 엔진이 이미 채우고 있다고 주장합니다.
 image: "![[awomo-rlhev-overview.png]]"
-buzz: 116
+buzz: 59
 ---
 
 > P. Zhou, H. Wang, Z. Zhang, Y. Ma, Z. Wan, K. Zhang, W. Zhao, and Y. You, "Agentic Game Development as a Verifiable Trajectory Data Engine for Scaling World Models," arXiv:2608.25518, 2026.

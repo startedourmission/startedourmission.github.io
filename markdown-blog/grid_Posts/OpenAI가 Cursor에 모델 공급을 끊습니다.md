@@ -3,6 +3,7 @@ date: 2026-08-31
 ready: false
 tags:
   - 정보
+  - Headliner
   - LLM
   - 도구
 description: "SpaceX의 Cursor 인수가 8월에 완결된 뒤 OpenAI가 모델 공급 계약을 종료하겠다고 통보했습니다. 차단 예정일은 11월 12일이고, 같은 상황에서 Anthropic은 반대로 갔습니다."

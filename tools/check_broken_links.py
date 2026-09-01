@@ -31,7 +31,7 @@ import sys
 import unicodedata
 
 VAULT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-BLOG = os.path.join(VAULT, "블로그", "markdown-blog")
+BLOG = os.path.join(VAULT, "markdown-blog")
 
 # 점검 대상 폴더 (본문은 종료코드에 반영, Dictionary 는 보고만)
 BODY_DIRS = ["grid_Posts", "grid_Papers"]

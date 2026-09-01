@@ -3,7 +3,6 @@ date: 2026-08-25
 ready: true
 tags:
   - 정보
-  - Headliner
   - 도구
   - 에이전트
   - 오픈소스

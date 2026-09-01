@@ -7,7 +7,7 @@ tags:
   - LLM
 description: "능력의 단위를 응답이 아니라 완료된 일로 바꾸면 무엇을 다르게 만들어야 하는지에 대한 397B 규모의 대답입니다. 환경과 조율을 두 개의 스케일링 축으로 놓고, 하네스가 만든 궤적을 그대로 학습 신호로 씁니다. 그런데 바로 그 설계 때문에 벤치마크 표가 모델 비교인지 시스템 비교인지 흐려집니다."
 image: "![[apodex-1-1-overview.png]]"
-buzz: 169
+buzz: 88
 ---
 
 > Apodex Team, B. An, B. Li, B. Wang, et al., "Apodex 1.1: Scaling Agentic Intelligence for Complex Work," arXiv:2608.23283, 2026.
