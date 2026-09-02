@@ -8,7 +8,7 @@ WIDTH, HEIGHT = 1200, 630
 WHITE = "#FFFFFF"
 BLACK = "#000000"
 ASSET_DIR = Path(
-    "/Users/chajinwoo/Vaults/AutoVault/"
+    "/Users/chajinwoo/Library/Mobile Documents/iCloud~md~obsidian/Documents/AutoVault/"
     "markdown-blog/grid_Posts/_assets"
 )
 

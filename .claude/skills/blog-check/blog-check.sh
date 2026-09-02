@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # blog-check.sh — 블로그 파일 기반 점검 (끊긴 위키 링크 + 링크 추천 + 방치 초안)
 
-VAULT="$HOME/Vaults/AutoVault"
+VAULT="$HOME/Library/Mobile Documents/iCloud~md~obsidian/Documents/AutoVault"
 POSTS="$VAULT/markdown-blog/grid_Posts"
 PAPERS="$VAULT/markdown-blog/grid_Papers"
 DICT="$VAULT/markdown-blog/Dictionary"
@@ -23,7 +23,7 @@ python3 - <<'PYEOF'
 import os, re, time
 from pathlib import Path
 
-VAULT = os.path.expanduser("~/Vaults/AutoVault")
+VAULT = os.path.expanduser("~/Library/Mobile Documents/iCloud~md~obsidian/Documents/AutoVault")
 BLOG  = f"{VAULT}/markdown-blog"
 DICT  = f"{BLOG}/Dictionary"
 POSTS = f"{BLOG}/grid_Posts"

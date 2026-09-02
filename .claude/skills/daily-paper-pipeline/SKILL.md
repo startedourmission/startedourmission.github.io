@@ -110,8 +110,8 @@ description: Process today's candidates from `blog-topic-finder-cron.md` end-to-
 #### 3-A. Zotero 저장 (메타데이터만)
 
 ```bash
-set -a; source "$HOME/Vaults/AutoVault/.env"; set +a
-python3 "$HOME/Vaults/AutoVault/.claude/skills/arxiv-to-zotero/add.py" --no-pdf "<ARXIV_ID>"
+set -a; source "$HOME/Library/Mobile Documents/iCloud~md~obsidian/Documents/AutoVault/.env"; set +a
+python3 "$HOME/Library/Mobile Documents/iCloud~md~obsidian/Documents/AutoVault/.claude/skills/arxiv-to-zotero/add.py" --no-pdf "<ARXIV_ID>"
 ```
 
 PDF는 첨부하지 않는다 (Zotero 스토리지 절약). stdout에서 `→ Zotero <KEY>` 줄을 파싱해 `item_key` 확보. 실패하면 이 논문을 "Zotero 저장 실패"로 마킹하고 다음으로.

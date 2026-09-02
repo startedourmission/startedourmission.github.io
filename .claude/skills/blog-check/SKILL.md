@@ -14,7 +14,7 @@ description: 블로그 일일 점검 스킬. launchd cron이 매일 새벽 자�
 ## 경로 상수
 
 ```
-VAULT=$HOME/Vaults/AutoVault
+VAULT="$HOME/Library/Mobile Documents/iCloud~md~obsidian/Documents/AutoVault"
 CLIPPINGS=$VAULT/raw/Clippings
 POSTS=$VAULT/markdown-blog
 POSTS=$VAULT/markdown-blog/grid_Posts

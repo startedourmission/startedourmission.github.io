@@ -4,7 +4,7 @@
 
 set -u
 
-VAULT="$HOME/Vaults/AutoVault"
+VAULT="$HOME/Library/Mobile Documents/iCloud~md~obsidian/Documents/AutoVault"
 LOG="$HOME/Library/Logs/blog-daily-routine/blog-check-cron.md"
 CLAUDE="$HOME/.local/bin/claude"
 

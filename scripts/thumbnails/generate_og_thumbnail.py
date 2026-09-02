@@ -6,7 +6,7 @@ from PIL import Image, ImageDraw, ImageFont
 
 
 TARGET = Path(
-    "/Users/chajinwoo/Vaults/AutoVault/markdown-blog/Knowledge Management System/_assets/karpathy-llm-wiki.png"
+    "/Users/chajinwoo/Library/Mobile Documents/iCloud~md~obsidian/Documents/AutoVault/markdown-blog/Knowledge Management System/_assets/karpathy-llm-wiki.png"
 )
 WIDTH = 1200
 HEIGHT = 630

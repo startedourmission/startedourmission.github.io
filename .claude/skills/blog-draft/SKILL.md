@@ -474,7 +474,7 @@ papers:                 ← 저자로 참여한 블로그 게시 논문 (파일�
 **star 점수는 직접 쓰지 않는다.** 노트 저장 후 스크립트가 자동 계산:
 
 ```bash
-python3 "/Users/chajinwoo/Vaults/AutoVault/tools/calc_star.py" "<person.md 절대경로>"
+python3 "/Users/chajinwoo/Library/Mobile Documents/iCloud~md~obsidian/Documents/AutoVault/tools/calc_star.py" "<person.md 절대경로>"
 ```
 
 ### ❌ 검증되지 않은 수치 — 금지

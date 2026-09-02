@@ -12,7 +12,7 @@
 #       블로그 파일명에 개행은 없으므로 개행 구분 + `IFS= read -r` 로 처리(공백·콤마 안전).
 set -u
 
-VAULT="$HOME/Vaults/AutoVault"
+VAULT="$HOME/Library/Mobile Documents/iCloud~md~obsidian/Documents/AutoVault"
 BLOG="$VAULT/markdown-blog"
 DAYS="${1:-7}"
 

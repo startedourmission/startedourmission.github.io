@@ -2,7 +2,7 @@ from PIL import Image, ImageDraw, ImageFont
 import os
 
 
-SAVE_PATH = "/Users/chajinwoo/Vaults/AutoVault/markdown-blog/grid_Posts/_assets/openai-broadcom-jalapeno.png"
+SAVE_PATH = "/Users/chajinwoo/Library/Mobile Documents/iCloud~md~obsidian/Documents/AutoVault/markdown-blog/grid_Posts/_assets/openai-broadcom-jalapeno.png"
 WIDTH, HEIGHT = 1200, 630
 BLACK = "#111111"
 GREEN = "#1a7a1a"

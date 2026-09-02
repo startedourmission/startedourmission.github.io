@@ -35,7 +35,7 @@ import os, re, json, subprocess, time, math
 from datetime import date, timedelta
 
 VAULT  = os.path.expanduser(
-    "~/Vaults/AutoVault"
+    "~/Library/Mobile Documents/iCloud~md~obsidian/Documents/AutoVault"
 )
 PAPERS = os.path.join(VAULT, "markdown-blog/grid_Papers")
 POSTS  = os.path.join(VAULT, "markdown-blog/grid_Posts")

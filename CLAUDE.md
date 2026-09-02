@@ -2,8 +2,17 @@
 
 옵시디언 볼트 = 블로그 레포. **하나의 폴더, 하나의 git 레포**(`startedourmission.github.io`, 공개).
 
-> 2026-08-31 통합. iCloud에서 `~/Vaults/AutoVault`로 옮기고, 볼트와 블로그 레포를 합쳤다.
+> 2026-08-31 통합. 볼트와 블로그 레포를 합쳤다.
 > 이전 구조(`블로그/` 하위 레포, `raw/drafts/` 초안 폴더)는 없다.
+>
+> 2026-09-02 볼트를 iCloud로 되돌렸다. 서버컴·회사컴·폰 사이 동기화는 iCloud가 맡는다.
+> **단 `.git`은 iCloud 밖 `~/git/AutoVault.git`에 있다.** 볼트 루트의 `.git`은 그곳을 가리키는
+> 한 줄짜리 포인터 파일이다(`git init --separate-git-dir` 방식).
+> iCloud가 `.git` 내부를 evict하면 git 명령이 통째로 멎고 레포가 깨진다 — 실제로 겪었다.
+> **`.git`을 볼트 안으로 되돌리지 말 것.**
+>
+> 따라서 git은 기기 간 동기화 수단이 아니라 GitHub Pages 배포 전용이다.
+> 레포를 가진 건 서버컴 한 대뿐이고, push도 서버컴만 한다. 회사컴엔 git이 없다.
 
 ## 초안 = `ready: false`
 

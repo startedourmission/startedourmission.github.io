@@ -197,8 +197,8 @@ curl -s -X POST \
 복잡한 PDF 업로드 부분 때문에 셸만으로는 너저분합니다. 같은 폴더 `add.py` 사용:
 
 ```bash
-set -a; source "$HOME/Vaults/AutoVault/.env"; set +a
-python3 "$HOME/Vaults/AutoVault/.claude/skills/arxiv-to-zotero/add.py" <ARXIV_URL_OR_ID> [<ARXIV_URL_OR_ID> ...]
+set -a; source "$HOME/Library/Mobile Documents/iCloud~md~obsidian/Documents/AutoVault/.env"; set +a
+python3 "$HOME/Library/Mobile Documents/iCloud~md~obsidian/Documents/AutoVault/.claude/skills/arxiv-to-zotero/add.py" <ARXIV_URL_OR_ID> [<ARXIV_URL_OR_ID> ...]
 ```
 
 스크립트는 `ZOTERO_USERID`, `ZOTERO_PRIVATE_KEY` 환경변수와 `.collection_key` 캐시 파일을 사용합니다. `--no-pdf` 플래그로 PDF 첨부를 건너뛸 수 있습니다.

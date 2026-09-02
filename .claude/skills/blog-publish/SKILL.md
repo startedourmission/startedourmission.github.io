@@ -18,7 +18,7 @@ description: Validate and publish a blog post draft from markdown-blog/<목적�
 스킬 안에서 아래 경로를 씁니다. 셸에서 먼저 정의하세요.
 
 ```bash
-VAULT="$HOME/Vaults/AutoVault"
+VAULT="$HOME/Library/Mobile Documents/iCloud~md~obsidian/Documents/AutoVault"
 POSTS="$VAULT/markdown-blog"
 CLIPPINGS="$VAULT/Clippings"
 ```

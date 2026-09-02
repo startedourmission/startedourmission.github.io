@@ -8,7 +8,7 @@ WIDTH, HEIGHT = 1200, 630
 BLACK = "#000000"
 WHITE = "#FFFFFF"
 OUTPUT_PATH = Path(
-    "/Users/chajinwoo/Vaults/AutoVault/"
+    "/Users/chajinwoo/Library/Mobile Documents/iCloud~md~obsidian/Documents/AutoVault/"
     "markdown-blog/grid_Posts/_assets/venice-ai-unicorn.png"
 )
 

@@ -126,7 +126,7 @@ papers:
 python3 "$VAULT/tools/calc_star.py" "<person.md 절대경로>"
 ```
 
-`$VAULT`는 `/Users/chajinwoo/Vaults/AutoVault`.
+`$VAULT`는 `/Users/chajinwoo/Library/Mobile Documents/iCloud~md~obsidian/Documents/AutoVault`.
 
 파일명은 한글 이름이고, aliases에 영문 이름과 (있으면) 한자를 넣어 검색·중복탐지가 되게 합니다. 본문 위키링크는 한글 파일명 기준으로 걸되, 영어 문맥에서 영문 표기를 보이려면 pipe를 씁니다 (`[[손귀진|Guijin Son]]`).
 
