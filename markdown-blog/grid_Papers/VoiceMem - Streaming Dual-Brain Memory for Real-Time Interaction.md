@@ -7,7 +7,7 @@ tags:
   - LLM
 description: 실시간 음성 대화에 기억을 붙이려면 검색이 500ms VAD 창 안에 끝나야 합니다. VoiceMem은 기억을 정보용 좌뇌와 감정용 우뇌로 나누고, 검색 전체를 사람이 말을 멈춘 침묵 안에 숨겨 134ms에 끝냅니다.
 image: "![[voicemem-overview.png]]"
-buzz: 147
+buzz: 57
 ---
 
 > Z. Xie, J. Lang, Z. An, Y. Zhao, D. Yang, K. Li, Z. Ma, M. Lin, C. Miao, and S. Yan, "VoiceMem: Streaming Dual-Brain Memory for Real-Time Interaction," arXiv:2608.26005, 2026.

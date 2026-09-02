@@ -8,7 +8,7 @@ tags:
   - 컴퓨터비전
 description: 텍스트 한 줄에서 걸어 다닐 수 있는 3D 월드를 만들되, 한 모델이 전부 생성하지 않고 계획·지형·지역 세 단계 에이전트로 나눈 프레임워크입니다. 전역 일관성은 지형이 붙잡고, 디테일은 필요한 지역에서만 자랍니다.
 image: "![[worldclaw-overview.png]]"
-buzz: 44
+buzz: 43
 ---
 
 > C. Guo, J. Li, Y. Li, and Z. Huang, "WorldClaw: Agentic 3D Open-World Generation at Scale," arXiv:2608.05248, 2026.

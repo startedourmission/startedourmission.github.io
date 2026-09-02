@@ -8,7 +8,7 @@ tags:
   - 추론
 description: 검증 불가능한 품질 목표를 근사하는 대신 과제 자체를 검증 가능한 프록시 환경으로 변환하는 RL 패러다임. "누가 스파이인가" 게임으로 구현한 SpyRL이 요약·창작에서 자기진화 베이스라인을 앞서고 수학 추론에서도 7개 벤치 평균을 8.97점 올렸습니다
 image: "![[rlsvr-overview.png]]"
-buzz: 44
+buzz: 43
 ---
 
 > Q. Wang, J. Shi, H. Wang, K. Wan, Y. Wu, B. Liu, Q. Wu, H. H. Li, Y. Chen, H. Zhao, and W. Zhao, "From RLVR to RLSVR: Task Transformation Induces Self-Verifiable Rewards for Open-Ended LLM Self-Improvement," arXiv:2607.23802, 2026.

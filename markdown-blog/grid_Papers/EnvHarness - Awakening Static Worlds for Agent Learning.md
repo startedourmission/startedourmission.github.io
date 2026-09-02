@@ -8,7 +8,7 @@ tags:
   - LLM
 description: 에이전트를 고치는 대신 에이전트가 학습하는 환경을 고칩니다. 벤치마크 코드를 한 줄도 건드리지 않고 reset/step 인터페이스만 감싸서 난이도를 조절하고, 궤적을 읽어 약점을 찾아낸 뒤 그 약점을 겨냥한 래퍼를 자동으로 짜냅니다. 검증기를 그대로 물려받는 설계가 강점이자 한계입니다.
 image: "![[envharness-overview.png]]"
-buzz: 62
+buzz: 60
 ---
 
 > C. Huang, Z. Wang, R. Han, J. Yan, et al., "EnvHarness: Awakening Static Worlds for Agent Learning," arXiv:2608.19880, 2026.

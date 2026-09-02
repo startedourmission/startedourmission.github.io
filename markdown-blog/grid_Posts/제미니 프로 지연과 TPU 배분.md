@@ -3,7 +3,6 @@ date: 2026-08-22
 ready: true
 tags:
   - 정보
-  - Headliner
   - LLM
 description: 구글이 5월부터 석 달째 Flash만 연달아 내놓고 3.5 Pro는 계속 미루고 있습니다. 코딩 목표 미달이라는 표면적 이유 뒤에는 TPU를 프런티어 모델(지금은 Gemini 4)에 우선 배분하는 내부 줄서기가 있습니다.
 image: "![[제미니 프로 지연과 TPU 배분-thumb.png]]"

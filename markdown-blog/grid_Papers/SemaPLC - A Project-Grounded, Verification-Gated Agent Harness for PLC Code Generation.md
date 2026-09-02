@@ -8,7 +8,7 @@ tags:
   - LLM
 description: 생성된 PLC 제어 로직을 실제 런타임에 올려 실행 트레이스를 대조하면, 정적 점수로는 4점 안에 몰려 있던 방법들이 22.4에서 52.2까지 벌어집니다. 완료 판정을 모델에게서 뺏어 외부 검사에 넘긴 하네스와, 그 하네스가 드러낸 평가 방식의 구멍을 봅니다.
 image: "![[semaplc-overview.png]]"
-buzz: 52
+buzz: 51
 ---
 
 > Y. Tu, H. Wang, Z. Zhou, J. Zhou, et al., "SemaPLC: A Project-Grounded, Verification-Gated Agent Harness for PLC Code Generation," arXiv:2608.18565, 2026.

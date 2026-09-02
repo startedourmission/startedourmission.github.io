@@ -42,7 +42,7 @@ import unicodedata
 from collections import defaultdict
 
 VAULT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DEFAULT_DIR = os.path.join("블로그", "markdown-blog", "Dictionary")
+DEFAULT_DIR = os.path.join("markdown-blog", "Dictionary")
 
 SKIP_DIRS = {".git", "node_modules", ".obsidian", "_assets", "Archive"}
 
