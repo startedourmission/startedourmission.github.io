@@ -8,7 +8,7 @@ tags:
   - GPU
 description: 로봇 조작 정책의 중심에 대형 언어 모델을 두는 V→L→A 경로를 걷어내고, 시각과 언어를 따로 인코딩해 양방향 크로스어텐션으로만 섞는 V+L→A 설계를 제안한 논문입니다. 0.2B 파라미터로 LIBERO 평균 97.7%, RTX 4090 한 장에서 0.9GB VRAM, 31.2ms 지연을 기록했습니다.
 image: "![[turbovla-overview.png]]"
-buzz: 73
+buzz: 90
 ---
 
 > H. Xie, C. Yao, X. Wu, X. Xi, Y. Tang, D. Xu, Y. Zhu, D. Liang, X. Bai, and H. Ding, "TurboVLA: Real-Time Vision-Language-Action Model at 32 Hz on an RTX 4090 with <1 GB VRAM," arXiv:2607.27205, 2026.

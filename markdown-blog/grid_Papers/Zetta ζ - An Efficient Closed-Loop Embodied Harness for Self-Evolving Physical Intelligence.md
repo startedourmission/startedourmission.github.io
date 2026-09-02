@@ -7,7 +7,7 @@ tags:
   - 강화학습
 description: 정책 모델의 가중치를 한 번도 건드리지 않고 로봇의 성공률을 73.6%에서 93.6%까지 올립니다. 대신 진화하는 것은 코드로 짜인 런타임 크리틱과 복구 스킬입니다. 세 개의 서로 다른 시간 규모 루프가 각각 액션 주기, 롤아웃 묶음, 검증 게이트를 맡고, 전용 롤아웃 인프라가 그 진화 속도를 20배로 끌어올립니다.
 image: "![[zetta-overview.png]]"
-buzz: 54
+buzz: 53
 ---
 
 > X. Ding, L. Mi, M. Huang, Z. Wang, et al., "Zetta ζ: An Efficient Closed-Loop Embodied Harness for Self-Evolving Physical Intelligence," arXiv:2608.16590, 2026.

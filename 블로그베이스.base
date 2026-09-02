@@ -4,9 +4,9 @@ views:
     filters:
       and:
         - file.inFolder("markdown-blog/")
-        - ready != false
     order:
       - date
+      - ready
       - buzz
       - file.name
       - tags

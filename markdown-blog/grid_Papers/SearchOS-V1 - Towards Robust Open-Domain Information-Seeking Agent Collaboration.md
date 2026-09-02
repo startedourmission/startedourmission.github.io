@@ -7,7 +7,7 @@ tags:
   - LLM
 description: "멀티에이전트 검색 시스템이 긴 정보 탐색에서 반복 루프에 빠지는 원인을 분석하고, 검색 상태를 시스템 레이어로 외부화한 SearchOS 프레임워크를 제안합니다."
 image: "![[searchos-v1-architecture.png]]"
-buzz: 36
+buzz: 34
 ---
 
 > Y. Zhang, J. Gao, Z. Wu, J. Fan, J. Zhang, S. Ma, Y. Yao, W. Qi, C. Jin, G. Ma, X. Xu, K. Yang, J.-R. Wen, and Z. Dou, "SearchOS-V1: Towards Robust Open-Domain Information-Seeking Agent Collaboration," arXiv:2607.15257, 2026.

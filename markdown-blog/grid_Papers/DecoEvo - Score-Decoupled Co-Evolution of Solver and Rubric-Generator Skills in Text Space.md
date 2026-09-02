@@ -7,7 +7,7 @@ tags:
   - AI평가
 description: 가중치를 건드리지 않고 자연어 스킬 문서만 고치는 텍스트 공간 최적화에서, 풀이 스킬과 채점 루브릭 생성 스킬을 서로 다른 목적함수로 동시에 진화시킨 논문입니다. 채점자를 풀이자의 점수로 평가하면 왜 무너지는지, 그걸 어떻게 끊어냈는지가 핵심입니다.
 image: "![[decoevo-paradigms.png]]"
-buzz: 84
+buzz: 81
 ---
 
 > J. Chen, Z. Song, J. Liu, S. Zhou, H. Wu, H. Shi, C. Zhou, H. Li, X. Yang, D. Zhu, G. Jiang, H. Wan, and X. Zhao, "DecoEvo: Score-Decoupled Co-Evolution of Solver and Rubric-Generator Skills in Text Space," arXiv:2607.25675, 2026.

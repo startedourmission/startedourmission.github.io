@@ -3,13 +3,12 @@ date: 2026-09-01
 ready: true
 tags:
   - 논문
-  - Headliner
   - 영상처리
   - 강화학습
   - 벤치마크
 description: 시각 생성을 출력 형식이 아니라 추론이 일어나는 기질로 놓습니다. 절차 생성 과제 300개에 규칙 기반 채점기를 붙여 학습·검증·최적화가 되는 닫힌 고리를 만들었고, 그 위에서 중간 텍스트를 자리표시자로 바꿔도 성능이 거의 안 떨어진다는 결과를 얻었습니다.
 image: "![[vbvr-overview.png]]"
-buzz: 266
+buzz: 64
 ---
 
 > J. Xu, R. Wang, F. Pu, M. Wang, et al., "VBVR-Pro: A Scalable and Verifiable Suite for Native Visual Reasoning," arXiv:2608.26105, 2026.

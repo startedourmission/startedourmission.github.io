@@ -7,7 +7,7 @@ tags:
   - 트랜스포머
 description: "추가 학습 없이 짧은 입력 성능을 유지하면서 긴 컨텍스트로 외삽하는 방법입니다. 로컬 구간은 RoPE에 충실하게, 장거리 구간은 파라미터 없이 해석적으로 재스케일되는 Dynamic Bifocal RoPE를 씁니다. H100에서 FlashAttention-2 대비 최대 1.39배 처리량을 냈습니다."
 image: "![[jet-long-thumb.png]]"
-buzz: 27
+buzz: 25
 ---
 
 > H. Tang, Z. Wang, Y. Gu, S. Han, H. Cai, "Jet-Long: Efficient Long-Context Extension with Dynamic Bifocal RoPE," arXiv:2607.07740, 2026.

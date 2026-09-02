@@ -7,7 +7,7 @@ tags:
   - NLP
 description: 임베딩 검색을 버리고 grep으로 코퍼스를 직접 뒤지는 에이전트가 늘고 있습니다. 문제는 어디부터 볼지 모른다는 것입니다. RARG는 임베딩을 버리지 않되 문서를 고르는 데 쓰지 않고 rg의 탐색 순서와 출력 가시성을 정하는 데 씁니다. 정확도 84%에 도구 호출 23.9회로, DCI의 78%·99.1회를 양쪽에서 앞섭니다.
 image: "![[rarg-overview.png]]"
-buzz: 68
+buzz: 66
 ---
 
 > J. Li, Y. Li, M. Yu, J. Zhang, and J. Zhou, "A New Role for Relevance: Guiding Corpus Interaction in Agentic Search," arXiv:2607.24223, 2026.
