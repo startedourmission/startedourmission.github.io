@@ -438,3 +438,6 @@ tmp_*.py
 # 옵시디언 플러그인·테마 바이너리 — community-plugins.json 만 있으면 재설치된다
 .obsidian/plugins/
 .obsidian/themes/
+
+# Claudian 대화 로그·로컬 설정 — 공개 레포다. 대화 원문이 새어나가면 안 된다.
+.claudian/
