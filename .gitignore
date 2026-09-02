@@ -441,3 +441,6 @@ tmp_*.py
 
 # Claudian 대화 로그·로컬 설정 — 공개 레포다. 대화 원문이 새어나가면 안 된다.
 .claudian/
+
+# Claude Code 기기별 로컬 설정 (경로·권한 허용목록이 기기마다 다름)
+.claude/settings.local.json
