@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1788311844982-65qahj8x8",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788311845076-qkcphny",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1788311844969-sb5na4g",
+      "timestamp": 1788311844969,
+      "rawDisplayText": "포스트 세 개 신설 \n- 정부가 사들인 그래픽 카드, 어디에.\n- 한국의 데이터센터 지도, 해외와 비교\n- AI가 해주는데 왜 어셈블리어로 개발하지 않을까",
+      "canonicalText": "포스트 세 개 신설 \n- 정부가 사들인 그래픽 카드, 어디에.\n- 한국의 데이터센터 지도, 해외와 비교\n- AI가 해주는데 왜 어셈블리어로 개발하지 않을까",
+      "context": {
+        "linkedContent": {
+          "path": "markdown-blog/grid_Posts/에이전트 플릿 하루 운영 회고.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "75937c6b3a7e09677e4f28cfc36d060060d61837d24753224a4c4c5f02d93695",
+      "providerUserMessageId": "ee38e13b-3785-4a3b-8697-bd6eaaa466c0"
+    }
+  ]
+}
