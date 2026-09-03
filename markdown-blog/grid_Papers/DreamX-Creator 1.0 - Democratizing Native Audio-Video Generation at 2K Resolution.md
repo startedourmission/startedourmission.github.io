@@ -8,7 +8,7 @@ tags:
   - 확산모델
 description: "오디오를 나중에 붙이지 않고 7B 한 모델 안에서 영상과 같이 만듭니다. 두 스트림을 게이트가 달린 크로스모달 어텐션으로 묶고, 2K는 청크마다 디노이징 한 번만 하는 1스텝 리파이너로 올립니다."
 image: "![[dreamx-creator-overview.png]]"
-buzz: 86
+buzz: 52
 ---
 
 > J. Zhu, Y. Zheng, R. Tian, R. Dang, S. Zhang, B. Song, J. Lei, R. Lin, J. Wu, and X. Chu, "DreamX-Creator 1.0: Democratizing Native Audio-Video Generation at 2K Resolution," arXiv:2608.31106, 2026.

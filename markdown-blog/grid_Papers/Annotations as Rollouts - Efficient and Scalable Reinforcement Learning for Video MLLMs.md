@@ -7,7 +7,7 @@ tags:
   - 멀티모달
 description: 강화학습 그룹 안에서 정답 어노테이션은 채점 기준으로만 쓰이고 버려집니다. 이 논문은 정답을 롤아웃 하나로 그룹에 집어넣자고 제안하는데, 그냥 넣으면 학습이 오히려 망가집니다. 왜 망가지는지가 그룹 평균 식 한 줄에 들어 있습니다.
 image: "![[annotations-as-rollouts-overview.png]]"
-buzz: 88
+buzz: 51
 ---
 
 > Y. Li, G. Mu, H. Li, S. Qian, D. Zhang, Q. Hou, and M.-M. Cheng, "Annotations as Rollouts: Efficient and Scalable Reinforcement Learning for Video MLLMs," arXiv:2608.20492, 2026.

@@ -3,6 +3,7 @@ date: 2026-09-03
 ready: false
 tags:
   - 정보
+  - Headliner
   - LLM
   - SaaS
 description: "Mistral이 Vibe 일반 사용자를 학습 기본 대상으로 두고 있습니다. 정작 덜 알려진 건 옵트아웃 토글이 Vibe와 API로 따로 있다는 점입니다."
