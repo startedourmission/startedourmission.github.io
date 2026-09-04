@@ -3,7 +3,6 @@ date: 2025-12-04
 ready: true
 tags:
   - 논문
-  - Headliner
   - LLM
   - 영상처리
   - 멀티모달
