@@ -3,6 +3,7 @@ date: 2026-09-04
 ready: false
 tags:
   - 정보
+  - Headliner
   - LLM
   - 반도체
   - 도구

@@ -3,6 +3,7 @@ date: 2026-09-04
 ready: false
 tags:
   - 논문
+  - Headliner
   - 에이전트
   - LLM
   - 오픈소스
