@@ -1,12 +1,11 @@
 ---
 date: 2026-08-31
-ready: false
+ready: true
 tags:
   - 정보
-  - Headliner
   - LLM
   - 도구
-description: "SpaceX의 Cursor 인수가 8월에 완결된 뒤 OpenAI가 모델 공급 계약을 종료하겠다고 통보했습니다. 차단 예정일은 11월 12일이고, 같은 상황에서 Anthropic은 반대로 갔습니다."
+description: SpaceX의 Cursor 인수가 8월에 완결된 뒤 OpenAI가 모델 공급 계약을 종료하겠다고 통보했습니다. 차단 예정일은 11월 12일이고, 같은 상황에서 Anthropic은 반대로 갔습니다.
 image: "![[openai-cursor-cutoff-thumb.png]]"
 ---
 
@@ -33,10 +32,6 @@ Anthropic은 SpaceX로부터 컴퓨트를 빌려 씁니다. 5월 6일에 맺은 
 그러니까 Anthropic은 SpaceX에 모델을 팔면서 동시에 SpaceX로부터 연산을 삽니다. 여기서 공급을 끊는다는 건 자기 인프라 공급자와 척지는 일입니다. OpenAI에는 그런 연결이 없습니다.
 
 판단이 갈린 자리는 이념이 아니라 의존 구조입니다. 두 회사가 머스크를 다르게 봐서가 아니라, 머스크 쪽에 걸려 있는 것이 다릅니다.
-
-## 5퍼센트
-
-여기서 이 사건의 실제 무게가 나옵니다.
 
 Cursor CEO 마이클 트루엘이 밝힌 수치로, OpenAI 모델은 Cursor 사용자 트래픽의 약 5퍼센트입니다.
 
