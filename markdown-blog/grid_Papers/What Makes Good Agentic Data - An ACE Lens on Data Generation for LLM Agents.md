@@ -7,7 +7,7 @@ tags:
   - LLM
 description: "에이전트 학습 데이터를 (환경, 과제, 궤적, 검증) 네 조각으로 쪼개고, 좋은 데이터의 조건을 정확도·복잡도·다양성 세 축으로 세운 서베이입니다. 데이터를 고정 자산이 아니라 학습자와 함께 움직이는 분포로 봅니다."
 image: "![[ace-lens-overview.png]]"
-buzz: 48
+buzz: 46
 ---
 
 > X. Zeng, Z. Xu, B. Zhang, Y. Wu, et al., "What Makes Good Agentic Data? An ACE Lens on Data Generation for LLM Agents," arXiv:2608.27260, 2026.
