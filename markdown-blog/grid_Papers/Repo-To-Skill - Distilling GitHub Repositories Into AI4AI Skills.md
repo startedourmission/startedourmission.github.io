@@ -3,13 +3,12 @@ date: 2026-09-04
 ready: false
 tags:
   - 논문
-  - Headliner
   - 에이전트
   - LLM
   - 오픈소스
 description: "에이전트를 모델과 하네스 두 층으로만 보면 도메인 노하우가 갈 곳이 없습니다. BAAI 연구진은 그 빠진 층을 운영 지식이라 부르고, ML 저장소 1,000개를 검증된 스킬 5,353개로 증류해 채웠습니다. 백본과 하네스를 그대로 둔 채 MLE-bench 점수가 31.11에서 72.89로 올랐는데, 그 숫자가 어떤 조건에서 나왔는지까지 따라가 봅니다."
 image: "![[repo-to-skill-overview.png]]"
-buzz: 393
+buzz: 69
 ---
 
 > J. Chen, Y. Hu, H. Qian, J. Liu, et al., "Repo-To-Skill: Distilling GitHub Repositories Into AI4AI Skills," arXiv:2609.02749, 2026.

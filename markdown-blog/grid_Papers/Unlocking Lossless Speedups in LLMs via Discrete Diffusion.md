@@ -8,7 +8,7 @@ tags:
   - 트랜스포머
 description: "확산을 오토리그레시브의 대체재가 아니라 가속기로 씁니다. 같은 모델 안의 LoRA 어댑터가 초안을 쓰고 본체가 검증해서, 별도 draft 모델 없이 무손실로 속도를 올립니다."
 image: "![[uno-overview.png]]"
-buzz: 64
+buzz: 56
 ---
 > S. S. Sahoo, L. Chen, K. Pham, J. Geuter, et al., "Unlocking Lossless Speedups in LLMs via Discrete Diffusion," arXiv:2609.04010, 2026.
 

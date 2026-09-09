@@ -7,7 +7,7 @@ tags:
   - 도구
 description: "자연어로 쓴 함수 명세를 원격 모델 호출이 아니라 1분짜리 빌드로 컴파일해, 로컬에서 돌아가는 작은 신경 함수로 떨궈내는 시스템입니다."
 image: "![[compile-by-training-overview.png]]"
-buzz: 228
+buzz: 66
 ---
 
 > Y. Deng, P. Nie, and S. Shieber, "Compile by Training: Turning Natural-Language Specifications into Local Neural Functions," arXiv:2609.04199, 2026.

@@ -8,7 +8,7 @@ tags:
   - 강화학습
 description: "장면 설명은 잘 하는데 조향으로 이어지지 않는 자율주행 VLM의 고질을, Qwen 팀은 인식을 언어 모델 안에 녹이는 대신 바깥에 붙여 풀었습니다. 그 선택이 무엇을 얻고 무엇을 포기했는지 따라가 봅니다."
 image: "![[qwen-drive-1-0-overview.png]]"
-buzz: 65
+buzz: 96
 ---
 
 > X. Zhou, Z. Zhao, Z. Yang, M. Li, H. Zhong, S. Bai, D. Liang, X. Bai, and D. Liu, "Qwen-Drive-1.0: An Initial Step towards a Vision-Language Foundation Model for Autonomous Driving," arXiv:2609.00111, 2026.

@@ -7,7 +7,7 @@ tags:
   - 트랜스포머
 description: 긴 컨텍스트 디코드에서 매 스텝 전체 KV를 읽는 비용을, 모델이 CoT 안에 어텐션 범위를 선언하게 해서 줄입니다. KAIST·DeepMind 자문 팀이 제안한 Declarative Attention은 제로샷으로 attended tokens를 최대 52% 줄이고, 정확도 손실은 1~3pp 수준입니다.
 image: "![[da-overview.png]]"
-buzz: 47
+buzz: 46
 ---
 
 > N. Ho, H. Ahmad, W. Koh, S.-Y. Yun, T. Schuster, and C. Nogueira dos Santos, "Language Models Can Control Their Own Attention," arXiv:2609.02737, 2026.

@@ -3,6 +3,7 @@ date: 2025-09-24
 ready: true
 tags:
   - 논문
+  - Headliner
   - 영상처리
   - 베스트논문
 aliases:
